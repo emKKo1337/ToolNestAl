@@ -1,0 +1,104 @@
+import Link from "next/link";
+
+interface Category {
+  id: string;
+  label: string;
+  icon: string;
+  iconColor: string;
+  bgColor: string;
+  href: string;
+}
+
+const categories: Category[] = [
+  {
+    id: "ai-tools",
+    label: "AI Tools",
+    icon: "smart_toy",
+    iconColor: "#ddb7ff",
+    bgColor: "rgba(221,183,255,0.1)",
+    href: "#ai-tools",
+  },
+  {
+    id: "pdf-tools",
+    label: "PDF Tools",
+    icon: "picture_as_pdf",
+    iconColor: "#ffb4ab",
+    bgColor: "rgba(255,180,171,0.1)",
+    href: "#pdf-tools",
+  },
+  {
+    id: "image-tools",
+    label: "Image Tools",
+    icon: "image",
+    iconColor: "#4cd7f6",
+    bgColor: "rgba(76,215,246,0.1)",
+    href: "#image-tools",
+  },
+  {
+    id: "developer-tools",
+    label: "Developer Tools",
+    icon: "terminal",
+    iconColor: "#0566d9",
+    bgColor: "rgba(5,102,217,0.1)",
+    href: "#developer",
+  },
+];
+
+export default function CategoryGrid() {
+  return (
+    <section aria-labelledby="categories-heading">
+      <div className="flex justify-between items-end mb-8">
+        <h2
+          id="categories-heading"
+          className="text-[32px] font-bold leading-[40px] tracking-[-0.02em] text-[#e2e2e2]"
+        >
+          Browse by Category
+        </h2>
+        <Link
+          href="#"
+          className="text-[#ddb7ff] text-[16px] hover:opacity-80 transition-opacity flex items-center gap-1"
+        >
+          View all{" "}
+          <span className="material-symbols-outlined text-[16px]" aria-hidden="true">
+            arrow_forward
+          </span>
+        </Link>
+      </div>
+
+      <div
+        className="grid grid-cols-2 md:grid-cols-4 gap-6"
+        role="list"
+        aria-label="Tool categories"
+      >
+        {categories.map((cat) => (
+          <Link
+            key={cat.id}
+            href={cat.href}
+            role="listitem"
+            className="glass-panel glass-panel-hover rounded-2xl p-6 flex flex-col items-center justify-center gap-4 cursor-pointer group"
+            aria-label={`Browse ${cat.label}`}
+          >
+            <div
+              className="w-16 h-16 rounded-full flex items-center justify-center transition-colors"
+              style={{ backgroundColor: cat.bgColor }}
+            >
+              <span
+                className="material-symbols-outlined text-[32px]"
+                style={{
+                  color: cat.iconColor,
+                  fontVariationSettings: "'FILL' 1",
+                }}
+                aria-hidden="true"
+              >
+                {cat.icon}
+              </span>
+            </div>
+            <span className="text-[18px] font-semibold leading-[28px] text-[#e2e2e2] text-center">
+              {cat.label}
+            </span>
+          </Link>
+        ))}
+      </div>
+    </section>
+  );
+}
