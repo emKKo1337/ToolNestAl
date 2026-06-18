@@ -43,7 +43,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`dark ${inter.variable}`}>
-      {/* eslint-disable-next-line @next/next/no-page-custom-font */}
       <head>
         {/* Material Symbols cannot be loaded via next/font — external link required */}
         {/* eslint-disable-next-line @next/next/no-page-custom-font */}

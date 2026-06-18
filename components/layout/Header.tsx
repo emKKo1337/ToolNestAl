@@ -3,12 +3,12 @@
 import Link from "next/link";
 
 const navLinks = [
-  { label: "AI Tools", href: "#ai-tools" },
-  { label: "PDF Tools", href: "#pdf-tools" },
-  { label: "Developer", href: "#developer" },
-  { label: "Calculators", href: "#calculators" },
-  { label: "Pricing", href: "#pricing" },
-  { label: "Blog", href: "#blog" },
+  { label: "AI Tools", href: "/ai-tools" },
+  { label: "PDF Tools", href: "/pdf-tools" },
+  { label: "Developer", href: "/developer-tools" },
+  { label: "Calculators", href: "/calculators" },
+  { label: "Pricing", href: "/pricing" },
+  { label: "Blog", href: "/blog" },
 ];
 
 export default function Header() {

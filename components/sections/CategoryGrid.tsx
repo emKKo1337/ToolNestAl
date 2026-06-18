@@ -16,7 +16,7 @@ const categories: Category[] = [
     icon: "smart_toy",
     iconColor: "#ddb7ff",
     bgColor: "rgba(221,183,255,0.1)",
-    href: "#ai-tools",
+    href: "/ai-tools",
   },
   {
     id: "pdf-tools",
@@ -24,7 +24,7 @@ const categories: Category[] = [
     icon: "picture_as_pdf",
     iconColor: "#ffb4ab",
     bgColor: "rgba(255,180,171,0.1)",
-    href: "#pdf-tools",
+    href: "/pdf-tools",
   },
   {
     id: "image-tools",
@@ -32,7 +32,7 @@ const categories: Category[] = [
     icon: "image",
     iconColor: "#4cd7f6",
     bgColor: "rgba(76,215,246,0.1)",
-    href: "#image-tools",
+    href: "/image-tools",
   },
   {
     id: "developer-tools",
@@ -40,7 +40,7 @@ const categories: Category[] = [
     icon: "terminal",
     iconColor: "#0566d9",
     bgColor: "rgba(5,102,217,0.1)",
-    href: "#developer",
+    href: "/developer-tools",
   },
 ];
 
