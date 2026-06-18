@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef, useCallback, useMemo } from "react";
 import { useRouter } from "next/navigation";
 import { tools, categories } from "@/lib/tools";
+import { useFavorites } from "@/lib/favorites";
 
 const searchTags = [
   "AI Chat",
@@ -108,6 +109,7 @@ export default function Hero() {
   }, [query]);
 
   const results = useMemo(() => searchTools(debouncedQuery), [debouncedQuery]);
+  const { isFavorite } = useFavorites();
 
   // Open dropdown whenever there's a query; close when empty
   useEffect(() => {
@@ -300,6 +302,15 @@ export default function Hero() {
                     >
                       {r.categoryName}
                     </span>
+                    {isFavorite(r.slug) && (
+                      <span
+                        className="material-symbols-outlined text-[16px] shrink-0"
+                        style={{ color: "#ff6482", fontVariationSettings: "'FILL' 1" }}
+                        aria-label="Favorited"
+                      >
+                        favorite
+                      </span>
+                    )}
                     {i === activeIndex && (
                       <span
                         className="material-symbols-outlined text-[16px] shrink-0"

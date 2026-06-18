@@ -3,6 +3,7 @@
 import { useState, useCallback } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useFavorites } from "@/lib/favorites";
 
 const navLinks = [
   { label: "AI Tools",      href: "/ai-tools" },
@@ -16,13 +17,14 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
   const closeMenu = useCallback(() => setMenuOpen(false), []);
+  const { count } = useFavorites();
 
   return (
     <header
       className="fixed top-0 w-full z-50 border-b border-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.3)]"
       style={{ background: "rgba(19,19,19,0.6)", backdropFilter: "blur(24px)", WebkitBackdropFilter: "blur(24px)" }}
     >
-      {/* Skip to content — WCAG 2.1 §2.4.1 */}
+      {/* Skip to content */}
       <a
         href="#main-content"
         className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:rounded-lg focus:text-white focus:text-sm focus:font-semibold"
@@ -67,8 +69,37 @@ export default function Header() {
           })}
         </nav>
 
-        {/* Desktop CTA */}
+        {/* Desktop actions */}
         <div className="hidden md:flex items-center gap-3">
+          <Link
+            href="/favorites"
+            aria-label={`Favorites${count > 0 ? ` (${count})` : ""}`}
+            className="flex items-center gap-1.5 px-4 py-2 rounded-xl text-[14px] font-semibold transition-colors duration-200"
+            style={{
+              color: pathname === "/favorites" ? "#ff6482" : "#cfc2d6",
+              background: pathname === "/favorites" ? "rgba(255,100,130,0.10)" : "transparent",
+            }}
+          >
+            <span
+              className="material-symbols-outlined text-[18px]"
+              style={{
+                color: count > 0 ? "#ff6482" : "inherit",
+                fontVariationSettings: count > 0 ? "'FILL' 1" : "'FILL' 0",
+              }}
+              aria-hidden="true"
+            >
+              favorite
+            </span>
+            Favorites
+            {count > 0 && (
+              <span
+                className="ml-0.5 min-w-[20px] h-5 px-1.5 flex items-center justify-center rounded-full text-[11px] font-bold"
+                style={{ background: "#ff6482", color: "#fff" }}
+              >
+                {count}
+              </span>
+            )}
+          </Link>
           <Link
             href="/"
             className="btn-primary text-white text-[14px] font-semibold px-5 py-2 rounded-xl"
@@ -119,6 +150,36 @@ export default function Header() {
               </Link>
             );
           })}
+          {/* Favorites in mobile menu */}
+          <Link
+            href="/favorites"
+            onClick={closeMenu}
+            className="flex items-center gap-3 px-4 py-3 rounded-xl text-[15px] font-medium transition-colors"
+            style={{
+              color: pathname === "/favorites" ? "#ff6482" : "#cfc2d6",
+              background: pathname === "/favorites" ? "rgba(255,100,130,0.08)" : "transparent",
+            }}
+          >
+            <span
+              className="material-symbols-outlined text-[18px]"
+              style={{
+                color: count > 0 ? "#ff6482" : "inherit",
+                fontVariationSettings: count > 0 ? "'FILL' 1" : "'FILL' 0",
+              }}
+              aria-hidden="true"
+            >
+              favorite
+            </span>
+            Favorites
+            {count > 0 && (
+              <span
+                className="ml-auto min-w-[20px] h-5 px-1.5 flex items-center justify-center rounded-full text-[11px] font-bold"
+                style={{ background: "#ff6482", color: "#fff" }}
+              >
+                {count}
+              </span>
+            )}
+          </Link>
           <div className="pt-3 mt-2 border-t border-white/10">
             <Link
               href="/"

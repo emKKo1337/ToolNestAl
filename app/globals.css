@@ -79,6 +79,24 @@ body {
   box-shadow: 0 0 0 4px rgba(221, 183, 255, 0.2);
 }
 
+/* ─── Heart button animation ─────────────────────────────────── */
+@keyframes heart-pop {
+  0%   { transform: scale(1); }
+  40%  { transform: scale(1.4); }
+  70%  { transform: scale(0.88); }
+  100% { transform: scale(1); }
+}
+
+.heart-pop {
+  animation: heart-pop 0.35s cubic-bezier(0.36, 0.07, 0.19, 0.97);
+}
+
+/* ─── Toast slide-up animation ───────────────────────────────── */
+@keyframes toast-in {
+  from { opacity: 0; transform: translateY(12px) scale(0.95); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
 /* ─── Material Symbols base styles ───────────────────────────── */
 .material-symbols-outlined {
   font-family: "Material Symbols Outlined";

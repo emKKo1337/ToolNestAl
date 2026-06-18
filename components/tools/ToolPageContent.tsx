@@ -47,6 +47,7 @@ export default function ToolPageContent({ tool, toolComponent }: ToolPageContent
           ]}
         />
         <ToolHero
+          slug={tool.slug}
           name={tool.name}
           shortDescription={tool.shortDescription}
           icon={tool.icon}

@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { FavoritesProvider } from "@/lib/favorites";
+import { ToastProvider } from "@/components/ui/Toast";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -127,7 +129,11 @@ export default function RootLayout({
         />
       </head>
       <body className="antialiased overflow-x-hidden min-h-screen relative flex flex-col">
-        {children}
+        <FavoritesProvider>
+          <ToastProvider>
+            {children}
+          </ToastProvider>
+        </FavoritesProvider>
       </body>
     </html>
   );

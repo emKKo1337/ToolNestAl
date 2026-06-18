@@ -1,6 +1,9 @@
+"use client";
+
 import Link from "next/link";
 import type { ToolCategory, Tool } from "@/lib/tools";
 import Breadcrumb from "@/components/ui/Breadcrumb";
+import HeartButton from "@/components/ui/HeartButton";
 
 export default function CategoryPageContent({ category, tools }: { category: ToolCategory; tools: Tool[] }) {
   return (
@@ -17,18 +20,23 @@ export default function CategoryPageContent({ category, tools }: { category: Too
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {tools.map((tool) => (
-          <Link key={tool.slug} href={`/${category.slug}/${tool.slug}`} className="glass-panel glass-panel-hover rounded-2xl p-6 flex flex-col gap-4 group" aria-label={`Open ${tool.name}`}>
+          <div key={tool.slug} className="glass-panel glass-panel-hover rounded-2xl p-6 flex flex-col gap-4 group relative">
             <div className="flex items-center gap-4">
               <div className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style={{ backgroundColor: `${tool.iconColor}18` }}>
                 <span className="material-symbols-outlined text-[24px]" style={{ color: tool.iconColor, fontVariationSettings: "'FILL' 1" }} aria-hidden="true">{tool.icon}</span>
               </div>
-              <h2 className="text-[18px] font-bold text-[#e2e2e2] group-hover:text-[#ddb7ff] transition-colors leading-tight">{tool.name}</h2>
+              <h2 className="text-[18px] font-bold text-[#e2e2e2] group-hover:text-[#ddb7ff] transition-colors leading-tight flex-1">{tool.name}</h2>
+              <HeartButton slug={tool.slug} name={tool.name} size="sm" />
             </div>
             <p className="text-[14px] leading-[22px] text-[#988d9f]">{tool.shortDescription}</p>
-            <div className="flex items-center gap-1 text-[#ddb7ff] text-[13px] font-semibold mt-auto">
+            <Link
+              href={`/${category.slug}/${tool.slug}`}
+              className="flex items-center gap-1 text-[#ddb7ff] text-[13px] font-semibold mt-auto"
+              aria-label={`Open ${tool.name}`}
+            >
               Try it free <span className="material-symbols-outlined text-[16px]" aria-hidden="true">arrow_forward</span>
-            </div>
-          </Link>
+            </Link>
+          </div>
         ))}
       </div>
     </div>
