@@ -2,7 +2,7 @@
 
 import { useState, useCallback } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useFavorites } from "@/lib/favorites";
 
 const navLinks = [
@@ -16,8 +16,18 @@ const navLinks = [
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
+  const router = useRouter();
   const closeMenu = useCallback(() => setMenuOpen(false), []);
   const { count } = useFavorites();
+
+  const handleGetStarted = useCallback(() => {
+    closeMenu();
+    if (pathname === "/") {
+      document.getElementById("popular-tools")?.scrollIntoView({ behavior: "smooth", block: "start" });
+    } else {
+      router.push("/#popular-tools");
+    }
+  }, [pathname, router, closeMenu]);
 
   return (
     <header
@@ -69,7 +79,7 @@ export default function Header() {
           })}
         </nav>
 
-        {/* Desktop actions */}
+        {/* Desktop actions — spacer to right-align */}
         <div className="hidden md:flex items-center gap-3">
           <Link
             href="/favorites"
@@ -100,12 +110,12 @@ export default function Header() {
               </span>
             )}
           </Link>
-          <Link
-            href="/"
+          <button
+            onClick={handleGetStarted}
             className="btn-primary text-white text-[14px] font-semibold px-5 py-2 rounded-xl"
           >
             Get Started
-          </Link>
+          </button>
         </div>
 
         {/* Mobile hamburger */}

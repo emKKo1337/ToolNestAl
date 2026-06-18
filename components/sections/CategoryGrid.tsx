@@ -46,7 +46,7 @@ const categories: Category[] = [
 
 export default function CategoryGrid() {
   return (
-    <section aria-labelledby="categories-heading">
+    <section id="popular-tools" aria-labelledby="categories-heading">
       <div className="flex justify-between items-end mb-8">
         <h2
           id="categories-heading"
