@@ -9,6 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@codemirror/lang-html": "^6.4.11",
     "@codemirror/lang-json": "^6.0.2",
     "@imgly/background-removal": "^1.7.0",
     "@types/jszip": "^3.4.0",
