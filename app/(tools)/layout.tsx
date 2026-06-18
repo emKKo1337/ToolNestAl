@@ -7,7 +7,7 @@ export default function ToolsLayout({ children }: { children: React.ReactNode })
     <>
       <MeshBackground />
       <Header />
-      <main className="flex-grow flex flex-col">{children}</main>
+      <main id="main-content" className="flex-grow flex flex-col">{children}</main>
       <Footer />
     </>
   );

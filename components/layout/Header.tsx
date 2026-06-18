@@ -1,31 +1,46 @@
 "use client";
 
+import { useState, useCallback } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const navLinks = [
-  { label: "AI Tools", href: "/ai-tools" },
-  { label: "PDF Tools", href: "/pdf-tools" },
-  { label: "Developer", href: "/developer-tools" },
-  { label: "Calculators", href: "/calculators" },
-  { label: "Pricing", href: "/pricing" },
-  { label: "Blog", href: "/blog" },
+  { label: "AI Tools",      href: "/ai-tools" },
+  { label: "PDF Tools",     href: "/pdf-tools" },
+  { label: "Image Tools",   href: "/image-tools" },
+  { label: "Developer",     href: "/developer-tools" },
+  { label: "Calculators",   href: "/calculators" },
 ];
 
 export default function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
+  const closeMenu = useCallback(() => setMenuOpen(false), []);
+
   return (
     <header
       className="fixed top-0 w-full z-50 border-b border-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.3)]"
-      style={{ background: "rgba(19,19,19,0.4)", backdropFilter: "blur(24px)", WebkitBackdropFilter: "blur(24px)" }}
+      style={{ background: "rgba(19,19,19,0.6)", backdropFilter: "blur(24px)", WebkitBackdropFilter: "blur(24px)" }}
     >
+      {/* Skip to content — WCAG 2.1 §2.4.1 */}
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:rounded-lg focus:text-white focus:text-sm focus:font-semibold"
+        style={{ background: "#ddb7ff", color: "#131313" }}
+      >
+        Skip to main content
+      </a>
+
       <div className="flex justify-between items-center h-20 px-4 md:px-[48px] max-w-[1280px] mx-auto w-full">
         {/* Brand */}
         <Link
           href="/"
-          className="text-[24px] font-extrabold tracking-tight text-[#e2e2e2] flex items-center gap-2 leading-none"
-          aria-label="ToolNest AI Home"
+          className="text-[22px] font-extrabold tracking-tight text-[#e2e2e2] flex items-center gap-2 leading-none shrink-0"
+          aria-label="ToolNest AI — Go to homepage"
+          onClick={closeMenu}
         >
           <span
-            className="material-symbols-outlined text-[#ddb7ff] text-[28px]"
+            className="material-symbols-outlined text-[#ddb7ff] text-[26px]"
             style={{ fontVariationSettings: "'FILL' 1" }}
             aria-hidden="true"
           >
@@ -35,43 +50,86 @@ export default function Header() {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav
-          className="hidden md:flex gap-8 items-center text-[16px] font-medium"
-          aria-label="Main navigation"
-        >
-          {navLinks.map((link) => (
-            <Link
-              key={link.label}
-              href={link.href}
-              className="text-[#cfc2d6] hover:text-[#e2e2e2] transition-colors duration-200"
-            >
-              {link.label}
-            </Link>
-          ))}
+        <nav className="hidden md:flex gap-6 items-center text-[15px] font-medium" aria-label="Main navigation">
+          {navLinks.map((link) => {
+            const active = pathname?.startsWith(link.href);
+            return (
+              <Link
+                key={link.label}
+                href={link.href}
+                className="transition-colors duration-200"
+                style={{ color: active ? "#ddb7ff" : "#cfc2d6" }}
+                aria-current={active ? "page" : undefined}
+              >
+                {link.label}
+              </Link>
+            );
+          })}
         </nav>
 
-        {/* Actions */}
-        <div className="flex items-center gap-4">
-          <button
-            className="material-symbols-outlined text-[#cfc2d6] hover:text-[#e2e2e2] transition-colors duration-200 text-[24px]"
-            aria-label="Toggle dark mode"
-          >
-            dark_mode
-          </button>
-          <button
-            className="hidden sm:block text-[#cfc2d6] hover:text-[#e2e2e2] text-[16px] font-medium px-4 py-2 transition-all duration-300"
-            aria-label="Login"
-          >
-            Login
-          </button>
-          <button
-            className="btn-primary text-white text-[16px] font-medium px-6 py-2 rounded-lg"
-            aria-label="Get started"
+        {/* Desktop CTA */}
+        <div className="hidden md:flex items-center gap-3">
+          <Link
+            href="/"
+            className="btn-primary text-white text-[14px] font-semibold px-5 py-2 rounded-xl"
           >
             Get Started
-          </button>
+          </Link>
         </div>
+
+        {/* Mobile hamburger */}
+        <button
+          className="md:hidden flex items-center justify-center w-10 h-10 rounded-xl transition-colors"
+          style={{ color: "#cfc2d6", background: menuOpen ? "rgba(255,255,255,0.08)" : "transparent" }}
+          onClick={() => setMenuOpen((v) => !v)}
+          aria-expanded={menuOpen}
+          aria-controls="mobile-menu"
+          aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
+        >
+          <span className="material-symbols-outlined text-[24px]" aria-hidden="true">
+            {menuOpen ? "close" : "menu"}
+          </span>
+        </button>
       </div>
+
+      {/* Mobile Menu */}
+      {menuOpen && (
+        <div
+          id="mobile-menu"
+          className="md:hidden border-t border-white/10 px-4 py-4 flex flex-col gap-1"
+          style={{ background: "rgba(19,19,19,0.97)" }}
+          role="navigation"
+          aria-label="Mobile navigation"
+        >
+          {navLinks.map((link) => {
+            const active = pathname?.startsWith(link.href);
+            return (
+              <Link
+                key={link.label}
+                href={link.href}
+                onClick={closeMenu}
+                className="flex items-center gap-3 px-4 py-3 rounded-xl text-[15px] font-medium transition-colors"
+                style={{
+                  color: active ? "#ddb7ff" : "#cfc2d6",
+                  background: active ? "rgba(221,183,255,0.08)" : "transparent",
+                }}
+                aria-current={active ? "page" : undefined}
+              >
+                {link.label}
+              </Link>
+            );
+          })}
+          <div className="pt-3 mt-2 border-t border-white/10">
+            <Link
+              href="/"
+              onClick={closeMenu}
+              className="btn-primary text-white text-[14px] font-semibold px-5 py-2.5 rounded-xl w-full flex items-center justify-center"
+            >
+              Get Started
+            </Link>
+          </div>
+        </div>
+      )}
     </header>
   );
 }
