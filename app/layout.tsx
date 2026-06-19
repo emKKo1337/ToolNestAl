@@ -12,7 +12,7 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
-const SITE_URL = "https://toolnest.ai";
+const SITE_URL = "https://www.toolnestai.net";
 const SITE_NAME = "ToolNest AI";
 const SITE_TITLE = "ToolNest AI — Free AI Tools, PDF Utilities, Image Editors & More";
 const SITE_DESCRIPTION =

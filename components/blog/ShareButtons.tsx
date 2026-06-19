@@ -2,7 +2,7 @@
 
 import { useCallback, useState } from "react";
 
-const SITE = "https://toolnest.ai";
+const SITE = "https://www.toolnestai.net";
 
 export function ShareButtons({ slug, title }: { slug: string; title: string }) {
   const [copied, setCopied] = useState(false);

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import type { Tool, ToolCategory } from "@/lib/tools";
 
-const SITE_URL = "https://toolnest.ai";
+const SITE_URL = "https://www.toolnestai.net";
 const SITE_NAME = "ToolNest AI";
 const OG_IMAGE = `${SITE_URL}/og-image.png`;
 const TWITTER_HANDLE = "@toolnestai";

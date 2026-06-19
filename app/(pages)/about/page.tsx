@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumb from "@/components/ui/Breadcrumb";
 
-const SITE_URL = "https://toolnest.ai";
+const SITE_URL = "https://www.toolnestai.net";
 
 export const metadata: Metadata = {
   title: "About ToolNest AI — Our Mission, Vision & Story",

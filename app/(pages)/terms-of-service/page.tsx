@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumb from "@/components/ui/Breadcrumb";
 
-const SITE_URL = "https://toolnest.ai";
+const SITE_URL = "https://www.toolnestai.net";
 const LAST_UPDATED = "19 June 2026";
 
 export const metadata: Metadata = {
@@ -27,7 +27,7 @@ const sections = [
       <p>
         By accessing or using ToolNest AI at{" "}
         <Link href="/" className="text-[#ddb7ff] hover:opacity-75 transition-opacity">
-          toolnest.ai
+          www.toolnestai.net
         </Link>{" "}
         (the &quot;Service&quot;), you agree to be bound by these Terms of Service (&quot;Terms&quot;).
         If you do not agree to these Terms, please do not use the Service. ToolNest AI reserves

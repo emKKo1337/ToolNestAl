@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { tools, categories } from "@/lib/tools";
 import { getAllPosts } from "@/lib/blog";
 
-const BASE = "https://toolnest.ai";
+const BASE = "https://www.toolnestai.net";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();

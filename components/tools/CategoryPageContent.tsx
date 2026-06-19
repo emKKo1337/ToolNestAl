@@ -5,7 +5,7 @@ import type { ToolCategory, Tool } from "@/lib/tools";
 import Breadcrumb from "@/components/ui/Breadcrumb";
 import HeartButton from "@/components/ui/HeartButton";
 
-const SITE_URL = "https://toolnest.ai";
+const SITE_URL = "https://www.toolnestai.net";
 
 export default function CategoryPageContent({ category, tools }: { category: ToolCategory; tools: Tool[] }) {
   const itemListData = {

@@ -13,7 +13,7 @@ export default function robots(): MetadataRoute.Robots {
         allow: ["/og-image.png", "/apple-touch-icon.png", "/icon-192.png", "/icon-512.png"],
       },
     ],
-    sitemap: "https://toolnest.ai/sitemap.xml",
-    host: "https://toolnest.ai",
+    sitemap: "https://www.toolnestai.net/sitemap.xml",
+    host: "https://www.toolnestai.net",
   };
 }

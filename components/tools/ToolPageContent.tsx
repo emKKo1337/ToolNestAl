@@ -6,7 +6,7 @@ import ToolPlaceholder from "@/components/ui/ToolPlaceholder";
 import FAQSection from "@/components/ui/FAQSection";
 import RelatedTools from "@/components/ui/RelatedTools";
 
-const SITE_URL = "https://toolnest.ai";
+const SITE_URL = "https://www.toolnestai.net";
 
 interface ToolPageContentProps {
   tool: Tool;

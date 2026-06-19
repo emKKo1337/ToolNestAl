@@ -3,7 +3,7 @@ import Link from "next/link";
 import Breadcrumb from "@/components/ui/Breadcrumb";
 import ContactForm from "@/components/pages/ContactForm";
 
-const SITE_URL = "https://toolnest.ai";
+const SITE_URL = "https://www.toolnestai.net";
 
 export const metadata: Metadata = {
   title: "Contact Us — ToolNest AI",

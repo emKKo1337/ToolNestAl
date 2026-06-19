@@ -20,7 +20,7 @@ import { AuthorCard } from "@/components/blog/AuthorCard";
 import { PrevNextNav } from "@/components/blog/PrevNextNav";
 import { RelatedPosts } from "@/components/blog/RelatedPosts";
 
-const SITE_URL = "https://toolnest.ai";
+const SITE_URL = "https://www.toolnestai.net";
 const SITE_NAME = "ToolNest AI";
 
 interface PageProps {

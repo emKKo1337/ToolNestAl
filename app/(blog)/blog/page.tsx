@@ -13,7 +13,7 @@ import { CategoryFilter } from "@/components/blog/CategoryFilter";
 import { Pagination } from "@/components/blog/Pagination";
 import { BlogEmpty } from "@/components/blog/BlogEmpty";
 
-const SITE_URL = "https://toolnest.ai";
+const SITE_URL = "https://www.toolnestai.net";
 const SITE_NAME = "ToolNest AI";
 const PER_PAGE = 9;
 
