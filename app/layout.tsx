@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { FavoritesProvider } from "@/lib/favorites";
 import { ToastProvider } from "@/components/ui/Toast";
+import { tools } from "@/lib/tools";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -15,7 +16,7 @@ const SITE_URL = "https://toolnest.ai";
 const SITE_NAME = "ToolNest AI";
 const SITE_TITLE = "ToolNest AI — Free AI Tools, PDF Utilities, Image Editors & More";
 const SITE_DESCRIPTION =
-  "32+ free online tools — AI chat, PDF merge/split/compress, image compressor, JSON formatter, QR code generator, password generator and more. No sign-up required.";
+  `${tools.length}+ free online tools — AI chat, PDF merge/split/compress, image compressor, JSON formatter, QR code generator, password generator and more. No sign-up required.`;
 
 export const viewport: Viewport = {
   themeColor: "#131313",
