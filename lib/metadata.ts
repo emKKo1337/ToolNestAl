@@ -29,6 +29,7 @@ export function generateToolMetadata(tool: Tool): Metadata {
       type: "website",
       url,
       siteName: SITE_NAME,
+      locale: "en_US",
       title: `${tool.name} — Free Online ${tool.name} | ${SITE_NAME}`,
       description: ogDescription,
       images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: `${tool.name} | ${SITE_NAME}` }],
@@ -39,7 +40,7 @@ export function generateToolMetadata(tool: Tool): Metadata {
       creator: TWITTER_HANDLE,
       title: `${tool.name} — Free Online ${tool.name} | ${SITE_NAME}`,
       description,
-      images: [OG_IMAGE],
+      images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: `${tool.name} | ${SITE_NAME}` }],
     },
   };
 }
@@ -89,6 +90,7 @@ export function generateCategoryMetadata(
       type: "website",
       url,
       siteName: SITE_NAME,
+      locale: "en_US",
       title: `${title} | ${SITE_NAME}`,
       description,
       images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: `${category.name} | ${SITE_NAME}` }],
@@ -99,7 +101,7 @@ export function generateCategoryMetadata(
       creator: TWITTER_HANDLE,
       title: `${title} | ${SITE_NAME}`,
       description,
-      images: [OG_IMAGE],
+      images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: `${category.name} | ${SITE_NAME}` }],
     },
   };
 }

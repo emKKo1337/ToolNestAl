@@ -49,6 +49,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       type: "article",
       url,
       siteName: SITE_NAME,
+      locale: "en_US",
       title: `${title} | ${SITE_NAME}`,
       description: post.description,
       publishedTime: post.publishedAt,
@@ -64,7 +65,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       creator: "@toolnestai",
       title: `${title} | ${SITE_NAME}`,
       description: post.description,
-      images: [imageUrl],
+      images: [{ url: imageUrl, width: 1200, height: 630, alt: post.imageAlt ?? title }],
     },
   };
 }

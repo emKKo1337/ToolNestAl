@@ -26,6 +26,7 @@ export const metadata: Metadata = {
     type: "website",
     url: `${SITE_URL}/blog`,
     siteName: SITE_NAME,
+    locale: "en_US",
     title: "Blog — AI Tools Guides, Tutorials & Tips | ToolNest AI",
     description:
       "Explore guides, tutorials, and tips on AI tools, PDF utilities, image editors, developer tools and more from the ToolNest AI team.",
@@ -38,7 +39,7 @@ export const metadata: Metadata = {
     title: "Blog — AI Tools Guides, Tutorials & Tips | ToolNest AI",
     description:
       "Explore guides, tutorials, and tips on AI tools, PDF utilities, image editors, developer tools and more from the ToolNest AI team.",
-    images: [`${SITE_URL}/og-image.png`],
+    images: [{ url: `${SITE_URL}/og-image.png`, width: 1200, height: 630, alt: "ToolNest AI Blog" }],
   },
 };
 

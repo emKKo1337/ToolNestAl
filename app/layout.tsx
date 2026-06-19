@@ -90,7 +90,7 @@ export const metadata: Metadata = {
     creator: "@toolnestai",
     title: SITE_TITLE,
     description: SITE_DESCRIPTION,
-    images: [`${SITE_URL}/og-image.png`],
+    images: [{ url: `${SITE_URL}/og-image.png`, width: 1200, height: 630, alt: `${SITE_NAME} — Free AI Tools, PDF Utilities & More` }],
   },
   icons: {
     icon: [
