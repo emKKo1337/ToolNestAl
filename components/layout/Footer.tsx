@@ -4,8 +4,8 @@ import { tools } from "@/lib/tools";
 const footerLinks = [
   { heading: "Product", links: [{ label: "AI Tools", href: "/ai-tools" }, { label: "PDF Tools", href: "/pdf-tools" }, { label: "Image Tools", href: "/image-tools" }, { label: "Developer Tools", href: "/developer-tools" }] },
   { heading: "More", links: [{ label: "Calculators", href: "/calculators" }, { label: "Favorites", href: "/favorites" }, { label: "Blog", href: "/blog" }] },
-  { heading: "Company", links: [{ label: "About", href: "" }, { label: "Contact", href: "" }] },
-  { heading: "Legal", links: [{ label: "Privacy", href: "" }, { label: "Terms", href: "" }] },
+  { heading: "Company", links: [{ label: "About", href: "/about" }, { label: "Contact", href: "/contact" }] },
+  { heading: "Legal", links: [{ label: "Privacy", href: "/privacy-policy" }, { label: "Terms", href: "/terms-of-service" }, { label: "Cookies", href: "/cookie-policy" }] },
 ];
 
 export default function Footer() {
