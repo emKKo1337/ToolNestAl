@@ -1,14 +1,31 @@
 export default function ToolPlaceholder({ toolName }: { toolName: string }) {
   return (
-    <div className="glass-panel rounded-2xl p-8 md:p-12 mb-12 flex flex-col items-center justify-center text-center min-h-[320px] gap-6" style={{ borderStyle: "dashed", borderColor: "rgba(221,183,255,0.2)" }}>
-      <div className="w-20 h-20 rounded-full bg-[rgba(221,183,255,0.08)] flex items-center justify-center">
-        <span className="material-symbols-outlined text-[40px] text-[#ddb7ff]" style={{ fontVariationSettings: "'FILL' 0" }} aria-hidden="true">construction</span>
+    <div
+      className="glass-panel rounded-2xl p-8 md:p-16 mb-12 flex flex-col items-center justify-center text-center min-h-[360px] gap-6"
+      style={{ borderStyle: "dashed", borderColor: "rgba(221,183,255,0.18)" }}
+    >
+      <div
+        className="w-20 h-20 rounded-2xl flex items-center justify-center"
+        style={{ background: "rgba(221,183,255,0.08)" }}
+      >
+        <span
+          className="material-symbols-outlined text-[38px] text-[#ddb7ff]"
+          style={{ fontVariationSettings: "'FILL' 0, 'wght' 300" }}
+          aria-hidden="true"
+        >
+          construction
+        </span>
       </div>
-      <div>
-        <h2 className="text-[22px] font-bold text-[#e2e2e2] mb-2">{toolName} — Coming Soon</h2>
-        <p className="text-[16px] text-[#988d9f] max-w-md">This tool is currently in development. The interface and full functionality will be available shortly.</p>
+      <div className="flex flex-col gap-2 max-w-sm">
+        <h2 className="text-[22px] font-bold text-[#e2e2e2]">{toolName} — Coming Soon</h2>
+        <p className="text-[15px] leading-[24px] text-[#7a6d84]">
+          This tool is currently in development and will be available shortly.
+        </p>
       </div>
-      <button className="btn-primary text-white text-[14px] font-semibold px-6 py-3 rounded-xl">Notify Me When Ready</button>
+      <button className="btn-ghost text-[14px] font-semibold px-6 py-2.5 rounded-xl flex items-center gap-2">
+        <span className="material-symbols-outlined text-[18px] text-[#ddb7ff]" aria-hidden="true">notifications</span>
+        Notify Me When Ready
+      </button>
     </div>
   );
 }

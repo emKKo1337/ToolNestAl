@@ -32,13 +32,12 @@ export default function ToolPageContent({ tool, toolComponent }: ToolPageContent
 
   return (
     <>
-      {/* Per-tool structured data */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
 
-      <div className="pt-32 pb-24 px-4 md:px-[48px] max-w-[1280px] mx-auto w-full">
+      <div className="pt-28 pb-24 px-4 md:px-[48px] max-w-[1280px] mx-auto w-full">
         <Breadcrumb
           items={[
             { label: "Home", href: "/" },
@@ -55,22 +54,32 @@ export default function ToolPageContent({ tool, toolComponent }: ToolPageContent
           badge="Free"
         />
 
+        {/* Tool interface */}
         {toolComponent ?? <ToolPlaceholder toolName={tool.name} />}
 
-        <section className="mb-16" aria-labelledby="about-heading">
+        {/* About section */}
+        <section className="mb-12 mt-4" aria-labelledby="about-heading">
+          <div className="divider mb-10" />
           <h2
             id="about-heading"
-            className="text-[28px] font-bold leading-[36px] tracking-[-0.02em] text-[#e2e2e2] mb-4"
+            className="text-[22px] font-bold leading-[30px] tracking-[-0.02em] text-[#e2e2e2] mb-3"
           >
             About {tool.name}
           </h2>
-          <p className="text-[17px] leading-[28px] text-[#cfc2d6] max-w-3xl">
+          <p className="text-[15px] leading-[26px] text-[#9b8da8] max-w-3xl">
             {tool.description}
           </p>
         </section>
 
+        <div className="divider mb-10" />
         <FAQSection faqs={tool.faqs} />
-        <RelatedTools tools={relatedTools} />
+
+        {relatedTools.length > 0 && (
+          <>
+            <div className="divider mb-10" />
+            <RelatedTools tools={relatedTools} />
+          </>
+        )}
       </div>
     </>
   );
