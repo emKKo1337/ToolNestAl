@@ -14,6 +14,5 @@ export default function robots(): MetadataRoute.Robots {
       },
     ],
     sitemap: "https://www.toolnestai.net/sitemap.xml",
-    host: "https://www.toolnestai.net",
   };
 }
