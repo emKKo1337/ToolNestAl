@@ -1,5 +1,20 @@
 @import "tailwindcss";
 
+/* ─── Material Symbols — hide until font loads to prevent CLS ── */
+.material-symbols-outlined {
+  font-family: "Material Symbols Outlined", sans-serif;
+  font-size: inherit;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+}
+
 /* ─── Base ───────────────────────────────────────────────────── */
 html {
   scroll-behavior: smooth;
@@ -86,18 +101,21 @@ body {
 
 .mesh-blob {
   position: absolute;
-  filter: blur(120px);
+  filter: blur(80px);
   border-radius: 50%;
-  opacity: 0.12;
+  opacity: 0.10;
   animation: float 22s infinite alternate ease-in-out;
-  will-change: transform;
+  contain: strict;
 }
 
 @keyframes float {
   0%   { transform: translate(0, 0) scale(1); }
-  33%  { transform: translate(40px, -40px) scale(1.08); }
-  66%  { transform: translate(-40px, 40px) scale(0.92); }
+  50%  { transform: translate(30px, -30px) scale(1.06); }
   100% { transform: translate(0, 0) scale(1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mesh-blob { animation: none; }
 }
 
 /* ─── Primary button ─────────────────────────────────────────── */

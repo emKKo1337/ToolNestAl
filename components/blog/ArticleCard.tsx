@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { BlogPost } from "@/lib/blog";
 
 export function ArticleCard({ post }: { post: BlogPost }) {
@@ -19,11 +20,12 @@ export function ArticleCard({ post }: { post: BlogPost }) {
         aria-hidden="true"
       >
         {post.image ? (
-          /* eslint-disable-next-line @next/next/no-img-element */
-          <img
+          <Image
             src={post.image}
             alt={post.imageAlt ?? post.title}
-            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            fill
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            className="object-cover transition-transform duration-500 group-hover:scale-105"
             loading="lazy"
           />
         ) : (
