@@ -1,9 +1,10 @@
 import Link from "next/link";
+import { tools } from "@/lib/tools";
 
 const footerLinks = [
   { heading: "Product", links: [{ label: "AI Tools", href: "/ai-tools" }, { label: "PDF Tools", href: "/pdf-tools" }, { label: "Image Tools", href: "/image-tools" }, { label: "Developer Tools", href: "/developer-tools" }] },
-  { heading: "More", links: [{ label: "Calculators", href: "/calculators" }, { label: "Favorites", href: "/favorites" }] },
-  { heading: "Company", links: [{ label: "About", href: "" }, { label: "Blog", href: "" }, { label: "Contact", href: "" }] },
+  { heading: "More", links: [{ label: "Calculators", href: "/calculators" }, { label: "Favorites", href: "/favorites" }, { label: "Blog", href: "/blog" }] },
+  { heading: "Company", links: [{ label: "About", href: "" }, { label: "Contact", href: "" }] },
   { heading: "Legal", links: [{ label: "Privacy", href: "" }, { label: "Terms", href: "" }] },
 ];
 
@@ -30,7 +31,7 @@ export default function Footer() {
               ToolNest AI
             </Link>
             <p className="text-[14px] leading-[22px] text-[#7a6d84] max-w-[220px]">
-              100+ free AI &amp; online tools — no sign-up required.
+              {tools.length}+ free AI &amp; online tools — no sign-up required.
             </p>
             <p className="text-[13px] text-[#4d4354] mt-auto">
               © {year} ToolNest AI

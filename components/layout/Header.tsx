@@ -11,6 +11,7 @@ const navLinks = [
   { label: "Image Tools",   href: "/image-tools" },
   { label: "Developer",     href: "/developer-tools" },
   { label: "Calculators",   href: "/calculators" },
+  { label: "Blog",          href: "/blog" },
 ];
 
 export default function Header() {
