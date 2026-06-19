@@ -143,6 +143,19 @@ export default function RootLayout({
             }),
           }}
         />
+        {/* JSON-LD structured data — Organization */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: SITE_NAME,
+              url: SITE_URL,
+              logo: `${SITE_URL}/icon-512.png`,
+            }),
+          }}
+        />
       </head>
       <body className="antialiased overflow-x-hidden min-h-screen relative flex flex-col">
         <FavoritesProvider>
