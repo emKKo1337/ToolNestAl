@@ -5,9 +5,39 @@ import type { ToolCategory, Tool } from "@/lib/tools";
 import Breadcrumb from "@/components/ui/Breadcrumb";
 import HeartButton from "@/components/ui/HeartButton";
 
+const SITE_URL = "https://toolnest.ai";
+
 export default function CategoryPageContent({ category, tools }: { category: ToolCategory; tools: Tool[] }) {
+  const itemListData = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: category.name,
+    description: category.description,
+    url: `${SITE_URL}/${category.slug}`,
+    numberOfItems: tools.length,
+    itemListElement: tools.map((tool, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: tool.name,
+      description: tool.shortDescription,
+      url: `${SITE_URL}/${tool.categorySlug}/${tool.slug}`,
+    })),
+  };
+
+  const breadcrumbData = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+      { "@type": "ListItem", position: 2, name: category.name, item: `${SITE_URL}/${category.slug}` },
+    ],
+  };
+
   return (
-    <div className="pt-32 pb-24 px-4 md:px-[48px] max-w-[1280px] mx-auto w-full">
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListData) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+      <div className="pt-32 pb-24 px-4 md:px-[48px] max-w-[1280px] mx-auto w-full">
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: category.name }]} />
 
       {/* Page header */}
@@ -73,5 +103,6 @@ export default function CategoryPageContent({ category, tools }: { category: Too
         ))}
       </div>
     </div>
+    </>
   );
 }

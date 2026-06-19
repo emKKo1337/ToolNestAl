@@ -6,7 +6,11 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/api/", "/_next/"],
+        disallow: ["/api/", "/_next/", "/favorites"],
+      },
+      {
+        userAgent: "Googlebot-Image",
+        allow: ["/og-image.png", "/apple-touch-icon.png", "/icon-192.png", "/icon-512.png"],
       },
     ],
     sitemap: "https://toolnest.ai/sitemap.xml",

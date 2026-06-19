@@ -13,9 +13,9 @@ const inter = Inter({
 
 const SITE_URL = "https://toolnest.ai";
 const SITE_NAME = "ToolNest AI";
-const SITE_TITLE = "ToolNest AI | 100+ Free AI & Online Tools";
+const SITE_TITLE = "ToolNest AI — Free AI Tools, PDF Utilities, Image Editors & More";
 const SITE_DESCRIPTION =
-  "Boost your productivity with powerful AI tools, PDF utilities, image editors, developer tools, calculators and generators — all free, all in one place.";
+  "32+ free online tools — AI chat, PDF merge/split/compress, image compressor, JSON formatter, QR code generator, password generator and more. No sign-up required.";
 
 export const viewport: Viewport = {
   themeColor: "#131313",
@@ -32,14 +32,14 @@ export const metadata: Metadata = {
   },
   description: SITE_DESCRIPTION,
   keywords: [
+    "free online tools",
     "AI tools",
     "PDF tools",
-    "online tools",
-    "image editor",
+    "image tools",
     "developer tools",
-    "free tools",
-    "base64 encoder",
+    "calculators",
     "JSON formatter",
+    "Base64 encoder",
     "UUID generator",
     "regex tester",
     "hash generator",
@@ -48,6 +48,12 @@ export const metadata: Metadata = {
     "password generator",
     "word counter",
     "BMI calculator",
+    "image compressor",
+    "PDF merge",
+    "PDF split",
+    "remove background",
+    "AI text summarizer",
+    "AI translator",
   ],
   authors: [{ name: SITE_NAME, url: SITE_URL }],
   creator: SITE_NAME,
