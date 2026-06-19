@@ -22,10 +22,7 @@ export default function ToolPlaceholder({ toolName }: { toolName: string }) {
           This tool is currently in development and will be available shortly.
         </p>
       </div>
-      <button className="btn-ghost text-[14px] font-semibold px-6 py-2.5 rounded-xl flex items-center gap-2">
-        <span className="material-symbols-outlined text-[18px] text-[#ddb7ff]" aria-hidden="true">notifications</span>
-        Notify Me When Ready
-      </button>
+      <p className="text-[13px] text-[#4d4354] font-medium">Check back soon for updates.</p>
     </div>
   );
 }

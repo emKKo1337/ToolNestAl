@@ -3,8 +3,8 @@ import Link from "next/link";
 const footerLinks = [
   { heading: "Product", links: [{ label: "AI Tools", href: "/ai-tools" }, { label: "PDF Tools", href: "/pdf-tools" }, { label: "Image Tools", href: "/image-tools" }, { label: "Developer Tools", href: "/developer-tools" }] },
   { heading: "More", links: [{ label: "Calculators", href: "/calculators" }, { label: "Favorites", href: "/favorites" }] },
-  { heading: "Company", links: [{ label: "About", href: "#" }, { label: "Blog", href: "#" }, { label: "Contact", href: "#" }] },
-  { heading: "Legal", links: [{ label: "Privacy", href: "#" }, { label: "Terms", href: "#" }] },
+  { heading: "Company", links: [{ label: "About", href: "" }, { label: "Blog", href: "" }, { label: "Contact", href: "" }] },
+  { heading: "Legal", links: [{ label: "Privacy", href: "" }, { label: "Terms", href: "" }] },
 ];
 
 export default function Footer() {
@@ -43,15 +43,25 @@ export default function Footer() {
               <p className="text-[11px] font-semibold tracking-[0.1em] uppercase text-[#4d4354] mb-1">
                 {col.heading}
               </p>
-              {col.links.map((link) => (
-                <Link
-                  key={link.label}
-                  href={link.href}
-                  className="text-[14px] text-[#7a6d84] hover:text-[#ddb7ff] transition-colors duration-200 w-fit"
-                >
-                  {link.label}
-                </Link>
-              ))}
+              {col.links.map((link) =>
+                link.href ? (
+                  <Link
+                    key={link.label}
+                    href={link.href}
+                    className="text-[14px] text-[#7a6d84] hover:text-[#ddb7ff] transition-colors duration-200 w-fit"
+                  >
+                    {link.label}
+                  </Link>
+                ) : (
+                  <span
+                    key={link.label}
+                    className="text-[14px] text-[#4d4354] w-fit cursor-default"
+                    aria-label={`${link.label} — coming soon`}
+                  >
+                    {link.label}
+                  </span>
+                )
+              )}
             </div>
           ))}
         </div>

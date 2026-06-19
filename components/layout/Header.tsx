@@ -191,13 +191,12 @@ export default function Header() {
             )}
           </Link>
           <div className="pt-3 mt-2 border-t border-white/10">
-            <Link
-              href="/"
-              onClick={closeMenu}
+            <button
+              onClick={handleGetStarted}
               className="btn-primary text-white text-[14px] font-semibold px-5 py-2.5 rounded-xl w-full flex items-center justify-center"
             >
               Get Started
-            </Link>
+            </button>
           </div>
         </div>
       )}
