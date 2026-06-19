@@ -92,7 +92,7 @@ function searchTools(raw: string): SearchResult[] {
   return results.slice(0, 8);
 }
 
-export default function Hero() {
+export default function Hero({ toolCount }: { toolCount: number }) {
   const [query, setQuery] = useState("");
   const [debouncedQuery, setDebouncedQuery] = useState("");
   const [activeIndex, setActiveIndex] = useState(-1);
@@ -175,7 +175,7 @@ export default function Hero() {
         id="hero-heading"
         className="text-[40px] md:text-[64px] font-extrabold leading-[48px] md:leading-[72px] tracking-[-0.03em] md:tracking-[-0.04em] text-[#e2e2e2] mb-6"
       >
-        {tools.length}+ Free AI &amp; Online Tools <br className="hidden md:block" />
+        {toolCount}+ Free AI &amp; Online Tools <br className="hidden md:block" />
         <span className="gradient-text">in One Place</span>
       </h1>
 
