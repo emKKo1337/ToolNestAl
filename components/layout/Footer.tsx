@@ -108,17 +108,7 @@ export default function Footer() {
             {tools.length}+ tools. No sign-up required.
           </p>
           <p className="text-[12px] text-[#3d3347]">
-            Built with{" "}
-            <span aria-label="love" role="img">❤️</span>
-            {" "}using{" "}
-            <a
-              href="https://nextjs.org"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[#4d4354] hover:text-[#ddb7ff] transition-colors duration-200"
-            >
-              Next.js
-            </a>
+            © {year} ToolNest AI. All rights reserved.
           </p>
         </div>
 
