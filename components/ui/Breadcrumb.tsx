@@ -1,3 +1,4 @@
+import { memo } from "react";
 import Link from "next/link";
 
 interface BreadcrumbItem {
@@ -5,7 +6,7 @@ interface BreadcrumbItem {
   href?: string;
 }
 
-export default function Breadcrumb({ items }: { items: BreadcrumbItem[] }) {
+const Breadcrumb = memo(function Breadcrumb({ items }: { items: BreadcrumbItem[] }) {
   return (
     <nav aria-label="Breadcrumb" className="flex items-center gap-1.5 text-[13px] text-[#6b5b7a] mb-8 flex-wrap">
       {items.map((item, index) => (
@@ -29,4 +30,6 @@ export default function Breadcrumb({ items }: { items: BreadcrumbItem[] }) {
       ))}
     </nav>
   );
-}
+});
+
+export default Breadcrumb;

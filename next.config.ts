@@ -6,6 +6,19 @@ const nextConfig: NextConfig = {
   // Required to silence Turbopack warning when no turbopack config is set
   turbopack: {},
 
+  experimental: {
+    // Tree-shake these packages so only the symbols actually used are bundled
+    optimizePackageImports: [
+      "@codemirror/view",
+      "@codemirror/state",
+      "@codemirror/commands",
+      "@codemirror/language",
+      "@codemirror/lang-json",
+      "@codemirror/lang-html",
+      "codemirror",
+    ],
+  },
+
   // Security & performance headers
   async headers() {
     return [

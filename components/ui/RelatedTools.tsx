@@ -1,10 +1,11 @@
 "use client";
 
+import { memo } from "react";
 import Link from "next/link";
 import type { Tool } from "@/lib/tools";
 import HeartButton from "@/components/ui/HeartButton";
 
-export default function RelatedTools({ tools }: { tools: Tool[] }) {
+const RelatedTools = memo(function RelatedTools({ tools }: { tools: Tool[] }) {
   if (tools.length === 0) return null;
   return (
     <section aria-labelledby="related-heading">
@@ -46,4 +47,6 @@ export default function RelatedTools({ tools }: { tools: Tool[] }) {
       </div>
     </section>
   );
-}
+});
+
+export default RelatedTools;
