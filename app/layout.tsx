@@ -4,6 +4,7 @@ import "./globals.css";
 import { FavoritesProvider } from "@/lib/favorites";
 import { ToastProvider } from "@/components/ui/Toast";
 import { tools } from "@/lib/tools";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -150,6 +151,9 @@ export default function RootLayout({
           </ToastProvider>
         </FavoritesProvider>
       </body>
+      {process.env.NODE_ENV === "production" && (
+        <GoogleAnalytics gaId="G-Z9FDH9D6Q4" />
+      )}
     </html>
   );
 }
