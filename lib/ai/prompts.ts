@@ -44,7 +44,37 @@ export function buildTranslatePrompt(payload: TranslatePayload): string {
     payload.sourceLanguage && payload.sourceLanguage !== "Auto Detect"
       ? `from ${payload.sourceLanguage} `
       : "";
-  return `Translate the following text ${from}to ${payload.targetLanguage}:\n\n${payload.text}`;
+
+  const styleGuide =
+    payload.style === "professional"
+      ? "Use professional, polished language suitable for business communication."
+      : payload.style === "formal"
+      ? "Use formal, elevated language appropriate for official documents or correspondence."
+      : payload.style === "casual"
+      ? "Use casual, conversational language — natural and relaxed in tone."
+      : payload.style === "natural"
+      ? "Prioritise natural, fluent phrasing over literal accuracy. The result should read as if written natively in the target language."
+      : payload.style === "academic"
+      ? "Use precise, academic language appropriate for scholarly writing. Maintain technical terminology."
+      : "Produce a standard, accurate translation that closely follows the source text.";
+
+  const formatNote = payload.preserveFormatting
+    ? "Preserve the original text structure, paragraph breaks, and any numbered or bulleted lists."
+    : "";
+
+  return `Translate the following text ${from}to ${payload.targetLanguage}.
+
+Style: ${styleGuide}${formatNote ? `\n${formatNote}` : ""}
+
+RULES — follow exactly:
+- Preserve the original meaning completely. Never add or remove information.
+- Maintain correct grammar, punctuation, and natural sentence flow in the target language.
+- Output ONLY the translated text. No explanations, no labels, no commentary.
+- Never output Markdown.
+
+Text to translate:
+
+${payload.text}`;
 }
 
 export function buildSummarizePrompt(payload: SummarizePayload): string {

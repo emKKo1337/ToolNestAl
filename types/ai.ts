@@ -97,10 +97,20 @@ export type AIErrorCode =
 
 // ── Per-task payload types (used in services.ts) ──────────────────────────────
 
+export type TranslationStyle =
+  | "standard"
+  | "professional"
+  | "formal"
+  | "casual"
+  | "natural"
+  | "academic";
+
 export interface TranslatePayload {
   text: string;
   targetLanguage: string;
   sourceLanguage?: string;
+  style?: TranslationStyle;
+  preserveFormatting?: boolean;
 }
 
 export interface SummarizePayload {

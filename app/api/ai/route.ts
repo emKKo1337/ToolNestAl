@@ -63,10 +63,12 @@ export async function POST(req: Request) {
 
       // ── translate ─────────────────────────────────────────────────────────
       case "translate": {
-        const { text, targetLanguage, sourceLanguage } = payload as {
+        const { text, targetLanguage, sourceLanguage, style, preserveFormatting } = payload as {
           text?: string;
           targetLanguage?: string;
           sourceLanguage?: string;
+          style?: import("@/types/ai").TranslationStyle;
+          preserveFormatting?: boolean;
         };
         if (!text?.trim()) {
           return AIErrors.invalidRequest("translate task requires payload.text.").toResponse();
@@ -76,7 +78,7 @@ export async function POST(req: Request) {
             "translate task requires payload.targetLanguage."
           ).toResponse();
         }
-        const translatePayload = { text, targetLanguage, sourceLanguage };
+        const translatePayload = { text, targetLanguage, sourceLanguage, style, preserveFormatting };
         if (stream) return translateStream(translatePayload, options);
         return Response.json(await translate(translatePayload, options));
       }
