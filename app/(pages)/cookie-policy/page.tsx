@@ -232,10 +232,10 @@ export default function CookiePolicyPage() {
             <p className="text-[15px] leading-[28px] text-[#9b8da8]">
               If you have questions about our use of cookies or local storage, please contact us at{" "}
               <a
-                href="mailto:privacy@toolnest.ai"
+                href="mailto:contact@toolnestai.net"
                 className="text-[#ddb7ff] hover:opacity-75 transition-opacity"
               >
-                privacy@toolnest.ai
+                contact@toolnestai.net
               </a>{" "}
               or use our{" "}
               <Link href="/contact" className="text-[#ddb7ff] hover:opacity-75 transition-opacity">

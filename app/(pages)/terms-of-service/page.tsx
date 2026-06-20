@@ -196,10 +196,10 @@ const sections = [
       <p>
         If you have questions about these Terms, please contact us at{" "}
         <a
-          href="mailto:legal@toolnest.ai"
+          href="mailto:contact@toolnestai.net"
           className="text-[#ddb7ff] hover:opacity-75 transition-opacity"
         >
-          legal@toolnest.ai
+          contact@toolnestai.net
         </a>{" "}
         or use our{" "}
         <Link href="/contact" className="text-[#ddb7ff] hover:opacity-75 transition-opacity">

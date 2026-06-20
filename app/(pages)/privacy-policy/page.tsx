@@ -110,7 +110,7 @@ const sections = [
           <li><strong>Right to data portability</strong> — you can request your data in a machine-readable format.</li>
           <li><strong>Right to object</strong> — you can object to our processing of your data.</li>
         </ul>
-        <p>To exercise any of these rights, contact us at <a href="mailto:privacy@toolnest.ai" className="text-[#ddb7ff] hover:opacity-75 transition-opacity">privacy@toolnest.ai</a>.</p>
+        <p>To exercise any of these rights, contact us at <a href="mailto:contact@toolnestai.net" className="text-[#ddb7ff] hover:opacity-75 transition-opacity">contact@toolnestai.net</a>.</p>
       </>
     ),
   },
@@ -167,8 +167,8 @@ const sections = [
     content: (
       <p>
         For any privacy-related questions or requests, please contact us at{" "}
-        <a href="mailto:privacy@toolnest.ai" className="text-[#ddb7ff] hover:opacity-75 transition-opacity">
-          privacy@toolnest.ai
+        <a href="mailto:contact@toolnestai.net" className="text-[#ddb7ff] hover:opacity-75 transition-opacity">
+          contact@toolnestai.net
         </a>{" "}
         or use our <Link href="/contact" className="text-[#ddb7ff] hover:opacity-75 transition-opacity">contact form</Link>.
         We aim to respond to all privacy requests within 30 days.

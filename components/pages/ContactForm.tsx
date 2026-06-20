@@ -216,8 +216,8 @@ export default function ContactForm() {
           style={{ background: "rgba(255,100,130,0.08)", border: "1px solid rgba(255,100,130,0.2)" }}
         >
           Something went wrong. Please try again or email us directly at{" "}
-          <a href="mailto:hello@toolnest.ai" className="underline">
-            hello@toolnest.ai
+          <a href="mailto:contact@toolnestai.net" className="underline">
+            contact@toolnestai.net
           </a>
           .
         </div>
