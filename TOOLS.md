@@ -1,7 +1,7 @@
 # ToolNest AI — Tool Inventory
 
 Complete inventory of every tool on [toolnestai.net](https://www.toolnestai.net).
-**32 tools · 5 categories · Last updated: 2026-06-20**
+**33 tools · 5 categories · Last updated: 2026-06-20**
 
 > **Maintainers:** Update this file whenever a tool is added, removed, or changes status.
 > Run `node scripts/generate-tools-md.js` to regenerate automatically from `lib/tools.ts`.
@@ -73,12 +73,13 @@ Complete inventory of every tool on [toolnestai.net](https://www.toolnestai.net)
 
 ## Calculators
 
-5 tools · `/calculators`
+6 tools · `/calculators`
 
 | Tool | Slug | URL | Status | Description |
 |------|------|-----|--------|-------------|
 | Age Calculator | `age-calculator` | [/calculators/age-calculator](/calculators/age-calculator) | ✅ Production | Calculate your exact age in years, months, days, hours, and minutes. |
 | BMI Calculator | `bmi-calculator` | [/calculators/bmi-calculator](/calculators/bmi-calculator) | ✅ Production | Calculate your Body Mass Index and understand your health category. |
+| Character Counter | `character-counter` | [/calculators/character-counter](/calculators/character-counter) | ✅ Production | Count characters, words, sentences, paragraphs, reading time, speaking time and more instantly. |
 | Password Generator | `password-generator` | [/calculators/password-generator](/calculators/password-generator) | ✅ Production | Generate strong, secure, random passwords instantly. |
 | QR Code Generator | `qr-code-generator` | [/calculators/qr-code-generator](/calculators/qr-code-generator) | ✅ Production | Generate QR codes for URLs, text, contacts, and more. |
 | Word Counter | `word-counter` | [/calculators/word-counter](/calculators/word-counter) | ✅ Production | Count words, characters, sentences, paragraphs, and reading time instantly. |
@@ -93,8 +94,8 @@ Complete inventory of every tool on [toolnestai.net](https://www.toolnestai.net)
 | PDF Tools | 7 | All production |
 | Image Tools | 5 | All production |
 | Developer Tools | 10 | All production |
-| Calculators | 5 | All production |
-| **Total** | **32** | **32 production · 0 coming soon** |
+| Calculators | 6 | All production |
+| **Total** | **33** | **33 production · 0 coming soon** |
 
 ---
 
