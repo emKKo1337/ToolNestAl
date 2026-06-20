@@ -309,7 +309,8 @@ const MessageBubble = memo(function MessageBubble({
 
   useEffect(() => {
     if (editing && textaRef.current) {
-      textaRef.current.focus();
+      // preventScroll stops the browser from scrolling the page to this element
+      textaRef.current.focus({ preventScroll: true });
       textaRef.current.style.height = "auto";
       textaRef.current.style.height = textaRef.current.scrollHeight + "px";
     }
@@ -524,18 +525,44 @@ export default function AiChatTool() {
   const [copiedId, setCopiedId] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
 
-  const abortRef   = useRef<AbortController | null>(null);
-  const bottomRef  = useRef<HTMLDivElement>(null);
-  const textaRef   = useRef<HTMLTextAreaElement>(null);
+  const abortRef        = useRef<AbortController | null>(null);
+  const messagesRef     = useRef<HTMLDivElement>(null);
+  const textaRef        = useRef<HTMLTextAreaElement>(null);
+  const isAtBottomRef   = useRef(true);
+  const prevMsgCountRef = useRef(0);
 
   const activeConv = conversations.find((c) => c.id === activeId) ?? conversations[0];
   const messages   = activeConv.messages;
   const modelId    = MODEL_TIERS.find((t) => t.id === tier)!.modelId;
 
-  // Auto-scroll
+  // Scroll only within the chat container — never touches window/page scroll
   useEffect(() => {
-    bottomRef.current?.scrollIntoView({ behavior: "smooth" });
+    const el = messagesRef.current;
+    if (!el) return;
+
+    const newCount = messages.length;
+    const countChanged = newCount !== prevMsgCountRef.current;
+    prevMsgCountRef.current = newCount;
+
+    if (countChanged) {
+      // New bubble added (user message or empty AI bubble) — always scroll
+      isAtBottomRef.current = true;
+      el.scrollTo({ top: el.scrollHeight, behavior: "smooth" });
+      return;
+    }
+
+    // Streaming content arriving — only scroll if user hasn't scrolled up
+    if (isStreaming && isAtBottomRef.current) {
+      el.scrollTo({ top: el.scrollHeight, behavior: "smooth" });
+    }
+    // isStreaming → false: generation done, do NOT scroll
   }, [messages, isStreaming]);
+
+  const handleContainerScroll = useCallback(() => {
+    const el = messagesRef.current;
+    if (!el) return;
+    isAtBottomRef.current = el.scrollHeight - el.scrollTop - el.clientHeight < 80;
+  }, []);
 
   // Auto-resize textarea
   function resizeTextarea() {
@@ -769,7 +796,7 @@ export default function AiChatTool() {
           </div>
 
           {/* Messages */}
-          <div className="flex-1 overflow-y-auto px-4 py-6 flex flex-col gap-6" role="log" aria-live="polite" aria-label="Chat messages">
+          <div ref={messagesRef} onScroll={handleContainerScroll} className="flex-1 overflow-y-auto px-4 py-6 flex flex-col gap-6" role="log" aria-live="polite" aria-label="Chat messages">
             {isEmpty ? (
               <div className="flex-1 flex flex-col items-center justify-center gap-8 py-8">
                 <div className="text-center">
@@ -830,7 +857,6 @@ export default function AiChatTool() {
               </div>
             )}
 
-            <div ref={bottomRef} />
           </div>
 
           {/* Input */}
