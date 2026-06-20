@@ -124,9 +124,8 @@ const TONES = [
   "Friendly",
   "Formal",
   "Persuasive",
-  "Confident",
-  "Polite",
   "Casual",
+  "Polite",
   "Empathetic",
   "Urgent",
 ] as const;
@@ -303,17 +302,28 @@ export default function AiEmailWriterTool() {
       setCompletion("");
 
       try {
-        const res = await fetch("/api/ai-email", {
+        const res = await fetch("/api/ai", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(params),
+          body: JSON.stringify({
+            task: "generateEmail",
+            payload: {
+              recipient: params.recipient,
+              purpose: params.purpose,
+              tone: params.tone,
+              length: params.length.toLowerCase(),
+              language: params.language,
+              additionalInstructions: params.additionalInstructions,
+            },
+            options: { stream: true },
+          }),
           signal: ctrl.signal,
         });
 
         if (!res.ok) {
           const json = await res.json().catch(() => ({}));
           throw new Error(
-            (json as { error?: string }).error ?? `Server error ${res.status}`
+            (json as { message?: string }).message ?? `Server error ${res.status}`
           );
         }
 
