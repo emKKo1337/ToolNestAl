@@ -9,10 +9,13 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@ai-sdk/anthropic": "^3.0.85",
+    "@ai-sdk/openai": "^3.0.73",
     "@codemirror/lang-html": "^6.4.11",
     "@codemirror/lang-json": "^6.0.2",
     "@imgly/background-removal": "^1.7.0",
     "@next/third-parties": "^16.2.9",
+    "ai": "^6.0.208",
     "browser-image-compression": "^2.0.2",
     "codemirror": "^6.0.2",
     "github-slugger": "^2.0.0",
