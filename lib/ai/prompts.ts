@@ -3,6 +3,8 @@ import type {
   SummarizePayload,
   GenerateEmailPayload,
   GenerateResumePayload,
+  WorkExperience,
+  EducationEntry,
   AIMessage,
 } from "@/types/ai";
 
@@ -155,19 +157,115 @@ SUBJECT: [subject line]
 [Signature Placeholder]`;
 }
 
+function formatExperience(entries: WorkExperience[]): string {
+  if (!entries.length) return "None provided.";
+  return entries
+    .map((e, i) => {
+      const dates = e.current
+        ? `${e.startDate} - Present`
+        : `${e.startDate}${e.endDate ? ` - ${e.endDate}` : ""}`;
+      const location = e.location ? ` | ${e.location}` : "";
+      return [
+        `[${i + 1}] ${e.jobTitle} at ${e.company}${location}`,
+        `Dates: ${dates}`,
+        `Responsibilities: ${e.responsibilities}`,
+      ].join("\n");
+    })
+    .join("\n\n");
+}
+
+function formatEducation(entries: EducationEntry[]): string {
+  if (!entries.length) return "None provided.";
+  return entries
+    .map((e) => {
+      const field = e.fieldOfStudy ? ` in ${e.fieldOfStudy}` : "";
+      const location = e.location ? `, ${e.location}` : "";
+      const year = e.year ? ` (${e.year})` : "";
+      return `${e.degree}${field} - ${e.school}${location}${year}`;
+    })
+    .join("\n");
+}
+
 export function buildResumePrompt(payload: GenerateResumePayload): string {
-  return `Create a professional, ATS-optimized resume for the following person.
+  const contact = [
+    payload.email,
+    payload.phone,
+    payload.address,
+    payload.linkedin,
+    payload.portfolio,
+  ]
+    .filter(Boolean)
+    .join(" | ");
 
+  const jobDescSection = payload.jobDescription?.trim()
+    ? `\nTARGET JOB DESCRIPTION (use this to tailor keywords and emphasis — do NOT invent experience):\n${payload.jobDescription}\n`
+    : "";
+
+  const summarySection = payload.summary?.trim()
+    ? `\nPROFESSIONAL SUMMARY PROVIDED BY CANDIDATE (refine wording, keep meaning exactly):\n${payload.summary}\n`
+    : "";
+
+  const skillsSection = [
+    payload.technicalSkills ? `Technical Skills: ${payload.technicalSkills}` : "",
+    payload.softSkills ? `Soft Skills: ${payload.softSkills}` : "",
+    payload.languages ? `Languages: ${payload.languages}` : "",
+    payload.certificates ? `Certifications: ${payload.certificates}` : "",
+  ]
+    .filter(Boolean)
+    .join("\n");
+
+  return `Create a professional, ATS-optimized resume for the following candidate.
+
+CANDIDATE INFORMATION:
 Name: ${payload.name}
-Target Job Title: ${payload.jobTitle}
-Work Experience:
-${payload.experience}
+Contact: ${contact || "Not provided"}
+${summarySection}
+WORK EXPERIENCE:
+${formatExperience(payload.experience)}
 
-Skills: ${payload.skills}
-${payload.education ? `Education: ${payload.education}` : ""}
-${payload.additionalInfo ? `Additional Information: ${payload.additionalInfo}` : ""}
+EDUCATION:
+${formatEducation(payload.education)}
 
-Write all sections clearly. Use plain text with section headers in ALL CAPS (e.g. WORK EXPERIENCE, SKILLS, EDUCATION). No Markdown. No asterisks. No bullet symbols — use plain dashes (-) for lists.`;
+SKILLS & QUALIFICATIONS:
+${skillsSection || "Not provided"}
+${jobDescSection}
+OUTPUT RULES — follow exactly:
+- Output plain text only. No Markdown. No asterisks, no **, no ##, no __.
+- Use ALL CAPS for section headers (PROFESSIONAL SUMMARY, WORK EXPERIENCE, EDUCATION, SKILLS, CERTIFICATIONS).
+- Use plain dashes (-) for bullet points under each role.
+- Improve and professionalize wording but NEVER invent, exaggerate, or add experience not in the source data.
+- If a job description was provided, incorporate relevant keywords naturally throughout.
+- Begin with the candidate's name and contact information on separate lines.
+- Keep the resume ATS-friendly: clean structure, consistent formatting, no tables or columns.`;
+}
+
+export function buildSummaryPrompt(payload: {
+  name: string;
+  experience: WorkExperience[];
+  technicalSkills?: string;
+  softSkills?: string;
+  jobDescription?: string;
+}): string {
+  const topRole = payload.experience[0];
+  const roleContext = topRole
+    ? `Most recent role: ${topRole.jobTitle} at ${topRole.company}.`
+    : "";
+  const jobTarget = payload.jobDescription?.trim()
+    ? `Target position context: ${payload.jobDescription.slice(0, 300)}`
+    : "";
+
+  return `Write a concise 3-sentence professional summary for a resume.
+
+Candidate name: ${payload.name}
+${roleContext}
+Technical skills: ${payload.technicalSkills || "Not specified"}
+Soft skills: ${payload.softSkills || "Not specified"}
+${jobTarget}
+
+RULES:
+- 3 sentences only. Impactful, professional, first-person perspective.
+- Highlight value and expertise. Do not mention specific employers by name.
+- Plain text only. No Markdown. No labels. Output only the summary paragraph.`;
 }
 
 export function buildChatMessages(

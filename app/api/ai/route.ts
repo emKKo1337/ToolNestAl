@@ -120,27 +120,14 @@ export async function POST(req: Request) {
 
       // ── generateResume ────────────────────────────────────────────────────
       case "generateResume": {
-        const resumePayload = payload as {
-          name?: string;
-          jobTitle?: string;
-          experience?: string;
-          skills?: string;
-          education?: string;
-          additionalInfo?: string;
-        };
-        if (!resumePayload.name?.trim() || !resumePayload.jobTitle?.trim()) {
+        const resumePayload = payload as unknown as import("@/types/ai").GenerateResumePayload;
+        if (!resumePayload.name?.trim()) {
           return AIErrors.invalidRequest(
-            "generateResume task requires payload.name and payload.jobTitle."
+            "generateResume task requires payload.name."
           ).toResponse();
         }
-        if (stream)
-          return generateResumeStream(
-            resumePayload as Parameters<typeof generateResumeStream>[0],
-            options
-          );
-        return Response.json(
-          await generateResume(resumePayload as Parameters<typeof generateResume>[0], options)
-        );
+        if (stream) return generateResumeStream(resumePayload, options);
+        return Response.json(await generateResume(resumePayload, options));
       }
 
       // ── generateText (generic) ────────────────────────────────────────────

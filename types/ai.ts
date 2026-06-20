@@ -129,13 +129,44 @@ export interface GenerateEmailPayload {
   additionalInstructions?: string;
 }
 
-export interface GenerateResumePayload {
-  name: string;
+export interface WorkExperience {
   jobTitle: string;
-  experience: string;
-  skills: string;
-  education?: string;
-  additionalInfo?: string;
+  company: string;
+  location?: string;
+  startDate: string;
+  endDate?: string;
+  current: boolean;
+  responsibilities: string;
+}
+
+export interface EducationEntry {
+  degree: string;
+  fieldOfStudy?: string;
+  school: string;
+  location?: string;
+  year?: string;
+}
+
+export interface GenerateResumePayload {
+  // Personal information
+  name: string;
+  email?: string;
+  phone?: string;
+  address?: string;
+  linkedin?: string;
+  portfolio?: string;
+  // Professional summary (user-written or AI-generated)
+  summary?: string;
+  // Structured experience / education
+  experience: WorkExperience[];
+  education: EducationEntry[];
+  // Skills
+  technicalSkills?: string;
+  softSkills?: string;
+  languages?: string;
+  certificates?: string;
+  // Optional job description for ATS optimisation
+  jobDescription?: string;
 }
 
 export interface ChatPayload {
