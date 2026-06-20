@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { BlogPost } from "@/lib/blog";
 
 export function ArticleHeader({ post }: { post: BlogPost }) {
@@ -129,12 +130,14 @@ export function ArticleHeader({ post }: { post: BlogPost }) {
 
       {/* Hero image */}
       {post.image && (
-        <div className="mt-8 rounded-2xl overflow-hidden" style={{ aspectRatio: "16/9" }}>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
+        <div className="mt-8 rounded-2xl overflow-hidden relative" style={{ aspectRatio: "16/9" }}>
+          <Image
             src={post.image}
             alt={post.imageAlt ?? post.title}
-            className="w-full h-full object-cover"
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1280px) 80vw, 900px"
+            className="object-cover"
+            priority
           />
         </div>
       )}
