@@ -16,8 +16,7 @@ import {
 import { SYSTEM_PROMPTS } from "@/lib/ai/prompts";
 import type { AIRequest } from "@/types/ai";
 
-export const runtime = "edge";
-export const maxDuration = 30;
+export const maxDuration = 60;
 
 export async function POST(req: Request) {
   // ── Rate limiting ──────────────────────────────────────────────────────────

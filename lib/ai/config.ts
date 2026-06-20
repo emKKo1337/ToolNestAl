@@ -3,13 +3,16 @@ import type { AIModelId } from "@/types/ai";
 // ── Environment ───────────────────────────────────────────────────────────────
 
 export const AI_CONFIG = {
+  // Google Gemini (primary provider)
+  geminiApiKey: process.env.GEMINI_API_KEY ?? "",
+  // OpenRouter (fallback for non-Gemini models)
   apiKey: process.env.OPENROUTER_API_KEY ?? "",
   baseURL:
     process.env.OPENROUTER_BASE_URL ?? "https://openrouter.ai/api/v1",
   siteURL: process.env.SITE_URL ?? "https://www.toolnestai.net",
   siteName: process.env.SITE_NAME ?? "ToolNest AI",
   defaultModel: (process.env.DEFAULT_AI_MODEL ??
-    "deepseek/deepseek-chat") as AIModelId,
+    "gemini-2.5-flash") as AIModelId,
 } as const;
 
 // ── Model registry ────────────────────────────────────────────────────────────
@@ -26,6 +29,48 @@ export interface ModelInfo {
 }
 
 export const MODEL_REGISTRY: ModelInfo[] = [
+  // ── Google Gemini (direct API) ────────────────────────────────────────────
+  {
+    id: "gemini-2.5-flash",
+    label: "Gemini 2.5 Flash",
+    provider: "Google",
+    contextWindow: 1_000_000,
+    costTier: 1,
+    supportsStreaming: true,
+  },
+  {
+    id: "gemini-2.5-pro",
+    label: "Gemini 2.5 Pro",
+    provider: "Google",
+    contextWindow: 1_000_000,
+    costTier: 3,
+    supportsStreaming: true,
+  },
+  {
+    id: "gemini-2.0-flash",
+    label: "Gemini 2.0 Flash",
+    provider: "Google",
+    contextWindow: 1_000_000,
+    costTier: 1,
+    supportsStreaming: true,
+  },
+  {
+    id: "gemini-1.5-flash",
+    label: "Gemini 1.5 Flash",
+    provider: "Google",
+    contextWindow: 1_000_000,
+    costTier: 1,
+    supportsStreaming: true,
+  },
+  {
+    id: "gemini-1.5-pro",
+    label: "Gemini 1.5 Pro",
+    provider: "Google",
+    contextWindow: 2_000_000,
+    costTier: 3,
+    supportsStreaming: true,
+  },
+  // ── OpenRouter models (fallback) ──────────────────────────────────────────
   {
     id: "deepseek/deepseek-chat",
     label: "DeepSeek Chat",
@@ -83,22 +128,6 @@ export const MODEL_REGISTRY: ModelInfo[] = [
     supportsStreaming: true,
   },
   {
-    id: "google/gemini-flash-1.5",
-    label: "Gemini Flash 1.5",
-    provider: "Google",
-    contextWindow: 1_000_000,
-    costTier: 1,
-    supportsStreaming: true,
-  },
-  {
-    id: "google/gemini-pro-1.5",
-    label: "Gemini Pro 1.5",
-    provider: "Google",
-    contextWindow: 1_000_000,
-    costTier: 3,
-    supportsStreaming: true,
-  },
-  {
     id: "mistralai/mistral-small",
     label: "Mistral Small",
     provider: "Mistral",
@@ -140,12 +169,12 @@ export function getModelInfo(id: AIModelId): ModelInfo | undefined {
 // Override which model is used per task type. Falls back to defaultModel.
 
 export const TASK_MODELS: Partial<Record<string, AIModelId>> = {
-  chat: "deepseek/deepseek-chat",
-  translate: "deepseek/deepseek-chat",
-  summarize: "deepseek/deepseek-chat",
-  generateEmail: "deepseek/deepseek-chat",
-  generateResume: "deepseek/deepseek-chat",
-  generateText: "deepseek/deepseek-chat",
+  chat: "gemini-2.5-flash",
+  translate: "gemini-2.5-flash",
+  summarize: "gemini-2.5-flash",
+  generateEmail: "gemini-2.5-flash",
+  generateResume: "gemini-2.5-flash",
+  generateText: "gemini-2.5-flash",
 };
 
 export function getModelForTask(task: string): AIModelId {

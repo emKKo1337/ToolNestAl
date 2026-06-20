@@ -26,22 +26,22 @@ const MODEL_TIERS = [
     id: "fast" as const,
     label: "Fast",
     icon: "bolt",
-    description: "Quick responses",
-    modelId: "deepseek/deepseek-chat" as AIModelId,
+    description: "Gemini 2.5 Flash",
+    modelId: "gemini-2.5-flash" as AIModelId,
   },
   {
     id: "balanced" as const,
     label: "Balanced",
     icon: "balance",
-    description: "Smart & capable",
-    modelId: "anthropic/claude-haiku-4-5" as AIModelId,
+    description: "Gemini 2.0 Flash",
+    modelId: "gemini-2.0-flash" as AIModelId,
   },
   {
     id: "premium" as const,
     label: "Premium",
     icon: "auto_awesome",
-    description: "Most capable",
-    modelId: "anthropic/claude-sonnet-4-5" as AIModelId,
+    description: "Gemini 2.5 Pro",
+    modelId: "gemini-2.5-pro" as AIModelId,
   },
 ] as const;
 type Tier = (typeof MODEL_TIERS)[number]["id"];

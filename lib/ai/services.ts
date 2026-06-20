@@ -2,9 +2,11 @@ import {
   generateText as aiGenerateText,
   streamText as aiStreamText,
 } from "ai";
+import { GoogleGenAI } from "@google/genai";
+import type { Content, Part } from "@google/genai";
 import { getAIModel } from "./client";
-import { getModelForTask } from "./config";
-import { normalizeError } from "./errors";
+import { getModelForTask, AI_CONFIG } from "./config";
+import { normalizeError, AIErrors } from "./errors";
 import {
   SYSTEM_PROMPTS,
   buildTranslatePrompt,
@@ -24,7 +26,13 @@ import type {
   ChatPayload,
 } from "@/types/ai";
 
-// ── Internal helpers ──────────────────────────────────────────────────────────
+// ── Routing helpers ───────────────────────────────────────────────────────────
+// Gemini direct-API model IDs never contain "/".
+// OpenRouter model IDs always contain "/" (e.g. "deepseek/deepseek-chat").
+
+function isGeminiModel(modelId: string): boolean {
+  return !modelId.includes("/") || modelId.startsWith("models/");
+}
 
 function resolveModel(task: string, opts?: AIRequestOptions): AIModelId {
   return opts?.model ?? getModelForTask(task);
@@ -37,8 +45,164 @@ function commonParams(opts?: AIRequestOptions) {
   };
 }
 
-// ── generateText ──────────────────────────────────────────────────────────────
-// Generic single-turn text generation. Other services delegate here.
+// ── Gemini client ─────────────────────────────────────────────────────────────
+
+function getGeminiClient(): GoogleGenAI {
+  const key = AI_CONFIG.geminiApiKey;
+  if (!key) throw AIErrors.missingApiKey();
+  return new GoogleGenAI({ apiKey: key });
+}
+
+// ── Gemini: single-turn text ──────────────────────────────────────────────────
+
+async function geminiGenerateText(
+  prompt: string,
+  systemPrompt: string,
+  modelId: string,
+  opts?: AIRequestOptions
+): Promise<AIResponse> {
+  const client = getGeminiClient();
+  const response = await client.models.generateContent({
+    model: modelId,
+    contents: prompt,
+    config: {
+      systemInstruction: systemPrompt,
+      ...commonParams(opts),
+    },
+  });
+  const usage = response.usageMetadata;
+  return {
+    text: response.text ?? "",
+    model: modelId,
+    usage: usage
+      ? {
+          inputTokens: usage.promptTokenCount ?? 0,
+          outputTokens: usage.candidatesTokenCount ?? 0,
+          totalTokens: usage.totalTokenCount ?? 0,
+        }
+      : undefined,
+  };
+}
+
+function geminiStreamText(
+  prompt: string,
+  systemPrompt: string,
+  modelId: string,
+  opts?: AIRequestOptions
+): Response {
+  const encoder = new TextEncoder();
+  const stream = new ReadableStream({
+    async start(controller) {
+      try {
+        const client = getGeminiClient();
+        const result = await client.models.generateContentStream({
+          model: modelId,
+          contents: prompt,
+          config: {
+            systemInstruction: systemPrompt,
+            ...commonParams(opts),
+          },
+        });
+        for await (const chunk of result) {
+          const text = chunk.text;
+          if (text) controller.enqueue(encoder.encode(text));
+        }
+        controller.close();
+      } catch (err) {
+        controller.error(normalizeError(err));
+      }
+    },
+  });
+  return new Response(stream, {
+    headers: { "Content-Type": "text/plain; charset=utf-8" },
+  });
+}
+
+// ── Gemini: multi-turn chat ───────────────────────────────────────────────────
+
+function toGeminiContents(
+  messages: Array<{ role: string; content: string }>
+): Content[] {
+  return messages
+    .filter((m) => m.role === "user" || m.role === "assistant")
+    .map((m) => ({
+      role: m.role === "assistant" ? "model" : "user",
+      parts: [{ text: m.content } as Part],
+    }));
+}
+
+async function geminiChat(
+  payload: ChatPayload,
+  modelId: string,
+  opts?: AIRequestOptions
+): Promise<AIResponse> {
+  const client = getGeminiClient();
+  const { system, messages } = buildChatMessages(
+    payload.messages,
+    payload.systemPrompt
+  );
+  const response = await client.models.generateContent({
+    model: modelId,
+    contents: toGeminiContents(messages),
+    config: {
+      systemInstruction: system,
+      temperature: opts?.temperature ?? 0.7,
+      maxOutputTokens: opts?.maxTokens ?? 2048,
+    },
+  });
+  const usage = response.usageMetadata;
+  return {
+    text: response.text ?? "",
+    model: modelId,
+    usage: usage
+      ? {
+          inputTokens: usage.promptTokenCount ?? 0,
+          outputTokens: usage.candidatesTokenCount ?? 0,
+          totalTokens: usage.totalTokenCount ?? 0,
+        }
+      : undefined,
+  };
+}
+
+function geminiChatStream(
+  payload: ChatPayload,
+  modelId: string,
+  opts?: AIRequestOptions
+): Response {
+  const encoder = new TextEncoder();
+  const stream = new ReadableStream({
+    async start(controller) {
+      try {
+        const client = getGeminiClient();
+        const { system, messages } = buildChatMessages(
+          payload.messages,
+          payload.systemPrompt
+        );
+        const result = await client.models.generateContentStream({
+          model: modelId,
+          contents: toGeminiContents(messages),
+          config: {
+            systemInstruction: system,
+            temperature: opts?.temperature ?? 0.7,
+            maxOutputTokens: opts?.maxTokens ?? 2048,
+          },
+        });
+        for await (const chunk of result) {
+          const text = chunk.text;
+          if (text) controller.enqueue(encoder.encode(text));
+        }
+        controller.close();
+      } catch (err) {
+        controller.error(normalizeError(err));
+      }
+    },
+  });
+  return new Response(stream, {
+    headers: { "Content-Type": "text/plain; charset=utf-8" },
+  });
+}
+
+// ── generateText (public) ─────────────────────────────────────────────────────
 
 export async function generateText(
   prompt: string,
@@ -46,8 +210,16 @@ export async function generateText(
   task: string,
   opts?: AIRequestOptions
 ): Promise<AIResponse> {
+  const model = resolveModel(task, opts);
+  if (isGeminiModel(model)) {
+    try {
+      return await geminiGenerateText(prompt, systemPrompt, model, opts);
+    } catch (err) {
+      throw normalizeError(err);
+    }
+  }
+  // OpenRouter / Vercel AI SDK path
   try {
-    const model = resolveModel(task, opts);
     const result = await aiGenerateText({
       model: getAIModel(model),
       system: opts?.systemPrompt ?? systemPrompt,
@@ -61,7 +233,9 @@ export async function generateText(
         ? {
             inputTokens: result.usage.inputTokens ?? 0,
             outputTokens: result.usage.outputTokens ?? 0,
-            totalTokens: (result.usage.inputTokens ?? 0) + (result.usage.outputTokens ?? 0),
+            totalTokens:
+              (result.usage.inputTokens ?? 0) +
+              (result.usage.outputTokens ?? 0),
           }
         : undefined,
     };
@@ -70,8 +244,7 @@ export async function generateText(
   }
 }
 
-// ── streamText ────────────────────────────────────────────────────────────────
-// Returns a streaming Response ready to send directly from an API route.
+// ── streamText (public) ───────────────────────────────────────────────────────
 
 export function streamText(
   prompt: string,
@@ -79,8 +252,12 @@ export function streamText(
   task: string,
   opts?: AIRequestOptions
 ): Response {
+  const model = resolveModel(task, opts);
+  if (isGeminiModel(model)) {
+    return geminiStreamText(prompt, systemPrompt, model, opts);
+  }
+  // OpenRouter / Vercel AI SDK path
   try {
-    const model = resolveModel(task, opts);
     const result = aiStreamText({
       model: getAIModel(model),
       system: opts?.systemPrompt ?? systemPrompt,
@@ -203,8 +380,16 @@ export async function chat(
   payload: ChatPayload,
   opts?: AIRequestOptions
 ): Promise<AIResponse> {
+  const model = resolveModel("chat", opts);
+  if (isGeminiModel(model)) {
+    try {
+      return await geminiChat(payload, model, opts);
+    } catch (err) {
+      throw normalizeError(err);
+    }
+  }
+  // OpenRouter / Vercel AI SDK path
   try {
-    const model = resolveModel("chat", opts);
     const { system, messages } = buildChatMessages(
       payload.messages,
       payload.systemPrompt
@@ -213,7 +398,8 @@ export async function chat(
       model: getAIModel(model),
       system,
       messages,
-      ...commonParams(opts),
+      temperature: opts?.temperature ?? 0.7,
+      maxOutputTokens: opts?.maxTokens ?? 2048,
     });
     return {
       text: result.text,
@@ -222,7 +408,9 @@ export async function chat(
         ? {
             inputTokens: result.usage.inputTokens ?? 0,
             outputTokens: result.usage.outputTokens ?? 0,
-            totalTokens: (result.usage.inputTokens ?? 0) + (result.usage.outputTokens ?? 0),
+            totalTokens:
+              (result.usage.inputTokens ?? 0) +
+              (result.usage.outputTokens ?? 0),
           }
         : undefined,
     };
@@ -235,8 +423,12 @@ export function chatStream(
   payload: ChatPayload,
   opts?: AIRequestOptions
 ): Response {
+  const model = resolveModel("chat", opts);
+  if (isGeminiModel(model)) {
+    return geminiChatStream(payload, model, opts);
+  }
+  // OpenRouter / Vercel AI SDK path
   try {
-    const model = resolveModel("chat", opts);
     const { system, messages } = buildChatMessages(
       payload.messages,
       payload.systemPrompt
@@ -245,7 +437,8 @@ export function chatStream(
       model: getAIModel(model),
       system,
       messages,
-      ...commonParams(opts),
+      temperature: opts?.temperature ?? 0.7,
+      maxOutputTokens: opts?.maxTokens ?? 2048,
     });
     return result.toTextStreamResponse();
   } catch (err) {

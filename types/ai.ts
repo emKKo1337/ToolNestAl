@@ -8,30 +8,37 @@ export type AITaskType =
   | "generateResume"
   | "generateText";
 
-// ── Model identifiers (OpenRouter slugs) ──────────────────────────────────────
+// ── Model identifiers ─────────────────────────────────────────────────────────
+// Gemini direct-API IDs have no "/" — all OpenRouter IDs contain "/".
 
 export type AIModelId =
-  // DeepSeek
+  // Google Gemini (direct Gemini API)
+  | "gemini-2.5-flash"
+  | "gemini-2.5-pro"
+  | "gemini-2.0-flash"
+  | "gemini-1.5-flash"
+  | "gemini-1.5-pro"
+  // DeepSeek (OpenRouter)
   | "deepseek/deepseek-chat"
   | "deepseek/deepseek-r1"
-  // Anthropic Claude
+  // Anthropic Claude (OpenRouter)
   | "anthropic/claude-haiku-4-5"
   | "anthropic/claude-sonnet-4-5"
   | "anthropic/claude-opus-4"
-  // OpenAI GPT
+  // OpenAI GPT (OpenRouter)
   | "openai/gpt-4o-mini"
   | "openai/gpt-4o"
-  // Google Gemini
+  // Google Gemini (OpenRouter — legacy)
   | "google/gemini-flash-1.5"
   | "google/gemini-pro-1.5"
-  // Mistral
+  // Mistral (OpenRouter)
   | "mistralai/mistral-small"
   | "mistralai/mistral-large"
-  // Qwen
+  // Qwen (OpenRouter)
   | "qwen/qwen-2.5-72b-instruct"
-  // Meta Llama
+  // Meta Llama (OpenRouter)
   | "meta-llama/llama-3.3-70b-instruct"
-  // Allow any OpenRouter model string
+  // Allow any model string
   | (string & {});
 
 // ── Request / response types ──────────────────────────────────────────────────
