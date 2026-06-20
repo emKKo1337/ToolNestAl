@@ -105,8 +105,9 @@ export interface TranslatePayload {
 
 export interface SummarizePayload {
   text: string;
-  style?: "bullet" | "paragraph" | "tldr";
+  style?: "bullet" | "paragraph" | "executive" | "key-takeaways";
   length?: "short" | "medium" | "long";
+  language?: string;
 }
 
 export interface GenerateEmailPayload {

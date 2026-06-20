@@ -50,19 +50,37 @@ export function buildTranslatePrompt(payload: TranslatePayload): string {
 export function buildSummarizePrompt(payload: SummarizePayload): string {
   const styleGuide =
     payload.style === "bullet"
-      ? "Write the summary as a concise bullet-point list."
-      : payload.style === "tldr"
-      ? "Write a single-sentence TL;DR summary."
-      : "Write the summary as flowing paragraphs.";
+      ? "Write the summary as a clear bullet-point list. Use plain dashes (-) for each bullet. No Markdown, no asterisks."
+      : payload.style === "executive"
+      ? "Write an executive summary: begin with a one-sentence overview, then cover the key findings, implications, and recommended actions in concise paragraphs."
+      : payload.style === "key-takeaways"
+      ? "Extract and list the key takeaways. Use plain numbered points (1. 2. 3. ...). Focus on the most important insights, facts, and conclusions. No Markdown."
+      : "Write the summary as well-structured flowing paragraphs. No lists, no headers.";
 
   const lengthGuide =
     payload.length === "short"
-      ? "Keep it very brief — 2 to 3 points or sentences maximum."
+      ? "Keep it brief — 3 to 5 sentences or points maximum."
       : payload.length === "long"
-      ? "Provide a thorough summary covering all major points."
-      : "Keep it moderately concise — cover the main ideas without excessive detail.";
+      ? "Be thorough — cover all major points, supporting details, and conclusions."
+      : "Be moderately concise — cover the main ideas and key supporting points without excessive detail.";
 
-  return `${styleGuide} ${lengthGuide}\n\nText to summarize:\n\n${payload.text}`;
+  const langLine =
+    !payload.language ||
+    payload.language === "Auto Detect" ||
+    payload.language === "English"
+      ? "Write in English."
+      : `Write the summary in ${payload.language}.`;
+
+  return `${styleGuide} ${lengthGuide} ${langLine}
+
+IMPORTANT RULES:
+- Preserve the original meaning exactly. Never invent or add facts not present in the source.
+- Never output Markdown formatting (no **, no ##, no __).
+- Output only the summary — no preamble, no labels, no commentary.
+
+Text to summarize:
+
+${payload.text}`;
 }
 
 export function buildEmailPrompt(payload: GenerateEmailPayload): string {

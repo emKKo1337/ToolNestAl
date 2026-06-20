@@ -83,15 +83,16 @@ export async function POST(req: Request) {
 
       // ── summarize ─────────────────────────────────────────────────────────
       case "summarize": {
-        const { text, style, length } = payload as {
+        const { text, style, length, language } = payload as {
           text?: string;
-          style?: "bullet" | "paragraph" | "tldr";
+          style?: "bullet" | "paragraph" | "executive" | "key-takeaways";
           length?: "short" | "medium" | "long";
+          language?: string;
         };
         if (!text?.trim()) {
           return AIErrors.invalidRequest("summarize task requires payload.text.").toResponse();
         }
-        const summarizePayload = { text, style, length };
+        const summarizePayload = { text, style, length, language };
         if (stream) return summarizeStream(summarizePayload, options);
         return Response.json(await summarize(summarizePayload, options));
       }
