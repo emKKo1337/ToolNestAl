@@ -60,6 +60,7 @@ export function generateCategoryMetadata(
     "image-tools":     `Image Tools — ${toolCount} Free Online Image Editors`,
     "developer-tools": `Developer Tools — ${toolCount} Free Online Dev Utilities`,
     "calculators":     `Calculators & Generators — ${toolCount} Free Online Tools`,
+    "text-tools":      `Text Tools — ${toolCount} Free Online Text Utilities`,
   };
   const title = titleMap[category.slug] ?? `${category.name} — ${toolCount} Free Online Tools`;
 
@@ -70,6 +71,7 @@ export function generateCategoryMetadata(
     "image-tools":     `${toolCount} free image tools online. Compress, resize, convert, and remove backgrounds instantly in your browser.`,
     "developer-tools": `${toolCount} free developer tools online. Format JSON, encode Base64, generate UUIDs, test regex, decode JWT, and more.`,
     "calculators":     `${toolCount} free calculators and generators. Password generator, QR code maker, BMI calculator, word counter, and more.`,
+    "text-tools":      `${toolCount} free text tools online. Convert case, count words, and transform text instantly in your browser — no install needed.`,
   };
   const description = descMap[category.slug] ?? category.description;
 
@@ -79,6 +81,7 @@ export function generateCategoryMetadata(
     "image-tools":     ["image tools", "free image tools", "image compressor", "image resizer", "remove background", "JPG to PNG", "WebP converter"],
     "developer-tools": ["developer tools", "JSON formatter", "Base64 encoder", "UUID generator", "regex tester", "JWT decoder", "hash generator", "CSS minifier"],
     "calculators":     ["calculators", "password generator", "QR code generator", "BMI calculator", "age calculator", "word counter", "online calculator"],
+    "text-tools":      ["text tools", "case converter", "word counter", "text transformer", "online text tools", "uppercase converter", "lowercase converter"],
   };
 
   return {
