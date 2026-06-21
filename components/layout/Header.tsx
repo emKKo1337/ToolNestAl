@@ -10,7 +10,7 @@ const navLinks = [
   { label: "PDF Tools",     href: "/pdf-tools" },
   { label: "Image Tools",   href: "/image-tools" },
   { label: "Developer",     href: "/developer-tools" },
-  { label: "Calculators",   href: "/calculators" },
+  { label: "Text Tools",    href: "/text-tools" },
   { label: "Blog",          href: "/blog" },
 ];
 

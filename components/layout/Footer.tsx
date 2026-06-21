@@ -17,6 +17,7 @@ const columns = [
       { label: "PDF Tools", href: "/pdf-tools" },
       { label: "Image Tools", href: "/image-tools" },
       { label: "Developer Tools", href: "/developer-tools" },
+      { label: "Text Tools", href: "/text-tools" },
       { label: "Calculators", href: "/calculators" },
     ],
   },
