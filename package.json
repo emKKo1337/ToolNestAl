@@ -19,6 +19,7 @@
     "ai": "^6.0.208",
     "browser-image-compression": "^2.0.2",
     "codemirror": "^6.0.2",
+    "docx": "^9.7.1",
     "github-slugger": "^2.0.0",
     "gray-matter": "^4.0.3",
     "jszip": "^3.10.1",
