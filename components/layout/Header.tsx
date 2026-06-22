@@ -11,6 +11,7 @@ const navLinks = [
   { label: "Image Tools",   href: "/image-tools" },
   { label: "Developer",     href: "/developer-tools" },
   { label: "Text Tools",    href: "/text-tools" },
+  { label: "SEO",           href: "/seo-tools" },
   { label: "Blog",          href: "/blog" },
 ];
 
