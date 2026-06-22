@@ -26,7 +26,7 @@ export default function ToolHero({
       {/* Icon row */}
       <div className="flex items-center gap-3 flex-wrap">
         <div
-          className="w-14 h-14 rounded-2xl flex items-center justify-center flex-shrink-0"
+          className="w-14 h-14 rounded-2xl flex items-center justify-center flex-shrink-0 overflow-hidden"
           style={{ backgroundColor: bgColor }}
         >
           <span

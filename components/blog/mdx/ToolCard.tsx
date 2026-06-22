@@ -19,7 +19,7 @@ export function ToolCard({
       style={{ borderColor: "rgba(221,183,255,0.2)" }}
     >
       <div
-        className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0"
+        className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 overflow-hidden"
         style={{ backgroundColor: `${tool.iconColor}18` }}
       >
         <span

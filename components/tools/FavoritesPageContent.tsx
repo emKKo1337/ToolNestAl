@@ -97,7 +97,7 @@ export default function FavoritesPageContent() {
               {/* Icon + name */}
               <div className="flex items-center gap-3">
                 <div
-                  className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
+                  className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 overflow-hidden"
                   style={{ backgroundColor: `${tool.iconColor}18` }}
                 >
                   <span

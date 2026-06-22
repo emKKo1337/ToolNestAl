@@ -258,7 +258,7 @@ export default function HeroSearchBox() {
                     }}
                   >
                     <span
-                      className="material-symbols-outlined text-[22px] shrink-0"
+                      className="material-symbols-outlined text-[22px] shrink-0 w-[22px] h-[22px] overflow-hidden leading-none inline-flex items-center justify-center"
                       style={{ color: r.iconColor, fontVariationSettings: "'FILL' 1" }}
                       aria-hidden="true"
                     >

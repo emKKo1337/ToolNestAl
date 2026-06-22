@@ -22,7 +22,7 @@ const RelatedTools = memo(function RelatedTools({ tools }: { tools: Tool[] }) {
             className="glass-panel glass-panel-hover rounded-xl p-4 flex items-start gap-3 group"
           >
             <div
-              className="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5"
+              className="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5 overflow-hidden"
               style={{ backgroundColor: `${tool.iconColor}18` }}
             >
               <span
