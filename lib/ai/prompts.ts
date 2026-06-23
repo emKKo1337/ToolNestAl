@@ -11,6 +11,7 @@ import type {
   GenerateBusinessNamesPayload,
   GenerateSlogansPayload,
   GenerateUsernamesPayload,
+  GenerateProductDescriptionPayload,
   WorkExperience,
   EducationEntry,
   AIMessage,
@@ -80,6 +81,10 @@ You always follow the exact output format specified — never deviate, never add
   generateUsernames: `You are a creative naming expert specialising in catchy, memorable usernames for social media and online platforms.
 You understand platform conventions, character limits, and what makes a username stand out.
 You always follow the exact output format specified — never deviate, never add extra commentary.`,
+
+  generateProductDescription: `You are a world-class e-commerce copywriter who writes persuasive, SEO-optimised product descriptions that convert browsers into buyers.
+You understand how to craft compelling titles, scannable bullet points, and meta descriptions that rank in search engines.
+You always follow the exact output format specified — never deviate, never add extra commentary outside the format.`,
 } as const;
 
 // ── User prompt builders ──────────────────────────────────────────────────────
@@ -631,6 +636,79 @@ RULES:
 - Do not number the blocks
 - Do not add any text outside the blocks
 - The last block must also end with ---`;
+}
+
+export function buildGenerateProductDescriptionPrompt(
+  payload: GenerateProductDescriptionPayload
+): string {
+  const toneGuide: Record<string, string> = {
+    professional:
+      "Authoritative, clear, and trustworthy — precise language that communicates quality and value.",
+    luxury:
+      "Refined, aspirational, and exclusive — evoke prestige, craftsmanship, and premium experience.",
+    friendly:
+      "Warm, approachable, and conversational — speak directly to the customer as a knowledgeable friend.",
+    sales:
+      "High-energy, benefit-driven, and persuasive — use power words, urgency, and strong calls to action.",
+  };
+
+  const lengthGuide: Record<string, string> = {
+    short:
+      "Keep the description concise — 60 to 100 words. Punchy sentences, only the most impactful benefits.",
+    medium:
+      "Balanced detail — 150 to 250 words. Cover key benefits, features, and a clear call to action.",
+    long:
+      "Comprehensive — 350 to 500 words. Tell a story, cover all features, address objections, strong CTA.",
+  };
+
+  const platformGuide: Record<string, string> = {
+    shopify:
+      "Shopify store: focus on brand story, lifestyle appeal, and SEO. Use short paragraphs.",
+    woocommerce:
+      "WooCommerce / WordPress: SEO-first with keyword-rich copy. Structure for readability.",
+    amazon:
+      "Amazon listing: lead with the primary keyword in the title. Bullet points are critical. Include backend search terms in suggested keywords.",
+    etsy:
+      "Etsy shop: emphasise handmade quality, materials, and the maker's story. Warm and personal.",
+    ebay:
+      "eBay listing: condition, specs, and value. Clear and factual with strong trust signals.",
+    general:
+      "General e-commerce: versatile copy suitable for any platform.",
+  };
+
+  const audienceSection = payload.targetAudience?.trim()
+    ? `\nTarget audience: ${payload.targetAudience.trim()}`
+    : "";
+
+  return `Write a complete product description for the following product.
+
+Product name: ${payload.productName}
+Category: ${payload.category}
+Key features / details: ${payload.features}${audienceSection}
+Platform: ${platformGuide[payload.platform] ?? "General e-commerce"}
+Tone: ${toneGuide[payload.tone] ?? payload.tone}
+Length: ${lengthGuide[payload.length] ?? payload.length}
+
+Output EXACTLY this format — no extra text before or after:
+
+TITLE: [SEO-optimised product title, 50–70 characters]
+DESCRIPTION: [Full product description matching the length guide]
+BULLETS:
+- [Benefit-focused bullet point 1]
+- [Benefit-focused bullet point 2]
+- [Benefit-focused bullet point 3]
+- [Benefit-focused bullet point 4]
+- [Benefit-focused bullet point 5]
+META: [SEO meta description, 140–160 characters, include primary keyword]
+KEYWORDS: [8–12 comma-separated SEO keywords relevant to this product]
+
+RULES:
+- Follow the format exactly — each section on its own line with the label followed by a colon
+- BULLETS must have exactly 5 lines each starting with "- "
+- KEYWORDS must be on a single line, comma-separated
+- Do not add any text, commentary, or explanation outside the format
+- Do not use Markdown headers or bold inside the DESCRIPTION
+- The TITLE must naturally include the main product keyword`;
 }
 
 export function buildChatMessages(

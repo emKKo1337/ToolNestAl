@@ -27,6 +27,8 @@ import {
   generateSlogansStream,
   generateUsernames,
   generateUsernamesStream,
+  generateProductDescription,
+  generateProductDescriptionStream,
   generateText,
 } from "@/lib/ai/services";
 import { SYSTEM_PROMPTS } from "@/lib/ai/prompts";
@@ -366,6 +368,46 @@ export async function POST(req: Request) {
         };
         if (stream) return generateUsernamesStream(usernamesPayload, options);
         return Response.json(await generateUsernames(usernamesPayload, options));
+      }
+
+      // ── generateProductDescription ────────────────────────────────────────
+      case "generateProductDescription": {
+        const {
+          productName,
+          category: prodCategory,
+          features,
+          targetAudience,
+          tone: prodTone,
+          length: prodLength,
+          platform: prodPlatform,
+        } = payload as {
+          productName?: string;
+          category?: string;
+          features?: string;
+          targetAudience?: string;
+          tone?: import("@/types/ai").ProductDescriptionTone;
+          length?: import("@/types/ai").ProductDescriptionLength;
+          platform?: import("@/types/ai").ProductPlatform;
+        };
+        if (!productName?.trim())
+          return AIErrors.invalidRequest(
+            "generateProductDescription task requires payload.productName."
+          ).toResponse();
+        if (!features?.trim())
+          return AIErrors.invalidRequest(
+            "generateProductDescription task requires payload.features."
+          ).toResponse();
+        const prodPayload = {
+          productName,
+          category: prodCategory ?? "General",
+          features,
+          targetAudience,
+          tone: prodTone ?? ("professional" as import("@/types/ai").ProductDescriptionTone),
+          length: prodLength ?? ("medium" as import("@/types/ai").ProductDescriptionLength),
+          platform: prodPlatform ?? ("general" as import("@/types/ai").ProductPlatform),
+        };
+        if (stream) return generateProductDescriptionStream(prodPayload, options);
+        return Response.json(await generateProductDescription(prodPayload, options));
       }
 
       // ── generateText (generic) ────────────────────────────────────────────

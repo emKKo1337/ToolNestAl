@@ -14,7 +14,8 @@ export type AITaskType =
   | "generatePrompt"
   | "generateBusinessNames"
   | "generateSlogans"
-  | "generateUsernames";
+  | "generateUsernames"
+  | "generateProductDescription";
 
 // ── Model identifiers ─────────────────────────────────────────────────────────
 // Gemini direct-API IDs have no "/" — all OpenRouter IDs contain "/".
@@ -254,6 +255,32 @@ export interface GeneratePromptPayload {
   tone: PromptTone;
   length: PromptLength;
   existingPrompt?: string;
+}
+
+export type ProductDescriptionTone =
+  | "professional"
+  | "luxury"
+  | "friendly"
+  | "sales";
+
+export type ProductDescriptionLength = "short" | "medium" | "long";
+
+export type ProductPlatform =
+  | "shopify"
+  | "woocommerce"
+  | "amazon"
+  | "etsy"
+  | "ebay"
+  | "general";
+
+export interface GenerateProductDescriptionPayload {
+  productName: string;
+  category: string;
+  features: string;
+  targetAudience?: string;
+  tone: ProductDescriptionTone;
+  length: ProductDescriptionLength;
+  platform: ProductPlatform;
 }
 
 export type UsernameStyle =

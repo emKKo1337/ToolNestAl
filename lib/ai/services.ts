@@ -21,6 +21,7 @@ import {
   buildGenerateBusinessNamesPrompt,
   buildGenerateSlogansPrompt,
   buildGenerateUsernamesPrompt,
+  buildGenerateProductDescriptionPrompt,
   buildChatMessages,
 } from "./prompts";
 import type {
@@ -39,6 +40,7 @@ import type {
   GenerateBusinessNamesPayload,
   GenerateSlogansPayload,
   GenerateUsernamesPayload,
+  GenerateProductDescriptionPayload,
   ChatPayload,
 } from "@/types/ai";
 
@@ -594,6 +596,32 @@ export function generateUsernamesStream(
     buildGenerateUsernamesPrompt(payload),
     SYSTEM_PROMPTS.generateUsernames,
     "generateUsernames",
+    { maxTokens: 2048, ...opts }
+  );
+}
+
+// ── generateProductDescription ────────────────────────────────────────────────
+
+export async function generateProductDescription(
+  payload: GenerateProductDescriptionPayload,
+  opts?: AIRequestOptions
+): Promise<AIResponse> {
+  return generateText(
+    buildGenerateProductDescriptionPrompt(payload),
+    SYSTEM_PROMPTS.generateProductDescription,
+    "generateProductDescription",
+    { maxTokens: 2048, ...opts }
+  );
+}
+
+export function generateProductDescriptionStream(
+  payload: GenerateProductDescriptionPayload,
+  opts?: AIRequestOptions
+): Response {
+  return streamText(
+    buildGenerateProductDescriptionPrompt(payload),
+    SYSTEM_PROMPTS.generateProductDescription,
+    "generateProductDescription",
     { maxTokens: 2048, ...opts }
   );
 }
