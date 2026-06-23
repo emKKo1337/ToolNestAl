@@ -1,22 +1,21 @@
 "use client";
 
 import { useState, useRef, useCallback, useEffect, useId } from "react";
-import { format as sqlFormat } from "sql-formatter";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
-type SqlDialect     = "auto" | "mysql" | "postgresql" | "sqlite" | "tsql" | "plsql";
-type KeywordCase    = "upper" | "lower" | "preserve";
-type IndentStyle    = "2" | "4" | "tab";
-type NotifType      = "success" | "error" | "info";
+type SqlDialect  = "auto" | "mysql" | "postgresql" | "sqlite" | "tsql" | "plsql";
+type KeywordCase = "upper" | "lower" | "preserve";
+type IndentStyle = "2" | "4" | "tab";
+type NotifType   = "success" | "error" | "info";
 
 // ─── Dialect metadata ─────────────────────────────────────────────────────────
 const DIALECTS: { value: SqlDialect; label: string; badge: string }[] = [
-  { value: "auto",       label: "Auto Detect",  badge: "AUTO"  },
-  { value: "mysql",      label: "MySQL",         badge: "MySQL" },
-  { value: "postgresql", label: "PostgreSQL",    badge: "PG"    },
-  { value: "sqlite",     label: "SQLite",        badge: "SQLite"},
-  { value: "tsql",       label: "SQL Server",    badge: "T-SQL" },
-  { value: "plsql",      label: "Oracle",        badge: "PL/SQL"},
+  { value: "auto",       label: "Auto Detect", badge: "AUTO"  },
+  { value: "mysql",      label: "MySQL",        badge: "MySQL" },
+  { value: "postgresql", label: "PostgreSQL",   badge: "PG"    },
+  { value: "sqlite",     label: "SQLite",       badge: "SQLite"},
+  { value: "tsql",       label: "SQL Server",   badge: "T-SQL" },
+  { value: "plsql",      label: "Oracle",       badge: "PL/SQL"},
 ];
 
 // ─── Auto-detect heuristics ───────────────────────────────────────────────────
@@ -28,18 +27,184 @@ function detectDialect(sql: string): Exclude<SqlDialect, "auto"> {
       !/\bIDENTITY\s*\(/.test(u))                                              return "sqlite";
   if (/\bNVARCHAR\b|\bNOCOUNT\b|\bIDENTITY\s*\(|\bTOP\s+\d+\b|\bGO\b/.test(u)) return "tsql";
   if (/\bROWNUM\b|\bNVL\s*\(|\bVARCHAR2\b|\bCONNECT BY\b|\bNUMBER\s*\(/.test(u)) return "plsql";
-  return "sql" as Exclude<SqlDialect, "auto">;
+  return "mysql";
 }
 
-// ─── Format helpers ───────────────────────────────────────────────────────────
-function resolveDialect(sql: string, dialect: SqlDialect): Exclude<SqlDialect, "auto"> {
-  return dialect === "auto" ? detectDialect(sql) : dialect;
-}
+// ─── Native SQL formatter ─────────────────────────────────────────────────────
 
-// sql-formatter uses 'sql' for generic Standard SQL
-type FmtLang = "mysql" | "postgresql" | "sqlite" | "tsql" | "plsql" | "sql";
-function toFmtLang(d: Exclude<SqlDialect, "auto">): FmtLang {
-  return (d as FmtLang);
+function nativeFormat(sql: string, kcase: KeywordCase, indentStr: string): string {
+  if (!sql.trim()) return sql;
+
+  // 1. Stash string literals and comments to avoid processing them
+  const stash: string[] = [];
+  const hide = (m: string): string => { stash.push(m); return `\x01${stash.length - 1}\x02`; };
+
+  let s = sql
+    .replace(/--[^\r\n]*/g, hide)
+    .replace(/\/\*[\s\S]*?\*\//g, hide)
+    .replace(/\$\$[\s\S]*?\$\$/g, hide)
+    .replace(/'(?:[^'\\]|\\.)*'/g, hide)
+    .replace(/"(?:[^"\\]|\\.)*"/g, hide)
+    .replace(/`[^`]*`/g, hide);
+
+  // 2. Tokenize (skip whitespace, keep everything else)
+  const raw: string[] = s.match(
+    /\x01\d+\x02|<>|!=|<=|>=|::|\|\||&&|<<|>>|[A-Za-z_][\w$#]*|\d[\d.eE+\-]*|[^\s]/g
+  ) ?? [];
+
+  // 3. Merge compound keywords (longest first)
+  const COMPOUNDS: string[][] = [
+    ["LEFT","OUTER","JOIN"], ["RIGHT","OUTER","JOIN"], ["FULL","OUTER","JOIN"],
+    ["IS","NOT","NULL"], ["IF","NOT","EXISTS"],
+    ["INNER","JOIN"], ["LEFT","JOIN"], ["RIGHT","JOIN"], ["FULL","JOIN"],
+    ["CROSS","JOIN"], ["NATURAL","JOIN"],
+    ["GROUP","BY"], ["ORDER","BY"], ["PARTITION","BY"],
+    ["UNION","ALL"], ["INSERT","INTO"], ["DELETE","FROM"],
+    ["NOT","NULL"], ["NOT","IN"], ["NOT","LIKE"], ["NOT","BETWEEN"], ["NOT","EXISTS"],
+    ["IS","NOT"], ["IS","NULL"], ["IF","EXISTS"],
+    ["CREATE","TABLE"], ["ALTER","TABLE"], ["DROP","TABLE"],
+    ["CREATE","VIEW"], ["DROP","VIEW"],
+    ["CREATE","INDEX"], ["DROP","INDEX"],
+    ["PRIMARY","KEY"], ["FOREIGN","KEY"],
+  ].sort((a, b) => b.length - a.length);
+
+  const toks: string[] = [];
+  let ti = 0;
+  outer: while (ti < raw.length) {
+    for (const parts of COMPOUNDS) {
+      const len = parts.length;
+      if (raw.slice(ti, ti + len).map(t => t.toUpperCase()).join(" ") === parts.join(" ")) {
+        toks.push(raw.slice(ti, ti + len).join(" "));
+        ti += len;
+        continue outer;
+      }
+    }
+    toks.push(raw[ti++]);
+  }
+
+  // 4. Keyword classification
+  // SELECT and SET: newline before + indentStr after (for column lists)
+  const SELECT_KW = new Set(["SELECT", "SET"]);
+  // Clause keywords: newline before, space after (content stays on same line)
+  const CLAUSE_KW = new Set([
+    "FROM", "WHERE", "HAVING", "GROUP BY", "ORDER BY", "LIMIT", "OFFSET",
+    "UNION", "UNION ALL", "EXCEPT", "INTERSECT",
+    "VALUES", "INTO", "INSERT INTO", "UPDATE",
+    "DELETE", "DELETE FROM", "ON",
+    "CREATE", "CREATE TABLE", "ALTER", "ALTER TABLE",
+    "DROP", "DROP TABLE", "DROP VIEW", "DROP INDEX",
+    "CREATE VIEW", "CREATE INDEX",
+    "TRUNCATE", "WITH", "RETURNING", "OUTPUT",
+  ]);
+  // JOIN keywords: same as clause (newline before, space after)
+  const JOIN_KW = new Set([
+    "JOIN", "INNER JOIN", "LEFT JOIN", "RIGHT JOIN", "FULL JOIN",
+    "CROSS JOIN", "NATURAL JOIN",
+    "LEFT OUTER JOIN", "RIGHT OUTER JOIN", "FULL OUTER JOIN",
+  ]);
+  // AND / OR: newline + indent before (for WHERE / HAVING conditions)
+  const INDENT_KW = new Set(["AND", "OR"]);
+
+  // All SQL keywords (for case application)
+  const ALL_KW = new Set([
+    ...Array.from(SELECT_KW), ...Array.from(CLAUSE_KW),
+    ...Array.from(JOIN_KW), ...Array.from(INDENT_KW),
+    "AS", "DISTINCT", "TOP", "NOT", "IN", "IS", "LIKE", "BETWEEN", "EXISTS",
+    "NULL", "CASE", "WHEN", "THEN", "ELSE", "END",
+    "NOT NULL", "NOT IN", "NOT LIKE", "NOT BETWEEN", "NOT EXISTS",
+    "IS NOT", "IS NULL", "IS NOT NULL", "IF EXISTS", "IF NOT EXISTS",
+    "ASC", "DESC", "ALL", "ANY", "SOME",
+    "PRIMARY KEY", "FOREIGN KEY", "REFERENCES", "UNIQUE", "DEFAULT",
+    "CONSTRAINT", "INDEX", "AUTO_INCREMENT", "AUTOINCREMENT",
+    "IDENTITY", "SERIAL", "CHECK", "PARTITION BY",
+    "OVER", "BEGIN", "COMMIT", "ROLLBACK", "TRANSACTION", "GO",
+  ]);
+
+  const applyCase = (t: string): string => {
+    if (!ALL_KW.has(t.toUpperCase())) return t;
+    if (kcase === "upper") return t.toUpperCase();
+    if (kcase === "lower") return t.toLowerCase();
+    return t;
+  };
+
+  // 5. Build formatted output
+  const out: string[] = [];
+  let depth = 0;
+  let needSpace = false;
+
+  for (let i = 0; i < toks.length; i++) {
+    const tok = toks[i];
+    const upper = tok.toUpperCase();
+    const prevTok = toks[i - 1] ?? "";
+
+    if (tok === "(") {
+      if (needSpace) out.push(" ");
+      out.push("(");
+      depth++;
+      needSpace = false;
+      continue;
+    }
+    if (tok === ")") {
+      out.push(")");
+      depth = Math.max(0, depth - 1);
+      needSpace = true;
+      continue;
+    }
+    if (tok === ",") {
+      out.push(",");
+      // At top level, put each item on its own indented line
+      if (depth === 0) {
+        out.push("\n" + indentStr);
+      } else {
+        out.push(" ");
+      }
+      needSpace = false;
+      continue;
+    }
+    if (tok === ";") {
+      out.push(";");
+      if (i < toks.length - 1) out.push("\n\n");
+      depth = 0;
+      needSpace = false;
+      continue;
+    }
+    if (tok === ".") {
+      out.push(".");
+      needSpace = false;
+      continue;
+    }
+
+    // Structural keywords — only reformat at depth 0
+    if (depth === 0) {
+      if (SELECT_KW.has(upper)) {
+        if (out.length > 0) out.push("\n");
+        out.push(applyCase(tok) + "\n" + indentStr);
+        needSpace = false;
+        continue;
+      }
+      if (CLAUSE_KW.has(upper) || JOIN_KW.has(upper)) {
+        if (out.length > 0) out.push("\n");
+        out.push(applyCase(tok) + " ");
+        needSpace = false;
+        continue;
+      }
+      if (INDENT_KW.has(upper)) {
+        out.push("\n" + indentStr);
+        out.push(applyCase(tok));
+        needSpace = true;
+        continue;
+      }
+    }
+
+    // Regular token — add space where needed
+    if (needSpace && prevTok !== ".") out.push(" ");
+    out.push(applyCase(tok));
+    needSpace = true;
+  }
+
+  const result = out.join("").trim().replace(/\n{3,}/g, "\n\n");
+  // Restore stashed literals and comments
+  return result.replace(/\x01(\d+)\x02/g, (_, i) => stash[+i]);
 }
 
 function beautifySql(
@@ -48,31 +213,23 @@ function beautifySql(
   keywordCase: KeywordCase,
   indent: IndentStyle,
 ): { result: string; usedDialect: Exclude<SqlDialect, "auto"> } {
-  const used = resolveDialect(sql, dialect);
-  const tabWidth = indent === "tab" ? 2 : Number(indent);
-  const useTabs  = indent === "tab";
-  const result = sqlFormat(sql, {
-    language:    toFmtLang(used),
-    tabWidth,
-    useTabs,
-    keywordCase: keywordCase === "preserve" ? undefined : keywordCase,
-    linesBetweenQueries: 2,
-  });
-  return { result, usedDialect: used };
+  const usedDialect = dialect === "auto" ? detectDialect(sql) : dialect;
+  const indentStr = indent === "tab" ? "\t" : " ".repeat(Number(indent));
+  const result = nativeFormat(sql, keywordCase, indentStr);
+  return { result, usedDialect };
 }
 
 function minifySql(sql: string): string {
   return sql
-    .replace(/--[^\n]*/g, "")           // strip line comments
-    .replace(/\/\*[\s\S]*?\*\//g, "")   // strip block comments
-    .replace(/\s+/g, " ")               // collapse whitespace
+    .replace(/--[^\n]*/g, "")
+    .replace(/\/\*[\s\S]*?\*\//g, "")
+    .replace(/\s+/g, " ")
     .trim();
 }
 
 function countStatements(sql: string): number {
-  // count semicolons not inside strings as a rough statement count
   const cleaned = sql.replace(/'[^']*'/g, "''").replace(/"[^"]*"/g, '""');
-  const semis   = (cleaned.match(/;/g) ?? []).length;
+  const semis = (cleaned.match(/;/g) ?? []).length;
   return semis || 1;
 }
 
@@ -90,8 +247,8 @@ function useCodeMirror(
   onChange: (val: string) => void,
   dialect: SqlDialect,
 ) {
-  const viewRef     = useRef<{ view: import("@codemirror/view").EditorView } | null>(null);
-  const dialectRef  = useRef(dialect);
+  const viewRef    = useRef<{ view: import("@codemirror/view").EditorView } | null>(null);
+  const dialectRef = useRef(dialect);
   dialectRef.current = dialect;
 
   useEffect(() => {
@@ -102,10 +259,10 @@ function useCodeMirror(
         EditorView, keymap, drawSelection,
         highlightActiveLine, lineNumbers, highlightActiveLineGutter,
       } = await import("@codemirror/view");
-      const { EditorState }                                = await import("@codemirror/state");
-      const { defaultKeymap, historyKeymap, history }     = await import("@codemirror/commands");
+      const { EditorState }                                  = await import("@codemirror/state");
+      const { defaultKeymap, historyKeymap, history }        = await import("@codemirror/commands");
       const { sql, MySQL, PostgreSQL, SQLite, MSSQL, StandardSQL } = await import("@codemirror/lang-sql");
-      const { syntaxHighlighting, defaultHighlightStyle } = await import("@codemirror/language");
+      const { syntaxHighlighting, defaultHighlightStyle }    = await import("@codemirror/language");
 
       if (cancelled || !containerRef.current) return;
 
@@ -140,17 +297,16 @@ function useCodeMirror(
         ".cm-lineNumbers .cm-gutterElement": { padding: "0 8px" },
         ".cm-selectionBackground, ::selection": { backgroundColor: "rgba(173,198,255,0.18) !important" },
         "&.cm-focused .cm-selectionBackground": { backgroundColor: "rgba(173,198,255,0.18)" },
-        // SQL token colours
-        ".tok-keyword":        { color: "#adc6ff", fontWeight: "600" },
-        ".tok-typeName":       { color: "#80e0a0" },
-        ".tok-number":         { color: "#80e0a0" },
-        ".tok-string":         { color: "#4cd7f6" },
-        ".tok-string2":        { color: "#4cd7f6" },
-        ".tok-comment":        { color: "#4d4354", fontStyle: "italic" },
-        ".tok-variableName":   { color: "#ddb7ff" },
-        ".tok-operator":       { color: "#c8b89f" },
-        ".tok-punctuation":    { color: "#6e8aaf" },
-        ".tok-name":           { color: "#e8dff0" },
+        ".tok-keyword":      { color: "#adc6ff", fontWeight: "600" },
+        ".tok-typeName":     { color: "#80e0a0" },
+        ".tok-number":       { color: "#80e0a0" },
+        ".tok-string":       { color: "#4cd7f6" },
+        ".tok-string2":      { color: "#4cd7f6" },
+        ".tok-comment":      { color: "#4d4354", fontStyle: "italic" },
+        ".tok-variableName": { color: "#ddb7ff" },
+        ".tok-operator":     { color: "#c8b89f" },
+        ".tok-punctuation":  { color: "#6e8aaf" },
+        ".tok-name":         { color: "#e8dff0" },
       }, { dark: true });
 
       const state = EditorState.create({
@@ -172,7 +328,7 @@ function useCodeMirror(
         ],
       });
 
-      const view = new EditorView({ state, parent: containerRef.current });
+      const view = new EditorView({ state, parent: containerRef.current! });
       viewRef.current = { view };
     }
 
@@ -198,7 +354,7 @@ function useCodeMirror(
 function DialectBadge({ dialect }: { dialect: Exclude<SqlDialect, "auto"> | null }) {
   if (!dialect) return null;
   const meta = DIALECTS.find(d => d.value === dialect);
-  if (!meta || dialect === ("sql" as SqlDialect)) return null;
+  if (!meta) return null;
   return (
     <span
       className="text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider"
@@ -217,14 +373,14 @@ function DialectBadge({ dialect }: { dialect: Exclude<SqlDialect, "auto"> | null
 export default function SqlFormatterTool() {
   const uid = useId();
 
-  const [raw,          setRaw]          = useState("");
-  const [dialect,      setDialect]      = useState<SqlDialect>("auto");
-  const [keywordCase,  setKeywordCase]  = useState<KeywordCase>("upper");
-  const [indentStyle,  setIndentStyle]  = useState<IndentStyle>("2");
-  const [usedDialect,  setUsedDialect]  = useState<Exclude<SqlDialect, "auto"> | null>(null);
-  const [notif,        setNotif]        = useState<{ type: NotifType; message: string } | null>(null);
-  const [copied,       setCopied]       = useState(false);
-  const [formatError,  setFormatError]  = useState<string | null>(null);
+  const [raw,         setRaw]         = useState("");
+  const [dialect,     setDialect]     = useState<SqlDialect>("auto");
+  const [keywordCase, setKeywordCase] = useState<KeywordCase>("upper");
+  const [indentStyle, setIndentStyle] = useState<IndentStyle>("2");
+  const [usedDialect, setUsedDialect] = useState<Exclude<SqlDialect, "auto"> | null>(null);
+  const [notif,       setNotif]       = useState<{ type: NotifType; message: string } | null>(null);
+  const [copied,      setCopied]      = useState(false);
+  const [formatError, setFormatError] = useState<string | null>(null);
 
   const editorContainerRef = useRef<HTMLDivElement>(null);
   const fileInputRef       = useRef<HTMLInputElement>(null);
@@ -250,7 +406,10 @@ export default function SqlFormatterTool() {
       handleChange(result);
       setUsedDialect(ud);
       setFormatError(null);
-      notify("success", `SQL formatted${dialect === "auto" ? ` (detected: ${DIALECTS.find(d => d.value === ud)?.label ?? ud})` : ""}.`);
+      notify(
+        "success",
+        `SQL formatted${dialect === "auto" ? ` (detected: ${DIALECTS.find(d => d.value === ud)?.label ?? ud})` : ""}.`,
+      );
     } catch (e) {
       const msg = e instanceof Error ? e.message : "Formatting failed.";
       setFormatError(msg);
@@ -330,7 +489,7 @@ export default function SqlFormatterTool() {
   return (
     <div className="mb-12 flex flex-col gap-4">
 
-      {/* ── Top toolbar ──────────────────────────────────────────── */}
+      {/* ── Top toolbar ── */}
       <div
         className="glass-panel rounded-2xl p-3 flex flex-wrap items-center gap-2"
         style={{ border: "1px solid rgba(255,255,255,0.06)" }}
