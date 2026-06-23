@@ -3,6 +3,7 @@ import type {
   SummarizePayload,
   GenerateEmailPayload,
   GenerateResumePayload,
+  ParaphrasePayload,
   WorkExperience,
   EducationEntry,
   AIMessage,
@@ -37,6 +38,10 @@ Use clean plain text with clear section headers. No Markdown. No asterisks.`,
   generateText: `You are a skilled professional writer.
 Generate high-quality text based on the user's instructions.
 Match the requested tone and style precisely.`,
+
+  paraphrase: `You are an expert writing assistant specialised in paraphrasing.
+Rewrite the provided text according to the requested mode while preserving the original meaning.
+Output ONLY the rewritten text — no preamble, no commentary, no labels.`,
 } as const;
 
 // ── User prompt builders ──────────────────────────────────────────────────────
@@ -266,6 +271,33 @@ RULES:
 - 3 sentences only. Impactful, professional, first-person perspective.
 - Highlight value and expertise. Do not mention specific employers by name.
 - Plain text only. No Markdown. No labels. Output only the summary paragraph.`;
+}
+
+export function buildParaphrasePrompt(payload: ParaphrasePayload): string {
+  const modeGuide =
+    payload.mode === "fluent"
+      ? "Rewrite with smooth, natural-flowing language. Improve readability and sentence flow without changing the meaning."
+      : payload.mode === "creative"
+      ? "Rewrite with creative flair and varied sentence structures. Use vivid language while preserving the core meaning."
+      : payload.mode === "academic"
+      ? "Rewrite using formal, academic language with precise vocabulary and scholarly tone. Maintain all facts and arguments."
+      : payload.mode === "shorten"
+      ? "Rewrite as a shorter, more concise version. Remove redundancy and filler while keeping all essential information."
+      : payload.mode === "expand"
+      ? "Rewrite as a longer, more detailed version. Elaborate on the ideas, add context and depth while staying faithful to the original meaning."
+      : "Rewrite in different words while preserving the original meaning, tone, and intent. Avoid copying sentences verbatim.";
+
+  return `Mode: ${modeGuide}
+
+RULES — follow exactly:
+- Preserve the original meaning completely. Never add, remove, or distort facts.
+- Do NOT copy sentences verbatim from the source.
+- Output ONLY the rewritten text. No explanations, no labels, no commentary.
+- Never output Markdown formatting (no **, no ##, no __).
+
+Text to paraphrase:
+
+${payload.text}`;
 }
 
 export function buildChatMessages(

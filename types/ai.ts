@@ -6,7 +6,8 @@ export type AITaskType =
   | "summarize"
   | "generateEmail"
   | "generateResume"
-  | "generateText";
+  | "generateText"
+  | "paraphrase";
 
 // ── Model identifiers ─────────────────────────────────────────────────────────
 // Gemini direct-API IDs have no "/" — all OpenRouter IDs contain "/".
@@ -179,4 +180,17 @@ export interface GenerateResumePayload {
 export interface ChatPayload {
   messages: AIMessage[];
   systemPrompt?: string;
+}
+
+export type ParaphraseMode =
+  | "standard"
+  | "fluent"
+  | "creative"
+  | "academic"
+  | "shorten"
+  | "expand";
+
+export interface ParaphrasePayload {
+  text: string;
+  mode: ParaphraseMode;
 }

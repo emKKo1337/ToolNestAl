@@ -11,6 +11,8 @@ import {
   summarizeStream,
   translate,
   translateStream,
+  paraphrase,
+  paraphraseStream,
   generateText,
 } from "@/lib/ai/services";
 import { SYSTEM_PROMPTS } from "@/lib/ai/prompts";
@@ -129,6 +131,23 @@ export async function POST(req: Request) {
         return Response.json(await generateResume(resumePayload, options));
       }
 
+      // ── paraphrase ────────────────────────────────────────────────────────
+      case "paraphrase": {
+        const { text, mode } = payload as {
+          text?: string;
+          mode?: import("@/types/ai").ParaphraseMode;
+        };
+        if (!text?.trim()) {
+          return AIErrors.invalidRequest("paraphrase task requires payload.text.").toResponse();
+        }
+        if (!mode) {
+          return AIErrors.invalidRequest("paraphrase task requires payload.mode.").toResponse();
+        }
+        const paraphrasePayload = { text, mode };
+        if (stream) return paraphraseStream(paraphrasePayload, options);
+        return Response.json(await paraphrase(paraphrasePayload, options));
+      }
+
       // ── generateText (generic) ────────────────────────────────────────────
       case "generateText": {
         if (!prompt?.trim()) {
@@ -148,7 +167,7 @@ export async function POST(req: Request) {
 
       default:
         return AIErrors.invalidRequest(
-          `Unknown task type: "${task}". Supported tasks: chat, translate, summarize, generateEmail, generateResume, generateText.`
+          `Unknown task type: "${task}". Supported tasks: chat, translate, summarize, generateEmail, generateResume, generateText, paraphrase.`
         ).toResponse();
     }
   } catch (err) {

@@ -13,6 +13,7 @@ import {
   buildSummarizePrompt,
   buildEmailPrompt,
   buildResumePrompt,
+  buildParaphrasePrompt,
   buildChatMessages,
 } from "./prompts";
 import type {
@@ -23,6 +24,7 @@ import type {
   SummarizePayload,
   GenerateEmailPayload,
   GenerateResumePayload,
+  ParaphrasePayload,
   ChatPayload,
 } from "@/types/ai";
 
@@ -370,6 +372,32 @@ export function generateResumeStream(
     buildResumePrompt(payload),
     SYSTEM_PROMPTS.generateResume,
     "generateResume",
+    { maxTokens: 2048, ...opts }
+  );
+}
+
+// ── paraphrase ────────────────────────────────────────────────────────────────
+
+export async function paraphrase(
+  payload: ParaphrasePayload,
+  opts?: AIRequestOptions
+): Promise<AIResponse> {
+  return generateText(
+    buildParaphrasePrompt(payload),
+    SYSTEM_PROMPTS.paraphrase,
+    "paraphrase",
+    { maxTokens: 2048, ...opts }
+  );
+}
+
+export function paraphraseStream(
+  payload: ParaphrasePayload,
+  opts?: AIRequestOptions
+): Response {
+  return streamText(
+    buildParaphrasePrompt(payload),
+    SYSTEM_PROMPTS.paraphrase,
+    "paraphrase",
     { maxTokens: 2048, ...opts }
   );
 }
