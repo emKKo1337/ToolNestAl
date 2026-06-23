@@ -1,0 +1,107 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="75%"><stop offset="0%" stop-color="#0e0820"/><stop offset="100%" stop-color="#08080f"/></radialGradient>
+    <radialGradient id="gL" cx="50%" cy="50%" r="55%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.28"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="pG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1a0e38" stop-opacity="0.97"/><stop offset="100%" stop-color="#0c0820" stop-opacity="0.97"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#5b21b6" flood-opacity="0.35"/></filter>
+  </defs>
+  <rect width="1200" height="500" fill="url(#bg)"/>
+  <ellipse cx="600" cy="250" rx="700" ry="380" fill="url(#gL)"/>
+
+  <text x="600" y="58" text-anchor="middle" font-size="13" font-weight="600" fill="#a78bfa" letter-spacing="2">PARAPHRASE MODES</text>
+  <text x="600" y="94" text-anchor="middle" font-size="32" font-weight="800" fill="url(#aG)">Choose Your Rewriting Style</text>
+  <text x="600" y="122" text-anchor="middle" font-size="15" fill="rgba(255,255,255,0.42)">Five modes — each calibrated for a different goal</text>
+
+  <!-- 5 mode cards -->
+  <!-- Standard -->
+  <rect x="40" y="148" width="208" height="292" rx="14" fill="url(#pG)" stroke="url(#aG)" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="40" y="148" width="208" height="4" rx="2" fill="url(#aG)"/>
+  <rect x="64" y="172" width="48" height="48" rx="12" fill="rgba(167,139,250,0.12)" stroke="rgba(167,139,250,0.25)" stroke-width="1"/>
+  <text x="88" y="203" text-anchor="middle" font-size="24" fill="#a78bfa">☰</text>
+  <text x="144" y="191" font-size="15" font-weight="700" fill="#f0e8ff">Standard</text>
+  <text x="144" y="210" font-size="11" fill="rgba(167,139,250,0.7)">Default mode</text>
+  <line x1="60" y1="230" x2="228" y2="230" stroke="rgba(167,139,250,0.1)" stroke-width="1"/>
+  <text x="60" y="255" font-size="12" fill="rgba(255,255,255,0.55)">Rewrites text with</text>
+  <text x="60" y="272" font-size="12" fill="rgba(255,255,255,0.55)">natural synonyms and</text>
+  <text x="60" y="289" font-size="12" fill="rgba(255,255,255,0.55)">restructured sentences.</text>
+  <text x="60" y="318" font-size="12" fill="rgba(255,255,255,0.38)">Best for:</text>
+  <text x="60" y="335" font-size="12" fill="rgba(255,255,255,0.55)">· General content</text>
+  <text x="60" y="352" font-size="12" fill="rgba(255,255,255,0.55)">· Blog posts</text>
+  <text x="60" y="369" font-size="12" fill="rgba(255,255,255,0.55)">· Everyday rewriting</text>
+  <rect x="60" y="400" width="168" height="28" rx="14" fill="url(#bG)"/>
+  <text x="144" y="419" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">☰ Standard</text>
+
+  <!-- Fluency -->
+  <rect x="264" y="148" width="208" height="292" rx="14" fill="url(#pG)" stroke="rgba(96,165,250,0.2)" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="264" y="148" width="208" height="4" rx="2" fill="rgba(96,165,250,0.5)"/>
+  <rect x="288" y="172" width="48" height="48" rx="12" fill="rgba(96,165,250,0.1)" stroke="rgba(96,165,250,0.22)" stroke-width="1"/>
+  <text x="312" y="203" text-anchor="middle" font-size="24" fill="#60a5fa">≋</text>
+  <text x="368" y="191" font-size="15" font-weight="700" fill="#f0e8ff">Fluency</text>
+  <text x="368" y="210" font-size="11" fill="rgba(96,165,250,0.7)">Smooth reading</text>
+  <line x1="284" y1="230" x2="452" y2="230" stroke="rgba(96,165,250,0.1)" stroke-width="1"/>
+  <text x="284" y="255" font-size="12" fill="rgba(255,255,255,0.55)">Improves grammar and</text>
+  <text x="284" y="272" font-size="12" fill="rgba(255,255,255,0.55)">flow without changing</text>
+  <text x="284" y="289" font-size="12" fill="rgba(255,255,255,0.55)">the core meaning.</text>
+  <text x="284" y="318" font-size="12" fill="rgba(255,255,255,0.38)">Best for:</text>
+  <text x="284" y="335" font-size="12" fill="rgba(255,255,255,0.55)">· ESL writing</text>
+  <text x="284" y="352" font-size="12" fill="rgba(255,255,255,0.55)">· Rough drafts</text>
+  <text x="284" y="369" font-size="12" fill="rgba(255,255,255,0.55)">· Polishing copy</text>
+  <rect x="284" y="400" width="168" height="28" rx="14" fill="rgba(96,165,250,0.12)" stroke="rgba(96,165,250,0.28)" stroke-width="1"/>
+  <text x="368" y="419" text-anchor="middle" font-size="11" fill="#93c5fd">≋ Fluency</text>
+
+  <!-- Formal -->
+  <rect x="488" y="148" width="208" height="292" rx="14" fill="url(#pG)" stroke="rgba(167,139,250,0.18)" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="488" y="148" width="208" height="4" rx="2" fill="rgba(167,139,250,0.4)"/>
+  <rect x="512" y="172" width="48" height="48" rx="12" fill="rgba(167,139,250,0.08)" stroke="rgba(167,139,250,0.18)" stroke-width="1"/>
+  <text x="536" y="203" text-anchor="middle" font-size="24" fill="#c4b5fd">⊞</text>
+  <text x="592" y="191" font-size="15" font-weight="700" fill="#f0e8ff">Formal</text>
+  <text x="592" y="210" font-size="11" fill="rgba(167,139,250,0.7)">Professional tone</text>
+  <line x1="508" y1="230" x2="676" y2="230" stroke="rgba(167,139,250,0.1)" stroke-width="1"/>
+  <text x="508" y="255" font-size="12" fill="rgba(255,255,255,0.55)">Elevates casual text to</text>
+  <text x="508" y="272" font-size="12" fill="rgba(255,255,255,0.55)">professional, precise</text>
+  <text x="508" y="289" font-size="12" fill="rgba(255,255,255,0.55)">business language.</text>
+  <text x="508" y="318" font-size="12" fill="rgba(255,255,255,0.38)">Best for:</text>
+  <text x="508" y="335" font-size="12" fill="rgba(255,255,255,0.55)">· Business reports</text>
+  <text x="508" y="352" font-size="12" fill="rgba(255,255,255,0.55)">· Proposals</text>
+  <text x="508" y="369" font-size="12" fill="rgba(255,255,255,0.55)">· Academic writing</text>
+  <rect x="508" y="400" width="168" height="28" rx="14" fill="rgba(167,139,250,0.08)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+  <text x="592" y="419" text-anchor="middle" font-size="11" fill="#c4b5fd">⊞ Formal</text>
+
+  <!-- Creative -->
+  <rect x="712" y="148" width="208" height="292" rx="14" fill="url(#pG)" stroke="rgba(244,114,182,0.18)" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="712" y="148" width="208" height="4" rx="2" fill="rgba(244,114,182,0.45)"/>
+  <rect x="736" y="172" width="48" height="48" rx="12" fill="rgba(244,114,182,0.08)" stroke="rgba(244,114,182,0.18)" stroke-width="1"/>
+  <text x="760" y="203" text-anchor="middle" font-size="24" fill="#f472b6">✦</text>
+  <text x="816" y="191" font-size="15" font-weight="700" fill="#f0e8ff">Creative</text>
+  <text x="816" y="210" font-size="11" fill="rgba(244,114,182,0.7)">Fresh expression</text>
+  <line x1="732" y1="230" x2="900" y2="230" stroke="rgba(244,114,182,0.1)" stroke-width="1"/>
+  <text x="732" y="255" font-size="12" fill="rgba(255,255,255,0.55)">Rewrites with bolder</text>
+  <text x="732" y="272" font-size="12" fill="rgba(255,255,255,0.55)">word choices and fresh</text>
+  <text x="732" y="289" font-size="12" fill="rgba(255,255,255,0.55)">structural approaches.</text>
+  <text x="732" y="318" font-size="12" fill="rgba(255,255,255,0.38)">Best for:</text>
+  <text x="732" y="335" font-size="12" fill="rgba(255,255,255,0.55)">· Marketing copy</text>
+  <text x="732" y="352" font-size="12" fill="rgba(255,255,255,0.55)">· Social media</text>
+  <text x="732" y="369" font-size="12" fill="rgba(255,255,255,0.55)">· Creative writing</text>
+  <rect x="732" y="400" width="168" height="28" rx="14" fill="rgba(244,114,182,0.08)" stroke="rgba(244,114,182,0.2)" stroke-width="1"/>
+  <text x="816" y="419" text-anchor="middle" font-size="11" fill="#f9a8d4">✦ Creative</text>
+
+  <!-- Concise -->
+  <rect x="936" y="148" width="224" height="292" rx="14" fill="url(#pG)" stroke="rgba(34,197,94,0.18)" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="936" y="148" width="224" height="4" rx="2" fill="rgba(34,197,94,0.45)"/>
+  <rect x="960" y="172" width="48" height="48" rx="12" fill="rgba(34,197,94,0.08)" stroke="rgba(34,197,94,0.18)" stroke-width="1"/>
+  <text x="984" y="203" text-anchor="middle" font-size="24" fill="#22c55e">⚡</text>
+  <text x="1040" y="191" font-size="15" font-weight="700" fill="#f0e8ff">Concise</text>
+  <text x="1040" y="210" font-size="11" fill="rgba(34,197,94,0.7)">Shorter is better</text>
+  <line x1="956" y1="230" x2="1140" y2="230" stroke="rgba(34,197,94,0.1)" stroke-width="1"/>
+  <text x="956" y="255" font-size="12" fill="rgba(255,255,255,0.55)">Trims wordiness and</text>
+  <text x="956" y="272" font-size="12" fill="rgba(255,255,255,0.55)">condenses text to the</text>
+  <text x="956" y="289" font-size="12" fill="rgba(255,255,255,0.55)">essential meaning.</text>
+  <text x="956" y="318" font-size="12" fill="rgba(255,255,255,0.38)">Best for:</text>
+  <text x="956" y="335" font-size="12" fill="rgba(255,255,255,0.55)">· Summaries</text>
+  <text x="956" y="352" font-size="12" fill="rgba(255,255,255,0.55)">· Executive briefs</text>
+  <text x="956" y="369" font-size="12" fill="rgba(255,255,255,0.55)">· Email subjects</text>
+  <rect x="956" y="400" width="168" height="28" rx="14" fill="rgba(34,197,94,0.08)" stroke="rgba(34,197,94,0.2)" stroke-width="1"/>
+  <text x="1040" y="419" text-anchor="middle" font-size="11" fill="#4ade80">⚡ Concise</text>
+</svg>

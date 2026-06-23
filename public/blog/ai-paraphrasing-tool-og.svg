@@ -1,0 +1,136 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="28%" cy="50%" r="80%"><stop offset="0%" stop-color="#0e0820"/><stop offset="100%" stop-color="#08080f"/></radialGradient>
+    <radialGradient id="gL" cx="50%" cy="50%" r="55%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.38"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gR" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#2563eb" stop-opacity="0.2"/><stop offset="100%" stop-color="#2563eb" stop-opacity="0"/></radialGradient>
+    <radialGradient id="aiC" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4338ca"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="pG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1a0e38" stop-opacity="0.97"/><stop offset="100%" stop-color="#0c0820" stop-opacity="0.97"/></linearGradient>
+    <linearGradient id="bBar" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="10" stdDeviation="20" flood-color="#5b21b6" flood-opacity="0.45"/></filter>
+    <filter id="aiGlow"><feDropShadow dx="0" dy="0" stdDeviation="16" flood-color="#7c3aed" flood-opacity="0.85"/></filter>
+    <filter id="gF"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <ellipse cx="210" cy="315" rx="440" ry="380" fill="url(#gL)"/>
+  <ellipse cx="980" cy="315" rx="380" ry="330" fill="url(#gR)"/>
+
+  <!-- grid lines -->
+  <g stroke="rgba(255,255,255,0.025)" stroke-width="1">
+    <line x1="0" y1="126" x2="1200" y2="126"/><line x1="0" y1="252" x2="1200" y2="252"/>
+    <line x1="0" y1="378" x2="1200" y2="378"/><line x1="0" y1="504" x2="1200" y2="504"/>
+    <line x1="240" y1="0" x2="240" y2="630"/><line x1="700" y1="0" x2="700" y2="630"/>
+  </g>
+
+  <!-- LEFT: brand + headline -->
+  <rect x="52" y="48" width="166" height="36" rx="18" fill="rgba(167,139,250,0.1)" stroke="rgba(167,139,250,0.28)" stroke-width="1"/>
+  <text x="135" y="71" text-anchor="middle" font-size="13" font-weight="600" fill="#a78bfa">✦ ToolNest AI</text>
+
+  <text x="52" y="130" font-size="13" font-weight="600" fill="rgba(96,165,250,0.8)" letter-spacing="2">2026 COMPLETE GUIDE</text>
+  <text x="52" y="200" font-size="58" font-weight="800" fill="url(#aG)" filter="url(#gF)">AI Para-</text>
+  <text x="52" y="268" font-size="58" font-weight="800" fill="#ffffff">phrasing</text>
+  <text x="52" y="322" font-size="22" fill="rgba(255,255,255,0.48)">Rewrite Text Naturally</text>
+  <text x="52" y="348" font-size="22" fill="rgba(255,255,255,0.48)">Without Losing Meaning</text>
+
+  <!-- Pills -->
+  <rect x="52" y="378" width="140" height="34" rx="17" fill="rgba(167,139,250,0.1)" stroke="rgba(167,139,250,0.25)" stroke-width="1"/>
+  <text x="122" y="400" text-anchor="middle" font-size="12" fill="#c4b5fd">✦ AI-Powered</text>
+  <rect x="202" y="378" width="130" height="34" rx="17" fill="rgba(96,165,250,0.08)" stroke="rgba(96,165,250,0.22)" stroke-width="1"/>
+  <text x="267" y="400" text-anchor="middle" font-size="12" fill="#93c5fd">⚡ Instant</text>
+  <rect x="342" y="378" width="140" height="34" rx="17" fill="rgba(34,197,94,0.08)" stroke="rgba(34,197,94,0.22)" stroke-width="1"/>
+  <text x="412" y="400" text-anchor="middle" font-size="12" fill="#4ade80">✓ Free Forever</text>
+
+  <!-- CTA -->
+  <rect x="52" y="432" width="238" height="50" rx="25" fill="url(#bG)" filter="url(#sh)"/>
+  <text x="171" y="463" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">Read Full Guide →</text>
+
+  <text x="52" y="566" font-size="12" fill="rgba(255,255,255,0.25)">toolnestai.net/blog/ai-paraphrasing-tool</text>
+
+  <!-- RIGHT: two-panel mockup -->
+  <rect x="706" y="44" width="450" height="542" rx="18" fill="url(#pG)" stroke="rgba(167,139,250,0.14)" stroke-width="1" filter="url(#sh)"/>
+  <rect x="706" y="44" width="450" height="5" rx="2" fill="url(#aG)"/>
+
+  <!-- window chrome -->
+  <rect x="706" y="49" width="450" height="34" fill="rgba(255,255,255,0.03)"/>
+  <circle cx="728" cy="66" r="5" fill="rgba(239,68,68,0.45)"/>
+  <circle cx="746" cy="66" r="5" fill="rgba(251,191,36,0.45)"/>
+  <circle cx="764" cy="66" r="5" fill="rgba(34,197,94,0.45)"/>
+  <text x="930" y="70" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.38)">✦ AI Paraphrasing Tool</text>
+
+  <!-- Original panel -->
+  <rect x="722" y="93" width="194" height="206" rx="10" fill="rgba(0,0,0,0.3)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <text x="736" y="112" font-size="11" fill="rgba(255,255,255,0.38)">Original Text</text>
+  <rect x="736" y="120" width="166" height="7" rx="3.5" fill="rgba(255,255,255,0.12)"/>
+  <rect x="736" y="133" width="145" height="7" rx="3.5" fill="rgba(255,255,255,0.09)"/>
+  <rect x="736" y="146" width="158" height="7" rx="3.5" fill="rgba(255,255,255,0.09)"/>
+  <rect x="736" y="159" width="130" height="7" rx="3.5" fill="rgba(255,255,255,0.07)"/>
+  <rect x="736" y="180" width="166" height="7" rx="3.5" fill="rgba(255,255,255,0.07)"/>
+  <rect x="736" y="193" width="148" height="7" rx="3.5" fill="rgba(255,255,255,0.06)"/>
+  <rect x="736" y="206" width="155" height="7" rx="3.5" fill="rgba(255,255,255,0.06)"/>
+  <rect x="736" y="227" width="166" height="7" rx="3.5" fill="rgba(255,255,255,0.05)"/>
+  <rect x="736" y="240" width="120" height="7" rx="3.5" fill="rgba(255,255,255,0.05)"/>
+  <rect x="736" y="260" width="166" height="22" rx="6" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <text x="819" y="275" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.28)">Paste text…</text>
+
+  <!-- AI orb -->
+  <circle cx="930" cy="196" r="40" fill="url(#aiC)" filter="url(#aiGlow)"/>
+  <circle cx="930" cy="196" r="52" fill="none" stroke="rgba(167,139,250,0.22)" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="930" y="204" text-anchor="middle" font-size="22" font-weight="800" fill="#fff">AI</text>
+  <text x="880" y="200" text-anchor="middle" font-size="18" fill="rgba(167,139,250,0.55)">»</text>
+  <text x="980" y="200" text-anchor="middle" font-size="18" fill="rgba(167,139,250,0.55)">»</text>
+
+  <!-- Paraphrased panel -->
+  <rect x="990" y="93" width="150" height="206" rx="10" fill="rgba(0,0,0,0.3)" stroke="rgba(167,139,250,0.18)" stroke-width="1"/>
+  <text x="1004" y="112" font-size="11" fill="rgba(167,139,250,0.7)">Paraphrased</text>
+  <rect x="1004" y="120" width="122" height="7" rx="3.5" fill="url(#bBar)" opacity="0.38"/>
+  <rect x="1004" y="133" width="108" height="7" rx="3.5" fill="url(#bBar)" opacity="0.3"/>
+  <rect x="1004" y="146" width="116" height="7" rx="3.5" fill="url(#bBar)" opacity="0.26"/>
+  <rect x="1004" y="159" width="96" height="7" rx="3.5" fill="url(#bBar)" opacity="0.2"/>
+  <rect x="1004" y="180" width="122" height="7" rx="3.5" fill="url(#bBar)" opacity="0.22"/>
+  <rect x="1004" y="193" width="104" height="7" rx="3.5" fill="url(#bBar)" opacity="0.18"/>
+  <rect x="1004" y="206" width="112" height="7" rx="3.5" fill="url(#bBar)" opacity="0.16"/>
+  <rect x="1004" y="227" width="122" height="7" rx="3.5" fill="url(#bBar)" opacity="0.14"/>
+  <rect x="1004" y="240" width="88" height="7" rx="3.5" fill="url(#bBar)" opacity="0.12"/>
+  <rect x="1004" y="260" width="122" height="22" rx="6" fill="rgba(167,139,250,0.1)" stroke="rgba(167,139,250,0.22)" stroke-width="1"/>
+  <text x="1065" y="275" text-anchor="middle" font-size="10" fill="#a78bfa">⧉ Copy</text>
+
+  <!-- Mode row -->
+  <text x="722" y="320" font-size="11" fill="rgba(255,255,255,0.38)">MODE</text>
+  <rect x="756" y="308" width="86" height="26" rx="7" fill="url(#bG)"/>
+  <text x="799" y="325" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">☰ Standard</text>
+  <rect x="850" y="308" width="76" height="26" rx="7" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+  <text x="888" y="325" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.45)">≋ Fluency</text>
+  <rect x="934" y="308" width="68" height="26" rx="7" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+  <text x="968" y="325" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.45)">⊞ Formal</text>
+  <rect x="1010" y="308" width="78" height="26" rx="7" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+  <text x="1049" y="325" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.45)">✦ Creative</text>
+  <rect x="1096" y="308" width="44" height="26" rx="7" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+  <text x="1118" y="325" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.45)">⚡</text>
+
+  <!-- CTA button in panel -->
+  <rect x="722" y="348" width="418" height="42" rx="21" fill="url(#bG)" filter="url(#sh)"/>
+  <text x="931" y="374" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">Paraphrase Now ✦</text>
+
+  <!-- Stats strip inside card -->
+  <rect x="722" y="406" width="418" height="58" rx="10" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <g text-anchor="middle" font-size="11">
+    <text x="800" y="430" fill="rgba(167,139,250,0.85)" font-weight="600">∞ Unlimited</text>
+    <text x="800" y="448" fill="rgba(255,255,255,0.3)">Paraphrases</text>
+    <line x1="862" y1="414" x2="862" y2="456" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    <text x="930" y="430" fill="rgba(96,165,250,0.85)" font-weight="600">🔒 No Sign Up</text>
+    <text x="930" y="448" fill="rgba(255,255,255,0.3)">Required</text>
+    <line x1="998" y1="414" x2="998" y2="456" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    <text x="1070" y="430" fill="rgba(34,197,94,0.85)" font-weight="600">✓ Secure</text>
+    <text x="1070" y="448" fill="rgba(255,255,255,0.3)">Your data is safe</text>
+  </g>
+
+  <!-- 100% Unique badge -->
+  <rect x="864" y="478" width="132" height="28" rx="14" fill="rgba(34,197,94,0.1)" stroke="rgba(34,197,94,0.28)" stroke-width="1"/>
+  <text x="930" y="496" text-anchor="middle" font-size="12" fill="#4ade80">✓ 100% Unique Output</text>
+
+  <!-- floating icons top-right -->
+  <rect x="1100" y="48" width="50" height="50" rx="12" fill="rgba(91,33,182,0.2)" stroke="rgba(91,33,182,0.42)" stroke-width="1.5"/>
+  <text x="1125" y="80" text-anchor="middle" font-size="22" fill="#a78bfa">✎</text>
+</svg>

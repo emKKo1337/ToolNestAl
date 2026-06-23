@@ -1,0 +1,91 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="75%"><stop offset="0%" stop-color="#0e0820"/><stop offset="100%" stop-color="#08080f"/></radialGradient>
+    <radialGradient id="gL" cx="25%" cy="50%" r="55%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.28"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gR" cx="75%" cy="50%" r="55%"><stop offset="0%" stop-color="#2563eb" stop-opacity="0.18"/><stop offset="100%" stop-color="#2563eb" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="pG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1a0e38" stop-opacity="0.97"/><stop offset="100%" stop-color="#0c0820" stop-opacity="0.97"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#5b21b6" flood-opacity="0.35"/></filter>
+  </defs>
+  <rect width="1200" height="500" fill="url(#bg)"/>
+  <ellipse cx="280" cy="250" rx="480" ry="360" fill="url(#gL)"/>
+  <ellipse cx="920" cy="250" rx="480" ry="360" fill="url(#gR)"/>
+
+  <text x="600" y="52" text-anchor="middle" font-size="13" font-weight="600" fill="#a78bfa" letter-spacing="2">HEAD-TO-HEAD</text>
+  <text x="600" y="88" text-anchor="middle" font-size="32" font-weight="800" fill="url(#aG)">Manual Rewriting vs. AI Paraphrasing</text>
+
+  <!-- VS badge -->
+  <circle cx="600" cy="290" r="36" fill="url(#pG)" stroke="rgba(167,139,250,0.3)" stroke-width="2"/>
+  <text x="600" y="298" text-anchor="middle" font-size="18" font-weight="800" fill="url(#aG)">VS</text>
+
+  <!-- LEFT panel: Manual -->
+  <rect x="40" y="115" width="520" height="358" rx="16" fill="url(#pG)" stroke="rgba(239,68,68,0.2)" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="40" y="115" width="520" height="4" rx="2" fill="rgba(239,68,68,0.55)"/>
+  <text x="300" y="148" text-anchor="middle" font-size="16" font-weight="700" fill="#fca5a5">✎ Manual Rewriting</text>
+
+  <g font-size="13">
+    <rect x="60" y="160" width="480" height="38" rx="8" fill="rgba(239,68,68,0.04)" stroke="rgba(239,68,68,0.1)" stroke-width="1"/>
+    <text x="80" y="184" fill="rgba(255,255,255,0.55)">⏱  Time per page</text>
+    <text x="520" y="184" text-anchor="end" fill="#f87171">45–90 min</text>
+
+    <rect x="60" y="204" width="480" height="38" rx="8" fill="rgba(239,68,68,0.03)" stroke="rgba(239,68,68,0.08)" stroke-width="1"/>
+    <text x="80" y="228" fill="rgba(255,255,255,0.55)">😓  Writer's block</text>
+    <text x="520" y="228" text-anchor="end" fill="#f87171">Frequent</text>
+
+    <rect x="60" y="248" width="480" height="38" rx="8" fill="rgba(239,68,68,0.04)" stroke="rgba(239,68,68,0.1)" stroke-width="1"/>
+    <text x="80" y="272" fill="rgba(255,255,255,0.55)">🔁  Consistency</text>
+    <text x="520" y="272" text-anchor="end" fill="#f87171">Varies by mood/energy</text>
+
+    <rect x="60" y="292" width="480" height="38" rx="8" fill="rgba(239,68,68,0.03)" stroke="rgba(239,68,68,0.08)" stroke-width="1"/>
+    <text x="80" y="316" fill="rgba(255,255,255,0.55)">🌐  Language support</text>
+    <text x="520" y="316" text-anchor="end" fill="#f87171">Your language only</text>
+
+    <rect x="60" y="336" width="480" height="38" rx="8" fill="rgba(239,68,68,0.04)" stroke="rgba(239,68,68,0.1)" stroke-width="1"/>
+    <text x="80" y="360" fill="rgba(255,255,255,0.55)">✓  Plagiarism-free</text>
+    <text x="520" y="360" text-anchor="end" fill="#fbbf24">Maybe — depends on skill</text>
+
+    <rect x="60" y="380" width="480" height="38" rx="8" fill="rgba(239,68,68,0.03)" stroke="rgba(239,68,68,0.08)" stroke-width="1"/>
+    <text x="80" y="404" fill="rgba(255,255,255,0.55)">💰  Cost</text>
+    <text x="520" y="404" text-anchor="end" fill="#f87171">Time + cognitive effort</text>
+
+    <rect x="60" y="424" width="480" height="34" rx="8" fill="rgba(239,68,68,0.04)" stroke="rgba(239,68,68,0.1)" stroke-width="1"/>
+    <text x="80" y="446" fill="rgba(255,255,255,0.55)">🔄  Revision speed</text>
+    <text x="520" y="446" text-anchor="end" fill="#f87171">Full rewrite each time</text>
+  </g>
+
+  <!-- RIGHT panel: AI -->
+  <rect x="640" y="115" width="520" height="358" rx="16" fill="url(#pG)" stroke="rgba(167,139,250,0.22)" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="640" y="115" width="520" height="4" rx="2" fill="url(#aG)"/>
+  <text x="900" y="148" text-anchor="middle" font-size="16" font-weight="700" fill="#a78bfa">✦ AI Paraphrasing Tool</text>
+
+  <g font-size="13">
+    <rect x="660" y="160" width="480" height="38" rx="8" fill="rgba(167,139,250,0.06)" stroke="rgba(167,139,250,0.12)" stroke-width="1"/>
+    <text x="680" y="184" fill="rgba(255,255,255,0.55)">⏱  Time per page</text>
+    <text x="1120" y="184" text-anchor="end" fill="#4ade80">Under 30 seconds</text>
+
+    <rect x="660" y="204" width="480" height="38" rx="8" fill="rgba(167,139,250,0.05)" stroke="rgba(167,139,250,0.1)" stroke-width="1"/>
+    <text x="680" y="228" fill="rgba(255,255,255,0.55)">😓  Writer's block</text>
+    <text x="1120" y="228" text-anchor="end" fill="#4ade80">Eliminated</text>
+
+    <rect x="660" y="248" width="480" height="38" rx="8" fill="rgba(167,139,250,0.06)" stroke="rgba(167,139,250,0.12)" stroke-width="1"/>
+    <text x="680" y="272" fill="rgba(255,255,255,0.55)">🔁  Consistency</text>
+    <text x="1120" y="272" text-anchor="end" fill="#4ade80">Same quality every time</text>
+
+    <rect x="660" y="292" width="480" height="38" rx="8" fill="rgba(167,139,250,0.05)" stroke="rgba(167,139,250,0.1)" stroke-width="1"/>
+    <text x="680" y="316" fill="rgba(255,255,255,0.55)">🌐  Language support</text>
+    <text x="1120" y="316" text-anchor="end" fill="#4ade80">Multiple languages</text>
+
+    <rect x="660" y="336" width="480" height="38" rx="8" fill="rgba(167,139,250,0.06)" stroke="rgba(167,139,250,0.12)" stroke-width="1"/>
+    <text x="680" y="360" fill="rgba(255,255,255,0.55)">✓  Plagiarism-free</text>
+    <text x="1120" y="360" text-anchor="end" fill="#4ade80">Yes — 100% unique output</text>
+
+    <rect x="660" y="380" width="480" height="38" rx="8" fill="rgba(167,139,250,0.05)" stroke="rgba(167,139,250,0.1)" stroke-width="1"/>
+    <text x="680" y="404" fill="rgba(255,255,255,0.55)">💰  Cost</text>
+    <text x="1120" y="404" text-anchor="end" fill="#4ade80">100% free</text>
+
+    <rect x="660" y="424" width="480" height="34" rx="8" fill="rgba(167,139,250,0.06)" stroke="rgba(167,139,250,0.12)" stroke-width="1"/>
+    <text x="680" y="446" fill="rgba(255,255,255,0.55)">🔄  Revision speed</text>
+    <text x="1120" y="446" text-anchor="end" fill="#4ade80">Instant regeneration</text>
+  </g>
+</svg>
