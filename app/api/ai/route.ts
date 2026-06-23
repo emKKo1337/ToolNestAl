@@ -13,6 +13,8 @@ import {
   translateStream,
   paraphrase,
   paraphraseStream,
+  grammarCheck,
+  grammarCheckStream,
   generateText,
 } from "@/lib/ai/services";
 import { SYSTEM_PROMPTS } from "@/lib/ai/prompts";
@@ -131,6 +133,20 @@ export async function POST(req: Request) {
         return Response.json(await generateResume(resumePayload, options));
       }
 
+      // ── grammarCheck ──────────────────────────────────────────────────────
+      case "grammarCheck": {
+        const { text, explainCorrections } = payload as {
+          text?: string;
+          explainCorrections?: boolean;
+        };
+        if (!text?.trim()) {
+          return AIErrors.invalidRequest("grammarCheck task requires payload.text.").toResponse();
+        }
+        const gcPayload = { text, explainCorrections: explainCorrections ?? false };
+        if (stream) return grammarCheckStream(gcPayload, options);
+        return Response.json(await grammarCheck(gcPayload, options));
+      }
+
       // ── paraphrase ────────────────────────────────────────────────────────
       case "paraphrase": {
         const { text, mode } = payload as {
@@ -167,7 +183,7 @@ export async function POST(req: Request) {
 
       default:
         return AIErrors.invalidRequest(
-          `Unknown task type: "${task}". Supported tasks: chat, translate, summarize, generateEmail, generateResume, generateText, paraphrase.`
+          `Unknown task type: "${task}". Supported tasks: chat, translate, summarize, generateEmail, generateResume, generateText, paraphrase, grammarCheck.`
         ).toResponse();
     }
   } catch (err) {

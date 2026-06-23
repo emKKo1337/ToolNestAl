@@ -4,6 +4,7 @@ import type {
   GenerateEmailPayload,
   GenerateResumePayload,
   ParaphrasePayload,
+  GrammarCheckPayload,
   WorkExperience,
   EducationEntry,
   AIMessage,
@@ -38,6 +39,10 @@ Use clean plain text with clear section headers. No Markdown. No asterisks.`,
   generateText: `You are a skilled professional writer.
 Generate high-quality text based on the user's instructions.
 Match the requested tone and style precisely.`,
+
+  grammarCheck: `You are a professional proofreader and writing coach.
+Fix all grammar, spelling, punctuation and clarity issues in the provided text.
+Preserve the author's original meaning, voice, and intent throughout.`,
 
   paraphrase: `You are an expert writing assistant specialised in paraphrasing.
 Rewrite the provided text according to the requested mode while preserving the original meaning.
@@ -271,6 +276,31 @@ RULES:
 - 3 sentences only. Impactful, professional, first-person perspective.
 - Highlight value and expertise. Do not mention specific employers by name.
 - Plain text only. No Markdown. No labels. Output only the summary paragraph.`;
+}
+
+export function buildGrammarCheckPrompt(payload: GrammarCheckPayload): string {
+  const explainSection = payload.explainCorrections
+    ? `After the corrected text, add a blank line then write "CORRECTIONS:" followed by a concise numbered list of the changes you made and why. Keep each explanation brief (one sentence).`
+    : `Output ONLY the corrected text — no labels, no explanations, no commentary.`;
+
+  return `Proofread and correct the following text. Fix all:
+- Grammar errors
+- Spelling mistakes
+- Punctuation issues
+- Clarity and readability problems
+- Awkward phrasing
+
+RULES — follow exactly:
+- Preserve the original meaning, tone, and intent completely.
+- Keep changes minimal — only fix genuine errors and unclear phrasing.
+- Do NOT rewrite sentences that are already correct.
+- Do NOT change the author's style or voice unnecessarily.
+- Never output Markdown formatting (no **, no ##, no __).
+- ${explainSection}
+
+Text to check:
+
+${payload.text}`;
 }
 
 export function buildParaphrasePrompt(payload: ParaphrasePayload): string {

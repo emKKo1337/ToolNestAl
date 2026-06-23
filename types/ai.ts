@@ -7,7 +7,8 @@ export type AITaskType =
   | "generateEmail"
   | "generateResume"
   | "generateText"
-  | "paraphrase";
+  | "paraphrase"
+  | "grammarCheck";
 
 // ── Model identifiers ─────────────────────────────────────────────────────────
 // Gemini direct-API IDs have no "/" — all OpenRouter IDs contain "/".
@@ -175,6 +176,16 @@ export interface GenerateResumePayload {
   certificates?: string;
   // Optional job description for ATS optimisation
   jobDescription?: string;
+}
+
+export interface GrammarCheckPayload {
+  text: string;
+  explainCorrections: boolean;
+}
+
+export interface GrammarCheckResult {
+  corrected: string;
+  explanation?: string;
 }
 
 export interface ChatPayload {

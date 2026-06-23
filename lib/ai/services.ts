@@ -14,6 +14,7 @@ import {
   buildEmailPrompt,
   buildResumePrompt,
   buildParaphrasePrompt,
+  buildGrammarCheckPrompt,
   buildChatMessages,
 } from "./prompts";
 import type {
@@ -25,6 +26,7 @@ import type {
   GenerateEmailPayload,
   GenerateResumePayload,
   ParaphrasePayload,
+  GrammarCheckPayload,
   ChatPayload,
 } from "@/types/ai";
 
@@ -372,6 +374,32 @@ export function generateResumeStream(
     buildResumePrompt(payload),
     SYSTEM_PROMPTS.generateResume,
     "generateResume",
+    { maxTokens: 2048, ...opts }
+  );
+}
+
+// ── grammarCheck ──────────────────────────────────────────────────────────────
+
+export async function grammarCheck(
+  payload: GrammarCheckPayload,
+  opts?: AIRequestOptions
+): Promise<AIResponse> {
+  return generateText(
+    buildGrammarCheckPrompt(payload),
+    SYSTEM_PROMPTS.grammarCheck,
+    "grammarCheck",
+    { maxTokens: 2048, ...opts }
+  );
+}
+
+export function grammarCheckStream(
+  payload: GrammarCheckPayload,
+  opts?: AIRequestOptions
+): Response {
+  return streamText(
+    buildGrammarCheckPrompt(payload),
+    SYSTEM_PROMPTS.grammarCheck,
+    "grammarCheck",
     { maxTokens: 2048, ...opts }
   );
 }
