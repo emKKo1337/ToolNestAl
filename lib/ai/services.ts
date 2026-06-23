@@ -18,6 +18,7 @@ import {
   buildHumanizePrompt,
   buildCoverLetterPrompt,
   buildGeneratePromptPrompt,
+  buildGenerateBusinessNamesPrompt,
   buildChatMessages,
 } from "./prompts";
 import type {
@@ -33,6 +34,7 @@ import type {
   HumanizePayload,
   CoverLetterPayload,
   GeneratePromptPayload,
+  GenerateBusinessNamesPayload,
   ChatPayload,
 } from "@/types/ai";
 
@@ -511,6 +513,32 @@ export function generatePromptStream(
     SYSTEM_PROMPTS.generatePrompt,
     "generatePrompt",
     { maxTokens: 1024, ...opts }
+  );
+}
+
+// ── generateBusinessNames ─────────────────────────────────────────────────────
+
+export async function generateBusinessNames(
+  payload: GenerateBusinessNamesPayload,
+  opts?: AIRequestOptions
+): Promise<AIResponse> {
+  return generateText(
+    buildGenerateBusinessNamesPrompt(payload),
+    SYSTEM_PROMPTS.generateBusinessNames,
+    "generateBusinessNames",
+    { maxTokens: 2048, ...opts }
+  );
+}
+
+export function generateBusinessNamesStream(
+  payload: GenerateBusinessNamesPayload,
+  opts?: AIRequestOptions
+): Response {
+  return streamText(
+    buildGenerateBusinessNamesPrompt(payload),
+    SYSTEM_PROMPTS.generateBusinessNames,
+    "generateBusinessNames",
+    { maxTokens: 2048, ...opts }
   );
 }
 

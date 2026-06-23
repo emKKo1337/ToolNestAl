@@ -21,6 +21,8 @@ import {
   coverLetterStream,
   generatePrompt,
   generatePromptStream,
+  generateBusinessNames,
+  generateBusinessNamesStream,
   generateText,
 } from "@/lib/ai/services";
 import { SYSTEM_PROMPTS } from "@/lib/ai/prompts";
@@ -254,6 +256,39 @@ export async function POST(req: Request) {
         };
         if (stream) return generatePromptStream(generatePromptPayload, options);
         return Response.json(await generatePrompt(generatePromptPayload, options));
+      }
+
+      // ── generateBusinessNames ─────────────────────────────────────────────
+      case "generateBusinessNames": {
+        const {
+          description,
+          industry,
+          keywords,
+          style: nameStyle,
+          length: nameLength,
+          count,
+        } = payload as {
+          description?: string;
+          industry?: string;
+          keywords?: string;
+          style?: import("@/types/ai").BusinessNameStyle;
+          length?: import("@/types/ai").BusinessNameLength;
+          count?: number;
+        };
+        if (!description?.trim())
+          return AIErrors.invalidRequest("generateBusinessNames task requires payload.description.").toResponse();
+        if (!industry?.trim())
+          return AIErrors.invalidRequest("generateBusinessNames task requires payload.industry.").toResponse();
+        const namesPayload = {
+          description,
+          industry,
+          keywords,
+          style: nameStyle ?? "modern" as import("@/types/ai").BusinessNameStyle,
+          length: nameLength ?? "medium" as import("@/types/ai").BusinessNameLength,
+          count: count ?? 6,
+        };
+        if (stream) return generateBusinessNamesStream(namesPayload, options);
+        return Response.json(await generateBusinessNames(namesPayload, options));
       }
 
       // ── generateText (generic) ────────────────────────────────────────────

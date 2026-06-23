@@ -8,6 +8,7 @@ import type {
   HumanizePayload,
   CoverLetterPayload,
   GeneratePromptPayload,
+  GenerateBusinessNamesPayload,
   WorkExperience,
   EducationEntry,
   AIMessage,
@@ -65,6 +66,10 @@ The letter should have a proper greeting, 3-4 focused paragraphs, and a professi
 You deeply understand what makes prompts clear, specific, and effective for each AI system.
 Output ONLY the ready-to-use prompt — no explanations, no preamble, no labels, no surrounding quotes.
 The prompt must be immediately usable: copy and paste it straight into the target AI model.`,
+
+  generateBusinessNames: `You are a world-class branding expert and creative naming strategist.
+You specialise in creating memorable, distinctive, and brandable business names.
+You always follow the exact output format specified — never deviate, never add extra commentary.`,
 } as const;
 
 // ── User prompt builders ──────────────────────────────────────────────────────
@@ -464,6 +469,51 @@ RULES — follow exactly:
 - For image-generation models, include style, lighting, composition, and mood descriptors.
 - For coding models, specify language, framework, and output format where relevant.
 - For writing/content models, assign a clear role, context, and output instructions.`;
+}
+
+export function buildGenerateBusinessNamesPrompt(payload: GenerateBusinessNamesPayload): string {
+  const count = payload.count ?? 6;
+
+  const styleGuide: Record<string, string> = {
+    modern: "Sleek, forward-thinking, tech-inspired — names that feel fresh and current.",
+    professional: "Trustworthy, established, credible — names that inspire confidence.",
+    luxury: "Premium, exclusive, sophisticated — names that feel high-end and aspirational.",
+    creative: "Imaginative, playful, unexpected — names with personality and originality.",
+    minimal: "Clean, simple, one or two syllables — names that are easy to say and remember.",
+  };
+
+  const lengthGuide: Record<string, string> = {
+    short: "1–5 characters or one very short word (e.g. Uber, Lyft, Zip).",
+    medium: "6–10 characters or one to two words (e.g. Shopify, Notion, Stripe).",
+    long: "11–20 characters or two to three words (e.g. SalesForce, MailChimp, HubSpot).",
+  };
+
+  const keywordsSection = payload.keywords?.trim()
+    ? `\nKeywords to incorporate or draw inspiration from: ${payload.keywords.trim()}`
+    : "";
+
+  return `Generate exactly ${count} unique business names for the following brief.
+
+Business description: ${payload.description}
+Industry: ${payload.industry}${keywordsSection}
+Brand style: ${styleGuide[payload.style] ?? payload.style}
+Name length: ${lengthGuide[payload.length] ?? payload.length}
+
+Output EXACTLY this format for each name — no extra text before, between, or after the blocks:
+
+NAME: [Business name]
+EXPLANATION: [One sentence explaining the name's meaning, feel, and why it fits the brand — max 20 words]
+TAGLINE: [A short, punchy tagline for this name — max 8 words]
+STYLE: [${payload.style}]
+---
+
+RULES:
+- Output exactly ${count} blocks separated by ---
+- Each block must have NAME, EXPLANATION, TAGLINE, and STYLE lines in that order
+- Names must be original, pronounceable, and not obvious trademarks
+- Do not number the blocks
+- Do not add any text outside the blocks
+- The last block must also end with ---`;
 }
 
 export function buildChatMessages(
