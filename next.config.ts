@@ -21,6 +21,7 @@ const nextConfig: NextConfig = {
       "@codemirror/language",
       "@codemirror/lang-json",
       "@codemirror/lang-html",
+      "@codemirror/lang-sql",
       "codemirror",
     ],
   },
