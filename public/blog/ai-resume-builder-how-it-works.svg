@@ -1,0 +1,89 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%"><stop offset="0%" stop-color="#160b28"/><stop offset="100%" stop-color="#0a0a14"/></radialGradient>
+    <radialGradient id="g1" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#7c3aed" stop-opacity="0.25"/><stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/></radialGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#ddb7ff"/><stop offset="100%" stop-color="#4cd7f6"/></linearGradient>
+    <linearGradient id="panelGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1e0e35" stop-opacity="0.95"/><stop offset="100%" stop-color="#0f0820" stop-opacity="0.95"/></linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#7c3aed" flood-opacity="0.3"/></filter>
+  </defs>
+  <rect width="1200" height="500" fill="url(#bg)"/>
+  <ellipse cx="600" cy="250" rx="500" ry="350" fill="url(#g1)"/>
+
+  <!-- Title -->
+  <text x="600" y="60" text-anchor="middle" font-size="26" font-weight="700" fill="url(#accentGrad)">How AI Resume Builder Works</text>
+  <text x="600" y="85" text-anchor="middle" font-size="14" fill="rgba(255,255,255,0.4)">Three steps from blank page to polished, ATS-ready resume</text>
+
+  <!-- Step connector line -->
+  <line x1="250" y1="240" x2="950" y2="240" stroke="rgba(221,183,255,0.1)" stroke-width="2" stroke-dasharray="6 4"/>
+
+  <!-- STEP 1 -->
+  <rect x="60" y="120" width="280" height="240" rx="16" fill="url(#panelGrad)" stroke="rgba(221,183,255,0.15)" stroke-width="1" filter="url(#shadow)"/>
+  <rect x="60" y="120" width="280" height="4" rx="2" fill="#a855f7"/>
+  <circle cx="200" cy="118" r="18" fill="#1e0e35" stroke="#a855f7" stroke-width="2"/>
+  <text x="200" y="123" text-anchor="middle" font-size="14" font-weight="700" fill="#a855f7">1</text>
+  <text x="200" y="165" text-anchor="middle" font-size="30">📝</text>
+  <text x="200" y="198" text-anchor="middle" font-size="15" font-weight="700" fill="#f0e8ff">Enter Your Details</text>
+  <text x="200" y="218" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.45)">Name, job title, experience,</text>
+  <text x="200" y="234" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.45)">skills and education</text>
+  <rect x="80" y="255" width="240" height="6" rx="3" fill="rgba(255,255,255,0.06)"/>
+  <rect x="80" y="267" width="200" height="6" rx="3" fill="rgba(255,255,255,0.04)"/>
+  <rect x="80" y="285" width="100" height="26" rx="13" fill="rgba(168,85,247,0.12)" stroke="rgba(168,85,247,0.25)" stroke-width="1"/>
+  <rect x="188" y="285" width="115" height="26" rx="13" fill="rgba(76,215,246,0.08)" stroke="rgba(76,215,246,0.2)" stroke-width="1"/>
+  <text x="130" y="302" text-anchor="middle" font-size="10" fill="#a855f7">Personal Info</text>
+  <text x="245" y="302" text-anchor="middle" font-size="10" fill="#4cd7f6">Work History</text>
+  <rect x="80" y="318" width="114" height="26" rx="13" fill="rgba(167,139,250,0.08)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+  <rect x="202" y="318" width="118" height="26" rx="13" fill="rgba(244,114,182,0.08)" stroke="rgba(244,114,182,0.2)" stroke-width="1"/>
+  <text x="137" y="335" text-anchor="middle" font-size="10" fill="#a78bfa">Education</text>
+  <text x="261" y="335" text-anchor="middle" font-size="10" fill="#f472b6">Skills</text>
+
+  <!-- Arrow 1→2 -->
+  <text x="395" y="248" text-anchor="middle" font-size="28" fill="rgba(221,183,255,0.4)">⟶</text>
+
+  <!-- STEP 2 -->
+  <rect x="460" y="120" width="280" height="240" rx="16" fill="url(#panelGrad)" stroke="rgba(76,215,246,0.2)" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="460" y="120" width="280" height="4" rx="2" fill="url(#accentGrad)"/>
+  <circle cx="600" cy="118" r="18" fill="#0f0820" stroke="url(#accentGrad)" stroke-width="2"/>
+  <text x="600" y="123" text-anchor="middle" font-size="14" font-weight="700" fill="#ddb7ff">2</text>
+  <text x="600" y="165" text-anchor="middle" font-size="30">✦</text>
+  <text x="600" y="198" text-anchor="middle" font-size="15" font-weight="700" fill="#f0e8ff">AI Writes &amp; Optimises</text>
+  <text x="600" y="218" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.45)">Gemini AI crafts compelling</text>
+  <text x="600" y="234" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.45)">ATS-friendly content</text>
+  <!-- Progress bars -->
+  <text x="480" y="264" font-size="10" fill="rgba(255,255,255,0.4)">ATS Score</text>
+  <rect x="480" y="270" width="200" height="8" rx="4" fill="rgba(255,255,255,0.06)"/>
+  <rect x="480" y="270" width="175" height="8" rx="4" fill="rgba(221,183,255,0.4)"/>
+  <text x="686" y="278" font-size="9" fill="#ddb7ff">88%</text>
+  <text x="480" y="296" font-size="10" fill="rgba(255,255,255,0.4)">Keywords</text>
+  <rect x="480" y="302" width="200" height="8" rx="4" fill="rgba(255,255,255,0.06)"/>
+  <rect x="480" y="302" width="190" height="8" rx="4" fill="rgba(76,215,246,0.4)"/>
+  <text x="686" y="310" font-size="9" fill="#4cd7f6">95%</text>
+  <text x="480" y="328" font-size="10" fill="rgba(255,255,255,0.4)">Readability</text>
+  <rect x="480" y="334" width="200" height="8" rx="4" fill="rgba(255,255,255,0.06)"/>
+  <rect x="480" y="334" width="160" height="8" rx="4" fill="rgba(167,139,250,0.4)"/>
+  <text x="686" y="342" font-size="9" fill="#a78bfa">80%</text>
+
+  <!-- Arrow 2→3 -->
+  <text x="795" y="248" text-anchor="middle" font-size="28" fill="rgba(221,183,255,0.4)">⟶</text>
+
+  <!-- STEP 3 -->
+  <rect x="860" y="120" width="280" height="240" rx="16" fill="url(#panelGrad)" stroke="rgba(34,197,94,0.2)" stroke-width="1" filter="url(#shadow)"/>
+  <rect x="860" y="120" width="280" height="4" rx="2" fill="#22c55e"/>
+  <circle cx="1000" cy="118" r="18" fill="#0f0820" stroke="#22c55e" stroke-width="2"/>
+  <text x="1000" y="123" text-anchor="middle" font-size="14" font-weight="700" fill="#22c55e">3</text>
+  <text x="1000" y="165" text-anchor="middle" font-size="30">⬇</text>
+  <text x="1000" y="198" text-anchor="middle" font-size="15" font-weight="700" fill="#f0e8ff">Download &amp; Apply</text>
+  <text x="1000" y="218" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.45)">Export as PDF, review,</text>
+  <text x="1000" y="234" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.45)">and start applying</text>
+  <!-- Download buttons -->
+  <rect x="880" y="255" width="240" height="34" rx="17" fill="rgba(34,197,94,0.12)" stroke="rgba(34,197,94,0.3)" stroke-width="1"/>
+  <text x="1000" y="277" text-anchor="middle" font-size="12" font-weight="700" fill="#22c55e">⬇ Download as PDF</text>
+  <rect x="880" y="297" width="115" height="30" rx="15" fill="rgba(168,85,247,0.1)" stroke="rgba(168,85,247,0.25)" stroke-width="1"/>
+  <rect x="1003" y="297" width="117" height="30" rx="15" fill="rgba(76,215,246,0.08)" stroke="rgba(76,215,246,0.2)" stroke-width="1"/>
+  <text x="937" y="316" text-anchor="middle" font-size="10" fill="#a855f7">Copy Text</text>
+  <text x="1061" y="316" text-anchor="middle" font-size="10" fill="#4cd7f6">Share Link</text>
+  <rect x="880" y="336" width="240" height="28" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="1000" y="354" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.35)">✓ ATS Friendly · ✓ No Watermark</text>
+
+  <!-- Bottom note -->
+  <text x="600" y="440" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.3)">Free · No sign-up required · Works in your browser</text>
+</svg>

@@ -1,0 +1,93 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%"><stop offset="0%" stop-color="#0d0a1e"/><stop offset="100%" stop-color="#0a0a14"/></radialGradient>
+    <radialGradient id="glow1" cx="30%" cy="50%" r="50%"><stop offset="0%" stop-color="#06b6d4" stop-opacity="0.18"/><stop offset="100%" stop-color="#06b6d4" stop-opacity="0"/></radialGradient>
+    <radialGradient id="glow2" cx="70%" cy="50%" r="50%"><stop offset="0%" stop-color="#7c3aed" stop-opacity="0.2"/><stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/></radialGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#ddb7ff"/><stop offset="100%" stop-color="#4cd7f6"/></linearGradient>
+    <linearGradient id="panelGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1a0d2e" stop-opacity="0.96"/><stop offset="100%" stop-color="#0d0820" stop-opacity="0.96"/></linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="8" stdDeviation="18" flood-color="#7c3aed" flood-opacity="0.28"/></filter>
+  </defs>
+  <rect width="1200" height="500" fill="url(#bg)"/>
+  <ellipse cx="300" cy="250" rx="400" ry="350" fill="url(#glow1)"/>
+  <ellipse cx="900" cy="250" rx="400" ry="350" fill="url(#glow2)"/>
+
+  <!-- Title -->
+  <text x="600" y="58" text-anchor="middle" font-size="26" font-weight="700" fill="url(#accentGrad)">ATS Resume Optimisation Tips</text>
+  <text x="600" y="82" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.4)">What applicant tracking systems actually scan for — and how AI handles it</text>
+
+  <!-- Left column: ATS Score visual -->
+  <rect x="50" y="110" width="340" height="340" rx="16" fill="url(#panelGrad)" stroke="rgba(76,215,246,0.15)" stroke-width="1" filter="url(#shadow)"/>
+  <rect x="50" y="110" width="340" height="4" rx="2" fill="#4cd7f6"/>
+  <text x="220" y="148" text-anchor="middle" font-size="14" font-weight="700" fill="#a8d8f0">ATS COMPATIBILITY SCORE</text>
+
+  <!-- Circular score -->
+  <circle cx="220" cy="220" r="65" fill="rgba(76,215,246,0.05)" stroke="rgba(76,215,246,0.1)" stroke-width="1.5"/>
+  <circle cx="220" cy="220" r="65" fill="none" stroke="rgba(76,215,246,0.2)" stroke-width="8" stroke-dasharray="408" stroke-dashoffset="0"/>
+  <circle cx="220" cy="220" r="65" fill="none" stroke="url(#accentGrad)" stroke-width="8" stroke-dasharray="408" stroke-dashoffset="49" stroke-linecap="round" transform="rotate(-90 220 220)"/>
+  <text x="220" y="212" text-anchor="middle" font-size="32" font-weight="800" fill="#ddb7ff">88</text>
+  <text x="220" y="232" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.4)">out of 100</text>
+  <text x="220" y="252" text-anchor="middle" font-size="11" font-weight="600" fill="#22c55e">✓ EXCELLENT</text>
+
+  <!-- Score breakdown -->
+  <g>
+    <text x="70" y="315" font-size="11" fill="rgba(255,255,255,0.5)">Keywords match</text>
+    <rect x="70" y="320" width="200" height="6" rx="3" fill="rgba(255,255,255,0.06)"/>
+    <rect x="70" y="320" width="190" height="6" rx="3" fill="rgba(76,215,246,0.5)"/>
+    <text x="278" y="326" font-size="10" fill="#4cd7f6">95%</text>
+
+    <text x="70" y="344" font-size="11" fill="rgba(255,255,255,0.5)">Format compatibility</text>
+    <rect x="70" y="349" width="200" height="6" rx="3" fill="rgba(255,255,255,0.06)"/>
+    <rect x="70" y="349" width="185" height="6" rx="3" fill="rgba(221,183,255,0.5)"/>
+    <text x="278" y="355" font-size="10" fill="#ddb7ff">92%</text>
+
+    <text x="70" y="373" font-size="11" fill="rgba(255,255,255,0.5)">Section structure</text>
+    <rect x="70" y="378" width="200" height="6" rx="3" fill="rgba(255,255,255,0.06)"/>
+    <rect x="70" y="378" width="170" height="6" rx="3" fill="rgba(167,139,250,0.5)"/>
+    <text x="278" y="384" font-size="10" fill="#a78bfa">85%</text>
+
+    <text x="70" y="402" font-size="11" fill="rgba(255,255,255,0.5)">Action verbs</text>
+    <rect x="70" y="407" width="200" height="6" rx="3" fill="rgba(255,255,255,0.06)"/>
+    <rect x="70" y="407" width="160" height="6" rx="3" fill="rgba(244,114,182,0.5)"/>
+    <text x="278" y="413" font-size="10" fill="#f472b6">80%</text>
+  </g>
+
+  <!-- Middle column: Do's -->
+  <rect x="420" y="110" width="320" height="340" rx="16" fill="url(#panelGrad)" stroke="rgba(34,197,94,0.15)" stroke-width="1" filter="url(#shadow)"/>
+  <rect x="420" y="110" width="320" height="4" rx="2" fill="#22c55e"/>
+  <text x="580" y="148" text-anchor="middle" font-size="14" font-weight="700" fill="#4ade80">✓ DO THIS</text>
+  <g font-size="12" fill="rgba(255,255,255,0.7)">
+    <rect x="440" y="160" width="280" height="36" rx="8" fill="rgba(34,197,94,0.05)" stroke="rgba(34,197,94,0.15)" stroke-width="1"/>
+    <text x="460" y="181" font-size="12">✓ Use standard section headings</text>
+    <rect x="440" y="204" width="280" height="36" rx="8" fill="rgba(34,197,94,0.05)" stroke="rgba(34,197,94,0.15)" stroke-width="1"/>
+    <text x="460" y="225" font-size="12">✓ Include job-specific keywords</text>
+    <rect x="440" y="248" width="280" height="36" rx="8" fill="rgba(34,197,94,0.05)" stroke="rgba(34,197,94,0.15)" stroke-width="1"/>
+    <text x="460" y="269" font-size="12">✓ Quantify achievements with numbers</text>
+    <rect x="440" y="292" width="280" height="36" rx="8" fill="rgba(34,197,94,0.05)" stroke="rgba(34,197,94,0.15)" stroke-width="1"/>
+    <text x="460" y="313" font-size="12">✓ Keep formatting clean and simple</text>
+    <rect x="440" y="336" width="280" height="36" rx="8" fill="rgba(34,197,94,0.05)" stroke="rgba(34,197,94,0.15)" stroke-width="1"/>
+    <text x="460" y="357" font-size="12">✓ Use action verbs: led, built, grew</text>
+    <rect x="440" y="380" width="280" height="36" rx="8" fill="rgba(34,197,94,0.05)" stroke="rgba(34,197,94,0.15)" stroke-width="1"/>
+    <text x="460" y="401" font-size="12">✓ Tailor each resume to the job</text>
+  </g>
+
+  <!-- Right column: Don'ts -->
+  <rect x="770" y="110" width="380" height="340" rx="16" fill="url(#panelGrad)" stroke="rgba(239,68,68,0.12)" stroke-width="1" filter="url(#shadow)"/>
+  <rect x="770" y="110" width="380" height="4" rx="2" fill="#ef4444"/>
+  <text x="960" y="148" text-anchor="middle" font-size="14" font-weight="700" fill="#f87171">✗ AVOID THIS</text>
+  <g font-size="12" fill="rgba(255,255,255,0.7)">
+    <rect x="790" y="160" width="340" height="36" rx="8" fill="rgba(239,68,68,0.05)" stroke="rgba(239,68,68,0.12)" stroke-width="1"/>
+    <text x="810" y="181" font-size="12">✗ Images, charts or graphics in the resume</text>
+    <rect x="790" y="204" width="340" height="36" rx="8" fill="rgba(239,68,68,0.05)" stroke="rgba(239,68,68,0.12)" stroke-width="1"/>
+    <text x="810" y="225" font-size="12">✗ Tables or multi-column layouts</text>
+    <rect x="790" y="248" width="340" height="36" rx="8" fill="rgba(239,68,68,0.05)" stroke="rgba(239,68,68,0.12)" stroke-width="1"/>
+    <text x="810" y="269" font-size="12">✗ Headers and footers for key info</text>
+    <rect x="790" y="292" width="340" height="36" rx="8" fill="rgba(239,68,68,0.05)" stroke="rgba(239,68,68,0.12)" stroke-width="1"/>
+    <text x="810" y="313" font-size="12">✗ Fancy fonts that break parsing</text>
+    <rect x="790" y="336" width="340" height="36" rx="8" fill="rgba(239,68,68,0.05)" stroke="rgba(239,68,68,0.12)" stroke-width="1"/>
+    <text x="810" y="357" font-size="12">✗ Unexplained abbreviations</text>
+    <rect x="790" y="380" width="340" height="36" rx="8" fill="rgba(239,68,68,0.05)" stroke="rgba(239,68,68,0.12)" stroke-width="1"/>
+    <text x="810" y="401" font-size="12">✗ Generic objective statements</text>
+  </g>
+
+  <text x="600" y="478" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.25)">ToolNest AI — AI Resume Builder handles all of this automatically</text>
+</svg>

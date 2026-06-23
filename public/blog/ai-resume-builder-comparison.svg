@@ -1,0 +1,72 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%"><stop offset="0%" stop-color="#0d0a1e"/><stop offset="100%" stop-color="#0a0a14"/></radialGradient>
+    <radialGradient id="glowL" cx="25%" cy="50%" r="45%"><stop offset="0%" stop-color="#ef4444" stop-opacity="0.1"/><stop offset="100%" stop-color="#ef4444" stop-opacity="0"/></radialGradient>
+    <radialGradient id="glowR" cx="75%" cy="50%" r="45%"><stop offset="0%" stop-color="#7c3aed" stop-opacity="0.2"/><stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/></radialGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#ddb7ff"/><stop offset="100%" stop-color="#4cd7f6"/></linearGradient>
+    <linearGradient id="panelBad" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#1a0d0d" stop-opacity="0.96"/><stop offset="100%" stop-color="#0f0809" stop-opacity="0.96"/></linearGradient>
+    <linearGradient id="panelGood" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#0d0a1e" stop-opacity="0.96"/><stop offset="100%" stop-color="#130820" stop-opacity="0.96"/></linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#7c3aed" flood-opacity="0.28"/></filter>
+  </defs>
+  <rect width="1200" height="500" fill="url(#bg)"/>
+  <ellipse cx="300" cy="250" rx="400" ry="350" fill="url(#glowL)"/>
+  <ellipse cx="900" cy="250" rx="400" ry="350" fill="url(#glowR)"/>
+
+  <text x="600" y="55" text-anchor="middle" font-size="26" font-weight="700" fill="url(#accentGrad)">AI Resume Builder vs. Traditional Methods</text>
+
+  <!-- VS badge -->
+  <circle cx="600" cy="270" r="30" fill="#131313" stroke="rgba(221,183,255,0.3)" stroke-width="1.5"/>
+  <text x="600" y="278" text-anchor="middle" font-size="16" font-weight="800" fill="#ddb7ff">VS</text>
+
+  <!-- LEFT: Traditional -->
+  <rect x="50" y="80" width="500" height="370" rx="16" fill="url(#panelBad)" stroke="rgba(239,68,68,0.2)" stroke-width="1" filter="url(#shadow)"/>
+  <rect x="50" y="80" width="500" height="4" rx="2" fill="#ef4444"/>
+  <text x="300" y="116" text-anchor="middle" font-size="15" font-weight="700" fill="#f87171">✗ Traditional Resume Writing</text>
+
+  <g font-size="13" fill="rgba(255,255,255,0.6)">
+    <rect x="70" y="130" width="460" height="38" rx="8" fill="rgba(239,68,68,0.04)" stroke="rgba(239,68,68,0.1)" stroke-width="1"/>
+    <text x="95" y="153" font-size="13">⏱ 3–5 hours of writing and formatting</text>
+
+    <rect x="70" y="176" width="460" height="38" rx="8" fill="rgba(239,68,68,0.04)" stroke="rgba(239,68,68,0.1)" stroke-width="1"/>
+    <text x="95" y="199" font-size="13">💸 $50–$300 for professional writers</text>
+
+    <rect x="70" y="222" width="460" height="38" rx="8" fill="rgba(239,68,68,0.04)" stroke="rgba(239,68,68,0.1)" stroke-width="1"/>
+    <text x="95" y="245" font-size="13">❓ No ATS score or keyword guidance</text>
+
+    <rect x="70" y="268" width="460" height="38" rx="8" fill="rgba(239,68,68,0.04)" stroke="rgba(239,68,68,0.1)" stroke-width="1"/>
+    <text x="95" y="291" font-size="13">📄 Generic templates, difficult to tailor</text>
+
+    <rect x="70" y="314" width="460" height="38" rx="8" fill="rgba(239,68,68,0.04)" stroke="rgba(239,68,68,0.1)" stroke-width="1"/>
+    <text x="95" y="337" font-size="13">🔁 Multiple revision rounds needed</text>
+
+    <rect x="70" y="360" width="460" height="38" rx="8" fill="rgba(239,68,68,0.04)" stroke="rgba(239,68,68,0.1)" stroke-width="1"/>
+    <text x="95" y="383" font-size="13">😰 Writer's block on bullet points</text>
+  </g>
+
+  <!-- RIGHT: AI -->
+  <rect x="650" y="80" width="500" height="370" rx="16" fill="url(#panelGood)" stroke="rgba(221,183,255,0.2)" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="650" y="80" width="500" height="4" rx="2" fill="url(#accentGrad)"/>
+  <text x="900" y="116" text-anchor="middle" font-size="15" font-weight="700" fill="#ddb7ff">✦ ToolNest AI Resume Builder</text>
+
+  <g font-size="13" fill="rgba(255,255,255,0.7)">
+    <rect x="670" y="130" width="460" height="38" rx="8" fill="rgba(221,183,255,0.04)" stroke="rgba(221,183,255,0.12)" stroke-width="1"/>
+    <text x="695" y="153" font-size="13">⚡ Resume ready in under 5 minutes</text>
+
+    <rect x="670" y="176" width="460" height="38" rx="8" fill="rgba(221,183,255,0.04)" stroke="rgba(221,183,255,0.12)" stroke-width="1"/>
+    <text x="695" y="199" font-size="13">✅ 100% free — no hidden costs ever</text>
+
+    <rect x="670" y="222" width="460" height="38" rx="8" fill="rgba(221,183,255,0.04)" stroke="rgba(221,183,255,0.12)" stroke-width="1"/>
+    <text x="695" y="245" font-size="13">🎯 Built-in ATS optimisation &amp; keywords</text>
+
+    <rect x="670" y="268" width="460" height="38" rx="8" fill="rgba(221,183,255,0.04)" stroke="rgba(221,183,255,0.12)" stroke-width="1"/>
+    <text x="695" y="291" font-size="13">🎨 Tailored to your role and industry</text>
+
+    <rect x="670" y="314" width="460" height="38" rx="8" fill="rgba(221,183,255,0.04)" stroke="rgba(221,183,255,0.12)" stroke-width="1"/>
+    <text x="695" y="337" font-size="13">🔄 Instant regeneration — unlimited tries</text>
+
+    <rect x="670" y="360" width="460" height="38" rx="8" fill="rgba(221,183,255,0.04)" stroke="rgba(221,183,255,0.12)" stroke-width="1"/>
+    <text x="695" y="383" font-size="13">📥 Export as PDF, no watermark</text>
+  </g>
+
+  <text x="600" y="475" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.22)">toolnestai.net — Free AI Tools for Everyone</text>
+</svg>

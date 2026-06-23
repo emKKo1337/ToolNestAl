@@ -1,0 +1,152 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="30%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#1a0a2e"/>
+      <stop offset="100%" stop-color="#0a0a14"/>
+    </radialGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#4cd7f6" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#4cd7f6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e0e35" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#130d22" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ddb7ff"/>
+      <stop offset="100%" stop-color="#4cd7f6"/>
+    </linearGradient>
+    <linearGradient id="btnGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="20" flood-color="#7c3aed" flood-opacity="0.4"/>
+    </filter>
+    <filter id="glow-filter">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="cardClip">
+      <rect x="620" y="60" width="520" height="510" rx="20"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <ellipse cx="360" cy="250" rx="400" ry="350" fill="url(#glow1)"/>
+  <ellipse cx="950" cy="400" rx="300" ry="280" fill="url(#glow2)"/>
+
+  <!-- Grid lines -->
+  <g stroke="#ffffff" stroke-opacity="0.03" stroke-width="1">
+    <line x1="0" y1="105" x2="1200" y2="105"/>
+    <line x1="0" y1="210" x2="1200" y2="210"/>
+    <line x1="0" y1="315" x2="1200" y2="315"/>
+    <line x1="0" y1="420" x2="1200" y2="420"/>
+    <line x1="0" y1="525" x2="1200" y2="525"/>
+    <line x1="200" y1="0" x2="200" y2="630"/>
+    <line x1="400" y1="0" x2="400" y2="630"/>
+    <line x1="800" y1="0" x2="800" y2="630"/>
+    <line x1="1000" y1="0" x2="1000" y2="630"/>
+  </g>
+
+  <!-- Left content -->
+  <!-- Logo badge -->
+  <rect x="60" y="55" width="150" height="36" rx="18" fill="rgba(221,183,255,0.1)" stroke="rgba(221,183,255,0.3)" stroke-width="1"/>
+  <text x="135" y="78" text-anchor="middle" font-size="13" font-weight="600" fill="#ddb7ff">✦ ToolNest AI</text>
+
+  <!-- Headline -->
+  <text x="60" y="160" font-size="62" font-weight="800" fill="url(#accentGrad)" filter="url(#glow-filter)">AI Resume</text>
+  <text x="60" y="235" font-size="62" font-weight="800" fill="#ffffff">Builder</text>
+
+  <!-- Subtitle -->
+  <text x="60" y="285" font-size="20" fill="rgba(255,255,255,0.6)">Create a Professional Resume in</text>
+  <text x="60" y="313" font-size="20" fill="rgba(255,255,255,0.6)">Minutes with AI</text>
+
+  <!-- Feature pills -->
+  <g>
+    <rect x="60" y="345" width="145" height="36" rx="18" fill="rgba(221,183,255,0.08)" stroke="rgba(221,183,255,0.2)" stroke-width="1"/>
+    <text x="135" y="368" text-anchor="middle" font-size="13" fill="#ddb7ff">✦ AI-Powered</text>
+
+    <rect x="215" y="345" width="130" height="36" rx="18" fill="rgba(76,215,246,0.08)" stroke="rgba(76,215,246,0.2)" stroke-width="1"/>
+    <text x="280" y="368" text-anchor="middle" font-size="13" fill="#4cd7f6">⚡ Fast &amp; Easy</text>
+
+    <rect x="60" y="391" width="145" height="36" rx="18" fill="rgba(34,197,94,0.08)" stroke="rgba(34,197,94,0.2)" stroke-width="1"/>
+    <text x="135" y="414" text-anchor="middle" font-size="13" fill="#22c55e">✓ ATS-Friendly</text>
+
+    <rect x="215" y="391" width="185" height="36" rx="18" fill="rgba(251,191,36,0.08)" stroke="rgba(251,191,36,0.2)" stroke-width="1"/>
+    <text x="307" y="414" text-anchor="middle" font-size="13" fill="#fbbf24">◈ Pro Templates</text>
+  </g>
+
+  <!-- CTA button -->
+  <rect x="60" y="450" width="230" height="52" rx="26" fill="url(#btnGrad)" filter="url(#shadow)"/>
+  <text x="175" y="482" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">✦ CREATE RESUME NOW</text>
+
+  <!-- Stats -->
+  <g fill="rgba(255,255,255,0.35)" font-size="12">
+    <text x="60" y="540">100% Free</text>
+    <text x="150" y="540">·</text>
+    <text x="165" y="540">No Sign Up</text>
+    <text x="250" y="540">·</text>
+    <text x="265" y="540">Download as PDF</text>
+  </g>
+
+  <!-- Resume Card (right) -->
+  <rect x="640" y="70" width="480" height="490" rx="16" fill="url(#cardGrad)" stroke="rgba(221,183,255,0.15)" stroke-width="1" filter="url(#shadow)"/>
+
+  <!-- Card header -->
+  <rect x="640" y="70" width="480" height="5" rx="2" fill="url(#accentGrad)"/>
+
+  <!-- Avatar circle -->
+  <circle cx="700" cy="140" r="35" fill="rgba(221,183,255,0.12)" stroke="rgba(221,183,255,0.3)" stroke-width="1.5"/>
+  <text x="700" y="148" text-anchor="middle" font-size="24" fill="#ddb7ff">👤</text>
+
+  <!-- Name and title -->
+  <text x="755" y="125" font-size="22" font-weight="700" fill="#f0e8ff">Your Name</text>
+  <text x="755" y="148" font-size="14" fill="#9c7fc4">Professional Title</text>
+  <text x="755" y="168" font-size="12" fill="rgba(255,255,255,0.4)">✉ youremail@email.com</text>
+  <text x="755" y="184" font-size="12" fill="rgba(255,255,255,0.4)">📍 City, Country</text>
+
+  <!-- Divider -->
+  <line x1="660" y1="205" x2="1100" y2="205" stroke="rgba(221,183,255,0.12)" stroke-width="1"/>
+
+  <!-- Section: Summary -->
+  <text x="660" y="228" font-size="11" font-weight="700" letter-spacing="2" fill="#ddb7ff">SUMMARY</text>
+  <rect x="660" y="236" width="300" height="6" rx="3" fill="rgba(255,255,255,0.12)"/>
+  <rect x="660" y="248" width="260" height="6" rx="3" fill="rgba(255,255,255,0.08)"/>
+  <rect x="660" y="260" width="280" height="6" rx="3" fill="rgba(255,255,255,0.08)"/>
+
+  <!-- Section: Experience -->
+  <text x="660" y="295" font-size="11" font-weight="700" letter-spacing="2" fill="#4cd7f6">EXPERIENCE</text>
+  <circle cx="668" cy="314" r="4" fill="#4cd7f6"/>
+  <rect x="680" y="311" width="200" height="6" rx="3" fill="rgba(255,255,255,0.1)"/>
+  <rect x="680" y="323" width="160" height="5" rx="3" fill="rgba(255,255,255,0.06)"/>
+  <circle cx="668" cy="342" r="4" fill="rgba(76,215,246,0.4)"/>
+  <rect x="680" y="339" width="180" height="6" rx="3" fill="rgba(255,255,255,0.08)"/>
+  <rect x="680" y="351" width="140" height="5" rx="3" fill="rgba(255,255,255,0.05)"/>
+
+  <!-- Section: Education -->
+  <text x="660" y="383" font-size="11" font-weight="700" letter-spacing="2" fill="#a78bfa">EDUCATION</text>
+  <rect x="660" y="391" width="220" height="6" rx="3" fill="rgba(255,255,255,0.1)"/>
+  <rect x="660" y="403" width="180" height="5" rx="3" fill="rgba(255,255,255,0.06)"/>
+
+  <!-- Section: Skills -->
+  <text x="660" y="430" font-size="11" font-weight="700" letter-spacing="2" fill="#f472b6">SKILLS</text>
+  <rect x="660" y="438" width="80" height="22" rx="11" fill="rgba(221,183,255,0.1)" stroke="rgba(221,183,255,0.2)" stroke-width="1"/>
+  <rect x="748" y="438" width="70" height="22" rx="11" fill="rgba(76,215,246,0.08)" stroke="rgba(76,215,246,0.15)" stroke-width="1"/>
+  <rect x="826" y="438" width="90" height="22" rx="11" fill="rgba(167,139,250,0.08)" stroke="rgba(167,139,250,0.15)" stroke-width="1"/>
+  <rect x="660" y="468" width="95" height="22" rx="11" fill="rgba(244,114,182,0.08)" stroke="rgba(244,114,182,0.15)" stroke-width="1"/>
+  <rect x="763" y="468" width="75" height="22" rx="11" fill="rgba(34,197,94,0.08)" stroke="rgba(34,197,94,0.15)" stroke-width="1"/>
+
+  <!-- AI chip floating -->
+  <rect x="1020" y="80" width="80" height="80" rx="16" fill="rgba(124,58,237,0.2)" stroke="rgba(124,58,237,0.4)" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="1060" y="128" text-anchor="middle" font-size="32" fill="#a855f7">AI</text>
+
+  <!-- Shield badge -->
+  <rect x="1020" y="390" width="80" height="80" rx="16" fill="rgba(34,197,94,0.1)" stroke="rgba(34,197,94,0.3)" stroke-width="1.5"/>
+  <text x="1060" y="436" text-anchor="middle" font-size="30" fill="#22c55e">✓</text>
+</svg>

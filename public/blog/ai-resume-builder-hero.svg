@@ -1,0 +1,155 @@
+<svg viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#160b28"/>
+      <stop offset="100%" stop-color="#0a0a14"/>
+    </radialGradient>
+    <radialGradient id="glowLeft" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowRight" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ddb7ff"/>
+      <stop offset="100%" stop-color="#4cd7f6"/>
+    </linearGradient>
+    <linearGradient id="panelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e0e35" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0f0820" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="btnGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+    <filter id="cardShadow">
+      <feDropShadow dx="0" dy="12" stdDeviation="24" flood-color="#7c3aed" flood-opacity="0.35"/>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <ellipse cx="200" cy="340" rx="380" ry="340" fill="url(#glowLeft)"/>
+  <ellipse cx="1000" cy="340" rx="320" ry="300" fill="url(#glowRight)"/>
+
+  <!-- Dot grid -->
+  <g fill="rgba(255,255,255,0.04)">
+    <circle cx="100" cy="100" r="1.5"/> <circle cx="200" cy="100" r="1.5"/> <circle cx="300" cy="100" r="1.5"/> <circle cx="400" cy="100" r="1.5"/> <circle cx="500" cy="100" r="1.5"/> <circle cx="600" cy="100" r="1.5"/> <circle cx="700" cy="100" r="1.5"/> <circle cx="800" cy="100" r="1.5"/> <circle cx="900" cy="100" r="1.5"/> <circle cx="1000" cy="100" r="1.5"/> <circle cx="1100" cy="100" r="1.5"/>
+    <circle cx="100" cy="200" r="1.5"/> <circle cx="200" cy="200" r="1.5"/> <circle cx="300" cy="200" r="1.5"/> <circle cx="400" cy="200" r="1.5"/> <circle cx="500" cy="200" r="1.5"/> <circle cx="600" cy="200" r="1.5"/> <circle cx="700" cy="200" r="1.5"/> <circle cx="800" cy="200" r="1.5"/> <circle cx="900" cy="200" r="1.5"/> <circle cx="1000" cy="200" r="1.5"/> <circle cx="1100" cy="200" r="1.5"/>
+    <circle cx="100" cy="300" r="1.5"/> <circle cx="200" cy="300" r="1.5"/> <circle cx="300" cy="300" r="1.5"/> <circle cx="400" cy="300" r="1.5"/> <circle cx="500" cy="300" r="1.5"/> <circle cx="600" cy="300" r="1.5"/> <circle cx="700" cy="300" r="1.5"/> <circle cx="800" cy="300" r="1.5"/> <circle cx="900" cy="300" r="1.5"/> <circle cx="1000" cy="300" r="1.5"/> <circle cx="1100" cy="300" r="1.5"/>
+    <circle cx="100" cy="400" r="1.5"/> <circle cx="200" cy="400" r="1.5"/> <circle cx="300" cy="400" r="1.5"/> <circle cx="400" cy="400" r="1.5"/> <circle cx="500" cy="400" r="1.5"/> <circle cx="600" cy="400" r="1.5"/> <circle cx="700" cy="400" r="1.5"/> <circle cx="800" cy="400" r="1.5"/> <circle cx="900" cy="400" r="1.5"/> <circle cx="1000" cy="400" r="1.5"/> <circle cx="1100" cy="400" r="1.5"/>
+    <circle cx="100" cy="500" r="1.5"/> <circle cx="200" cy="500" r="1.5"/> <circle cx="300" cy="500" r="1.5"/> <circle cx="400" cy="500" r="1.5"/> <circle cx="500" cy="500" r="1.5"/> <circle cx="600" cy="500" r="1.5"/> <circle cx="700" cy="500" r="1.5"/> <circle cx="800" cy="500" r="1.5"/> <circle cx="900" cy="500" r="1.5"/> <circle cx="1000" cy="500" r="1.5"/> <circle cx="1100" cy="500" r="1.5"/>
+    <circle cx="100" cy="600" r="1.5"/> <circle cx="200" cy="600" r="1.5"/> <circle cx="300" cy="600" r="1.5"/> <circle cx="400" cy="600" r="1.5"/> <circle cx="500" cy="600" r="1.5"/> <circle cx="600" cy="600" r="1.5"/> <circle cx="700" cy="600" r="1.5"/> <circle cx="800" cy="600" r="1.5"/> <circle cx="900" cy="600" r="1.5"/> <circle cx="1000" cy="600" r="1.5"/> <circle cx="1100" cy="600" r="1.5"/>
+  </g>
+
+  <!-- Step 1 panel -->
+  <rect x="50" y="150" width="220" height="240" rx="16" fill="url(#panelGrad)" stroke="rgba(221,183,255,0.15)" stroke-width="1" filter="url(#cardShadow)"/>
+  <rect x="50" y="150" width="220" height="4" rx="2" fill="#a855f7"/>
+  <text x="160" y="190" text-anchor="middle" font-size="28" fill="#a855f7">◧</text>
+  <text x="160" y="220" text-anchor="middle" font-size="13" font-weight="700" fill="#ddb7ff">CHOOSE</text>
+  <text x="160" y="237" text-anchor="middle" font-size="13" font-weight="700" fill="#ddb7ff">TEMPLATE</text>
+  <rect x="70" y="255" width="180" height="8" rx="4" fill="rgba(255,255,255,0.06)"/>
+  <rect x="70" y="270" width="140" height="8" rx="4" fill="rgba(255,255,255,0.04)"/>
+  <rect x="70" y="290" width="70" height="26" rx="13" fill="rgba(168,85,247,0.15)" stroke="rgba(168,85,247,0.3)" stroke-width="1"/>
+  <rect x="148" y="290" width="70" height="26" rx="13" fill="rgba(76,215,246,0.08)" stroke="rgba(76,215,246,0.2)" stroke-width="1"/>
+  <rect x="70" y="324" width="110" height="26" rx="13" fill="rgba(244,114,182,0.08)" stroke="rgba(244,114,182,0.2)" stroke-width="1"/>
+  <!-- Arrow 1 -->
+  <text x="285" y="275" text-anchor="middle" font-size="20" fill="rgba(221,183,255,0.5)">→</text>
+
+  <!-- Step 2 panel -->
+  <rect x="320" y="150" width="220" height="240" rx="16" fill="url(#panelGrad)" stroke="rgba(76,215,246,0.15)" stroke-width="1" filter="url(#cardShadow)"/>
+  <rect x="320" y="150" width="220" height="4" rx="2" fill="#4cd7f6"/>
+  <text x="430" y="190" text-anchor="middle" font-size="28" fill="#4cd7f6">✎</text>
+  <text x="430" y="220" text-anchor="middle" font-size="13" font-weight="700" fill="#a8d8f0">FILL YOUR</text>
+  <text x="430" y="237" text-anchor="middle" font-size="13" font-weight="700" fill="#a8d8f0">DETAILS</text>
+  <!-- Mini form fields -->
+  <rect x="340" y="255" width="180" height="22" rx="6" fill="rgba(255,255,255,0.04)" stroke="rgba(76,215,246,0.2)" stroke-width="1"/>
+  <text x="350" y="270" font-size="10" fill="rgba(255,255,255,0.3)">Full Name</text>
+  <rect x="340" y="283" width="180" height="22" rx="6" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="350" y="298" font-size="10" fill="rgba(255,255,255,0.3)">Job Title</text>
+  <rect x="340" y="311" width="180" height="48" rx="6" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="350" y="326" font-size="10" fill="rgba(255,255,255,0.3)">Experience &amp; Skills</text>
+  <!-- Arrow 2 -->
+  <text x="555" y="275" text-anchor="middle" font-size="20" fill="rgba(221,183,255,0.5)">→</text>
+
+  <!-- Step 3 panel -->
+  <rect x="590" y="150" width="220" height="240" rx="16" fill="url(#panelGrad)" stroke="rgba(167,139,250,0.2)" stroke-width="1.5" filter="url(#cardShadow)"/>
+  <rect x="590" y="150" width="220" height="4" rx="2" fill="url(#accentGrad)"/>
+  <text x="700" y="190" text-anchor="middle" font-size="28" fill="url(#accentGrad)">✦</text>
+  <text x="700" y="220" text-anchor="middle" font-size="13" font-weight="700" fill="#ddb7ff">AI BUILDS</text>
+  <text x="700" y="237" text-anchor="middle" font-size="13" font-weight="700" fill="#ddb7ff">YOUR RESUME</text>
+  <!-- Streaming lines animation -->
+  <rect x="610" y="255" width="180" height="7" rx="3.5" fill="rgba(221,183,255,0.2)"/>
+  <rect x="610" y="268" width="150" height="7" rx="3.5" fill="rgba(221,183,255,0.15)"/>
+  <rect x="610" y="281" width="170" height="7" rx="3.5" fill="rgba(221,183,255,0.12)"/>
+  <rect x="610" y="294" width="130" height="7" rx="3.5" fill="rgba(221,183,255,0.1)"/>
+  <rect x="610" y="315" width="180" height="40" rx="8" fill="url(#btnGrad)"/>
+  <text x="700" y="340" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">GENERATE ✦</text>
+
+  <!-- Resume preview (large right panel) -->
+  <rect x="840" y="80" width="310" height="515" rx="16" fill="url(#panelGrad)" stroke="rgba(221,183,255,0.12)" stroke-width="1" filter="url(#cardShadow)"/>
+  <rect x="840" y="80" width="310" height="5" rx="2" fill="url(#accentGrad)"/>
+
+  <!-- Resume header -->
+  <circle cx="882" cy="140" r="28" fill="rgba(168,85,247,0.15)" stroke="rgba(168,85,247,0.3)" stroke-width="1.5"/>
+  <text x="882" y="148" text-anchor="middle" font-size="20" fill="#a855f7">👤</text>
+  <text x="918" y="125" font-size="16" font-weight="700" fill="#f0e8ff">Your Name</text>
+  <text x="918" y="143" font-size="11" fill="#9c7fc4">Professional Title</text>
+  <text x="918" y="158" font-size="10" fill="rgba(255,255,255,0.35)">✉ email@example.com</text>
+  <text x="918" y="170" font-size="10" fill="rgba(255,255,255,0.35)">📍 City, Country</text>
+
+  <line x1="858" y1="190" x2="1132" y2="190" stroke="rgba(221,183,255,0.1)" stroke-width="1"/>
+
+  <text x="858" y="210" font-size="9" font-weight="700" letter-spacing="1.5" fill="#ddb7ff">SUMMARY</text>
+  <rect x="858" y="216" width="240" height="5" rx="2.5" fill="rgba(255,255,255,0.1)"/>
+  <rect x="858" y="226" width="200" height="5" rx="2.5" fill="rgba(255,255,255,0.07)"/>
+  <rect x="858" y="236" width="220" height="5" rx="2.5" fill="rgba(255,255,255,0.07)"/>
+
+  <text x="858" y="262" font-size="9" font-weight="700" letter-spacing="1.5" fill="#4cd7f6">EXPERIENCE</text>
+  <circle cx="864" cy="277" r="3" fill="#4cd7f6"/>
+  <rect x="872" y="274" width="160" height="5" rx="2.5" fill="rgba(255,255,255,0.08)"/>
+  <rect x="872" y="284" width="120" height="4" rx="2" fill="rgba(255,255,255,0.05)"/>
+  <circle cx="864" cy="302" r="3" fill="rgba(76,215,246,0.4)"/>
+  <rect x="872" y="299" width="150" height="5" rx="2.5" fill="rgba(255,255,255,0.07)"/>
+  <rect x="872" y="309" width="110" height="4" rx="2" fill="rgba(255,255,255,0.04)"/>
+
+  <text x="858" y="335" font-size="9" font-weight="700" letter-spacing="1.5" fill="#a78bfa">EDUCATION</text>
+  <rect x="858" y="341" width="180" height="5" rx="2.5" fill="rgba(255,255,255,0.08)"/>
+  <rect x="858" y="351" width="140" height="4" rx="2" fill="rgba(255,255,255,0.05)"/>
+
+  <text x="858" y="376" font-size="9" font-weight="700" letter-spacing="1.5" fill="#f472b6">SKILLS</text>
+  <rect x="858" y="382" width="65" height="18" rx="9" fill="rgba(221,183,255,0.08)" stroke="rgba(221,183,255,0.2)" stroke-width="0.5"/>
+  <rect x="929" y="382" width="60" height="18" rx="9" fill="rgba(76,215,246,0.06)" stroke="rgba(76,215,246,0.15)" stroke-width="0.5"/>
+  <rect x="858" y="406" width="75" height="18" rx="9" fill="rgba(167,139,250,0.06)" stroke="rgba(167,139,250,0.15)" stroke-width="0.5"/>
+  <rect x="939" y="406" width="55" height="18" rx="9" fill="rgba(244,114,182,0.06)" stroke="rgba(244,114,182,0.15)" stroke-width="0.5"/>
+
+  <!-- CTA Button on resume -->
+  <rect x="858" y="455" width="252" height="44" rx="22" fill="url(#btnGrad)" filter="url(#cardShadow)"/>
+  <text x="984" y="482" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">✦ CREATE RESUME NOW</text>
+
+  <!-- AI chip -->
+  <rect x="1085" y="90" width="55" height="55" rx="12" fill="rgba(124,58,237,0.2)" stroke="rgba(124,58,237,0.4)" stroke-width="1.5"/>
+  <text x="1112" y="125" text-anchor="middle" font-size="22" font-weight="800" fill="#a855f7">AI</text>
+
+  <!-- Bottom feature strip -->
+  <rect x="50" y="440" width="760" height="60" rx="12" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="135" y="475" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.5)">🛡 100% Free</text>
+  <line x1="220" y1="455" x2="220" y2="485" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="310" y="475" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.5)">🔒 No Sign Up</text>
+  <line x1="400" y1="455" x2="400" y2="485" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="497" y="475" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.5)">☁ Saved Securely</text>
+  <line x1="590" y1="455" x2="590" y2="485" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="680" y="475" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.5)">⬇ Download PDF</text>
+
+  <!-- Top badge -->
+  <rect x="50" y="65" width="160" height="34" rx="17" fill="rgba(221,183,255,0.1)" stroke="rgba(221,183,255,0.25)" stroke-width="1"/>
+  <text x="130" y="87" text-anchor="middle" font-size="12" font-weight="600" fill="#ddb7ff">✦ ToolNest AI Blog</text>
+
+  <!-- Title -->
+  <text x="50" y="590" font-size="15" font-weight="600" fill="rgba(255,255,255,0.5)">AI Resume Builder — 2026 Complete Guide</text>
+</svg>
