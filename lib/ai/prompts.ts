@@ -6,6 +6,7 @@ import type {
   ParaphrasePayload,
   GrammarCheckPayload,
   HumanizePayload,
+  CoverLetterPayload,
   WorkExperience,
   EducationEntry,
   AIMessage,
@@ -53,6 +54,11 @@ Output ONLY the rewritten text — no preamble, no commentary, no labels.`,
 Remove robotic patterns, overused AI phrases, and unnatural sentence structures.
 Preserve the original meaning and key information completely.
 Output ONLY the humanized text — no preamble, no commentary, no labels.`,
+
+  coverLetter: `You are an expert career coach and professional writer specialising in cover letters.
+Write compelling, ATS-friendly cover letters that are tailored to the role and company.
+Output only plain text — no Markdown, no asterisks, no bullet symbols, no # headers.
+The letter should have a proper greeting, 3-4 focused paragraphs, and a professional closing.`,
 } as const;
 
 // ── User prompt builders ──────────────────────────────────────────────────────
@@ -357,6 +363,41 @@ RULES — follow exactly:
 Text to humanize:
 
 ${payload.text}`;
+}
+
+export function buildCoverLetterPrompt(payload: CoverLetterPayload): string {
+  const toneGuide =
+    payload.tone === "friendly"
+      ? "Write in a warm, approachable, and personable tone while remaining professional."
+      : payload.tone === "confident"
+      ? "Write in a bold, assertive, and self-assured tone that highlights achievements with conviction."
+      : "Write in a polished, formal, and professional tone appropriate for corporate environments.";
+
+  const additionalSection = payload.additionalInfo?.trim()
+    ? `\nAdditional context: ${payload.additionalInfo.trim()}`
+    : "";
+
+  return `Write a complete cover letter for the following applicant and role.
+
+Applicant details:
+- Name: ${payload.applicantName}
+- Years of experience: ${payload.yearsOfExperience}
+- Key skills: ${payload.skills}
+
+Role details:
+- Job title: ${payload.jobTitle}
+- Company: ${payload.companyName}${additionalSection}
+
+Tone: ${toneGuide}
+
+RULES — follow exactly:
+- Open with the applicant's name and a strong opening line referencing the role.
+- Paragraph 1: Express genuine interest in the role and company.
+- Paragraph 2: Highlight 2-3 relevant skills or achievements aligned with the job title.
+- Paragraph 3: Explain why this company specifically and what value the applicant brings.
+- Close with a confident call to action and professional sign-off.
+- Output plain text only — no Markdown, no asterisks, no bullet points in the body.
+- Do NOT include placeholders like [Your Address] or [Date].`;
 }
 
 export function buildChatMessages(

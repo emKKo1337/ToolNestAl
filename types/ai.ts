@@ -9,7 +9,8 @@ export type AITaskType =
   | "generateText"
   | "paraphrase"
   | "grammarCheck"
-  | "humanize";
+  | "humanize"
+  | "coverLetter";
 
 // ── Model identifiers ─────────────────────────────────────────────────────────
 // Gemini direct-API IDs have no "/" — all OpenRouter IDs contain "/".
@@ -212,4 +213,16 @@ export type HumanizeStrength = "light" | "balanced" | "strong";
 export interface HumanizePayload {
   text: string;
   strength: HumanizeStrength;
+}
+
+export type CoverLetterTone = "professional" | "friendly" | "confident";
+
+export interface CoverLetterPayload {
+  jobTitle: string;
+  companyName: string;
+  applicantName: string;
+  yearsOfExperience: string;
+  skills: string;
+  tone: CoverLetterTone;
+  additionalInfo?: string;
 }

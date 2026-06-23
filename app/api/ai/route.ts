@@ -17,6 +17,8 @@ import {
   grammarCheckStream,
   humanize,
   humanizeStream,
+  coverLetter,
+  coverLetterStream,
   generateText,
 } from "@/lib/ai/services";
 import { SYSTEM_PROMPTS } from "@/lib/ai/prompts";
@@ -181,6 +183,44 @@ export async function POST(req: Request) {
         const humanizePayload = { text, strength };
         if (stream) return humanizeStream(humanizePayload, options);
         return Response.json(await humanize(humanizePayload, options));
+      }
+
+      // ── coverLetter ───────────────────────────────────────────────────────
+      case "coverLetter": {
+        const {
+          jobTitle,
+          companyName,
+          applicantName,
+          yearsOfExperience,
+          skills,
+          tone,
+          additionalInfo,
+        } = payload as {
+          jobTitle?: string;
+          companyName?: string;
+          applicantName?: string;
+          yearsOfExperience?: string;
+          skills?: string;
+          tone?: import("@/types/ai").CoverLetterTone;
+          additionalInfo?: string;
+        };
+        if (!jobTitle?.trim())
+          return AIErrors.invalidRequest("coverLetter task requires payload.jobTitle.").toResponse();
+        if (!companyName?.trim())
+          return AIErrors.invalidRequest("coverLetter task requires payload.companyName.").toResponse();
+        if (!applicantName?.trim())
+          return AIErrors.invalidRequest("coverLetter task requires payload.applicantName.").toResponse();
+        const coverLetterPayload = {
+          jobTitle,
+          companyName,
+          applicantName,
+          yearsOfExperience: yearsOfExperience ?? "Not specified",
+          skills: skills ?? "",
+          tone: tone ?? "professional" as import("@/types/ai").CoverLetterTone,
+          additionalInfo,
+        };
+        if (stream) return coverLetterStream(coverLetterPayload, options);
+        return Response.json(await coverLetter(coverLetterPayload, options));
       }
 
       // ── generateText (generic) ────────────────────────────────────────────

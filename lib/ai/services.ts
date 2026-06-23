@@ -16,6 +16,7 @@ import {
   buildParaphrasePrompt,
   buildGrammarCheckPrompt,
   buildHumanizePrompt,
+  buildCoverLetterPrompt,
   buildChatMessages,
 } from "./prompts";
 import type {
@@ -29,6 +30,7 @@ import type {
   ParaphrasePayload,
   GrammarCheckPayload,
   HumanizePayload,
+  CoverLetterPayload,
   ChatPayload,
 } from "@/types/ai";
 
@@ -454,6 +456,32 @@ export function humanizeStream(
     buildHumanizePrompt(payload),
     SYSTEM_PROMPTS.humanize,
     "humanize",
+    { maxTokens: 2048, ...opts }
+  );
+}
+
+// ── coverLetter ───────────────────────────────────────────────────────────────
+
+export async function coverLetter(
+  payload: CoverLetterPayload,
+  opts?: AIRequestOptions
+): Promise<AIResponse> {
+  return generateText(
+    buildCoverLetterPrompt(payload),
+    SYSTEM_PROMPTS.coverLetter,
+    "coverLetter",
+    { maxTokens: 2048, ...opts }
+  );
+}
+
+export function coverLetterStream(
+  payload: CoverLetterPayload,
+  opts?: AIRequestOptions
+): Response {
+  return streamText(
+    buildCoverLetterPrompt(payload),
+    SYSTEM_PROMPTS.coverLetter,
+    "coverLetter",
     { maxTokens: 2048, ...opts }
   );
 }
