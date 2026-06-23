@@ -1,0 +1,63 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="75%"><stop offset="0%" stop-color="#0a0618"/><stop offset="100%" stop-color="#07070f"/></radialGradient>
+    <radialGradient id="gL" cx="25%" cy="50%" r="55%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.28"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gR" cx="75%" cy="50%" r="55%"><stop offset="0%" stop-color="#2563eb" stop-opacity="0.18"/><stop offset="100%" stop-color="#2563eb" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="pG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#130b2e" stop-opacity="0.97"/><stop offset="100%" stop-color="#0c0820" stop-opacity="0.97"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#5b21b6" flood-opacity="0.35"/></filter>
+  </defs>
+  <rect width="1200" height="500" fill="url(#bg)"/>
+  <ellipse cx="280" cy="250" rx="480" ry="360" fill="url(#gL)"/>
+  <ellipse cx="920" cy="250" rx="480" ry="360" fill="url(#gR)"/>
+
+  <text x="600" y="52" text-anchor="middle" font-size="13" font-weight="600" fill="#a78bfa" letter-spacing="2">HEAD-TO-HEAD</text>
+  <text x="600" y="88" text-anchor="middle" font-size="32" font-weight="800" fill="url(#aG)">AI Translator vs. Traditional Translation</text>
+
+  <!-- VS badge -->
+  <circle cx="600" cy="295" r="36" fill="url(#pG)" stroke="rgba(167,139,250,0.3)" stroke-width="2"/>
+  <text x="600" y="303" text-anchor="middle" font-size="18" font-weight="800" fill="url(#aG)">VS</text>
+
+  <!-- LEFT: Traditional -->
+  <rect x="40" y="112" width="520" height="362" rx="16" fill="url(#pG)" stroke="rgba(239,68,68,0.2)" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="40" y="112" width="520" height="4" rx="2" fill="rgba(239,68,68,0.55)"/>
+  <text x="300" y="145" text-anchor="middle" font-size="16" font-weight="700" fill="#fca5a5">Traditional / Human Translation</text>
+  <g font-size="13">
+    <rect x="60" y="158" width="480" height="36" rx="8" fill="rgba(239,68,68,0.04)" stroke="rgba(239,68,68,0.1)" stroke-width="1"/>
+    <text x="80" y="181" fill="rgba(255,255,255,0.55)">⏱  Speed</text><text x="520" y="181" text-anchor="end" fill="#f87171">Days to weeks</text>
+    <rect x="60" y="200" width="480" height="36" rx="8" fill="rgba(239,68,68,0.03)" stroke="rgba(239,68,68,0.08)" stroke-width="1"/>
+    <text x="80" y="223" fill="rgba(255,255,255,0.55)">💰  Cost</text><text x="520" y="223" text-anchor="end" fill="#f87171">$0.10–$0.25 per word</text>
+    <rect x="60" y="242" width="480" height="36" rx="8" fill="rgba(239,68,68,0.04)" stroke="rgba(239,68,68,0.1)" stroke-width="1"/>
+    <text x="80" y="265" fill="rgba(255,255,255,0.55)">🌐  Languages</text><text x="520" y="265" text-anchor="end" fill="#f87171">Limited by availability</text>
+    <rect x="60" y="284" width="480" height="36" rx="8" fill="rgba(239,68,68,0.03)" stroke="rgba(239,68,68,0.08)" stroke-width="1"/>
+    <text x="80" y="307" fill="rgba(255,255,255,0.55)">📄  Document support</text><text x="520" y="307" text-anchor="end" fill="#fbbf24">Manual upload process</text>
+    <rect x="60" y="326" width="480" height="36" rx="8" fill="rgba(239,68,68,0.04)" stroke="rgba(239,68,68,0.1)" stroke-width="1"/>
+    <text x="80" y="349" fill="rgba(255,255,255,0.55)">🔒  Privacy</text><text x="520" y="349" text-anchor="end" fill="#fbbf24">Third-party handles data</text>
+    <rect x="60" y="368" width="480" height="36" rx="8" fill="rgba(239,68,68,0.03)" stroke="rgba(239,68,68,0.08)" stroke-width="1"/>
+    <text x="80" y="391" fill="rgba(255,255,255,0.55)">🔄  Revisions</text><text x="520" y="391" text-anchor="end" fill="#f87171">Costly and slow</text>
+    <rect x="60" y="410" width="480" height="36" rx="8" fill="rgba(239,68,68,0.04)" stroke="rgba(239,68,68,0.1)" stroke-width="1"/>
+    <text x="80" y="433" fill="rgba(255,255,255,0.55)">⏰  Availability</text><text x="520" y="433" text-anchor="end" fill="#f87171">Business hours only</text>
+  </g>
+
+  <!-- RIGHT: AI Translator -->
+  <rect x="640" y="112" width="520" height="362" rx="16" fill="url(#pG)" stroke="rgba(167,139,250,0.22)" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="640" y="112" width="520" height="4" rx="2" fill="url(#aG)"/>
+  <text x="900" y="145" text-anchor="middle" font-size="16" font-weight="700" fill="#a78bfa">✦ ToolNest AI Translator</text>
+  <g font-size="13">
+    <rect x="660" y="158" width="480" height="36" rx="8" fill="rgba(167,139,250,0.06)" stroke="rgba(167,139,250,0.12)" stroke-width="1"/>
+    <text x="680" y="181" fill="rgba(255,255,255,0.55)">⏱  Speed</text><text x="1120" y="181" text-anchor="end" fill="#4ade80">Instant — under 2 seconds</text>
+    <rect x="660" y="200" width="480" height="36" rx="8" fill="rgba(167,139,250,0.05)" stroke="rgba(167,139,250,0.1)" stroke-width="1"/>
+    <text x="680" y="223" fill="rgba(255,255,255,0.55)">💰  Cost</text><text x="1120" y="223" text-anchor="end" fill="#4ade80">100% Free</text>
+    <rect x="660" y="242" width="480" height="36" rx="8" fill="rgba(167,139,250,0.06)" stroke="rgba(167,139,250,0.12)" stroke-width="1"/>
+    <text x="680" y="265" fill="rgba(255,255,255,0.55)">🌐  Languages</text><text x="1120" y="265" text-anchor="end" fill="#4ade80">100+ languages</text>
+    <rect x="660" y="284" width="480" height="36" rx="8" fill="rgba(167,139,250,0.05)" stroke="rgba(167,139,250,0.1)" stroke-width="1"/>
+    <text x="680" y="307" fill="rgba(255,255,255,0.55)">📄  Document support</text><text x="1120" y="307" text-anchor="end" fill="#4ade80">Direct paste &amp; translate</text>
+    <rect x="660" y="326" width="480" height="36" rx="8" fill="rgba(167,139,250,0.06)" stroke="rgba(167,139,250,0.12)" stroke-width="1"/>
+    <text x="680" y="349" fill="rgba(255,255,255,0.55)">🔒  Privacy</text><text x="1120" y="349" text-anchor="end" fill="#4ade80">Encrypted, secure, private</text>
+    <rect x="660" y="368" width="480" height="36" rx="8" fill="rgba(167,139,250,0.05)" stroke="rgba(167,139,250,0.1)" stroke-width="1"/>
+    <text x="680" y="391" fill="rgba(255,255,255,0.55)">🔄  Revisions</text><text x="1120" y="391" text-anchor="end" fill="#4ade80">Instant regeneration</text>
+    <rect x="660" y="410" width="480" height="36" rx="8" fill="rgba(167,139,250,0.06)" stroke="rgba(167,139,250,0.12)" stroke-width="1"/>
+    <text x="680" y="433" fill="rgba(255,255,255,0.55)">⏰  Availability</text><text x="1120" y="433" text-anchor="end" fill="#4ade80">24/7 — no waiting</text>
+  </g>
+</svg>

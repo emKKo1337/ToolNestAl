@@ -1,0 +1,90 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="75%"><stop offset="0%" stop-color="#0a0618"/><stop offset="100%" stop-color="#07070f"/></radialGradient>
+    <radialGradient id="gC" cx="50%" cy="50%" r="55%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.26"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="pG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#130b2e" stop-opacity="0.97"/><stop offset="100%" stop-color="#0c0820" stop-opacity="0.97"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="6" stdDeviation="14" flood-color="#5b21b6" flood-opacity="0.3"/></filter>
+  </defs>
+  <rect width="1200" height="500" fill="url(#bg)"/>
+  <ellipse cx="600" cy="250" rx="700" ry="380" fill="url(#gC)"/>
+
+  <text x="600" y="52" text-anchor="middle" font-size="13" font-weight="600" fill="#a78bfa" letter-spacing="2">LANGUAGE SUPPORT</text>
+  <text x="600" y="88" text-anchor="middle" font-size="32" font-weight="800" fill="url(#aG)">100+ Languages — One Translator</text>
+  <text x="600" y="116" text-anchor="middle" font-size="15" fill="rgba(255,255,255,0.42)">From major world languages to regional dialects</text>
+
+  <!-- Language cards: 5 per row × 3 rows = 15 cards -->
+  <!-- Row 1 -->
+  <rect x="40" y="138" width="208" height="84" rx="12" fill="url(#pG)" stroke="url(#aG)" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="60" y="170" font-size="28">🇫🇷</text>
+  <text x="100" y="168" font-size="15" font-weight="700" fill="#f0e8ff">French</text>
+  <text x="100" y="186" font-size="11" fill="rgba(167,139,250,0.65)">Français</text>
+  <text x="60" y="210" font-size="11" fill="rgba(255,255,255,0.35)">European · Global</text>
+
+  <rect x="264" y="138" width="208" height="84" rx="12" fill="url(#pG)" stroke="rgba(96,165,250,0.2)" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="284" y="170" font-size="28">🇪🇸</text>
+  <text x="324" y="168" font-size="15" font-weight="700" fill="#f0e8ff">Spanish</text>
+  <text x="324" y="186" font-size="11" fill="rgba(96,165,250,0.65)">Español</text>
+  <text x="284" y="210" font-size="11" fill="rgba(255,255,255,0.35)">500M+ speakers</text>
+
+  <rect x="488" y="138" width="208" height="84" rx="12" fill="url(#pG)" stroke="rgba(167,139,250,0.18)" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="508" y="170" font-size="28">🇩🇪</text>
+  <text x="548" y="168" font-size="15" font-weight="700" fill="#f0e8ff">German</text>
+  <text x="548" y="186" font-size="11" fill="rgba(167,139,250,0.65)">Deutsch</text>
+  <text x="508" y="210" font-size="11" fill="rgba(255,255,255,0.35)">Business language</text>
+
+  <rect x="712" y="138" width="208" height="84" rx="12" fill="url(#pG)" stroke="rgba(244,114,182,0.18)" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="732" y="170" font-size="28">🇯🇵</text>
+  <text x="772" y="168" font-size="15" font-weight="700" fill="#f0e8ff">Japanese</text>
+  <text x="772" y="186" font-size="11" fill="rgba(244,114,182,0.65)">日本語</text>
+  <text x="732" y="210" font-size="11" fill="rgba(255,255,255,0.35)">East Asian · Tech</text>
+
+  <rect x="936" y="138" width="224" height="84" rx="12" fill="url(#pG)" stroke="rgba(34,197,94,0.18)" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="956" y="170" font-size="28">🇨🇳</text>
+  <text x="996" y="168" font-size="15" font-weight="700" fill="#f0e8ff">Chinese</text>
+  <text x="996" y="186" font-size="11" fill="rgba(34,197,94,0.65)">中文</text>
+  <text x="956" y="210" font-size="11" fill="rgba(255,255,255,0.35)">1.4B+ speakers</text>
+
+  <!-- Row 2 -->
+  <rect x="40" y="236" width="208" height="84" rx="12" fill="url(#pG)" stroke="rgba(251,191,36,0.16)" stroke-width="1" filter="url(#sh)"/>
+  <text x="60" y="268" font-size="28">🇮🇹</text>
+  <text x="100" y="266" font-size="15" font-weight="700" fill="#f0e8ff">Italian</text>
+  <text x="100" y="284" font-size="11" fill="rgba(251,191,36,0.6)">Italiano</text>
+  <text x="60" y="308" font-size="11" fill="rgba(255,255,255,0.35)">Romance language</text>
+
+  <rect x="264" y="236" width="208" height="84" rx="12" fill="url(#pG)" stroke="rgba(167,139,250,0.14)" stroke-width="1" filter="url(#sh)"/>
+  <text x="284" y="268" font-size="28">🇵🇹</text>
+  <text x="324" y="266" font-size="15" font-weight="700" fill="#f0e8ff">Portuguese</text>
+  <text x="324" y="284" font-size="11" fill="rgba(167,139,250,0.6)">Português</text>
+  <text x="284" y="308" font-size="11" fill="rgba(255,255,255,0.35)">Brazil · Portugal</text>
+
+  <rect x="488" y="236" width="208" height="84" rx="12" fill="url(#pG)" stroke="rgba(96,165,250,0.14)" stroke-width="1" filter="url(#sh)"/>
+  <text x="508" y="268" font-size="28">🇷🇺</text>
+  <text x="548" y="266" font-size="15" font-weight="700" fill="#f0e8ff">Russian</text>
+  <text x="548" y="284" font-size="11" fill="rgba(96,165,250,0.6)">Русский</text>
+  <text x="508" y="308" font-size="11" fill="rgba(255,255,255,0.35)">Cyrillic script</text>
+
+  <rect x="712" y="236" width="208" height="84" rx="12" fill="url(#pG)" stroke="rgba(167,139,250,0.14)" stroke-width="1" filter="url(#sh)"/>
+  <text x="732" y="268" font-size="28">🇰🇷</text>
+  <text x="772" y="266" font-size="15" font-weight="700" fill="#f0e8ff">Korean</text>
+  <text x="772" y="284" font-size="11" fill="rgba(167,139,250,0.6)">한국어</text>
+  <text x="732" y="308" font-size="11" fill="rgba(255,255,255,0.35)">East Asian · K-wave</text>
+
+  <rect x="936" y="236" width="224" height="84" rx="12" fill="url(#pG)" stroke="rgba(34,197,94,0.14)" stroke-width="1" filter="url(#sh)"/>
+  <text x="956" y="268" font-size="28">🇸🇦</text>
+  <text x="996" y="266" font-size="15" font-weight="700" fill="#f0e8ff">Arabic</text>
+  <text x="996" y="284" font-size="11" fill="rgba(34,197,94,0.6)">العربية</text>
+  <text x="956" y="308" font-size="11" fill="rgba(255,255,255,0.35)">RTL · 400M speakers</text>
+
+  <!-- Row 3: "and more" -->
+  <rect x="40" y="334" width="1120" height="60" rx="12" fill="url(#pG)" stroke="rgba(167,139,250,0.1)" stroke-width="1"/>
+  <text x="600" y="358" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.38)">+ 90 more languages including</text>
+  <g font-size="12" fill="rgba(167,139,250,0.55)" text-anchor="middle">
+    <text x="200" y="381">Hindi</text><text x="300" y="381">Dutch</text><text x="400" y="381">Turkish</text><text x="500" y="381">Polish</text><text x="600" y="381">Swedish</text><text x="700" y="381">Greek</text><text x="800" y="381">Hebrew</text><text x="900" y="381">Thai</text><text x="1000" y="381">Vietnamese</text>
+  </g>
+
+  <!-- CTA bar -->
+  <rect x="400" y="416" width="400" height="44" rx="22" fill="url(#bG)" filter="url(#sh)"/>
+  <text x="600" y="443" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">🌐 Try All 100+ Languages Free</text>
+</svg>

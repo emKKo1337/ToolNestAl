@@ -1,0 +1,128 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="26%" cy="50%" r="82%"><stop offset="0%" stop-color="#0a0618"/><stop offset="100%" stop-color="#07070f"/></radialGradient>
+    <radialGradient id="gL" cx="50%" cy="50%" r="55%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.4"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gR" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#2563eb" stop-opacity="0.2"/><stop offset="100%" stop-color="#2563eb" stop-opacity="0"/></radialGradient>
+    <radialGradient id="aiC" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4338ca"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="pG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#130b2e" stop-opacity="0.97"/><stop offset="100%" stop-color="#0c0820" stop-opacity="0.97"/></linearGradient>
+    <linearGradient id="sBar" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="10" stdDeviation="20" flood-color="#5b21b6" flood-opacity="0.45"/></filter>
+    <filter id="aiGlow"><feDropShadow dx="0" dy="0" stdDeviation="16" flood-color="#7c3aed" flood-opacity="0.8"/></filter>
+    <filter id="gF"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <ellipse cx="215" cy="315" rx="440" ry="380" fill="url(#gL)"/>
+  <ellipse cx="970" cy="315" rx="390" ry="340" fill="url(#gR)"/>
+
+  <!-- subtle grid -->
+  <g stroke="rgba(255,255,255,0.022)" stroke-width="1">
+    <line x1="0" y1="126" x2="1200" y2="126"/><line x1="0" y1="252" x2="1200" y2="252"/>
+    <line x1="0" y1="378" x2="1200" y2="378"/><line x1="0" y1="504" x2="1200" y2="504"/>
+    <line x1="240" y1="0" x2="240" y2="630"/><line x1="700" y1="0" x2="700" y2="630"/>
+  </g>
+
+  <!-- LEFT: brand + headline -->
+  <rect x="52" y="46" width="162" height="36" rx="18" fill="rgba(167,139,250,0.1)" stroke="rgba(167,139,250,0.28)" stroke-width="1"/>
+  <text x="133" y="69" text-anchor="middle" font-size="13" font-weight="600" fill="#a78bfa">✦ ToolNest AI</text>
+
+  <text x="52" y="128" font-size="13" font-weight="600" fill="rgba(96,165,250,0.8)" letter-spacing="2">2026 COMPLETE GUIDE</text>
+  <text x="52" y="200" font-size="60" font-weight="800" fill="url(#aG)" filter="url(#gF)">AI Trans-</text>
+  <text x="52" y="270" font-size="60" font-weight="800" fill="#ffffff">lator</text>
+  <text x="52" y="318" font-size="19" fill="rgba(255,255,255,0.5)">Translate 100+ Languages</text>
+  <text x="52" y="342" font-size="19" fill="rgba(255,255,255,0.5)">Instantly — Free &amp; Accurate</text>
+
+  <!-- Pills -->
+  <rect x="52" y="372" width="138" height="34" rx="17" fill="rgba(167,139,250,0.1)" stroke="rgba(167,139,250,0.25)" stroke-width="1"/>
+  <text x="121" y="394" text-anchor="middle" font-size="12" fill="#c4b5fd">🌐 100+ Languages</text>
+  <rect x="200" y="372" width="120" height="34" rx="17" fill="rgba(96,165,250,0.08)" stroke="rgba(96,165,250,0.22)" stroke-width="1"/>
+  <text x="260" y="394" text-anchor="middle" font-size="12" fill="#93c5fd">⚡ Instant</text>
+  <rect x="330" y="372" width="130" height="34" rx="17" fill="rgba(34,197,94,0.08)" stroke="rgba(34,197,94,0.22)" stroke-width="1"/>
+  <text x="395" y="394" text-anchor="middle" font-size="12" fill="#4ade80">✓ Free Forever</text>
+
+  <rect x="52" y="426" width="240" height="50" rx="25" fill="url(#bG)" filter="url(#sh)"/>
+  <text x="172" y="457" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">✦ Translate Now</text>
+
+  <text x="52" y="566" font-size="12" fill="rgba(255,255,255,0.25)">toolnestai.net/blog/ai-translator</text>
+
+  <!-- RIGHT: translation UI mockup -->
+  <rect x="704" y="40" width="454" height="550" rx="18" fill="url(#pG)" stroke="rgba(167,139,250,0.14)" stroke-width="1" filter="url(#sh)"/>
+  <rect x="704" y="40" width="454" height="5" rx="2" fill="url(#aG)"/>
+
+  <!-- window chrome -->
+  <rect x="704" y="45" width="454" height="34" fill="rgba(255,255,255,0.03)"/>
+  <circle cx="726" cy="62" r="5" fill="rgba(239,68,68,0.45)"/>
+  <circle cx="744" cy="62" r="5" fill="rgba(251,191,36,0.45)"/>
+  <circle cx="762" cy="62" r="5" fill="rgba(34,197,94,0.45)"/>
+  <text x="870" y="66" font-size="12" font-weight="600" fill="rgba(255,255,255,0.42)">✦ AI Translator</text>
+  <rect x="1042" y="52" width="100" height="20" rx="10" fill="rgba(167,139,250,0.1)" stroke="rgba(167,139,250,0.22)" stroke-width="1"/>
+  <text x="1092" y="66" text-anchor="middle" font-size="9" fill="#a78bfa">Advanced AI ✦</text>
+
+  <!-- Source text area -->
+  <rect x="720" y="88" width="196" height="210" rx="10" fill="rgba(0,0,0,0.32)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <rect x="732" y="96" width="158" height="22" rx="6" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="740" y="111" font-size="10" fill="rgba(255,255,255,0.5)">Detect Language ∨</text>
+  <text x="732" y="136" font-size="10.5" fill="rgba(255,255,255,0.7)">Hello! How are you today?</text>
+  <text x="732" y="152" font-size="10.5" fill="rgba(255,255,255,0.6)">We're excited to announce</text>
+  <text x="732" y="168" font-size="10.5" fill="rgba(255,255,255,0.6)">our new product launch.</text>
+  <text x="732" y="184" font-size="10.5" fill="rgba(255,255,255,0.55)">Stay tuned for more</text>
+  <text x="732" y="200" font-size="10.5" fill="rgba(255,255,255,0.5)">exciting updates!</text>
+  <text x="732" y="284" font-size="13" fill="rgba(255,255,255,0.35)">🔊  🎤</text>
+
+  <!-- AI swap circle -->
+  <circle cx="930" cy="193" r="36" fill="url(#aiC)" filter="url(#aiGlow)"/>
+  <circle cx="930" cy="193" r="46" fill="none" stroke="rgba(167,139,250,0.22)" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="930" y="201" text-anchor="middle" font-size="22" font-weight="800" fill="#fff">⇄</text>
+
+  <!-- Target text area -->
+  <rect x="966" y="88" width="176" height="210" rx="10" fill="rgba(0,0,0,0.32)" stroke="rgba(167,139,250,0.2)" stroke-width="1.5"/>
+  <rect x="978" y="96" width="108" height="22" rx="6" fill="rgba(167,139,250,0.1)" stroke="rgba(167,139,250,0.25)" stroke-width="1"/>
+  <text x="986" y="111" font-size="10" fill="#c4b5fd">French ∨</text>
+  <text x="978" y="136" font-size="10" fill="rgba(167,139,250,0.85)">Bonjour ! Comment</text>
+  <text x="978" y="152" font-size="10" fill="rgba(167,139,250,0.75)">allez-vous aujourd'hui ?</text>
+  <text x="978" y="168" font-size="10" fill="rgba(167,139,250,0.75)">Nous sommes ravis</text>
+  <text x="978" y="184" font-size="10" fill="rgba(167,139,250,0.65)">d'annoncer le lancement</text>
+  <text x="978" y="200" font-size="10" fill="rgba(167,139,250,0.55)">de notre nouveau produit.</text>
+  <text x="978" y="284" font-size="13" fill="rgba(167,139,250,0.5)">🔊  ⧉  ⬇</text>
+
+  <!-- Language chips row -->
+  <text x="720" y="320" font-size="10" fill="rgba(255,255,255,0.35)">POPULAR:</text>
+  <rect x="783" y="308" width="54" height="20" rx="10" fill="rgba(167,139,250,0.12)" stroke="rgba(167,139,250,0.25)" stroke-width="1"/>
+  <text x="810" y="322" text-anchor="middle" font-size="9" fill="#c4b5fd">French</text>
+  <rect x="845" y="308" width="56" height="20" rx="10" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+  <text x="873" y="322" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.4)">Spanish</text>
+  <rect x="909" y="308" width="58" height="20" rx="10" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+  <text x="938" y="322" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.4)">German</text>
+  <rect x="975" y="308" width="58" height="20" rx="10" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+  <text x="1004" y="322" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.4)">Chinese</text>
+  <rect x="1041" y="308" width="58" height="20" rx="10" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+  <text x="1070" y="322" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.4)">Japanese</text>
+  <text x="1106" y="322" font-size="9" fill="rgba(255,255,255,0.25)">+95</text>
+
+  <!-- Translate button -->
+  <rect x="720" y="342" width="418" height="40" rx="20" fill="url(#bG)" filter="url(#sh)"/>
+  <text x="929" y="367" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">Translate Now ✦</text>
+
+  <!-- Stat strip in card -->
+  <rect x="720" y="398" width="418" height="56" rx="10" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <g text-anchor="middle" font-size="11">
+    <text x="800" y="422" fill="rgba(167,139,250,0.85)" font-weight="600">100+ Languages</text>
+    <text x="800" y="440" fill="rgba(255,255,255,0.3)">Wide support</text>
+    <line x1="860" y1="406" x2="860" y2="446" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    <text x="929" y="422" fill="rgba(96,165,250,0.85)" font-weight="600">⚡ Instant</text>
+    <text x="929" y="440" fill="rgba(255,255,255,0.3)">Under 2 seconds</text>
+    <line x1="998" y1="406" x2="998" y2="446" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    <text x="1068" y="422" fill="rgba(34,197,94,0.85)" font-weight="600">✓ Free</text>
+    <text x="1068" y="440" fill="rgba(255,255,255,0.3)">No sign-up</text>
+  </g>
+
+  <!-- Powered badge -->
+  <rect x="818" y="468" width="222" height="26" rx="13" fill="rgba(167,139,250,0.1)" stroke="rgba(167,139,250,0.22)" stroke-width="1"/>
+  <text x="929" y="485" text-anchor="middle" font-size="11" fill="#a78bfa">Powered by Advanced AI ✦</text>
+
+  <!-- floating top-right icon -->
+  <rect x="1104" y="44" width="50" height="50" rx="12" fill="rgba(91,33,182,0.2)" stroke="rgba(91,33,182,0.42)" stroke-width="1.5"/>
+  <text x="1129" y="76" text-anchor="middle" font-size="22" fill="#a78bfa">🌐</text>
+</svg>

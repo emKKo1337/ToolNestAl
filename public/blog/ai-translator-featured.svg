@@ -1,0 +1,176 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="22%" cy="55%" r="85%"><stop offset="0%" stop-color="#0a0618"/><stop offset="100%" stop-color="#07070f"/></radialGradient>
+    <radialGradient id="gL" cx="50%" cy="50%" r="55%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.45"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gR" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#2563eb" stop-opacity="0.22"/><stop offset="100%" stop-color="#2563eb" stop-opacity="0"/></radialGradient>
+    <radialGradient id="aiC" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4338ca"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="pG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#130b2e" stop-opacity="0.97"/><stop offset="100%" stop-color="#0c0820" stop-opacity="0.97"/></linearGradient>
+    <linearGradient id="lapG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1c1040"/><stop offset="100%" stop-color="#0e0820"/></linearGradient>
+    <linearGradient id="sBar" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="12" stdDeviation="22" flood-color="#5b21b6" flood-opacity="0.52"/></filter>
+    <filter id="aiGlow"><feDropShadow dx="0" dy="0" stdDeviation="18" flood-color="#7c3aed" flood-opacity="0.85"/></filter>
+    <filter id="lapSh"><feDropShadow dx="0" dy="20" stdDeviation="35" flood-color="#4c1d95" flood-opacity="0.6"/></filter>
+    <filter id="gF"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <ellipse cx="190" cy="320" rx="430" ry="380" fill="url(#gL)"/>
+  <ellipse cx="960" cy="310" rx="380" ry="330" fill="url(#gR)"/>
+
+  <!-- star dots -->
+  <g fill="rgba(255,255,255,0.035)">
+    <circle cx="120" cy="80" r="1.5"/><circle cx="240" cy="60" r="1"/><circle cx="380" cy="95" r="1.5"/><circle cx="520" cy="50" r="1"/><circle cx="680" cy="75" r="1.5"/><circle cx="830" cy="55" r="1"/><circle cx="980" cy="80" r="1.5"/><circle cx="1100" cy="65" r="1"/>
+    <circle cx="60" cy="200" r="1"/><circle cx="180" cy="180" r="1.5"/><circle cx="340" cy="210" r="1"/><circle cx="500" cy="190" r="1.5"/><circle cx="650" cy="175" r="1"/><circle cx="800" cy="200" r="1.5"/><circle cx="950" cy="185" r="1"/><circle cx="1120" cy="210" r="1.5"/>
+    <circle cx="90" cy="400" r="1.5"/><circle cx="230" cy="380" r="1"/><circle cx="370" cy="420" r="1.5"/><circle cx="1080" cy="370" r="1.5"/><circle cx="1150" cy="420" r="1"/>
+  </g>
+
+  <!-- LEFT: Headline -->
+  <rect x="52" y="42" width="162" height="36" rx="18" fill="rgba(167,139,250,0.12)" stroke="rgba(167,139,250,0.3)" stroke-width="1"/>
+  <text x="133" y="65" text-anchor="middle" font-size="13" font-weight="600" fill="#a78bfa">✦ ToolNest AI</text>
+
+  <text x="52" y="150" font-size="66" font-weight="800" fill="url(#aG)" filter="url(#gF)">AI Trans-</text>
+  <text x="52" y="228" font-size="66" font-weight="800" fill="#ffffff">lator</text>
+  <text x="52" y="276" font-size="17" fill="rgba(255,255,255,0.5)">Translate Text Instantly with AI</text>
+
+  <g font-size="13" fill="rgba(255,255,255,0.62)">
+    <text x="52" y="316">🌐  100+ Languages supported</text>
+    <text x="52" y="340">✦  AI-Powered natural accuracy</text>
+    <text x="52" y="364">⚡  Instant Results</text>
+    <text x="52" y="388">✓  Secure &amp; Private</text>
+    <text x="52" y="412">≡  Multiple Formats — text, docs</text>
+  </g>
+
+  <rect x="52" y="440" width="258" height="50" rx="25" fill="url(#bG)" filter="url(#sh)"/>
+  <text x="181" y="471" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">✦ Translate Now</text>
+
+  <!-- Stat strip -->
+  <g font-size="11" fill="rgba(255,255,255,0.32)">
+    <text x="52" y="543">🌐 100+ Languages</text>
+    <text x="52" y="558">Wide language support</text>
+    <text x="188" y="543">⚡ Lightning Fast</text>
+    <text x="188" y="558">Instant translations</text>
+    <text x="318" y="543">✓ 100% Secure</text>
+    <text x="318" y="558">Privacy guaranteed</text>
+  </g>
+
+  <!-- Floating top feature icons -->
+  <rect x="518" y="30" width="58" height="58" rx="14" fill="rgba(91,33,182,0.22)" stroke="rgba(91,33,182,0.45)" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="547" y="66" text-anchor="middle" font-size="26" fill="#a78bfa">A↔</text>
+  <text x="547" y="100" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.42)">Smart Translate</text>
+
+  <rect x="630" y="22" width="58" height="58" rx="14" fill="rgba(37,99,235,0.16)" stroke="rgba(96,165,250,0.35)" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="659" y="58" text-anchor="middle" font-size="24" fill="#60a5fa">🌐</text>
+  <text x="659" y="92" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.42)">100+ Languages</text>
+
+  <rect x="748" y="30" width="58" height="58" rx="14" fill="rgba(91,33,182,0.18)" stroke="rgba(167,139,250,0.3)" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="777" y="66" text-anchor="middle" font-size="24" fill="#c4b5fd">≡</text>
+  <text x="777" y="100" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.42)">Documents</text>
+
+  <rect x="866" y="22" width="58" height="58" rx="14" fill="rgba(37,99,235,0.14)" stroke="rgba(96,165,250,0.28)" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="895" y="58" text-anchor="middle" font-size="24" fill="#93c5fd">🎤</text>
+  <text x="895" y="92" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.42)">Voice Input</text>
+
+  <rect x="984" y="30" width="58" height="58" rx="14" fill="rgba(167,139,250,0.12)" stroke="rgba(167,139,250,0.25)" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="1013" y="66" text-anchor="middle" font-size="24" fill="#a78bfa">⬇</text>
+  <text x="1013" y="100" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.42)">Export &amp; Copy</text>
+
+  <!-- dashed connector lines from icons to laptop -->
+  <line x1="547" y1="88" x2="620" y2="148" stroke="rgba(167,139,250,0.2)" stroke-width="1" stroke-dasharray="4 3"/>
+  <line x1="659" y1="80" x2="720" y2="148" stroke="rgba(96,165,250,0.18)" stroke-width="1" stroke-dasharray="4 3"/>
+  <line x1="777" y1="88" x2="820" y2="148" stroke="rgba(167,139,250,0.16)" stroke-width="1" stroke-dasharray="4 3"/>
+  <line x1="895" y1="80" x2="920" y2="148" stroke="rgba(96,165,250,0.14)" stroke-width="1" stroke-dasharray="4 3"/>
+
+  <!-- LAPTOP BODY -->
+  <rect x="500" y="148" width="630" height="385" rx="16" fill="url(#lapG)" stroke="rgba(91,33,182,0.4)" stroke-width="2" filter="url(#lapSh)"/>
+  <rect x="500" y="148" width="630" height="6" rx="3" fill="url(#aG)"/>
+  <!-- screen bezel -->
+  <rect x="514" y="162" width="602" height="358" rx="10" fill="rgba(0,0,0,0.55)" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+
+  <!-- Title bar -->
+  <rect x="514" y="162" width="602" height="38" fill="rgba(255,255,255,0.03)" rx="10"/>
+  <circle cx="536" cy="181" r="5" fill="rgba(239,68,68,0.45)"/>
+  <circle cx="554" cy="181" r="5" fill="rgba(251,191,36,0.45)"/>
+  <circle cx="572" cy="181" r="5" fill="rgba(34,197,94,0.45)"/>
+  <text x="608" y="186" font-size="12" font-weight="600" fill="rgba(255,255,255,0.55)">✦ AI Translator</text>
+  <!-- Powered badge -->
+  <rect x="946" y="170" width="154" height="24" rx="12" fill="rgba(167,139,250,0.12)" stroke="rgba(167,139,250,0.28)" stroke-width="1"/>
+  <text x="1023" y="186" text-anchor="middle" font-size="10" fill="#c4b5fd">Powered by Advanced AI ✦</text>
+
+  <!-- Source panel -->
+  <rect x="526" y="210" width="265" height="200" rx="10" fill="rgba(0,0,0,0.32)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <!-- Detect Language dropdown -->
+  <rect x="538" y="218" width="152" height="24" rx="6" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="546" y="234" font-size="11" fill="rgba(255,255,255,0.55)">Detect Language ∨</text>
+  <text x="540" y="260" font-size="11" fill="rgba(255,255,255,0.7)">Hello! How are you today?</text>
+  <text x="540" y="276" font-size="11" fill="rgba(255,255,255,0.6)">We're excited to announce</text>
+  <text x="540" y="292" font-size="11" fill="rgba(255,255,255,0.6)">our new product launch.</text>
+  <text x="540" y="308" font-size="11" fill="rgba(255,255,255,0.6)">Stay tuned for updates!</text>
+  <!-- audio icon -->
+  <text x="544" y="398" font-size="14" fill="rgba(255,255,255,0.38)">🔊</text>
+  <text x="568" y="398" font-size="14" fill="rgba(255,255,255,0.38)">🎤</text>
+
+  <!-- Swap arrows button -->
+  <circle cx="818" cy="310" r="30" fill="url(#bG)" filter="url(#aiGlow)"/>
+  <circle cx="818" cy="310" r="38" fill="none" stroke="rgba(167,139,250,0.2)" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="818" y="318" text-anchor="middle" font-size="20" fill="#fff">⇄</text>
+
+  <!-- Target panel -->
+  <rect x="850" y="210" width="254" height="200" rx="10" fill="rgba(0,0,0,0.32)" stroke="rgba(167,139,250,0.18)" stroke-width="1.5"/>
+  <!-- French dropdown -->
+  <rect x="862" y="218" width="106" height="24" rx="6" fill="rgba(167,139,250,0.1)" stroke="rgba(167,139,250,0.25)" stroke-width="1"/>
+  <text x="870" y="234" font-size="11" fill="#c4b5fd">French ∨</text>
+  <text x="862" y="258" font-size="10.5" fill="rgba(167,139,250,0.85)">Bonjour ! Comment allez-</text>
+  <text x="862" y="273" font-size="10.5" fill="rgba(167,139,250,0.75)">vous aujourd'hui ?</text>
+  <text x="862" y="288" font-size="10.5" fill="rgba(167,139,250,0.75)">Nous sommes ravis</text>
+  <text x="862" y="303" font-size="10.5" fill="rgba(167,139,250,0.75)">d'annoncer le lancement</text>
+  <text x="862" y="318" font-size="10.5" fill="rgba(167,139,250,0.65)">de notre nouveau produit.</text>
+  <!-- audio + copy -->
+  <text x="866" y="398" font-size="14" fill="rgba(167,139,250,0.5)">🔊</text>
+  <text x="890" y="398" font-size="14" fill="rgba(167,139,250,0.5)">⧉</text>
+
+  <!-- Translate button + Copy -->
+  <rect x="526" y="424" width="388" height="42" rx="21" fill="url(#bG)" filter="url(#sh)"/>
+  <text x="720" y="451" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">Translate Now ✦</text>
+  <rect x="924" y="424" width="102" height="42" rx="21" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="975" y="451" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.55)">⧉ Copy</text>
+
+  <!-- laptop bottom strip -->
+  <rect x="500" y="533" width="630" height="20" rx="0" fill="rgba(91,33,182,0.12)" stroke="rgba(91,33,182,0.25)" stroke-width="0"/>
+  <text x="815" y="546" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.25)">toolnestai.net</text>
+
+  <!-- AI Robot -->
+  <ellipse cx="1128" cy="578" rx="60" ry="14" fill="rgba(91,33,182,0.38)" filter="url(#aiGlow)"/>
+  <!-- body -->
+  <rect x="1080" y="425" width="96" height="126" rx="20" fill="#130828" stroke="#7c3aed" stroke-width="2"/>
+  <!-- AI badge on body -->
+  <rect x="1092" y="462" width="72" height="44" rx="10" fill="url(#bG)"/>
+  <text x="1128" y="490" text-anchor="middle" font-size="22" font-weight="800" fill="#fff">AI</text>
+  <!-- head -->
+  <rect x="1086" y="348" width="84" height="80" rx="20" fill="#130828" stroke="#7c3aed" stroke-width="2"/>
+  <!-- eyes -->
+  <circle cx="1107" cy="382" r="9" fill="#0e0820"/><circle cx="1149" cy="382" r="9" fill="#0e0820"/>
+  <circle cx="1107" cy="382" r="5.5" fill="#7c3aed"/><circle cx="1149" cy="382" r="5.5" fill="#7c3aed"/>
+  <circle cx="1109" cy="380" r="2.2" fill="white"/><circle cx="1151" cy="380" r="2.2" fill="white"/>
+  <!-- smile -->
+  <path d="M 1098 400 Q 1128 416 1158 400" stroke="#a78bfa" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <!-- antenna -->
+  <line x1="1128" y1="348" x2="1128" y2="322" stroke="#7c3aed" stroke-width="2.5"/>
+  <circle cx="1128" cy="313" r="7" fill="#a78bfa"/>
+  <!-- arms -->
+  <rect x="1032" y="448" width="48" height="18" rx="9" fill="#130828" stroke="#7c3aed" stroke-width="1.5"/>
+  <rect x="1176" y="448" width="48" height="18" rx="9" fill="#130828" stroke="#7c3aed" stroke-width="1.5"/>
+  <!-- platform glow -->
+  <ellipse cx="1128" cy="552" rx="48" ry="8" fill="rgba(91,33,182,0.45)"/>
+
+  <!-- Bottom stat strip -->
+  <rect x="52" y="592" width="1096" height="28" rx="6" fill="rgba(255,255,255,0.018)"/>
+  <g text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.32)">
+    <text x="190" y="610">🌐 100+ Languages</text>
+    <text x="400" y="610">⚡ Lightning Fast</text>
+    <text x="600" y="610">✓ 100% Secure</text>
+    <text x="810" y="610">☁ Cloud Based</text>
+    <text x="1020" y="610">⬇ Export Anywhere</text>
+  </g>
+</svg>
