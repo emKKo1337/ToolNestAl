@@ -1,0 +1,126 @@
+<svg viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="45%" r="75%"><stop offset="0%" stop-color="#160a2e"/><stop offset="100%" stop-color="#09090f"/></radialGradient>
+    <radialGradient id="gL" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#6d28d9" stop-opacity="0.3"/><stop offset="100%" stop-color="#6d28d9" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gR" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#3b82f6" stop-opacity="0.2"/><stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="pG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1e1040" stop-opacity="0.96"/><stop offset="100%" stop-color="#0f0820" stop-opacity="0.96"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="10" stdDeviation="20" flood-color="#6d28d9" flood-opacity="0.4"/></filter>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <ellipse cx="180" cy="340" rx="380" ry="340" fill="url(#gL)"/>
+  <ellipse cx="1020" cy="340" rx="340" ry="300" fill="url(#gR)"/>
+
+  <!-- Grid dots -->
+  <g fill="rgba(255,255,255,0.03)">
+    <circle cx="100" cy="100" r="1.5"/> <circle cx="250" cy="100" r="1.5"/> <circle cx="400" cy="100" r="1.5"/> <circle cx="550" cy="100" r="1.5"/> <circle cx="700" cy="100" r="1.5"/> <circle cx="850" cy="100" r="1.5"/> <circle cx="1000" cy="100" r="1.5"/> <circle cx="1150" cy="100" r="1.5"/>
+    <circle cx="100" cy="250" r="1.5"/> <circle cx="250" cy="250" r="1.5"/> <circle cx="400" cy="250" r="1.5"/> <circle cx="550" cy="250" r="1.5"/> <circle cx="700" cy="250" r="1.5"/> <circle cx="850" cy="250" r="1.5"/> <circle cx="1000" cy="250" r="1.5"/> <circle cx="1150" cy="250" r="1.5"/>
+    <circle cx="100" cy="400" r="1.5"/> <circle cx="250" cy="400" r="1.5"/> <circle cx="400" cy="400" r="1.5"/> <circle cx="550" cy="400" r="1.5"/> <circle cx="700" cy="400" r="1.5"/> <circle cx="850" cy="400" r="1.5"/> <circle cx="1000" cy="400" r="1.5"/> <circle cx="1150" cy="400" r="1.5"/>
+    <circle cx="100" cy="550" r="1.5"/> <circle cx="250" cy="550" r="1.5"/> <circle cx="400" cy="550" r="1.5"/> <circle cx="550" cy="550" r="1.5"/> <circle cx="700" cy="550" r="1.5"/> <circle cx="850" cy="550" r="1.5"/> <circle cx="1000" cy="550" r="1.5"/> <circle cx="1150" cy="550" r="1.5"/>
+  </g>
+
+  <!-- TOP BADGE -->
+  <rect x="50" y="42" width="165" height="34" rx="17" fill="rgba(167,139,250,0.1)" stroke="rgba(167,139,250,0.25)" stroke-width="1"/>
+  <text x="132" y="64" text-anchor="middle" font-size="13" font-weight="600" fill="#a78bfa">✦ ToolNest AI Blog</text>
+
+  <!-- HEADLINE -->
+  <text x="600" y="148" text-anchor="middle" font-size="46" font-weight="800" fill="url(#aG)">AI Email Writer</text>
+  <text x="600" y="198" text-anchor="middle" font-size="22" fill="rgba(255,255,255,0.5)">Write Professional Emails in Seconds — 2026 Guide</text>
+
+  <!-- STEP 1 -->
+  <rect x="50" y="240" width="230" height="220" rx="16" fill="url(#pG)" stroke="rgba(167,139,250,0.2)" stroke-width="1" filter="url(#sh)"/>
+  <rect x="50" y="240" width="230" height="4" rx="2" fill="#a78bfa"/>
+  <circle cx="165" cy="238" r="16" fill="#0f0820" stroke="#a78bfa" stroke-width="2"/>
+  <text x="165" y="243" text-anchor="middle" font-size="12" font-weight="700" fill="#a78bfa">1</text>
+  <text x="165" y="285" text-anchor="middle" font-size="26">✉</text>
+  <text x="165" y="314" text-anchor="middle" font-size="14" font-weight="700" fill="#f0e8ff">Choose Purpose</text>
+  <text x="165" y="334" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.4)">Sales / Follow-up /</text>
+  <text x="165" y="350" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.4)">Apology / Thank-you</text>
+  <!-- Mini purpose chips -->
+  <rect x="68" y="368" width="90" height="22" rx="11" fill="rgba(167,139,250,0.1)" stroke="rgba(167,139,250,0.25)" stroke-width="1"/>
+  <text x="113" y="383" text-anchor="middle" font-size="10" fill="#a78bfa">Business</text>
+  <rect x="166" y="368" width="96" height="22" rx="11" fill="rgba(96,165,250,0.08)" stroke="rgba(96,165,250,0.2)" stroke-width="1"/>
+  <text x="214" y="383" text-anchor="middle" font-size="10" fill="#60a5fa">Follow-up</text>
+  <rect x="68" y="396" width="82" height="22" rx="11" fill="rgba(34,197,94,0.08)" stroke="rgba(34,197,94,0.2)" stroke-width="1"/>
+  <text x="109" y="411" text-anchor="middle" font-size="10" fill="#22c55e">Sales</text>
+  <rect x="158" y="396" width="104" height="22" rx="11" fill="rgba(244,114,182,0.08)" stroke="rgba(244,114,182,0.2)" stroke-width="1"/>
+  <text x="210" y="411" text-anchor="middle" font-size="10" fill="#f472b6">Thank-you</text>
+
+  <!-- Arrow 1→2 -->
+  <text x="295" y="355" text-anchor="middle" font-size="26" fill="rgba(167,139,250,0.4)">→</text>
+
+  <!-- STEP 2 -->
+  <rect x="330" y="240" width="230" height="220" rx="16" fill="url(#pG)" stroke="rgba(96,165,250,0.2)" stroke-width="1" filter="url(#sh)"/>
+  <rect x="330" y="240" width="230" height="4" rx="2" fill="#60a5fa"/>
+  <circle cx="445" cy="238" r="16" fill="#0f0820" stroke="#60a5fa" stroke-width="2"/>
+  <text x="445" y="243" text-anchor="middle" font-size="12" font-weight="700" fill="#60a5fa">2</text>
+  <text x="445" y="285" text-anchor="middle" font-size="26">☰</text>
+  <text x="445" y="314" text-anchor="middle" font-size="14" font-weight="700" fill="#f0e8ff">Add Key Details</text>
+  <text x="445" y="334" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.4)">Recipient, tone, length</text>
+  <text x="445" y="350" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.4)">and key points</text>
+  <!-- Mini form -->
+  <rect x="348" y="368" width="194" height="20" rx="5" fill="rgba(255,255,255,0.04)" stroke="rgba(96,165,250,0.2)" stroke-width="1"/>
+  <text x="356" y="382" font-size="10" fill="rgba(255,255,255,0.3)">Recipient name…</text>
+  <rect x="348" y="394" width="194" height="20" rx="5" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <text x="356" y="408" font-size="10" fill="rgba(255,255,255,0.3)">Key message points…</text>
+
+  <!-- Arrow 2→3 -->
+  <text x="575" y="355" text-anchor="middle" font-size="26" fill="rgba(167,139,250,0.4)">→</text>
+
+  <!-- STEP 3 -->
+  <rect x="610" y="240" width="230" height="220" rx="16" fill="url(#pG)" stroke="rgba(167,139,250,0.3)" stroke-width="2" filter="url(#sh)"/>
+  <rect x="610" y="240" width="230" height="4" rx="2" fill="url(#aG)"/>
+  <circle cx="725" cy="238" r="16" fill="#0f0820" stroke="url(#aG)" stroke-width="2"/>
+  <text x="725" y="243" text-anchor="middle" font-size="12" font-weight="700" fill="#a78bfa">3</text>
+  <text x="725" y="285" text-anchor="middle" font-size="26">✦</text>
+  <text x="725" y="314" text-anchor="middle" font-size="14" font-weight="700" fill="#f0e8ff">AI Writes Email</text>
+  <text x="725" y="334" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.4)">Streamed in real time,</text>
+  <text x="725" y="350" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.4)">polished and ready</text>
+  <!-- Streaming bars -->
+  <rect x="628" y="368" width="194" height="7" rx="3.5" fill="rgba(167,139,250,0.25)"/>
+  <rect x="628" y="381" width="160" height="7" rx="3.5" fill="rgba(167,139,250,0.18)"/>
+  <rect x="628" y="394" width="180" height="7" rx="3.5" fill="rgba(167,139,250,0.14)"/>
+  <rect x="628" y="407" width="140" height="7" rx="3.5" fill="rgba(167,139,250,0.1)"/>
+
+  <!-- Arrow 3→4 -->
+  <text x="855" y="355" text-anchor="middle" font-size="26" fill="rgba(167,139,250,0.4)">→</text>
+
+  <!-- STEP 4 -->
+  <rect x="890" y="240" width="260" height="220" rx="16" fill="url(#pG)" stroke="rgba(34,197,94,0.2)" stroke-width="1" filter="url(#sh)"/>
+  <rect x="890" y="240" width="260" height="4" rx="2" fill="#22c55e"/>
+  <circle cx="1020" cy="238" r="16" fill="#0f0820" stroke="#22c55e" stroke-width="2"/>
+  <text x="1020" y="243" text-anchor="middle" font-size="12" font-weight="700" fill="#22c55e">4</text>
+  <text x="1020" y="285" text-anchor="middle" font-size="26">✓</text>
+  <text x="1020" y="314" text-anchor="middle" font-size="14" font-weight="700" fill="#f0e8ff">Copy &amp; Send</text>
+  <text x="1020" y="334" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.4)">Review, copy to clipboard</text>
+  <text x="1020" y="350" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.4)">and send from any app</text>
+  <!-- Action buttons -->
+  <rect x="908" y="368" width="224" height="34" rx="17" fill="url(#bG)"/>
+  <text x="1020" y="390" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">⧉ Copy to Clipboard</text>
+  <rect x="908" y="408" width="107" height="28" rx="14" fill="rgba(167,139,250,0.1)" stroke="rgba(167,139,250,0.25)" stroke-width="1"/>
+  <text x="961" y="426" text-anchor="middle" font-size="11" fill="#a78bfa">↺ Regenerate</text>
+  <rect x="1021" y="408" width="111" height="28" rx="14" fill="rgba(34,197,94,0.08)" stroke="rgba(34,197,94,0.22)" stroke-width="1"/>
+  <text x="1076" y="426" text-anchor="middle" font-size="11" fill="#22c55e">✓ Reset</text>
+
+  <!-- BOTTOM STATS -->
+  <rect x="50" y="510" width="1100" height="70" rx="14" fill="rgba(255,255,255,0.025)" stroke="rgba(255,255,255,0.055)" stroke-width="1"/>
+  <g text-anchor="middle" font-size="13">
+    <text x="175" y="541" fill="#a78bfa" font-weight="700">100% Free</text>
+    <text x="175" y="560" fill="rgba(255,255,255,0.35)">No Hidden Costs</text>
+    <line x1="310" y1="525" x2="310" y2="570" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="430" y="541" fill="#60a5fa" font-weight="700">No Sign Up</text>
+    <text x="430" y="560" fill="rgba(255,255,255,0.35)">Required</text>
+    <line x1="565" y1="525" x2="565" y2="570" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="685" y="541" fill="#4ade80" font-weight="700">Saves Hours</text>
+    <text x="685" y="560" fill="rgba(255,255,255,0.35)">Every Day</text>
+    <line x1="820" y1="525" x2="820" y2="570" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="940" y="541" fill="#c4b5fd" font-weight="700">Smarter Writing</text>
+    <text x="940" y="560" fill="rgba(255,255,255,0.35)">Better Results</text>
+    <line x1="1060" y1="525" x2="1060" y2="570" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="1130" y="541" fill="#93c5fd" font-weight="700">Works</text>
+    <text x="1130" y="560" fill="rgba(255,255,255,0.35)">Everywhere</text>
+  </g>
+
+  <text x="600" y="625" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.2)">toolnestai.net — AI Email Writer — Free, No Sign-Up</text>
+</svg>

@@ -1,0 +1,125 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%"><stop offset="0%" stop-color="#120a26"/><stop offset="100%" stop-color="#09090f"/></radialGradient>
+    <radialGradient id="g1" cx="30%" cy="50%" r="50%"><stop offset="0%" stop-color="#6d28d9" stop-opacity="0.2"/><stop offset="100%" stop-color="#6d28d9" stop-opacity="0"/></radialGradient>
+    <radialGradient id="g2" cx="70%" cy="50%" r="50%"><stop offset="0%" stop-color="#3b82f6" stop-opacity="0.15"/><stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="pG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1e1040" stop-opacity="0.96"/><stop offset="100%" stop-color="#0f0820" stop-opacity="0.96"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="6" stdDeviation="14" flood-color="#6d28d9" flood-opacity="0.28"/></filter>
+  </defs>
+  <rect width="1200" height="500" fill="url(#bg)"/>
+  <ellipse cx="300" cy="250" rx="400" ry="300" fill="url(#g1)"/>
+  <ellipse cx="900" cy="250" rx="400" ry="300" fill="url(#g2)"/>
+
+  <text x="600" y="55" text-anchor="middle" font-size="26" font-weight="700" fill="url(#aG)">Choosing the Right Email Tone</text>
+  <text x="600" y="80" text-anchor="middle" font-size="14" fill="rgba(255,255,255,0.4)">Match your tone to the situation — the AI handles the rest automatically</text>
+
+  <!-- Tone scale bar -->
+  <rect x="80" y="105" width="1040" height="10" rx="5" fill="rgba(255,255,255,0.05)"/>
+  <defs>
+    <linearGradient id="scaleG" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4ade80"/>
+      <stop offset="33%" stop-color="#60a5fa"/>
+      <stop offset="66%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#f472b6"/>
+    </linearGradient>
+  </defs>
+  <rect x="80" y="105" width="1040" height="10" rx="5" fill="url(#scaleG)" opacity="0.7"/>
+  <text x="80" y="130" font-size="11" fill="rgba(255,255,255,0.35)">← Casual / Friendly</text>
+  <text x="1120" y="130" text-anchor="end" font-size="11" fill="rgba(255,255,255,0.35)">Formal / Authoritative →</text>
+
+  <!-- Tone cards: 5 -->
+  <!-- Friendly -->
+  <rect x="40" y="148" width="205" height="300" rx="14" fill="url(#pG)" stroke="rgba(74,222,128,0.2)" stroke-width="1" filter="url(#sh)"/>
+  <rect x="40" y="148" width="205" height="4" rx="2" fill="#4ade80"/>
+  <circle cx="142" cy="185" r="22" fill="rgba(74,222,128,0.1)" stroke="rgba(74,222,128,0.3)" stroke-width="1.5"/>
+  <text x="142" y="193" text-anchor="middle" font-size="22">😊</text>
+  <text x="142" y="228" text-anchor="middle" font-size="14" font-weight="700" fill="#f0e8ff">Friendly</text>
+  <text x="142" y="252" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.4)">Warm, approachable,</text>
+  <text x="142" y="267" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.4)">conversational</text>
+  <line x1="58" y1="286" x2="227" y2="286" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="58" y="306" font-size="11" font-weight="600" fill="rgba(255,255,255,0.5)">Best for:</text>
+  <text x="58" y="323" font-size="11" fill="rgba(255,255,255,0.4)">• Team messages</text>
+  <text x="58" y="339" font-size="11" fill="rgba(255,255,255,0.4)">• Thank-you notes</text>
+  <text x="58" y="355" font-size="11" fill="rgba(255,255,255,0.4)">• Colleague check-ins</text>
+  <text x="58" y="371" font-size="11" fill="rgba(255,255,255,0.4)">• Networking</text>
+  <rect x="58" y="390" width="169" height="42" rx="8" fill="rgba(74,222,128,0.05)" stroke="rgba(74,222,128,0.15)" stroke-width="1"/>
+  <text x="142" y="408" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.4)" font-style="italic">"Hi Sarah! Hope you're</text>
+  <text x="142" y="422" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.4)" font-style="italic">having a great week…"</text>
+
+  <!-- Neutral -->
+  <rect x="258" y="148" width="205" height="300" rx="14" fill="url(#pG)" stroke="rgba(96,165,250,0.2)" stroke-width="1" filter="url(#sh)"/>
+  <rect x="258" y="148" width="205" height="4" rx="2" fill="#60a5fa"/>
+  <circle cx="360" cy="185" r="22" fill="rgba(96,165,250,0.1)" stroke="rgba(96,165,250,0.3)" stroke-width="1.5"/>
+  <text x="360" y="193" text-anchor="middle" font-size="22">🤝</text>
+  <text x="360" y="228" text-anchor="middle" font-size="14" font-weight="700" fill="#f0e8ff">Neutral</text>
+  <text x="360" y="252" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.4)">Balanced, clear,</text>
+  <text x="360" y="267" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.4)">neither stiff nor casual</text>
+  <line x1="276" y1="286" x2="445" y2="286" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="276" y="306" font-size="11" font-weight="600" fill="rgba(255,255,255,0.5)">Best for:</text>
+  <text x="276" y="323" font-size="11" fill="rgba(255,255,255,0.4)">• Client updates</text>
+  <text x="276" y="339" font-size="11" fill="rgba(255,255,255,0.4)">• Project summaries</text>
+  <text x="276" y="355" font-size="11" fill="rgba(255,255,255,0.4)">• Internal reports</text>
+  <text x="276" y="371" font-size="11" fill="rgba(255,255,255,0.4)">• General enquiries</text>
+  <rect x="276" y="390" width="169" height="42" rx="8" fill="rgba(96,165,250,0.05)" stroke="rgba(96,165,250,0.15)" stroke-width="1"/>
+  <text x="360" y="408" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.4)" font-style="italic">"I wanted to follow up</text>
+  <text x="360" y="422" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.4)" font-style="italic">on our recent discussion…"</text>
+
+  <!-- Professional (highlighted) -->
+  <rect x="476" y="138" width="248" height="320" rx="14" fill="url(#pG)" stroke="rgba(167,139,250,0.35)" stroke-width="2" filter="url(#sh)"/>
+  <rect x="476" y="138" width="248" height="4" rx="2" fill="url(#aG)"/>
+  <rect x="600" y="95" width="100" height="24" rx="12" fill="rgba(167,139,250,0.15)" stroke="rgba(167,139,250,0.3)" stroke-width="1"/>
+  <text x="650" y="112" text-anchor="middle" font-size="10" font-weight="700" fill="#a78bfa">MOST POPULAR</text>
+  <circle cx="600" cy="188" r="26" fill="rgba(167,139,250,0.12)" stroke="rgba(167,139,250,0.35)" stroke-width="1.5"/>
+  <text x="600" y="197" text-anchor="middle" font-size="26">💼</text>
+  <text x="600" y="236" text-anchor="middle" font-size="15" font-weight="700" fill="#f0e8ff">Professional</text>
+  <text x="600" y="260" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.45)">Polished, credible,</text>
+  <text x="600" y="275" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.45)">industry-appropriate</text>
+  <line x1="494" y1="295" x2="706" y2="295" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="494" y="315" font-size="11" font-weight="600" fill="rgba(255,255,255,0.5)">Best for:</text>
+  <text x="494" y="332" font-size="11" fill="rgba(255,255,255,0.4)">• B2B sales &amp; pitches</text>
+  <text x="494" y="348" font-size="11" fill="rgba(255,255,255,0.4)">• Client communication</text>
+  <text x="494" y="364" font-size="11" fill="rgba(255,255,255,0.4)">• Executive outreach</text>
+  <text x="494" y="380" font-size="11" fill="rgba(255,255,255,0.4)">• Proposals &amp; contracts</text>
+  <rect x="494" y="398" width="212" height="42" rx="8" fill="rgba(167,139,250,0.07)" stroke="rgba(167,139,250,0.18)" stroke-width="1"/>
+  <text x="600" y="416" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.45)" font-style="italic">"I am writing to discuss a</text>
+  <text x="600" y="430" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.45)" font-style="italic">potential collaboration…"</text>
+
+  <!-- Assertive -->
+  <rect x="737" y="148" width="205" height="300" rx="14" fill="url(#pG)" stroke="rgba(251,191,36,0.18)" stroke-width="1" filter="url(#sh)"/>
+  <rect x="737" y="148" width="205" height="4" rx="2" fill="#fbbf24"/>
+  <circle cx="839" cy="185" r="22" fill="rgba(251,191,36,0.08)" stroke="rgba(251,191,36,0.25)" stroke-width="1.5"/>
+  <text x="839" y="193" text-anchor="middle" font-size="22">⚡</text>
+  <text x="839" y="228" text-anchor="middle" font-size="14" font-weight="700" fill="#f0e8ff">Assertive</text>
+  <text x="839" y="252" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.4)">Direct, confident,</text>
+  <text x="839" y="267" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.4)">results-focused</text>
+  <line x1="755" y1="286" x2="924" y2="286" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="755" y="306" font-size="11" font-weight="600" fill="rgba(255,255,255,0.5)">Best for:</text>
+  <text x="755" y="323" font-size="11" fill="rgba(255,255,255,0.4)">• Deadline reminders</text>
+  <text x="755" y="339" font-size="11" fill="rgba(255,255,255,0.4)">• Negotiation emails</text>
+  <text x="755" y="355" font-size="11" fill="rgba(255,255,255,0.4)">• Action requests</text>
+  <text x="755" y="371" font-size="11" fill="rgba(255,255,255,0.4)">• Problem escalation</text>
+  <rect x="755" y="390" width="169" height="42" rx="8" fill="rgba(251,191,36,0.04)" stroke="rgba(251,191,36,0.12)" stroke-width="1"/>
+  <text x="839" y="408" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.4)" font-style="italic">"I require your response</text>
+  <text x="839" y="422" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.4)" font-style="italic">by end of business today."</text>
+
+  <!-- Formal -->
+  <rect x="955" y="148" width="205" height="300" rx="14" fill="url(#pG)" stroke="rgba(244,114,182,0.18)" stroke-width="1" filter="url(#sh)"/>
+  <rect x="955" y="148" width="205" height="4" rx="2" fill="#f472b6"/>
+  <circle cx="1057" cy="185" r="22" fill="rgba(244,114,182,0.08)" stroke="rgba(244,114,182,0.25)" stroke-width="1.5"/>
+  <text x="1057" y="193" text-anchor="middle" font-size="22">🏛</text>
+  <text x="1057" y="228" text-anchor="middle" font-size="14" font-weight="700" fill="#f0e8ff">Formal</text>
+  <text x="1057" y="252" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.4)">Highly structured,</text>
+  <text x="1057" y="267" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.4)">traditional, authoritative</text>
+  <line x1="973" y1="286" x2="1142" y2="286" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="973" y="306" font-size="11" font-weight="600" fill="rgba(255,255,255,0.5)">Best for:</text>
+  <text x="973" y="323" font-size="11" fill="rgba(255,255,255,0.4)">• Legal correspondence</text>
+  <text x="973" y="339" font-size="11" fill="rgba(255,255,255,0.4)">• Government bodies</text>
+  <text x="973" y="355" font-size="11" fill="rgba(255,255,255,0.4)">• Board communications</text>
+  <text x="973" y="371" font-size="11" fill="rgba(255,255,255,0.4)">• Official complaints</text>
+  <rect x="973" y="390" width="169" height="42" rx="8" fill="rgba(244,114,182,0.04)" stroke="rgba(244,114,182,0.12)" stroke-width="1"/>
+  <text x="1057" y="408" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.4)" font-style="italic">"I am writing to formally</text>
+  <text x="1057" y="422" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.4)" font-style="italic">request your attention…"</text>
+
+  <text x="600" y="478" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.22)">ToolNest AI — AI Email Writer — Select your tone, we handle the rest</text>
+</svg>

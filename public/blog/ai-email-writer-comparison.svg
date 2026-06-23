@@ -1,0 +1,72 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%"><stop offset="0%" stop-color="#0d0a1e"/><stop offset="100%" stop-color="#09090f"/></radialGradient>
+    <radialGradient id="gL" cx="25%" cy="50%" r="45%"><stop offset="0%" stop-color="#ef4444" stop-opacity="0.1"/><stop offset="100%" stop-color="#ef4444" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gR" cx="75%" cy="50%" r="45%"><stop offset="0%" stop-color="#6d28d9" stop-opacity="0.22"/><stop offset="100%" stop-color="#6d28d9" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="pBad" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#1a0d0d" stop-opacity="0.97"/><stop offset="100%" stop-color="#0f0809" stop-opacity="0.97"/></linearGradient>
+    <linearGradient id="pGood" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#0d0a1e" stop-opacity="0.97"/><stop offset="100%" stop-color="#130820" stop-opacity="0.97"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#6d28d9" flood-opacity="0.28"/></filter>
+  </defs>
+  <rect width="1200" height="500" fill="url(#bg)"/>
+  <ellipse cx="290" cy="250" rx="400" ry="330" fill="url(#gL)"/>
+  <ellipse cx="910" cy="250" rx="400" ry="330" fill="url(#gR)"/>
+
+  <text x="600" y="55" text-anchor="middle" font-size="26" font-weight="700" fill="url(#aG)">AI Email Writer vs. Writing It Yourself</text>
+
+  <!-- VS badge -->
+  <circle cx="600" cy="270" r="32" fill="#0d0a1e" stroke="rgba(167,139,250,0.3)" stroke-width="1.5"/>
+  <text x="600" y="278" text-anchor="middle" font-size="17" font-weight="800" fill="#a78bfa">VS</text>
+
+  <!-- LEFT: Manual -->
+  <rect x="45" y="78" width="510" height="375" rx="16" fill="url(#pBad)" stroke="rgba(239,68,68,0.2)" stroke-width="1" filter="url(#sh)"/>
+  <rect x="45" y="78" width="510" height="4" rx="2" fill="#ef4444"/>
+  <text x="300" y="115" text-anchor="middle" font-size="15" font-weight="700" fill="#f87171">✗ Writing Emails Manually</text>
+
+  <g font-size="13">
+    <rect x="65" y="128" width="470" height="38" rx="8" fill="rgba(239,68,68,0.04)" stroke="rgba(239,68,68,0.1)" stroke-width="1"/>
+    <text x="90" y="151" font-size="13" fill="rgba(255,255,255,0.62)">⏱  15–30 minutes per email on average</text>
+
+    <rect x="65" y="174" width="470" height="38" rx="8" fill="rgba(239,68,68,0.04)" stroke="rgba(239,68,68,0.1)" stroke-width="1"/>
+    <text x="90" y="197" font-size="13" fill="rgba(255,255,255,0.62)">😰  Staring at a blank screen, unsure how to start</text>
+
+    <rect x="65" y="220" width="470" height="38" rx="8" fill="rgba(239,68,68,0.04)" stroke="rgba(239,68,68,0.1)" stroke-width="1"/>
+    <text x="90" y="243" font-size="13" fill="rgba(255,255,255,0.62)">❌  Inconsistent tone across different emails</text>
+
+    <rect x="65" y="266" width="470" height="38" rx="8" fill="rgba(239,68,68,0.04)" stroke="rgba(239,68,68,0.1)" stroke-width="1"/>
+    <text x="90" y="289" font-size="13" fill="rgba(255,255,255,0.62)">🔤  Grammar and phrasing errors slip through</text>
+
+    <rect x="65" y="312" width="470" height="38" rx="8" fill="rgba(239,68,68,0.04)" stroke="rgba(239,68,68,0.1)" stroke-width="1"/>
+    <text x="90" y="335" font-size="13" fill="rgba(255,255,255,0.62)">🌐  Struggle translating ideas across languages</text>
+
+    <rect x="65" y="358" width="470" height="38" rx="8" fill="rgba(239,68,68,0.04)" stroke="rgba(239,68,68,0.1)" stroke-width="1"/>
+    <text x="90" y="381" font-size="13" fill="rgba(255,255,255,0.62)">🔁  Re-writing the same boilerplate again and again</text>
+  </g>
+
+  <!-- RIGHT: AI -->
+  <rect x="645" y="78" width="510" height="375" rx="16" fill="url(#pGood)" stroke="rgba(167,139,250,0.22)" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="645" y="78" width="510" height="4" rx="2" fill="url(#aG)"/>
+  <text x="900" y="115" text-anchor="middle" font-size="15" font-weight="700" fill="#c4b5fd">✦ ToolNest AI Email Writer</text>
+
+  <g font-size="13">
+    <rect x="665" y="128" width="470" height="38" rx="8" fill="rgba(167,139,250,0.04)" stroke="rgba(167,139,250,0.12)" stroke-width="1"/>
+    <text x="690" y="151" font-size="13" fill="rgba(255,255,255,0.7)">⚡  Professional email ready in under 30 seconds</text>
+
+    <rect x="665" y="174" width="470" height="38" rx="8" fill="rgba(167,139,250,0.04)" stroke="rgba(167,139,250,0.12)" stroke-width="1"/>
+    <text x="690" y="197" font-size="13" fill="rgba(255,255,255,0.7)">✦  AI generates a strong first draft instantly</text>
+
+    <rect x="665" y="220" width="470" height="38" rx="8" fill="rgba(167,139,250,0.04)" stroke="rgba(167,139,250,0.12)" stroke-width="1"/>
+    <text x="690" y="243" font-size="13" fill="rgba(255,255,255,0.7)">🎯  Consistent tone matched to purpose and recipient</text>
+
+    <rect x="665" y="266" width="470" height="38" rx="8" fill="rgba(167,139,250,0.04)" stroke="rgba(167,139,250,0.12)" stroke-width="1"/>
+    <text x="690" y="289" font-size="13" fill="rgba(255,255,255,0.7)">✓  Polished grammar and natural phrasing every time</text>
+
+    <rect x="665" y="312" width="470" height="38" rx="8" fill="rgba(167,139,250,0.04)" stroke="rgba(167,139,250,0.12)" stroke-width="1"/>
+    <text x="690" y="335" font-size="13" fill="rgba(255,255,255,0.7)">🌍  Supports multiple languages and writing styles</text>
+
+    <rect x="665" y="358" width="470" height="38" rx="8" fill="rgba(167,139,250,0.04)" stroke="rgba(167,139,250,0.12)" stroke-width="1"/>
+    <text x="690" y="381" font-size="13" fill="rgba(255,255,255,0.7)">♾  Regenerate as many times as you need, free</text>
+  </g>
+
+  <text x="600" y="475" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.2)">toolnestai.net · AI Email Writer · Free · No sign-up required</text>
+</svg>

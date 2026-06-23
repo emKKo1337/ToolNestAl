@@ -1,0 +1,138 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="30%" cy="50%" r="78%"><stop offset="0%" stop-color="#160a2e"/><stop offset="100%" stop-color="#09090f"/></radialGradient>
+    <radialGradient id="gL" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#6d28d9" stop-opacity="0.38"/><stop offset="100%" stop-color="#6d28d9" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gR" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#3b82f6" stop-opacity="0.22"/><stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="pG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1e1040" stop-opacity="0.96"/><stop offset="100%" stop-color="#0f0820" stop-opacity="0.96"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="10" stdDeviation="22" flood-color="#6d28d9" flood-opacity="0.42"/></filter>
+    <filter id="gF"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <ellipse cx="220" cy="315" rx="440" ry="380" fill="url(#gL)"/>
+  <ellipse cx="980" cy="315" rx="360" ry="320" fill="url(#gR)"/>
+
+  <!-- Subtle grid -->
+  <g stroke="#fff" stroke-opacity="0.025" stroke-width="1">
+    <line x1="0" y1="126" x2="1200" y2="126"/><line x1="0" y1="252" x2="1200" y2="252"/>
+    <line x1="0" y1="378" x2="1200" y2="378"/><line x1="0" y1="504" x2="1200" y2="504"/>
+    <line x1="240" y1="0" x2="240" y2="630"/><line x1="720" y1="0" x2="720" y2="630"/>
+    <line x1="960" y1="0" x2="960" y2="630"/>
+  </g>
+
+  <!-- Brand -->
+  <rect x="58" y="50" width="158" height="36" rx="18" fill="rgba(167,139,250,0.1)" stroke="rgba(167,139,250,0.28)" stroke-width="1"/>
+  <text x="137" y="73" text-anchor="middle" font-size="13" font-weight="600" fill="#a78bfa">✦ ToolNest AI</text>
+
+  <!-- Eyebrow -->
+  <text x="58" y="128" font-size="13" font-weight="600" fill="rgba(96,165,250,0.8)" letter-spacing="2">2026 COMPLETE GUIDE</text>
+
+  <!-- Headline -->
+  <text x="58" y="202" font-size="62" font-weight="800" fill="url(#aG)" filter="url(#gF)">AI Email</text>
+  <text x="58" y="276" font-size="62" font-weight="800" fill="#ffffff">Writer</text>
+
+  <!-- Sub -->
+  <text x="58" y="324" font-size="20" fill="rgba(255,255,255,0.52)">Write Professional Emails in</text>
+  <text x="58" y="350" font-size="20" fill="rgba(255,255,255,0.52)">Seconds — Free, No Sign-Up</text>
+
+  <!-- Pills -->
+  <rect x="58" y="382" width="148" height="36" rx="18" fill="rgba(167,139,250,0.1)" stroke="rgba(167,139,250,0.25)" stroke-width="1"/>
+  <text x="132" y="405" text-anchor="middle" font-size="13" fill="#c4b5fd">✦ AI-Powered</text>
+  <rect x="216" y="382" width="148" height="36" rx="18" fill="rgba(96,165,250,0.08)" stroke="rgba(96,165,250,0.22)" stroke-width="1"/>
+  <text x="290" y="405" text-anchor="middle" font-size="13" fill="#93c5fd">⚡ 30 Seconds</text>
+  <rect x="374" y="382" width="148" height="36" rx="18" fill="rgba(34,197,94,0.08)" stroke="rgba(34,197,94,0.22)" stroke-width="1"/>
+  <text x="448" y="405" text-anchor="middle" font-size="13" fill="#4ade80">✓ Free Forever</text>
+
+  <!-- CTA -->
+  <rect x="58" y="448" width="248" height="52" rx="26" fill="url(#bG)" filter="url(#sh)"/>
+  <text x="182" y="480" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">Read Full Guide →</text>
+
+  <!-- URL -->
+  <text x="58" y="565" font-size="13" fill="rgba(255,255,255,0.28)">toolnestai.net/blog/ai-email-writer</text>
+
+  <!-- RIGHT: Email compose mockup -->
+  <rect x="700" y="52" width="448" height="526" rx="18" fill="url(#pG)" stroke="rgba(167,139,250,0.14)" stroke-width="1" filter="url(#sh)"/>
+  <rect x="700" y="52" width="448" height="5" rx="2" fill="url(#aG)"/>
+
+  <!-- Window chrome -->
+  <rect x="700" y="57" width="448" height="32" fill="rgba(255,255,255,0.03)"/>
+  <circle cx="722" cy="73" r="5" fill="rgba(239,68,68,0.5)"/>
+  <circle cx="740" cy="73" r="5" fill="rgba(251,191,36,0.5)"/>
+  <circle cx="758" cy="73" r="5" fill="rgba(34,197,94,0.5)"/>
+  <text x="924" y="78" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.4)">✉ New Email</text>
+
+  <!-- To field -->
+  <rect x="716" y="98" width="416" height="28" rx="6" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <text x="728" y="116" font-size="11" fill="rgba(255,255,255,0.3)">To:</text>
+  <text x="748" y="116" font-size="11" fill="rgba(255,255,255,0.55)">client@example.com</text>
+
+  <!-- Subject field -->
+  <rect x="716" y="133" width="416" height="28" rx="6" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <text x="728" y="151" font-size="11" fill="rgba(255,255,255,0.3)">Subject:</text>
+  <text x="780" y="151" font-size="11" fill="#c4b5fd">Project Update &amp; Next Steps</text>
+
+  <!-- Divider -->
+  <line x1="716" y1="168" x2="1132" y2="168" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <!-- Body text -->
+  <text x="724" y="192" font-size="11" fill="rgba(255,255,255,0.62)">Hi there,</text>
+  <rect x="724" y="202" width="388" height="7" rx="3.5" fill="rgba(255,255,255,0.09)"/>
+  <rect x="724" y="215" width="360" height="7" rx="3.5" fill="rgba(255,255,255,0.07)"/>
+  <rect x="724" y="228" width="374" height="7" rx="3.5" fill="rgba(255,255,255,0.07)"/>
+  <rect x="724" y="241" width="330" height="7" rx="3.5" fill="rgba(255,255,255,0.06)"/>
+  <rect x="724" y="268" width="388" height="7" rx="3.5" fill="rgba(255,255,255,0.08)"/>
+  <rect x="724" y="281" width="350" height="7" rx="3.5" fill="rgba(255,255,255,0.06)"/>
+  <rect x="724" y="294" width="365" height="7" rx="3.5" fill="rgba(255,255,255,0.06)"/>
+  <text x="724" y="330" font-size="11" fill="rgba(255,255,255,0.55)">Best regards,</text>
+  <text x="724" y="347" font-size="11" fill="rgba(255,255,255,0.55)">Your Name</text>
+
+  <!-- Paper plane -->
+  <g transform="translate(1082,310)" opacity="0.65">
+    <polygon points="0,-16 14,9 0,3" fill="#7c3aed"/>
+    <polygon points="0,-16 -14,9 0,3" fill="#a78bfa"/>
+    <polygon points="0,3 14,9 0,20" fill="#6d28d9" opacity="0.55"/>
+  </g>
+
+  <!-- Action buttons -->
+  <rect x="716" y="376" width="200" height="38" rx="19" fill="url(#bG)" filter="url(#sh)"/>
+  <text x="816" y="400" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">Generate Email ✦</text>
+  <rect x="924" y="376" width="105" height="38" rx="19" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="976" y="400" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.55)">⧉ Copy</text>
+
+  <!-- Tone chips -->
+  <text x="716" y="440" font-size="10" fill="rgba(255,255,255,0.3)">TONE</text>
+  <rect x="756" y="428" width="76" height="22" rx="11" fill="rgba(167,139,250,0.15)" stroke="rgba(167,139,250,0.3)" stroke-width="1"/>
+  <text x="794" y="443" text-anchor="middle" font-size="10" fill="#a78bfa">Professional</text>
+  <rect x="840" y="428" width="68" height="22" rx="11" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="874" y="443" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.4)">Friendly</text>
+  <rect x="916" y="428" width="68" height="22" rx="11" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="950" y="443" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.4)">Formal</text>
+
+  <!-- Length chips -->
+  <text x="716" y="476" font-size="10" fill="rgba(255,255,255,0.3)">LENGTH</text>
+  <rect x="762" y="464" width="52" height="22" rx="11" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="788" y="479" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.4)">Short</text>
+  <rect x="822" y="464" width="62" height="22" rx="11" fill="rgba(167,139,250,0.12)" stroke="rgba(167,139,250,0.28)" stroke-width="1"/>
+  <text x="853" y="479" text-anchor="middle" font-size="10" fill="#a78bfa">Medium</text>
+  <rect x="892" y="464" width="52" height="22" rx="11" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="918" y="479" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.4)">Long</text>
+
+  <!-- Bottom stat strip inside card -->
+  <rect x="716" y="506" width="416" height="56" rx="10" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <g text-anchor="middle" font-size="11">
+    <text x="800" y="531" fill="rgba(167,139,250,0.8)" font-weight="600">100% Free</text>
+    <text x="800" y="549" fill="rgba(255,255,255,0.3)">No cost ever</text>
+    <line x1="870" y1="515" x2="870" y2="555" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    <text x="950" y="531" fill="rgba(96,165,250,0.8)" font-weight="600">No Sign Up</text>
+    <text x="950" y="549" fill="rgba(255,255,255,0.3)">Open &amp; write</text>
+    <line x1="1020" y1="515" x2="1020" y2="555" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    <text x="1090" y="531" fill="rgba(34,197,94,0.8)" font-weight="600">Instant</text>
+    <text x="1090" y="549" fill="rgba(255,255,255,0.3)">30 seconds</text>
+  </g>
+
+  <!-- Floating icons top-right -->
+  <rect x="1082" y="56" width="52" height="52" rx="13" fill="rgba(109,40,217,0.22)" stroke="rgba(109,40,217,0.45)" stroke-width="1.5"/>
+  <text x="1108" y="89" text-anchor="middle" font-size="22" fill="#a78bfa">✉</text>
+</svg>
