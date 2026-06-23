@@ -15,6 +15,8 @@ import {
   paraphraseStream,
   grammarCheck,
   grammarCheckStream,
+  humanize,
+  humanizeStream,
   generateText,
 } from "@/lib/ai/services";
 import { SYSTEM_PROMPTS } from "@/lib/ai/prompts";
@@ -162,6 +164,23 @@ export async function POST(req: Request) {
         const paraphrasePayload = { text, mode };
         if (stream) return paraphraseStream(paraphrasePayload, options);
         return Response.json(await paraphrase(paraphrasePayload, options));
+      }
+
+      // ── humanize ──────────────────────────────────────────────────────────
+      case "humanize": {
+        const { text, strength } = payload as {
+          text?: string;
+          strength?: import("@/types/ai").HumanizeStrength;
+        };
+        if (!text?.trim()) {
+          return AIErrors.invalidRequest("humanize task requires payload.text.").toResponse();
+        }
+        if (!strength) {
+          return AIErrors.invalidRequest("humanize task requires payload.strength.").toResponse();
+        }
+        const humanizePayload = { text, strength };
+        if (stream) return humanizeStream(humanizePayload, options);
+        return Response.json(await humanize(humanizePayload, options));
       }
 
       // ── generateText (generic) ────────────────────────────────────────────

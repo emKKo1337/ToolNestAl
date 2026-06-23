@@ -8,7 +8,8 @@ export type AITaskType =
   | "generateResume"
   | "generateText"
   | "paraphrase"
-  | "grammarCheck";
+  | "grammarCheck"
+  | "humanize";
 
 // ── Model identifiers ─────────────────────────────────────────────────────────
 // Gemini direct-API IDs have no "/" — all OpenRouter IDs contain "/".
@@ -204,4 +205,11 @@ export type ParaphraseMode =
 export interface ParaphrasePayload {
   text: string;
   mode: ParaphraseMode;
+}
+
+export type HumanizeStrength = "light" | "balanced" | "strong";
+
+export interface HumanizePayload {
+  text: string;
+  strength: HumanizeStrength;
 }

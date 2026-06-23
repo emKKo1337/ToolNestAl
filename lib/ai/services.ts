@@ -15,6 +15,7 @@ import {
   buildResumePrompt,
   buildParaphrasePrompt,
   buildGrammarCheckPrompt,
+  buildHumanizePrompt,
   buildChatMessages,
 } from "./prompts";
 import type {
@@ -27,6 +28,7 @@ import type {
   GenerateResumePayload,
   ParaphrasePayload,
   GrammarCheckPayload,
+  HumanizePayload,
   ChatPayload,
 } from "@/types/ai";
 
@@ -426,6 +428,32 @@ export function paraphraseStream(
     buildParaphrasePrompt(payload),
     SYSTEM_PROMPTS.paraphrase,
     "paraphrase",
+    { maxTokens: 2048, ...opts }
+  );
+}
+
+// ── humanize ──────────────────────────────────────────────────────────────────
+
+export async function humanize(
+  payload: HumanizePayload,
+  opts?: AIRequestOptions
+): Promise<AIResponse> {
+  return generateText(
+    buildHumanizePrompt(payload),
+    SYSTEM_PROMPTS.humanize,
+    "humanize",
+    { maxTokens: 2048, ...opts }
+  );
+}
+
+export function humanizeStream(
+  payload: HumanizePayload,
+  opts?: AIRequestOptions
+): Response {
+  return streamText(
+    buildHumanizePrompt(payload),
+    SYSTEM_PROMPTS.humanize,
+    "humanize",
     { maxTokens: 2048, ...opts }
   );
 }

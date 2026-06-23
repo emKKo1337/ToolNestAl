@@ -5,6 +5,7 @@ import type {
   GenerateResumePayload,
   ParaphrasePayload,
   GrammarCheckPayload,
+  HumanizePayload,
   WorkExperience,
   EducationEntry,
   AIMessage,
@@ -47,6 +48,11 @@ Preserve the author's original meaning, voice, and intent throughout.`,
   paraphrase: `You are an expert writing assistant specialised in paraphrasing.
 Rewrite the provided text according to the requested mode while preserving the original meaning.
 Output ONLY the rewritten text — no preamble, no commentary, no labels.`,
+
+  humanize: `You are an expert editor who transforms AI-generated text into authentic, natural human writing.
+Remove robotic patterns, overused AI phrases, and unnatural sentence structures.
+Preserve the original meaning and key information completely.
+Output ONLY the humanized text — no preamble, no commentary, no labels.`,
 } as const;
 
 // ── User prompt builders ──────────────────────────────────────────────────────
@@ -326,6 +332,29 @@ RULES — follow exactly:
 - Never output Markdown formatting (no **, no ##, no __).
 
 Text to paraphrase:
+
+${payload.text}`;
+}
+
+export function buildHumanizePrompt(payload: HumanizePayload): string {
+  const strengthGuide =
+    payload.strength === "light"
+      ? "Make subtle adjustments: vary sentence rhythm, replace overused AI phrases, and add minor natural imperfections. Keep the structure largely intact."
+      : payload.strength === "strong"
+      ? "Deeply rewrite the text: restructure sentences, add natural conversational flow, inject personality and warmth, eliminate all AI patterns, and make it sound like a confident human author wrote it from scratch."
+      : "Balance naturalness with faithfulness: rewrite sentences for flow, remove AI clichés, add human-sounding transitions, and vary sentence lengths naturally.";
+
+  return `Strength: ${strengthGuide}
+
+RULES — follow exactly:
+- Preserve ALL original facts, data, and meaning. Never add or remove information.
+- Remove robotic AI patterns: overuse of "Furthermore", "In conclusion", "It is important to note", "Delve into", "Embark on", etc.
+- Vary sentence length and structure naturally — mix short punchy sentences with longer ones.
+- Use contractions where appropriate (it's, you'll, we've) for a more human voice.
+- Output ONLY the humanized text. No explanations, no labels, no commentary.
+- Never output Markdown formatting (no **, no ##, no __).
+
+Text to humanize:
 
 ${payload.text}`;
 }
