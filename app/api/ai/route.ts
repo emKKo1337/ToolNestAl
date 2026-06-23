@@ -19,6 +19,8 @@ import {
   humanizeStream,
   coverLetter,
   coverLetterStream,
+  generatePrompt,
+  generatePromptStream,
   generateText,
 } from "@/lib/ai/services";
 import { SYSTEM_PROMPTS } from "@/lib/ai/prompts";
@@ -221,6 +223,37 @@ export async function POST(req: Request) {
         };
         if (stream) return coverLetterStream(coverLetterPayload, options);
         return Response.json(await coverLetter(coverLetterPayload, options));
+      }
+
+      // ── generatePrompt ────────────────────────────────────────────────────
+      case "generatePrompt": {
+        const {
+          goal,
+          category,
+          model: aiModel,
+          tone: promptTone,
+          length: promptLength,
+          existingPrompt,
+        } = payload as {
+          goal?: string;
+          category?: import("@/types/ai").PromptCategory;
+          model?: import("@/types/ai").PromptAIModel;
+          tone?: import("@/types/ai").PromptTone;
+          length?: import("@/types/ai").PromptLength;
+          existingPrompt?: string;
+        };
+        if (!goal?.trim())
+          return AIErrors.invalidRequest("generatePrompt task requires payload.goal.").toResponse();
+        const generatePromptPayload = {
+          goal,
+          category: category ?? "writing" as import("@/types/ai").PromptCategory,
+          model: aiModel ?? "any" as import("@/types/ai").PromptAIModel,
+          tone: promptTone ?? "professional" as import("@/types/ai").PromptTone,
+          length: promptLength ?? "medium" as import("@/types/ai").PromptLength,
+          existingPrompt,
+        };
+        if (stream) return generatePromptStream(generatePromptPayload, options);
+        return Response.json(await generatePrompt(generatePromptPayload, options));
       }
 
       // ── generateText (generic) ────────────────────────────────────────────

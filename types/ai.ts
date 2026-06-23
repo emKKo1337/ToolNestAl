@@ -10,7 +10,8 @@ export type AITaskType =
   | "paraphrase"
   | "grammarCheck"
   | "humanize"
-  | "coverLetter";
+  | "coverLetter"
+  | "generatePrompt";
 
 // ── Model identifiers ─────────────────────────────────────────────────────────
 // Gemini direct-API IDs have no "/" — all OpenRouter IDs contain "/".
@@ -213,6 +214,43 @@ export type HumanizeStrength = "light" | "balanced" | "strong";
 export interface HumanizePayload {
   text: string;
   strength: HumanizeStrength;
+}
+
+export type PromptCategory =
+  | "writing"
+  | "coding"
+  | "marketing"
+  | "seo"
+  | "business"
+  | "education"
+  | "social-media"
+  | "image-generation";
+
+export type PromptAIModel =
+  | "chatgpt"
+  | "claude"
+  | "gemini"
+  | "grok"
+  | "midjourney"
+  | "stable-diffusion"
+  | "any";
+
+export type PromptTone =
+  | "professional"
+  | "casual"
+  | "creative"
+  | "technical"
+  | "persuasive";
+
+export type PromptLength = "short" | "medium" | "detailed";
+
+export interface GeneratePromptPayload {
+  goal: string;
+  category: PromptCategory;
+  model: PromptAIModel;
+  tone: PromptTone;
+  length: PromptLength;
+  existingPrompt?: string;
 }
 
 export type CoverLetterTone = "professional" | "friendly" | "confident";

@@ -7,6 +7,7 @@ import type {
   GrammarCheckPayload,
   HumanizePayload,
   CoverLetterPayload,
+  GeneratePromptPayload,
   WorkExperience,
   EducationEntry,
   AIMessage,
@@ -59,6 +60,11 @@ Output ONLY the humanized text — no preamble, no commentary, no labels.`,
 Write compelling, ATS-friendly cover letters that are tailored to the role and company.
 Output only plain text — no Markdown, no asterisks, no bullet symbols, no # headers.
 The letter should have a proper greeting, 3-4 focused paragraphs, and a professional closing.`,
+
+  generatePrompt: `You are a world-class prompt engineer who creates highly effective, optimised prompts for AI models.
+You deeply understand what makes prompts clear, specific, and effective for each AI system.
+Output ONLY the ready-to-use prompt — no explanations, no preamble, no labels, no surrounding quotes.
+The prompt must be immediately usable: copy and paste it straight into the target AI model.`,
 } as const;
 
 // ── User prompt builders ──────────────────────────────────────────────────────
@@ -398,6 +404,66 @@ RULES — follow exactly:
 - Close with a confident call to action and professional sign-off.
 - Output plain text only — no Markdown, no asterisks, no bullet points in the body.
 - Do NOT include placeholders like [Your Address] or [Date].`;
+}
+
+export function buildGeneratePromptPrompt(payload: GeneratePromptPayload): string {
+  const modelLabel: Record<string, string> = {
+    chatgpt: "ChatGPT (OpenAI GPT-4o)",
+    claude: "Claude (Anthropic)",
+    gemini: "Gemini (Google)",
+    grok: "Grok (xAI)",
+    midjourney: "Midjourney",
+    "stable-diffusion": "Stable Diffusion",
+    any: "any general-purpose AI model",
+  };
+
+  const toneGuide: Record<string, string> = {
+    professional: "Use formal, precise, and authoritative language.",
+    casual: "Use conversational, friendly, and approachable language.",
+    creative: "Use imaginative, expressive, and inventive language.",
+    technical: "Use specific, detailed, and domain-accurate terminology.",
+    persuasive: "Use compelling, motivating, and convincing language.",
+  };
+
+  const lengthGuide: Record<string, string> = {
+    short: "Keep the prompt concise — 1 to 3 sentences. Get straight to the point.",
+    medium: "Write a moderately detailed prompt — 4 to 8 sentences with clear context and instructions.",
+    detailed: "Write a comprehensive, highly detailed prompt — include role assignment, detailed context, step-by-step instructions, constraints, output format guidance, and examples where helpful.",
+  };
+
+  const categoryContext: Record<string, string> = {
+    writing: "creative or professional writing",
+    coding: "software development and programming",
+    marketing: "marketing campaigns and brand messaging",
+    seo: "search engine optimisation and content strategy",
+    business: "business strategy and operations",
+    education: "teaching, learning, and educational content",
+    "social-media": "social media content and engagement",
+    "image-generation": "AI image and visual content generation",
+  };
+
+  const improvingSection = payload.existingPrompt?.trim()
+    ? `\n\nExisting prompt to improve:\n"""\n${payload.existingPrompt.trim()}\n"""\n\nTask: Rewrite and significantly improve the above prompt. Fix vagueness, add specificity, improve structure, and optimise it for the target model while preserving the original intent.`
+    : `\n\nTask: Write a brand-new, highly optimised prompt for the goal described above.`;
+
+  return `Create an optimised prompt for the following request.
+
+Target AI model: ${modelLabel[payload.model] ?? payload.model}
+Category: ${categoryContext[payload.category] ?? payload.category}
+Tone: ${toneGuide[payload.tone] ?? payload.tone}
+Length: ${lengthGuide[payload.length] ?? payload.length}
+
+Goal / what the prompt should achieve:
+${payload.goal}${improvingSection}
+
+RULES — follow exactly:
+- Output ONLY the final prompt text. Nothing else.
+- Do not wrap the prompt in quotes.
+- Do not add any explanation, commentary, or labels before or after.
+- The prompt must be immediately usable — copy-paste ready.
+- For image-generation models, include style, lighting, composition, and mood descriptors.
+- For coding models, specify language, framework, and output format where relevant.
+- For writing/content models, assign a clear role, context, and output instructions.`;
 }
 
 export function buildChatMessages(

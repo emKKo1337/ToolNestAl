@@ -17,6 +17,7 @@ import {
   buildGrammarCheckPrompt,
   buildHumanizePrompt,
   buildCoverLetterPrompt,
+  buildGeneratePromptPrompt,
   buildChatMessages,
 } from "./prompts";
 import type {
@@ -31,6 +32,7 @@ import type {
   GrammarCheckPayload,
   HumanizePayload,
   CoverLetterPayload,
+  GeneratePromptPayload,
   ChatPayload,
 } from "@/types/ai";
 
@@ -483,6 +485,32 @@ export function coverLetterStream(
     SYSTEM_PROMPTS.coverLetter,
     "coverLetter",
     { maxTokens: 2048, ...opts }
+  );
+}
+
+// ── generatePrompt ────────────────────────────────────────────────────────────
+
+export async function generatePrompt(
+  payload: GeneratePromptPayload,
+  opts?: AIRequestOptions
+): Promise<AIResponse> {
+  return generateText(
+    buildGeneratePromptPrompt(payload),
+    SYSTEM_PROMPTS.generatePrompt,
+    "generatePrompt",
+    { maxTokens: 1024, ...opts }
+  );
+}
+
+export function generatePromptStream(
+  payload: GeneratePromptPayload,
+  opts?: AIRequestOptions
+): Response {
+  return streamText(
+    buildGeneratePromptPrompt(payload),
+    SYSTEM_PROMPTS.generatePrompt,
+    "generatePrompt",
+    { maxTokens: 1024, ...opts }
   );
 }
 
