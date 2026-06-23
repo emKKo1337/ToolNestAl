@@ -7,6 +7,8 @@ import type { ParaphraseMode } from "@/types/ai";
 
 const MAX_CHARS = 5_000;
 
+// ── Mode definitions (outside component to prevent recreating on each render) ─
+
 interface ModeOption {
   id: ParaphraseMode;
   label: string;
@@ -15,17 +17,17 @@ interface ModeOption {
 }
 
 const MODES: ModeOption[] = [
-  { id: "standard",  label: "Standard",  icon: "edit_note",        description: "Faithful rewrite" },
-  { id: "fluent",    label: "Fluent",    icon: "water",            description: "Natural & smooth" },
-  { id: "creative",  label: "Creative",  icon: "palette",          description: "Vivid & varied" },
-  { id: "academic",  label: "Academic",  icon: "school",           description: "Formal & scholarly" },
-  { id: "shorten",   label: "Shorten",   icon: "compress",         description: "Concise version" },
-  { id: "expand",    label: "Expand",    icon: "open_in_full",     description: "Detailed version" },
+  { id: "standard", label: "Standard", icon: "edit_note",    description: "Faithful rewrite"   },
+  { id: "fluent",   label: "Fluent",   icon: "water",        description: "Natural & smooth"   },
+  { id: "creative", label: "Creative", icon: "palette",      description: "Vivid & varied"     },
+  { id: "academic", label: "Academic", icon: "school",       description: "Formal & scholarly" },
+  { id: "shorten",  label: "Shorten",  icon: "compress",     description: "Concise version"    },
+  { id: "expand",   label: "Expand",   icon: "open_in_full", description: "Detailed version"   },
 ];
 
-// ── Sub-components (defined outside main to prevent remounting) ───────────────
+// ── Sub-components (outside component to prevent remounting) ──────────────────
 
-function ActionButton({
+function ActionBtn({
   onClick,
   disabled,
   icon,
@@ -33,7 +35,6 @@ function ActionButton({
   active,
   activeIcon,
   activeLabel,
-  activeColor = "#22c55e",
 }: {
   onClick: () => void;
   disabled?: boolean;
@@ -42,7 +43,6 @@ function ActionButton({
   active?: boolean;
   activeIcon?: string;
   activeLabel?: string;
-  activeColor?: string;
 }) {
   return (
     <button
@@ -51,9 +51,9 @@ function ActionButton({
       aria-label={label}
       className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-[12px] font-semibold transition-all disabled:opacity-40 disabled:cursor-not-allowed"
       style={{
-        background: active ? `${activeColor}22` : "rgba(255,255,255,0.06)",
-        color: active ? activeColor : "#988d9f",
-        border: `1px solid ${active ? `${activeColor}44` : "rgba(255,255,255,0.08)"}`,
+        background: active ? "rgba(34,197,94,0.13)" : "rgba(255,255,255,0.06)",
+        color: active ? "#22c55e" : "#988d9f",
+        border: `1px solid ${active ? "rgba(34,197,94,0.3)" : "rgba(255,255,255,0.08)"}`,
       }}
     >
       <span className="material-symbols-outlined text-[14px]" aria-hidden="true">
@@ -64,15 +64,15 @@ function ActionButton({
   );
 }
 
-// ── Main Component ────────────────────────────────────────────────────────────
+// ── Main component ────────────────────────────────────────────────────────────
 
 export default function AiParaphraserTool() {
-  const [inputText, setInputText]   = useState("");
-  const [mode, setMode]             = useState<ParaphraseMode>("standard");
-  const [output, setOutput]         = useState("");
-  const [isLoading, setIsLoading]   = useState(false);
-  const [errorMsg, setErrorMsg]     = useState<string | null>(null);
-  const [copied, setCopied]         = useState(false);
+  const [inputText,  setInputText]  = useState("");
+  const [mode,       setMode]       = useState<ParaphraseMode>("standard");
+  const [output,     setOutput]     = useState("");
+  const [isLoading,  setIsLoading]  = useState(false);
+  const [errorMsg,   setErrorMsg]   = useState<string | null>(null);
+  const [copied,     setCopied]     = useState(false);
   const [downloaded, setDownloaded] = useState(false);
   const [inputError, setInputError] = useState(false);
 
@@ -80,19 +80,12 @@ export default function AiParaphraserTool() {
   const outputRef   = useRef<HTMLDivElement>(null);
   const abortRef    = useRef<AbortController | null>(null);
 
-  const charPct  = Math.min(100, (inputText.length / MAX_CHARS) * 100);
-  const hasOutput = output.trim().length > 0;
+  const charPct        = Math.min(100, (inputText.length / MAX_CHARS) * 100);
+  const hasOutput      = output.trim().length > 0;
+  const inputWordCount = useMemo(() => (inputText.trim() ? inputText.trim().split(/\s+/).length : 0), [inputText]);
+  const outputWordCount = useMemo(() => (output.trim() ? output.trim().split(/\s+/).length : 0), [output]);
 
-  const outputWordCount = useMemo(
-    () => (output.trim() ? output.trim().split(/\s+/).length : 0),
-    [output]
-  );
-  const inputWordCount = useMemo(
-    () => (inputText.trim() ? inputText.trim().split(/\s+/).length : 0),
-    [inputText]
-  );
-
-  // ── Core paraphrase ──────────────────────────────────────────────────────
+  // ── Core paraphrase call ──────────────────────────────────────────────────
 
   const runParaphrase = useCallback(async (text: string, selectedMode: ParaphraseMode) => {
     abortRef.current?.abort();
@@ -117,9 +110,7 @@ export default function AiParaphraserTool() {
 
       if (!res.ok) {
         const json = await res.json().catch(() => ({}));
-        throw new Error(
-          (json as { message?: string }).message ?? `Server error ${res.status}`
-        );
+        throw new Error((json as { message?: string }).message ?? `Server error ${res.status}`);
       }
 
       const reader = res.body?.getReader();
@@ -135,14 +126,10 @@ export default function AiParaphraserTool() {
         setOutput(accumulated);
       }
 
-      setTimeout(() => {
-        outputRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
-      }, 100);
+      setTimeout(() => outputRef.current?.scrollIntoView({ behavior: "smooth", block: "start" }), 100);
     } catch (err: unknown) {
       if (err instanceof Error && err.name === "AbortError") return;
-      setErrorMsg(
-        err instanceof Error ? err.message : "Something went wrong. Please try again."
-      );
+      setErrorMsg(err instanceof Error ? err.message : "Something went wrong. Please try again.");
     } finally {
       setIsLoading(false);
     }
@@ -161,8 +148,7 @@ export default function AiParaphraserTool() {
   }, [inputText, mode, runParaphrase]);
 
   const handleRegenerate = useCallback(async () => {
-    if (!inputText.trim()) return;
-    await runParaphrase(inputText, mode);
+    if (inputText.trim()) await runParaphrase(inputText, mode);
   }, [inputText, mode, runParaphrase]);
 
   const handleCopy = useCallback(async () => {
@@ -176,16 +162,13 @@ export default function AiParaphraserTool() {
     if (!output) return;
     const blob = new Blob([output], { type: "text/plain;charset=utf-8" });
     const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = "paraphrased.txt";
-    a.click();
+    Object.assign(document.createElement("a"), { href: url, download: "paraphrased.txt" }).click();
     URL.revokeObjectURL(url);
     setDownloaded(true);
     setTimeout(() => setDownloaded(false), 2000);
   }, [output]);
 
-  const handleUseOutput = useCallback(() => {
+  const handleUseAsInput = useCallback(() => {
     if (!output) return;
     setInputText(output);
     setOutput("");
@@ -208,14 +191,16 @@ export default function AiParaphraserTool() {
     if (val.trim()) setInputError(false);
   }, []);
 
+  const activeMode = MODES.find((m) => m.id === mode)!;
+
   // ── Render ────────────────────────────────────────────────────────────────
 
   return (
     <div className="mb-12 flex flex-col gap-8">
 
-      {/* ── Mode selector ── */}
+      {/* Mode selector */}
       <div>
-        <p className="text-[13px] font-semibold text-[#988d9f] uppercase tracking-[0.06em] mb-3">
+        <p className="text-[13px] font-semibold uppercase tracking-[0.06em] mb-3" style={{ color: "#988d9f" }}>
           Rewrite Mode
         </p>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2.5">
@@ -258,15 +243,15 @@ export default function AiParaphraserTool() {
         </div>
       </div>
 
-      {/* ── Two-column layout ── */}
+      {/* Two-column layout */}
       <div className="grid lg:grid-cols-2 gap-6 items-start">
 
-        {/* ── LEFT: Input ── */}
+        {/* Input panel */}
         <div className="glass-panel rounded-2xl p-6 flex flex-col gap-5">
           <div className="flex items-center justify-between">
-            <p className="text-[15px] font-bold text-[#e2e2e2]">Original Text</p>
-            <span className="text-[12px] text-[#6b5b7a]">
-              <span className="text-[#988d9f] font-medium">{inputWordCount.toLocaleString()}</span> words
+            <p className="text-[15px] font-bold" style={{ color: "#e2e2e2" }}>Original Text</p>
+            <span className="text-[12px]" style={{ color: "#6b5b7a" }}>
+              <span className="font-medium" style={{ color: "#988d9f" }}>{inputWordCount.toLocaleString()}</span> words
             </span>
           </div>
 
@@ -278,36 +263,33 @@ export default function AiParaphraserTool() {
               placeholder="Paste or type the text you want to paraphrase…"
               rows={14}
               aria-label="Text to paraphrase"
-              aria-describedby={inputError ? "input-error" : "char-counter"}
               aria-invalid={inputError}
-              className="w-full bg-[rgba(0,0,0,0.25)] rounded-xl px-4 py-3 text-[14px] text-[#e2e2e2] placeholder-[#4d4354] focus:outline-none transition-colors resize-y leading-relaxed"
+              className="w-full rounded-xl px-4 py-3 text-[14px] placeholder-[#4d4354] focus:outline-none transition-colors resize-y leading-relaxed"
               style={{
+                background: "rgba(0,0,0,0.25)",
+                color: "#e2e2e2",
                 border: `1px solid ${inputError ? "rgba(239,68,68,0.6)" : "rgba(255,255,255,0.09)"}`,
                 minHeight: "280px",
               }}
             />
             {inputError && (
-              <p id="input-error" role="alert" className="text-[12px] text-[#ef4444]">
+              <p role="alert" className="text-[12px]" style={{ color: "#ef4444" }}>
                 Please enter some text to paraphrase.
               </p>
             )}
-            <div className="flex items-center justify-between">
-              <div className="flex-1 h-1 rounded-full bg-[rgba(255,255,255,0.06)] mr-3 overflow-hidden">
+
+            {/* Char progress */}
+            <div className="flex items-center gap-3">
+              <div className="flex-1 h-1 rounded-full overflow-hidden" style={{ background: "rgba(255,255,255,0.06)" }}>
                 <div
                   className="h-full rounded-full transition-all duration-300"
                   style={{
                     width: `${charPct}%`,
-                    background:
-                      charPct > 90
-                        ? "#ef4444"
-                        : charPct > 70
-                        ? "#f59e0b"
-                        : "linear-gradient(90deg, #ddb7ff, #4cd7f6)",
+                    background: charPct > 90 ? "#ef4444" : charPct > 70 ? "#f59e0b" : "linear-gradient(90deg,#ddb7ff,#4cd7f6)",
                   }}
                 />
               </div>
               <p
-                id="char-counter"
                 className="text-[11px] tabular-nums flex-shrink-0"
                 style={{ color: charPct > 90 ? "#ef4444" : "#4d4354" }}
               >
@@ -316,15 +298,14 @@ export default function AiParaphraserTool() {
             </div>
           </div>
 
+          {/* Paraphrase button */}
           <button
             onClick={handleParaphrase}
             disabled={isLoading}
             aria-label="Paraphrase text"
             className="relative w-full py-4 rounded-xl text-[15px] font-bold tracking-[0.02em] transition-all duration-200 overflow-hidden disabled:opacity-70 disabled:cursor-not-allowed"
             style={{
-              background: isLoading
-                ? "rgba(221,183,255,0.12)"
-                : "linear-gradient(135deg, #ddb7ff 0%, #4cd7f6 100%)",
+              background: isLoading ? "rgba(221,183,255,0.12)" : "linear-gradient(135deg,#ddb7ff 0%,#4cd7f6 100%)",
               color: isLoading ? "#ddb7ff" : "#131313",
               boxShadow: isLoading ? "none" : "0 0 24px rgba(221,183,255,0.2)",
             }}
@@ -336,11 +317,7 @@ export default function AiParaphraserTool() {
               </span>
             ) : (
               <span className="flex items-center justify-center gap-2">
-                <span
-                  className="material-symbols-outlined text-[18px]"
-                  style={{ fontVariationSettings: "'FILL' 1" }}
-                  aria-hidden="true"
-                >
+                <span className="material-symbols-outlined text-[18px]" style={{ fontVariationSettings: "'FILL' 1" }} aria-hidden="true">
                   auto_awesome
                 </span>
                 Paraphrase
@@ -349,7 +326,7 @@ export default function AiParaphraserTool() {
           </button>
         </div>
 
-        {/* ── RIGHT: Output ── */}
+        {/* Output panel */}
         <div ref={outputRef} className="flex flex-col gap-4">
 
           {/* Empty state */}
@@ -358,27 +335,26 @@ export default function AiParaphraserTool() {
               className="glass-panel rounded-2xl p-10 flex flex-col items-center justify-center text-center gap-4"
               style={{ minHeight: "420px" }}
               aria-live="polite"
-              aria-label="Output area — waiting for generation"
             >
               <div
                 className="w-16 h-16 rounded-2xl flex items-center justify-center"
                 style={{ background: "rgba(221,183,255,0.08)" }}
               >
                 <span
-                  className="material-symbols-outlined text-[32px] text-[#ddb7ff]"
-                  style={{ fontVariationSettings: "'FILL' 0" }}
+                  className="material-symbols-outlined text-[32px]"
+                  style={{ color: "#ddb7ff", fontVariationSettings: "'FILL' 0" }}
                   aria-hidden="true"
                 >
                   draw
                 </span>
               </div>
               <div>
-                <p className="text-[16px] font-semibold text-[#e2e2e2] mb-1">
+                <p className="text-[16px] font-semibold mb-1" style={{ color: "#e2e2e2" }}>
                   Your rewritten text will appear here
                 </p>
-                <p className="text-[13px] text-[#6b5b7a] max-w-[260px] leading-relaxed">
-                  Paste your text on the left, choose a mode, then click{" "}
-                  <strong className="text-[#9b8da8]">Paraphrase</strong>.
+                <p className="text-[13px] max-w-[260px] leading-relaxed" style={{ color: "#6b5b7a" }}>
+                  Paste your text, choose a mode, then click{" "}
+                  <strong style={{ color: "#9b8da8" }}>Paraphrase</strong>.
                 </p>
               </div>
             </div>
@@ -387,22 +363,15 @@ export default function AiParaphraserTool() {
           {/* Loading skeleton */}
           {isLoading && !hasOutput && (
             <div className="glass-panel rounded-2xl overflow-hidden">
-              <div
-                className="px-6 py-4 border-b border-[rgba(255,255,255,0.06)]"
-                style={{ background: "rgba(0,0,0,0.2)" }}
-              >
-                <div className="h-4 w-36 rounded animate-pulse bg-[rgba(255,255,255,0.07)]" />
+              <div className="px-6 py-4 border-b border-[rgba(255,255,255,0.06)]" style={{ background: "rgba(0,0,0,0.2)" }}>
+                <div className="h-4 w-36 rounded animate-pulse" style={{ background: "rgba(255,255,255,0.07)" }} />
               </div>
               <div className="px-6 py-5 flex flex-col gap-3">
                 {[94, 80, 88, 72, 82, 90, 64].map((w, i) => (
                   <div
                     key={i}
                     className="h-3 rounded animate-pulse"
-                    style={{
-                      width: `${w}%`,
-                      background: "rgba(255,255,255,0.06)",
-                      animationDelay: `${i * 60}ms`,
-                    }}
+                    style={{ width: `${w}%`, background: "rgba(255,255,255,0.06)", animationDelay: `${i * 60}ms` }}
                   />
                 ))}
               </div>
@@ -412,7 +381,7 @@ export default function AiParaphraserTool() {
           {/* Output card */}
           {(hasOutput || (isLoading && output)) && (
             <>
-              {/* Stats bar */}
+              {/* Stats */}
               {hasOutput && (
                 <div className="flex flex-wrap items-center gap-4 px-1">
                   {[
@@ -426,10 +395,8 @@ export default function AiParaphraserTool() {
                         : "",
                     },
                   ].filter((s) => s.value).map(({ icon, color, value }) => (
-                    <span key={value} className="flex items-center gap-1.5 text-[12px] text-[#988d9f]">
-                      <span className="material-symbols-outlined text-[14px]" style={{ color }} aria-hidden="true">
-                        {icon}
-                      </span>
+                    <span key={value} className="flex items-center gap-1.5 text-[12px]" style={{ color: "#988d9f" }}>
+                      <span className="material-symbols-outlined text-[14px]" style={{ color }} aria-hidden="true">{icon}</span>
                       {value}
                     </span>
                   ))}
@@ -437,11 +404,7 @@ export default function AiParaphraserTool() {
               )}
 
               {/* Card */}
-              <div
-                className="glass-panel rounded-2xl overflow-hidden"
-                aria-live="polite"
-                aria-label="Paraphrased output"
-              >
+              <div className="glass-panel rounded-2xl overflow-hidden" aria-live="polite" aria-label="Paraphrased output">
                 {/* Card header */}
                 <div
                   className="px-6 py-4 flex items-center gap-3 border-b border-[rgba(255,255,255,0.06)]"
@@ -452,30 +415,31 @@ export default function AiParaphraserTool() {
                     style={{ background: "rgba(221,183,255,0.1)" }}
                   >
                     <span
-                      className="material-symbols-outlined text-[16px] text-[#ddb7ff]"
-                      style={{ fontVariationSettings: "'FILL' 1" }}
+                      className="material-symbols-outlined text-[16px]"
+                      style={{ color: "#ddb7ff", fontVariationSettings: "'FILL' 1" }}
                       aria-hidden="true"
                     >
-                      {MODES.find((m) => m.id === mode)?.icon ?? "draw"}
+                      {activeMode.icon}
                     </span>
                   </div>
                   <div>
-                    <p className="text-[14px] font-semibold text-[#e2e2e2]">
-                      {MODES.find((m) => m.id === mode)?.label ?? "Paraphrased"} Version
+                    <p className="text-[14px] font-semibold" style={{ color: "#e2e2e2" }}>
+                      {activeMode.label} Version
                     </p>
-                    <p className="text-[12px] text-[#6b5b7a] mt-0.5">
-                      {MODES.find((m) => m.id === mode)?.description}
+                    <p className="text-[12px] mt-0.5" style={{ color: "#6b5b7a" }}>
+                      {activeMode.description}
                     </p>
                   </div>
                 </div>
 
                 {/* Body */}
                 <div className="px-6 py-5">
-                  <pre className="text-[14px] text-[#cfc2d6] leading-[1.8] whitespace-pre-wrap font-sans">
+                  <pre className="text-[14px] leading-[1.8] whitespace-pre-wrap font-sans" style={{ color: "#cfc2d6" }}>
                     {output}
                     {isLoading && (
                       <span
-                        className="inline-block w-0.5 h-4 bg-[#ddb7ff] ml-0.5 align-middle animate-pulse"
+                        className="inline-block w-0.5 h-4 ml-0.5 align-middle animate-pulse"
+                        style={{ background: "#ddb7ff" }}
                         aria-hidden="true"
                       />
                     )}
@@ -486,37 +450,11 @@ export default function AiParaphraserTool() {
               {/* Action buttons */}
               {hasOutput && !isLoading && (
                 <div className="flex flex-wrap gap-2">
-                  <ActionButton
-                    onClick={handleCopy}
-                    icon="content_copy"
-                    label="Copy"
-                    active={copied}
-                    activeIcon="check"
-                    activeLabel="Copied!"
-                  />
-                  <ActionButton
-                    onClick={handleRegenerate}
-                    icon="refresh"
-                    label="Regenerate"
-                  />
-                  <ActionButton
-                    onClick={handleDownload}
-                    icon="download"
-                    label="Download TXT"
-                    active={downloaded}
-                    activeIcon="check"
-                    activeLabel="Saved!"
-                  />
-                  <ActionButton
-                    onClick={handleUseOutput}
-                    icon="input"
-                    label="Use as input"
-                  />
-                  <ActionButton
-                    onClick={handleReset}
-                    icon="restart_alt"
-                    label="Start over"
-                  />
+                  <ActionBtn onClick={handleCopy}        icon="content_copy" label="Copy"         active={copied}     activeIcon="check" activeLabel="Copied!" />
+                  <ActionBtn onClick={handleRegenerate}  icon="refresh"      label="Regenerate" />
+                  <ActionBtn onClick={handleDownload}    icon="download"     label="Download TXT" active={downloaded} activeIcon="check" activeLabel="Saved!"  />
+                  <ActionBtn onClick={handleUseAsInput}  icon="input"        label="Use as input" />
+                  <ActionBtn onClick={handleReset}       icon="restart_alt"  label="Start over"   />
                 </div>
               )}
             </>
@@ -530,20 +468,14 @@ export default function AiParaphraserTool() {
               style={{ border: "1px solid rgba(239,68,68,0.3)" }}
             >
               <div className="flex items-center gap-2">
-                <span className="material-symbols-outlined text-[18px] text-[#ef4444]" aria-hidden="true">
-                  error
-                </span>
-                <p className="text-[14px] font-semibold text-[#ef4444]">Paraphrasing failed</p>
+                <span className="material-symbols-outlined text-[18px]" style={{ color: "#ef4444" }} aria-hidden="true">error</span>
+                <p className="text-[14px] font-semibold" style={{ color: "#ef4444" }}>Paraphrasing failed</p>
               </div>
-              <p className="text-[13px] text-[#9b8da8]">{errorMsg}</p>
+              <p className="text-[13px]" style={{ color: "#9b8da8" }}>{errorMsg}</p>
               <button
                 onClick={handleRegenerate}
                 className="self-start flex items-center gap-2 px-4 py-2 rounded-xl text-[13px] font-semibold transition-all"
-                style={{
-                  background: "rgba(239,68,68,0.1)",
-                  color: "#ef4444",
-                  border: "1px solid rgba(239,68,68,0.2)",
-                }}
+                style={{ background: "rgba(239,68,68,0.1)", color: "#ef4444", border: "1px solid rgba(239,68,68,0.2)" }}
               >
                 <span className="material-symbols-outlined text-[14px]">refresh</span>
                 Try again
@@ -551,7 +483,7 @@ export default function AiParaphraserTool() {
             </div>
           )}
 
-          <p className="text-[12px] text-[#4d4354] px-1">
+          <p className="text-[12px] px-1" style={{ color: "#4d4354" }}>
             Your text is processed securely and never permanently stored.
           </p>
         </div>
