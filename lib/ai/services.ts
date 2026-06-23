@@ -20,6 +20,7 @@ import {
   buildGeneratePromptPrompt,
   buildGenerateBusinessNamesPrompt,
   buildGenerateSlogansPrompt,
+  buildGenerateUsernamesPrompt,
   buildChatMessages,
 } from "./prompts";
 import type {
@@ -37,6 +38,7 @@ import type {
   GeneratePromptPayload,
   GenerateBusinessNamesPayload,
   GenerateSlogansPayload,
+  GenerateUsernamesPayload,
   ChatPayload,
 } from "@/types/ai";
 
@@ -566,6 +568,32 @@ export function generateSlogansStream(
     buildGenerateSlogansPrompt(payload),
     SYSTEM_PROMPTS.generateSlogans,
     "generateSlogans",
+    { maxTokens: 2048, ...opts }
+  );
+}
+
+// ── generateUsernames ─────────────────────────────────────────────────────────
+
+export async function generateUsernames(
+  payload: GenerateUsernamesPayload,
+  opts?: AIRequestOptions
+): Promise<AIResponse> {
+  return generateText(
+    buildGenerateUsernamesPrompt(payload),
+    SYSTEM_PROMPTS.generateUsernames,
+    "generateUsernames",
+    { maxTokens: 2048, ...opts }
+  );
+}
+
+export function generateUsernamesStream(
+  payload: GenerateUsernamesPayload,
+  opts?: AIRequestOptions
+): Response {
+  return streamText(
+    buildGenerateUsernamesPrompt(payload),
+    SYSTEM_PROMPTS.generateUsernames,
+    "generateUsernames",
     { maxTokens: 2048, ...opts }
   );
 }

@@ -10,6 +10,7 @@ import type {
   GeneratePromptPayload,
   GenerateBusinessNamesPayload,
   GenerateSlogansPayload,
+  GenerateUsernamesPayload,
   WorkExperience,
   EducationEntry,
   AIMessage,
@@ -74,6 +75,10 @@ You always follow the exact output format specified — never deviate, never add
 
   generateSlogans: `You are a world-class copywriter and brand strategist who creates iconic, memorable slogans and taglines.
 You deeply understand how great slogans distill a brand's essence into a few powerful words.
+You always follow the exact output format specified — never deviate, never add extra commentary.`,
+
+  generateUsernames: `You are a creative naming expert specialising in catchy, memorable usernames for social media and online platforms.
+You understand platform conventions, character limits, and what makes a username stand out.
 You always follow the exact output format specified — never deviate, never add extra commentary.`,
 } as const;
 
@@ -562,6 +567,67 @@ RULES:
 - Output exactly ${count} blocks separated by ---
 - Each block must have SLOGAN, EXPLANATION, TONE, and ALTERNATIVES lines in that order
 - Slogans must be original, punchy, and on-brand
+- Do not number the blocks
+- Do not add any text outside the blocks
+- The last block must also end with ---`;
+}
+
+export function buildGenerateUsernamesPrompt(payload: GenerateUsernamesPayload): string {
+  const count = payload.count ?? 10;
+
+  const platformRules: Record<string, string> = {
+    instagram: "Instagram: 1–30 chars, letters, numbers, periods, underscores only.",
+    tiktok:    "TikTok: 2–24 chars, letters, numbers, underscores, periods only.",
+    youtube:   "YouTube: 3–30 chars, letters, numbers, hyphens, underscores.",
+    x:         "X (Twitter): 1–15 chars, letters, numbers, underscores only — no spaces.",
+    twitch:    "Twitch: 4–25 chars, letters, numbers, underscores only.",
+    steam:     "Steam: 3–32 chars, letters, numbers, underscores, hyphens.",
+    discord:   "Discord: 2–32 chars, letters, numbers, underscores, hyphens, periods.",
+    github:    "GitHub: 1–39 chars, letters, numbers, hyphens only — no underscores.",
+  };
+
+  const styleGuide: Record<string, string> = {
+    professional: "Clean, credible, and polished — suitable for a professional personal brand or creator.",
+    gaming:       "Bold, edgy, and memorable — sounds powerful and stands out in gaming lobbies.",
+    minimal:      "Ultra-clean, short, and elegant — one word or a simple compound with no extra characters.",
+    funny:        "Witty, playful, and humorous — clever wordplay, puns, or absurd combinations.",
+    tech:         "Technical, clever, and nerdy — references to code, data, science, or tech culture.",
+    luxury:       "Sophisticated, premium, and aspirational — feels exclusive and high-status.",
+  };
+
+  const lengthGuide: Record<string, string> = {
+    short:  "Under 8 characters — ultra-punchy and easy to remember.",
+    medium: "8–15 characters — balanced and readable.",
+    long:   "15–25 characters — descriptive and distinctive.",
+  };
+
+  const numbersRule  = payload.allowNumbers    ? "Numbers ARE allowed." : "Do NOT include any numbers.";
+  const specialRule  = payload.allowSpecialChars ? "Underscores and periods ARE allowed where the platform permits." : "Do NOT include underscores, periods, or any special characters — letters only.";
+  const interestsSection = payload.interests?.trim()
+    ? `\nInterests / themes to draw from: ${payload.interests.trim()}`
+    : "";
+
+  return `Generate exactly ${count} unique usernames for the following brief.
+
+Keyword / name to base usernames on: ${payload.keyword}${interestsSection}
+Target platform: ${platformRules[payload.platform] ?? payload.platform}
+Style: ${styleGuide[payload.style] ?? payload.style}
+Length: ${lengthGuide[payload.length] ?? payload.length}
+${numbersRule}
+${specialRule}
+
+Output EXACTLY this format for each username — no extra text before, between, or after the blocks:
+
+USERNAME: [The username]
+STYLE: [${payload.style}]
+ALTERNATIVES: [Two alternative variations of this username, separated by | ]
+---
+
+RULES:
+- Output exactly ${count} blocks separated by ---
+- Each block must have USERNAME, STYLE, and ALTERNATIVES lines in that order
+- All usernames must respect the platform's character limits and allowed characters
+- Every username must be unique — no duplicates
 - Do not number the blocks
 - Do not add any text outside the blocks
 - The last block must also end with ---`;

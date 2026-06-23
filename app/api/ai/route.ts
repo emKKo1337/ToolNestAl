@@ -25,6 +25,8 @@ import {
   generateBusinessNamesStream,
   generateSlogans,
   generateSlogansStream,
+  generateUsernames,
+  generateUsernamesStream,
   generateText,
 } from "@/lib/ai/services";
 import { SYSTEM_PROMPTS } from "@/lib/ai/prompts";
@@ -327,6 +329,43 @@ export async function POST(req: Request) {
         };
         if (stream) return generateSlogansStream(slogansPayload, options);
         return Response.json(await generateSlogans(slogansPayload, options));
+      }
+
+      // ── generateUsernames ─────────────────────────────────────────────────
+      case "generateUsernames": {
+        const {
+          keyword,
+          interests,
+          platform,
+          style: unStyle,
+          length: unLength,
+          allowNumbers,
+          allowSpecialChars,
+          count: unCount,
+        } = payload as {
+          keyword?: string;
+          interests?: string;
+          platform?: import("@/types/ai").UsernamePlatform;
+          style?: import("@/types/ai").UsernameStyle;
+          length?: import("@/types/ai").UsernameLength;
+          allowNumbers?: boolean;
+          allowSpecialChars?: boolean;
+          count?: number;
+        };
+        if (!keyword?.trim())
+          return AIErrors.invalidRequest("generateUsernames task requires payload.keyword.").toResponse();
+        const usernamesPayload = {
+          keyword,
+          interests,
+          platform: platform ?? "instagram" as import("@/types/ai").UsernamePlatform,
+          style: unStyle ?? "minimal" as import("@/types/ai").UsernameStyle,
+          length: unLength ?? "medium" as import("@/types/ai").UsernameLength,
+          allowNumbers: allowNumbers ?? true,
+          allowSpecialChars: allowSpecialChars ?? true,
+          count: unCount ?? 10,
+        };
+        if (stream) return generateUsernamesStream(usernamesPayload, options);
+        return Response.json(await generateUsernames(usernamesPayload, options));
       }
 
       // ── generateText (generic) ────────────────────────────────────────────

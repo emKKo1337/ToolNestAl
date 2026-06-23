@@ -13,7 +13,8 @@ export type AITaskType =
   | "coverLetter"
   | "generatePrompt"
   | "generateBusinessNames"
-  | "generateSlogans";
+  | "generateSlogans"
+  | "generateUsernames";
 
 // ── Model identifiers ─────────────────────────────────────────────────────────
 // Gemini direct-API IDs have no "/" — all OpenRouter IDs contain "/".
@@ -253,6 +254,37 @@ export interface GeneratePromptPayload {
   tone: PromptTone;
   length: PromptLength;
   existingPrompt?: string;
+}
+
+export type UsernameStyle =
+  | "professional"
+  | "gaming"
+  | "minimal"
+  | "funny"
+  | "tech"
+  | "luxury";
+
+export type UsernamePlatform =
+  | "instagram"
+  | "tiktok"
+  | "youtube"
+  | "x"
+  | "twitch"
+  | "steam"
+  | "discord"
+  | "github";
+
+export type UsernameLength = "short" | "medium" | "long";
+
+export interface GenerateUsernamesPayload {
+  keyword: string;
+  interests?: string;
+  platform: UsernamePlatform;
+  style: UsernameStyle;
+  length: UsernameLength;
+  allowNumbers: boolean;
+  allowSpecialChars: boolean;
+  count?: number;
 }
 
 export type SloganTone =
