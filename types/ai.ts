@@ -12,7 +12,8 @@ export type AITaskType =
   | "humanize"
   | "coverLetter"
   | "generatePrompt"
-  | "generateBusinessNames";
+  | "generateBusinessNames"
+  | "generateSlogans";
 
 // ── Model identifiers ─────────────────────────────────────────────────────────
 // Gemini direct-API IDs have no "/" — all OpenRouter IDs contain "/".
@@ -252,6 +253,25 @@ export interface GeneratePromptPayload {
   tone: PromptTone;
   length: PromptLength;
   existingPrompt?: string;
+}
+
+export type SloganTone =
+  | "professional"
+  | "creative"
+  | "luxury"
+  | "fun"
+  | "modern";
+
+export type SloganLength = "short" | "medium" | "long";
+
+export interface GenerateSlogansPayload {
+  businessName: string;
+  description: string;
+  industry: string;
+  keywords?: string;
+  tone: SloganTone;
+  length: SloganLength;
+  count?: number;
 }
 
 export type BusinessNameStyle =

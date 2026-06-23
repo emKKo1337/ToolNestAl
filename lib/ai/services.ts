@@ -19,6 +19,7 @@ import {
   buildCoverLetterPrompt,
   buildGeneratePromptPrompt,
   buildGenerateBusinessNamesPrompt,
+  buildGenerateSlogansPrompt,
   buildChatMessages,
 } from "./prompts";
 import type {
@@ -35,6 +36,7 @@ import type {
   CoverLetterPayload,
   GeneratePromptPayload,
   GenerateBusinessNamesPayload,
+  GenerateSlogansPayload,
   ChatPayload,
 } from "@/types/ai";
 
@@ -538,6 +540,32 @@ export function generateBusinessNamesStream(
     buildGenerateBusinessNamesPrompt(payload),
     SYSTEM_PROMPTS.generateBusinessNames,
     "generateBusinessNames",
+    { maxTokens: 2048, ...opts }
+  );
+}
+
+// ── generateSlogans ───────────────────────────────────────────────────────────
+
+export async function generateSlogans(
+  payload: GenerateSlogansPayload,
+  opts?: AIRequestOptions
+): Promise<AIResponse> {
+  return generateText(
+    buildGenerateSlogansPrompt(payload),
+    SYSTEM_PROMPTS.generateSlogans,
+    "generateSlogans",
+    { maxTokens: 2048, ...opts }
+  );
+}
+
+export function generateSlogansStream(
+  payload: GenerateSlogansPayload,
+  opts?: AIRequestOptions
+): Response {
+  return streamText(
+    buildGenerateSlogansPrompt(payload),
+    SYSTEM_PROMPTS.generateSlogans,
+    "generateSlogans",
     { maxTokens: 2048, ...opts }
   );
 }

@@ -23,6 +23,8 @@ import {
   generatePromptStream,
   generateBusinessNames,
   generateBusinessNamesStream,
+  generateSlogans,
+  generateSlogansStream,
   generateText,
 } from "@/lib/ai/services";
 import { SYSTEM_PROMPTS } from "@/lib/ai/prompts";
@@ -289,6 +291,42 @@ export async function POST(req: Request) {
         };
         if (stream) return generateBusinessNamesStream(namesPayload, options);
         return Response.json(await generateBusinessNames(namesPayload, options));
+      }
+
+      // ── generateSlogans ───────────────────────────────────────────────────
+      case "generateSlogans": {
+        const {
+          businessName,
+          description: sloganDesc,
+          industry: sloganIndustry,
+          keywords: sloganKeywords,
+          tone: sloganTone,
+          length: sloganLength,
+          count: sloganCount,
+        } = payload as {
+          businessName?: string;
+          description?: string;
+          industry?: string;
+          keywords?: string;
+          tone?: import("@/types/ai").SloganTone;
+          length?: import("@/types/ai").SloganLength;
+          count?: number;
+        };
+        if (!businessName?.trim())
+          return AIErrors.invalidRequest("generateSlogans task requires payload.businessName.").toResponse();
+        if (!sloganDesc?.trim())
+          return AIErrors.invalidRequest("generateSlogans task requires payload.description.").toResponse();
+        const slogansPayload = {
+          businessName,
+          description: sloganDesc,
+          industry: sloganIndustry ?? "General",
+          keywords: sloganKeywords,
+          tone: sloganTone ?? "professional" as import("@/types/ai").SloganTone,
+          length: sloganLength ?? "medium" as import("@/types/ai").SloganLength,
+          count: sloganCount ?? 6,
+        };
+        if (stream) return generateSlogansStream(slogansPayload, options);
+        return Response.json(await generateSlogans(slogansPayload, options));
       }
 
       // ── generateText (generic) ────────────────────────────────────────────

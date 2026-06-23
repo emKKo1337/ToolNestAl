@@ -9,6 +9,7 @@ import type {
   CoverLetterPayload,
   GeneratePromptPayload,
   GenerateBusinessNamesPayload,
+  GenerateSlogansPayload,
   WorkExperience,
   EducationEntry,
   AIMessage,
@@ -69,6 +70,10 @@ The prompt must be immediately usable: copy and paste it straight into the targe
 
   generateBusinessNames: `You are a world-class branding expert and creative naming strategist.
 You specialise in creating memorable, distinctive, and brandable business names.
+You always follow the exact output format specified — never deviate, never add extra commentary.`,
+
+  generateSlogans: `You are a world-class copywriter and brand strategist who creates iconic, memorable slogans and taglines.
+You deeply understand how great slogans distill a brand's essence into a few powerful words.
 You always follow the exact output format specified — never deviate, never add extra commentary.`,
 } as const;
 
@@ -511,6 +516,52 @@ RULES:
 - Output exactly ${count} blocks separated by ---
 - Each block must have NAME, EXPLANATION, TAGLINE, and STYLE lines in that order
 - Names must be original, pronounceable, and not obvious trademarks
+- Do not number the blocks
+- Do not add any text outside the blocks
+- The last block must also end with ---`;
+}
+
+export function buildGenerateSlogansPrompt(payload: GenerateSlogansPayload): string {
+  const count = payload.count ?? 6;
+
+  const toneGuide: Record<string, string> = {
+    professional: "Authoritative, polished, and trustworthy — clear and confident language that inspires credibility.",
+    creative: "Imaginative, unexpected, and original — wordplay, metaphors, and clever twists welcome.",
+    luxury: "Refined, exclusive, and aspirational — evoke prestige, quality, and sophistication.",
+    fun: "Playful, witty, and energetic — light-hearted with personality, humour, and warmth.",
+    modern: "Sleek, forward-thinking, and minimal — contemporary language that feels fresh and current.",
+  };
+
+  const lengthGuide: Record<string, string> = {
+    short: "2–4 words maximum. Ultra-punchy and instantly memorable (e.g. 'Just Do It', 'Think Different').",
+    medium: "5–8 words. Balanced and clear, says something meaningful without being long-winded.",
+    long: "9–14 words. A complete thought with impact — tells a mini story or makes a bold promise.",
+  };
+
+  const keywordsSection = payload.keywords?.trim()
+    ? `\nKeywords to weave in: ${payload.keywords.trim()}`
+    : "";
+
+  return `Generate exactly ${count} unique slogans for the following brand.
+
+Business name: ${payload.businessName}
+Business description: ${payload.description}
+Industry: ${payload.industry}${keywordsSection}
+Tone: ${toneGuide[payload.tone] ?? payload.tone}
+Length: ${lengthGuide[payload.length] ?? payload.length}
+
+Output EXACTLY this format for each slogan — no extra text before, between, or after the blocks:
+
+SLOGAN: [The slogan]
+EXPLANATION: [One sentence on why this slogan works for this brand — max 20 words]
+TONE: [${payload.tone}]
+ALTERNATIVES: [Two shorter alternative versions, separated by | ]
+---
+
+RULES:
+- Output exactly ${count} blocks separated by ---
+- Each block must have SLOGAN, EXPLANATION, TONE, and ALTERNATIVES lines in that order
+- Slogans must be original, punchy, and on-brand
 - Do not number the blocks
 - Do not add any text outside the blocks
 - The last block must also end with ---`;
