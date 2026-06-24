@@ -1,0 +1,100 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="75%"><stop offset="0%" stop-color="#0d0520"/><stop offset="100%" stop-color="#07070f"/></radialGradient>
+    <radialGradient id="gL" cx="20%" cy="50%" r="55%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.4"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gR" cx="80%" cy="50%" r="48%"><stop offset="0%" stop-color="#2563eb" stop-opacity="0.22"/><stop offset="100%" stop-color="#2563eb" stop-opacity="0"/></radialGradient>
+    <radialGradient id="orbG" cx="50%" cy="40%" r="60%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#6d28d9"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="lapG" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#1a1135"/><stop offset="100%" stop-color="#0d0a1e"/></linearGradient>
+    <linearGradient id="msgG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed" stop-opacity="0.9"/><stop offset="100%" stop-color="#60a5fa" stop-opacity="0.8"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="10" stdDeviation="20" flood-color="#5b21b6" flood-opacity="0.5"/></filter>
+    <filter id="glow"><feDropShadow dx="0" dy="0" stdDeviation="12" flood-color="#a78bfa" flood-opacity="0.7"/></filter>
+    <filter id="gF"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <ellipse cx="200" cy="315" rx="520" ry="380" fill="url(#gL)"/>
+  <ellipse cx="1000" cy="315" rx="460" ry="340" fill="url(#gR)"/>
+
+  <!-- Left: branding + headline -->
+  <rect x="54" y="54" width="160" height="34" rx="17" fill="rgba(167,139,250,0.12)" stroke="rgba(167,139,250,0.28)" stroke-width="1"/>
+  <text x="134" y="76" text-anchor="middle" font-size="13" font-weight="700" fill="#a78bfa">✦ ToolNest AI</text>
+
+  <text x="54" y="158" font-size="58" font-weight="900" fill="url(#aG)" filter="url(#gF)">AI Chat</text>
+  <text x="54" y="200" font-size="19" font-weight="600" fill="rgba(255,255,255,0.78)">The Complete Guide to</text>
+  <text x="54" y="226" font-size="19" font-weight="600" fill="rgba(255,255,255,0.78)">AI Chatbots in 2026</text>
+
+  <text x="54" y="274" font-size="14" fill="rgba(255,255,255,0.45)">✓  ChatGPT, Claude &amp; Gemini in one place</text>
+  <text x="54" y="298" font-size="14" fill="rgba(255,255,255,0.45)">✓  Upload files · Instant answers</text>
+  <text x="54" y="322" font-size="14" fill="rgba(255,255,255,0.45)">✓  Free · No sign-up required</text>
+
+  <rect x="54" y="362" width="240" height="46" rx="23" fill="url(#bG)" filter="url(#sh)"/>
+  <text x="174" y="390" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">Try AI Chat Free ✦</text>
+
+  <!-- Right: UI mockup -->
+  <rect x="430" y="44" width="726" height="542" rx="18" fill="url(#lapG)" stroke="rgba(167,139,250,0.2)" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="430" y="44" width="726" height="30" rx="18" fill="rgba(167,139,250,0.06)"/>
+  <circle cx="452" cy="59" r="5" fill="rgba(239,68,68,0.5)"/>
+  <circle cx="470" cy="59" r="5" fill="rgba(251,191,36,0.5)"/>
+  <circle cx="488" cy="59" r="5" fill="rgba(34,197,94,0.5)"/>
+  <text x="793" y="64" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.22)">💬 AI Chat — ToolNest AI</text>
+  <rect x="1056" y="48" width="80" height="22" rx="11" fill="rgba(167,139,250,0.12)" stroke="rgba(167,139,250,0.28)" stroke-width="1"/>
+  <text x="1096" y="63" text-anchor="middle" font-size="9" fill="#a78bfa">GPT-4o ∨</text>
+
+  <!-- Sidebar -->
+  <rect x="430" y="74" width="170" height="512" fill="rgba(8,4,22,0.92)" stroke="rgba(167,139,250,0.07)" stroke-width="0.5"/>
+  <text x="450" y="100" font-size="13" font-weight="700" fill="rgba(255,255,255,0.7)">💬 AI Chat</text>
+  <rect x="442" y="108" width="146" height="28" rx="7" fill="url(#bG)"/>
+  <text x="448" y="126" font-size="10" fill="#fff" font-weight="600">+ New Chat</text>
+  <text x="448" y="152" font-size="9" fill="rgba(255,255,255,0.3)">Today</text>
+  <text x="448" y="168" font-size="10" fill="rgba(255,255,255,0.52)">Write a blog about AI</text>
+  <text x="448" y="186" font-size="10" fill="rgba(255,255,255,0.52)">Explain quantum computing</text>
+  <text x="448" y="204" font-size="10" fill="rgba(255,255,255,0.52)">Python code for sorting</text>
+  <text x="448" y="222" font-size="10" fill="rgba(255,255,255,0.52)">Marketing strategy ideas</text>
+  <text x="448" y="248" font-size="9" fill="rgba(255,255,255,0.3)">Yesterday</text>
+  <text x="448" y="264" font-size="10" fill="rgba(255,255,255,0.38)">Create a study plan</text>
+  <text x="448" y="282" font-size="10" fill="rgba(255,255,255,0.38)">Suggest book names</text>
+  <text x="448" y="300" font-size="10" fill="rgba(255,255,255,0.38)">Travel itinerary for Japan</text>
+  <rect x="442" y="550" width="146" height="26" rx="8" fill="rgba(167,139,250,0.1)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+  <text x="515" y="566" text-anchor="middle" font-size="9" fill="#a78bfa">◇ Upgrade to Pro</text>
+
+  <!-- Chat area -->
+  <rect x="600" y="74" width="556" height="512" fill="rgba(6,3,16,0.97)"/>
+
+  <!-- User message -->
+  <rect x="648" y="108" width="490" height="48" rx="10" fill="rgba(124,58,237,0.25)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+  <text x="666" y="126" font-size="9" fill="rgba(255,255,255,0.4)">You</text>
+  <text x="666" y="143" font-size="11" fill="rgba(255,255,255,0.78)">Explain quantum computing in simple terms.</text>
+
+  <!-- AI response -->
+  <rect x="610" y="170" width="524" height="156" rx="10" fill="rgba(30,16,60,0.75)" stroke="rgba(167,139,250,0.14)" stroke-width="1"/>
+  <text x="630" y="192" font-size="11" font-weight="600" fill="#a78bfa">⊕ AI Assistant</text>
+  <text x="630" y="212" font-size="10.5" fill="rgba(255,255,255,0.62)">Quantum computing uses qubits instead of traditional bits.</text>
+  <text x="630" y="230" font-size="10.5" fill="rgba(255,255,255,0.62)">Qubits can be 0, 1, or both at the same time thanks to</text>
+  <text x="630" y="248" font-size="10.5" fill="rgba(255,255,255,0.62)">superposition. This allows quantum computers to solve</text>
+  <text x="630" y="266" font-size="10.5" fill="rgba(255,255,255,0.62)">certain problems much faster than classical computers.</text>
+  <text x="630" y="310" font-size="13">⎘  👍  👎</text>
+
+  <!-- Suggestion chips -->
+  <rect x="610" y="338" width="108" height="24" rx="12" fill="rgba(167,139,250,0.1)" stroke="rgba(167,139,250,0.22)" stroke-width="1"/>
+  <text x="664" y="353" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.6)">Tell me more</text>
+  <rect x="726" y="338" width="110" height="24" rx="12" fill="rgba(167,139,250,0.08)" stroke="rgba(167,139,250,0.16)" stroke-width="1"/>
+  <text x="781" y="353" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.55)">Give an example</text>
+  <rect x="844" y="338" width="116" height="24" rx="12" fill="rgba(167,139,250,0.08)" stroke="rgba(167,139,250,0.16)" stroke-width="1"/>
+  <text x="902" y="353" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.55)">How does it work?</text>
+
+  <!-- Input bar -->
+  <rect x="610" y="374" width="520" height="42" rx="21" fill="rgba(30,16,60,0.8)" stroke="rgba(167,139,250,0.22)" stroke-width="1"/>
+  <text x="636" y="399" font-size="11" fill="rgba(255,255,255,0.25)">Ask anything...</text>
+  <rect x="1094" y="382" width="28" height="26" rx="13" fill="url(#bG)"/>
+  <text x="1108" y="399" text-anchor="middle" font-size="12" fill="#fff">➤</text>
+
+  <!-- Bottom strip -->
+  <line x1="430" y1="548" x2="1156" y2="548" stroke="rgba(167,139,250,0.1)" stroke-width="1"/>
+  <text x="506" y="572" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.35)">💬 Unlimited Chats</text>
+  <text x="660" y="572" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.35)">⏱ Save Time</text>
+  <text x="793" y="572" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.35)">🚀 Boost Productivity</text>
+  <text x="936" y="572" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.35)">☁ Cloud Based</text>
+  <text x="1076" y="572" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.35)">🔒 100% Secure</text>
+</svg>

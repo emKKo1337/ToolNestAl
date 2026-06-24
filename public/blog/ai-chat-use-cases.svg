@@ -1,0 +1,90 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="75%"><stop offset="0%" stop-color="#0a0618"/><stop offset="100%" stop-color="#07070f"/></radialGradient>
+    <radialGradient id="gL" cx="30%" cy="50%" r="50%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.25"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gR" cx="70%" cy="50%" r="50%"><stop offset="0%" stop-color="#2563eb" stop-opacity="0.16"/><stop offset="100%" stop-color="#2563eb" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="pG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#130b2e" stop-opacity="0.97"/><stop offset="100%" stop-color="#0c0820" stop-opacity="0.97"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#5b21b6" flood-opacity="0.3"/></filter>
+  </defs>
+  <rect width="1200" height="500" fill="url(#bg)"/>
+  <ellipse cx="360" cy="250" rx="500" ry="380" fill="url(#gL)"/>
+  <ellipse cx="840" cy="250" rx="500" ry="380" fill="url(#gR)"/>
+
+  <text x="600" y="44" text-anchor="middle" font-size="13" font-weight="600" fill="#a78bfa" letter-spacing="2">USE CASES</text>
+  <text x="600" y="80" text-anchor="middle" font-size="29" font-weight="800" fill="url(#aG)">What Can You Do with AI Chat?</text>
+  <text x="600" y="108" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.4)">From writing to coding to research — AI chat handles it all</text>
+
+  <!-- Writers & Content -->
+  <rect x="40" y="132" width="360" height="152" rx="14" fill="url(#pG)" stroke="url(#aG)" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="40" y="132" width="360" height="4" rx="2" fill="url(#aG)"/>
+  <rect x="60" y="152" width="44" height="44" rx="10" fill="rgba(167,139,250,0.12)" stroke="rgba(167,139,250,0.22)" stroke-width="1"/>
+  <text x="82" y="180" text-anchor="middle" font-size="22">✍</text>
+  <text x="116" y="170" font-size="15" font-weight="700" fill="#f0e8ff">Writers &amp; Content Creators</text>
+  <text x="116" y="188" font-size="11" fill="rgba(167,139,250,0.65)">Blogs · Scripts · Social Media</text>
+  <text x="60" y="216" font-size="12" fill="rgba(255,255,255,0.52)">Draft blog posts and articles fast.</text>
+  <text x="60" y="233" font-size="12" fill="rgba(255,255,255,0.52)">Generate headlines and hooks.</text>
+  <text x="60" y="250" font-size="12" fill="rgba(255,255,255,0.52)">Repurpose content across formats.</text>
+  <text x="60" y="267" font-size="12" fill="rgba(255,255,255,0.52)">Overcome writer's block instantly.</text>
+
+  <!-- Developers -->
+  <rect x="420" y="132" width="360" height="152" rx="14" fill="url(#pG)" stroke="rgba(96,165,250,0.2)" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="420" y="132" width="360" height="4" rx="2" fill="rgba(96,165,250,0.5)"/>
+  <rect x="440" y="152" width="44" height="44" rx="10" fill="rgba(96,165,250,0.1)" stroke="rgba(96,165,250,0.2)" stroke-width="1"/>
+  <text x="462" y="180" text-anchor="middle" font-size="22">⌨</text>
+  <text x="496" y="170" font-size="15" font-weight="700" fill="#f0e8ff">Developers &amp; Coders</text>
+  <text x="496" y="188" font-size="11" fill="rgba(96,165,250,0.65)">Code · Debug · Explain</text>
+  <text x="440" y="216" font-size="12" fill="rgba(255,255,255,0.52)">Write and debug code in any language.</text>
+  <text x="440" y="233" font-size="12" fill="rgba(255,255,255,0.52)">Explain complex algorithms simply.</text>
+  <text x="440" y="250" font-size="12" fill="rgba(255,255,255,0.52)">Generate boilerplate and functions.</text>
+  <text x="440" y="267" font-size="12" fill="rgba(255,255,255,0.52)">Review pull requests for bugs.</text>
+
+  <!-- Students -->
+  <rect x="800" y="132" width="360" height="152" rx="14" fill="url(#pG)" stroke="rgba(244,114,182,0.18)" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="800" y="132" width="360" height="4" rx="2" fill="rgba(244,114,182,0.45)"/>
+  <rect x="820" y="152" width="44" height="44" rx="10" fill="rgba(244,114,182,0.08)" stroke="rgba(244,114,182,0.18)" stroke-width="1"/>
+  <text x="842" y="180" text-anchor="middle" font-size="22">🎓</text>
+  <text x="876" y="170" font-size="15" font-weight="700" fill="#f0e8ff">Students &amp; Researchers</text>
+  <text x="876" y="188" font-size="11" fill="rgba(244,114,182,0.65)">Study · Research · Essays</text>
+  <text x="820" y="216" font-size="12" fill="rgba(255,255,255,0.52)">Understand complex topics fast.</text>
+  <text x="820" y="233" font-size="12" fill="rgba(255,255,255,0.52)">Get study plans and summaries.</text>
+  <text x="820" y="250" font-size="12" fill="rgba(255,255,255,0.52)">Draft and improve essays.</text>
+  <text x="820" y="267" font-size="12" fill="rgba(255,255,255,0.52)">Quiz yourself on any subject.</text>
+
+  <!-- Business -->
+  <rect x="40" y="302" width="360" height="152" rx="14" fill="url(#pG)" stroke="rgba(251,191,36,0.16)" stroke-width="1" filter="url(#sh)"/>
+  <rect x="40" y="302" width="360" height="4" rx="2" fill="rgba(251,191,36,0.45)"/>
+  <rect x="60" y="322" width="44" height="44" rx="10" fill="rgba(251,191,36,0.08)" stroke="rgba(251,191,36,0.18)" stroke-width="1"/>
+  <text x="82" y="350" text-anchor="middle" font-size="22">💼</text>
+  <text x="116" y="340" font-size="15" font-weight="700" fill="#f0e8ff">Business Professionals</text>
+  <text x="116" y="358" font-size="11" fill="rgba(251,191,36,0.65)">Emails · Reports · Strategy</text>
+  <text x="60" y="386" font-size="12" fill="rgba(255,255,255,0.52)">Write professional emails fast.</text>
+  <text x="60" y="403" font-size="12" fill="rgba(255,255,255,0.52)">Summarize long reports.</text>
+  <text x="60" y="420" font-size="12" fill="rgba(255,255,255,0.52)">Brainstorm strategy and ideas.</text>
+  <text x="60" y="437" font-size="12" fill="rgba(255,255,255,0.52)">Prepare for meetings in minutes.</text>
+
+  <!-- Marketers -->
+  <rect x="420" y="302" width="360" height="152" rx="14" fill="url(#pG)" stroke="rgba(34,197,94,0.16)" stroke-width="1" filter="url(#sh)"/>
+  <rect x="420" y="302" width="360" height="4" rx="2" fill="rgba(34,197,94,0.4)"/>
+  <rect x="440" y="322" width="44" height="44" rx="10" fill="rgba(34,197,94,0.08)" stroke="rgba(34,197,94,0.18)" stroke-width="1"/>
+  <text x="462" y="350" text-anchor="middle" font-size="22">📣</text>
+  <text x="496" y="340" font-size="15" font-weight="700" fill="#f0e8ff">Marketers &amp; SEO</text>
+  <text x="496" y="358" font-size="11" fill="rgba(34,197,94,0.65)">Ads · Copy · Keywords</text>
+  <text x="440" y="386" font-size="12" fill="rgba(255,255,255,0.52)">Write ad copy and landing pages.</text>
+  <text x="440" y="403" font-size="12" fill="rgba(255,255,255,0.52)">Research keywords and angles.</text>
+  <text x="440" y="420" font-size="12" fill="rgba(255,255,255,0.52)">Generate social media captions.</text>
+  <text x="440" y="437" font-size="12" fill="rgba(255,255,255,0.52)">A/B test messaging ideas.</text>
+
+  <!-- Customer Support -->
+  <rect x="800" y="302" width="360" height="152" rx="14" fill="url(#pG)" stroke="rgba(167,139,250,0.14)" stroke-width="1" filter="url(#sh)"/>
+  <rect x="800" y="302" width="360" height="4" rx="2" fill="rgba(167,139,250,0.4)"/>
+  <rect x="820" y="322" width="44" height="44" rx="10" fill="rgba(167,139,250,0.08)" stroke="rgba(167,139,250,0.18)" stroke-width="1"/>
+  <text x="842" y="350" text-anchor="middle" font-size="22">🛠</text>
+  <text x="876" y="340" font-size="15" font-weight="700" fill="#f0e8ff">Customer Support Teams</text>
+  <text x="876" y="358" font-size="11" fill="rgba(167,139,250,0.65)">Templates · FAQs · Replies</text>
+  <text x="820" y="386" font-size="12" fill="rgba(255,255,255,0.52)">Draft support replies instantly.</text>
+  <text x="820" y="403" font-size="12" fill="rgba(255,255,255,0.52)">Build FAQ and help docs.</text>
+  <text x="820" y="420" font-size="12" fill="rgba(255,255,255,0.52)">Translate responses at scale.</text>
+  <text x="820" y="437" font-size="12" fill="rgba(255,255,255,0.52)">Train team with AI roleplay.</text>
+</svg>
