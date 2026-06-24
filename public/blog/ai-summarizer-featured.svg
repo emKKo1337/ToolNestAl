@@ -1,0 +1,168 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="75%"><stop offset="0%" stop-color="#0d0520"/><stop offset="100%" stop-color="#07070f"/></radialGradient>
+    <radialGradient id="gL" cx="20%" cy="50%" r="55%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.35"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gR" cx="80%" cy="50%" r="45%"><stop offset="0%" stop-color="#2563eb" stop-opacity="0.22"/><stop offset="100%" stop-color="#2563eb" stop-opacity="0"/></radialGradient>
+    <radialGradient id="orbG" cx="50%" cy="40%" r="60%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#6d28d9"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="lapG" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#1a1135"/><stop offset="100%" stop-color="#0d0a1e"/></linearGradient>
+    <linearGradient id="hL" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed" stop-opacity="0.9"/><stop offset="100%" stop-color="#60a5fa" stop-opacity="0.8"/></linearGradient>
+    <linearGradient id="hL2" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#818cf8" stop-opacity="0.85"/><stop offset="100%" stop-color="#60a5fa" stop-opacity="0.75"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="8" stdDeviation="18" flood-color="#5b21b6" flood-opacity="0.5"/></filter>
+    <filter id="glow"><feDropShadow dx="0" dy="0" stdDeviation="10" flood-color="#a78bfa" flood-opacity="0.7"/></filter>
+    <filter id="gF"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <ellipse cx="240" cy="315" rx="560" ry="400" fill="url(#gL)"/>
+  <ellipse cx="960" cy="315" rx="480" ry="360" fill="url(#gR)"/>
+  <g stroke="rgba(167,139,250,0.04)" stroke-width="1">
+    <line x1="0" y1="126" x2="1200" y2="126"/><line x1="0" y1="252" x2="1200" y2="252"/>
+    <line x1="0" y1="378" x2="1200" y2="378"/><line x1="0" y1="504" x2="1200" y2="504"/>
+    <line x1="240" y1="0" x2="240" y2="630"/><line x1="480" y1="0" x2="480" y2="630"/>
+    <line x1="720" y1="0" x2="720" y2="630"/><line x1="960" y1="0" x2="960" y2="630"/>
+  </g>
+
+  <!-- LEFT text -->
+  <text x="54" y="72" font-size="13" font-weight="600" fill="#a78bfa" letter-spacing="2">TOOLNEST AI</text>
+  <text x="54" y="120" font-size="46" font-weight="800" fill="url(#aG)" filter="url(#gF)">AI Summarizer</text>
+  <text x="54" y="158" font-size="17" font-weight="600" fill="rgba(255,255,255,0.8)">Summarize Long Text, Articles</text>
+  <text x="54" y="180" font-size="17" font-weight="600" fill="rgba(255,255,255,0.8)">and Documents in Seconds</text>
+  <text x="54" y="206" font-size="12" fill="rgba(255,255,255,0.45)">Turn lengthy content into short, clear and</text>
+  <text x="54" y="221" font-size="12" fill="rgba(255,255,255,0.45)">actionable summaries with the power of AI.</text>
+
+  <g font-size="12" fill="rgba(255,255,255,0.58)">
+    <rect x="54" y="240" width="22" height="22" rx="6" fill="rgba(167,139,250,0.15)" stroke="rgba(167,139,250,0.3)" stroke-width="1"/>
+    <text x="65" y="256" text-anchor="middle" font-size="11" fill="#a78bfa">⚡</text>
+    <text x="84" y="256">AI-Powered Summaries</text>
+    <rect x="54" y="267" width="22" height="22" rx="6" fill="rgba(167,139,250,0.12)" stroke="rgba(167,139,250,0.25)" stroke-width="1"/>
+    <text x="65" y="283" text-anchor="middle" font-size="11" fill="#60a5fa">📄</text>
+    <text x="84" y="283">Summarize Anything</text>
+    <rect x="54" y="294" width="22" height="22" rx="6" fill="rgba(167,139,250,0.12)" stroke="rgba(167,139,250,0.25)" stroke-width="1"/>
+    <text x="65" y="310" text-anchor="middle" font-size="11" fill="#a78bfa">🎯</text>
+    <text x="84" y="310">Key Points Extraction</text>
+    <rect x="54" y="321" width="22" height="22" rx="6" fill="rgba(167,139,250,0.12)" stroke="rgba(167,139,250,0.25)" stroke-width="1"/>
+    <text x="65" y="337" text-anchor="middle" font-size="11" fill="#60a5fa">✦</text>
+    <text x="84" y="337">Custom Summary Length</text>
+    <rect x="54" y="348" width="22" height="22" rx="6" fill="rgba(167,139,250,0.12)" stroke="rgba(167,139,250,0.25)" stroke-width="1"/>
+    <text x="65" y="364" text-anchor="middle" font-size="11" fill="#a78bfa">🛡</text>
+    <text x="84" y="364">Secure &amp; Private</text>
+  </g>
+
+  <!-- Laptop -->
+  <rect x="336" y="36" width="706" height="472" rx="20" fill="url(#lapG)" stroke="rgba(167,139,250,0.22)" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="336" y="36" width="706" height="32" rx="20" fill="rgba(167,139,250,0.08)"/>
+  <circle cx="358" cy="52" r="5" fill="rgba(239,68,68,0.5)"/>
+  <circle cx="376" cy="52" r="5" fill="rgba(251,191,36,0.5)"/>
+  <circle cx="394" cy="52" r="5" fill="rgba(34,197,94,0.5)"/>
+  <text x="689" y="57" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.28)">✦ AI Summarizer — ToolNest AI</text>
+  <rect x="876" y="40" width="144" height="22" rx="11" fill="rgba(167,139,250,0.12)" stroke="rgba(167,139,250,0.3)" stroke-width="1"/>
+  <text x="948" y="55" text-anchor="middle" font-size="10" fill="#a78bfa">Powered by Advanced AI ✦</text>
+
+  <!-- Left panel: Original Text -->
+  <rect x="354" y="78" width="290" height="300" rx="12" fill="rgba(8,4,20,0.85)" stroke="rgba(167,139,250,0.18)" stroke-width="1"/>
+  <rect x="368" y="92" width="110" height="22" rx="11" fill="rgba(167,139,250,0.22)" stroke="rgba(167,139,250,0.4)" stroke-width="1"/>
+  <text x="423" y="107" text-anchor="middle" font-size="11" font-weight="600" fill="#c4b5fd">Original Text</text>
+  <g>
+    <rect x="368" y="128" width="262" height="9" rx="4.5" fill="rgba(80,80,100,0.45)"/>
+    <rect x="368" y="144" width="238" height="9" rx="4.5" fill="rgba(80,80,100,0.38)"/>
+    <rect x="368" y="160" width="252" height="9" rx="4.5" fill="rgba(80,80,100,0.4)"/>
+    <rect x="368" y="176" width="220" height="9" rx="4.5" fill="rgba(80,80,100,0.35)"/>
+    <rect x="368" y="204" width="262" height="9" rx="4.5" fill="rgba(80,80,100,0.38)"/>
+    <rect x="368" y="220" width="195" height="9" rx="4.5" fill="rgba(80,80,100,0.32)"/>
+    <rect x="368" y="236" width="244" height="9" rx="4.5" fill="rgba(80,80,100,0.35)"/>
+    <rect x="368" y="252" width="230" height="9" rx="4.5" fill="rgba(80,80,100,0.32)"/>
+    <rect x="368" y="280" width="262" height="9" rx="4.5" fill="rgba(80,80,100,0.3)"/>
+    <rect x="368" y="296" width="210" height="9" rx="4.5" fill="rgba(80,80,100,0.28)"/>
+    <rect x="368" y="312" width="248" height="9" rx="4.5" fill="rgba(80,80,100,0.3)"/>
+    <rect x="368" y="328" width="200" height="9" rx="4.5" fill="rgba(80,80,100,0.26)"/>
+  </g>
+  <text x="368" y="366" font-size="11" fill="rgba(255,255,255,0.25)">1,248 Words</text>
+
+  <!-- Arrow orb -->
+  <circle cx="689" cy="228" r="42" fill="rgba(109,40,217,0.18)" stroke="rgba(167,139,250,0.22)" stroke-width="1" stroke-dasharray="4,4"/>
+  <circle cx="689" cy="228" r="30" fill="url(#orbG)" filter="url(#glow)"/>
+  <text x="689" y="236" text-anchor="middle" font-size="20" fill="white">→</text>
+
+  <!-- Right panel: AI Summary -->
+  <rect x="722" y="78" width="300" height="300" rx="12" fill="rgba(8,4,20,0.85)" stroke="rgba(96,165,250,0.2)" stroke-width="1"/>
+  <rect x="736" y="92" width="100" height="22" rx="11" fill="rgba(124,58,237,0.35)" stroke="rgba(124,58,237,0.5)" stroke-width="1"/>
+  <text x="786" y="107" text-anchor="middle" font-size="11" font-weight="600" fill="#c4b5fd">AI Summary</text>
+  <!-- Bullet point lines -->
+  <g>
+    <circle cx="748" cy="138" r="4" fill="url(#aG)"/>
+    <rect x="758" y="133" width="252" height="9" rx="4.5" fill="url(#hL)"/>
+    <circle cx="748" cy="158" r="4" fill="url(#aG)"/>
+    <rect x="758" y="153" width="230" height="9" rx="4.5" fill="url(#hL2)"/>
+    <circle cx="748" cy="178" r="4" fill="url(#aG)"/>
+    <rect x="758" y="173" width="244" height="9" rx="4.5" fill="url(#hL)"/>
+    <circle cx="748" cy="198" r="4" fill="url(#aG)"/>
+    <rect x="758" y="193" width="210" height="9" rx="4.5" fill="url(#hL2)"/>
+    <circle cx="748" cy="218" r="4" fill="url(#aG)"/>
+    <rect x="758" y="213" width="252" height="9" rx="4.5" fill="url(#hL)"/>
+    <circle cx="748" cy="250" r="3" fill="rgba(167,139,250,0.5)"/>
+    <rect x="758" y="246" width="220" height="8" rx="4" fill="rgba(124,58,237,0.4)"/>
+    <circle cx="748" cy="266" r="3" fill="rgba(167,139,250,0.5)"/>
+    <rect x="758" y="262" width="238" height="8" rx="4" fill="rgba(96,165,250,0.35)"/>
+    <circle cx="748" cy="282" r="3" fill="rgba(167,139,250,0.5)"/>
+    <rect x="758" y="278" width="200" height="8" rx="4" fill="rgba(124,58,237,0.35)"/>
+    <circle cx="748" cy="310" r="3" fill="rgba(96,165,250,0.4)"/>
+    <rect x="758" y="306" width="244" height="8" rx="4" fill="rgba(96,165,250,0.3)"/>
+    <circle cx="748" cy="326" r="3" fill="rgba(96,165,250,0.4)"/>
+    <rect x="758" y="322" width="215" height="8" rx="4" fill="rgba(96,165,250,0.28)"/>
+  </g>
+  <text x="736" y="365" font-size="11" fill="rgba(255,255,255,0.25)">5 Key Points</text>
+  <rect x="988" y="355" width="22" height="22" rx="5" fill="rgba(167,139,250,0.1)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+  <text x="999" y="370" text-anchor="middle" font-size="11" fill="#a78bfa">⎘</text>
+
+  <!-- Length + CTA row -->
+  <text x="354" y="402" font-size="10" fill="rgba(255,255,255,0.38)">Summary Length</text>
+  <rect x="354" y="410" width="56" height="26" rx="8" fill="url(#bG)"/>
+  <text x="382" y="427" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">Short</text>
+  <rect x="418" y="410" width="68" height="26" rx="8" fill="rgba(167,139,250,0.08)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+  <text x="452" y="427" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.5)">Medium</text>
+  <rect x="494" y="410" width="50" height="26" rx="8" fill="rgba(167,139,250,0.06)" stroke="rgba(167,139,250,0.15)" stroke-width="1"/>
+  <text x="519" y="427" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.45)">Long</text>
+  <rect x="552" y="410" width="88" height="26" rx="8" fill="rgba(167,139,250,0.06)" stroke="rgba(167,139,250,0.15)" stroke-width="1"/>
+  <text x="596" y="427" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.4)">Bullet Points</text>
+  <rect x="682" y="406" width="202" height="34" rx="17" fill="url(#bG)" filter="url(#sh)"/>
+  <text x="783" y="427" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">Summarize Now ✦</text>
+  <rect x="894" y="406" width="78" height="34" rx="17" fill="rgba(167,139,250,0.1)" stroke="rgba(167,139,250,0.25)" stroke-width="1"/>
+  <text x="933" y="427" text-anchor="middle" font-size="11" fill="#a78bfa">⎘ Copy</text>
+
+  <!-- Robot -->
+  <ellipse cx="1108" cy="466" rx="46" ry="9" fill="rgba(124,58,237,0.3)"/>
+  <rect x="1072" y="384" width="72" height="72" rx="22" fill="url(#bG)" filter="url(#glow)"/>
+  <rect x="1080" y="394" width="22" height="16" rx="5" fill="rgba(255,255,255,0.15)"/>
+  <rect x="1116" y="394" width="22" height="16" rx="5" fill="rgba(255,255,255,0.15)"/>
+  <circle cx="1091" cy="402" r="5.5" fill="white"/>
+  <circle cx="1127" cy="402" r="5.5" fill="white"/>
+  <circle cx="1093" cy="402" r="2.5" fill="#6d28d9"/>
+  <circle cx="1129" cy="402" r="2.5" fill="#6d28d9"/>
+  <path d="M1089 426 Q1108 436 1127 426" stroke="rgba(255,255,255,0.7)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <rect x="1090" y="456" width="36" height="44" rx="10" fill="url(#bG)"/>
+  <circle cx="1108" cy="374" r="7" fill="url(#bG)" stroke="rgba(167,139,250,0.4)" stroke-width="1"/>
+  <line x1="1108" y1="381" x2="1108" y2="385" stroke="rgba(167,139,250,0.5)" stroke-width="2"/>
+  <rect x="1096" y="502" width="24" height="26" rx="7" fill="url(#bG)"/>
+  <rect x="1120" y="502" width="24" height="26" rx="7" fill="url(#bG)"/>
+  <rect x="1094" y="444" width="16" height="14" rx="3" fill="rgba(255,255,255,0.1)"/>
+  <text x="1102" y="454" text-anchor="middle" font-size="7" font-weight="800" fill="white">AI</text>
+
+  <!-- Bottom stats -->
+  <line x1="54" y1="534" x2="1146" y2="534" stroke="rgba(167,139,250,0.1)" stroke-width="1"/>
+  <g font-size="11" text-anchor="middle">
+    <text x="130" y="556" fill="rgba(96,165,250,0.8)" font-size="14">🌐</text>
+    <text x="130" y="572" fill="rgba(255,255,255,0.45)">100+ Languages</text>
+    <text x="300" y="556" fill="rgba(167,139,250,0.8)" font-size="14">⏱</text>
+    <text x="300" y="572" fill="rgba(255,255,255,0.45)">Save Time</text>
+    <text x="480" y="556" fill="rgba(167,139,250,0.8)" font-size="14">📈</text>
+    <text x="480" y="572" fill="rgba(255,255,255,0.45)">Boost Productivity</text>
+    <text x="680" y="556" fill="rgba(96,165,250,0.8)" font-size="14">☁</text>
+    <text x="680" y="572" fill="rgba(255,255,255,0.45)">Cloud Based</text>
+    <text x="880" y="556" fill="rgba(34,197,94,0.8)" font-size="14">🔒</text>
+    <text x="880" y="572" fill="rgba(255,255,255,0.45)">100% Secure</text>
+    <text x="1060" y="556" fill="rgba(167,139,250,0.8)" font-size="14">⬇</text>
+    <text x="1060" y="572" fill="rgba(255,255,255,0.45)">Export Anywhere</text>
+  </g>
+</svg>

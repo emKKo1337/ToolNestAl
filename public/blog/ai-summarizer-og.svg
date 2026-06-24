@@ -1,0 +1,112 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="75%"><stop offset="0%" stop-color="#0d0520"/><stop offset="100%" stop-color="#07070f"/></radialGradient>
+    <radialGradient id="gL" cx="20%" cy="50%" r="55%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.38"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gR" cx="80%" cy="50%" r="48%"><stop offset="0%" stop-color="#2563eb" stop-opacity="0.22"/><stop offset="100%" stop-color="#2563eb" stop-opacity="0"/></radialGradient>
+    <radialGradient id="orbG" cx="50%" cy="40%" r="60%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#6d28d9"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="lapG" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#1a1135"/><stop offset="100%" stop-color="#0d0a1e"/></linearGradient>
+    <linearGradient id="hL" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed" stop-opacity="0.9"/><stop offset="100%" stop-color="#60a5fa" stop-opacity="0.8"/></linearGradient>
+    <linearGradient id="hL2" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#818cf8" stop-opacity="0.85"/><stop offset="100%" stop-color="#60a5fa" stop-opacity="0.75"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="10" stdDeviation="20" flood-color="#5b21b6" flood-opacity="0.5"/></filter>
+    <filter id="glow"><feDropShadow dx="0" dy="0" stdDeviation="12" flood-color="#a78bfa" flood-opacity="0.7"/></filter>
+    <filter id="gF"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <ellipse cx="200" cy="315" rx="520" ry="380" fill="url(#gL)"/>
+  <ellipse cx="1000" cy="315" rx="460" ry="340" fill="url(#gR)"/>
+
+  <!-- Left: branding + headline -->
+  <rect x="54" y="54" width="160" height="34" rx="17" fill="rgba(167,139,250,0.12)" stroke="rgba(167,139,250,0.28)" stroke-width="1"/>
+  <text x="134" y="76" text-anchor="middle" font-size="13" font-weight="700" fill="#a78bfa">✦ ToolNest AI</text>
+
+  <text x="54" y="152" font-size="52" font-weight="800" fill="url(#aG)" filter="url(#gF)">AI Summarizer</text>
+  <text x="54" y="196" font-size="19" font-weight="600" fill="rgba(255,255,255,0.78)">Summarize Long Text, Articles</text>
+  <text x="54" y="222" font-size="19" font-weight="600" fill="rgba(255,255,255,0.78)">and Documents in Seconds</text>
+
+  <text x="54" y="272" font-size="14" fill="rgba(255,255,255,0.45)">✓  Short · Medium · Long · Bullet Points</text>
+  <text x="54" y="296" font-size="14" fill="rgba(255,255,255,0.45)">✓  Works in 100+ languages</text>
+  <text x="54" y="320" font-size="14" fill="rgba(255,255,255,0.45)">✓  Free · Unlimited · No sign-up</text>
+
+  <rect x="54" y="362" width="240" height="46" rx="23" fill="url(#bG)" filter="url(#sh)"/>
+  <text x="174" y="390" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">Summarize Now ✦</text>
+
+  <!-- Right: UI mockup -->
+  <rect x="430" y="44" width="726" height="542" rx="18" fill="url(#lapG)" stroke="rgba(167,139,250,0.2)" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="430" y="44" width="726" height="30" rx="18" fill="rgba(167,139,250,0.06)"/>
+  <circle cx="452" cy="59" r="5" fill="rgba(239,68,68,0.5)"/>
+  <circle cx="470" cy="59" r="5" fill="rgba(251,191,36,0.5)"/>
+  <circle cx="488" cy="59" r="5" fill="rgba(34,197,94,0.5)"/>
+  <text x="793" y="64" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.22)">✦ AI Summarizer — ToolNest AI</text>
+  <rect x="962" y="48" width="144" height="22" rx="11" fill="rgba(167,139,250,0.12)" stroke="rgba(167,139,250,0.28)" stroke-width="1"/>
+  <text x="1034" y="63" text-anchor="middle" font-size="10" fill="#a78bfa">Powered by Advanced AI ✦</text>
+
+  <!-- Left panel: Original Text -->
+  <rect x="448" y="86" width="296" height="356" rx="12" fill="rgba(8,4,20,0.85)" stroke="rgba(167,139,250,0.16)" stroke-width="1"/>
+  <rect x="462" y="100" width="116" height="22" rx="11" fill="rgba(167,139,250,0.22)" stroke="rgba(167,139,250,0.4)" stroke-width="1"/>
+  <text x="520" y="115" text-anchor="middle" font-size="11" font-weight="600" fill="#c4b5fd">Original Text</text>
+  <rect x="462" y="136" width="268" height="9" rx="4.5" fill="rgba(80,80,100,0.48)"/>
+  <rect x="462" y="153" width="244" height="9" rx="4.5" fill="rgba(80,80,100,0.42)"/>
+  <rect x="462" y="170" width="258" height="9" rx="4.5" fill="rgba(80,80,100,0.44)"/>
+  <rect x="462" y="187" width="224" height="9" rx="4.5" fill="rgba(80,80,100,0.38)"/>
+  <rect x="462" y="214" width="268" height="9" rx="4.5" fill="rgba(80,80,100,0.4)"/>
+  <rect x="462" y="231" width="206" height="9" rx="4.5" fill="rgba(80,80,100,0.35)"/>
+  <rect x="462" y="248" width="250" height="9" rx="4.5" fill="rgba(80,80,100,0.38)"/>
+  <rect x="462" y="265" width="238" height="9" rx="4.5" fill="rgba(80,80,100,0.34)"/>
+  <rect x="462" y="292" width="268" height="9" rx="4.5" fill="rgba(80,80,100,0.36)"/>
+  <rect x="462" y="309" width="220" height="9" rx="4.5" fill="rgba(80,80,100,0.3)"/>
+  <rect x="462" y="326" width="255" height="9" rx="4.5" fill="rgba(80,80,100,0.32)"/>
+  <rect x="462" y="343" width="210" height="9" rx="4.5" fill="rgba(80,80,100,0.28)"/>
+  <rect x="462" y="370" width="268" height="9" rx="4.5" fill="rgba(80,80,100,0.3)"/>
+  <rect x="462" y="387" width="195" height="9" rx="4.5" fill="rgba(80,80,100,0.26)"/>
+  <text x="462" y="430" font-size="11" fill="rgba(255,255,255,0.22)">1,248 Words</text>
+
+  <!-- Arrow orb -->
+  <circle cx="793" cy="266" r="46" fill="rgba(109,40,217,0.12)" stroke="rgba(167,139,250,0.18)" stroke-width="1" stroke-dasharray="5,5"/>
+  <circle cx="793" cy="266" r="34" fill="url(#orbG)" filter="url(#glow)"/>
+  <text x="793" y="275" text-anchor="middle" font-size="22" fill="white">→</text>
+
+  <!-- Right panel: AI Summary -->
+  <rect x="862" y="86" width="276" height="356" rx="12" fill="rgba(8,4,20,0.85)" stroke="rgba(96,165,250,0.18)" stroke-width="1"/>
+  <rect x="876" y="100" width="102" height="22" rx="11" fill="rgba(124,58,237,0.35)" stroke="rgba(124,58,237,0.5)" stroke-width="1"/>
+  <text x="927" y="115" text-anchor="middle" font-size="11" font-weight="600" fill="#c4b5fd">AI Summary</text>
+  <circle cx="876" cy="144" r="4" fill="url(#aG)"/><rect x="886" y="139" width="238" height="9" rx="4.5" fill="url(#hL)"/>
+  <circle cx="876" cy="161" r="4" fill="url(#aG)"/><rect x="886" y="156" width="216" height="9" rx="4.5" fill="url(#hL2)"/>
+  <circle cx="876" cy="178" r="4" fill="url(#aG)"/><rect x="886" y="173" width="230" height="9" rx="4.5" fill="url(#hL)"/>
+  <circle cx="876" cy="195" r="4" fill="url(#aG)"/><rect x="886" y="190" width="200" height="9" rx="4.5" fill="url(#hL2)"/>
+  <circle cx="876" cy="212" r="4" fill="url(#aG)"/><rect x="886" y="207" width="238" height="9" rx="4.5" fill="url(#hL)"/>
+  <circle cx="876" cy="240" r="3" fill="rgba(167,139,250,0.5)"/><rect x="886" y="236" width="215" height="8" rx="4" fill="rgba(124,58,237,0.4)"/>
+  <circle cx="876" cy="256" r="3" fill="rgba(167,139,250,0.5)"/><rect x="886" y="252" width="228" height="8" rx="4" fill="rgba(96,165,250,0.35)"/>
+  <circle cx="876" cy="272" r="3" fill="rgba(167,139,250,0.5)"/><rect x="886" y="268" width="195" height="8" rx="4" fill="rgba(124,58,237,0.35)"/>
+  <circle cx="876" cy="300" r="3" fill="rgba(96,165,250,0.4)"/><rect x="886" y="296" width="230" height="8" rx="4" fill="rgba(96,165,250,0.3)"/>
+  <circle cx="876" cy="316" r="3" fill="rgba(96,165,250,0.4)"/><rect x="886" y="312" width="208" height="8" rx="4" fill="rgba(96,165,250,0.28)"/>
+  <circle cx="876" cy="332" r="3" fill="rgba(96,165,250,0.4)"/><rect x="886" y="328" width="220" height="8" rx="4" fill="rgba(96,165,250,0.26)"/>
+  <text x="876" y="430" font-size="11" fill="rgba(255,255,255,0.22)">5 Key Points</text>
+  <rect x="1090" y="418" width="26" height="26" rx="7" fill="rgba(167,139,250,0.12)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+  <text x="1103" y="435" text-anchor="middle" font-size="13" fill="#a78bfa">⎘</text>
+
+  <!-- Length row -->
+  <text x="448" y="460" font-size="11" fill="rgba(255,255,255,0.32)">Summary Length</text>
+  <rect x="448" y="468" width="56" height="24" rx="7" fill="url(#bG)"/>
+  <text x="476" y="484" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">Short</text>
+  <rect x="512" y="468" width="68" height="24" rx="7" fill="rgba(167,139,250,0.08)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+  <text x="546" y="484" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.5)">Medium</text>
+  <rect x="588" y="468" width="52" height="24" rx="7" fill="rgba(167,139,250,0.06)" stroke="rgba(167,139,250,0.14)" stroke-width="1"/>
+  <text x="614" y="484" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.45)">Long</text>
+  <rect x="648" y="468" width="92" height="24" rx="7" fill="rgba(167,139,250,0.06)" stroke="rgba(167,139,250,0.14)" stroke-width="1"/>
+  <text x="694" y="484" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.4)">Bullet Points</text>
+  <rect x="800" y="464" width="214" height="32" rx="16" fill="url(#bG)" filter="url(#sh)"/>
+  <text x="907" y="484" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">Summarize Now ✦</text>
+  <rect x="1024" y="464" width="72" height="32" rx="16" fill="rgba(167,139,250,0.1)" stroke="rgba(167,139,250,0.22)" stroke-width="1"/>
+  <text x="1060" y="484" text-anchor="middle" font-size="11" fill="#a78bfa">⎘ Copy</text>
+
+  <!-- Bottom strip -->
+  <line x1="430" y1="548" x2="1156" y2="548" stroke="rgba(167,139,250,0.1)" stroke-width="1"/>
+  <text x="510" y="572" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.35)">🌐 100+ Languages</text>
+  <text x="660" y="572" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.35)">⏱ Save Time</text>
+  <text x="793" y="572" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.35)">📈 Boost Productivity</text>
+  <text x="940" y="572" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.35)">☁ Cloud Based</text>
+  <text x="1080" y="572" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.35)">🔒 100% Secure</text>
+</svg>
