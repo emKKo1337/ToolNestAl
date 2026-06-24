@@ -1,0 +1,84 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="75%"><stop offset="0%" stop-color="#0a0618"/><stop offset="100%" stop-color="#07070f"/></radialGradient>
+    <radialGradient id="gL" cx="30%" cy="50%" r="50%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.25"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gR" cx="70%" cy="50%" r="50%"><stop offset="0%" stop-color="#2563eb" stop-opacity="0.16"/><stop offset="100%" stop-color="#2563eb" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="pG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#130b2e" stop-opacity="0.97"/><stop offset="100%" stop-color="#0c0820" stop-opacity="0.97"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#5b21b6" flood-opacity="0.3"/></filter>
+  </defs>
+  <rect width="1200" height="500" fill="url(#bg)"/>
+  <ellipse cx="360" cy="250" rx="500" ry="380" fill="url(#gL)"/>
+  <ellipse cx="840" cy="250" rx="500" ry="380" fill="url(#gR)"/>
+
+  <text x="600" y="46" text-anchor="middle" font-size="13" font-weight="600" fill="#a78bfa" letter-spacing="2">USE CASES</text>
+  <text x="600" y="82" text-anchor="middle" font-size="30" font-weight="800" fill="url(#aG)">Who Uses an AI Humanizer?</text>
+  <text x="600" y="110" text-anchor="middle" font-size="14" fill="rgba(255,255,255,0.4)">Anyone who uses AI writing tools can benefit from humanization</text>
+
+  <!-- Card 1: Content Creators -->
+  <rect x="40" y="134" width="360" height="148" rx="14" fill="url(#pG)" stroke="url(#aG)" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="40" y="134" width="360" height="4" rx="2" fill="url(#aG)"/>
+  <rect x="60" y="154" width="44" height="44" rx="10" fill="rgba(167,139,250,0.12)" stroke="rgba(167,139,250,0.22)" stroke-width="1"/>
+  <text x="82" y="182" text-anchor="middle" font-size="22">✎</text>
+  <text x="116" y="172" font-size="15" font-weight="700" fill="#f0e8ff">Content Creators</text>
+  <text x="116" y="190" font-size="11" fill="rgba(167,139,250,0.65)">Blogs · Articles · Social</text>
+  <text x="60" y="218" font-size="12" fill="rgba(255,255,255,0.52)">Publish AI-assisted content that reads</text>
+  <text x="60" y="235" font-size="12" fill="rgba(255,255,255,0.52)">naturally and engages audiences.</text>
+  <text x="60" y="252" font-size="12" fill="rgba(255,255,255,0.52)">Scale output without losing voice.</text>
+
+  <!-- Card 2: Students -->
+  <rect x="420" y="134" width="360" height="148" rx="14" fill="url(#pG)" stroke="rgba(96,165,250,0.2)" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="420" y="134" width="360" height="4" rx="2" fill="rgba(96,165,250,0.5)"/>
+  <rect x="440" y="154" width="44" height="44" rx="10" fill="rgba(96,165,250,0.1)" stroke="rgba(96,165,250,0.2)" stroke-width="1"/>
+  <text x="462" y="182" text-anchor="middle" font-size="22">🎓</text>
+  <text x="496" y="172" font-size="15" font-weight="700" fill="#f0e8ff">Students</text>
+  <text x="496" y="190" font-size="11" fill="rgba(96,165,250,0.65)">Essays · Research · Reports</text>
+  <text x="440" y="218" font-size="12" fill="rgba(255,255,255,0.52)">Refine AI-drafted essays to pass</text>
+  <text x="440" y="235" font-size="12" fill="rgba(255,255,255,0.52)">AI detection and sound authentic.</text>
+  <text x="440" y="252" font-size="12" fill="rgba(255,255,255,0.52)">Improve academic writing quality.</text>
+
+  <!-- Card 3: Marketers -->
+  <rect x="800" y="134" width="360" height="148" rx="14" fill="url(#pG)" stroke="rgba(251,191,36,0.18)" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="800" y="134" width="360" height="4" rx="2" fill="rgba(251,191,36,0.45)"/>
+  <rect x="820" y="154" width="44" height="44" rx="10" fill="rgba(251,191,36,0.08)" stroke="rgba(251,191,36,0.18)" stroke-width="1"/>
+  <text x="842" y="182" text-anchor="middle" font-size="22">📢</text>
+  <text x="876" y="172" font-size="15" font-weight="700" fill="#f0e8ff">Marketers</text>
+  <text x="876" y="190" font-size="11" fill="rgba(251,191,36,0.65)">Ads · Copy · Landing Pages</text>
+  <text x="820" y="218" font-size="12" fill="rgba(255,255,255,0.52)">Convert AI-generated ad copy into</text>
+  <text x="820" y="235" font-size="12" fill="rgba(255,255,255,0.52)">persuasive, brand-consistent text.</text>
+  <text x="820" y="252" font-size="12" fill="rgba(255,255,255,0.52)">Higher engagement, better results.</text>
+
+  <!-- Card 4: SEO Writers -->
+  <rect x="40" y="298" width="360" height="148" rx="14" fill="url(#pG)" stroke="rgba(34,197,94,0.16)" stroke-width="1" filter="url(#sh)"/>
+  <rect x="40" y="298" width="360" height="4" rx="2" fill="rgba(34,197,94,0.45)"/>
+  <rect x="60" y="318" width="44" height="44" rx="10" fill="rgba(34,197,94,0.08)" stroke="rgba(34,197,94,0.18)" stroke-width="1"/>
+  <text x="82" y="346" text-anchor="middle" font-size="22">🔍</text>
+  <text x="116" y="336" font-size="15" font-weight="700" fill="#f0e8ff">SEO Writers</text>
+  <text x="116" y="354" font-size="11" fill="rgba(34,197,94,0.65)">Articles · Web Copy · Meta</text>
+  <text x="60" y="382" font-size="12" fill="rgba(255,255,255,0.52)">Make AI SEO content rank better</text>
+  <text x="60" y="399" font-size="12" fill="rgba(255,255,255,0.52)">by adding natural language patterns</text>
+  <text x="60" y="416" font-size="12" fill="rgba(255,255,255,0.52)">that satisfy Google's quality signals.</text>
+
+  <!-- Card 5: Business Professionals -->
+  <rect x="420" y="298" width="360" height="148" rx="14" fill="url(#pG)" stroke="rgba(244,114,182,0.16)" stroke-width="1" filter="url(#sh)"/>
+  <rect x="420" y="298" width="360" height="4" rx="2" fill="rgba(244,114,182,0.4)"/>
+  <rect x="440" y="318" width="44" height="44" rx="10" fill="rgba(244,114,182,0.08)" stroke="rgba(244,114,182,0.18)" stroke-width="1"/>
+  <text x="462" y="346" text-anchor="middle" font-size="22">💼</text>
+  <text x="496" y="336" font-size="15" font-weight="700" fill="#f0e8ff">Business Professionals</text>
+  <text x="496" y="354" font-size="11" fill="rgba(244,114,182,0.65)">Emails · Proposals · Decks</text>
+  <text x="440" y="382" font-size="12" fill="rgba(255,255,255,0.52)">Send AI-drafted emails that sound</text>
+  <text x="440" y="399" font-size="12" fill="rgba(255,255,255,0.52)">personal and professionally polished.</text>
+  <text x="440" y="416" font-size="12" fill="rgba(255,255,255,0.52)">Build trust with every message.</text>
+
+  <!-- Card 6: Non-Native Speakers -->
+  <rect x="800" y="298" width="360" height="148" rx="14" fill="url(#pG)" stroke="rgba(167,139,250,0.14)" stroke-width="1" filter="url(#sh)"/>
+  <rect x="800" y="298" width="360" height="4" rx="2" fill="rgba(167,139,250,0.4)"/>
+  <rect x="820" y="318" width="44" height="44" rx="10" fill="rgba(167,139,250,0.08)" stroke="rgba(167,139,250,0.18)" stroke-width="1"/>
+  <text x="842" y="346" text-anchor="middle" font-size="22">🌐</text>
+  <text x="876" y="336" font-size="15" font-weight="700" fill="#f0e8ff">Non-Native Speakers</text>
+  <text x="876" y="354" font-size="11" fill="rgba(167,139,250,0.65)">ESL · International · Global</text>
+  <text x="820" y="382" font-size="12" fill="rgba(255,255,255,0.52)">Write fluent, natural English even</text>
+  <text x="820" y="399" font-size="12" fill="rgba(255,255,255,0.52)">when drafting with AI assistance.</text>
+  <text x="820" y="416" font-size="12" fill="rgba(255,255,255,0.52)">Sound native without the effort.</text>
+</svg>

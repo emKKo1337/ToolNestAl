@@ -1,0 +1,128 @@
+<svg viewBox="0 0 900 1200" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="70%"><stop offset="0%" stop-color="#0a0618"/><stop offset="100%" stop-color="#07070f"/></radialGradient>
+    <radialGradient id="g1" cx="50%" cy="20%" r="50%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.28"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="g2" cx="50%" cy="80%" r="50%"><stop offset="0%" stop-color="#2563eb" stop-opacity="0.18"/><stop offset="100%" stop-color="#2563eb" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="pG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#130b2e" stop-opacity="0.97"/><stop offset="100%" stop-color="#0c0820" stop-opacity="0.97"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="6" stdDeviation="14" flood-color="#5b21b6" flood-opacity="0.3"/></filter>
+    <filter id="gF"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="900" height="1200" fill="url(#bg)"/>
+  <ellipse cx="450" cy="280" rx="500" ry="380" fill="url(#g1)"/>
+  <ellipse cx="450" cy="920" rx="500" ry="380" fill="url(#g2)"/>
+
+  <!-- Header -->
+  <rect x="275" y="28" width="350" height="38" rx="19" fill="rgba(167,139,250,0.1)" stroke="rgba(167,139,250,0.25)" stroke-width="1"/>
+  <text x="450" y="52" text-anchor="middle" font-size="14" font-weight="600" fill="#a78bfa">✦ ToolNest AI — 2026 Guide</text>
+  <text x="450" y="112" text-anchor="middle" font-size="34" font-weight="800" fill="url(#aG)" filter="url(#gF)">AI Humanizer</text>
+  <text x="450" y="144" text-anchor="middle" font-size="17" fill="rgba(255,255,255,0.48)">The Complete 2026 Cheat Sheet</text>
+  <line x1="80" y1="164" x2="820" y2="164" stroke="rgba(167,139,250,0.1)" stroke-width="1"/>
+
+  <!-- STAT CARDS -->
+  <rect x="55" y="180" width="245" height="118" rx="14" fill="url(#pG)" stroke="rgba(167,139,250,0.2)" stroke-width="1" filter="url(#sh)"/>
+  <text x="177" y="232" text-anchor="middle" font-size="38" font-weight="800" fill="#a78bfa">97%</text>
+  <text x="177" y="258" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.45)">human score after</text>
+  <text x="177" y="274" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.45)">Enhanced mode</text>
+  <rect x="55" y="294" width="245" height="4" rx="2" fill="rgba(167,139,250,0.4)"/>
+
+  <rect x="327" y="180" width="246" height="118" rx="14" fill="url(#pG)" stroke="rgba(96,165,250,0.15)" stroke-width="1" filter="url(#sh)"/>
+  <text x="450" y="232" text-anchor="middle" font-size="38" font-weight="800" fill="#60a5fa">&lt;5s</text>
+  <text x="450" y="258" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.45)">to humanize an entire</text>
+  <text x="450" y="274" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.45)">page of AI content</text>
+  <rect x="327" y="294" width="246" height="4" rx="2" fill="rgba(96,165,250,0.4)"/>
+
+  <rect x="600" y="180" width="245" height="118" rx="14" fill="url(#pG)" stroke="rgba(34,197,94,0.15)" stroke-width="1" filter="url(#sh)"/>
+  <text x="722" y="232" text-anchor="middle" font-size="38" font-weight="800" fill="#22c55e">Free</text>
+  <text x="722" y="258" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.45)">Unlimited humanization</text>
+  <text x="722" y="274" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.45)">no sign-up needed</text>
+  <rect x="600" y="294" width="245" height="4" rx="2" fill="rgba(34,197,94,0.4)"/>
+
+  <!-- STEP BY STEP -->
+  <text x="450" y="358" text-anchor="middle" font-size="20" font-weight="700" fill="#f0e8ff">How to Humanize AI Text in 4 Steps</text>
+  <line x1="150" y1="374" x2="750" y2="374" stroke="rgba(167,139,250,0.08)" stroke-width="1"/>
+
+  <rect x="55" y="388" width="790" height="54" rx="10" fill="url(#pG)" stroke="rgba(167,139,250,0.1)" stroke-width="1" filter="url(#sh)"/>
+  <circle cx="92" cy="415" r="18" fill="url(#bG)"/>
+  <text x="92" y="420" text-anchor="middle" font-size="14" font-weight="800" fill="#fff">1</text>
+  <text x="122" y="410" font-size="13" font-weight="600" fill="rgba(255,255,255,0.8)">Paste your AI-generated text</text>
+  <text x="122" y="428" font-size="12" fill="rgba(255,255,255,0.42)">Any AI content — ChatGPT, Gemini, Copilot, Claude, or any other tool</text>
+
+  <rect x="55" y="450" width="790" height="54" rx="10" fill="url(#pG)" stroke="rgba(96,165,250,0.1)" stroke-width="1" filter="url(#sh)"/>
+  <circle cx="92" cy="477" r="18" fill="rgba(96,165,250,0.25)" stroke="rgba(96,165,250,0.5)" stroke-width="1.5"/>
+  <text x="92" y="482" text-anchor="middle" font-size="14" font-weight="800" fill="#60a5fa">2</text>
+  <text x="122" y="472" font-size="13" font-weight="600" fill="rgba(255,255,255,0.8)">Choose your humanization mode</text>
+  <text x="122" y="490" font-size="12" fill="rgba(255,255,255,0.42)">Standard · Balanced · Advanced · Enhanced — pick by intensity needed</text>
+
+  <rect x="55" y="512" width="790" height="54" rx="10" fill="url(#pG)" stroke="rgba(167,139,250,0.1)" stroke-width="1" filter="url(#sh)"/>
+  <circle cx="92" cy="539" r="18" fill="rgba(167,139,250,0.18)" stroke="rgba(167,139,250,0.4)" stroke-width="1.5"/>
+  <text x="92" y="544" text-anchor="middle" font-size="14" font-weight="800" fill="#a78bfa">3</text>
+  <text x="122" y="534" font-size="13" font-weight="600" fill="rgba(255,255,255,0.8)">Click Humanize Now</text>
+  <text x="122" y="552" font-size="12" fill="rgba(255,255,255,0.42)">AI rewrites your text to sound natural, engaging and human</text>
+
+  <rect x="55" y="574" width="790" height="54" rx="10" fill="url(#pG)" stroke="rgba(34,197,94,0.1)" stroke-width="1" filter="url(#sh)"/>
+  <circle cx="92" cy="601" r="18" fill="rgba(34,197,94,0.18)" stroke="rgba(34,197,94,0.4)" stroke-width="1.5"/>
+  <text x="92" y="606" text-anchor="middle" font-size="14" font-weight="800" fill="#22c55e">4</text>
+  <text x="122" y="596" font-size="13" font-weight="600" fill="rgba(255,255,255,0.8)">Copy and use</text>
+  <text x="122" y="614" font-size="12" fill="rgba(255,255,255,0.42)">One-click copy of humanized text — ready to publish or send</text>
+
+  <!-- MODES QUICK REFERENCE -->
+  <text x="450" y="678" text-anchor="middle" font-size="20" font-weight="700" fill="#f0e8ff">Mode Quick Reference</text>
+  <line x1="150" y1="694" x2="750" y2="694" stroke="rgba(167,139,250,0.08)" stroke-width="1"/>
+
+  <rect x="55" y="706" width="380" height="64" rx="10" fill="url(#pG)" stroke="rgba(124,58,237,0.2)" stroke-width="1"/>
+  <rect x="55" y="706" width="5" rx="2.5" height="64" fill="url(#bG)"/>
+  <text x="80" y="730" font-size="14" font-weight="700" fill="#a78bfa">Standard</text>
+  <text x="80" y="750" font-size="11" fill="rgba(255,255,255,0.45)">Light rewrite · Preserves structure</text>
+  <text x="80" y="764" font-size="11" fill="rgba(255,255,255,0.45)">Best for: blogs, general content</text>
+
+  <rect x="465" y="706" width="380" height="64" rx="10" fill="url(#pG)" stroke="rgba(96,165,250,0.16)" stroke-width="1"/>
+  <rect x="465" y="706" width="5" rx="2.5" height="64" fill="rgba(96,165,250,0.7)"/>
+  <text x="490" y="730" font-size="14" font-weight="700" fill="#60a5fa">Balanced</text>
+  <text x="490" y="750" font-size="11" fill="rgba(255,255,255,0.45)">Moderate rewrite · Natural flow</text>
+  <text x="490" y="764" font-size="11" fill="rgba(255,255,255,0.45)">Best for: emails, marketing copy</text>
+
+  <rect x="55" y="778" width="380" height="64" rx="10" fill="url(#pG)" stroke="rgba(244,114,182,0.16)" stroke-width="1"/>
+  <rect x="55" y="778" width="5" rx="2.5" height="64" fill="rgba(244,114,182,0.7)"/>
+  <text x="80" y="802" font-size="14" font-weight="700" fill="#f472b6">Advanced</text>
+  <text x="80" y="822" font-size="11" fill="rgba(255,255,255,0.45)">Deep rewrite · Beats AI detectors</text>
+  <text x="80" y="836" font-size="11" fill="rgba(255,255,255,0.45)">Best for: academic, professional</text>
+
+  <rect x="465" y="778" width="380" height="64" rx="10" fill="url(#pG)" stroke="rgba(251,191,36,0.16)" stroke-width="1"/>
+  <rect x="465" y="778" width="5" rx="2.5" height="64" fill="rgba(251,191,36,0.7)"/>
+  <text x="490" y="802" font-size="14" font-weight="700" fill="#fbbf24">Enhanced</text>
+  <text x="490" y="822" font-size="11" fill="rgba(255,255,255,0.45)">Full transformation · Max quality</text>
+  <text x="490" y="836" font-size="11" fill="rgba(255,255,255,0.45)">Best for: published content, clients</text>
+
+  <!-- TIPS -->
+  <text x="450" y="892" text-anchor="middle" font-size="20" font-weight="700" fill="#f0e8ff">5 Tips to Get the Best Results</text>
+  <line x1="150" y1="908" x2="750" y2="908" stroke="rgba(167,139,250,0.08)" stroke-width="1"/>
+
+  <g font-size="12">
+    <rect x="55" y="918" width="790" height="32" rx="8" fill="rgba(167,139,250,0.07)" stroke="rgba(167,139,250,0.12)" stroke-width="1"/>
+    <text x="75" y="939" fill="#a78bfa" font-weight="600">✦</text>
+    <text x="95" y="939" fill="rgba(255,255,255,0.6)">Humanize complete paragraphs — context produces more natural rewrites</text>
+
+    <rect x="55" y="956" width="790" height="32" rx="8" fill="rgba(96,165,250,0.05)" stroke="rgba(96,165,250,0.1)" stroke-width="1"/>
+    <text x="75" y="977" fill="#60a5fa" font-weight="600">✦</text>
+    <text x="95" y="977" fill="rgba(255,255,255,0.6)">Start with Standard — upgrade to Advanced only when detector bypass is needed</text>
+
+    <rect x="55" y="994" width="790" height="32" rx="8" fill="rgba(167,139,250,0.05)" stroke="rgba(167,139,250,0.1)" stroke-width="1"/>
+    <text x="75" y="1015" fill="#c4b5fd" font-weight="600">✦</text>
+    <text x="95" y="1015" fill="rgba(255,255,255,0.6)">Follow up with the AI Grammar Checker to catch any new errors post-rewrite</text>
+
+    <rect x="55" y="1032" width="790" height="32" rx="8" fill="rgba(34,197,94,0.05)" stroke="rgba(34,197,94,0.1)" stroke-width="1"/>
+    <text x="75" y="1053" fill="#22c55e" font-weight="600">✦</text>
+    <text x="95" y="1053" fill="rgba(255,255,255,0.6)">Read the output aloud — if it still sounds robotic, try a higher mode</text>
+
+    <rect x="55" y="1070" width="790" height="32" rx="8" fill="rgba(251,191,36,0.05)" stroke="rgba(251,191,36,0.1)" stroke-width="1"/>
+    <text x="75" y="1091" fill="#fbbf24" font-weight="600">✦</text>
+    <text x="95" y="1091" fill="rgba(255,255,255,0.6)">Humanize sections separately for very long documents — better per-section results</text>
+  </g>
+
+  <!-- CTA -->
+  <rect x="175" y="1128" width="550" height="52" rx="26" fill="url(#bG)" filter="url(#sh)"/>
+  <text x="450" y="1160" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">✦ Humanize Your Text Free Now</text>
+  <text x="450" y="1190" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.2)">toolnestai.net · AI Humanizer · Free · No Sign-Up</text>
+</svg>

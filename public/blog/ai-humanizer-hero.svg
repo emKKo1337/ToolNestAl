@@ -1,0 +1,117 @@
+<svg viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="45%" r="75%"><stop offset="0%" stop-color="#0d0520"/><stop offset="100%" stop-color="#07070f"/></radialGradient>
+    <radialGradient id="gL" cx="25%" cy="50%" r="55%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.32"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gR" cx="75%" cy="50%" r="50%"><stop offset="0%" stop-color="#2563eb" stop-opacity="0.2"/><stop offset="100%" stop-color="#2563eb" stop-opacity="0"/></radialGradient>
+    <radialGradient id="orbG" cx="50%" cy="40%" r="60%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#6d28d9"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="lapG" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#1a1135"/><stop offset="100%" stop-color="#0d0a1e"/></linearGradient>
+    <linearGradient id="hL2" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed" stop-opacity="0.85"/><stop offset="100%" stop-color="#60a5fa" stop-opacity="0.75"/></linearGradient>
+    <linearGradient id="hL3" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#818cf8" stop-opacity="0.9"/><stop offset="100%" stop-color="#60a5fa" stop-opacity="0.8"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="10" stdDeviation="22" flood-color="#5b21b6" flood-opacity="0.5"/></filter>
+    <filter id="glow"><feDropShadow dx="0" dy="0" stdDeviation="12" flood-color="#a78bfa" flood-opacity="0.7"/></filter>
+    <filter id="gF"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <ellipse cx="300" cy="337" rx="580" ry="420" fill="url(#gL)"/>
+  <ellipse cx="900" cy="337" rx="520" ry="380" fill="url(#gR)"/>
+
+  <!-- Floating feature icons top -->
+  <g>
+    <rect x="170" y="22" width="130" height="52" rx="12" fill="rgba(167,139,250,0.1)" stroke="rgba(167,139,250,0.22)" stroke-width="1"/>
+    <text x="235" y="44" text-anchor="middle" font-size="16">👤</text>
+    <text x="235" y="64" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.55)">Human-like Text</text>
+
+    <rect x="318" y="22" width="130" height="52" rx="12" fill="rgba(167,139,250,0.08)" stroke="rgba(167,139,250,0.18)" stroke-width="1"/>
+    <text x="383" y="44" text-anchor="middle" font-size="16">🧠</text>
+    <text x="383" y="64" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.5)">Smart Rewriting</text>
+
+    <rect x="466" y="22" width="130" height="52" rx="12" fill="rgba(167,139,250,0.08)" stroke="rgba(167,139,250,0.18)" stroke-width="1"/>
+    <text x="531" y="44" text-anchor="middle" font-size="16">🛡</text>
+    <text x="531" y="64" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.5)">Bypass AI Detectors</text>
+
+    <rect x="614" y="22" width="130" height="52" rx="12" fill="rgba(167,139,250,0.08)" stroke="rgba(167,139,250,0.18)" stroke-width="1"/>
+    <text x="679" y="44" text-anchor="middle" font-size="16">✦</text>
+    <text x="679" y="64" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.5)">Natural &amp; Engaging</text>
+
+    <rect x="762" y="22" width="130" height="52" rx="12" fill="rgba(167,139,250,0.08)" stroke="rgba(167,139,250,0.18)" stroke-width="1"/>
+    <text x="827" y="44" text-anchor="middle" font-size="16">⚡</text>
+    <text x="827" y="64" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.5)">Instant Results</text>
+  </g>
+
+  <!-- Title -->
+  <text x="600" y="128" text-anchor="middle" font-size="42" font-weight="800" fill="url(#aG)" filter="url(#gF)">AI Humanizer</text>
+  <text x="600" y="162" text-anchor="middle" font-size="18" fill="rgba(255,255,255,0.5)">Transform robotic AI content into authentic, engaging, natural writing</text>
+
+  <!-- Main laptop frame -->
+  <rect x="80" y="186" width="1040" height="410" rx="20" fill="url(#lapG)" stroke="rgba(167,139,250,0.2)" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="80" y="186" width="1040" height="34" rx="20" fill="rgba(167,139,250,0.07)"/>
+  <circle cx="104" cy="203" r="6" fill="rgba(239,68,68,0.5)"/>
+  <circle cx="124" cy="203" r="6" fill="rgba(251,191,36,0.5)"/>
+  <circle cx="144" cy="203" r="6" fill="rgba(34,197,94,0.5)"/>
+  <text x="600" y="208" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.25)">toolnestai.net — AI Humanizer</text>
+  <rect x="992" y="192" width="106" height="22" rx="11" fill="rgba(34,197,94,0.1)" stroke="rgba(34,197,94,0.3)" stroke-width="1"/>
+  <text x="1045" y="207" text-anchor="middle" font-size="10" fill="#4ade80">🛡 100% Secure</text>
+
+  <!-- Left panel -->
+  <rect x="104" y="234" width="450" height="320" rx="14" fill="rgba(8,4,20,0.85)" stroke="rgba(167,139,250,0.16)" stroke-width="1"/>
+  <rect x="120" y="250" width="140" height="24" rx="12" fill="rgba(167,139,250,0.22)" stroke="rgba(167,139,250,0.4)" stroke-width="1"/>
+  <text x="190" y="266" text-anchor="middle" font-size="12" font-weight="600" fill="#c4b5fd">AI Generated Text</text>
+
+  <g>
+    <rect x="120" y="290" width="418" height="10" rx="5" fill="rgba(90,90,110,0.38)"/>
+    <rect x="120" y="308" width="380" height="10" rx="5" fill="rgba(90,90,110,0.32)"/>
+    <rect x="120" y="326" width="400" height="10" rx="5" fill="rgba(90,90,110,0.3)"/>
+    <rect x="120" y="344" width="340" height="10" rx="5" fill="rgba(90,90,110,0.34)"/>
+    <rect x="120" y="374" width="418" height="10" rx="5" fill="rgba(90,90,110,0.3)"/>
+    <rect x="120" y="392" width="300" height="10" rx="5" fill="rgba(90,90,110,0.28)"/>
+    <rect x="120" y="410" width="390" height="10" rx="5" fill="rgba(90,90,110,0.3)"/>
+    <rect x="120" y="428" width="350" height="10" rx="5" fill="rgba(90,90,110,0.26)"/>
+    <rect x="120" y="458" width="418" height="10" rx="5" fill="rgba(90,90,110,0.28)"/>
+    <rect x="120" y="476" width="310" height="10" rx="5" fill="rgba(90,90,110,0.24)"/>
+    <rect x="120" y="494" width="370" height="10" rx="5" fill="rgba(90,90,110,0.26)"/>
+  </g>
+  <text x="120" y="542" font-size="12" fill="rgba(255,255,255,0.25)">126 Words · AI Score: 94%</text>
+
+  <!-- Center orb -->
+  <circle cx="600" cy="394" r="56" fill="rgba(109,40,217,0.12)" stroke="rgba(167,139,250,0.18)" stroke-width="1" stroke-dasharray="5,5"/>
+  <circle cx="600" cy="394" r="42" fill="url(#orbG)" filter="url(#glow)"/>
+  <circle cx="600" cy="382" r="11" fill="rgba(255,255,255,0.92)"/>
+  <path d="M580 410 Q600 398 620 410" stroke="rgba(255,255,255,0.92)" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <text x="636" y="398" font-size="18" fill="rgba(167,139,250,0.7)">&gt;&gt;</text>
+
+  <!-- Right panel -->
+  <rect x="646" y="234" width="450" height="320" rx="14" fill="rgba(8,4,20,0.85)" stroke="rgba(96,165,250,0.18)" stroke-width="1"/>
+  <rect x="662" y="250" width="118" height="24" rx="12" fill="rgba(124,58,237,0.35)" stroke="rgba(124,58,237,0.5)" stroke-width="1"/>
+  <text x="721" y="266" text-anchor="middle" font-size="12" font-weight="600" fill="#c4b5fd">Humanized Text</text>
+
+  <rect x="662" y="290" width="418" height="10" rx="5" fill="url(#hL2)"/>
+  <rect x="662" y="308" width="380" height="10" rx="5" fill="url(#hL3)"/>
+  <rect x="662" y="326" width="400" height="10" rx="5" fill="url(#hL2)"/>
+  <rect x="662" y="344" width="340" height="10" rx="5" fill="url(#hL3)"/>
+  <rect x="662" y="374" width="418" height="10" rx="5" fill="url(#hL2)"/>
+  <rect x="662" y="392" width="300" height="10" rx="5" fill="url(#hL3)"/>
+  <rect x="662" y="410" width="390" height="10" rx="5" fill="url(#hL2)"/>
+  <rect x="662" y="428" width="350" height="10" rx="5" fill="url(#hL3)"/>
+  <rect x="662" y="458" width="418" height="10" rx="5" fill="url(#hL2)"/>
+  <rect x="662" y="476" width="310" height="10" rx="5" fill="url(#hL3)"/>
+  <rect x="662" y="494" width="370" height="10" rx="5" fill="url(#hL2)"/>
+  <text x="662" y="542" font-size="12" fill="rgba(255,255,255,0.25)">126 Words · Human Score: 97%</text>
+  <rect x="1052" y="530" width="26" height="26" rx="7" fill="rgba(167,139,250,0.12)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+  <text x="1065" y="547" text-anchor="middle" font-size="13" fill="#a78bfa">⎘</text>
+
+  <!-- Bottom CTA row -->
+  <text x="104" y="578" font-size="13" fill="rgba(255,255,255,0.38)">Choose Mode</text>
+  <rect x="104" y="587" width="90" height="30" rx="10" fill="url(#bG)"/>
+  <text x="149" y="606" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">Standard</text>
+  <rect x="202" y="587" width="90" height="30" rx="10" fill="rgba(167,139,250,0.12)" stroke="rgba(167,139,250,0.28)" stroke-width="1"/>
+  <text x="247" y="606" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.55)">Balanced</text>
+  <rect x="300" y="587" width="90" height="30" rx="10" fill="rgba(167,139,250,0.08)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+  <text x="345" y="606" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.45)">Advanced</text>
+  <rect x="398" y="587" width="90" height="30" rx="10" fill="rgba(167,139,250,0.08)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+  <text x="443" y="606" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.45)">Enhanced</text>
+  <rect x="830" y="583" width="250" height="38" rx="19" fill="url(#bG)" filter="url(#sh)"/>
+  <text x="955" y="606" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">Humanize Now ✦</text>
+</svg>

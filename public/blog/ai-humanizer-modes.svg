@@ -1,0 +1,85 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="75%"><stop offset="0%" stop-color="#0a0618"/><stop offset="100%" stop-color="#07070f"/></radialGradient>
+    <radialGradient id="gC" cx="50%" cy="50%" r="60%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.22"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="pG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#130b2e" stop-opacity="0.97"/><stop offset="100%" stop-color="#0c0820" stop-opacity="0.97"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#5b21b6" flood-opacity="0.3"/></filter>
+  </defs>
+  <rect width="1200" height="500" fill="url(#bg)"/>
+  <ellipse cx="600" cy="250" rx="700" ry="380" fill="url(#gC)"/>
+
+  <text x="600" y="46" text-anchor="middle" font-size="13" font-weight="600" fill="#a78bfa" letter-spacing="2">HUMANIZATION MODES</text>
+  <text x="600" y="82" text-anchor="middle" font-size="30" font-weight="800" fill="url(#aG)">4 Modes — One for Every Writing Need</text>
+  <text x="600" y="110" text-anchor="middle" font-size="14" fill="rgba(255,255,255,0.4)">Choose the humanization intensity that fits your content and audience</text>
+  <line x1="80" y1="128" x2="1120" y2="128" stroke="rgba(167,139,250,0.08)" stroke-width="1"/>
+
+  <!-- Standard -->
+  <rect x="40" y="144" width="264" height="310" rx="16" fill="url(#pG)" stroke="url(#aG)" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="40" y="144" width="264" height="5" rx="2.5" fill="url(#bG)"/>
+  <rect x="64" y="166" width="48" height="48" rx="14" fill="rgba(124,58,237,0.18)" stroke="rgba(124,58,237,0.35)" stroke-width="1"/>
+  <text x="88" y="198" text-anchor="middle" font-size="26">✎</text>
+  <text x="88" y="234" text-anchor="middle" font-size="16" font-weight="700" fill="#f0e8ff">Standard</text>
+  <rect x="64" y="242" width="70" height="18" rx="9" fill="url(#bG)"/>
+  <text x="99" y="255" text-anchor="middle" font-size="10" font-weight="600" fill="#fff">Most Popular</text>
+  <text x="64" y="284" font-size="12" fill="rgba(255,255,255,0.55)">Light humanization that</text>
+  <text x="64" y="300" font-size="12" fill="rgba(255,255,255,0.55)">preserves original meaning</text>
+  <text x="64" y="316" font-size="12" fill="rgba(255,255,255,0.55)">while improving flow.</text>
+  <line x1="64" y1="334" x2="280" y2="334" stroke="rgba(167,139,250,0.1)" stroke-width="1"/>
+  <text x="64" y="356" font-size="11" fill="rgba(167,139,250,0.7)">Best for:</text>
+  <text x="64" y="374" font-size="11" fill="rgba(255,255,255,0.45)">· Blog posts &amp; articles</text>
+  <text x="64" y="390" font-size="11" fill="rgba(255,255,255,0.45)">· General content</text>
+  <text x="64" y="406" font-size="11" fill="rgba(255,255,255,0.45)">· Quick rewrites</text>
+  <text x="64" y="434" font-size="11" fill="rgba(167,139,250,0.6)">Change level: Low–Medium</text>
+
+  <!-- Balanced -->
+  <rect x="320" y="144" width="264" height="310" rx="16" fill="url(#pG)" stroke="rgba(96,165,250,0.22)" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="320" y="144" width="264" height="5" rx="2.5" fill="rgba(96,165,250,0.6)"/>
+  <rect x="344" y="166" width="48" height="48" rx="14" fill="rgba(96,165,250,0.12)" stroke="rgba(96,165,250,0.28)" stroke-width="1"/>
+  <text x="368" y="198" text-anchor="middle" font-size="26">⚖</text>
+  <text x="368" y="234" text-anchor="middle" font-size="16" font-weight="700" fill="#f0e8ff">Balanced</text>
+  <text x="344" y="268" font-size="12" fill="rgba(255,255,255,0.55)">Moderate rewriting that</text>
+  <text x="344" y="284" font-size="12" fill="rgba(255,255,255,0.55)">balances naturalness and</text>
+  <text x="344" y="300" font-size="12" fill="rgba(255,255,255,0.55)">content integrity.</text>
+  <line x1="344" y1="318" x2="560" y2="318" stroke="rgba(96,165,250,0.1)" stroke-width="1"/>
+  <text x="344" y="340" font-size="11" fill="rgba(96,165,250,0.7)">Best for:</text>
+  <text x="344" y="358" font-size="11" fill="rgba(255,255,255,0.45)">· Marketing copy</text>
+  <text x="344" y="374" font-size="11" fill="rgba(255,255,255,0.45)">· Emails &amp; newsletters</text>
+  <text x="344" y="390" font-size="11" fill="rgba(255,255,255,0.45)">· Social media posts</text>
+  <text x="344" y="418" font-size="11" fill="rgba(96,165,250,0.6)">Change level: Medium</text>
+
+  <!-- Advanced -->
+  <rect x="600" y="144" width="264" height="310" rx="16" fill="url(#pG)" stroke="rgba(244,114,182,0.18)" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="600" y="144" width="264" height="5" rx="2.5" fill="rgba(244,114,182,0.5)"/>
+  <rect x="624" y="166" width="48" height="48" rx="14" fill="rgba(244,114,182,0.1)" stroke="rgba(244,114,182,0.22)" stroke-width="1"/>
+  <text x="648" y="198" text-anchor="middle" font-size="26">🧠</text>
+  <text x="648" y="234" text-anchor="middle" font-size="16" font-weight="700" fill="#f0e8ff">Advanced</text>
+  <text x="624" y="268" font-size="12" fill="rgba(255,255,255,0.55)">Deep rewrite that significantly</text>
+  <text x="624" y="284" font-size="12" fill="rgba(255,255,255,0.55)">restructures sentences for</text>
+  <text x="624" y="300" font-size="12" fill="rgba(255,255,255,0.55)">maximum human quality.</text>
+  <line x1="624" y1="318" x2="840" y2="318" stroke="rgba(244,114,182,0.1)" stroke-width="1"/>
+  <text x="624" y="340" font-size="11" fill="rgba(244,114,182,0.7)">Best for:</text>
+  <text x="624" y="358" font-size="11" fill="rgba(255,255,255,0.45)">· Academic writing</text>
+  <text x="624" y="374" font-size="11" fill="rgba(255,255,255,0.45)">· Professional reports</text>
+  <text x="624" y="390" font-size="11" fill="rgba(255,255,255,0.45)">· AI detector bypass</text>
+  <text x="624" y="418" font-size="11" fill="rgba(244,114,182,0.6)">Change level: High</text>
+
+  <!-- Enhanced -->
+  <rect x="880" y="144" width="264" height="310" rx="16" fill="url(#pG)" stroke="rgba(251,191,36,0.18)" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="880" y="144" width="264" height="5" rx="2.5" fill="rgba(251,191,36,0.5)"/>
+  <rect x="904" y="166" width="48" height="48" rx="14" fill="rgba(251,191,36,0.1)" stroke="rgba(251,191,36,0.22)" stroke-width="1"/>
+  <text x="928" y="198" text-anchor="middle" font-size="26">✦</text>
+  <text x="928" y="234" text-anchor="middle" font-size="16" font-weight="700" fill="#f0e8ff">Enhanced</text>
+  <rect x="904" y="242" width="90" height="18" rx="9" fill="rgba(251,191,36,0.2)" stroke="rgba(251,191,36,0.4)" stroke-width="1"/>
+  <text x="949" y="255" text-anchor="middle" font-size="10" font-weight="600" fill="#fbbf24">Maximum Quality</text>
+  <text x="904" y="284" font-size="12" fill="rgba(255,255,255,0.55)">Complete transformation</text>
+  <text x="904" y="300" font-size="12" fill="rgba(255,255,255,0.55)">with enriched vocabulary,</text>
+  <text x="904" y="316" font-size="12" fill="rgba(255,255,255,0.55)">tone and natural variation.</text>
+  <line x1="904" y1="334" x2="1120" y2="334" stroke="rgba(251,191,36,0.1)" stroke-width="1"/>
+  <text x="904" y="356" font-size="11" fill="rgba(251,191,36,0.7)">Best for:</text>
+  <text x="904" y="374" font-size="11" fill="rgba(255,255,255,0.45)">· High-stakes content</text>
+  <text x="904" y="390" font-size="11" fill="rgba(255,255,255,0.45)">· Published articles</text>
+  <text x="904" y="406" font-size="11" fill="rgba(255,255,255,0.45)">· Client deliverables</text>
+  <text x="904" y="434" font-size="11" fill="rgba(251,191,36,0.6)">Change level: Maximum</text>
+</svg>
