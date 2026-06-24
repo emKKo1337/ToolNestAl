@@ -1,0 +1,180 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="22%" cy="55%" r="85%"><stop offset="0%" stop-color="#0a0618"/><stop offset="100%" stop-color="#07070f"/></radialGradient>
+    <radialGradient id="gL" cx="50%" cy="50%" r="55%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.45"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gR" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#2563eb" stop-opacity="0.22"/><stop offset="100%" stop-color="#2563eb" stop-opacity="0"/></radialGradient>
+    <radialGradient id="chkC" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4338ca"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="pG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#130b2e" stop-opacity="0.97"/><stop offset="100%" stop-color="#0c0820" stop-opacity="0.97"/></linearGradient>
+    <linearGradient id="lapG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1c1040"/><stop offset="100%" stop-color="#0e0820"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="12" stdDeviation="22" flood-color="#5b21b6" flood-opacity="0.52"/></filter>
+    <filter id="chkGlow"><feDropShadow dx="0" dy="0" stdDeviation="18" flood-color="#7c3aed" flood-opacity="0.85"/></filter>
+    <filter id="lapSh"><feDropShadow dx="0" dy="20" stdDeviation="35" flood-color="#4c1d95" flood-opacity="0.6"/></filter>
+    <filter id="gF"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <ellipse cx="185" cy="320" rx="430" ry="380" fill="url(#gL)"/>
+  <ellipse cx="950" cy="300" rx="380" ry="330" fill="url(#gR)"/>
+
+  <!-- stars -->
+  <g fill="rgba(255,255,255,0.032)">
+    <circle cx="110" cy="70" r="1.5"/><circle cx="240" cy="55" r="1"/><circle cx="390" cy="90" r="1.5"/><circle cx="530" cy="48" r="1"/><circle cx="680" cy="72" r="1.5"/><circle cx="840" cy="52" r="1"/><circle cx="990" cy="78" r="1.5"/><circle cx="1110" cy="62" r="1"/>
+    <circle cx="60" cy="195" r="1"/><circle cx="190" cy="178" r="1.5"/><circle cx="350" cy="208" r="1"/><circle cx="510" cy="188" r="1.5"/><circle cx="660" cy="172" r="1"/><circle cx="820" cy="198" r="1.5"/><circle cx="980" cy="182" r="1"/><circle cx="1130" cy="208" r="1.5"/>
+  </g>
+
+  <!-- LEFT: Headline -->
+  <rect x="52" y="42" width="166" height="36" rx="18" fill="rgba(167,139,250,0.12)" stroke="rgba(167,139,250,0.3)" stroke-width="1"/>
+  <text x="135" y="65" text-anchor="middle" font-size="13" font-weight="600" fill="#a78bfa">✦ ToolNest AI</text>
+
+  <text x="52" y="148" font-size="60" font-weight="800" fill="url(#aG)" filter="url(#gF)">AI Grammar</text>
+  <text x="52" y="222" font-size="60" font-weight="800" fill="#ffffff">Checker</text>
+  <text x="52" y="268" font-size="16" fill="rgba(255,255,255,0.5)">Fix Grammar, Spelling &amp; Writing</text>
+  <text x="52" y="288" font-size="16" fill="rgba(255,255,255,0.5)">Instantly</text>
+
+  <g font-size="13" fill="rgba(255,255,255,0.62)">
+    <text x="52" y="324">✦  Accurate Corrections</text>
+    <text x="52" y="346">◎  Context-Aware AI</text>
+    <text x="52" y="368">✎  Style Enhancer</text>
+    <text x="52" y="390">✓  100% Secure</text>
+    <text x="52" y="412">≡  Works Everywhere</text>
+  </g>
+
+  <rect x="52" y="440" width="260" height="50" rx="25" fill="url(#bG)" filter="url(#sh)"/>
+  <text x="182" y="471" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">✦ Check Grammar Free</text>
+
+  <!-- stat chips -->
+  <g font-size="11" fill="rgba(255,255,255,0.32)">
+    <text x="52" y="542">∞ Unlimited Checks</text><text x="52" y="557">No daily limits</text>
+    <text x="188" y="542">⏱ Saves Time</text><text x="188" y="557">Instant fixes</text>
+    <text x="298" y="542">✦ Better Writing</text><text x="298" y="557">Write with confidence</text>
+  </g>
+
+  <!-- TOP floating feature icons -->
+  <rect x="512" y="28" width="60" height="60" rx="14" fill="rgba(91,33,182,0.22)" stroke="rgba(91,33,182,0.45)" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="542" y="63" text-anchor="middle" font-size="26" fill="#a78bfa">A✓</text>
+  <text x="542" y="100" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.4)">Grammar Check</text>
+
+  <rect x="630" y="20" width="60" height="60" rx="14" fill="rgba(37,99,235,0.16)" stroke="rgba(96,165,250,0.35)" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="660" y="56" text-anchor="middle" font-size="22" fill="#60a5fa">ABC</text>
+  <text x="660" y="70" text-anchor="middle" font-size="9" fill="#60a5fa">✓</text>
+  <text x="660" y="92" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.4)">Spell Check</text>
+
+  <rect x="752" y="28" width="60" height="60" rx="14" fill="rgba(91,33,182,0.18)" stroke="rgba(167,139,250,0.3)" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="782" y="64" text-anchor="middle" font-size="26" fill="#c4b5fd">✎</text>
+  <text x="782" y="100" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.4)">Style Improve</text>
+
+  <rect x="874" y="20" width="60" height="60" rx="14" fill="rgba(37,99,235,0.14)" stroke="rgba(96,165,250,0.28)" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="904" y="56" text-anchor="middle" font-size="26" fill="#93c5fd">≡</text>
+  <text x="904" y="92" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.4)">Clarity Boost</text>
+
+  <rect x="996" y="28" width="60" height="60" rx="14" fill="rgba(167,139,250,0.12)" stroke="rgba(167,139,250,0.25)" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="1026" y="64" text-anchor="middle" font-size="26" fill="#a78bfa">⚡</text>
+  <text x="1026" y="100" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.4)">Instant Results</text>
+
+  <!-- dashed lines from icons to laptop -->
+  <line x1="542" y1="88" x2="610" y2="148" stroke="rgba(167,139,250,0.18)" stroke-width="1" stroke-dasharray="4 3"/>
+  <line x1="660" y1="80" x2="720" y2="148" stroke="rgba(96,165,250,0.16)" stroke-width="1" stroke-dasharray="4 3"/>
+  <line x1="782" y1="88" x2="820" y2="148" stroke="rgba(167,139,250,0.14)" stroke-width="1" stroke-dasharray="4 3"/>
+
+  <!-- LAPTOP -->
+  <rect x="490" y="148" width="640" height="386" rx="16" fill="url(#lapG)" stroke="rgba(91,33,182,0.4)" stroke-width="2" filter="url(#lapSh)"/>
+  <rect x="490" y="148" width="640" height="6" rx="3" fill="url(#aG)"/>
+  <rect x="504" y="162" width="612" height="360" rx="10" fill="rgba(0,0,0,0.55)" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+
+  <!-- Title bar -->
+  <rect x="504" y="162" width="612" height="38" fill="rgba(255,255,255,0.03)" rx="10"/>
+  <circle cx="526" cy="181" r="5" fill="rgba(239,68,68,0.45)"/>
+  <circle cx="544" cy="181" r="5" fill="rgba(251,191,36,0.45)"/>
+  <circle cx="562" cy="181" r="5" fill="rgba(34,197,94,0.45)"/>
+  <text x="598" y="186" font-size="12" font-weight="600" fill="rgba(255,255,255,0.55)">✦ AI Grammar Checker</text>
+  <rect x="976" y="170" width="124" height="22" rx="11" fill="rgba(34,197,94,0.1)" stroke="rgba(34,197,94,0.28)" stroke-width="1"/>
+  <text x="1038" y="185" text-anchor="middle" font-size="10" fill="#4ade80">✓ 100% Secure</text>
+
+  <!-- "Your Text" panel -->
+  <rect x="516" y="210" width="272" height="216" rx="10" fill="rgba(0,0,0,0.32)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <rect x="528" y="218" width="72" height="22" rx="6" fill="rgba(167,139,250,0.18)" stroke="rgba(167,139,250,0.35)" stroke-width="1"/>
+  <text x="564" y="233" text-anchor="middle" font-size="11" font-weight="600" fill="#c4b5fd">Your Text</text>
+  <!-- text lines with error underlines -->
+  <rect x="528" y="250" width="248" height="8" rx="4" fill="rgba(255,255,255,0.1)"/>
+  <!-- red grammar underline -->
+  <rect x="528" y="256" width="108" height="2" rx="1" fill="rgba(239,68,68,0.8)"/>
+  <rect x="528" y="268" width="220" height="8" rx="4" fill="rgba(255,255,255,0.08)"/>
+  <!-- orange spelling underline -->
+  <rect x="618" y="274" width="72" height="2" rx="1" fill="rgba(251,191,36,0.8)"/>
+  <rect x="528" y="286" width="240" height="8" rx="4" fill="rgba(255,255,255,0.09)"/>
+  <rect x="528" y="304" width="180" height="8" rx="4" fill="rgba(255,255,255,0.07)"/>
+  <!-- red grammar underline -->
+  <rect x="528" y="310" width="90" height="2" rx="1" fill="rgba(239,68,68,0.7)"/>
+  <rect x="528" y="322" width="248" height="8" rx="4" fill="rgba(255,255,255,0.08)"/>
+  <rect x="528" y="340" width="200" height="8" rx="4" fill="rgba(255,255,255,0.07)"/>
+  <rect x="528" y="358" width="230" height="8" rx="4" fill="rgba(255,255,255,0.06)"/>
+  <!-- word count -->
+  <text x="528" y="406" font-size="10" fill="rgba(255,255,255,0.28)">126 Words</text>
+
+  <!-- Issues badge -->
+  <rect x="516" y="430" width="272" height="36" rx="8" fill="rgba(0,0,0,0.3)"/>
+  <text x="528" y="448" font-size="11" font-weight="700" fill="#f87171">3 Issues Found</text>
+  <rect x="640" y="436" width="68" height="20" rx="10" fill="rgba(239,68,68,0.15)" stroke="rgba(239,68,68,0.3)" stroke-width="1"/>
+  <text x="674" y="450" text-anchor="middle" font-size="9" fill="#f87171">Grammar 2</text>
+  <rect x="712" y="436" width="56" height="20" rx="10" fill="rgba(251,191,36,0.15)" stroke="rgba(251,191,36,0.3)" stroke-width="1"/>
+  <text x="740" y="450" text-anchor="middle" font-size="9" fill="#fbbf24">Spelling 1</text>
+  <rect x="770" y="436" width="68" height="20" rx="10" fill="rgba(96,165,250,0.12)" stroke="rgba(96,165,250,0.25)" stroke-width="1"/>
+  <text x="804" y="450" text-anchor="middle" font-size="9" fill="#60a5fa">Punctuation 0</text>
+
+  <!-- Checkmark orb -->
+  <circle cx="808" cy="310" r="34" fill="url(#chkC)" filter="url(#chkGlow)"/>
+  <circle cx="808" cy="310" r="44" fill="none" stroke="rgba(167,139,250,0.22)" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="808" y="318" text-anchor="middle" font-size="22" fill="#fff">✓</text>
+  <text x="840" y="314" font-size="18" fill="rgba(167,139,250,0.6)">»</text>
+
+  <!-- "Corrected Text" panel -->
+  <rect x="852" y="210" width="252" height="216" rx="10" fill="rgba(0,0,0,0.32)" stroke="rgba(167,139,250,0.18)" stroke-width="1.5"/>
+  <rect x="864" y="218" width="98" height="22" rx="6" fill="rgba(34,197,94,0.12)" stroke="rgba(34,197,94,0.28)" stroke-width="1"/>
+  <text x="913" y="233" text-anchor="middle" font-size="11" font-weight="600" fill="#4ade80">Corrected Text</text>
+  <!-- clean green lines -->
+  <rect x="864" y="250" width="228" height="8" rx="4" fill="rgba(34,197,94,0.2)"/>
+  <rect x="864" y="268" width="200" height="8" rx="4" fill="rgba(34,197,94,0.16)"/>
+  <rect x="864" y="286" width="218" height="8" rx="4" fill="rgba(34,197,94,0.14)"/>
+  <rect x="864" y="304" width="168" height="8" rx="4" fill="rgba(34,197,94,0.12)"/>
+  <rect x="864" y="322" width="228" height="8" rx="4" fill="rgba(34,197,94,0.12)"/>
+  <rect x="864" y="340" width="190" height="8" rx="4" fill="rgba(34,197,94,0.1)"/>
+  <rect x="864" y="358" width="210" height="8" rx="4" fill="rgba(34,197,94,0.09)"/>
+  <text x="864" y="406" font-size="10" fill="rgba(255,255,255,0.28)">126 Words</text>
+  <!-- audio + copy icons -->
+  <text x="960" y="430" font-size="14" fill="rgba(167,139,250,0.5)">🔊</text>
+  <text x="984" y="430" font-size="14" fill="rgba(167,139,250,0.5)">⧉</text>
+
+  <!-- Bottom buttons -->
+  <rect x="852" y="432" width="172" height="38" rx="19" fill="url(#bG)" filter="url(#sh)"/>
+  <text x="938" y="456" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">Check Grammar ✦</text>
+  <rect x="1034" y="432" width="90" height="38" rx="19" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="1079" y="456" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.5)">⧉ Copy</text>
+
+  <!-- AI Robot -->
+  <ellipse cx="1128" cy="572" rx="58" ry="14" fill="rgba(91,33,182,0.4)" filter="url(#chkGlow)"/>
+  <rect x="1082" y="424" width="92" height="120" rx="20" fill="#130828" stroke="#7c3aed" stroke-width="2"/>
+  <rect x="1094" y="460" width="68" height="42" rx="10" fill="url(#bG)"/>
+  <text x="1128" y="487" text-anchor="middle" font-size="20" font-weight="800" fill="#fff">AI</text>
+  <rect x="1088" y="348" width="80" height="78" rx="20" fill="#130828" stroke="#7c3aed" stroke-width="2"/>
+  <circle cx="1107" cy="381" r="9" fill="#0e0820"/><circle cx="1149" cy="381" r="9" fill="#0e0820"/>
+  <circle cx="1107" cy="381" r="5.5" fill="#7c3aed"/><circle cx="1149" cy="381" r="5.5" fill="#7c3aed"/>
+  <circle cx="1109" cy="379" r="2.2" fill="white"/><circle cx="1151" cy="379" r="2.2" fill="white"/>
+  <path d="M 1099 398 Q 1128 414 1157 398" stroke="#a78bfa" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <line x1="1128" y1="348" x2="1128" y2="322" stroke="#7c3aed" stroke-width="2.5"/>
+  <circle cx="1128" cy="313" r="7" fill="#a78bfa"/>
+  <rect x="1034" y="447" width="48" height="18" rx="9" fill="#130828" stroke="#7c3aed" stroke-width="1.5"/>
+  <rect x="1174" y="447" width="48" height="18" rx="9" fill="#130828" stroke="#7c3aed" stroke-width="1.5"/>
+  <ellipse cx="1128" cy="546" rx="46" ry="8" fill="rgba(91,33,182,0.45)"/>
+
+  <!-- Bottom stat bar -->
+  <rect x="52" y="593" width="1096" height="26" rx="5" fill="rgba(255,255,255,0.018)"/>
+  <g text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.3)">
+    <text x="190" y="611">∞ Unlimited Checks</text>
+    <text x="390" y="611">⏱ Saves Time</text>
+    <text x="600" y="611">✦ Better Writing</text>
+    <text x="810" y="611">☁ Cloud Based</text>
+    <text x="1020" y="611">🌐 Multi-Platform</text>
+  </g>
+</svg>

@@ -1,0 +1,112 @@
+<svg viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="45%" r="78%"><stop offset="0%" stop-color="#0a0618"/><stop offset="100%" stop-color="#07070f"/></radialGradient>
+    <radialGradient id="gL" cx="50%" cy="50%" r="55%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.32"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gR" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#2563eb" stop-opacity="0.2"/><stop offset="100%" stop-color="#2563eb" stop-opacity="0"/></radialGradient>
+    <radialGradient id="chkC" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4338ca"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="pG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#130b2e" stop-opacity="0.97"/><stop offset="100%" stop-color="#0c0820" stop-opacity="0.97"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="10" stdDeviation="20" flood-color="#5b21b6" flood-opacity="0.42"/></filter>
+    <filter id="chkGlow"><feDropShadow dx="0" dy="0" stdDeviation="16" flood-color="#7c3aed" flood-opacity="0.85"/></filter>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <ellipse cx="200" cy="338" rx="400" ry="360" fill="url(#gL)"/>
+  <ellipse cx="1000" cy="338" rx="380" ry="330" fill="url(#gR)"/>
+  <g fill="rgba(255,255,255,0.03)">
+    <circle cx="80" cy="80" r="1.5"/><circle cx="240" cy="80" r="1.5"/><circle cx="400" cy="80" r="1.5"/><circle cx="560" cy="80" r="1.5"/><circle cx="720" cy="80" r="1.5"/><circle cx="880" cy="80" r="1.5"/><circle cx="1040" cy="80" r="1.5"/><circle cx="1160" cy="80" r="1.5"/>
+    <circle cx="80" cy="240" r="1.5"/><circle cx="240" cy="240" r="1.5"/><circle cx="400" cy="240" r="1.5"/><circle cx="560" cy="240" r="1.5"/><circle cx="720" cy="240" r="1.5"/><circle cx="880" cy="240" r="1.5"/><circle cx="1040" cy="240" r="1.5"/><circle cx="1160" cy="240" r="1.5"/>
+    <circle cx="80" cy="540" r="1.5"/><circle cx="240" cy="540" r="1.5"/><circle cx="400" cy="540" r="1.5"/><circle cx="560" cy="540" r="1.5"/><circle cx="720" cy="540" r="1.5"/><circle cx="880" cy="540" r="1.5"/><circle cx="1040" cy="540" r="1.5"/><circle cx="1160" cy="540" r="1.5"/>
+  </g>
+
+  <rect x="50" y="38" width="172" height="34" rx="17" fill="rgba(167,139,250,0.1)" stroke="rgba(167,139,250,0.25)" stroke-width="1"/>
+  <text x="136" y="60" text-anchor="middle" font-size="13" font-weight="600" fill="#a78bfa">✦ ToolNest AI Blog</text>
+  <text x="600" y="140" text-anchor="middle" font-size="44" font-weight="800" fill="url(#aG)">AI Grammar Checker</text>
+  <text x="600" y="188" text-anchor="middle" font-size="20" fill="rgba(255,255,255,0.46)">Fix Grammar, Spelling &amp; Style — Free, Instantly</text>
+
+  <!-- Left: Your Text panel -->
+  <rect x="50" y="224" width="490" height="330" rx="16" fill="url(#pG)" stroke="rgba(255,255,255,0.07)" stroke-width="1" filter="url(#sh)"/>
+  <rect x="50" y="224" width="490" height="4" rx="2" fill="rgba(255,255,255,0.14)"/>
+  <rect x="68" y="236" width="78" height="24" rx="7" fill="rgba(167,139,250,0.18)" stroke="rgba(167,139,250,0.35)" stroke-width="1"/>
+  <text x="107" y="252" text-anchor="middle" font-size="11" font-weight="600" fill="#c4b5fd">Your Text</text>
+
+  <!-- text lines with colored error underlines -->
+  <rect x="70" y="274" width="460" height="9" rx="4.5" fill="rgba(255,255,255,0.1)"/>
+  <rect x="70" y="281" width="160" height="2" rx="1" fill="rgba(239,68,68,0.85)"/>
+  <rect x="70" y="294" width="420" height="9" rx="4.5" fill="rgba(255,255,255,0.08)"/>
+  <rect x="200" y="301" width="100" height="2" rx="1" fill="rgba(251,191,36,0.85)"/>
+  <rect x="70" y="314" width="440" height="9" rx="4.5" fill="rgba(255,255,255,0.09)"/>
+  <rect x="70" y="334" width="360" height="9" rx="4.5" fill="rgba(255,255,255,0.07)"/>
+  <rect x="70" y="341" width="140" height="2" rx="1" fill="rgba(239,68,68,0.75)"/>
+  <rect x="70" y="354" width="460" height="9" rx="4.5" fill="rgba(255,255,255,0.08)"/>
+  <rect x="70" y="374" width="400" height="9" rx="4.5" fill="rgba(255,255,255,0.07)"/>
+  <rect x="70" y="381" width="80" height="2" rx="1" fill="rgba(96,165,250,0.8)"/>
+  <rect x="70" y="394" width="430" height="9" rx="4.5" fill="rgba(255,255,255,0.06)"/>
+  <rect x="70" y="414" width="380" height="9" rx="4.5" fill="rgba(255,255,255,0.06)"/>
+  <rect x="70" y="434" width="460" height="9" rx="4.5" fill="rgba(255,255,255,0.05)"/>
+
+  <text x="70" y="525" font-size="11" fill="rgba(255,255,255,0.25)">126 Words</text>
+
+  <!-- Issues summary -->
+  <rect x="68" y="535" width="462" height="10" rx="3" fill="rgba(0,0,0,0.2)"/>
+  <text x="70" y="547" font-size="11" font-weight="700" fill="rgba(255,255,255,0.55)">Issues:</text>
+  <rect x="114" y="535" width="68" height="18" rx="9" fill="rgba(239,68,68,0.15)" stroke="rgba(239,68,68,0.3)" stroke-width="1"/>
+  <text x="148" y="548" text-anchor="middle" font-size="9.5" fill="#f87171">Grammar 2</text>
+  <rect x="188" y="535" width="60" height="18" rx="9" fill="rgba(251,191,36,0.15)" stroke="rgba(251,191,36,0.3)" stroke-width="1"/>
+  <text x="218" y="548" text-anchor="middle" font-size="9.5" fill="#fbbf24">Spelling 1</text>
+  <rect x="254" y="535" width="74" height="18" rx="9" fill="rgba(96,165,250,0.12)" stroke="rgba(96,165,250,0.25)" stroke-width="1"/>
+  <text x="291" y="548" text-anchor="middle" font-size="9.5" fill="#60a5fa">Punctuation 0</text>
+
+  <!-- Checkmark orb -->
+  <circle cx="600" cy="392" r="50" fill="url(#chkC)" filter="url(#chkGlow)"/>
+  <circle cx="600" cy="392" r="64" fill="none" stroke="rgba(167,139,250,0.22)" stroke-width="1.5" stroke-dasharray="7 5"/>
+  <circle cx="600" cy="392" r="76" fill="none" stroke="rgba(167,139,250,0.1)" stroke-width="1" stroke-dasharray="4 8"/>
+  <text x="600" y="402" text-anchor="middle" font-size="30" fill="#fff">✓</text>
+  <text x="544" y="396" text-anchor="middle" font-size="20" fill="rgba(167,139,250,0.55)">»</text>
+  <text x="656" y="396" text-anchor="middle" font-size="20" fill="rgba(167,139,250,0.55)">»</text>
+
+  <!-- Right: Corrected Text panel -->
+  <rect x="660" y="224" width="490" height="330" rx="16" fill="url(#pG)" stroke="rgba(34,197,94,0.2)" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="660" y="224" width="490" height="4" rx="2" fill="url(#aG)"/>
+  <rect x="678" y="236" width="106" height="24" rx="7" fill="rgba(34,197,94,0.12)" stroke="rgba(34,197,94,0.28)" stroke-width="1"/>
+  <text x="731" y="252" text-anchor="middle" font-size="11" font-weight="600" fill="#4ade80">Corrected Text</text>
+  <rect x="1094" y="238" width="40" height="16" rx="8" fill="rgba(34,197,94,0.12)" stroke="rgba(34,197,94,0.25)" stroke-width="1"/>
+  <text x="1114" y="250" text-anchor="middle" font-size="8" fill="#4ade80">✓ Fixed</text>
+
+  <!-- clean green lines -->
+  <rect x="678" y="274" width="454" height="9" rx="4.5" fill="rgba(34,197,94,0.18)"/>
+  <rect x="678" y="294" width="420" height="9" rx="4.5" fill="rgba(34,197,94,0.14)"/>
+  <rect x="678" y="314" width="440" height="9" rx="4.5" fill="rgba(34,197,94,0.13)"/>
+  <rect x="678" y="334" width="374" height="9" rx="4.5" fill="rgba(34,197,94,0.11)"/>
+  <rect x="678" y="354" width="454" height="9" rx="4.5" fill="rgba(34,197,94,0.11)"/>
+  <rect x="678" y="374" width="404" height="9" rx="4.5" fill="rgba(34,197,94,0.09)"/>
+  <rect x="678" y="394" width="430" height="9" rx="4.5" fill="rgba(34,197,94,0.09)"/>
+  <rect x="678" y="414" width="380" height="9" rx="4.5" fill="rgba(34,197,94,0.08)"/>
+  <rect x="678" y="434" width="454" height="9" rx="4.5" fill="rgba(34,197,94,0.07)"/>
+  <text x="678" y="525" font-size="11" fill="rgba(255,255,255,0.25)">126 Words</text>
+  <text x="1040" y="525" font-size="14" fill="rgba(167,139,250,0.5)">🔊</text>
+  <text x="1068" y="525" font-size="14" fill="rgba(167,139,250,0.5)">⧉</text>
+
+  <!-- bottom CTA row -->
+  <rect x="50" y="570" width="1100" height="56" rx="12" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <rect x="70" y="583" width="230" height="32" rx="16" fill="url(#bG)" filter="url(#sh)"/>
+  <text x="185" y="604" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">Check Grammar ✦</text>
+  <rect x="310" y="583" width="106" height="32" rx="16" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="363" y="604" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.5)">⧉ Copy</text>
+  <g text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.32)">
+    <text x="650" y="600">∞ Unlimited</text><text x="650" y="616">Checks</text>
+    <text x="790" y="600">⏱ Instant</text><text x="790" y="616">Results</text>
+    <text x="920" y="600">✓ 100%</text><text x="920" y="616">Secure</text>
+    <text x="1060" y="600">🌐 Works</text><text x="1060" y="616">Everywhere</text>
+  </g>
+
+  <!-- floating top icons -->
+  <rect x="636" y="46" width="48" height="48" rx="12" fill="rgba(91,33,182,0.2)" stroke="rgba(91,33,182,0.4)" stroke-width="1.5"/>
+  <text x="660" y="76" text-anchor="middle" font-size="22" fill="#a78bfa">A✓</text>
+  <rect x="742" y="34" width="46" height="46" rx="12" fill="rgba(37,99,235,0.14)" stroke="rgba(96,165,250,0.3)" stroke-width="1.5"/>
+  <text x="765" y="62" text-anchor="middle" font-size="16" fill="#60a5fa">ABC✓</text>
+  <rect x="846" y="44" width="48" height="48" rx="12" fill="rgba(167,139,250,0.1)" stroke="rgba(167,139,250,0.22)" stroke-width="1.5"/>
+  <text x="870" y="74" text-anchor="middle" font-size="22" fill="#c4b5fd">✎</text>
+
+  <text x="600" y="636" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.2)">toolnestai.net — AI Grammar Checker — Free · Instant · No Sign-Up</text>
+</svg>

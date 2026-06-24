@@ -1,0 +1,85 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="75%"><stop offset="0%" stop-color="#0a0618"/><stop offset="100%" stop-color="#07070f"/></radialGradient>
+    <radialGradient id="gL" cx="30%" cy="50%" r="50%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.25"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gR" cx="70%" cy="50%" r="50%"><stop offset="0%" stop-color="#2563eb" stop-opacity="0.16"/><stop offset="100%" stop-color="#2563eb" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="pG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#130b2e" stop-opacity="0.97"/><stop offset="100%" stop-color="#0c0820" stop-opacity="0.97"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#5b21b6" flood-opacity="0.3"/></filter>
+  </defs>
+  <rect width="1200" height="500" fill="url(#bg)"/>
+  <ellipse cx="360" cy="250" rx="500" ry="380" fill="url(#gL)"/>
+  <ellipse cx="840" cy="250" rx="500" ry="380" fill="url(#gR)"/>
+
+  <text x="600" y="52" text-anchor="middle" font-size="13" font-weight="600" fill="#a78bfa" letter-spacing="2">USE CASES</text>
+  <text x="600" y="88" text-anchor="middle" font-size="32" font-weight="800" fill="url(#aG)">Who Benefits from an AI Grammar Checker?</text>
+  <text x="600" y="116" text-anchor="middle" font-size="15" fill="rgba(255,255,255,0.42)">From students to executives — anyone who writes professionally</text>
+
+  <!-- 6 cards, 3 per row -->
+  <!-- Students -->
+  <rect x="40" y="140" width="360" height="148" rx="14" fill="url(#pG)" stroke="url(#aG)" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="40" y="140" width="360" height="4" rx="2" fill="url(#aG)"/>
+  <rect x="60" y="160" width="44" height="44" rx="10" fill="rgba(167,139,250,0.12)" stroke="rgba(167,139,250,0.22)" stroke-width="1"/>
+  <text x="82" y="188" text-anchor="middle" font-size="22" fill="#a78bfa">🎓</text>
+  <text x="116" y="178" font-size="15" font-weight="700" fill="#f0e8ff">Students</text>
+  <text x="116" y="196" font-size="11" fill="rgba(167,139,250,0.65)">Essays · Theses · Reports</text>
+  <text x="60" y="224" font-size="12" fill="rgba(255,255,255,0.52)">Catch errors before submission.</text>
+  <text x="60" y="241" font-size="12" fill="rgba(255,255,255,0.52)">Improve academic writing clarity.</text>
+  <text x="60" y="258" font-size="12" fill="rgba(255,255,255,0.52)">Learn from corrections over time.</text>
+
+  <!-- Writers -->
+  <rect x="420" y="140" width="360" height="148" rx="14" fill="url(#pG)" stroke="rgba(96,165,250,0.2)" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="420" y="140" width="360" height="4" rx="2" fill="rgba(96,165,250,0.5)"/>
+  <rect x="440" y="160" width="44" height="44" rx="10" fill="rgba(96,165,250,0.1)" stroke="rgba(96,165,250,0.2)" stroke-width="1"/>
+  <text x="462" y="188" text-anchor="middle" font-size="22" fill="#60a5fa">✎</text>
+  <text x="496" y="178" font-size="15" font-weight="700" fill="#f0e8ff">Writers &amp; Bloggers</text>
+  <text x="496" y="196" font-size="11" fill="rgba(96,165,250,0.65)">Articles · Posts · Books</text>
+  <text x="440" y="224" font-size="12" fill="rgba(255,255,255,0.52)">Polish drafts before publishing.</text>
+  <text x="440" y="241" font-size="12" fill="rgba(255,255,255,0.52)">Improve style and readability.</text>
+  <text x="440" y="258" font-size="12" fill="rgba(255,255,255,0.52)">Maintain consistent voice.</text>
+
+  <!-- Professionals -->
+  <rect x="800" y="140" width="360" height="148" rx="14" fill="url(#pG)" stroke="rgba(244,114,182,0.18)" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="800" y="140" width="360" height="4" rx="2" fill="rgba(244,114,182,0.45)"/>
+  <rect x="820" y="160" width="44" height="44" rx="10" fill="rgba(244,114,182,0.08)" stroke="rgba(244,114,182,0.18)" stroke-width="1"/>
+  <text x="842" y="188" text-anchor="middle" font-size="22" fill="#f472b6">💼</text>
+  <text x="876" y="178" font-size="15" font-weight="700" fill="#f0e8ff">Business Professionals</text>
+  <text x="876" y="196" font-size="11" fill="rgba(244,114,182,0.65)">Emails · Proposals · Reports</text>
+  <text x="820" y="224" font-size="12" fill="rgba(255,255,255,0.52)">Send error-free client emails.</text>
+  <text x="820" y="241" font-size="12" fill="rgba(255,255,255,0.52)">Professional proposals every time.</text>
+  <text x="820" y="258" font-size="12" fill="rgba(255,255,255,0.52)">Protect brand reputation.</text>
+
+  <!-- Non-native speakers -->
+  <rect x="40" y="304" width="360" height="148" rx="14" fill="url(#pG)" stroke="rgba(34,197,94,0.16)" stroke-width="1" filter="url(#sh)"/>
+  <rect x="40" y="304" width="360" height="4" rx="2" fill="rgba(34,197,94,0.45)"/>
+  <rect x="60" y="320" width="44" height="44" rx="10" fill="rgba(34,197,94,0.08)" stroke="rgba(34,197,94,0.18)" stroke-width="1"/>
+  <text x="82" y="348" text-anchor="middle" font-size="22" fill="#22c55e">🌐</text>
+  <text x="116" y="338" font-size="15" font-weight="700" fill="#f0e8ff">Non-Native Speakers</text>
+  <text x="116" y="356" font-size="11" fill="rgba(34,197,94,0.65)">ESL · International business</text>
+  <text x="60" y="384" font-size="12" fill="rgba(255,255,255,0.52)">Write confidently in English.</text>
+  <text x="60" y="401" font-size="12" fill="rgba(255,255,255,0.52)">Fix language-specific errors.</text>
+  <text x="60" y="418" font-size="12" fill="rgba(255,255,255,0.52)">Sound like a native speaker.</text>
+
+  <!-- Marketers -->
+  <rect x="420" y="304" width="360" height="148" rx="14" fill="url(#pG)" stroke="rgba(251,191,36,0.16)" stroke-width="1" filter="url(#sh)"/>
+  <rect x="420" y="304" width="360" height="4" rx="2" fill="rgba(251,191,36,0.45)"/>
+  <rect x="440" y="320" width="44" height="44" rx="10" fill="rgba(251,191,36,0.08)" stroke="rgba(251,191,36,0.18)" stroke-width="1"/>
+  <text x="462" y="348" text-anchor="middle" font-size="22" fill="#fbbf24">📢</text>
+  <text x="496" y="338" font-size="15" font-weight="700" fill="#f0e8ff">Marketers &amp; Copywriters</text>
+  <text x="496" y="356" font-size="11" fill="rgba(251,191,36,0.65)">Ads · Landing pages · Social</text>
+  <text x="440" y="384" font-size="12" fill="rgba(255,255,255,0.52)">Error-free ad and landing copy.</text>
+  <text x="440" y="401" font-size="12" fill="rgba(255,255,255,0.52)">Improve conversion with clarity.</text>
+  <text x="440" y="418" font-size="12" fill="rgba(255,255,255,0.52)">Style-check all brand content.</text>
+
+  <!-- Developers / Tech -->
+  <rect x="800" y="304" width="360" height="148" rx="14" fill="url(#pG)" stroke="rgba(167,139,250,0.14)" stroke-width="1" filter="url(#sh)"/>
+  <rect x="800" y="304" width="360" height="4" rx="2" fill="rgba(167,139,250,0.4)"/>
+  <rect x="820" y="320" width="44" height="44" rx="10" fill="rgba(167,139,250,0.08)" stroke="rgba(167,139,250,0.18)" stroke-width="1"/>
+  <text x="842" y="348" text-anchor="middle" font-size="22" fill="#c4b5fd">⚙</text>
+  <text x="876" y="338" font-size="15" font-weight="700" fill="#f0e8ff">Developers &amp; Technical Writers</text>
+  <text x="876" y="356" font-size="11" fill="rgba(167,139,250,0.65)">Docs · READMEs · PR text</text>
+  <text x="820" y="384" font-size="12" fill="rgba(255,255,255,0.52)">Clean documentation fast.</text>
+  <text x="820" y="401" font-size="12" fill="rgba(255,255,255,0.52)">Polished commit and PR messages.</text>
+  <text x="820" y="418" font-size="12" fill="rgba(255,255,255,0.52)">Technical clarity without errors.</text>
+</svg>
