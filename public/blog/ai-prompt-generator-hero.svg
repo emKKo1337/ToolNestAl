@@ -1,0 +1,125 @@
+<svg viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="45%" r="75%"><stop offset="0%" stop-color="#0d0520"/><stop offset="100%" stop-color="#07070f"/></radialGradient>
+    <radialGradient id="gL" cx="25%" cy="50%" r="55%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.32"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gR" cx="75%" cy="50%" r="50%"><stop offset="0%" stop-color="#2563eb" stop-opacity="0.2"/><stop offset="100%" stop-color="#2563eb" stop-opacity="0"/></radialGradient>
+    <radialGradient id="orbG" cx="50%" cy="40%" r="60%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#6d28d9"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="lapG" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#1a1135"/><stop offset="100%" stop-color="#0d0a1e"/></linearGradient>
+    <linearGradient id="hL" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed" stop-opacity="0.9"/><stop offset="100%" stop-color="#60a5fa" stop-opacity="0.8"/></linearGradient>
+    <linearGradient id="hL2" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#818cf8" stop-opacity="0.85"/><stop offset="100%" stop-color="#60a5fa" stop-opacity="0.75"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="10" stdDeviation="22" flood-color="#5b21b6" flood-opacity="0.5"/></filter>
+    <filter id="glow"><feDropShadow dx="0" dy="0" stdDeviation="12" flood-color="#a78bfa" flood-opacity="0.7"/></filter>
+    <filter id="gF"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <ellipse cx="300" cy="337" rx="580" ry="420" fill="url(#gL)"/>
+  <ellipse cx="900" cy="337" rx="520" ry="380" fill="url(#gR)"/>
+
+  <!-- Floating feature icons -->
+  <g>
+    <rect x="170" y="22" width="130" height="52" rx="12" fill="rgba(167,139,250,0.1)" stroke="rgba(167,139,250,0.22)" stroke-width="1"/>
+    <text x="235" y="44" text-anchor="middle" font-size="18">✦</text>
+    <text x="235" y="64" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.55)">Smart Generation</text>
+
+    <rect x="318" y="22" width="130" height="52" rx="12" fill="rgba(167,139,250,0.08)" stroke="rgba(167,139,250,0.18)" stroke-width="1"/>
+    <text x="383" y="44" text-anchor="middle" font-size="18">🎯</text>
+    <text x="383" y="64" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.5)">Precise &amp; Clear</text>
+
+    <rect x="466" y="22" width="130" height="52" rx="12" fill="rgba(167,139,250,0.08)" stroke="rgba(167,139,250,0.18)" stroke-width="1"/>
+    <text x="531" y="44" text-anchor="middle" font-size="18">📈</text>
+    <text x="531" y="64" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.5)">Better Results</text>
+
+    <rect x="614" y="22" width="130" height="52" rx="12" fill="rgba(167,139,250,0.08)" stroke="rgba(167,139,250,0.18)" stroke-width="1"/>
+    <text x="679" y="44" text-anchor="middle" font-size="18">📋</text>
+    <text x="679" y="64" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.5)">Multi-Purpose</text>
+
+    <rect x="762" y="22" width="130" height="52" rx="12" fill="rgba(167,139,250,0.08)" stroke="rgba(167,139,250,0.18)" stroke-width="1"/>
+    <text x="827" y="44" text-anchor="middle" font-size="18">⚡</text>
+    <text x="827" y="64" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.5)">Instant Output</text>
+  </g>
+
+  <text x="600" y="130" text-anchor="middle" font-size="40" font-weight="800" fill="url(#aG)" filter="url(#gF)">AI Prompt Generator</text>
+  <text x="600" y="164" text-anchor="middle" font-size="17" fill="rgba(255,255,255,0.5)">Generate high-quality prompts for ChatGPT, Claude &amp; Gemini in seconds</text>
+
+  <!-- Main laptop frame -->
+  <rect x="72" y="190" width="1056" height="420" rx="20" fill="url(#lapG)" stroke="rgba(167,139,250,0.2)" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="72" y="190" width="1056" height="34" rx="20" fill="rgba(167,139,250,0.07)"/>
+  <circle cx="96" cy="207" r="6" fill="rgba(239,68,68,0.5)"/>
+  <circle cx="116" cy="207" r="6" fill="rgba(251,191,36,0.5)"/>
+  <circle cx="136" cy="207" r="6" fill="rgba(34,197,94,0.5)"/>
+  <text x="600" y="212" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.22)">✦ AI Prompt Generator — toolnestai.net</text>
+  <rect x="1000" y="196" width="106" height="22" rx="11" fill="rgba(34,197,94,0.1)" stroke="rgba(34,197,94,0.3)" stroke-width="1"/>
+  <text x="1053" y="211" text-anchor="middle" font-size="10" fill="#4ade80">🛡 100% Secure</text>
+
+  <!-- Left panel: Your Requirements -->
+  <rect x="96" y="238" width="456" height="330" rx="14" fill="rgba(8,4,20,0.85)" stroke="rgba(167,139,250,0.16)" stroke-width="1"/>
+  <rect x="114" y="254" width="136" height="24" rx="12" fill="rgba(167,139,250,0.22)" stroke="rgba(167,139,250,0.4)" stroke-width="1"/>
+  <text x="182" y="270" text-anchor="middle" font-size="12" font-weight="600" fill="#c4b5fd">Your Requirements</text>
+
+  <!-- Textarea -->
+  <rect x="114" y="288" width="422" height="148" rx="10" fill="rgba(167,139,250,0.05)" stroke="rgba(167,139,250,0.1)" stroke-width="1"/>
+  <text x="130" y="316" font-size="12" fill="rgba(255,255,255,0.2)">Describe what you want the AI to do...</text>
+  <text x="524" y="428" font-size="11" text-anchor="end" fill="rgba(255,255,255,0.18)">0 / 1000</text>
+
+  <!-- AI Model selection -->
+  <text x="114" y="458" font-size="11" fill="rgba(255,255,255,0.38)">Choose AI Model</text>
+  <rect x="114" y="466" width="84" height="26" rx="8" fill="rgba(16,185,129,0.2)" stroke="rgba(16,185,129,0.4)" stroke-width="1"/>
+  <text x="156" y="483" text-anchor="middle" font-size="11" font-weight="600" fill="#34d399">⊕ ChatGPT</text>
+  <rect x="206" y="466" width="72" height="26" rx="8" fill="rgba(96,165,250,0.14)" stroke="rgba(96,165,250,0.3)" stroke-width="1"/>
+  <text x="242" y="483" text-anchor="middle" font-size="11" fill="#60a5fa">≡ Claude</text>
+  <rect x="286" y="466" width="80" height="26" rx="8" fill="rgba(167,139,250,0.1)" stroke="rgba(167,139,250,0.25)" stroke-width="1"/>
+  <text x="326" y="483" text-anchor="middle" font-size="11" fill="#a78bfa">✦ Gemini</text>
+
+  <!-- Tone selection -->
+  <text x="114" y="514" font-size="11" fill="rgba(255,255,255,0.38)">Choose Tone</text>
+  <rect x="114" y="522" width="96" height="26" rx="8" fill="url(#bG)"/>
+  <text x="162" y="539" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">👤 Professional</text>
+  <rect x="218" y="522" width="68" height="26" rx="8" fill="rgba(167,139,250,0.08)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+  <text x="252" y="539" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.5)">😊 Friendly</text>
+  <rect x="294" y="522" width="68" height="26" rx="8" fill="rgba(167,139,250,0.06)" stroke="rgba(167,139,250,0.15)" stroke-width="1"/>
+  <text x="328" y="539" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.45)">💡 Creative</text>
+  <rect x="370" y="522" width="76" height="26" rx="8" fill="rgba(167,139,250,0.06)" stroke="rgba(167,139,250,0.15)" stroke-width="1"/>
+  <text x="408" y="539" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.4)">&lt;/&gt; Technical</text>
+
+  <!-- Center orb -->
+  <circle cx="598" cy="404" r="56" fill="rgba(109,40,217,0.12)" stroke="rgba(167,139,250,0.18)" stroke-width="1" stroke-dasharray="5,5"/>
+  <circle cx="598" cy="404" r="42" fill="url(#orbG)" filter="url(#glow)"/>
+  <text x="598" y="412" text-anchor="middle" font-size="26">✦</text>
+  <text x="646" y="409" font-size="18" fill="rgba(167,139,250,0.7)">&gt;&gt;</text>
+
+  <!-- Right panel: Generated Prompt -->
+  <rect x="648" y="238" width="462" height="330" rx="14" fill="rgba(8,4,20,0.85)" stroke="rgba(96,165,250,0.18)" stroke-width="1"/>
+  <rect x="664" y="254" width="124" height="24" rx="12" fill="rgba(124,58,237,0.35)" stroke="rgba(124,58,237,0.5)" stroke-width="1"/>
+  <text x="726" y="270" text-anchor="middle" font-size="12" font-weight="600" fill="#c4b5fd">Generated Prompt</text>
+  <rect x="664" y="290" width="430" height="11" rx="5.5" fill="url(#hL)"/>
+  <rect x="664" y="309" width="390" height="11" rx="5.5" fill="url(#hL2)"/>
+  <rect x="664" y="328" width="415" height="11" rx="5.5" fill="url(#hL)"/>
+  <rect x="664" y="347" width="368" height="11" rx="5.5" fill="url(#hL2)"/>
+  <rect x="664" y="366" width="430" height="11" rx="5.5" fill="url(#hL)"/>
+  <rect x="664" y="385" width="345" height="11" rx="5.5" fill="url(#hL2)"/>
+  <rect x="664" y="404" width="405" height="11" rx="5.5" fill="url(#hL)"/>
+  <rect x="664" y="423" width="380" height="11" rx="5.5" fill="url(#hL2)"/>
+  <rect x="664" y="442" width="430" height="11" rx="5.5" fill="url(#hL)"/>
+  <rect x="664" y="461" width="315" height="11" rx="5.5" fill="url(#hL2)"/>
+  <rect x="664" y="480" width="395" height="11" rx="5.5" fill="url(#hL)"/>
+  <rect x="1060" y="520" width="28" height="28" rx="7" fill="rgba(167,139,250,0.12)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+  <text x="1074" y="538" text-anchor="middle" font-size="14" fill="#a78bfa">⎘</text>
+
+  <!-- Bottom row -->
+  <text x="96" y="592" font-size="12" fill="rgba(255,255,255,0.35)">Choose Length</text>
+  <rect x="96" y="600" width="62" height="30" rx="10" fill="url(#bG)"/>
+  <text x="127" y="619" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">Short</text>
+  <rect x="166" y="600" width="72" height="30" rx="10" fill="rgba(167,139,250,0.1)" stroke="rgba(167,139,250,0.25)" stroke-width="1"/>
+  <text x="202" y="619" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.5)">Medium</text>
+  <rect x="246" y="600" width="58" height="30" rx="10" fill="rgba(167,139,250,0.07)" stroke="rgba(167,139,250,0.18)" stroke-width="1"/>
+  <text x="275" y="619" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.45)">Long</text>
+  <rect x="312" y="600" width="72" height="30" rx="10" fill="rgba(167,139,250,0.07)" stroke="rgba(167,139,250,0.18)" stroke-width="1"/>
+  <text x="348" y="619" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.4)">Detailed</text>
+  <rect x="818" y="596" width="230" height="38" rx="19" fill="url(#bG)" filter="url(#sh)"/>
+  <text x="933" y="619" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">Generate Prompt ✦</text>
+  <rect x="1060" y="596" width="66" height="38" rx="19" fill="rgba(167,139,250,0.12)" stroke="rgba(167,139,250,0.28)" stroke-width="1"/>
+  <text x="1093" y="619" text-anchor="middle" font-size="12" fill="#a78bfa">⎘ Copy</text>
+</svg>
