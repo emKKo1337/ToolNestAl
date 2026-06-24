@@ -1,0 +1,210 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0d0520"/><stop offset="100%" stop-color="#07070f"/></radialGradient>
+    <radialGradient id="gL" cx="15%" cy="50%" r="60%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.42"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gR" cx="88%" cy="50%" r="48%"><stop offset="0%" stop-color="#1d4ed8" stop-opacity="0.28"/><stop offset="100%" stop-color="#1d4ed8" stop-opacity="0"/></radialGradient>
+    <radialGradient id="cityG" cx="50%" cy="70%" r="80%"><stop offset="0%" stop-color="#7c2d12"/><stop offset="40%" stop-color="#9333ea" stop-opacity="0.8"/><stop offset="100%" stop-color="#0f0a1e" stop-opacity="0.95"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="lapG" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#1a1135"/><stop offset="100%" stop-color="#0d0a1e"/></linearGradient>
+    <linearGradient id="sunG" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#f97316" stop-opacity="0.9"/><stop offset="50%" stop-color="#9333ea" stop-opacity="0.7"/><stop offset="100%" stop-color="#1e0a3c" stop-opacity="0.95"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="10" stdDeviation="22" flood-color="#5b21b6" flood-opacity="0.5"/></filter>
+    <filter id="gF"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="imgGlow"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <ellipse cx="160" cy="315" rx="540" ry="400" fill="url(#gL)"/>
+  <ellipse cx="1060" cy="315" rx="480" ry="360" fill="url(#gR)"/>
+
+  <!-- Top floating icons -->
+  <g opacity="0.82">
+    <rect x="338" y="24" width="110" height="56" rx="14" fill="rgba(124,58,237,0.16)" stroke="rgba(167,139,250,0.3)" stroke-width="1"/>
+    <text x="393" y="48" text-anchor="middle" font-size="20" fill="#a78bfa">T+</text>
+    <text x="393" y="70" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.52)">Text to Image</text>
+    <rect x="458" y="24" width="110" height="56" rx="14" fill="rgba(124,58,237,0.1)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+    <text x="513" y="46" text-anchor="middle" font-size="14" font-weight="800" fill="#60a5fa">HD</text>
+    <text x="513" y="70" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.52)">High Quality</text>
+    <rect x="578" y="24" width="110" height="56" rx="14" fill="rgba(124,58,237,0.1)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+    <text x="633" y="48" text-anchor="middle" font-size="18">🎨</text>
+    <text x="633" y="70" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.52)">Multiple Styles</text>
+    <rect x="698" y="24" width="110" height="56" rx="14" fill="rgba(124,58,237,0.1)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+    <text x="753" y="48" text-anchor="middle" font-size="18">⚙</text>
+    <text x="753" y="70" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.52)">Custom Settings</text>
+    <rect x="818" y="24" width="110" height="56" rx="14" fill="rgba(124,58,237,0.1)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+    <text x="873" y="48" text-anchor="middle" font-size="18">⚡</text>
+    <text x="873" y="70" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.52)">Instant Results</text>
+    <rect x="938" y="24" width="120" height="56" rx="14" fill="rgba(124,58,237,0.1)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+    <text x="998" y="48" text-anchor="middle" font-size="18">⬇</text>
+    <text x="998" y="70" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.52)">Download &amp; Share</text>
+  </g>
+
+  <!-- ToolNest badge -->
+  <rect x="36" y="24" width="168" height="38" rx="10" fill="rgba(167,139,250,0.1)" stroke="rgba(167,139,250,0.25)" stroke-width="1"/>
+  <text x="54" y="44" font-size="14" font-weight="700" fill="#a78bfa">✦ ToolNest AI</text>
+  <text x="54" y="58" font-size="9" fill="rgba(255,255,255,0.38)">All-in-One AI &amp; Online Tools</text>
+
+  <!-- Left headline -->
+  <text x="36" y="148" font-size="52" font-weight="900" fill="url(#aG)" filter="url(#gF)">AI Image</text>
+  <text x="36" y="200" font-size="52" font-weight="900" fill="rgba(255,255,255,0.95)">Generator</text>
+  <text x="36" y="240" font-size="18" font-weight="700" fill="rgba(255,255,255,0.78)">Create Stunning AI Images</text>
+  <text x="36" y="262" font-size="18" font-weight="700" fill="rgba(255,255,255,0.78)">in Seconds</text>
+  <text x="36" y="294" font-size="12" fill="rgba(255,255,255,0.44)">Turn your ideas into breathtaking visuals.</text>
+  <text x="36" y="312" font-size="12" fill="rgba(255,255,255,0.44)">Describe what you imagine and let AI bring it to life.</text>
+
+  <!-- Feature list -->
+  <g font-size="11">
+    <rect x="36" y="330" width="26" height="26" rx="7" fill="rgba(124,58,237,0.25)" stroke="rgba(167,139,250,0.3)" stroke-width="1"/>
+    <text x="49" y="347" text-anchor="middle" font-size="12" fill="#a78bfa">T+</text>
+    <text x="70" y="341" font-weight="700" fill="rgba(255,255,255,0.85)">Text to Image AI</text>
+    <text x="70" y="355" fill="rgba(255,255,255,0.4)">Generate images from simple text prompts</text>
+    <rect x="36" y="366" width="26" height="26" rx="7" fill="rgba(96,165,250,0.14)" stroke="rgba(96,165,250,0.25)" stroke-width="1"/>
+    <text x="49" y="382" text-anchor="middle" font-size="10" font-weight="700" fill="#60a5fa">HD</text>
+    <text x="70" y="377" font-weight="700" fill="rgba(255,255,255,0.85)">High-Quality Output</text>
+    <text x="70" y="391" fill="rgba(255,255,255,0.4)">Get stunning, detailed and sharp images</text>
+    <rect x="36" y="402" width="26" height="26" rx="7" fill="rgba(167,139,250,0.14)" stroke="rgba(167,139,250,0.25)" stroke-width="1"/>
+    <text x="49" y="418" text-anchor="middle">🎨</text>
+    <text x="70" y="413" font-weight="700" fill="rgba(255,255,255,0.85)">Multiple Art Styles</text>
+    <text x="70" y="427" fill="rgba(255,255,255,0.4)">Realistic, anime, 3D, cyberpunk &amp; more</text>
+    <rect x="36" y="438" width="26" height="26" rx="7" fill="rgba(124,58,237,0.14)" stroke="rgba(124,58,237,0.25)" stroke-width="1"/>
+    <text x="49" y="454" text-anchor="middle">⚙</text>
+    <text x="70" y="449" font-weight="700" fill="rgba(255,255,255,0.85)">Custom Settings</text>
+    <text x="70" y="463" fill="rgba(255,255,255,0.4)">Adjust aspect ratio, size, style and more</text>
+    <rect x="36" y="474" width="26" height="26" rx="7" fill="rgba(251,191,36,0.12)" stroke="rgba(251,191,36,0.22)" stroke-width="1"/>
+    <text x="49" y="490" text-anchor="middle">⚡</text>
+    <text x="70" y="485" font-weight="700" fill="rgba(255,255,255,0.85)">Instant Generation</text>
+    <text x="70" y="499" fill="rgba(255,255,255,0.4)">Create images in seconds, not minutes</text>
+    <rect x="36" y="510" width="26" height="26" rx="7" fill="rgba(34,197,94,0.12)" stroke="rgba(34,197,94,0.22)" stroke-width="1"/>
+    <text x="49" y="526" text-anchor="middle">⬇</text>
+    <text x="70" y="521" font-weight="700" fill="rgba(255,255,255,0.85)">Download &amp; Share</text>
+    <text x="70" y="535" fill="rgba(255,255,255,0.4)">Download high-res images and share anywhere</text>
+  </g>
+
+  <!-- Laptop mockup -->
+  <rect x="320" y="92" width="720" height="472" rx="20" fill="url(#lapG)" stroke="rgba(167,139,250,0.22)" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="320" y="92" width="720" height="32" rx="20" fill="rgba(167,139,250,0.07)"/>
+  <circle cx="344" cy="108" r="6" fill="rgba(239,68,68,0.5)"/>
+  <circle cx="363" cy="108" r="6" fill="rgba(251,191,36,0.5)"/>
+  <circle cx="382" cy="108" r="6" fill="rgba(34,197,94,0.5)"/>
+  <text x="680" y="114" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.22)">🖼 AI Image Generator — ToolNest AI</text>
+  <!-- 100% Secure badge -->
+  <rect x="948" y="96" width="82" height="22" rx="11" fill="rgba(34,197,94,0.12)" stroke="rgba(34,197,94,0.28)" stroke-width="1"/>
+  <text x="989" y="111" text-anchor="middle" font-size="9" fill="rgba(34,197,94,0.85)">🛡 100% Secure</text>
+
+  <!-- App title bar -->
+  <rect x="320" y="124" width="720" height="36" fill="rgba(16,8,40,0.9)"/>
+  <text x="348" y="147" font-size="13" font-weight="700" fill="rgba(255,255,255,0.72)">🖼 AI Image Generator</text>
+
+  <!-- Left panel: Prompt + controls -->
+  <rect x="320" y="160" width="320" height="404" fill="rgba(10,5,28,0.95)"/>
+  <!-- Prompt tab -->
+  <rect x="335" y="170" width="56" height="22" rx="5" fill="url(#bG)"/>
+  <text x="363" y="184" text-anchor="middle" font-size="10" font-weight="600" fill="#fff">Prompt</text>
+  <!-- Prompt textarea -->
+  <rect x="335" y="200" width="290" height="76" rx="8" fill="rgba(30,16,60,0.75)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+  <text x="348" y="218" font-size="10" fill="rgba(255,255,255,0.65)">A futuristic city skyline at sunset,</text>
+  <text x="348" y="233" font-size="10" fill="rgba(255,255,255,0.65)">neon lights, flying cars, ultra detailed,</text>
+  <text x="348" y="248" font-size="10" fill="rgba(255,255,255,0.65)">cinematic lighting, 8k</text>
+  <text x="560" y="268" text-anchor="end" font-size="9" fill="rgba(255,255,255,0.25)">87 / 1000</text>
+
+  <!-- Choose Style -->
+  <text x="335" y="296" font-size="11" font-weight="600" fill="rgba(255,255,255,0.65)">Choose Style</text>
+  <rect x="335" y="302" width="64" height="22" rx="5" fill="url(#bG)"/>
+  <text x="367" y="316" text-anchor="middle" font-size="10" font-weight="600" fill="#fff">Realistic</text>
+  <rect x="406" y="302" width="48" height="22" rx="5" fill="rgba(167,139,250,0.08)" stroke="rgba(167,139,250,0.18)" stroke-width="1"/>
+  <text x="430" y="316" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.55)">Anime</text>
+  <rect x="461" y="302" width="60" height="22" rx="5" fill="rgba(167,139,250,0.08)" stroke="rgba(167,139,250,0.18)" stroke-width="1"/>
+  <text x="491" y="316" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.55)">3D Render</text>
+  <rect x="528" y="302" width="62" height="22" rx="5" fill="rgba(167,139,250,0.08)" stroke="rgba(167,139,250,0.18)" stroke-width="1"/>
+  <text x="559" y="316" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.55)">Cyberpunk</text>
+  <rect x="335" y="330" width="62" height="22" rx="5" fill="rgba(167,139,250,0.06)" stroke="rgba(167,139,250,0.14)" stroke-width="1"/>
+  <text x="366" y="344" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.45)">Digital Art</text>
+  <rect x="404" y="330" width="52" height="22" rx="5" fill="rgba(167,139,250,0.06)" stroke="rgba(167,139,250,0.14)" stroke-width="1"/>
+  <text x="430" y="344" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.45)">Fantasy</text>
+  <rect x="463" y="330" width="64" height="22" rx="5" fill="rgba(167,139,250,0.06)" stroke="rgba(167,139,250,0.14)" stroke-width="1"/>
+  <text x="495" y="344" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.45)">Minimalist</text>
+  <rect x="534" y="330" width="56" height="22" rx="5" fill="rgba(167,139,250,0.06)" stroke="rgba(167,139,250,0.14)" stroke-width="1"/>
+  <text x="562" y="344" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.45)">Painting</text>
+
+  <!-- Aspect Ratio -->
+  <text x="335" y="368" font-size="11" font-weight="600" fill="rgba(255,255,255,0.65)">Aspect Ratio</text>
+  <rect x="335" y="374" width="38" height="22" rx="5" fill="rgba(167,139,250,0.08)" stroke="rgba(167,139,250,0.18)" stroke-width="1"/>
+  <text x="354" y="388" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.55)">1:1</text>
+  <rect x="380" y="374" width="44" height="22" rx="5" fill="url(#bG)"/>
+  <text x="402" y="388" text-anchor="middle" font-size="9" font-weight="700" fill="#fff">16:9</text>
+  <rect x="431" y="374" width="40" height="22" rx="5" fill="rgba(167,139,250,0.06)" stroke="rgba(167,139,250,0.14)" stroke-width="1"/>
+  <text x="451" y="388" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.45)">9:16</text>
+  <rect x="478" y="374" width="38" height="22" rx="5" fill="rgba(167,139,250,0.06)" stroke="rgba(167,139,250,0.14)" stroke-width="1"/>
+  <text x="497" y="388" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.45)">4:3</text>
+  <rect x="523" y="374" width="52" height="22" rx="5" fill="rgba(167,139,250,0.06)" stroke="rgba(167,139,250,0.14)" stroke-width="1"/>
+  <text x="549" y="388" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.45)">Custom</text>
+
+  <!-- Advanced Settings -->
+  <rect x="335" y="408" width="290" height="28" rx="7" fill="rgba(167,139,250,0.05)" stroke="rgba(167,139,250,0.12)" stroke-width="1"/>
+  <text x="355" y="426" font-size="10" fill="rgba(255,255,255,0.45)">☑ Advanced Settings</text>
+  <text x="616" y="426" text-anchor="end" font-size="12" fill="rgba(255,255,255,0.35)">∨</text>
+
+  <!-- Generate button -->
+  <rect x="335" y="448" width="290" height="36" rx="10" fill="url(#bG)" filter="url(#sh)"/>
+  <text x="480" y="470" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">Generate Image ✨</text>
+
+  <!-- Right panel: Generated Image -->
+  <rect x="640" y="160" width="400" height="404" fill="rgba(8,4,20,0.95)"/>
+  <rect x="655" y="168" width="100" height="20" rx="6" fill="rgba(124,58,237,0.35)" stroke="rgba(167,139,250,0.3)" stroke-width="1"/>
+  <text x="705" y="181" text-anchor="middle" font-size="9" font-weight="600" fill="#c4b5fd">Generated Image</text>
+
+  <!-- Generated image area (futuristic city) -->
+  <rect x="645" y="194" width="400" height="280" rx="10" fill="url(#sunG)"/>
+  <!-- City skyline silhouette -->
+  <rect x="645" y="380" width="400" height="94" fill="#0a0318" opacity="0.7"/>
+  <!-- Buildings -->
+  <rect x="655" y="340" width="18" height="134" fill="#0a0520" opacity="0.85"/>
+  <rect x="678" y="310" width="24" height="164" fill="#0d0626" opacity="0.85"/>
+  <rect x="707" y="330" width="16" height="144" fill="#0a0520" opacity="0.8"/>
+  <rect x="730" y="295" width="28" height="179" fill="#0f0730" opacity="0.85"/>
+  <rect x="763" y="318" width="20" height="156" fill="#0a0520" opacity="0.8"/>
+  <rect x="788" y="300" width="22" height="174" fill="#0d0626" opacity="0.85"/>
+  <rect x="815" y="280" width="30" height="194" fill="#0f0730" opacity="0.88"/>
+  <rect x="850" y="310" width="18" height="164" fill="#0a0520" opacity="0.8"/>
+  <rect x="873" y="325" width="24" height="149" fill="#0d0626" opacity="0.82"/>
+  <rect x="902" y="298" width="20" height="176" fill="#0a0520" opacity="0.8"/>
+  <rect x="927" y="315" width="26" height="159" fill="#0d0626" opacity="0.83"/>
+  <rect x="958" y="290" width="22" height="184" fill="#0f0730" opacity="0.85"/>
+  <rect x="985" y="310" width="16" height="164" fill="#0a0520" opacity="0.8"/>
+  <rect x="1006" y="325" width="20" height="149" fill="#0d0626" opacity="0.82"/>
+  <rect x="1031" y="305" width="14" height="169" fill="#0a0520" opacity="0.78"/>
+  <!-- Neon windows -->
+  <rect x="684" y="320" width="4" height="4" rx="1" fill="#f97316" opacity="0.7"/>
+  <rect x="692" y="315" width="4" height="4" rx="1" fill="#a78bfa" opacity="0.65"/>
+  <rect x="737" y="305" width="4" height="4" rx="1" fill="#60a5fa" opacity="0.65"/>
+  <rect x="748" y="312" width="4" height="4" rx="1" fill="#f97316" opacity="0.6"/>
+  <rect x="820" y="295" width="4" height="4" rx="1" fill="#a78bfa" opacity="0.7"/>
+  <rect x="832" y="288" width="4" height="4" rx="1" fill="#60a5fa" opacity="0.65"/>
+  <rect x="880" y="335" width="4" height="4" rx="1" fill="#f97316" opacity="0.6"/>
+  <rect x="935" y="300" width="4" height="4" rx="1" fill="#a78bfa" opacity="0.65"/>
+  <!-- Flying cars -->
+  <ellipse cx="720" cy="250" rx="12" ry="4" fill="#f97316" opacity="0.7"/>
+  <ellipse cx="870" cy="235" rx="10" ry="3.5" fill="#60a5fa" opacity="0.65"/>
+  <ellipse cx="960" cy="260" rx="11" ry="4" fill="#a78bfa" opacity="0.6"/>
+  <!-- Sun/glow -->
+  <circle cx="850" cy="220" r="38" fill="#f97316" opacity="0.18"/>
+  <circle cx="850" cy="220" r="24" fill="#fbbf24" opacity="0.25"/>
+
+  <!-- Action buttons -->
+  <rect x="645" y="484" width="100" height="28" rx="8" fill="rgba(167,139,250,0.1)" stroke="rgba(167,139,250,0.22)" stroke-width="1"/>
+  <text x="695" y="501" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.65)">⬇ Download</text>
+  <rect x="752" y="484" width="108" height="28" rx="8" fill="rgba(167,139,250,0.1)" stroke="rgba(167,139,250,0.22)" stroke-width="1"/>
+  <text x="806" y="501" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.65)">↻ Regenerate</text>
+  <rect x="867" y="484" width="80" height="28" rx="8" fill="rgba(167,139,250,0.1)" stroke="rgba(167,139,250,0.22)" stroke-width="1"/>
+  <text x="907" y="501" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.65)">↗ Share</text>
+
+  <!-- Bottom strip -->
+  <rect x="0" y="562" width="1200" height="68" fill="rgba(8,4,22,0.7)" stroke="rgba(167,139,250,0.1)" stroke-width="0.5"/>
+  <g font-size="11" fill="rgba(255,255,255,0.48)">
+    <text x="90" y="589">∞</text><text x="108" y="589" font-weight="600" fill="rgba(255,255,255,0.7)">Unlimited Creations</text><text x="108" y="605">Generate as much as you want</text>
+    <text x="310" y="589">⏱</text><text x="328" y="589" font-weight="600" fill="rgba(255,255,255,0.7)">Save Time</text><text x="328" y="605">Create in seconds, not hours</text>
+    <text x="502" y="589">✓</text><text x="520" y="589" font-weight="600" fill="rgba(255,255,255,0.7)">Commercial Use</text><text x="520" y="605">Use for personal or commercial projects</text>
+    <text x="748" y="589">☁</text><text x="766" y="589" font-weight="600" fill="rgba(255,255,255,0.7)">Cloud Based</text><text x="766" y="605">Access anywhere, anytime</text>
+    <text x="948" y="589">👥</text><text x="966" y="589" font-weight="600" fill="rgba(255,255,255,0.7)">Trusted by Thousands</text><text x="966" y="605">Join thousands of happy users</text>
+  </g>
+</svg>

@@ -1,0 +1,112 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="75%"><stop offset="0%" stop-color="#0a0618"/><stop offset="100%" stop-color="#07070f"/></radialGradient>
+    <radialGradient id="gL" cx="20%" cy="50%" r="55%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.3"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gR" cx="80%" cy="50%" r="55%"><stop offset="0%" stop-color="#2563eb" stop-opacity="0.2"/><stop offset="100%" stop-color="#2563eb" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="pG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#130b2e" stop-opacity="0.97"/><stop offset="100%" stop-color="#0c0820" stop-opacity="0.97"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#5b21b6" flood-opacity="0.32"/></filter>
+  </defs>
+  <rect width="1200" height="500" fill="url(#bg)"/>
+  <ellipse cx="300" cy="250" rx="500" ry="380" fill="url(#gL)"/>
+  <ellipse cx="900" cy="250" rx="500" ry="380" fill="url(#gR)"/>
+
+  <text x="600" y="44" text-anchor="middle" font-size="13" font-weight="600" fill="#a78bfa" letter-spacing="2">PLATFORM COMPARISON</text>
+  <text x="600" y="80" text-anchor="middle" font-size="29" font-weight="800" fill="url(#aG)">Top AI Image Generators in 2026</text>
+  <text x="600" y="108" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.4)">Midjourney · DALL·E · Flux · ToolNest AI Image Generator</text>
+
+  <!-- Midjourney -->
+  <rect x="38" y="126" width="262" height="348" rx="16" fill="url(#pG)" stroke="rgba(96,165,250,0.2)" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="38" y="126" width="262" height="5" rx="2.5" fill="rgba(96,165,250,0.55)"/>
+  <rect x="58" y="146" width="48" height="48" rx="12" fill="rgba(96,165,250,0.1)" stroke="rgba(96,165,250,0.22)" stroke-width="1"/>
+  <text x="82" y="176" text-anchor="middle" font-size="22">🎨</text>
+  <text x="122" y="163" font-size="16" font-weight="800" fill="#fff">Midjourney</text>
+  <text x="122" y="181" font-size="11" fill="rgba(96,165,250,0.7)">Discord-based</text>
+  <line x1="58" y1="204" x2="280" y2="204" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <g font-size="11" fill="rgba(255,255,255,0.55)">
+    <text x="58" y="226" font-weight="600" fill="rgba(255,255,255,0.75)">Image Quality</text>
+    <text x="58" y="244" fill="#fbbf24">★★★★★ Industry-best</text>
+    <text x="58" y="268" font-weight="600" fill="rgba(255,255,255,0.75)">Interface</text>
+    <text x="58" y="286">Discord commands only</text>
+    <text x="58" y="310" font-weight="600" fill="rgba(255,255,255,0.75)">Pricing</text>
+    <text x="58" y="328">From $10/month (no free)</text>
+    <text x="58" y="352" font-weight="600" fill="rgba(255,255,255,0.75)">Styles</text>
+    <text x="58" y="370">Limited — Midjourney only</text>
+    <text x="58" y="394" font-weight="600" fill="rgba(255,255,255,0.75)">Commercial use</text>
+    <text x="58" y="412">Yes (paid plans)</text>
+  </g>
+  <rect x="58" y="436" width="222" height="28" rx="8" fill="rgba(96,165,250,0.08)" stroke="rgba(96,165,250,0.16)" stroke-width="1"/>
+  <text x="169" y="453" text-anchor="middle" font-size="10" fill="rgba(96,165,250,0.7)">Requires Discord account</text>
+
+  <!-- DALL·E -->
+  <rect x="318" y="126" width="262" height="348" rx="16" fill="url(#pG)" stroke="rgba(16,185,129,0.22)" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="318" y="126" width="262" height="5" rx="2.5" fill="rgba(16,185,129,0.55)"/>
+  <rect x="338" y="146" width="48" height="48" rx="12" fill="rgba(16,185,129,0.1)" stroke="rgba(16,185,129,0.22)" stroke-width="1"/>
+  <text x="362" y="176" text-anchor="middle" font-size="22">⊕</text>
+  <text x="402" y="163" font-size="16" font-weight="800" fill="#fff">DALL·E 3</text>
+  <text x="402" y="181" font-size="11" fill="rgba(16,185,129,0.7)">by OpenAI</text>
+  <line x1="338" y1="204" x2="560" y2="204" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <g font-size="11" fill="rgba(255,255,255,0.55)">
+    <text x="338" y="226" font-weight="600" fill="rgba(255,255,255,0.75)">Image Quality</text>
+    <text x="338" y="244" fill="#fbbf24">★★★★☆ Excellent</text>
+    <text x="338" y="268" font-weight="600" fill="rgba(255,255,255,0.75)">Interface</text>
+    <text x="338" y="286">ChatGPT / API</text>
+    <text x="338" y="310" font-weight="600" fill="rgba(255,255,255,0.75)">Pricing</text>
+    <text x="338" y="328">ChatGPT Plus $20/mo</text>
+    <text x="338" y="352" font-weight="600" fill="rgba(255,255,255,0.75)">Styles</text>
+    <text x="338" y="370">Prompt-driven, limited</text>
+    <text x="338" y="394" font-weight="600" fill="rgba(255,255,255,0.75)">Commercial use</text>
+    <text x="338" y="412">Yes</text>
+  </g>
+  <rect x="338" y="436" width="222" height="28" rx="8" fill="rgba(16,185,129,0.06)" stroke="rgba(16,185,129,0.14)" stroke-width="1"/>
+  <text x="449" y="453" text-anchor="middle" font-size="10" fill="rgba(16,185,129,0.7)">Requires ChatGPT Plus</text>
+
+  <!-- Flux -->
+  <rect x="598" y="126" width="262" height="348" rx="16" fill="url(#pG)" stroke="rgba(251,146,60,0.22)" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="598" y="126" width="262" height="5" rx="2.5" fill="rgba(251,146,60,0.55)"/>
+  <rect x="618" y="146" width="48" height="48" rx="12" fill="rgba(251,146,60,0.1)" stroke="rgba(251,146,60,0.22)" stroke-width="1"/>
+  <text x="642" y="176" text-anchor="middle" font-size="22">⚡</text>
+  <text x="682" y="163" font-size="16" font-weight="800" fill="#fff">Flux</text>
+  <text x="682" y="181" font-size="11" fill="rgba(251,146,60,0.7)">by Black Forest Labs</text>
+  <line x1="618" y1="204" x2="840" y2="204" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <g font-size="11" fill="rgba(255,255,255,0.55)">
+    <text x="618" y="226" font-weight="600" fill="rgba(255,255,255,0.75)">Image Quality</text>
+    <text x="618" y="244" fill="#fbbf24">★★★★☆ Very high</text>
+    <text x="618" y="268" font-weight="600" fill="rgba(255,255,255,0.75)">Interface</text>
+    <text x="618" y="286">API / third-party UIs</text>
+    <text x="618" y="310" font-weight="600" fill="rgba(255,255,255,0.75)">Pricing</text>
+    <text x="618" y="328">Pay-per-image or API</text>
+    <text x="618" y="352" font-weight="600" fill="rgba(255,255,255,0.75)">Styles</text>
+    <text x="618" y="370">High realism, photographic</text>
+    <text x="618" y="394" font-weight="600" fill="rgba(255,255,255,0.75)">Commercial use</text>
+    <text x="618" y="412">Yes (check license)</text>
+  </g>
+  <rect x="618" y="436" width="222" height="28" rx="8" fill="rgba(251,146,60,0.06)" stroke="rgba(251,146,60,0.14)" stroke-width="1"/>
+  <text x="729" y="453" text-anchor="middle" font-size="10" fill="rgba(251,146,60,0.7)">Technical setup required</text>
+
+  <!-- ToolNest (highlighted) -->
+  <rect x="878" y="126" width="284" height="348" rx="16" fill="url(#pG)" stroke="rgba(167,139,250,0.45)" stroke-width="2" filter="url(#sh)"/>
+  <rect x="878" y="126" width="284" height="5" rx="2.5" fill="url(#aG)"/>
+  <rect x="898" y="146" width="48" height="48" rx="12" fill="url(#bG)"/>
+  <text x="922" y="176" text-anchor="middle" font-size="22">✨</text>
+  <text x="962" y="160" font-size="15" font-weight="800" fill="#fff">ToolNest AI</text>
+  <text x="962" y="177" font-size="11" fill="#a78bfa">Image Generator</text>
+  <rect x="898" y="183" width="76" height="18" rx="9" fill="rgba(167,139,250,0.25)" stroke="rgba(167,139,250,0.45)" stroke-width="1"/>
+  <text x="936" y="195" text-anchor="middle" font-size="9" font-weight="700" fill="#c4b5fd">★ BEST VALUE</text>
+  <line x1="898" y1="212" x2="1142" y2="212" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <g font-size="11" fill="rgba(255,255,255,0.55)">
+    <text x="898" y="234" font-weight="600" fill="rgba(255,255,255,0.75)">Image Quality</text>
+    <text x="898" y="252" fill="#fbbf24">★★★★★ Premium</text>
+    <text x="898" y="276" font-weight="600" fill="rgba(255,255,255,0.75)">Interface</text>
+    <text x="898" y="294" fill="#a78bfa">Simple web UI — no setup</text>
+    <text x="898" y="318" font-weight="600" fill="rgba(255,255,255,0.75)">Pricing</text>
+    <text x="898" y="336" fill="#4ade80">Free to start</text>
+    <text x="898" y="360" font-weight="600" fill="rgba(255,255,255,0.75)">Styles</text>
+    <text x="898" y="378" fill="#a78bfa">8 styles — Realistic to Anime</text>
+    <text x="898" y="402" font-weight="600" fill="rgba(255,255,255,0.75)">Commercial use</text>
+    <text x="898" y="420" fill="#4ade80">Yes — included free</text>
+  </g>
+  <rect x="898" y="442" width="244" height="28" rx="8" fill="url(#bG)"/>
+  <text x="1020" y="459" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">Generate Free Now ✨</text>
+</svg>
