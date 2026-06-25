@@ -11,6 +11,7 @@ import {
   getPostBySlug,
   getRelatedPosts,
   getPrevNext,
+  extractFAQs,
 } from "@/lib/blog";
 import { mdxComponents } from "@/components/blog/mdx/components";
 import { ArticleHeader } from "@/components/blog/ArticleHeader";
@@ -110,6 +111,17 @@ export default async function BlogPostPage({ params }: PageProps) {
     ],
   };
 
+  const faqs = extractFAQs(post.content);
+  const faqJsonLd = faqs.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: { "@type": "Answer", text: faq.answer },
+    })),
+  } : null;
+
   return (
     <>
       <script
@@ -120,6 +132,12 @@ export default async function BlogPostPage({ params }: PageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
+      {faqJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+      )}
 
       <div className="max-w-[1200px] mx-auto w-full px-4 sm:px-6 py-10">
         {/* Breadcrumb */}

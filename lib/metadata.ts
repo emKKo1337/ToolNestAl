@@ -11,7 +11,7 @@ const TWITTER_HANDLE = "@toolnestai";
 export function generateToolMetadata(tool: Tool): Metadata {
   const url = `${SITE_URL}/${tool.categorySlug}/${tool.slug}`;
   // Descriptive title: "JSON Formatter — Free Online JSON Formatter & Validator"
-  const title = `${tool.name} — Free Online ${tool.name}`;
+  const title = `${tool.name} — Free Online ${tool.keywords?.[0] ?? tool.name}`;
   // Meta description: use shortDescription (concise, already ~120 chars)
   const description = tool.shortDescription;
   // OG description: use the longer description for richer social previews
@@ -30,7 +30,7 @@ export function generateToolMetadata(tool: Tool): Metadata {
       url,
       siteName: SITE_NAME,
       locale: "en_US",
-      title: `${tool.name} — Free Online ${tool.name} | ${SITE_NAME}`,
+      title: `${tool.name} — Free Online ${tool.keywords?.[0] ?? tool.name} | ${SITE_NAME}`,
       description: ogDescription,
       images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: `${tool.name} | ${SITE_NAME}` }],
     },
@@ -38,7 +38,7 @@ export function generateToolMetadata(tool: Tool): Metadata {
       card: "summary_large_image",
       site: TWITTER_HANDLE,
       creator: TWITTER_HANDLE,
-      title: `${tool.name} — Free Online ${tool.name} | ${SITE_NAME}`,
+      title: `${tool.name} — Free Online ${tool.keywords?.[0] ?? tool.name} | ${SITE_NAME}`,
       description,
       images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: `${tool.name} | ${SITE_NAME}` }],
     },
@@ -61,6 +61,7 @@ export function generateCategoryMetadata(
     "developer-tools": `Developer Tools — ${toolCount} Free Online Dev Utilities`,
     "calculators":     `Calculators & Generators — ${toolCount} Free Online Tools`,
     "text-tools":      `Text Tools — ${toolCount} Free Online Text Utilities`,
+    "seo-tools":       `SEO Tools — ${toolCount} Free Online SEO Utilities`,
   };
   const title = titleMap[category.slug] ?? `${category.name} — ${toolCount} Free Online Tools`;
 
@@ -72,6 +73,7 @@ export function generateCategoryMetadata(
     "developer-tools": `${toolCount} free developer tools online. Format JSON, encode Base64, generate UUIDs, test regex, decode JWT, and more.`,
     "calculators":     `${toolCount} free calculators and generators. Password generator, QR code maker, BMI calculator, word counter, and more.`,
     "text-tools":      `${toolCount} free text tools online. Convert case, count words, and transform text instantly in your browser — no install needed.`,
+    "seo-tools":       `${toolCount} free SEO tools online. Generate meta tags, preview SERPs, create Open Graph tags, analyze keywords, and more.`,
   };
   const description = descMap[category.slug] ?? category.description;
 

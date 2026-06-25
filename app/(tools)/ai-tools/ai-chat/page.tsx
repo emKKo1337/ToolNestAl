@@ -24,13 +24,18 @@ export const metadata: Metadata = {
       "Chat with an intelligent AI assistant for writing, coding, learning, brainstorming and everyday questions.",
     url: "https://www.toolnestai.net/ai-tools/ai-chat",
     siteName: "ToolNest AI",
+    locale: "en_US",
     type: "website",
+    images: [{ url: "https://www.toolnestai.net/og-image.png", width: 1200, height: 630, alt: "AI Chat | ToolNest AI" }],
   },
   twitter: {
     card: "summary_large_image",
+    site: "@toolnestai",
+    creator: "@toolnestai",
     title: "AI Chat – Free Online AI Assistant | ToolNest AI",
     description:
       "Chat with an intelligent AI assistant for writing, coding, learning, and everyday questions.",
+    images: [{ url: "https://www.toolnestai.net/og-image.png", width: 1200, height: 630, alt: "AI Chat | ToolNest AI" }],
   },
   alternates: {
     canonical: "https://www.toolnestai.net/ai-tools/ai-chat",

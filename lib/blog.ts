@@ -186,6 +186,36 @@ export function getAllTags(): Array<{ name: string; count: number }> {
     .sort((a, b) => b.count - a.count);
 }
 
+export function extractFAQs(content: string): Array<{ question: string; answer: string }> {
+  const lines = content.split("\n");
+  const faqStart = lines.findIndex((l) =>
+    /^##\s+(Frequently Asked Questions|FAQ)/i.test(l)
+  );
+  if (faqStart === -1) return [];
+
+  const faqs: Array<{ question: string; answer: string }> = [];
+  let question = "";
+  let answerLines: string[] = [];
+
+  for (let i = faqStart + 1; i < lines.length; i++) {
+    const line = lines[i];
+    if (/^##[^#]/.test(line)) break;
+    if (/^###\s+/.test(line)) {
+      if (question && answerLines.length > 0) {
+        faqs.push({ question, answer: answerLines.join(" ").trim() });
+      }
+      question = stripMdx(line.replace(/^###\s+/, ""));
+      answerLines = [];
+    } else if (question && line.trim()) {
+      answerLines.push(stripMdx(line.trim()));
+    }
+  }
+  if (question && answerLines.length > 0) {
+    faqs.push({ question, answer: answerLines.join(" ").trim() });
+  }
+  return faqs;
+}
+
 export function filterPosts(
   posts: BlogPost[],
   {

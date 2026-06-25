@@ -40,6 +40,16 @@ export default function ToolPageContent({ tool, toolComponent }: ToolPageContent
     ],
   };
 
+  const faqData = tool.faqs.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: tool.faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: { "@type": "Answer", text: faq.answer },
+    })),
+  } : null;
+
   return (
     <>
       <script
@@ -50,6 +60,12 @@ export default function ToolPageContent({ tool, toolComponent }: ToolPageContent
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }}
       />
+      {faqData && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqData) }}
+        />
+      )}
 
       <div className="pt-28 pb-24 px-4 md:px-[48px] max-w-[1280px] mx-auto w-full">
         <Breadcrumb
