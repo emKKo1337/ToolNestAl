@@ -1,0 +1,114 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="75%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gL" cx="20%" cy="50%" r="50%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.2"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gR" cx="80%" cy="50%" r="50%"><stop offset="0%" stop-color="#2563eb" stop-opacity="0.14"/><stop offset="100%" stop-color="#2563eb" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="pG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#130b2e" stop-opacity="0.97"/><stop offset="100%" stop-color="#0c0820" stop-opacity="0.97"/></linearGradient>
+    <linearGradient id="greenG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#059669"/><stop offset="100%" stop-color="#4ade80"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#5b21b6" flood-opacity="0.28"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <rect width="1200" height="500" fill="url(#bg)"/>
+  <ellipse cx="300" cy="250" rx="420" ry="300" fill="url(#gL)"/>
+  <ellipse cx="900" cy="250" rx="420" ry="300" fill="url(#gR)"/>
+
+  <!-- Title -->
+  <text x="600" y="44" text-anchor="middle" font-size="11" font-weight="700" fill="#a78bfa" letter-spacing="1">ANATOMY OF A GREAT BUSINESS NAME</text>
+  <text x="600" y="76" text-anchor="middle" font-size="26" font-weight="800" fill="url(#aG)" filter="url(#glow)">What Makes a Business Name Truly Memorable</text>
+  <text x="600" y="102" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.42)">Six qualities the best brand names share — and how AI generates names that check every box</text>
+
+  <!-- Centre name display -->
+  <rect x="440" y="188" width="320" height="124" rx="18" fill="url(#pG)" stroke="rgba(167,139,250,0.3)" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="600" y="238" text-anchor="middle" font-size="40" font-weight="900" fill="url(#aG)" filter="url(#glow)" letter-spacing="-1">Nexlify</text>
+  <text x="600" y="262" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.4)">AI-generated startup name</text>
+  <rect x="530" y="272" width="140" height="20" rx="6" fill="rgba(34,197,94,0.12)" stroke="rgba(34,197,94,0.28)" stroke-width="1"/>
+  <text x="600" y="286" text-anchor="middle" font-size="9" font-weight="700" fill="#4ade80">✓ nexlify.com Available</text>
+
+  <!-- Quality arrows/connectors and boxes -->
+
+  <!-- 1: Short & Pronounceable (top-left) -->
+  <rect x="22" y="128" width="220" height="84" rx="12" fill="url(#pG)" stroke="rgba(167,139,250,0.2)" stroke-width="1" filter="url(#sh)"/>
+  <text x="42" y="152" font-size="22">🔤</text>
+  <text x="70" y="150" font-size="12" font-weight="700" fill="rgba(255,255,255,0.88)">Short &amp; Pronounceable</text>
+  <text x="42" y="168" font-size="10" fill="rgba(255,255,255,0.45)">Under 10 characters. Easy to</text>
+  <text x="42" y="182" font-size="10" fill="rgba(255,255,255,0.45)">say out loud and spell correctly.</text>
+  <rect x="42" y="192" width="80" height="14" rx="4" fill="rgba(34,197,94,0.1)" stroke="rgba(34,197,94,0.22)" stroke-width="1"/>
+  <text x="82" y="202" text-anchor="middle" font-size="8" fill="#4ade80">✓ "Nex-li-fy" — 7 chars</text>
+  <!-- connector -->
+  <line x1="242" y1="170" x2="440" y2="220" stroke="rgba(167,139,250,0.2)" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <!-- 2: Unique & Ownable (top-centre) -->
+  <rect x="390" y="120" width="220" height="60" rx="12" fill="url(#pG)" stroke="rgba(167,139,250,0.2)" stroke-width="1" filter="url(#sh)"/>
+  <text x="408" y="144" font-size="20">🛡</text>
+  <text x="432" y="142" font-size="12" font-weight="700" fill="rgba(255,255,255,0.88)">Unique &amp; Ownable</text>
+  <text x="408" y="160" font-size="10" fill="rgba(255,255,255,0.45)">Trademark-friendly. Not generic.</text>
+  <text x="408" y="174" font-size="10" fill="rgba(255,255,255,0.45)">Stands alone in a crowded market.</text>
+  <!-- connector -->
+  <line x1="500" y1="180" x2="520" y2="188" stroke="rgba(167,139,250,0.2)" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <!-- 3: Domain Available (top-right) -->
+  <rect x="958" y="128" width="220" height="84" rx="12" fill="url(#pG)" stroke="rgba(34,197,94,0.22)" stroke-width="1" filter="url(#sh)"/>
+  <text x="978" y="152" font-size="22">🌐</text>
+  <text x="1006" y="150" font-size="12" font-weight="700" fill="rgba(255,255,255,0.88)">Domain Available</text>
+  <text x="978" y="168" font-size="10" fill="rgba(255,255,255,0.45)">.com ideally, or .io / .co for</text>
+  <text x="978" y="182" font-size="10" fill="rgba(255,255,255,0.45)">tech. Check before you commit.</text>
+  <rect x="978" y="192" width="90" height="14" rx="4" fill="rgba(34,197,94,0.1)" stroke="rgba(34,197,94,0.22)" stroke-width="1"/>
+  <text x="1023" y="202" text-anchor="middle" font-size="8" fill="#4ade80">✓ nexlify.com free</text>
+  <!-- connector -->
+  <line x1="958" y1="170" x2="760" y2="220" stroke="rgba(34,197,94,0.2)" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <!-- 4: Relevant to Niche (bottom-left) -->
+  <rect x="22" y="302" width="220" height="84" rx="12" fill="url(#pG)" stroke="rgba(167,139,250,0.2)" stroke-width="1" filter="url(#sh)"/>
+  <text x="42" y="326" font-size="22">🎯</text>
+  <text x="70" y="324" font-size="12" font-weight="700" fill="rgba(255,255,255,0.88)">Relevant to Niche</text>
+  <text x="42" y="342" font-size="10" fill="rgba(255,255,255,0.45)">Hints at what you do without</text>
+  <text x="42" y="356" font-size="10" fill="rgba(255,255,255,0.45)">limiting future growth.</text>
+  <rect x="42" y="366" width="100" height="14" rx="4" fill="rgba(167,139,250,0.1)" stroke="rgba(167,139,250,0.22)" stroke-width="1"/>
+  <text x="92" y="376" text-anchor="middle" font-size="8" fill="#a78bfa">"nex" = next, forward</text>
+  <!-- connector -->
+  <line x1="242" y1="344" x2="440" y2="288" stroke="rgba(167,139,250,0.2)" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <!-- 5: Emotionally Resonant (bottom-centre) -->
+  <rect x="390" y="330" width="220" height="60" rx="12" fill="url(#pG)" stroke="rgba(167,139,250,0.2)" stroke-width="1" filter="url(#sh)"/>
+  <text x="408" y="354" font-size="20">💡</text>
+  <text x="432" y="352" font-size="12" font-weight="700" fill="rgba(255,255,255,0.88)">Emotionally Resonant</text>
+  <text x="408" y="370" font-size="10" fill="rgba(255,255,255,0.45)">Evokes a feeling — speed, trust,</text>
+  <text x="408" y="384" font-size="10" fill="rgba(255,255,255,0.45)">creativity, growth or belonging.</text>
+  <!-- connector -->
+  <line x1="500" y1="330" x2="520" y2="312" stroke="rgba(167,139,250,0.2)" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <!-- 6: Scalable (bottom-right) -->
+  <rect x="958" y="302" width="220" height="84" rx="12" fill="url(#pG)" stroke="rgba(96,165,250,0.2)" stroke-width="1" filter="url(#sh)"/>
+  <text x="978" y="326" font-size="22">📈</text>
+  <text x="1006" y="324" font-size="12" font-weight="700" fill="rgba(255,255,255,0.88)">Scalable</text>
+  <text x="978" y="342" font-size="10" fill="rgba(255,255,255,0.45)">Works as the business grows.</text>
+  <text x="978" y="356" font-size="10" fill="rgba(255,255,255,0.45)">Not tied to one product or city.</text>
+  <rect x="978" y="366" width="106" height="14" rx="4" fill="rgba(96,165,250,0.1)" stroke="rgba(96,165,250,0.22)" stroke-width="1"/>
+  <text x="1031" y="376" text-anchor="middle" font-size="8" fill="#93c5fd">works globally ✓</text>
+  <!-- connector -->
+  <line x1="958" y1="344" x2="760" y2="288" stroke="rgba(96,165,250,0.2)" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <!-- Score badges on centre card -->
+  <g font-size="8" font-weight="700" text-anchor="middle">
+    <rect x="452" y="308" width="52" height="14" rx="4" fill="rgba(34,197,94,0.12)" stroke="rgba(34,197,94,0.25)" stroke-width="1"/>
+    <text x="478" y="318" fill="#4ade80">Short ✓</text>
+    <rect x="508" y="308" width="52" height="14" rx="4" fill="rgba(34,197,94,0.12)" stroke="rgba(34,197,94,0.25)" stroke-width="1"/>
+    <text x="534" y="318" fill="#4ade80">Unique ✓</text>
+    <rect x="564" y="308" width="64" height="14" rx="4" fill="rgba(34,197,94,0.12)" stroke="rgba(34,197,94,0.25)" stroke-width="1"/>
+    <text x="596" y="318" fill="#4ade80">Domain ✓</text>
+    <rect x="452" y="326" width="60" height="14" rx="4" fill="rgba(34,197,94,0.12)" stroke="rgba(34,197,94,0.25)" stroke-width="1"/>
+    <text x="482" y="336" fill="#4ade80">Relevant ✓</text>
+    <rect x="516" y="326" width="52" height="14" rx="4" fill="rgba(34,197,94,0.12)" stroke="rgba(34,197,94,0.25)" stroke-width="1"/>
+    <text x="542" y="336" fill="#4ade80">Emotion ✓</text>
+    <rect x="572" y="326" width="56" height="14" rx="4" fill="rgba(34,197,94,0.12)" stroke="rgba(34,197,94,0.25)" stroke-width="1"/>
+    <text x="600" y="336" fill="#4ade80">Scalable ✓</text>
+  </g>
+
+  <!-- Bottom bar -->
+  <rect x="22" y="416" width="1156" height="60" rx="12" fill="url(#pG)" stroke="rgba(167,139,250,0.12)" stroke-width="1"/>
+  <text x="600" y="440" text-anchor="middle" font-size="12" font-weight="700" fill="url(#aG)">✦ ToolNest AI checks all 6 criteria automatically — and shows you domain availability in real time</text>
+  <text x="600" y="462" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.4)">Every generated name is scored for memorability, uniqueness, length and domain status before it reaches you</text>
+</svg>

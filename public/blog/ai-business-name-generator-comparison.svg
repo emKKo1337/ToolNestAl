@@ -1,0 +1,130 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="75%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gC" cx="50%" cy="50%" r="60%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.15"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="pG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#130b2e" stop-opacity="0.97"/><stop offset="100%" stop-color="#0c0820" stop-opacity="0.97"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#5b21b6" flood-opacity="0.28"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <rect width="1200" height="500" fill="url(#bg)"/>
+  <ellipse cx="600" cy="250" rx="700" ry="300" fill="url(#gC)"/>
+
+  <!-- Title -->
+  <text x="600" y="44" text-anchor="middle" font-size="11" font-weight="700" fill="#a78bfa" letter-spacing="1">METHOD COMPARISON</text>
+  <text x="600" y="76" text-anchor="middle" font-size="26" font-weight="800" fill="url(#aG)" filter="url(#glow)">AI Generator vs Manual Brainstorming vs Naming Agency</text>
+  <text x="600" y="102" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.42)">Three ways to name your business — compared across every factor that matters</text>
+
+  <!-- Table container -->
+  <rect x="22" y="114" width="1156" height="358" rx="14" fill="url(#pG)" stroke="rgba(167,139,250,0.16)" stroke-width="1" filter="url(#sh)"/>
+
+  <!-- Header row -->
+  <rect x="22" y="114" width="1156" height="42" rx="14" fill="rgba(124,58,237,0.18)"/>
+  <rect x="22" y="142" width="1156" height="14" fill="rgba(124,58,237,0.18)"/>
+
+  <!-- Column headers -->
+  <text x="190" y="140" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(255,255,255,0.5)">Factor</text>
+  <line x1="360" y1="114" x2="360" y2="472" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+
+  <!-- ToolNest AI column header - highlighted -->
+  <rect x="362" y="116" width="258" height="38" fill="rgba(124,58,237,0.25)"/>
+  <text x="491" y="132" text-anchor="middle" font-size="12" font-weight="800" fill="url(#aG)" filter="url(#glow)">✦ ToolNest AI</text>
+  <text x="491" y="148" text-anchor="middle" font-size="9" fill="rgba(167,139,250,0.7)">Free AI Generator</text>
+  <line x1="620" y1="114" x2="620" y2="472" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+
+  <text x="809" y="132" text-anchor="middle" font-size="12" font-weight="700" fill="rgba(255,255,255,0.65)">Manual Brainstorm</text>
+  <text x="809" y="148" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.35)">DIY / Team session</text>
+  <line x1="998" y1="114" x2="998" y2="472" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+
+  <text x="1089" y="132" text-anchor="middle" font-size="12" font-weight="700" fill="rgba(255,255,255,0.65)">Naming Agency</text>
+  <text x="1089" y="148" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.35)">Professional service</text>
+
+  <!-- Data rows -->
+  <!-- Row helper macro: alternating bg -->
+  <rect x="22" y="156" width="1156" height="36" fill="rgba(255,255,255,0.015)"/>
+  <rect x="22" y="228" width="1156" height="36" fill="rgba(255,255,255,0.015)"/>
+  <rect x="22" y="300" width="1156" height="36" fill="rgba(255,255,255,0.015)"/>
+  <rect x="22" y="372" width="1156" height="36" fill="rgba(255,255,255,0.015)"/>
+  <rect x="22" y="444" width="1156" height="28" fill="rgba(255,255,255,0.015)"/>
+
+  <!-- Highlight ToolNest AI column -->
+  <rect x="362" y="156" width="258" height="316" fill="rgba(124,58,237,0.08)"/>
+
+  <!-- Row 1: Speed -->
+  <text x="190" y="180" text-anchor="middle" font-size="11" font-weight="600" fill="rgba(255,255,255,0.7)">⚡ Speed</text>
+  <text x="491" y="178" text-anchor="middle" font-size="11" font-weight="700" fill="#4ade80">Under 10 seconds</text>
+  <text x="491" y="192" text-anchor="middle" font-size="9" fill="rgba(167,139,250,0.6)">Instant results, any time</text>
+  <text x="809" y="178" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.55)">Hours to days</text>
+  <text x="809" y="192" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.3)">Depends on team creativity</text>
+  <text x="1089" y="178" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.55)">Weeks</text>
+  <text x="1089" y="192" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.3)">Research + presentation rounds</text>
+
+  <line x1="22" y1="204" x2="1178" y2="204" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+
+  <!-- Row 2: Cost -->
+  <text x="190" y="224" text-anchor="middle" font-size="11" font-weight="600" fill="rgba(255,255,255,0.7)">💰 Cost</text>
+  <text x="491" y="222" text-anchor="middle" font-size="11" font-weight="700" fill="#4ade80">100% Free</text>
+  <text x="491" y="236" text-anchor="middle" font-size="9" fill="rgba(167,139,250,0.6)">No account required</text>
+  <text x="809" y="222" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.55)">Your time only</text>
+  <text x="809" y="236" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.3)">Hidden cost of hours spent</text>
+  <text x="1089" y="222" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.55)">£2,000–£20,000+</text>
+  <text x="1089" y="236" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.3)">Plus trademark research fees</text>
+
+  <line x1="22" y1="252" x2="1178" y2="252" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+
+  <!-- Row 3: Volume -->
+  <text x="190" y="272" text-anchor="middle" font-size="11" font-weight="600" fill="rgba(255,255,255,0.7)">📊 Volume</text>
+  <text x="491" y="270" text-anchor="middle" font-size="11" font-weight="700" fill="#4ade80">Unlimited ideas</text>
+  <text x="491" y="284" text-anchor="middle" font-size="9" fill="rgba(167,139,250,0.6)">Regenerate as many times as needed</text>
+  <text x="809" y="270" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.55)">10–30 ideas typical</text>
+  <text x="809" y="284" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.3)">Limited by team energy</text>
+  <text x="1089" y="270" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.55)">5–15 curated options</text>
+  <text x="1089" y="284" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.3)">Researched and filtered</text>
+
+  <line x1="22" y1="300" x2="1178" y2="300" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+
+  <!-- Row 4: Domain Check -->
+  <text x="190" y="320" text-anchor="middle" font-size="11" font-weight="600" fill="rgba(255,255,255,0.7)">🌐 Domain Check</text>
+  <text x="491" y="318" text-anchor="middle" font-size="11" font-weight="700" fill="#4ade80">Built-in, instant</text>
+  <text x="491" y="332" text-anchor="middle" font-size="9" fill="rgba(167,139,250,0.6)">Shows availability per name</text>
+  <text x="809" y="318" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.55)">Manual lookup required</text>
+  <text x="809" y="332" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.3)">Check each name separately</text>
+  <text x="1089" y="318" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.55)">Included in service</text>
+  <text x="1089" y="332" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.3)">Often charged extra</text>
+
+  <line x1="22" y1="348" x2="1178" y2="348" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+
+  <!-- Row 5: Creativity -->
+  <text x="190" y="368" text-anchor="middle" font-size="11" font-weight="600" fill="rgba(255,255,255,0.7)">🎨 Creativity</text>
+  <text x="491" y="366" text-anchor="middle" font-size="11" font-weight="700" fill="#4ade80">High — AI + your keywords</text>
+  <text x="491" y="380" text-anchor="middle" font-size="9" fill="rgba(167,139,250,0.6)">Trained on millions of brand names</text>
+  <text x="809" y="366" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.55)">Medium — human bias</text>
+  <text x="809" y="380" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.3)">Tends toward familiar patterns</text>
+  <text x="1089" y="366" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.55)">Very high — deep research</text>
+  <text x="1089" y="380" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.3)">Strategic + linguistic expertise</text>
+
+  <line x1="22" y1="396" x2="1178" y2="396" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+
+  <!-- Row 6: Platform Fit -->
+  <text x="190" y="416" text-anchor="middle" font-size="11" font-weight="600" fill="rgba(255,255,255,0.7)">🏆 Best For</text>
+  <text x="491" y="414" text-anchor="middle" font-size="10" font-weight="700" fill="#a78bfa">Startups, solo founders,</text>
+  <text x="491" y="428" text-anchor="middle" font-size="10" font-weight="700" fill="#a78bfa">side projects, fast launches</text>
+  <text x="809" y="414" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.5)">Small teams with time</text>
+  <text x="809" y="428" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.5)">and creative resources</text>
+  <text x="1089" y="414" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.5)">Enterprise brands with</text>
+  <text x="1089" y="428" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.5)">large naming budgets</text>
+
+  <line x1="22" y1="444" x2="1178" y2="444" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+
+  <!-- Row 7: Verdict -->
+  <text x="190" y="462" text-anchor="middle" font-size="11" font-weight="600" fill="rgba(255,255,255,0.7)">✅ Verdict</text>
+  <text x="491" y="462" text-anchor="middle" font-size="11" font-weight="700" fill="#4ade80">Best value for most founders</text>
+  <text x="809" y="462" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.45)">Good starting point, slow</text>
+  <text x="1089" y="462" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.45)">Worth it at enterprise scale</text>
+
+  <!-- Winner badge -->
+  <rect x="362" y="156" width="258" height="2" fill="url(#aG)"/>
+  <rect x="362" y="470" width="258" height="2" fill="url(#aG)"/>
+</svg>

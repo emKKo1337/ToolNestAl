@@ -1,0 +1,195 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="75%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gC" cx="50%" cy="50%" r="60%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.15"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="pG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#130b2e" stop-opacity="0.97"/><stop offset="100%" stop-color="#0c0820" stop-opacity="0.97"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#5b21b6" flood-opacity="0.28"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <rect width="1200" height="500" fill="url(#bg)"/>
+  <ellipse cx="600" cy="250" rx="700" ry="320" fill="url(#gC)"/>
+
+  <!-- Title -->
+  <text x="600" y="44" text-anchor="middle" font-size="11" font-weight="700" fill="#a78bfa" letter-spacing="1">BUSINESS TYPE EXAMPLES</text>
+  <text x="600" y="76" text-anchor="middle" font-size="26" font-weight="800" fill="url(#aG)" filter="url(#glow)">AI-Generated Names for Every Business Type</text>
+  <text x="600" y="102" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.42)">Same tool, different inputs — tailored names for startups, e-commerce, SaaS, agencies and local businesses</text>
+
+  <!-- 5 cards -->
+  <!-- Startup -->
+  <rect x="22" y="118" width="218" height="360" rx="14" fill="url(#pG)" stroke="rgba(167,139,250,0.22)" stroke-width="1" filter="url(#sh)"/>
+  <rect x="22" y="118" width="218" height="44" rx="14" fill="rgba(124,58,237,0.18)"/>
+  <rect x="22" y="148" width="218" height="14" fill="rgba(124,58,237,0.18)"/>
+  <text x="131" y="146" text-anchor="middle" font-size="18">🚀</text>
+  <text x="131" y="175" text-anchor="middle" font-size="13" font-weight="700" fill="#a78bfa">Startup</text>
+  <text x="131" y="193" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.38)">Tech / SaaS / App</text>
+  <line x1="42" y1="202" x2="220" y2="202" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="42" y="220" font-size="9" fill="rgba(255,255,255,0.38)">Input keywords:</text>
+  <g font-size="8" font-weight="600">
+    <rect x="42" y="224" width="52" height="13" rx="3" fill="rgba(124,58,237,0.2)" stroke="rgba(167,139,250,0.28)" stroke-width="1"/>
+    <text x="68" y="234" text-anchor="middle" fill="#a78bfa">ai, smart</text>
+    <rect x="98" y="224" width="48" height="13" rx="3" fill="rgba(124,58,237,0.2)" stroke="rgba(167,139,250,0.28)" stroke-width="1"/>
+    <text x="122" y="234" text-anchor="middle" fill="#a78bfa">tech, fast</text>
+  </g>
+  <line x1="42" y1="244" x2="220" y2="244" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <text x="42" y="260" font-size="9" font-weight="600" fill="rgba(167,139,250,0.7)">Generated names:</text>
+  <g font-size="11" font-weight="700">
+    <text x="42" y="278" fill="rgba(255,255,255,0.88)">Nexlify</text>
+    <text x="42" y="298" fill="rgba(255,255,255,0.88)">Velocis</text>
+    <text x="42" y="318" fill="rgba(255,255,255,0.88)">Zenvara</text>
+    <text x="42" y="338" fill="rgba(255,255,255,0.88)">Aivance</text>
+    <text x="42" y="358" fill="rgba(255,255,255,0.88)">Smartex</text>
+  </g>
+  <g font-size="8" fill="rgba(34,197,94,0.8)">
+    <text x="155" y="278">nexlify.com ✓</text>
+    <text x="155" y="298">velocis.io ✓</text>
+    <text x="155" y="318">zenvara.com ✓</text>
+    <text x="155" y="338">aivance.ai ✓</text>
+    <text x="155" y="358">smartex.co ✓</text>
+  </g>
+  <rect x="42" y="382" width="178" height="22" rx="7" fill="url(#bG)"/>
+  <text x="131" y="397" text-anchor="middle" font-size="9" font-weight="700" fill="#fff">Best for: Tech Founders</text>
+  <text x="131" y="460" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.28)">Modern · Concise · Scalable</text>
+
+  <!-- E-Commerce -->
+  <rect x="252" y="118" width="218" height="360" rx="14" fill="url(#pG)" stroke="rgba(251,191,36,0.2)" stroke-width="1" filter="url(#sh)"/>
+  <rect x="252" y="118" width="218" height="44" rx="14" fill="rgba(251,191,36,0.1)"/>
+  <rect x="252" y="148" width="218" height="14" fill="rgba(251,191,36,0.1)"/>
+  <text x="361" y="146" text-anchor="middle" font-size="18">🛒</text>
+  <text x="361" y="175" text-anchor="middle" font-size="13" font-weight="700" fill="#fde68a">E-Commerce</text>
+  <text x="361" y="193" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.38)">Shopify / Amazon / DTC</text>
+  <line x1="272" y1="202" x2="450" y2="202" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="272" y="220" font-size="9" fill="rgba(255,255,255,0.38)">Input keywords:</text>
+  <g font-size="8" font-weight="600">
+    <rect x="272" y="224" width="60" height="13" rx="3" fill="rgba(251,191,36,0.12)" stroke="rgba(251,191,36,0.25)" stroke-width="1"/>
+    <text x="302" y="234" text-anchor="middle" fill="#fde68a">shop, trend</text>
+    <rect x="336" y="224" width="56" height="13" rx="3" fill="rgba(251,191,36,0.12)" stroke="rgba(251,191,36,0.25)" stroke-width="1"/>
+    <text x="364" y="234" text-anchor="middle" fill="#fde68a">style, deals</text>
+  </g>
+  <line x1="272" y1="244" x2="450" y2="244" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <text x="272" y="260" font-size="9" font-weight="600" fill="rgba(253,230,138,0.7)">Generated names:</text>
+  <g font-size="11" font-weight="700">
+    <text x="272" y="278" fill="rgba(255,255,255,0.88)">Shoptrove</text>
+    <text x="272" y="298" fill="rgba(255,255,255,0.88)">Trendara</text>
+    <text x="272" y="318" fill="rgba(255,255,255,0.88)">Stylevox</text>
+    <text x="272" y="338" fill="rgba(255,255,255,0.88)">Dealzy</text>
+    <text x="272" y="358" fill="rgba(255,255,255,0.88)">Buyvibe</text>
+  </g>
+  <g font-size="8" fill="rgba(34,197,94,0.8)">
+    <text x="385" y="278">shoptrove.com ✓</text>
+    <text x="385" y="298">trendara.com ✓</text>
+    <text x="385" y="318">stylevox.co ✓</text>
+    <text x="385" y="338">dealzy.com ✓</text>
+    <text x="385" y="358">buyvibe.io ✓</text>
+  </g>
+  <rect x="272" y="382" width="178" height="22" rx="7" fill="rgba(251,191,36,0.18)" stroke="rgba(251,191,36,0.3)" stroke-width="1"/>
+  <text x="361" y="397" text-anchor="middle" font-size="9" font-weight="700" fill="#fde68a">Best for: Online Stores</text>
+  <text x="361" y="460" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.28)">Catchy · Memorable · Trendy</text>
+
+  <!-- SaaS -->
+  <rect x="482" y="118" width="218" height="360" rx="14" fill="url(#pG)" stroke="rgba(96,165,250,0.22)" stroke-width="1" filter="url(#sh)"/>
+  <rect x="482" y="118" width="218" height="44" rx="14" fill="rgba(96,165,250,0.1)"/>
+  <rect x="482" y="148" width="218" height="14" fill="rgba(96,165,250,0.1)"/>
+  <text x="591" y="146" text-anchor="middle" font-size="18">💻</text>
+  <text x="591" y="175" text-anchor="middle" font-size="13" font-weight="700" fill="#93c5fd">SaaS Product</text>
+  <text x="591" y="193" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.38)">B2B / Software / Platform</text>
+  <line x1="502" y1="202" x2="680" y2="202" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="502" y="220" font-size="9" fill="rgba(255,255,255,0.38)">Input keywords:</text>
+  <g font-size="8" font-weight="600">
+    <rect x="502" y="224" width="58" height="13" rx="3" fill="rgba(96,165,250,0.12)" stroke="rgba(96,165,250,0.25)" stroke-width="1"/>
+    <text x="531" y="234" text-anchor="middle" fill="#93c5fd">data, sync</text>
+    <rect x="564" y="224" width="58" height="13" rx="3" fill="rgba(96,165,250,0.12)" stroke="rgba(96,165,250,0.25)" stroke-width="1"/>
+    <text x="593" y="234" text-anchor="middle" fill="#93c5fd">flow, cloud</text>
+  </g>
+  <line x1="502" y1="244" x2="680" y2="244" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <text x="502" y="260" font-size="9" font-weight="600" fill="rgba(147,197,253,0.7)">Generated names:</text>
+  <g font-size="11" font-weight="700">
+    <text x="502" y="278" fill="rgba(255,255,255,0.88)">Datavex</text>
+    <text x="502" y="298" fill="rgba(255,255,255,0.88)">Syncora</text>
+    <text x="502" y="318" fill="rgba(255,255,255,0.88)">Flowbit</text>
+    <text x="502" y="338" fill="rgba(255,255,255,0.88)">Cloudrix</text>
+    <text x="502" y="358" fill="rgba(255,255,255,0.88)">Pipelix</text>
+  </g>
+  <g font-size="8" fill="rgba(34,197,94,0.8)">
+    <text x="605" y="278">datavex.io ✓</text>
+    <text x="605" y="298">syncora.com ✓</text>
+    <text x="605" y="318">flowbit.io ✓</text>
+    <text x="605" y="338">cloudrix.com ✓</text>
+    <text x="605" y="358">pipelix.co ✓</text>
+  </g>
+  <rect x="502" y="382" width="178" height="22" rx="7" fill="rgba(96,165,250,0.15)" stroke="rgba(96,165,250,0.28)" stroke-width="1"/>
+  <text x="591" y="397" text-anchor="middle" font-size="9" font-weight="700" fill="#93c5fd">Best for: B2B Software</text>
+  <text x="591" y="460" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.28)">Professional · Trustworthy · Scalable</text>
+
+  <!-- Agency -->
+  <rect x="712" y="118" width="218" height="360" rx="14" fill="url(#pG)" stroke="rgba(239,68,68,0.18)" stroke-width="1" filter="url(#sh)"/>
+  <rect x="712" y="118" width="218" height="44" rx="14" fill="rgba(239,68,68,0.09)"/>
+  <rect x="712" y="148" width="218" height="14" fill="rgba(239,68,68,0.09)"/>
+  <text x="821" y="146" text-anchor="middle" font-size="18">🎨</text>
+  <text x="821" y="175" text-anchor="middle" font-size="13" font-weight="700" fill="#fca5a5">Agency</text>
+  <text x="821" y="193" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.38)">Marketing / Design / Creative</text>
+  <line x1="732" y1="202" x2="910" y2="202" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="732" y="220" font-size="9" fill="rgba(255,255,255,0.38)">Input keywords:</text>
+  <g font-size="8" font-weight="600">
+    <rect x="732" y="224" width="56" height="13" rx="3" fill="rgba(239,68,68,0.1)" stroke="rgba(239,68,68,0.22)" stroke-width="1"/>
+    <text x="760" y="234" text-anchor="middle" fill="#fca5a5">bold, brand</text>
+    <rect x="792" y="224" width="56" height="13" rx="3" fill="rgba(239,68,68,0.1)" stroke="rgba(239,68,68,0.22)" stroke-width="1"/>
+    <text x="820" y="234" text-anchor="middle" fill="#fca5a5">create, grow</text>
+  </g>
+  <line x1="732" y1="244" x2="910" y2="244" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <text x="732" y="260" font-size="9" font-weight="600" fill="rgba(252,165,165,0.7)">Generated names:</text>
+  <g font-size="11" font-weight="700">
+    <text x="732" y="278" fill="rgba(255,255,255,0.88)">Boldcraft</text>
+    <text x="732" y="298" fill="rgba(255,255,255,0.88)">Brandora</text>
+    <text x="732" y="318" fill="rgba(255,255,255,0.88)">Creatix</text>
+    <text x="732" y="338" fill="rgba(255,255,255,0.88)">Growvibe</text>
+    <text x="732" y="358" fill="rgba(255,255,255,0.88)">Pixelhaus</text>
+  </g>
+  <g font-size="8" fill="rgba(34,197,94,0.8)">
+    <text x="845" y="278">boldcraft.co ✓</text>
+    <text x="845" y="298">brandora.com ✓</text>
+    <text x="845" y="318">creatix.io ✓</text>
+    <text x="845" y="338">growvibe.co ✓</text>
+    <text x="845" y="358">pixelhaus.com ✓</text>
+  </g>
+  <rect x="732" y="382" width="178" height="22" rx="7" fill="rgba(239,68,68,0.13)" stroke="rgba(239,68,68,0.25)" stroke-width="1"/>
+  <text x="821" y="397" text-anchor="middle" font-size="9" font-weight="700" fill="#fca5a5">Best for: Creative Teams</text>
+  <text x="821" y="460" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.28)">Bold · Creative · Impactful</text>
+
+  <!-- Local Business -->
+  <rect x="942" y="118" width="236" height="360" rx="14" fill="url(#pG)" stroke="rgba(52,211,153,0.2)" stroke-width="1" filter="url(#sh)"/>
+  <rect x="942" y="118" width="236" height="44" rx="14" fill="rgba(52,211,153,0.09)"/>
+  <rect x="942" y="148" width="236" height="14" fill="rgba(52,211,153,0.09)"/>
+  <text x="1060" y="146" text-anchor="middle" font-size="18">🏪</text>
+  <text x="1060" y="175" text-anchor="middle" font-size="13" font-weight="700" fill="#6ee7b7">Local Business</text>
+  <text x="1060" y="193" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.38)">Café / Salon / Restaurant</text>
+  <line x1="962" y1="202" x2="1158" y2="202" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="962" y="220" font-size="9" fill="rgba(255,255,255,0.38)">Input keywords:</text>
+  <g font-size="8" font-weight="600">
+    <rect x="962" y="224" width="60" height="13" rx="3" fill="rgba(52,211,153,0.1)" stroke="rgba(52,211,153,0.22)" stroke-width="1"/>
+    <text x="992" y="234" text-anchor="middle" fill="#6ee7b7">cozy, local</text>
+    <rect x="1026" y="224" width="60" height="13" rx="3" fill="rgba(52,211,153,0.1)" stroke="rgba(52,211,153,0.22)" stroke-width="1"/>
+    <text x="1056" y="234" text-anchor="middle" fill="#6ee7b7">fresh, home</text>
+  </g>
+  <line x1="962" y1="244" x2="1158" y2="244" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <text x="962" y="260" font-size="9" font-weight="600" fill="rgba(110,231,183,0.7)">Generated names:</text>
+  <g font-size="11" font-weight="700">
+    <text x="962" y="278" fill="rgba(255,255,255,0.88)">The Cozy Corner</text>
+    <text x="962" y="298" fill="rgba(255,255,255,0.88)">Freshly Local</text>
+    <text x="962" y="318" fill="rgba(255,255,255,0.88)">Hearthside</text>
+    <text x="962" y="338" fill="rgba(255,255,255,0.88)">Nestled</text>
+    <text x="962" y="358" fill="rgba(255,255,255,0.88)">The Daily Spot</text>
+  </g>
+  <g font-size="8" fill="rgba(255,255,255,0.35)">
+    <text x="962" y="278" dx="130">location-friendly</text>
+    <text x="962" y="298" dx="100">community feel</text>
+    <text x="962" y="318" dx="90">warm &amp; inviting</text>
+    <text x="962" y="338" dx="70">cosy brand</text>
+    <text x="962" y="358" dx="115">approachable</text>
+  </g>
+  <rect x="962" y="382" width="178" height="22" rx="7" fill="rgba(52,211,153,0.13)" stroke="rgba(52,211,153,0.25)" stroke-width="1"/>
+  <text x="1060" y="397" text-anchor="middle" font-size="9" font-weight="700" fill="#6ee7b7">Best for: Community Brands</text>
+  <text x="1060" y="460" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.28)">Warm · Friendly · Local</text>
+</svg>

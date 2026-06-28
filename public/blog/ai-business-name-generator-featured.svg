@@ -1,0 +1,328 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gL" cx="10%" cy="45%" r="55%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.35"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gR" cx="90%" cy="55%" r="50%"><stop offset="0%" stop-color="#2563eb" stop-opacity="0.25"/><stop offset="100%" stop-color="#2563eb" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gRob" cx="88%" cy="75%" r="30%"><stop offset="0%" stop-color="#7c3aed" stop-opacity="0.4"/><stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="pG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#130b2e" stop-opacity="0.98"/><stop offset="100%" stop-color="#0c0820" stop-opacity="0.98"/></linearGradient>
+    <linearGradient id="lapG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1a1040"/><stop offset="100%" stop-color="#0d0824"/></linearGradient>
+    <linearGradient id="robG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4338ca"/></linearGradient>
+    <linearGradient id="robFaceG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1e1060"/><stop offset="100%" stop-color="#110a3a"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="8" stdDeviation="18" flood-color="#5b21b6" flood-opacity="0.4"/></filter>
+    <filter id="shSm"><feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#5b21b6" flood-opacity="0.3"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="robGlow"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="neonGlow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <ellipse cx="120" cy="315" rx="480" ry="420" fill="url(#gL)"/>
+  <ellipse cx="1080" cy="315" rx="460" ry="400" fill="url(#gR)"/>
+  <ellipse cx="1060" cy="480" rx="280" ry="220" fill="url(#gRob)"/>
+
+  <!-- Star particles -->
+  <circle cx="80" cy="60" r="1.5" fill="rgba(167,139,250,0.6)"/>
+  <circle cx="160" cy="180" r="1" fill="rgba(167,139,250,0.4)"/>
+  <circle cx="40" cy="280" r="1.2" fill="rgba(96,165,250,0.5)"/>
+  <circle cx="340" cy="40" r="1" fill="rgba(167,139,250,0.5)"/>
+  <circle cx="420" cy="580" r="1.5" fill="rgba(96,165,250,0.4)"/>
+  <circle cx="1100" cy="80" r="1.2" fill="rgba(167,139,250,0.5)"/>
+  <circle cx="1160" cy="200" r="1" fill="rgba(96,165,250,0.4)"/>
+  <circle cx="1050" cy="140" r="1.5" fill="rgba(167,139,250,0.6)"/>
+
+  <!-- TOP ICON PILLS -->
+  <g text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.38)">
+    <!-- Creative Ideas -->
+    <rect x="428" y="14" width="100" height="54" rx="10" fill="rgba(167,139,250,0.06)" stroke="rgba(167,139,250,0.18)" stroke-width="1"/>
+    <text x="478" y="36" font-size="18">💡</text><text x="478" y="58">Creative Ideas</text>
+    <!-- Unique & Brandable -->
+    <rect x="536" y="14" width="110" height="54" rx="10" fill="rgba(167,139,250,0.06)" stroke="rgba(167,139,250,0.18)" stroke-width="1"/>
+    <text x="591" y="36" font-size="18">🛡</text><text x="591" y="58">Unique &amp; Brandable</text>
+    <!-- Domain Check -->
+    <rect x="654" y="14" width="100" height="54" rx="10" fill="rgba(167,139,250,0.06)" stroke="rgba(167,139,250,0.18)" stroke-width="1"/>
+    <text x="704" y="36" font-size="18">🌐</text><text x="704" y="58">Domain Check</text>
+    <!-- Perfect for Startups -->
+    <rect x="762" y="14" width="116" height="54" rx="10" fill="rgba(167,139,250,0.06)" stroke="rgba(167,139,250,0.18)" stroke-width="1"/>
+    <text x="820" y="36" font-size="18">🚀</text><text x="820" y="58">Perfect for Startups</text>
+    <!-- Save Time -->
+    <rect x="886" y="14" width="90" height="54" rx="10" fill="rgba(167,139,250,0.06)" stroke="rgba(167,139,250,0.18)" stroke-width="1"/>
+    <text x="931" y="36" font-size="18">⏱</text><text x="931" y="58">Save Time</text>
+    <!-- AI-Powered -->
+    <rect x="984" y="14" width="90" height="54" rx="10" fill="rgba(167,139,250,0.06)" stroke="rgba(167,139,250,0.18)" stroke-width="1"/>
+    <text x="1029" y="36" font-size="18">⚡</text><text x="1029" y="58">AI-Powered</text>
+  </g>
+
+  <!-- LEFT COLUMN -->
+  <!-- Logo -->
+  <polygon points="28,88 36,76 48,76 56,88 48,100 36,100" fill="none" stroke="url(#aG)" stroke-width="2.5"/>
+  <polygon points="32,88 38,79 46,79 52,88 46,97 38,97" fill="rgba(124,58,237,0.25)"/>
+  <text x="63" y="86" font-size="13" font-weight="700" fill="rgba(255,255,255,0.9)">ToolNest AI</text>
+  <text x="63" y="100" font-size="9" fill="rgba(255,255,255,0.38)">All-in-One AI &amp; Online Tools</text>
+
+  <!-- Headline -->
+  <text x="28" y="160" font-size="50" font-weight="900" fill="url(#aG)" filter="url(#glow)" letter-spacing="-1.5">AI Business</text>
+  <text x="28" y="220" font-size="50" font-weight="900" fill="url(#aG)" filter="url(#glow)" letter-spacing="-1.5">Name</text>
+  <text x="28" y="280" font-size="50" font-weight="900" fill="url(#aG)" filter="url(#glow)" letter-spacing="-1.5">Generator</text>
+  <text x="28" y="316" font-size="16" font-weight="700" fill="rgba(255,255,255,0.85)">Find the Perfect Brand Name in Seconds</text>
+  <text x="28" y="340" font-size="11" fill="rgba(255,255,255,0.42)">Generate unique, memorable and brandable</text>
+  <text x="28" y="356" font-size="11" fill="rgba(255,255,255,0.42)">business names with the power of AI.</text>
+  <text x="28" y="372" font-size="11" fill="rgba(255,255,255,0.42)">Perfect for startups, companies, stores,</text>
+  <text x="28" y="388" font-size="11" fill="rgba(255,255,255,0.42)">apps, agencies and more.</text>
+
+  <!-- Feature bullets -->
+  <g font-size="11">
+    <rect x="28" y="404" width="22" height="22" rx="6" fill="rgba(124,58,237,0.22)" stroke="rgba(167,139,250,0.3)" stroke-width="1"/>
+    <text x="39" y="419" text-anchor="middle" font-size="11">✦</text>
+    <text x="56" y="414" font-weight="700" fill="rgba(255,255,255,0.85)">AI-Powered Ideas</text>
+    <text x="56" y="428" font-size="10" fill="rgba(255,255,255,0.38)">Get unlimited creative business name</text>
+    <text x="56" y="442" font-size="10" fill="rgba(255,255,255,0.38)">ideas in seconds using advanced AI.</text>
+
+    <rect x="28" y="454" width="22" height="22" rx="6" fill="rgba(124,58,237,0.22)" stroke="rgba(167,139,250,0.3)" stroke-width="1"/>
+    <text x="39" y="469" text-anchor="middle" font-size="11">🎯</text>
+    <text x="56" y="464" font-weight="700" fill="rgba(255,255,255,0.85)">Brandable &amp; Unique</text>
+    <text x="56" y="478" font-size="10" fill="rgba(255,255,255,0.38)">Find names that are catchy, easy to</text>
+    <text x="56" y="492" font-size="10" fill="rgba(255,255,255,0.38)">remember and stand out.</text>
+
+    <rect x="28" y="504" width="22" height="22" rx="6" fill="rgba(124,58,237,0.22)" stroke="rgba(167,139,250,0.3)" stroke-width="1"/>
+    <text x="39" y="519" text-anchor="middle" font-size="11">🌐</text>
+    <text x="56" y="514" font-weight="700" fill="rgba(255,255,255,0.85)">Domain Availability</text>
+    <text x="56" y="528" font-size="10" fill="rgba(255,255,255,0.38)">Check domain availability instantly</text>
+    <text x="56" y="542" font-size="10" fill="rgba(255,255,255,0.38)">and secure your perfect match.</text>
+
+    <rect x="28" y="554" width="22" height="22" rx="6" fill="rgba(34,197,94,0.12)" stroke="rgba(34,197,94,0.25)" stroke-width="1"/>
+    <text x="39" y="569" text-anchor="middle" font-size="11">⚡</text>
+    <text x="56" y="564" font-weight="700" fill="rgba(255,255,255,0.85)">Save Time &amp; Effort</text>
+    <text x="56" y="578" font-size="10" fill="rgba(255,255,255,0.38)">Skip brainstorming and find the</text>
+    <text x="56" y="592" font-size="10" fill="rgba(255,255,255,0.38)">perfect name fast.</text>
+  </g>
+
+  <!-- LAPTOP FRAME -->
+  <rect x="420" y="76" width="660" height="444" rx="18" fill="url(#lapG)" stroke="rgba(124,58,237,0.35)" stroke-width="1.5" filter="url(#sh)"/>
+  <!-- Laptop screen bezel -->
+  <rect x="430" y="86" width="640" height="420" rx="12" fill="#080518"/>
+  <!-- Laptop bottom base -->
+  <rect x="380" y="516" width="740" height="18" rx="6" fill="rgba(30,16,80,0.7)" stroke="rgba(124,58,237,0.2)" stroke-width="1"/>
+  <rect x="370" y="530" width="760" height="8" rx="4" fill="rgba(20,10,50,0.5)"/>
+  <!-- Neon glow under laptop -->
+  <ellipse cx="750" cy="538" rx="320" ry="12" fill="rgba(124,58,237,0.25)" filter="url(#neonGlow)"/>
+
+  <!-- SCREEN CONTENT -->
+  <!-- Chrome bar -->
+  <rect x="430" y="86" width="640" height="36" rx="12" fill="rgba(124,58,237,0.14)"/>
+  <rect x="430" y="110" width="640" height="12" fill="rgba(124,58,237,0.14)"/>
+  <circle cx="452" cy="104" r="5" fill="rgba(255,80,80,0.45)"/>
+  <circle cx="468" cy="104" r="5" fill="rgba(255,193,7,0.45)"/>
+  <circle cx="484" cy="104" r="5" fill="rgba(34,197,94,0.45)"/>
+  <!-- Tool header -->
+  <text x="520" y="108" font-size="12" font-weight="700" fill="rgba(255,255,255,0.75)">✦ AI Business Name Generator</text>
+  <rect x="980" y="95" width="76" height="20" rx="5" fill="rgba(124,58,237,0.22)" stroke="rgba(167,139,250,0.3)" stroke-width="1"/>
+  <text x="1018" y="108" text-anchor="middle" font-size="8" fill="#a78bfa">Powered by Advanced AI ✦</text>
+
+  <!-- Three-column layout inside screen -->
+  <!-- Left form column -->
+  <text x="448" y="148" font-size="10" font-weight="700" fill="rgba(255,255,255,0.55)">Business Information</text>
+  <text x="448" y="166" font-size="9" fill="rgba(255,255,255,0.38)">Business Type</text>
+  <rect x="448" y="170" width="196" height="24" rx="6" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="456" y="186" font-size="9" fill="rgba(255,255,255,0.5)">Online Store</text>
+  <text x="636" y="186" text-anchor="end" font-size="9" fill="rgba(255,255,255,0.3)">▾</text>
+
+  <text x="448" y="206" font-size="9" fill="rgba(255,255,255,0.38)">Industry / Niche</text>
+  <rect x="448" y="210" width="196" height="24" rx="6" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="456" y="226" font-size="9" fill="rgba(255,255,255,0.5)">Eco-friendly products</text>
+
+  <text x="448" y="246" font-size="9" fill="rgba(255,255,255,0.38)">Keywords (comma separated)</text>
+  <rect x="448" y="250" width="196" height="34" rx="6" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="456" y="264" font-size="9" fill="rgba(255,255,255,0.5)">green, nature, sustainable,</text>
+  <text x="456" y="276" font-size="9" fill="rgba(255,255,255,0.5)">earth</text>
+
+  <text x="448" y="298" font-size="9" fill="rgba(255,255,255,0.38)">Tone (Optional)</text>
+  <rect x="448" y="302" width="196" height="24" rx="6" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="456" y="318" font-size="9" fill="rgba(255,255,255,0.5)">Modern</text>
+  <text x="636" y="318" text-anchor="end" font-size="9" fill="rgba(255,255,255,0.3)">▾</text>
+
+  <text x="448" y="338" font-size="9" fill="rgba(255,255,255,0.38)">Length</text>
+  <rect x="448" y="342" width="196" height="24" rx="6" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="456" y="358" font-size="9" fill="rgba(255,255,255,0.5)">Short &amp; Catchy</text>
+  <text x="636" y="358" text-anchor="end" font-size="9" fill="rgba(255,255,255,0.3)">▾</text>
+
+  <rect x="448" y="378" width="196" height="32" rx="10" fill="url(#bG)" filter="url(#shSm)"/>
+  <text x="546" y="399" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">✦ Generate Names</text>
+
+  <!-- Divider -->
+  <line x1="656" y1="130" x2="656" y2="490" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+
+  <!-- Middle results column -->
+  <text x="668" y="148" font-size="10" font-weight="700" fill="rgba(255,255,255,0.55)">Generated Business Names</text>
+
+  <!-- Name rows -->
+  <g font-size="10">
+    <!-- Row 1 -->
+    <rect x="660" y="158" width="310" height="26" rx="6" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="674" y="175" font-size="13" font-weight="700" fill="rgba(255,255,255,0.88)">Greenora</text>
+    <text x="820" y="175" font-size="9" fill="rgba(255,255,255,0.35)">greenora.com</text>
+    <rect x="904" y="162" width="52" height="16" rx="4" fill="rgba(34,197,94,0.12)" stroke="rgba(34,197,94,0.3)" stroke-width="1"/>
+    <text x="930" y="173" text-anchor="middle" font-size="8" font-weight="700" fill="#4ade80">Available</text>
+    <text x="962" y="175" font-size="11" fill="rgba(167,139,250,0.5)">♡</text>
+
+    <!-- Row 2 -->
+    <rect x="660" y="190" width="310" height="26" rx="6" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="674" y="207" font-size="13" font-weight="700" fill="rgba(255,255,255,0.88)">EcoVibe</text>
+    <text x="820" y="207" font-size="9" fill="rgba(255,255,255,0.35)">ecovibe.com</text>
+    <rect x="904" y="194" width="52" height="16" rx="4" fill="rgba(34,197,94,0.12)" stroke="rgba(34,197,94,0.3)" stroke-width="1"/>
+    <text x="930" y="205" text-anchor="middle" font-size="8" font-weight="700" fill="#4ade80">Available</text>
+    <text x="962" y="207" font-size="11" fill="rgba(167,139,250,0.5)">♡</text>
+
+    <!-- Row 3 -->
+    <rect x="660" y="222" width="310" height="26" rx="6" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="674" y="239" font-size="13" font-weight="700" fill="rgba(255,255,255,0.88)">Naturli</text>
+    <text x="820" y="239" font-size="9" fill="rgba(255,255,255,0.35)">naturli.com</text>
+    <rect x="904" y="226" width="52" height="16" rx="4" fill="rgba(34,197,94,0.12)" stroke="rgba(34,197,94,0.3)" stroke-width="1"/>
+    <text x="930" y="237" text-anchor="middle" font-size="8" font-weight="700" fill="#4ade80">Available</text>
+    <text x="962" y="239" font-size="11" fill="rgba(167,139,250,0.5)">♡</text>
+
+    <!-- Row 4 -->
+    <rect x="660" y="254" width="310" height="26" rx="6" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="674" y="271" font-size="13" font-weight="700" fill="rgba(255,255,255,0.88)">Earthlyy</text>
+    <text x="820" y="271" font-size="9" fill="rgba(255,255,255,0.35)">earthlyy.com</text>
+    <rect x="904" y="258" width="52" height="16" rx="4" fill="rgba(34,197,94,0.12)" stroke="rgba(34,197,94,0.3)" stroke-width="1"/>
+    <text x="930" y="269" text-anchor="middle" font-size="8" font-weight="700" fill="#4ade80">Available</text>
+    <text x="962" y="271" font-size="11" fill="rgba(167,139,250,0.5)">♡</text>
+
+    <!-- Row 5 -->
+    <rect x="660" y="286" width="310" height="26" rx="6" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="674" y="303" font-size="13" font-weight="700" fill="rgba(255,255,255,0.88)">Sustaina</text>
+    <text x="820" y="303" font-size="9" fill="rgba(255,255,255,0.35)">sustaina.com</text>
+    <rect x="904" y="290" width="52" height="16" rx="4" fill="rgba(34,197,94,0.12)" stroke="rgba(34,197,94,0.3)" stroke-width="1"/>
+    <text x="930" y="301" text-anchor="middle" font-size="8" font-weight="700" fill="#4ade80">Available</text>
+    <text x="962" y="303" font-size="11" fill="rgba(167,139,250,0.5)">♡</text>
+
+    <!-- Row 6 -->
+    <rect x="660" y="318" width="310" height="26" rx="6" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="674" y="335" font-size="13" font-weight="700" fill="rgba(255,255,255,0.88)">EcoNexa</text>
+    <text x="820" y="335" font-size="9" fill="rgba(255,255,255,0.35)">econexa.com</text>
+    <rect x="904" y="322" width="52" height="16" rx="4" fill="rgba(34,197,94,0.12)" stroke="rgba(34,197,94,0.3)" stroke-width="1"/>
+    <text x="930" y="333" text-anchor="middle" font-size="8" font-weight="700" fill="#4ade80">Available</text>
+    <text x="962" y="335" font-size="11" fill="rgba(167,139,250,0.5)">♡</text>
+
+    <!-- Row 7 -->
+    <rect x="660" y="350" width="310" height="26" rx="6" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="674" y="367" font-size="13" font-weight="700" fill="rgba(255,255,255,0.88)">Pureterra</text>
+    <text x="820" y="367" font-size="9" fill="rgba(255,255,255,0.35)">pureterra.com</text>
+    <rect x="904" y="354" width="52" height="16" rx="4" fill="rgba(34,197,94,0.12)" stroke="rgba(34,197,94,0.3)" stroke-width="1"/>
+    <text x="930" y="365" text-anchor="middle" font-size="8" font-weight="700" fill="#4ade80">Available</text>
+    <text x="962" y="367" font-size="11" fill="rgba(167,139,250,0.5)">♡</text>
+
+    <!-- Row 8 -->
+    <rect x="660" y="382" width="310" height="26" rx="6" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="674" y="399" font-size="13" font-weight="700" fill="rgba(255,255,255,0.88)">Verdantly</text>
+    <text x="820" y="399" font-size="9" fill="rgba(255,255,255,0.35)">verdantly.com</text>
+    <rect x="904" y="386" width="52" height="16" rx="4" fill="rgba(34,197,94,0.12)" stroke="rgba(34,197,94,0.3)" stroke-width="1"/>
+    <text x="930" y="397" text-anchor="middle" font-size="8" font-weight="700" fill="#4ade80">Available</text>
+    <text x="962" y="399" font-size="11" fill="rgba(167,139,250,0.5)">♡</text>
+
+    <!-- Generate More -->
+    <rect x="680" y="418" width="120" height="24" rx="7" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <text x="740" y="434" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.5)">↻ Generate More</text>
+  </g>
+
+  <!-- Right sidebar -->
+  <line x1="982" y1="130" x2="982" y2="490" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="992" y="148" font-size="10" font-weight="700" fill="rgba(255,255,255,0.55)">Your Saved Names</text>
+  <g font-size="9" fill="rgba(255,255,255,0.65)">
+    <text x="998" y="170">💜 Greenora</text>
+    <text x="998" y="188">💜 EcoVibe</text>
+    <text x="998" y="206">💜 Naturli</text>
+  </g>
+  <line x1="988" y1="218" x2="1058" y2="218" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="992" y="236" font-size="10" font-weight="700" fill="rgba(255,255,255,0.55)">Tips for a Great Name</text>
+  <g font-size="8" fill="rgba(255,255,255,0.45)">
+    <text x="992" y="252">✓ Keep it short and simple</text>
+    <text x="992" y="266">✓ Make it easy to pronounce</text>
+    <text x="992" y="280">✓ Use relevant keywords</text>
+    <text x="992" y="294">✓ Check domain availability</text>
+    <text x="992" y="308">✓ Ensure it's unique</text>
+  </g>
+  <line x1="988" y1="320" x2="1058" y2="320" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="992" y="336" font-size="10" font-weight="700" fill="rgba(255,255,255,0.55)">Domain Extensions</text>
+  <g font-size="9" font-weight="700">
+    <rect x="992" y="342" width="28" height="14" rx="3" fill="rgba(124,58,237,0.3)" stroke="rgba(167,139,250,0.3)" stroke-width="1"/>
+    <text x="1006" y="353" text-anchor="middle" fill="#a78bfa">.com</text>
+    <rect x="1024" y="342" width="24" height="14" rx="3" fill="rgba(124,58,237,0.15)" stroke="rgba(167,139,250,0.18)" stroke-width="1"/>
+    <text x="1036" y="353" text-anchor="middle" fill="#c4b5fd">.net</text>
+    <rect x="1052" y="342" width="20" height="14" rx="3" fill="rgba(124,58,237,0.15)" stroke="rgba(167,139,250,0.18)" stroke-width="1"/>
+    <text x="1062" y="353" text-anchor="middle" fill="#c4b5fd">.io</text>
+    <rect x="992" y="360" width="20" height="14" rx="3" fill="rgba(124,58,237,0.15)" stroke="rgba(167,139,250,0.18)" stroke-width="1"/>
+    <text x="1002" y="371" text-anchor="middle" fill="#c4b5fd">.co</text>
+    <rect x="1016" y="360" width="28" height="14" rx="3" fill="rgba(124,58,237,0.15)" stroke="rgba(167,139,250,0.18)" stroke-width="1"/>
+    <text x="1030" y="371" text-anchor="middle" fill="#c4b5fd">.store</text>
+    <rect x="1048" y="360" width="22" height="14" rx="3" fill="rgba(124,58,237,0.15)" stroke="rgba(167,139,250,0.18)" stroke-width="1"/>
+    <text x="1059" y="371" text-anchor="middle" fill="#c4b5fd">.ai</text>
+  </g>
+
+  <!-- ROBOT MASCOT (SVG-drawn) -->
+  <!-- Base platform -->
+  <ellipse cx="1135" cy="552" rx="68" ry="12" fill="rgba(124,58,237,0.35)" filter="url(#neonGlow)"/>
+  <ellipse cx="1135" cy="548" rx="52" ry="8" fill="rgba(167,139,250,0.2)"/>
+  <!-- Body -->
+  <rect x="1100" y="448" width="70" height="90" rx="18" fill="url(#robG)" filter="url(#robGlow)"/>
+  <!-- Body panel -->
+  <rect x="1108" y="460" width="54" height="36" rx="8" fill="url(#robFaceG)" stroke="rgba(167,139,250,0.3)" stroke-width="1"/>
+  <text x="1135" y="472" text-anchor="middle" font-size="8" fill="rgba(167,139,250,0.6)">A I</text>
+  <text x="1135" y="487" text-anchor="middle" font-size="18" font-weight="900" fill="url(#aG)" filter="url(#glow)">AI</text>
+  <!-- Shoulders -->
+  <rect x="1087" y="458" width="16" height="50" rx="8" fill="url(#robG)"/>
+  <rect x="1167" y="458" width="16" height="50" rx="8" fill="url(#robG)"/>
+  <!-- Arms glow -->
+  <circle cx="1087" cy="510" r="8" fill="rgba(96,165,250,0.4)" filter="url(#neonGlow)"/>
+  <circle cx="1183" cy="510" r="8" fill="rgba(167,139,250,0.4)" filter="url(#neonGlow)"/>
+  <!-- Neck -->
+  <rect x="1125" y="430" width="20" height="20" rx="6" fill="url(#robG)"/>
+  <!-- Head -->
+  <rect x="1096" y="372" width="78" height="62" rx="18" fill="url(#robG)" filter="url(#robGlow)"/>
+  <!-- Face screen -->
+  <rect x="1103" y="380" width="64" height="46" rx="12" fill="url(#robFaceG)" stroke="rgba(167,139,250,0.4)" stroke-width="1.5"/>
+  <!-- Eyes -->
+  <circle cx="1122" cy="402" r="8" fill="rgba(124,58,237,0.4)" stroke="rgba(167,139,250,0.5)" stroke-width="1"/>
+  <circle cx="1148" cy="402" r="8" fill="rgba(124,58,237,0.4)" stroke="rgba(167,139,250,0.5)" stroke-width="1"/>
+  <circle cx="1122" cy="401" r="4" fill="url(#aG)" filter="url(#glow)"/>
+  <circle cx="1148" cy="401" r="4" fill="url(#aG)" filter="url(#glow)"/>
+  <circle cx="1123" cy="400" r="1.5" fill="#fff"/>
+  <circle cx="1149" cy="400" r="1.5" fill="#fff"/>
+  <!-- Smile -->
+  <path d="M 1115 415 Q 1135 425 1155 415" stroke="url(#aG)" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- Antenna -->
+  <line x1="1135" y1="372" x2="1135" y2="355" stroke="rgba(167,139,250,0.5)" stroke-width="2"/>
+  <circle cx="1135" cy="350" r="5" fill="url(#bG)" filter="url(#neonGlow)"/>
+  <!-- Ear bumps -->
+  <circle cx="1096" cy="400" r="7" fill="url(#robG)" stroke="rgba(167,139,250,0.3)" stroke-width="1"/>
+  <circle cx="1174" cy="400" r="7" fill="url(#robG)" stroke="rgba(167,139,250,0.3)" stroke-width="1"/>
+  <!-- Chest LED -->
+  <circle cx="1135" cy="510" r="6" fill="rgba(96,165,250,0.6)" filter="url(#neonGlow)"/>
+  <circle cx="1135" cy="510" r="3" fill="#60a5fa"/>
+
+  <!-- BOTTOM STATS BAR -->
+  <rect x="0" y="598" width="1200" height="32" fill="rgba(124,58,237,0.06)"/>
+  <line x1="0" y1="598" x2="1200" y2="598" stroke="rgba(167,139,250,0.1)" stroke-width="1"/>
+  <g text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.35)">
+    <text x="90" y="617">🚀 Perfect for Startups</text>
+    <text x="90" y="628" font-size="8" fill="rgba(255,255,255,0.2)">Startups, agencies, entrepreneurs</text>
+    <line x1="220" y1="600" x2="220" y2="628" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    <text x="330" y="617">🛒 E-commerce Ready</text>
+    <text x="330" y="628" font-size="8" fill="rgba(255,255,255,0.2)">Online stores, Amazon, Etsy</text>
+    <line x1="450" y1="600" x2="450" y2="628" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    <text x="560" y="617">✅ 100% Unique</text>
+    <text x="560" y="628" font-size="8" fill="rgba(255,255,255,0.2)">AI-generated, not a list</text>
+    <line x1="670" y1="600" x2="670" y2="628" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    <text x="780" y="617">⚡ Save Hours</text>
+    <text x="780" y="628" font-size="8" fill="rgba(255,255,255,0.2)">Hundreds of ideas in seconds</text>
+    <line x1="890" y1="600" x2="890" y2="628" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    <text x="1000" y="617">⭐ Build Your Brand</text>
+    <text x="1000" y="628" font-size="8" fill="rgba(255,255,255,0.2)">Start your brand journey</text>
+    <line x1="1100" y1="600" x2="1100" y2="628" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    <text x="1155" y="617">🆓 Free</text>
+    <text x="1155" y="628" font-size="8" fill="rgba(255,255,255,0.2)">No account needed</text>
+  </g>
+</svg>

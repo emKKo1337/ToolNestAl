@@ -1,0 +1,136 @@
+<svg viewBox="0 0 900 1200" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="30%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gT" cx="50%" cy="12%" r="60%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.28"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gB" cx="50%" cy="88%" r="55%"><stop offset="0%" stop-color="#2563eb" stop-opacity="0.14"/><stop offset="100%" stop-color="#2563eb" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="pG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#130b2e" stop-opacity="0.97"/><stop offset="100%" stop-color="#0c0820" stop-opacity="0.97"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#5b21b6" flood-opacity="0.3"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <rect width="900" height="1200" fill="url(#bg)"/>
+  <ellipse cx="450" cy="150" rx="600" ry="280" fill="url(#gT)"/>
+  <ellipse cx="450" cy="1050" rx="600" ry="280" fill="url(#gB)"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="900" height="124" fill="rgba(124,58,237,0.07)"/>
+  <line x1="0" y1="124" x2="900" y2="124" stroke="rgba(167,139,250,0.14)" stroke-width="1"/>
+  <text x="450" y="42" text-anchor="middle" font-size="11" font-weight="700" fill="#a78bfa" letter-spacing="2">TOOLNEST AI</text>
+  <text x="450" y="80" text-anchor="middle" font-size="28" font-weight="900" fill="url(#aG)" filter="url(#glow)">AI Business Name Generator</text>
+  <text x="450" y="110" text-anchor="middle" font-size="14" fill="rgba(255,255,255,0.5)">The Complete 2026 Naming Guide</text>
+
+  <!-- Stats strip -->
+  <rect x="24" y="140" width="852" height="72" rx="14" fill="url(#pG)" stroke="rgba(167,139,250,0.16)" stroke-width="1"/>
+  <g text-anchor="middle" font-size="22" font-weight="900">
+    <text x="150" y="184" fill="url(#aG)" filter="url(#glow)">10s</text>
+    <text x="150" y="202" font-size="10" font-weight="400" fill="rgba(255,255,255,0.38)">to generate names</text>
+    <line x1="300" y1="148" x2="300" y2="204" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    <text x="450" y="184" fill="url(#aG)" filter="url(#glow)">5 Types</text>
+    <text x="450" y="202" font-size="10" font-weight="400" fill="rgba(255,255,255,0.38)">Startup · SaaS · Store · Agency · Local</text>
+    <line x1="600" y1="148" x2="600" y2="204" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    <text x="750" y="184" fill="#4ade80" filter="url(#glow)">100%</text>
+    <text x="750" y="202" font-size="10" font-weight="400" fill="rgba(255,255,255,0.38)">free, no account needed</text>
+  </g>
+
+  <!-- Section 1: 5-Step Guide -->
+  <text x="450" y="246" text-anchor="middle" font-size="13" font-weight="700" fill="#a78bfa" letter-spacing="1">✦ 5 STEPS TO FIND YOUR PERFECT BUSINESS NAME</text>
+  <line x1="60" y1="254" x2="840" y2="254" stroke="rgba(167,139,250,0.1)" stroke-width="1"/>
+
+  <!-- Step 1 -->
+  <rect x="24" y="264" width="852" height="72" rx="12" fill="url(#pG)" stroke="rgba(167,139,250,0.13)" stroke-width="1"/>
+  <circle cx="66" cy="300" r="20" fill="url(#bG)" filter="url(#sh)"/>
+  <text x="66" y="306" text-anchor="middle" font-size="14" font-weight="900" fill="#fff">1</text>
+  <text x="102" y="294" font-size="13" font-weight="700" fill="rgba(255,255,255,0.9)">📋  Describe Your Business</text>
+  <text x="102" y="312" font-size="11" fill="rgba(255,255,255,0.42)">Enter your business type, industry niche and the keywords that best describe what you do.</text>
+  <text x="102" y="328" font-size="11" fill="rgba(255,255,255,0.42)">The more specific you are, the more relevant the names.</text>
+  <text x="830" y="306" text-anchor="end" font-size="10" fill="#a78bfa" font-weight="600">~30 sec</text>
+
+  <!-- Step 2 -->
+  <rect x="24" y="346" width="852" height="72" rx="12" fill="url(#pG)" stroke="rgba(167,139,250,0.13)" stroke-width="1"/>
+  <circle cx="66" cy="382" r="20" fill="url(#bG)" filter="url(#sh)"/>
+  <text x="66" y="388" text-anchor="middle" font-size="14" font-weight="900" fill="#fff">2</text>
+  <text x="102" y="376" font-size="13" font-weight="700" fill="rgba(255,255,255,0.9)">🎯  Choose Tone &amp; Length</text>
+  <text x="102" y="394" font-size="11" fill="rgba(255,255,255,0.42)">Select a tone (Modern, Professional, Playful, Luxury) and preferred name length. Short &amp; Catchy</text>
+  <text x="102" y="410" font-size="11" fill="rgba(255,255,255,0.42)">works for most brands — longer names suit agencies or professional services.</text>
+  <text x="830" y="388" text-anchor="end" font-size="10" fill="#a78bfa" font-weight="600">~10 sec</text>
+
+  <!-- Step 3 -->
+  <rect x="24" y="428" width="852" height="72" rx="12" fill="url(#pG)" stroke="rgba(167,139,250,0.13)" stroke-width="1"/>
+  <circle cx="66" cy="464" r="20" fill="url(#bG)" filter="url(#sh)"/>
+  <text x="66" y="470" text-anchor="middle" font-size="14" font-weight="900" fill="#fff">3</text>
+  <text x="102" y="458" font-size="13" font-weight="700" fill="rgba(255,255,255,0.9)">✦  Generate &amp; Browse Names</text>
+  <text x="102" y="476" font-size="11" fill="rgba(255,255,255,0.42)">Click Generate Names. The AI produces 8–12 unique business names with domain availability</text>
+  <text x="102" y="492" font-size="11" fill="rgba(255,255,255,0.42)">shown for .com, .io, .co and more. Click Generate More for fresh batches.</text>
+  <text x="830" y="470" text-anchor="end" font-size="10" fill="#a78bfa" font-weight="600">~10 sec</text>
+
+  <!-- Step 4 -->
+  <rect x="24" y="510" width="852" height="72" rx="12" fill="url(#pG)" stroke="rgba(167,139,250,0.13)" stroke-width="1"/>
+  <circle cx="66" cy="546" r="20" fill="url(#bG)" filter="url(#sh)"/>
+  <text x="66" y="552" text-anchor="middle" font-size="14" font-weight="900" fill="#fff">4</text>
+  <text x="102" y="540" font-size="13" font-weight="700" fill="rgba(255,255,255,0.9)">💜  Save Your Favourites</text>
+  <text x="102" y="558" font-size="11" fill="rgba(255,255,255,0.42)">Heart the names you like most. They appear in your Saved Names panel so you can compare</text>
+  <text x="102" y="574" font-size="11" fill="rgba(255,255,255,0.42)">shortlisted options side by side without losing track.</text>
+  <text x="830" y="552" text-anchor="end" font-size="10" fill="#a78bfa" font-weight="600">Anytime</text>
+
+  <!-- Step 5 -->
+  <rect x="24" y="592" width="852" height="72" rx="12" fill="url(#pG)" stroke="rgba(34,197,94,0.2)" stroke-width="1"/>
+  <circle cx="66" cy="628" r="20" fill="url(#bG)" filter="url(#sh)"/>
+  <text x="66" y="634" text-anchor="middle" font-size="14" font-weight="900" fill="#fff">5</text>
+  <text x="102" y="622" font-size="13" font-weight="700" fill="rgba(255,255,255,0.9)">🚀  Validate &amp; Register</text>
+  <text x="102" y="640" font-size="11" fill="rgba(255,255,255,0.42)">Google your top name, check trademark databases and verify social handles are available.</text>
+  <text x="102" y="656" font-size="11" fill="rgba(255,255,255,0.42)">Register the domain and launch your brand with confidence.</text>
+  <text x="830" y="634" text-anchor="end" font-size="10" fill="#4ade80" font-weight="600">✓ Done</text>
+
+  <!-- Section 2: 6 Quality Traits -->
+  <text x="450" y="710" text-anchor="middle" font-size="13" font-weight="700" fill="#a78bfa" letter-spacing="1">✦ 6 TRAITS OF A GREAT BUSINESS NAME</text>
+  <line x1="60" y1="718" x2="840" y2="718" stroke="rgba(167,139,250,0.1)" stroke-width="1"/>
+
+  <!-- 2x3 grid -->
+  <rect x="24" y="728" width="410" height="72" rx="10" fill="url(#pG)" stroke="rgba(167,139,250,0.12)" stroke-width="1"/>
+  <text x="44" y="754" font-size="20">🔤</text>
+  <text x="72" y="752" font-size="12" font-weight="700" fill="rgba(255,255,255,0.88)">Short &amp; Pronounceable</text>
+  <text x="72" y="769" font-size="10" fill="rgba(255,255,255,0.42)">Under 10 characters. Easy to say,</text>
+  <text x="72" y="784" font-size="10" fill="rgba(255,255,255,0.42)">spell and remember the first time.</text>
+
+  <rect x="446" y="728" width="430" height="72" rx="10" fill="url(#pG)" stroke="rgba(167,139,250,0.12)" stroke-width="1"/>
+  <text x="466" y="754" font-size="20">🛡</text>
+  <text x="494" y="752" font-size="12" font-weight="700" fill="rgba(255,255,255,0.88)">Unique &amp; Ownable</text>
+  <text x="494" y="769" font-size="10" fill="rgba(255,255,255,0.42)">Not a generic word. Trademark-</text>
+  <text x="494" y="784" font-size="10" fill="rgba(255,255,255,0.42)">friendly and legally defensible.</text>
+
+  <rect x="24" y="810" width="410" height="72" rx="10" fill="url(#pG)" stroke="rgba(167,139,250,0.12)" stroke-width="1"/>
+  <text x="44" y="836" font-size="20">🌐</text>
+  <text x="72" y="834" font-size="12" font-weight="700" fill="rgba(255,255,255,0.88)">Domain Available</text>
+  <text x="72" y="851" font-size="10" fill="rgba(255,255,255,0.42)">.com is still gold. Verify before</text>
+  <text x="72" y="866" font-size="10" fill="rgba(255,255,255,0.42)">you fall in love with the name.</text>
+
+  <rect x="446" y="810" width="430" height="72" rx="10" fill="url(#pG)" stroke="rgba(167,139,250,0.12)" stroke-width="1"/>
+  <text x="466" y="836" font-size="20">🎯</text>
+  <text x="494" y="834" font-size="12" font-weight="700" fill="rgba(255,255,255,0.88)">Niche Relevant</text>
+  <text x="494" y="851" font-size="10" fill="rgba(255,255,255,0.42)">Hints at what you do without</text>
+  <text x="494" y="866" font-size="10" fill="rgba(255,255,255,0.42)">boxing you in as you grow.</text>
+
+  <rect x="24" y="892" width="410" height="72" rx="10" fill="url(#pG)" stroke="rgba(167,139,250,0.12)" stroke-width="1"/>
+  <text x="44" y="918" font-size="20">💡</text>
+  <text x="72" y="916" font-size="12" font-weight="700" fill="rgba(255,255,255,0.88)">Emotionally Resonant</text>
+  <text x="72" y="933" font-size="10" fill="rgba(255,255,255,0.42)">Evokes speed, trust, creativity</text>
+  <text x="72" y="948" font-size="10" fill="rgba(255,255,255,0.42)">or belonging — not neutral.</text>
+
+  <rect x="446" y="892" width="430" height="72" rx="10" fill="url(#pG)" stroke="rgba(167,139,250,0.12)" stroke-width="1"/>
+  <text x="466" y="918" font-size="20">📈</text>
+  <text x="494" y="916" font-size="12" font-weight="700" fill="rgba(255,255,255,0.88)">Scalable</text>
+  <text x="494" y="933" font-size="10" fill="rgba(255,255,255,0.42)">Works globally. Not tied to a</text>
+  <text x="494" y="948" font-size="10" fill="rgba(255,255,255,0.42)">single product, city or trend.</text>
+
+  <!-- CTA -->
+  <rect x="24" y="986" width="852" height="96" rx="16" fill="url(#bG)" filter="url(#sh)"/>
+  <text x="450" y="1022" text-anchor="middle" font-size="20" font-weight="900" fill="#fff" filter="url(#glow)">✦ Find Your Perfect Business Name Today</text>
+  <text x="450" y="1048" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.75)">100% Free · No Account Required · Instant Results</text>
+  <text x="450" y="1070" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.5)">toolnestai.net/ai-tools/ai-business-name-generator</text>
+
+  <!-- Footer -->
+  <text x="450" y="1108" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.22)">© 2026 ToolNest AI · toolnestai.net</text>
+  <text x="450" y="1126" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.15)">AI Business Name Generator · Free Online Tool</text>
+</svg>
