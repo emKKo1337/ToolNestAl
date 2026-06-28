@@ -1,0 +1,96 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="75%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gL" cx="20%" cy="50%" r="50%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.2"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gR" cx="80%" cy="50%" r="50%"><stop offset="0%" stop-color="#2563eb" stop-opacity="0.14"/><stop offset="100%" stop-color="#2563eb" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="pG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#130b2e" stop-opacity="0.97"/><stop offset="100%" stop-color="#0c0820" stop-opacity="0.97"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#5b21b6" flood-opacity="0.28"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <rect width="1200" height="500" fill="url(#bg)"/>
+  <ellipse cx="300" cy="250" rx="420" ry="300" fill="url(#gL)"/>
+  <ellipse cx="900" cy="250" rx="420" ry="300" fill="url(#gR)"/>
+
+  <text x="600" y="44" text-anchor="middle" font-size="11" font-weight="700" fill="#a78bfa" letter-spacing="1">COVER LETTER STRUCTURE</text>
+  <text x="600" y="76" text-anchor="middle" font-size="26" font-weight="800" fill="url(#aG)" filter="url(#glow)">Anatomy of a Winning Cover Letter</text>
+  <text x="600" y="102" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.42)">Every section the AI writes — and exactly what it must accomplish for the hiring manager</text>
+
+  <!-- Left: visual letter mockup -->
+  <rect x="28" y="116" width="340" height="368" rx="14" fill="url(#pG)" stroke="rgba(167,139,250,0.2)" stroke-width="1" filter="url(#sh)"/>
+  <rect x="28" y="116" width="340" height="36" rx="14" fill="rgba(124,58,237,0.14)"/>
+  <rect x="28" y="140" width="340" height="12" fill="rgba(124,58,237,0.14)"/>
+  <text x="198" y="137" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(255,255,255,0.55)">Generated Cover Letter — Preview</text>
+
+  <!-- Section 1: Header -->
+  <rect x="48" y="162" width="300" height="42" rx="6" fill="rgba(167,139,250,0.1)" stroke="rgba(167,139,250,0.22)" stroke-width="1"/>
+  <text x="58" y="179" font-size="11" font-weight="700" fill="#a78bfa">① Header</text>
+  <text x="58" y="195" font-size="9" fill="rgba(255,255,255,0.5)">Sarah Mitchell · sarah@email.com · London, UK</text>
+
+  <!-- Section 2: Opening -->
+  <rect x="48" y="212" width="300" height="58" rx="6" fill="rgba(96,165,250,0.08)" stroke="rgba(96,165,250,0.2)" stroke-width="1"/>
+  <text x="58" y="229" font-size="11" font-weight="700" fill="#93c5fd">② Opening Paragraph</text>
+  <text x="58" y="245" font-size="9" fill="rgba(255,255,255,0.5)">Dear Hiring Manager, I am writing to express</text>
+  <text x="58" y="259" font-size="9" fill="rgba(255,255,255,0.5)">my interest in the [Role] at [Company]...</text>
+
+  <!-- Section 3: Body 1 -->
+  <rect x="48" y="278" width="300" height="54" rx="6" fill="rgba(124,58,237,0.08)" stroke="rgba(124,58,237,0.2)" stroke-width="1"/>
+  <text x="58" y="295" font-size="11" font-weight="700" fill="#c4b5fd">③ Experience Paragraph</text>
+  <text x="58" y="311" font-size="9" fill="rgba(255,255,255,0.5)">In my current role, I have [achievement +</text>
+  <text x="58" y="325" font-size="9" fill="rgba(255,255,255,0.5)">skill]. I delivered [measurable result]...</text>
+
+  <!-- Section 4: Body 2 -->
+  <rect x="48" y="340" width="300" height="54" rx="6" fill="rgba(52,211,153,0.07)" stroke="rgba(52,211,153,0.18)" stroke-width="1"/>
+  <text x="58" y="357" font-size="11" font-weight="700" fill="#6ee7b7">④ Company Connection</text>
+  <text x="58" y="373" font-size="9" fill="rgba(255,255,255,0.5)">I am particularly drawn to [Company] because</text>
+  <text x="58" y="387" font-size="9" fill="rgba(255,255,255,0.5)">of [specific reason]. My values align with...</text>
+
+  <!-- Section 5: Closing -->
+  <rect x="48" y="402" width="300" height="54" rx="6" fill="rgba(251,191,36,0.07)" stroke="rgba(251,191,36,0.18)" stroke-width="1"/>
+  <text x="58" y="419" font-size="11" font-weight="700" fill="#fde68a">⑤ Call to Action + Sign-off</text>
+  <text x="58" y="435" font-size="9" fill="rgba(255,255,255,0.5)">Thank you for your time. I look forward to</text>
+  <text x="58" y="449" font-size="9" fill="rgba(255,255,255,0.5)">discussing this further. Sincerely, Sarah M.</text>
+
+  <!-- Right: section explanations -->
+  <g>
+    <!-- ① Header -->
+    <rect x="390" y="116" width="790" height="60" rx="10" fill="url(#pG)" stroke="rgba(167,139,250,0.18)" stroke-width="1"/>
+    <rect x="390" y="116" width="4" height="60" rx="2" fill="#a78bfa"/>
+    <text x="410" y="136" font-size="12" font-weight="700" fill="#a78bfa">① Header — Your contact details</text>
+    <text x="410" y="154" font-size="10" fill="rgba(255,255,255,0.5)">Name, email, phone and LinkedIn. AI formats this cleanly so the recruiter can contact you instantly.</text>
+    <text x="410" y="169" font-size="10" fill="rgba(255,255,255,0.35)">Keep it brief. No home address unless requested. Date is optional for email applications.</text>
+
+    <!-- ② Opening -->
+    <rect x="390" y="186" width="790" height="68" rx="10" fill="url(#pG)" stroke="rgba(96,165,250,0.18)" stroke-width="1"/>
+    <rect x="390" y="186" width="4" height="68" rx="2" fill="#93c5fd"/>
+    <text x="410" y="206" font-size="12" font-weight="700" fill="#93c5fd">② Opening Paragraph — Hook the reader in 3 sentences</text>
+    <text x="410" y="224" font-size="10" fill="rgba(255,255,255,0.5)">State the role you are applying for, where you found it, and one sentence that immediately signals</text>
+    <text x="410" y="238" font-size="10" fill="rgba(255,255,255,0.5)">why you are a strong candidate. AI writes this to match the job title and company name exactly.</text>
+    <text x="410" y="249" font-size="10" fill="rgba(255,255,255,0.32)">Pro tip: avoid "I am writing to apply for" — open with your strongest selling point instead.</text>
+
+    <!-- ③ Experience -->
+    <rect x="390" y="264" width="790" height="68" rx="10" fill="url(#pG)" stroke="rgba(124,58,237,0.18)" stroke-width="1"/>
+    <rect x="390" y="264" width="4" height="68" rx="2" fill="#c4b5fd"/>
+    <text x="410" y="284" font-size="12" font-weight="700" fill="#c4b5fd">③ Experience Paragraph — Prove you can do the job</text>
+    <text x="410" y="302" font-size="10" fill="rgba(255,255,255,0.5)">Highlight 2–3 relevant achievements with numbers where possible. The AI pulls from your skills</text>
+    <text x="410" y="316" font-size="10" fill="rgba(255,255,255,0.5)">input and frames them as outcomes that matter to the employer, not just duties you performed.</text>
+    <text x="410" y="327" font-size="10" fill="rgba(255,255,255,0.32)">This is the ATS keyword-rich section — your skills appear naturally here, not in a list.</text>
+
+    <!-- ④ Company Connection -->
+    <rect x="390" y="342" width="790" height="68" rx="10" fill="url(#pG)" stroke="rgba(52,211,153,0.16)" stroke-width="1"/>
+    <rect x="390" y="342" width="4" height="68" rx="2" fill="#6ee7b7"/>
+    <text x="410" y="362" font-size="12" font-weight="700" fill="#6ee7b7">④ Company Connection — Show you did your homework</text>
+    <text x="410" y="380" font-size="10" fill="rgba(255,255,255,0.5)">Reference the company specifically — their mission, products or recent news. AI uses the company</text>
+    <text x="410" y="394" font-size="10" fill="rgba(255,255,255,0.5)">name and industry you provided to write a focused, non-generic paragraph about why this role.</text>
+    <text x="410" y="405" font-size="10" fill="rgba(255,255,255,0.32)">This is the paragraph most candidates skip — it is also the one that gets you remembered.</text>
+
+    <!-- ⑤ Closing -->
+    <rect x="390" y="420" width="790" height="60" rx="10" fill="url(#pG)" stroke="rgba(251,191,36,0.16)" stroke-width="1"/>
+    <rect x="390" y="420" width="4" height="60" rx="2" fill="#fde68a"/>
+    <text x="410" y="440" font-size="12" font-weight="700" fill="#fde68a">⑤ Closing — End with confidence and a clear next step</text>
+    <text x="410" y="458" font-size="10" fill="rgba(255,255,255,0.5)">Thank the reader, express interest in a conversation, and sign off professionally. AI adds a call</text>
+    <text x="410" y="472" font-size="10" fill="rgba(255,255,255,0.5)">to action ("I would welcome a chance to discuss") so recruiters know what to do next.</text>
+  </g>
+</svg>

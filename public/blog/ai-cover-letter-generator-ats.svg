@@ -1,0 +1,138 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="75%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gC" cx="50%" cy="50%" r="55%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.18"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="pG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#130b2e" stop-opacity="0.97"/><stop offset="100%" stop-color="#0c0820" stop-opacity="0.97"/></linearGradient>
+    <linearGradient id="bar1" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#a78bfa"/></linearGradient>
+    <linearGradient id="bar2" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#2563eb"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bar3" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#059669"/><stop offset="100%" stop-color="#34d399"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#5b21b6" flood-opacity="0.28"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <rect width="1200" height="500" fill="url(#bg)"/>
+  <ellipse cx="600" cy="250" rx="700" ry="320" fill="url(#gC)"/>
+
+  <text x="600" y="44" text-anchor="middle" font-size="11" font-weight="700" fill="#a78bfa" letter-spacing="1">ATS OPTIMIZATION</text>
+  <text x="600" y="76" text-anchor="middle" font-size="26" font-weight="800" fill="url(#aG)" filter="url(#glow)">How AI Makes Your Cover Letter ATS-Proof</text>
+  <text x="600" y="102" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.42)">75% of resumes are rejected by ATS before a human sees them — here is how the AI protects your letter</text>
+
+  <!-- LEFT: What is ATS -->
+  <rect x="22" y="116" width="280" height="360" rx="14" fill="url(#pG)" stroke="rgba(167,139,250,0.2)" stroke-width="1" filter="url(#sh)"/>
+  <rect x="22" y="116" width="280" height="40" rx="14" fill="rgba(124,58,237,0.16)"/>
+  <rect x="22" y="144" width="280" height="12" fill="rgba(124,58,237,0.16)"/>
+  <text x="162" y="140" text-anchor="middle" font-size="11" font-weight="700" fill="rgba(255,255,255,0.7)">What is ATS?</text>
+  <text x="42" y="174" font-size="10" fill="rgba(255,255,255,0.5)">Applicant Tracking Systems are software</text>
+  <text x="42" y="189" font-size="10" fill="rgba(255,255,255,0.5)">used by 98% of Fortune 500 companies to</text>
+  <text x="42" y="204" font-size="10" fill="rgba(255,255,255,0.5)">filter job applications automatically before</text>
+  <text x="42" y="219" font-size="10" fill="rgba(255,255,255,0.5)">a recruiter ever reads them.</text>
+  <text x="42" y="244" font-size="10" fill="rgba(255,255,255,0.5)">ATS scans cover letters and resumes for:</text>
+  <g font-size="9" fill="rgba(255,255,255,0.45)">
+    <text x="42" y="264">→ Exact-match keywords from the job listing</text>
+    <text x="42" y="280">→ Correct formatting (no tables, no images)</text>
+    <text x="42" y="296">→ Standard section headings</text>
+    <text x="42" y="312">→ Professional language and tone</text>
+    <text x="42" y="328">→ Relevant skills mentioned in context</text>
+  </g>
+  <line x1="42" y1="340" x2="282" y2="340" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="42" y="358" font-size="9" font-weight="600" fill="rgba(239,68,68,0.8)">Without ATS optimisation:</text>
+  <text x="42" y="373" font-size="9" fill="rgba(255,255,255,0.4)">A great cover letter gets scored 30/100</text>
+  <text x="42" y="388" font-size="9" fill="rgba(255,255,255,0.4)">and never reaches the hiring manager.</text>
+  <text x="42" y="410" font-size="9" font-weight="600" fill="rgba(52,211,153,0.8)">With AI-generated ATS optimisation:</text>
+  <text x="42" y="425" font-size="9" fill="rgba(255,255,255,0.4)">Keywords match, format is clean, tone</text>
+  <text x="42" y="440" font-size="9" fill="rgba(255,255,255,0.4)">is professional — score climbs to 88+.</text>
+  <text x="42" y="458" font-size="10" font-weight="700" fill="#a78bfa">98% of top employers use ATS</text>
+
+  <!-- CENTER: Score meter -->
+  <rect x="324" y="116" width="250" height="360" rx="14" fill="url(#pG)" stroke="rgba(167,139,250,0.2)" stroke-width="1" filter="url(#sh)"/>
+  <rect x="324" y="116" width="250" height="40" rx="14" fill="rgba(124,58,237,0.16)"/>
+  <rect x="324" y="144" width="250" height="12" fill="rgba(124,58,237,0.16)"/>
+  <text x="449" y="140" text-anchor="middle" font-size="11" font-weight="700" fill="rgba(255,255,255,0.7)">ATS Score Comparison</text>
+
+  <!-- Generic letter -->
+  <text x="449" y="178" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.38)">Generic / manual letter</text>
+  <rect x="344" y="186" width="210" height="20" rx="5" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <rect x="344" y="186" width="63" height="20" rx="5" fill="rgba(239,68,68,0.35)"/>
+  <text x="357" y="200" font-size="10" font-weight="700" fill="rgba(239,68,68,0.9)">30 / 100</text>
+
+  <!-- AI-optimised -->
+  <text x="449" y="226" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.38)">AI-generated &amp; ATS-optimised</text>
+  <rect x="344" y="234" width="210" height="20" rx="5" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <rect x="344" y="234" width="184" height="20" rx="5" fill="url(#bar3)"/>
+  <text x="357" y="248" font-size="10" font-weight="700" fill="#fff">88 / 100</text>
+
+  <line x1="344" y1="268" x2="554" y2="268" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="449" y="290" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(255,255,255,0.6)">What AI checks automatically:</text>
+  <g font-size="9" fill="rgba(255,255,255,0.45)">
+    <text x="344" y="312">✓ Job title exact-match in opening</text>
+    <text x="344" y="329">✓ All input skills appear naturally in body</text>
+    <text x="344" y="346">✓ Company name referenced correctly</text>
+    <text x="344" y="363">✓ No tables, columns or special chars</text>
+    <text x="344" y="380">✓ Standard professional sign-off format</text>
+    <text x="344" y="397">✓ 150–250 words (ATS sweet spot)</text>
+    <text x="344" y="414">✓ Active voice throughout</text>
+    <text x="344" y="431">✓ Industry-specific terminology included</text>
+  </g>
+  <rect x="344" y="446" width="210" height="24" rx="8" fill="url(#bG)"/>
+  <text x="449" y="462" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">ATS Pass Rate: 94%+</text>
+
+  <!-- RIGHT: 6 pillars -->
+  <rect x="596" y="116" width="582" height="360" rx="14" fill="url(#pG)" stroke="rgba(167,139,250,0.18)" stroke-width="1" filter="url(#sh)"/>
+  <rect x="596" y="116" width="582" height="40" rx="14" fill="rgba(124,58,237,0.14)"/>
+  <rect x="596" y="144" width="582" height="12" fill="rgba(124,58,237,0.14)"/>
+  <text x="887" y="140" text-anchor="middle" font-size="11" font-weight="700" fill="rgba(255,255,255,0.7)">6 ATS Optimisation Pillars the AI Handles for You</text>
+
+  <!-- Pillar cards 2x3 -->
+  <!-- Row 1 -->
+  <rect x="614" y="162" width="174" height="90" rx="10" fill="rgba(124,58,237,0.1)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+  <text x="624" y="182" font-size="18">🔑</text>
+  <text x="624" y="200" font-size="11" font-weight="700" fill="#a78bfa">Keyword Match</text>
+  <text x="624" y="216" font-size="9" fill="rgba(255,255,255,0.45)">Your skills are embedded</text>
+  <text x="624" y="230" font-size="9" fill="rgba(255,255,255,0.45)">naturally — not in a list</text>
+  <text x="624" y="244" font-size="9" fill="rgba(255,255,255,0.35)">ATS reads them in context</text>
+
+  <rect x="800" y="162" width="174" height="90" rx="10" fill="rgba(37,99,235,0.1)" stroke="rgba(96,165,250,0.2)" stroke-width="1"/>
+  <text x="810" y="182" font-size="18">📐</text>
+  <text x="810" y="200" font-size="11" font-weight="700" fill="#93c5fd">Clean Format</text>
+  <text x="810" y="216" font-size="9" fill="rgba(255,255,255,0.45)">Plain text paragraphs</text>
+  <text x="810" y="230" font-size="9" fill="rgba(255,255,255,0.45)">No tables or columns</text>
+  <text x="810" y="244" font-size="9" fill="rgba(255,255,255,0.35)">ATS parses every word</text>
+
+  <rect x="986" y="162" width="174" height="90" rx="10" fill="rgba(5,150,105,0.1)" stroke="rgba(52,211,153,0.2)" stroke-width="1"/>
+  <text x="996" y="182" font-size="18">📏</text>
+  <text x="996" y="200" font-size="11" font-weight="700" fill="#6ee7b7">Ideal Length</text>
+  <text x="996" y="216" font-size="9" fill="rgba(255,255,255,0.45)">150–250 words — the</text>
+  <text x="996" y="230" font-size="9" fill="rgba(255,255,255,0.45)">ATS and recruiter sweet</text>
+  <text x="996" y="244" font-size="9" fill="rgba(255,255,255,0.35)">spot for scoring</text>
+
+  <!-- Row 2 -->
+  <rect x="614" y="268" width="174" height="90" rx="10" fill="rgba(251,191,36,0.08)" stroke="rgba(251,191,36,0.18)" stroke-width="1"/>
+  <text x="624" y="288" font-size="18">🏢</text>
+  <text x="624" y="306" font-size="11" font-weight="700" fill="#fde68a">Role &amp; Company</text>
+  <text x="624" y="322" font-size="9" fill="rgba(255,255,255,0.45)">Job title and company</text>
+  <text x="624" y="338" font-size="9" fill="rgba(255,255,255,0.45)">name in the opening line</text>
+  <text x="624" y="352" font-size="9" fill="rgba(255,255,255,0.35)">ATS awards exact matches</text>
+
+  <rect x="800" y="268" width="174" height="90" rx="10" fill="rgba(239,68,68,0.08)" stroke="rgba(239,68,68,0.18)" stroke-width="1"/>
+  <text x="810" y="288" font-size="18">💬</text>
+  <text x="810" y="306" font-size="11" font-weight="700" fill="#fca5a5">Active Voice</text>
+  <text x="810" y="322" font-size="9" fill="rgba(255,255,255,0.45)">"I delivered" not "was</text>
+  <text x="810" y="338" font-size="9" fill="rgba(255,255,255,0.45)">responsible for delivery"</text>
+  <text x="810" y="352" font-size="9" fill="rgba(255,255,255,0.35)">Scores higher, reads better</text>
+
+  <rect x="986" y="268" width="174" height="90" rx="10" fill="rgba(124,58,237,0.08)" stroke="rgba(167,139,250,0.16)" stroke-width="1"/>
+  <text x="996" y="288" font-size="18">🔤</text>
+  <text x="996" y="306" font-size="11" font-weight="700" fill="#c4b5fd">Pro Terminology</text>
+  <text x="996" y="322" font-size="9" fill="rgba(255,255,255,0.45)">Industry-specific language</text>
+  <text x="996" y="338" font-size="9" fill="rgba(255,255,255,0.45)">that ATS recognises as</text>
+  <text x="996" y="352" font-size="9" fill="rgba(255,255,255,0.35)">relevant to the role</text>
+
+  <!-- Bottom tip -->
+  <line x1="614" y1="370" x2="1158" y2="370" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="887" y="392" text-anchor="middle" font-size="10" font-weight="600" fill="rgba(167,139,250,0.7)">Pro tip:</text>
+  <text x="887" y="408" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.45)">Paste the job description's key phrases into the Skills field — the AI will weave them directly into your letter.</text>
+  <text x="887" y="424" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.35)">This single step can lift your ATS score by 20–30 points and significantly increase call-back rates.</text>
+  <text x="887" y="442" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.22)">ToolNest AI · toolnestai.net/ai-tools/ai-cover-letter-generator</text>
+</svg>

@@ -1,0 +1,214 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gL" cx="10%" cy="45%" r="55%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.35"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gR" cx="90%" cy="55%" r="50%"><stop offset="0%" stop-color="#2563eb" stop-opacity="0.22"/><stop offset="100%" stop-color="#2563eb" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gRob" cx="88%" cy="78%" r="28%"><stop offset="0%" stop-color="#7c3aed" stop-opacity="0.42"/><stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="pG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#130b2e" stop-opacity="0.98"/><stop offset="100%" stop-color="#0c0820" stop-opacity="0.98"/></linearGradient>
+    <linearGradient id="lapG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1a1040"/><stop offset="100%" stop-color="#0d0824"/></linearGradient>
+    <linearGradient id="robG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4338ca"/></linearGradient>
+    <linearGradient id="robFG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1e1060"/><stop offset="100%" stop-color="#110a3a"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="8" stdDeviation="18" flood-color="#5b21b6" flood-opacity="0.4"/></filter>
+    <filter id="shSm"><feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#5b21b6" flood-opacity="0.3"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="robGlow"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="neon"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <ellipse cx="120" cy="315" rx="480" ry="420" fill="url(#gL)"/>
+  <ellipse cx="1080" cy="315" rx="460" ry="400" fill="url(#gR)"/>
+  <ellipse cx="1060" cy="490" rx="260" ry="210" fill="url(#gRob)"/>
+
+  <!-- Stars -->
+  <circle cx="80" cy="58" r="1.5" fill="rgba(167,139,250,0.6)"/>
+  <circle cx="170" cy="175" r="1" fill="rgba(167,139,250,0.4)"/>
+  <circle cx="42" cy="275" r="1.2" fill="rgba(96,165,250,0.5)"/>
+  <circle cx="350" cy="38" r="1" fill="rgba(167,139,250,0.5)"/>
+  <circle cx="1098" cy="72" r="1.2" fill="rgba(167,139,250,0.5)"/>
+  <circle cx="1162" cy="195" r="1" fill="rgba(96,165,250,0.4)"/>
+
+  <!-- TOP ICON PILLS -->
+  <g text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.38)">
+    <rect x="428" y="14" width="98" height="54" rx="10" fill="rgba(167,139,250,0.06)" stroke="rgba(167,139,250,0.18)" stroke-width="1"/>
+    <text x="477" y="36" font-size="18">✏️</text><text x="477" y="58">AI Writing</text>
+    <rect x="534" y="14" width="98" height="54" rx="10" fill="rgba(167,139,250,0.06)" stroke="rgba(167,139,250,0.18)" stroke-width="1"/>
+    <text x="583" y="36" font-size="18">✅</text><text x="583" y="58">ATS Friendly</text>
+    <rect x="640" y="14" width="98" height="54" rx="10" fill="rgba(167,139,250,0.06)" stroke="rgba(167,139,250,0.18)" stroke-width="1"/>
+    <text x="689" y="36" font-size="18">👤</text><text x="689" y="58">Personalized</text>
+    <rect x="746" y="14" width="98" height="54" rx="10" fill="rgba(167,139,250,0.06)" stroke="rgba(167,139,250,0.18)" stroke-width="1"/>
+    <text x="795" y="36" font-size="18">🏢</text><text x="795" y="58">Any Industry</text>
+    <rect x="852" y="14" width="90" height="54" rx="10" fill="rgba(167,139,250,0.06)" stroke="rgba(167,139,250,0.18)" stroke-width="1"/>
+    <text x="897" y="36" font-size="18">⏱</text><text x="897" y="58">Save Time</text>
+    <rect x="950" y="14" width="112" height="54" rx="10" fill="rgba(167,139,250,0.06)" stroke="rgba(167,139,250,0.18)" stroke-width="1"/>
+    <text x="1006" y="36" font-size="18">📈</text><text x="1006" y="58">Boost Interviews</text>
+  </g>
+
+  <!-- LEFT COLUMN -->
+  <!-- Logo -->
+  <polygon points="28,88 36,76 48,76 56,88 48,100 36,100" fill="none" stroke="url(#aG)" stroke-width="2.5"/>
+  <polygon points="32,88 38,79 46,79 52,88 46,97 38,97" fill="rgba(124,58,237,0.25)"/>
+  <text x="63" y="86" font-size="13" font-weight="700" fill="rgba(255,255,255,0.9)">ToolNest AI</text>
+  <text x="63" y="100" font-size="9" fill="rgba(255,255,255,0.38)">All-in-One AI &amp; Online Tools</text>
+
+  <!-- Headline -->
+  <text x="28" y="160" font-size="50" font-weight="900" fill="url(#aG)" filter="url(#glow)" letter-spacing="-1.5">AI Cover</text>
+  <text x="28" y="220" font-size="50" font-weight="900" fill="url(#aG)" filter="url(#glow)" letter-spacing="-1.5">Letter</text>
+  <text x="28" y="280" font-size="50" font-weight="900" fill="url(#aG)" filter="url(#glow)" letter-spacing="-1.5">Generator</text>
+  <text x="28" y="316" font-size="16" font-weight="700" fill="rgba(255,255,255,0.85)">Write a Professional Cover Letter in Minutes</text>
+  <text x="28" y="340" font-size="11" fill="rgba(255,255,255,0.42)">Create personalized, job-winning cover</text>
+  <text x="28" y="356" font-size="11" fill="rgba(255,255,255,0.42)">letters with the power of AI. Save time,</text>
+  <text x="28" y="372" font-size="11" fill="rgba(255,255,255,0.42)">stand out, and land more interviews.</text>
+
+  <!-- Feature bullets -->
+  <g font-size="11">
+    <rect x="28" y="392" width="22" height="22" rx="6" fill="rgba(124,58,237,0.22)" stroke="rgba(167,139,250,0.3)" stroke-width="1"/>
+    <text x="39" y="407" text-anchor="middle" font-size="11">✦</text>
+    <text x="57" y="402" font-weight="700" fill="rgba(255,255,255,0.85)">AI-Powered Writing</text>
+    <text x="57" y="416" font-size="10" fill="rgba(255,255,255,0.38)">Generate high-quality, personalized</text>
+    <text x="57" y="430" font-size="10" fill="rgba(255,255,255,0.38)">cover letters in seconds.</text>
+    <rect x="28" y="441" width="22" height="22" rx="6" fill="rgba(124,58,237,0.22)" stroke="rgba(167,139,250,0.3)" stroke-width="1"/>
+    <text x="39" y="456" text-anchor="middle" font-size="11">🎯</text>
+    <text x="57" y="451" font-weight="700" fill="rgba(255,255,255,0.85)">Tailored to Every Job</text>
+    <text x="57" y="465" font-size="10" fill="rgba(255,255,255,0.38)">Customize for any role, industry</text>
+    <text x="57" y="479" font-size="10" fill="rgba(255,255,255,0.38)">and experience level.</text>
+    <rect x="28" y="490" width="22" height="22" rx="6" fill="rgba(124,58,237,0.22)" stroke="rgba(167,139,250,0.3)" stroke-width="1"/>
+    <text x="39" y="505" text-anchor="middle" font-size="11">📄</text>
+    <text x="57" y="500" font-weight="700" fill="rgba(255,255,255,0.85)">Professional &amp; ATS-Friendly</text>
+    <text x="57" y="514" font-size="10" fill="rgba(255,255,255,0.38)">Well-structured, keyword-optimized</text>
+    <text x="57" y="528" font-size="10" fill="rgba(255,255,255,0.38)">letters that pass ATS scanners.</text>
+    <rect x="28" y="539" width="22" height="22" rx="6" fill="rgba(34,197,94,0.12)" stroke="rgba(34,197,94,0.25)" stroke-width="1"/>
+    <text x="39" y="554" text-anchor="middle" font-size="11">⚡</text>
+    <text x="57" y="549" font-weight="700" fill="rgba(255,255,255,0.85)">Save Time &amp; Get Hired Faster</text>
+    <text x="57" y="563" font-size="10" fill="rgba(255,255,255,0.38)">Focus on preparing for interviews</text>
+    <text x="57" y="577" font-size="10" fill="rgba(255,255,255,0.38)">while AI handles your cover letter.</text>
+  </g>
+
+  <!-- LAPTOP FRAME -->
+  <rect x="418" y="76" width="660" height="446" rx="18" fill="url(#lapG)" stroke="rgba(124,58,237,0.35)" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="428" y="86" width="640" height="422" rx="12" fill="#080518"/>
+  <rect x="378" y="518" width="742" height="18" rx="6" fill="rgba(30,16,80,0.7)" stroke="rgba(124,58,237,0.2)" stroke-width="1"/>
+  <rect x="368" y="532" width="762" height="8" rx="4" fill="rgba(20,10,50,0.5)"/>
+  <ellipse cx="749" cy="540" rx="322" ry="12" fill="rgba(124,58,237,0.22)" filter="url(#neon)"/>
+
+  <!-- Chrome bar -->
+  <rect x="428" y="86" width="640" height="36" rx="12" fill="rgba(124,58,237,0.14)"/>
+  <rect x="428" y="110" width="640" height="12" fill="rgba(124,58,237,0.14)"/>
+  <circle cx="450" cy="104" r="5" fill="rgba(255,80,80,0.45)"/>
+  <circle cx="466" cy="104" r="5" fill="rgba(255,193,7,0.45)"/>
+  <circle cx="482" cy="104" r="5" fill="rgba(34,197,94,0.45)"/>
+  <text x="580" y="108" font-size="12" font-weight="700" fill="rgba(255,255,255,0.65)">✦ AI Cover Letter Generator</text>
+  <rect x="984" y="95" width="72" height="20" rx="5" fill="rgba(124,58,237,0.22)" stroke="rgba(167,139,250,0.3)" stroke-width="1"/>
+  <text x="1020" y="108" text-anchor="middle" font-size="8" fill="#a78bfa">Powered by Advanced AI ✦</text>
+
+  <!-- Left form column -->
+  <text x="446" y="146" font-size="10" font-weight="700" fill="rgba(255,255,255,0.55)">Your Information</text>
+  <text x="446" y="163" font-size="9" fill="rgba(255,255,255,0.38)">Full Name</text>
+  <rect x="446" y="167" width="190" height="22" rx="6" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="454" y="182" font-size="9" fill="rgba(255,255,255,0.5)">Emir Locic</text>
+  <text x="446" y="201" font-size="9" fill="rgba(255,255,255,0.38)">Email</text>
+  <rect x="446" y="205" width="190" height="22" rx="6" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="454" y="220" font-size="9" fill="rgba(255,255,255,0.5)">emir.locic@email.com</text>
+  <text x="446" y="239" font-size="9" fill="rgba(255,255,255,0.38)">Phone</text>
+  <rect x="446" y="243" width="190" height="22" rx="6" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="454" y="258" font-size="9" fill="rgba(255,255,255,0.5)">+387 61 123 456</text>
+  <text x="446" y="277" font-size="9" fill="rgba(255,255,255,0.38)">LinkedIn (Optional)</text>
+  <rect x="446" y="281" width="190" height="22" rx="6" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="454" y="296" font-size="9" fill="rgba(255,255,255,0.5)">linkedin.com/in/emirlocic</text>
+  <line x1="446" y1="312" x2="628" y2="312" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="446" y="326" font-size="10" font-weight="700" fill="rgba(255,255,255,0.55)">Job Information</text>
+  <text x="446" y="344" font-size="9" fill="rgba(255,255,255,0.38)">Job Title</text>
+  <rect x="446" y="348" width="190" height="22" rx="6" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="454" y="363" font-size="9" fill="rgba(255,255,255,0.5)">Software Developer</text>
+  <text x="446" y="382" font-size="9" fill="rgba(255,255,255,0.38)">Company Name</text>
+  <rect x="446" y="386" width="190" height="22" rx="6" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="454" y="401" font-size="9" fill="rgba(255,255,255,0.5)">TechNova Solutions</text>
+  <text x="446" y="420" font-size="9" fill="rgba(255,255,255,0.38)">Industry</text>
+  <rect x="446" y="424" width="190" height="22" rx="6" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="454" y="439" font-size="9" fill="rgba(255,255,255,0.5)">Technology</text>
+  <text x="446" y="458" font-size="9" fill="rgba(255,255,255,0.38)">Key Skills (comma separated)</text>
+  <rect x="446" y="462" width="190" height="22" rx="6" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="454" y="477" font-size="9" fill="rgba(255,255,255,0.5)">JavaScript, React, Node.js, Python, SQL</text>
+  <rect x="446" y="495" width="190" height="30" rx="10" fill="url(#bG)" filter="url(#shSm)"/>
+  <text x="541" y="515" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">✦ Generate Cover Letter</text>
+
+  <!-- Divider -->
+  <line x1="648" y1="130" x2="648" y2="495" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+
+  <!-- Right: generated letter -->
+  <text x="660" y="146" font-size="10" font-weight="700" fill="rgba(255,255,255,0.55)">Generated Cover Letter</text>
+  <rect x="1038" y="135" width="22" height="18" rx="4" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+  <text x="1049" y="147" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.45)">📋</text>
+  <text x="1062" y="147" font-size="9" fill="rgba(255,255,255,0.35)">Copy</text>
+  <text x="660" y="170" font-size="10" font-weight="600" fill="rgba(255,255,255,0.75)">Dear Hiring Manager,</text>
+  <text x="660" y="190" font-size="9" fill="rgba(255,255,255,0.5)">I am writing to express my interest in the Software Developer position at</text>
+  <text x="660" y="203" font-size="9" fill="rgba(255,255,255,0.5)">TechNova Solutions. With a strong background in full-stack development and</text>
+  <text x="660" y="216" font-size="9" fill="rgba(255,255,255,0.5)">a passion for building scalable, user-friendly applications, I am excited about</text>
+  <text x="660" y="229" font-size="9" fill="rgba(255,255,255,0.5)">the opportunity to contribute to your innovative team.</text>
+  <text x="660" y="250" font-size="9" fill="rgba(255,255,255,0.5)">In my current role, I have developed and maintained dynamic web applications</text>
+  <text x="660" y="263" font-size="9" fill="rgba(255,255,255,0.5)">using JavaScript, React, Node.js, and SQL. I enjoy solving complex problems,</text>
+  <text x="660" y="276" font-size="9" fill="rgba(255,255,255,0.5)">collaborating with cross-functional teams, and delivering high-quality solutions</text>
+  <text x="660" y="289" font-size="9" fill="rgba(255,255,255,0.5)">that drive business results.</text>
+  <text x="660" y="310" font-size="9" fill="rgba(255,255,255,0.5)">I am particularly drawn to TechNova Solutions because of your commitment to</text>
+  <text x="660" y="323" font-size="9" fill="rgba(255,255,255,0.5)">innovation and your impactful products. I am confident my skills and experience</text>
+  <text x="660" y="336" font-size="9" fill="rgba(255,255,255,0.5)">align well with your needs, and I would welcome the chance to bring value to</text>
+  <text x="660" y="349" font-size="9" fill="rgba(255,255,255,0.5)">your team.</text>
+  <text x="660" y="370" font-size="9" fill="rgba(255,255,255,0.5)">Thank you for considering my application. I look forward to the opportunity</text>
+  <text x="660" y="383" font-size="9" fill="rgba(255,255,255,0.5)">to discuss how I can contribute to your continued success.</text>
+  <text x="660" y="404" font-size="9" fill="rgba(255,255,255,0.55)">Sincerely,</text>
+  <text x="660" y="418" font-size="9" font-weight="600" fill="rgba(255,255,255,0.7)">Emir Locic</text>
+  <line x1="660" y1="432" x2="1058" y2="432" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="660" y="449" font-size="9" fill="rgba(255,255,255,0.35)">Words: 196</text>
+  <line x1="730" y1="440" x2="730" y2="456" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="744" y="449" font-size="9" fill="rgba(255,255,255,0.35)">Reading Time: 45 sec</text>
+  <line x1="854" y1="440" x2="854" y2="456" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="868" y="449" font-size="9" fill="rgba(255,255,255,0.35)">Tone:</text>
+  <text x="896" y="449" font-size="9" font-weight="600" fill="#a78bfa">Professional</text>
+
+  <!-- ROBOT -->
+  <ellipse cx="1135" cy="556" rx="64" ry="11" fill="rgba(124,58,237,0.32)" filter="url(#neon)"/>
+  <ellipse cx="1135" cy="552" rx="50" ry="8" fill="rgba(167,139,250,0.18)"/>
+  <rect x="1100" y="452" width="70" height="90" rx="18" fill="url(#robG)" filter="url(#robGlow)"/>
+  <rect x="1108" y="462" width="54" height="36" rx="8" fill="url(#robFG)" stroke="rgba(167,139,250,0.3)" stroke-width="1"/>
+  <text x="1135" y="474" text-anchor="middle" font-size="8" fill="rgba(167,139,250,0.6)">A I</text>
+  <text x="1135" y="491" text-anchor="middle" font-size="18" font-weight="900" fill="url(#aG)" filter="url(#glow)">AI</text>
+  <rect x="1088" y="460" width="14" height="50" rx="7" fill="url(#robG)"/>
+  <rect x="1168" y="460" width="14" height="50" rx="7" fill="url(#robG)"/>
+  <circle cx="1085" cy="512" r="8" fill="rgba(96,165,250,0.4)" filter="url(#neon)"/>
+  <circle cx="1185" cy="512" r="8" fill="rgba(167,139,250,0.4)" filter="url(#neon)"/>
+  <rect x="1126" y="434" width="18" height="20" rx="6" fill="url(#robG)"/>
+  <rect x="1096" y="374" width="78" height="62" rx="18" fill="url(#robG)" filter="url(#robGlow)"/>
+  <rect x="1103" y="382" width="64" height="46" rx="12" fill="url(#robFG)" stroke="rgba(167,139,250,0.4)" stroke-width="1.5"/>
+  <circle cx="1122" cy="404" r="8" fill="rgba(124,58,237,0.4)" stroke="rgba(167,139,250,0.5)" stroke-width="1"/>
+  <circle cx="1148" cy="404" r="8" fill="rgba(124,58,237,0.4)" stroke="rgba(167,139,250,0.5)" stroke-width="1"/>
+  <circle cx="1122" cy="403" r="4" fill="url(#aG)" filter="url(#glow)"/>
+  <circle cx="1148" cy="403" r="4" fill="url(#aG)" filter="url(#glow)"/>
+  <circle cx="1123" cy="402" r="1.5" fill="#fff"/>
+  <circle cx="1149" cy="402" r="1.5" fill="#fff"/>
+  <path d="M 1115 417 Q 1135 427 1155 417" stroke="url(#aG)" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <line x1="1135" y1="374" x2="1135" y2="357" stroke="rgba(167,139,250,0.5)" stroke-width="2"/>
+  <circle cx="1135" cy="352" r="5" fill="url(#bG)" filter="url(#neon)"/>
+  <circle cx="1096" cy="402" r="7" fill="url(#robG)" stroke="rgba(167,139,250,0.3)" stroke-width="1"/>
+  <circle cx="1174" cy="402" r="7" fill="url(#robG)" stroke="rgba(167,139,250,0.3)" stroke-width="1"/>
+  <circle cx="1135" cy="512" r="6" fill="rgba(96,165,250,0.65)" filter="url(#neon)"/>
+  <circle cx="1135" cy="512" r="3" fill="#60a5fa"/>
+
+  <!-- BOTTOM STATS BAR -->
+  <rect x="0" y="597" width="1200" height="33" fill="rgba(124,58,237,0.06)"/>
+  <line x1="0" y1="597" x2="1200" y2="597" stroke="rgba(167,139,250,0.1)" stroke-width="1"/>
+  <g text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.35)">
+    <text x="100" y="613">📄 Professional Templates</text><text x="100" y="624" font-size="8" fill="rgba(255,255,255,0.2)">Modern templates for every industry</text>
+    <line x1="200" y1="599" x2="200" y2="628" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    <text x="300" y="613">✅ ATS Optimization</text><text x="300" y="624" font-size="8" fill="rgba(255,255,255,0.2)">Pass applicant tracking systems</text>
+    <line x1="400" y1="599" x2="400" y2="628" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    <text x="500" y="613">👤 Personalized for You</text><text x="500" y="624" font-size="8" fill="rgba(255,255,255,0.2)">AI tailors each letter to you</text>
+    <line x1="600" y1="599" x2="600" y2="628" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    <text x="700" y="613">🏢 Any Industry</text><text x="700" y="624" font-size="8" fill="rgba(255,255,255,0.2)">Tech to healthcare and more</text>
+    <line x1="800" y1="599" x2="800" y2="628" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    <text x="900" y="613">⏱ Save Hours</text><text x="900" y="624" font-size="8" fill="rgba(255,255,255,0.2)">Minutes, not hours</text>
+    <line x1="1000" y1="599" x2="1000" y2="628" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    <text x="1100" y="613">📈 Land More Interviews</text><text x="1100" y="624" font-size="8" fill="rgba(255,255,255,0.2)">Stand out from candidates</text>
+  </g>
+</svg>

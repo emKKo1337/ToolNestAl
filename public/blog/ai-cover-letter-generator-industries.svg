@@ -1,0 +1,152 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="75%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gC" cx="50%" cy="50%" r="60%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.15"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="pG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#130b2e" stop-opacity="0.97"/><stop offset="100%" stop-color="#0c0820" stop-opacity="0.97"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#5b21b6" flood-opacity="0.28"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="500" fill="url(#bg)"/>
+  <ellipse cx="600" cy="250" rx="700" ry="320" fill="url(#gC)"/>
+
+  <text x="600" y="44" text-anchor="middle" font-size="11" font-weight="700" fill="#a78bfa" letter-spacing="1">INDUSTRY-SPECIFIC EXAMPLES</text>
+  <text x="600" y="76" text-anchor="middle" font-size="26" font-weight="800" fill="url(#aG)" filter="url(#glow)">AI Cover Letters Tailored for Every Job &amp; Industry</text>
+  <text x="600" y="102" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.42)">Same tool, different inputs — the AI adapts tone, structure and keywords for each role</text>
+
+  <!-- Entry-Level -->
+  <rect x="22" y="116" width="218" height="366" rx="14" fill="url(#pG)" stroke="rgba(167,139,250,0.22)" stroke-width="1" filter="url(#sh)"/>
+  <rect x="22" y="116" width="218" height="44" rx="14" fill="rgba(124,58,237,0.18)"/>
+  <rect x="22" y="146" width="218" height="14" fill="rgba(124,58,237,0.18)"/>
+  <text x="131" y="144" text-anchor="middle" font-size="18">🎓</text>
+  <text x="131" y="175" text-anchor="middle" font-size="13" font-weight="700" fill="#a78bfa">Entry-Level</text>
+  <text x="131" y="192" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.38)">First job / Graduate</text>
+  <line x1="42" y1="200" x2="220" y2="200" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="42" y="218" font-size="9" fill="rgba(255,255,255,0.4)">Role: Junior Marketing Assistant</text>
+  <text x="42" y="233" font-size="9" fill="rgba(255,255,255,0.4)">Focus: Enthusiasm + transferable skills</text>
+  <line x1="42" y1="244" x2="220" y2="244" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <text x="42" y="258" font-size="9" font-weight="600" fill="rgba(167,139,250,0.7)">AI-generated opening:</text>
+  <text x="42" y="275" font-size="9" fill="rgba(255,255,255,0.5)">"As a recent Marketing graduate</text>
+  <text x="42" y="289" font-size="9" fill="rgba(255,255,255,0.5)">with hands-on experience from two</text>
+  <text x="42" y="303" font-size="9" fill="rgba(255,255,255,0.5)">internships, I am eager to bring</text>
+  <text x="42" y="317" font-size="9" fill="rgba(255,255,255,0.5)">fresh ideas and strong analytical</text>
+  <text x="42" y="331" font-size="9" fill="rgba(255,255,255,0.5)">skills to your team."</text>
+  <line x1="42" y1="342" x2="220" y2="342" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <g font-size="9" fill="rgba(255,255,255,0.5)">
+    <text x="42" y="358">✓ Highlights degree &amp; internships</text>
+    <text x="42" y="373">✓ Avoids "no experience" framing</text>
+    <text x="42" y="388">✓ Emphasises eagerness to learn</text>
+    <text x="42" y="403">✓ Professional but not stiff</text>
+  </g>
+  <rect x="42" y="422" width="178" height="22" rx="7" fill="url(#bG)"/>
+  <text x="131" y="437" text-anchor="middle" font-size="9" font-weight="700" fill="#fff">Tone: Enthusiastic</text>
+
+  <!-- IT / Tech -->
+  <rect x="252" y="116" width="218" height="366" rx="14" fill="url(#pG)" stroke="rgba(96,165,250,0.22)" stroke-width="1" filter="url(#sh)"/>
+  <rect x="252" y="116" width="218" height="44" rx="14" fill="rgba(96,165,250,0.1)"/>
+  <rect x="252" y="146" width="218" height="14" fill="rgba(96,165,250,0.1)"/>
+  <text x="361" y="144" text-anchor="middle" font-size="18">💻</text>
+  <text x="361" y="175" text-anchor="middle" font-size="13" font-weight="700" fill="#93c5fd">IT / Tech</text>
+  <text x="361" y="192" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.38)">Developer / Engineer / SaaS</text>
+  <line x1="272" y1="200" x2="450" y2="200" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="272" y="218" font-size="9" fill="rgba(255,255,255,0.4)">Role: Senior Software Engineer</text>
+  <text x="272" y="233" font-size="9" fill="rgba(255,255,255,0.4)">Focus: Tech stack + measurable results</text>
+  <line x1="272" y1="244" x2="450" y2="244" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <text x="272" y="258" font-size="9" font-weight="600" fill="rgba(147,197,253,0.7)">AI-generated opening:</text>
+  <text x="272" y="275" font-size="9" fill="rgba(255,255,255,0.5)">"With 6 years building production</text>
+  <text x="272" y="289" font-size="9" fill="rgba(255,255,255,0.5)">systems in React and Node.js, and</text>
+  <text x="272" y="303" font-size="9" fill="rgba(255,255,255,0.5)">a track record of reducing load</text>
+  <text x="272" y="317" font-size="9" fill="rgba(255,255,255,0.5)">times by 40%, I am excited to</text>
+  <text x="272" y="331" font-size="9" fill="rgba(255,255,255,0.5)">apply for this Senior role."</text>
+  <line x1="272" y1="342" x2="450" y2="342" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <g font-size="9" fill="rgba(255,255,255,0.5)">
+    <text x="272" y="358">✓ Names specific tech stack</text>
+    <text x="272" y="373">✓ Quantified achievement (40%)</text>
+    <text x="272" y="388">✓ ATS keyword-optimised</text>
+    <text x="272" y="403">✓ No generic filler phrases</text>
+  </g>
+  <rect x="272" y="422" width="178" height="22" rx="7" fill="rgba(96,165,250,0.2)" stroke="rgba(96,165,250,0.35)" stroke-width="1"/>
+  <text x="361" y="437" text-anchor="middle" font-size="9" font-weight="700" fill="#93c5fd">Tone: Professional</text>
+
+  <!-- Marketing -->
+  <rect x="482" y="116" width="218" height="366" rx="14" fill="url(#pG)" stroke="rgba(251,191,36,0.2)" stroke-width="1" filter="url(#sh)"/>
+  <rect x="482" y="116" width="218" height="44" rx="14" fill="rgba(251,191,36,0.1)"/>
+  <rect x="482" y="146" width="218" height="14" fill="rgba(251,191,36,0.1)"/>
+  <text x="591" y="144" text-anchor="middle" font-size="18">📣</text>
+  <text x="591" y="175" text-anchor="middle" font-size="13" font-weight="700" fill="#fde68a">Marketing</text>
+  <text x="591" y="192" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.38)">Digital / Brand / Content</text>
+  <line x1="502" y1="200" x2="680" y2="200" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="502" y="218" font-size="9" fill="rgba(255,255,255,0.4)">Role: Digital Marketing Manager</text>
+  <text x="502" y="233" font-size="9" fill="rgba(255,255,255,0.4)">Focus: Campaigns + ROI + creativity</text>
+  <line x1="502" y1="244" x2="680" y2="244" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <text x="502" y="258" font-size="9" font-weight="600" fill="rgba(253,230,138,0.7)">AI-generated opening:</text>
+  <text x="502" y="275" font-size="9" fill="rgba(255,255,255,0.5)">"I have grown brand audiences by</text>
+  <text x="502" y="289" font-size="9" fill="rgba(255,255,255,0.5)">120% through data-driven content</text>
+  <text x="502" y="303" font-size="9" fill="rgba(255,255,255,0.5)">strategy and paid media campaigns.</text>
+  <text x="502" y="317" font-size="9" fill="rgba(255,255,255,0.5)">I would bring the same results-first</text>
+  <text x="502" y="331" font-size="9" fill="rgba(255,255,255,0.5)">approach to your brand."</text>
+  <line x1="502" y1="342" x2="680" y2="342" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <g font-size="9" fill="rgba(255,255,255,0.5)">
+    <text x="502" y="358">✓ Opens with a bold result</text>
+    <text x="502" y="373">✓ Shows data-literacy</text>
+    <text x="502" y="388">✓ Confident, not boastful</text>
+    <text x="502" y="403">✓ Connects to employer goals</text>
+  </g>
+  <rect x="502" y="422" width="178" height="22" rx="7" fill="rgba(251,191,36,0.18)" stroke="rgba(251,191,36,0.3)" stroke-width="1"/>
+  <text x="591" y="437" text-anchor="middle" font-size="9" font-weight="700" fill="#fde68a">Tone: Confident</text>
+
+  <!-- Healthcare -->
+  <rect x="712" y="116" width="218" height="366" rx="14" fill="url(#pG)" stroke="rgba(52,211,153,0.2)" stroke-width="1" filter="url(#sh)"/>
+  <rect x="712" y="116" width="218" height="44" rx="14" fill="rgba(52,211,153,0.09)"/>
+  <rect x="712" y="146" width="218" height="14" fill="rgba(52,211,153,0.09)"/>
+  <text x="821" y="144" text-anchor="middle" font-size="18">🏥</text>
+  <text x="821" y="175" text-anchor="middle" font-size="13" font-weight="700" fill="#6ee7b7">Healthcare</text>
+  <text x="821" y="192" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.38)">Nurse / Admin / Allied Health</text>
+  <line x1="732" y1="200" x2="910" y2="200" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="732" y="218" font-size="9" fill="rgba(255,255,255,0.4)">Role: Registered Nurse</text>
+  <text x="732" y="233" font-size="9" fill="rgba(255,255,255,0.4)">Focus: Patient care + certifications</text>
+  <line x1="732" y1="244" x2="910" y2="244" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <text x="732" y="258" font-size="9" font-weight="600" fill="rgba(110,231,183,0.7)">AI-generated opening:</text>
+  <text x="732" y="275" font-size="9" fill="rgba(255,255,255,0.5)">"As a Registered Nurse with 4 years</text>
+  <text x="732" y="289" font-size="9" fill="rgba(255,255,255,0.5)">in acute care, I am committed to</text>
+  <text x="732" y="303" font-size="9" fill="rgba(255,255,255,0.5)">delivering compassionate, evidence-</text>
+  <text x="732" y="317" font-size="9" fill="rgba(255,255,255,0.5)">based care that puts patients first</text>
+  <text x="732" y="331" font-size="9" fill="rgba(255,255,255,0.5)">at every interaction."</text>
+  <line x1="732" y1="342" x2="910" y2="342" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <g font-size="9" fill="rgba(255,255,255,0.5)">
+    <text x="732" y="358">✓ Warm, patient-centred tone</text>
+    <text x="732" y="373">✓ Mentions certifications</text>
+    <text x="732" y="388">✓ Avoids clinical jargon overload</text>
+    <text x="732" y="403">✓ Shows values alignment</text>
+  </g>
+  <rect x="732" y="422" width="178" height="22" rx="7" fill="rgba(52,211,153,0.15)" stroke="rgba(52,211,153,0.28)" stroke-width="1"/>
+  <text x="821" y="437" text-anchor="middle" font-size="9" font-weight="700" fill="#6ee7b7">Tone: Warm &amp; Professional</text>
+
+  <!-- Remote -->
+  <rect x="942" y="116" width="236" height="366" rx="14" fill="url(#pG)" stroke="rgba(239,68,68,0.18)" stroke-width="1" filter="url(#sh)"/>
+  <rect x="942" y="116" width="236" height="44" rx="14" fill="rgba(239,68,68,0.09)"/>
+  <rect x="942" y="146" width="236" height="14" fill="rgba(239,68,68,0.09)"/>
+  <text x="1060" y="144" text-anchor="middle" font-size="18">🌍</text>
+  <text x="1060" y="175" text-anchor="middle" font-size="13" font-weight="700" fill="#fca5a5">Remote Jobs</text>
+  <text x="1060" y="192" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.38)">Any role / Fully distributed</text>
+  <line x1="962" y1="200" x2="1158" y2="200" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="962" y="218" font-size="9" fill="rgba(255,255,255,0.4)">Role: Remote UX Designer</text>
+  <text x="962" y="233" font-size="9" fill="rgba(255,255,255,0.4)">Focus: Self-management + async work</text>
+  <line x1="962" y1="244" x2="1158" y2="244" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <text x="962" y="258" font-size="9" font-weight="600" fill="rgba(252,165,165,0.7)">AI-generated opening:</text>
+  <text x="962" y="275" font-size="9" fill="rgba(255,255,255,0.5)">"I have worked fully remotely for</text>
+  <text x="962" y="289" font-size="9" fill="rgba(255,255,255,0.5)">3 years, collaborating with teams</text>
+  <text x="962" y="303" font-size="9" fill="rgba(255,255,255,0.5)">across 4 time zones. My async</text>
+  <text x="962" y="317" font-size="9" fill="rgba(255,255,255,0.5)">communication and self-direction</text>
+  <text x="962" y="331" font-size="9" fill="rgba(255,255,255,0.5)">are strengths I bring from day one."</text>
+  <line x1="962" y1="342" x2="1158" y2="342" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <g font-size="9" fill="rgba(255,255,255,0.5)">
+    <text x="962" y="358">✓ Signals remote-readiness</text>
+    <text x="962" y="373">✓ Mentions async communication</text>
+    <text x="962" y="388">✓ No mention of location</text>
+    <text x="962" y="403">✓ Shows self-management</text>
+  </g>
+  <rect x="962" y="422" width="178" height="22" rx="7" fill="rgba(239,68,68,0.15)" stroke="rgba(239,68,68,0.28)" stroke-width="1"/>
+  <text x="1060" y="437" text-anchor="middle" font-size="9" font-weight="700" fill="#fca5a5">Tone: Direct &amp; Capable</text>
+</svg>
