@@ -1,0 +1,115 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="75%"><stop offset="0%" stop-color="#0d0520"/><stop offset="100%" stop-color="#07070f"/></radialGradient>
+    <radialGradient id="gL" cx="15%" cy="50%" r="55%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.3"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gR" cx="85%" cy="50%" r="50%"><stop offset="0%" stop-color="#2563eb" stop-opacity="0.18"/><stop offset="100%" stop-color="#2563eb" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="pG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#130b2e" stop-opacity="0.98"/><stop offset="100%" stop-color="#0c0820" stop-opacity="0.98"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="8" stdDeviation="20" flood-color="#5b21b6" flood-opacity="0.35"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <ellipse cx="150" cy="315" rx="500" ry="450" fill="url(#gL)"/>
+  <ellipse cx="1050" cy="315" rx="460" ry="420" fill="url(#gR)"/>
+
+  <!-- Left content -->
+  <rect x="48" y="48" width="88" height="28" rx="6" fill="rgba(167,139,250,0.1)" stroke="rgba(167,139,250,0.25)" stroke-width="1"/>
+  <text x="92" y="67" text-anchor="middle" font-size="10" font-weight="700" fill="#a78bfa">TOOLNEST AI</text>
+
+  <text x="48" y="130" font-size="13" font-weight="700" fill="#a78bfa" letter-spacing="1.5">AI PRODUCT DESCRIPTION GENERATOR</text>
+  <text x="48" y="188" font-size="52" font-weight="900" fill="url(#aG)" filter="url(#glow)" letter-spacing="-1.5">Write Product</text>
+  <text x="48" y="248" font-size="52" font-weight="900" fill="url(#aG)" filter="url(#glow)" letter-spacing="-1.5">Descriptions</text>
+  <text x="48" y="308" font-size="52" font-weight="900" fill="url(#aG)" filter="url(#glow)" letter-spacing="-1.5">That Sell</text>
+
+  <text x="48" y="350" font-size="18" fill="rgba(255,255,255,0.55)">Generate SEO-optimised product copy for Shopify,</text>
+  <text x="48" y="374" font-size="18" fill="rgba(255,255,255,0.55)">Amazon, Etsy, WooCommerce &amp; eBay in seconds.</text>
+
+  <!-- Feature pills -->
+  <g font-size="12" font-weight="600">
+    <rect x="48" y="398" width="122" height="28" rx="8" fill="rgba(167,139,250,0.1)" stroke="rgba(167,139,250,0.25)" stroke-width="1"/>
+    <text x="109" y="416" text-anchor="middle" fill="#a78bfa">✦ AI-Powered</text>
+    <rect x="178" y="398" width="122" height="28" rx="8" fill="rgba(167,139,250,0.1)" stroke="rgba(167,139,250,0.25)" stroke-width="1"/>
+    <text x="239" y="416" text-anchor="middle" fill="#a78bfa">🔍 SEO Ready</text>
+    <rect x="308" y="398" width="138" height="28" rx="8" fill="rgba(167,139,250,0.1)" stroke="rgba(167,139,250,0.25)" stroke-width="1"/>
+    <text x="377" y="416" text-anchor="middle" fill="#a78bfa">🛒 5 Platforms</text>
+    <rect x="454" y="398" width="122" height="28" rx="8" fill="rgba(34,197,94,0.1)" stroke="rgba(34,197,94,0.22)" stroke-width="1"/>
+    <text x="515" y="416" text-anchor="middle" fill="#4ade80">⚡ 100% Free</text>
+  </g>
+
+  <!-- CTA -->
+  <rect x="48" y="446" width="220" height="48" rx="14" fill="url(#bG)" filter="url(#sh)"/>
+  <text x="158" y="476" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">Try Free Now →</text>
+
+  <!-- Right: output card -->
+  <rect x="640" y="48" width="512" height="534" rx="18" fill="url(#pG)" stroke="rgba(167,139,250,0.2)" stroke-width="1" filter="url(#sh)"/>
+  <!-- Chrome bar -->
+  <rect x="640" y="48" width="512" height="40" rx="18" fill="rgba(124,58,237,0.14)"/>
+  <rect x="640" y="74" width="512" height="14" fill="rgba(124,58,237,0.14)"/>
+  <circle cx="664" cy="68" r="5" fill="rgba(255,99,99,0.45)"/>
+  <circle cx="681" cy="68" r="5" fill="rgba(255,193,7,0.45)"/>
+  <circle cx="698" cy="68" r="5" fill="rgba(34,197,94,0.45)"/>
+  <text x="896" y="73" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.4)">✦ Generated Description</text>
+
+  <!-- Generated output content -->
+  <text x="664" y="116" font-size="12" font-weight="700" fill="url(#aG)">Wireless Bluetooth Headphones —</text>
+  <text x="664" y="134" font-size="12" font-weight="700" fill="url(#aG)">Premium Sound, All-Day Comfort</text>
+  <text x="664" y="158" font-size="10" fill="rgba(255,255,255,0.5)">Experience music like never before with our Wireless Bluetooth</text>
+  <text x="664" y="172" font-size="10" fill="rgba(255,255,255,0.5)">Headphones. Designed for those who demand premium sound and</text>
+  <text x="664" y="186" font-size="10" fill="rgba(255,255,255,0.5)">all-day comfort. Perfect for music lovers, professionals &amp; travelers.</text>
+  <g font-size="10" fill="rgba(255,255,255,0.7)">
+    <text x="664" y="210" fill="#4ade80">✓</text><text x="678" y="210">Advanced Noise Cancellation — Block distractions</text>
+    <text x="664" y="226" fill="#4ade80">✓</text><text x="678" y="226">40 Hours Battery Life — Music all day long</text>
+    <text x="664" y="242" fill="#4ade80">✓</text><text x="678" y="242">Ultra Comfort Fit — Soft cushions, adjustable band</text>
+    <text x="664" y="258" fill="#4ade80">✓</text><text x="678" y="258">Built-in Microphone — Clear calls hands-free</text>
+    <text x="664" y="274" fill="#4ade80">✓</text><text x="678" y="274">Foldable &amp; Lightweight — Easy to carry anywhere</text>
+  </g>
+  <line x1="664" y1="290" x2="1128" y2="290" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <!-- SEO gauge -->
+  <circle cx="718" cy="362" r="48" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="10"/>
+  <circle cx="718" cy="362" r="48" fill="none" stroke="url(#aG)" stroke-width="10" stroke-dasharray="231 71" stroke-linecap="round" transform="rotate(-90 718 362)"/>
+  <text x="718" y="354" text-anchor="middle" font-size="26" font-weight="900" fill="#a78bfa" filter="url(#glow)">96</text>
+  <text x="718" y="372" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.4)">/100</text>
+  <text x="718" y="432" text-anchor="middle" font-size="10" font-weight="700" fill="#a78bfa">SEO Score</text>
+
+  <!-- keyword chips -->
+  <text x="784" y="316" font-size="9" fill="rgba(255,255,255,0.4)">Primary Keywords</text>
+  <g font-size="9" font-weight="600">
+    <rect x="784" y="322" width="100" height="14" rx="4" fill="rgba(124,58,237,0.2)" stroke="rgba(167,139,250,0.3)" stroke-width="1"/>
+    <text x="834" y="332" text-anchor="middle" fill="#a78bfa">wireless headphones</text>
+    <rect x="890" y="322" width="104" height="14" rx="4" fill="rgba(124,58,237,0.2)" stroke="rgba(167,139,250,0.3)" stroke-width="1"/>
+    <text x="942" y="332" text-anchor="middle" fill="#a78bfa">bluetooth headphones</text>
+    <rect x="784" y="342" width="86" height="14" rx="4" fill="rgba(124,58,237,0.18)" stroke="rgba(167,139,250,0.22)" stroke-width="1"/>
+    <text x="827" y="352" text-anchor="middle" fill="#c4b5fd">noise cancellation</text>
+    <rect x="876" y="342" width="76" height="14" rx="4" fill="rgba(124,58,237,0.18)" stroke="rgba(167,139,250,0.22)" stroke-width="1"/>
+    <text x="914" y="352" text-anchor="middle" fill="#c4b5fd">long battery life</text>
+  </g>
+
+  <!-- Readability badge -->
+  <text x="1000" y="316" font-size="9" fill="rgba(255,255,255,0.4)">Readability</text>
+  <text x="1000" y="340" font-size="20" font-weight="900" fill="#4ade80" filter="url(#glow)">Excellent</text>
+  <text x="1000" y="358" font-size="10" fill="rgba(255,255,255,0.4)">Grade 8 · FK 72</text>
+
+  <!-- Platform row -->
+  <line x1="664" y1="448" x2="1128" y2="448" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <g text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.35)">
+    <text x="730" y="468">🛒 Shopify</text>
+    <text x="820" y="468">📦 Amazon</text>
+    <text x="910" y="468">🎨 Etsy</text>
+    <text x="1000" y="468">🔵 WooCommerce</text>
+    <text x="1090" y="468">🏷 eBay</text>
+  </g>
+
+  <!-- Copy button -->
+  <rect x="664" y="488" width="104" height="30" rx="8" fill="rgba(124,58,237,0.2)" stroke="rgba(167,139,250,0.3)" stroke-width="1"/>
+  <text x="716" y="507" text-anchor="middle" font-size="10" font-weight="600" fill="#a78bfa">📋 Copy Output</text>
+  <rect x="776" y="488" width="112" height="30" rx="8" fill="rgba(124,58,237,0.2)" stroke="rgba(167,139,250,0.3)" stroke-width="1"/>
+  <text x="832" y="507" text-anchor="middle" font-size="10" font-weight="600" fill="#a78bfa">🔄 Regenerate</text>
+  <rect x="896" y="488" width="104" height="30" rx="8" fill="url(#bG)"/>
+  <text x="948" y="507" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">⬇ Download</text>
+
+  <!-- Bottom domain -->
+  <text x="600" y="606" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.2)">toolnestai.net · AI Product Description Generator · 100% Free</text>
+</svg>

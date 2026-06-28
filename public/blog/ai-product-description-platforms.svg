@@ -1,0 +1,145 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="75%"><stop offset="0%" stop-color="#0d0520"/><stop offset="100%" stop-color="#07070f"/></radialGradient>
+    <radialGradient id="gC" cx="50%" cy="50%" r="60%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.16"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="pG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#130b2e" stop-opacity="0.97"/><stop offset="100%" stop-color="#0c0820" stop-opacity="0.97"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#5b21b6" flood-opacity="0.28"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <rect width="1200" height="500" fill="url(#bg)"/>
+  <ellipse cx="600" cy="250" rx="700" ry="320" fill="url(#gC)"/>
+
+  <!-- Title -->
+  <text x="600" y="44" text-anchor="middle" font-size="11" font-weight="700" fill="#a78bfa" letter-spacing="1">PLATFORM-SPECIFIC OUTPUT</text>
+  <text x="600" y="76" text-anchor="middle" font-size="26" font-weight="800" fill="url(#aG)" filter="url(#glow)">AI-Tailored for Every E-Commerce Platform</text>
+  <text x="600" y="102" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.42)">Each platform gets output optimised for its unique audience, conventions and character limits</text>
+
+  <!-- Platform cards: 5 platforms -->
+  <!-- Shopify -->
+  <rect x="30" y="120" width="216" height="348" rx="14" fill="url(#pG)" stroke="rgba(167,139,250,0.2)" stroke-width="1" filter="url(#sh)"/>
+  <rect x="30" y="120" width="216" height="44" rx="14" fill="rgba(149,88,236,0.18)"/>
+  <rect x="30" y="150" width="216" height="14" fill="rgba(149,88,236,0.18)"/>
+  <text x="138" y="148" text-anchor="middle" font-size="13" font-weight="700" fill="#a78bfa">🛒 Shopify</text>
+  <text x="46" y="184" font-size="10" font-weight="600" fill="rgba(255,255,255,0.6)">Tone:</text><text x="84" y="184" font-size="10" fill="rgba(255,255,255,0.45)">Lifestyle-driven</text>
+  <text x="46" y="200" font-size="10" font-weight="600" fill="rgba(255,255,255,0.6)">Focus:</text><text x="88" y="200" font-size="10" fill="rgba(255,255,255,0.45)">Brand story + emotion</text>
+  <text x="46" y="216" font-size="10" font-weight="600" fill="rgba(255,255,255,0.6)">Length:</text><text x="96" y="216" font-size="10" fill="rgba(255,255,255,0.45)">150–300 words</text>
+  <line x1="46" y1="228" x2="230" y2="228" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="46" y="246" font-size="10" font-weight="600" fill="rgba(167,139,250,0.8)">Sample Output:</text>
+  <text x="46" y="264" font-size="9" fill="rgba(255,255,255,0.5)">Wireless Bluetooth Headphones</text>
+  <text x="46" y="278" font-size="9" fill="rgba(255,255,255,0.5)">— Premium Sound, All-Day</text>
+  <text x="46" y="292" font-size="9" fill="rgba(255,255,255,0.5)">Comfort. Designed for those</text>
+  <text x="46" y="306" font-size="9" fill="rgba(255,255,255,0.5)">who live the music...</text>
+  <g font-size="9" fill="rgba(255,255,255,0.55)">
+    <text x="46" y="326">✓ SEO title included</text>
+    <text x="46" y="342">✓ 5 feature bullet points</text>
+    <text x="46" y="358">✓ Emotional CTA</text>
+    <text x="46" y="374">✓ Meta description</text>
+    <text x="46" y="390">✓ 8 SEO keywords</text>
+    <text x="46" y="406">✓ Readability grade</text>
+  </g>
+  <rect x="46" y="418" width="124" height="22" rx="6" fill="url(#bG)"/>
+  <text x="108" y="433" text-anchor="middle" font-size="9" font-weight="700" fill="#fff">Best for: DTC Brands</text>
+
+  <!-- Amazon -->
+  <rect x="258" y="120" width="216" height="348" rx="14" fill="url(#pG)" stroke="rgba(251,191,36,0.2)" stroke-width="1" filter="url(#sh)"/>
+  <rect x="258" y="120" width="216" height="44" rx="14" fill="rgba(251,191,36,0.12)"/>
+  <rect x="258" y="150" width="216" height="14" fill="rgba(251,191,36,0.12)"/>
+  <text x="366" y="148" text-anchor="middle" font-size="13" font-weight="700" fill="#fde68a">📦 Amazon</text>
+  <text x="274" y="184" font-size="10" font-weight="600" fill="rgba(255,255,255,0.6)">Tone:</text><text x="312" y="184" font-size="10" fill="rgba(255,255,255,0.45)">Keyword-heavy</text>
+  <text x="274" y="200" font-size="10" font-weight="600" fill="rgba(255,255,255,0.6)">Focus:</text><text x="316" y="200" font-size="10" fill="rgba(255,255,255,0.45)">Specs + scannable bullets</text>
+  <text x="274" y="216" font-size="10" font-weight="600" fill="rgba(255,255,255,0.6)">Length:</text><text x="324" y="216" font-size="10" fill="rgba(255,255,255,0.45)">200 chars + 5 bullets</text>
+  <line x1="274" y1="228" x2="458" y2="228" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="274" y="246" font-size="10" font-weight="600" fill="rgba(253,230,138,0.8)">Sample Output:</text>
+  <text x="274" y="264" font-size="9" fill="rgba(255,255,255,0.5)">Wireless BT Headphones |</text>
+  <text x="274" y="278" font-size="9" fill="rgba(255,255,255,0.5)">40H Battery | ANC | Mic |</text>
+  <text x="274" y="292" font-size="9" fill="rgba(255,255,255,0.5)">Foldable | Black — Premium</text>
+  <text x="274" y="306" font-size="9" fill="rgba(255,255,255,0.5)">Audio Grade A...</text>
+  <g font-size="9" fill="rgba(255,255,255,0.55)">
+    <text x="274" y="326">✓ A+ content structure</text>
+    <text x="274" y="342">✓ Backend keywords</text>
+    <text x="274" y="358">✓ Scannable bullet format</text>
+    <text x="274" y="374">✓ Character-limit aware</text>
+    <text x="274" y="390">✓ Trust signals included</text>
+    <text x="274" y="406">✓ ASIN-ready format</text>
+  </g>
+  <rect x="274" y="418" width="124" height="22" rx="6" fill="rgba(251,191,36,0.2)" stroke="rgba(251,191,36,0.35)" stroke-width="1"/>
+  <text x="336" y="433" text-anchor="middle" font-size="9" font-weight="700" fill="#fde68a">Best for: Amazon FBA</text>
+
+  <!-- Etsy -->
+  <rect x="486" y="120" width="216" height="348" rx="14" fill="url(#pG)" stroke="rgba(239,68,68,0.2)" stroke-width="1" filter="url(#sh)"/>
+  <rect x="486" y="120" width="216" height="44" rx="14" fill="rgba(239,68,68,0.1)"/>
+  <rect x="486" y="150" width="216" height="14" fill="rgba(239,68,68,0.1)"/>
+  <text x="594" y="148" text-anchor="middle" font-size="13" font-weight="700" fill="#fca5a5">🎨 Etsy</text>
+  <text x="502" y="184" font-size="10" font-weight="600" fill="rgba(255,255,255,0.6)">Tone:</text><text x="540" y="184" font-size="10" fill="rgba(255,255,255,0.45)">Artisan, handmade feel</text>
+  <text x="502" y="200" font-size="10" font-weight="600" fill="rgba(255,255,255,0.6)">Focus:</text><text x="544" y="200" font-size="10" fill="rgba(255,255,255,0.45)">Craftsmanship + story</text>
+  <text x="502" y="216" font-size="10" font-weight="600" fill="rgba(255,255,255,0.6)">Length:</text><text x="552" y="216" font-size="10" fill="rgba(255,255,255,0.45)">140–200 words</text>
+  <line x1="502" y1="228" x2="686" y2="228" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="502" y="246" font-size="10" font-weight="600" fill="rgba(252,165,165,0.8)">Sample Output:</text>
+  <text x="502" y="264" font-size="9" fill="rgba(255,255,255,0.5)">✨ Handcrafted with care,</text>
+  <text x="502" y="278" font-size="9" fill="rgba(255,255,255,0.5)">our wireless headphones</text>
+  <text x="502" y="292" font-size="9" fill="rgba(255,255,255,0.5)">bring warmth to every</text>
+  <text x="502" y="306" font-size="9" fill="rgba(255,255,255,0.5)">listening moment...</text>
+  <g font-size="9" fill="rgba(255,255,255,0.55)">
+    <text x="502" y="326">✓ Warm, personal tone</text>
+    <text x="502" y="342">✓ Gift-giving context</text>
+    <text x="502" y="358">✓ Etsy search tags</text>
+    <text x="502" y="374">✓ Story-led narrative</text>
+    <text x="502" y="390">✓ Materials highlighted</text>
+    <text x="502" y="406">✓ Care instructions note</text>
+  </g>
+  <rect x="502" y="418" width="124" height="22" rx="6" fill="rgba(239,68,68,0.15)" stroke="rgba(239,68,68,0.3)" stroke-width="1"/>
+  <text x="564" y="433" text-anchor="middle" font-size="9" font-weight="700" fill="#fca5a5">Best for: Handmade</text>
+
+  <!-- WooCommerce -->
+  <rect x="714" y="120" width="216" height="348" rx="14" fill="url(#pG)" stroke="rgba(96,165,250,0.2)" stroke-width="1" filter="url(#sh)"/>
+  <rect x="714" y="120" width="216" height="44" rx="14" fill="rgba(96,165,250,0.1)"/>
+  <rect x="714" y="150" width="216" height="14" fill="rgba(96,165,250,0.1)"/>
+  <text x="822" y="148" text-anchor="middle" font-size="13" font-weight="700" fill="#93c5fd">🔵 WooCommerce</text>
+  <text x="730" y="184" font-size="10" font-weight="600" fill="rgba(255,255,255,0.6)">Tone:</text><text x="768" y="184" font-size="10" fill="rgba(255,255,255,0.45)">Conversion-focused</text>
+  <text x="730" y="200" font-size="10" font-weight="600" fill="rgba(255,255,255,0.6)">Focus:</text><text x="772" y="200" font-size="10" fill="rgba(255,255,255,0.45)">Trust + social proof</text>
+  <text x="730" y="216" font-size="10" font-weight="600" fill="rgba(255,255,255,0.6)">Length:</text><text x="780" y="216" font-size="10" fill="rgba(255,255,255,0.45)">100–200 words</text>
+  <line x1="730" y1="228" x2="914" y2="228" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="730" y="246" font-size="10" font-weight="600" fill="rgba(147,197,253,0.8)">Sample Output:</text>
+  <text x="730" y="264" font-size="9" fill="rgba(255,255,255,0.5)">Loved by 4,000+ buyers,</text>
+  <text x="730" y="278" font-size="9" fill="rgba(255,255,255,0.5)">our wireless headphones</text>
+  <text x="730" y="292" font-size="9" fill="rgba(255,255,255,0.5)">combine pro-grade audio</text>
+  <text x="730" y="306" font-size="9" fill="rgba(255,255,255,0.5)">with all-day comfort...</text>
+  <g font-size="9" fill="rgba(255,255,255,0.55)">
+    <text x="730" y="326">✓ Schema.org ready</text>
+    <text x="730" y="342">✓ Social proof hooks</text>
+    <text x="730" y="358">✓ Trust signals</text>
+    <text x="730" y="374">✓ HTML-safe formatting</text>
+    <text x="730" y="390">✓ Yoast SEO optimised</text>
+    <text x="730" y="406">✓ WP excerpt ready</text>
+  </g>
+  <rect x="730" y="418" width="124" height="22" rx="6" fill="rgba(96,165,250,0.15)" stroke="rgba(96,165,250,0.3)" stroke-width="1"/>
+  <text x="792" y="433" text-anchor="middle" font-size="9" font-weight="700" fill="#93c5fd">Best for: WordPress</text>
+
+  <!-- eBay -->
+  <rect x="942" y="120" width="218" height="348" rx="14" fill="url(#pG)" stroke="rgba(52,211,153,0.2)" stroke-width="1" filter="url(#sh)"/>
+  <rect x="942" y="120" width="218" height="44" rx="14" fill="rgba(52,211,153,0.1)"/>
+  <rect x="942" y="150" width="218" height="14" fill="rgba(52,211,153,0.1)"/>
+  <text x="1051" y="148" text-anchor="middle" font-size="13" font-weight="700" fill="#6ee7b7">🏷 eBay</text>
+  <text x="958" y="184" font-size="10" font-weight="600" fill="rgba(255,255,255,0.6)">Tone:</text><text x="996" y="184" font-size="10" fill="rgba(255,255,255,0.45)">Spec-driven, deal-focus</text>
+  <text x="958" y="200" font-size="10" font-weight="600" fill="rgba(255,255,255,0.6)">Focus:</text><text x="1000" y="200" font-size="10" fill="rgba(255,255,255,0.45)">Condition + price value</text>
+  <text x="958" y="216" font-size="10" font-weight="600" fill="rgba(255,255,255,0.6)">Length:</text><text x="1008" y="216" font-size="10" fill="rgba(255,255,255,0.45)">80–150 words</text>
+  <line x1="958" y1="228" x2="1144" y2="228" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="958" y="246" font-size="10" font-weight="600" fill="rgba(110,231,183,0.8)">Sample Output:</text>
+  <text x="958" y="264" font-size="9" fill="rgba(255,255,255,0.5)">New | Wireless BT 5.0</text>
+  <text x="958" y="278" font-size="9" fill="rgba(255,255,255,0.5)">Headphones | ANC | 40H |</text>
+  <text x="958" y="292" font-size="9" fill="rgba(255,255,255,0.5)">Foldable | Fast Ship | UK</text>
+  <text x="958" y="306" font-size="9" fill="rgba(255,255,255,0.5)">Stock | Money-back...</text>
+  <g font-size="9" fill="rgba(255,255,255,0.55)">
+    <text x="958" y="326">✓ Item specifics format</text>
+    <text x="958" y="342">✓ Condition clarity</text>
+    <text x="958" y="358">✓ Shipping mentions</text>
+    <text x="958" y="374">✓ Buyer protection noted</text>
+    <text x="958" y="390">✓ eBay category aware</text>
+    <text x="958" y="406">✓ Mobile-optimised copy</text>
+  </g>
+  <rect x="958" y="418" width="124" height="22" rx="6" fill="rgba(52,211,153,0.15)" stroke="rgba(52,211,153,0.3)" stroke-width="1"/>
+  <text x="1020" y="433" text-anchor="middle" font-size="9" font-weight="700" fill="#6ee7b7">Best for: Resellers</text>
+</svg>

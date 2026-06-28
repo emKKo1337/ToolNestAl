@@ -1,0 +1,122 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="75%"><stop offset="0%" stop-color="#0d0520"/><stop offset="100%" stop-color="#07070f"/></radialGradient>
+    <radialGradient id="gL" cx="10%" cy="50%" r="55%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.35"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gR" cx="90%" cy="50%" r="55%"><stop offset="0%" stop-color="#2563eb" stop-opacity="0.22"/><stop offset="100%" stop-color="#2563eb" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="gaugeG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#a78bfa"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="8" stdDeviation="20" flood-color="#5b21b6" flood-opacity="0.4"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <ellipse cx="100" cy="315" rx="500" ry="400" fill="url(#gL)"/>
+  <ellipse cx="1100" cy="315" rx="500" ry="400" fill="url(#gR)"/>
+
+  <!-- Grid dots subtle -->
+  <pattern id="dots" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+    <circle cx="20" cy="20" r="1" fill="rgba(167,139,250,0.06)"/>
+  </pattern>
+  <rect width="1200" height="630" fill="url(#dots)"/>
+
+  <!-- Brand badge -->
+  <rect x="60" y="52" width="130" height="32" rx="8" fill="rgba(124,58,237,0.2)" stroke="rgba(167,139,250,0.3)" stroke-width="1"/>
+  <text x="125" y="73" text-anchor="middle" font-size="12" font-weight="700" fill="#a78bfa">ToolNest AI</text>
+
+  <!-- Main headline -->
+  <text x="60" y="160" font-size="56" font-weight="900" fill="url(#aG)" filter="url(#glow)" letter-spacing="-1">AI Detector</text>
+  <text x="60" y="220" font-size="26" font-weight="700" fill="rgba(255,255,255,0.85)">How to Detect AI-Generated</text>
+  <text x="60" y="256" font-size="26" font-weight="700" fill="rgba(255,255,255,0.85)">Content Accurately</text>
+
+  <!-- Sub description -->
+  <text x="60" y="300" font-size="16" fill="rgba(255,255,255,0.45)">Free · Multi-Model · Instant Results · 50+ Languages</text>
+
+  <!-- Feature pills -->
+  <g font-size="12" font-weight="600">
+    <rect x="60" y="330" width="112" height="30" rx="8" fill="rgba(167,139,250,0.12)" stroke="rgba(167,139,250,0.25)" stroke-width="1"/>
+    <text x="116" y="350" text-anchor="middle" fill="#a78bfa">🛡 High Accuracy</text>
+
+    <rect x="184" y="330" width="110" height="30" rx="8" fill="rgba(96,165,250,0.1)" stroke="rgba(96,165,250,0.22)" stroke-width="1"/>
+    <text x="239" y="350" text-anchor="middle" fill="#60a5fa">⚡ Under 3 sec</text>
+
+    <rect x="306" y="330" width="108" height="30" rx="8" fill="rgba(34,197,94,0.1)" stroke="rgba(34,197,94,0.22)" stroke-width="1"/>
+    <text x="360" y="350" text-anchor="middle" fill="#4ade80">🔒 100% Secure</text>
+
+    <rect x="426" y="330" width="112" height="30" rx="8" fill="rgba(167,139,250,0.1)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+    <text x="482" y="350" text-anchor="middle" fill="#c4b5fd">🌐 50+ Languages</text>
+  </g>
+
+  <!-- CTA button -->
+  <rect x="60" y="390" width="210" height="48" rx="14" fill="url(#bG)" filter="url(#sh)"/>
+  <text x="165" y="420" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">Detect AI Free ✦</text>
+
+  <!-- Right: UI mockup panel -->
+  <rect x="650" y="60" width="500" height="510" rx="18" fill="rgba(19,11,46,0.95)" stroke="rgba(167,139,250,0.2)" stroke-width="1" filter="url(#sh)"/>
+  <!-- Panel header bar -->
+  <rect x="650" y="60" width="500" height="40" rx="18" fill="rgba(124,58,237,0.12)"/>
+  <rect x="650" y="86" width="500" height="14" fill="rgba(124,58,237,0.12)"/>
+  <circle cx="674" cy="80" r="5" fill="rgba(255,99,99,0.5)"/>
+  <circle cx="690" cy="80" r="5" fill="rgba(255,193,7,0.5)"/>
+  <circle cx="706" cy="80" r="5" fill="rgba(34,197,94,0.5)"/>
+  <text x="780" y="85" font-size="12" font-weight="600" fill="rgba(255,255,255,0.6)">AI Detector — ToolNest AI</text>
+
+  <!-- Gauge -->
+  <circle cx="900" cy="240" r="90" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="14"/>
+  <circle cx="900" cy="240" r="90" fill="none" stroke="url(#gaugeG)" stroke-width="14" stroke-dasharray="113 452" stroke-linecap="round" transform="rotate(-90 900 240)"/>
+  <text x="900" y="225" text-anchor="middle" font-size="42" font-weight="900" fill="#a78bfa" filter="url(#glow)">18%</text>
+  <text x="900" y="252" text-anchor="middle" font-size="14" fill="rgba(255,255,255,0.45)">AI Generated</text>
+  <text x="900" y="300" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.7)">This text is likely</text>
+  <text x="900" y="322" text-anchor="middle" font-size="16" font-weight="800" fill="#4ade80">Human Written</text>
+  <text x="900" y="344" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.35)">Confidence: High</text>
+
+  <!-- Mini bars -->
+  <g font-size="11">
+    <text x="670" y="396" fill="rgba(255,255,255,0.45)">AI Generated</text>
+    <rect x="770" y="387" width="160" height="8" rx="4" fill="rgba(255,255,255,0.06)"/>
+    <rect x="770" y="387" width="29" height="8" rx="4" fill="url(#bG)"/>
+    <text x="938" y="396" fill="rgba(255,255,255,0.4)">18%</text>
+
+    <text x="670" y="418" fill="rgba(255,255,255,0.45)">Possibly AI</text>
+    <rect x="770" y="409" width="160" height="8" rx="4" fill="rgba(255,255,255,0.06)"/>
+    <rect x="770" y="409" width="35" height="8" rx="4" fill="rgba(167,139,250,0.6)"/>
+    <text x="938" y="418" fill="rgba(255,255,255,0.4)">22%</text>
+
+    <text x="670" y="440" fill="rgba(255,255,255,0.45)">Uncertain</text>
+    <rect x="770" y="431" width="160" height="8" rx="4" fill="rgba(255,255,255,0.06)"/>
+    <rect x="770" y="431" width="16" height="8" rx="4" fill="rgba(251,191,36,0.6)"/>
+    <text x="938" y="440" fill="rgba(255,255,255,0.4)">10%</text>
+
+    <text x="670" y="462" fill="rgba(255,255,255,0.45)">Likely Human</text>
+    <rect x="770" y="453" width="160" height="8" rx="4" fill="rgba(255,255,255,0.06)"/>
+    <rect x="770" y="453" width="80" height="8" rx="4" fill="rgba(34,197,94,0.7)"/>
+    <text x="938" y="462" fill="rgba(255,255,255,0.4)">50%</text>
+  </g>
+
+  <!-- Model pills inside panel -->
+  <g font-size="9" font-weight="600" text-anchor="middle">
+    <rect x="670" y="482" width="46" height="18" rx="4" fill="url(#bG)"/>
+    <text x="693" y="495" fill="#fff">GPT-4</text>
+    <rect x="722" y="482" width="52" height="18" rx="4" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+    <text x="748" y="495" fill="rgba(255,255,255,0.45)">ChatGPT</text>
+    <rect x="780" y="482" width="44" height="18" rx="4" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+    <text x="802" y="495" fill="rgba(255,255,255,0.45)">Claude</text>
+    <rect x="830" y="482" width="50" height="18" rx="4" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+    <text x="855" y="495" fill="rgba(255,255,255,0.45)">Gemini</text>
+    <rect x="886" y="482" width="46" height="18" rx="4" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+    <text x="909" y="495" fill="rgba(255,255,255,0.45)">Llama</text>
+    <rect x="938" y="482" width="50" height="18" rx="4" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+    <text x="963" y="495" fill="rgba(255,255,255,0.45)">Mistral</text>
+    <rect x="994" y="482" width="44" height="18" rx="4" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+    <text x="1016" y="495" fill="rgba(255,255,255,0.45)">PaLM 2</text>
+    <rect x="1044" y="482" width="48" height="18" rx="4" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+    <text x="1068" y="495" fill="rgba(255,255,255,0.45)">Custom</text>
+  </g>
+
+  <!-- detect button inside panel -->
+  <rect x="670" y="512" width="460" height="34" rx="10" fill="url(#bG)"/>
+  <text x="900" y="534" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">Detect AI Content ✦</text>
+
+  <!-- Domain tag -->
+  <text x="60" y="560" font-size="14" fill="rgba(255,255,255,0.25)">toolnestai.net</text>
+</svg>

@@ -1,0 +1,191 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="75%"><stop offset="0%" stop-color="#0d0520"/><stop offset="100%" stop-color="#07070f"/></radialGradient>
+    <radialGradient id="gL" cx="15%" cy="50%" r="50%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.3"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gR" cx="75%" cy="50%" r="55%"><stop offset="0%" stop-color="#2563eb" stop-opacity="0.2"/><stop offset="100%" stop-color="#2563eb" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gT" cx="50%" cy="0%" r="60%"><stop offset="0%" stop-color="#7c3aed" stop-opacity="0.15"/><stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="pG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#130b2e" stop-opacity="0.98"/><stop offset="100%" stop-color="#0c0820" stop-opacity="0.98"/></linearGradient>
+    <linearGradient id="gaugeG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#a78bfa"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#5b21b6" flood-opacity="0.35"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <clipPath id="panel"><rect x="448" y="40" width="720" height="550" rx="18"/></clipPath>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <ellipse cx="150" cy="315" rx="450" ry="380" fill="url(#gL)"/>
+  <ellipse cx="900" cy="315" rx="500" ry="380" fill="url(#gR)"/>
+  <ellipse cx="600" cy="0" rx="600" ry="300" fill="url(#gT)"/>
+
+  <!-- Top icon row -->
+  <g text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.45)">
+    <rect x="448" y="40" width="144" height="70" rx="12" fill="rgba(167,139,250,0.07)" stroke="rgba(167,139,250,0.15)" stroke-width="1"/>
+    <text x="520" y="65" font-size="20">🛡️</text>
+    <text x="520" y="100">AI Detection</text>
+    <rect x="600" y="40" width="144" height="70" rx="12" fill="rgba(167,139,250,0.07)" stroke="rgba(167,139,250,0.15)" stroke-width="1"/>
+    <text x="672" y="65" font-size="20">🔗</text>
+    <text x="672" y="100">Multi-Model</text>
+    <rect x="752" y="40" width="144" height="70" rx="12" fill="rgba(167,139,250,0.07)" stroke="rgba(167,139,250,0.15)" stroke-width="1"/>
+    <text x="824" y="65" font-size="20">🎯</text>
+    <text x="824" y="100">High Accuracy</text>
+    <rect x="904" y="40" width="144" height="70" rx="12" fill="rgba(167,139,250,0.07)" stroke="rgba(167,139,250,0.15)" stroke-width="1"/>
+    <text x="976" y="65" font-size="20">📊</text>
+    <text x="976" y="100">Detailed Report</text>
+    <rect x="1056" y="40" width="112" height="70" rx="12" fill="rgba(167,139,250,0.07)" stroke="rgba(167,139,250,0.15)" stroke-width="1"/>
+    <text x="1112" y="65" font-size="20">⚡</text>
+    <text x="1112" y="100">Instant Results</text>
+  </g>
+
+  <!-- Left: Headline + Features -->
+  <text x="36" y="168" font-size="13" font-weight="600" fill="#a78bfa" letter-spacing="1">AI DETECTOR</text>
+  <text x="36" y="220" font-size="44" font-weight="900" fill="url(#aG)" filter="url(#glow)" letter-spacing="-1">AI Detector</text>
+  <text x="36" y="262" font-size="20" font-weight="700" fill="#f0e8ff">Detect AI-Generated</text>
+  <text x="36" y="292" font-size="20" font-weight="700" fill="#f0e8ff">Content Accurately</text>
+  <text x="36" y="328" font-size="13" fill="rgba(255,255,255,0.48)" xml:space="preserve">Identify AI-written content with high accuracy.</text>
+  <text x="36" y="346" font-size="13" fill="rgba(255,255,255,0.48)">Ensure originality, integrity and trust in every</text>
+  <text x="36" y="364" font-size="13" fill="rgba(255,255,255,0.48)">piece of text you read or publish.</text>
+
+  <!-- Feature bullets -->
+  <g font-size="12">
+    <rect x="36" y="384" width="22" height="22" rx="6" fill="rgba(167,139,250,0.15)" stroke="rgba(167,139,250,0.3)" stroke-width="1"/>
+    <text x="47" y="399" text-anchor="middle" font-size="11">🛡</text>
+    <text x="66" y="395" font-weight="600" fill="rgba(255,255,255,0.8)">Accurate AI Detection</text>
+    <text x="66" y="410" fill="rgba(255,255,255,0.38)">Advanced algorithms detect AI content with high precision</text>
+
+    <rect x="36" y="426" width="22" height="22" rx="6" fill="rgba(96,165,250,0.12)" stroke="rgba(96,165,250,0.25)" stroke-width="1"/>
+    <text x="47" y="441" text-anchor="middle" font-size="11">🔍</text>
+    <text x="66" y="437" font-weight="600" fill="rgba(255,255,255,0.8)">Multi-Model Detection</text>
+    <text x="66" y="452" fill="rgba(255,255,255,0.38)">Detect content from ChatGPT, GPT-4, Claude, Gemini</text>
+
+    <rect x="36" y="468" width="22" height="22" rx="6" fill="rgba(167,139,250,0.1)" stroke="rgba(167,139,250,0.22)" stroke-width="1"/>
+    <text x="47" y="483" text-anchor="middle" font-size="11">📊</text>
+    <text x="66" y="479" font-weight="600" fill="rgba(255,255,255,0.8)">Detailed Analysis</text>
+    <text x="66" y="494" fill="rgba(255,255,255,0.38)">Sentence-by-sentence AI probability with confidence scores</text>
+
+    <rect x="36" y="510" width="22" height="22" rx="6" fill="rgba(34,197,94,0.1)" stroke="rgba(34,197,94,0.22)" stroke-width="1"/>
+    <text x="47" y="525" text-anchor="middle" font-size="11">🔒</text>
+    <text x="66" y="521" font-weight="600" fill="rgba(255,255,255,0.8)">Secure &amp; Private</text>
+    <text x="66" y="536" fill="rgba(255,255,255,0.38)">Your data is encrypted and never stored</text>
+  </g>
+
+  <!-- Right: Tool Interface Panel -->
+  <rect x="448" y="118" width="726" height="452" rx="18" fill="url(#pG)" stroke="rgba(167,139,250,0.18)" stroke-width="1" filter="url(#sh)"/>
+  <!-- Panel header -->
+  <rect x="448" y="118" width="726" height="46" rx="18" fill="rgba(167,139,250,0.06)"/>
+  <rect x="448" y="142" width="726" height="22" fill="rgba(167,139,250,0.06)"/>
+  <circle cx="474" cy="141" r="6" fill="rgba(255,99,99,0.5)"/>
+  <circle cx="494" cy="141" r="6" fill="rgba(255,193,7,0.5)"/>
+  <circle cx="514" cy="141" r="6" fill="rgba(34,197,94,0.5)"/>
+  <text x="586" y="146" font-size="13" font-weight="600" fill="rgba(255,255,255,0.7)">AI Detector</text>
+  <rect x="1084" y="131" width="76" height="22" rx="6" fill="rgba(34,197,94,0.1)" stroke="rgba(34,197,94,0.25)" stroke-width="1"/>
+  <text x="1122" y="146" text-anchor="middle" font-size="10" fill="rgba(34,197,94,0.8)">🔒 100% Secure</text>
+
+  <!-- Left input column -->
+  <rect x="462" y="176" width="310" height="22" rx="5" fill="url(#bG)"/>
+  <text x="470" y="191" font-size="11" font-weight="600" fill="#fff">Text to Analyze</text>
+
+  <rect x="462" y="204" width="310" height="142" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <text x="472" y="222" font-size="11" fill="rgba(255,255,255,0.5)" xml:space="preserve">Artificial intelligence is transforming the way</text>
+  <text x="472" y="238" font-size="11" fill="rgba(255,255,255,0.5)">we work, learn and communicate. From</text>
+  <text x="472" y="254" font-size="11" fill="rgba(255,255,255,0.5)">content creation to data analysis, AI tools</text>
+  <text x="472" y="270" font-size="11" fill="rgba(255,255,255,0.5)">are becoming more powerful and accessible</text>
+  <text x="472" y="286" font-size="11" fill="rgba(255,255,255,0.5)">every day...</text>
+  <text x="752" y="338" text-anchor="end" font-size="10" fill="rgba(255,255,255,0.25)">215 / 10,000</text>
+
+  <!-- Model selector -->
+  <text x="462" y="364" font-size="11" fill="rgba(255,255,255,0.45)">Choose Detection Model</text>
+  <g font-size="10" font-weight="600">
+    <rect x="462" y="372" width="56" height="22" rx="5" fill="url(#bG)"/>
+    <text x="490" y="387" text-anchor="middle" fill="#fff">GPT-4</text>
+    <rect x="524" y="372" width="64" height="22" rx="5" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <text x="556" y="387" text-anchor="middle" fill="rgba(255,255,255,0.55)">ChatGPT</text>
+    <rect x="594" y="372" width="52" height="22" rx="5" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <text x="620" y="387" text-anchor="middle" fill="rgba(255,255,255,0.55)">Claude</text>
+    <rect x="652" y="372" width="54" height="22" rx="5" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <text x="679" y="387" text-anchor="middle" fill="rgba(255,255,255,0.55)">Gemini</text>
+    <rect x="462" y="400" width="48" height="22" rx="5" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <text x="486" y="415" text-anchor="middle" fill="rgba(255,255,255,0.55)">Llama</text>
+    <rect x="516" y="400" width="54" height="22" rx="5" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <text x="543" y="415" text-anchor="middle" fill="rgba(255,255,255,0.55)">PaLM 2</text>
+    <rect x="576" y="400" width="56" height="22" rx="5" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <text x="604" y="415" text-anchor="middle" fill="rgba(255,255,255,0.55)">Mistral</text>
+    <rect x="638" y="400" width="54" height="22" rx="5" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <text x="665" y="415" text-anchor="middle" fill="rgba(255,255,255,0.55)">Custom</text>
+  </g>
+
+  <!-- Detect button -->
+  <rect x="462" y="432" width="310" height="38" rx="12" fill="url(#bG)" filter="url(#sh)"/>
+  <text x="617" y="456" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">Detect AI Content ✦</text>
+
+  <!-- Footer stats -->
+  <text x="462" y="486" font-size="10" fill="rgba(255,255,255,0.35)">📄 Words: 215</text>
+  <text x="540" y="486" font-size="10" fill="rgba(255,255,255,0.35)">⌨ Characters: 1,248</text>
+  <text x="650" y="486" font-size="10" fill="rgba(255,255,255,0.35)">🕐 Checked: Just now</text>
+  <rect x="710" y="476" width="60" height="18" rx="5" fill="rgba(167,139,250,0.1)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+  <text x="740" y="488" text-anchor="middle" font-size="9" fill="#a78bfa">⬇ Download</text>
+
+  <!-- Divider -->
+  <line x1="784" y1="176" x2="784" y2="500" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <!-- Right: Results panel -->
+  <rect x="796" y="176" width="22" height="22" rx="5" fill="url(#bG)"/>
+  <text x="807" y="191" text-anchor="middle" font-size="11">🔍</text>
+  <text x="826" y="191" font-size="12" font-weight="600" fill="#a78bfa">AI Detection Result</text>
+
+  <!-- Circular gauge -->
+  <circle cx="930" cy="290" r="64" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="10"/>
+  <circle cx="930" cy="290" r="64" fill="none" stroke="url(#gaugeG)" stroke-width="10" stroke-dasharray="80 322" stroke-linecap="round" transform="rotate(-90 930 290)"/>
+  <text x="930" y="281" text-anchor="middle" font-size="30" font-weight="900" fill="#a78bfa" filter="url(#glow)">18%</text>
+  <text x="930" y="300" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.5)">AI Generated</text>
+  <text x="930" y="328" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.7)">This text is likely</text>
+  <text x="930" y="345" text-anchor="middle" font-size="13" font-weight="700" fill="#4ade80">Human Written</text>
+  <text x="930" y="362" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.38)">Confidence: High</text>
+
+  <!-- Probability bars -->
+  <text x="800" y="390" font-size="11" font-weight="600" fill="rgba(255,255,255,0.55)">Probability Breakdown</text>
+  <g font-size="10">
+    <text x="800" y="412" fill="rgba(255,255,255,0.45)">AI Generated</text>
+    <rect x="880" y="402" width="140" height="8" rx="4" fill="rgba(255,255,255,0.08)"/>
+    <rect x="880" y="402" width="25" height="8" rx="4" fill="url(#bG)"/>
+    <text x="1028" y="412" fill="rgba(255,255,255,0.45)">18%</text>
+
+    <text x="800" y="432" fill="rgba(255,255,255,0.45)">Possibly AI</text>
+    <rect x="880" y="422" width="140" height="8" rx="4" fill="rgba(255,255,255,0.08)"/>
+    <rect x="880" y="422" width="31" height="8" rx="4" fill="rgba(167,139,250,0.6)"/>
+    <text x="1028" y="432" fill="rgba(255,255,255,0.45)">22%</text>
+
+    <text x="800" y="452" fill="rgba(255,255,255,0.45)">Uncertain</text>
+    <rect x="880" y="442" width="140" height="8" rx="4" fill="rgba(255,255,255,0.08)"/>
+    <rect x="880" y="442" width="14" height="8" rx="4" fill="rgba(251,191,36,0.6)"/>
+    <text x="1028" y="452" fill="rgba(255,255,255,0.45)">10%</text>
+
+    <text x="800" y="472" fill="rgba(255,255,255,0.45)">Likely Human</text>
+    <rect x="880" y="462" width="140" height="8" rx="4" fill="rgba(255,255,255,0.08)"/>
+    <rect x="880" y="462" width="70" height="8" rx="4" fill="rgba(34,197,94,0.7)"/>
+    <text x="1028" y="472" fill="rgba(255,255,255,0.45)">50%</text>
+  </g>
+
+  <!-- Bottom stats bar -->
+  <rect x="0" y="576" width="1200" height="54" fill="rgba(167,139,250,0.05)" stroke-width="0"/>
+  <line x1="0" y1="576" x2="1200" y2="576" stroke="rgba(167,139,250,0.12)" stroke-width="1"/>
+  <g text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.4)">
+    <text x="100" y="598">🎯 High Accuracy</text>
+    <text x="100" y="614" font-size="10" fill="rgba(255,255,255,0.25)">Industry-leading detection</text>
+    <line x1="200" y1="582" x2="200" y2="622" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="300" y="598">⚡ Fast Results</text>
+    <text x="300" y="614" font-size="10" fill="rgba(255,255,255,0.25)">Get results in seconds</text>
+    <line x1="400" y1="582" x2="400" y2="622" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="500" y="598">🔒 100% Secure</text>
+    <text x="500" y="614" font-size="10" fill="rgba(255,255,255,0.25)">Your privacy is our priority</text>
+    <line x1="600" y1="582" x2="600" y2="622" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="700" y="598">🌐 Multi-Language</text>
+    <text x="700" y="614" font-size="10" fill="rgba(255,255,255,0.25)">Works with 50+ languages</text>
+    <line x1="800" y1="582" x2="800" y2="622" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="900" y="598">☁ Cloud Based</text>
+    <text x="900" y="614" font-size="10" fill="rgba(255,255,255,0.25)">Access anywhere, anytime</text>
+    <line x1="1000" y1="582" x2="1000" y2="622" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="1100" y="598">👥 Trusted by Thousands</text>
+    <text x="1100" y="614" font-size="10" fill="rgba(255,255,255,0.25)">Join thousands of users</text>
+  </g>
+</svg>

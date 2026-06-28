@@ -1,0 +1,142 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="75%"><stop offset="0%" stop-color="#0d0520"/><stop offset="100%" stop-color="#07070f"/></radialGradient>
+    <radialGradient id="gC" cx="50%" cy="50%" r="55%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.18"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="hG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#130b2e"/><stop offset="100%" stop-color="#1a1040"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="4" stdDeviation="10" flood-color="#5b21b6" flood-opacity="0.25"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <rect width="1200" height="500" fill="url(#bg)"/>
+  <ellipse cx="600" cy="250" rx="600" ry="300" fill="url(#gC)"/>
+
+  <!-- Title -->
+  <text x="600" y="48" text-anchor="middle" font-size="11" font-weight="600" fill="#a78bfa" letter-spacing="1">AI DETECTOR COMPARISON</text>
+  <text x="600" y="80" text-anchor="middle" font-size="28" font-weight="800" fill="url(#aG)" filter="url(#glow)">Best AI Detectors Compared (2026)</text>
+
+  <!-- Table container -->
+  <rect x="40" y="100" width="1120" height="370" rx="14" fill="rgba(19,11,46,0.7)" stroke="rgba(167,139,250,0.14)" stroke-width="1" filter="url(#sh)"/>
+
+  <!-- Header row -->
+  <rect x="40" y="100" width="1120" height="46" rx="14" fill="url(#hG)"/>
+  <rect x="40" y="132" width="1120" height="14" fill="url(#hG)"/>
+  <g font-size="11" font-weight="700" fill="rgba(255,255,255,0.6)">
+    <text x="56" y="128">Tool</text>
+    <text x="270" y="128" text-anchor="middle">Free Plan</text>
+    <text x="400" y="128" text-anchor="middle">Accuracy</text>
+    <text x="530" y="128" text-anchor="middle">ChatGPT</text>
+    <text x="660" y="128" text-anchor="middle">Claude/Gemini</text>
+    <text x="800" y="128" text-anchor="middle">Plagiarism</text>
+    <text x="930" y="128" text-anchor="middle">Multi-Language</text>
+    <text x="1060" y="128" text-anchor="middle">Speed</text>
+  </g>
+
+  <!-- Col dividers -->
+  <g stroke="rgba(255,255,255,0.05)" stroke-width="1">
+    <line x1="240" y1="100" x2="240" y2="470"/>
+    <line x1="360" y1="100" x2="360" y2="470"/>
+    <line x1="490" y1="100" x2="490" y2="470"/>
+    <line x1="620" y1="100" x2="620" y2="470"/>
+    <line x1="750" y1="100" x2="750" y2="470"/>
+    <line x1="880" y1="100" x2="880" y2="470"/>
+    <line x1="1000" y1="100" x2="1000" y2="470"/>
+  </g>
+
+  <!-- Row separators and data -->
+  <!-- ToolNest AI (highlighted) -->
+  <rect x="41" y="146" width="1118" height="52" rx="0" fill="rgba(124,58,237,0.12)" stroke="none"/>
+  <rect x="41" y="146" width="4" height="52" fill="url(#bG)"/>
+  <g font-size="11">
+    <text x="56" y="167" font-weight="700" fill="url(#aG)">ToolNest AI Detector</text>
+    <text x="56" y="184" font-size="10" fill="rgba(167,139,250,0.6)">★ Best Free Option</text>
+    <text x="270" y="177" text-anchor="middle" fill="#4ade80" font-weight="700" font-size="13">✓ Unlimited</text>
+    <text x="400" y="170" text-anchor="middle" fill="#a78bfa" font-weight="700">High</text>
+    <text x="400" y="186" text-anchor="middle" font-size="10" fill="rgba(167,139,250,0.55)">Multi-model</text>
+    <text x="530" y="177" text-anchor="middle" fill="#4ade80" font-size="13">✓</text>
+    <text x="660" y="177" text-anchor="middle" fill="#4ade80" font-size="13">✓</text>
+    <text x="800" y="177" text-anchor="middle" fill="#4ade80" font-size="13">✓</text>
+    <text x="930" y="177" text-anchor="middle" fill="#4ade80" font-size="13">✓</text>
+    <text x="1060" y="170" text-anchor="middle" fill="#4ade80" font-weight="700">&lt; 3 sec</text>
+    <text x="1060" y="186" text-anchor="middle" font-size="10" fill="rgba(34,197,94,0.55)">Instant</text>
+  </g>
+
+  <!-- Row 2 -->
+  <rect x="41" y="198" width="1118" height="1" fill="rgba(255,255,255,0.05)"/>
+  <g font-size="11" fill="rgba(255,255,255,0.7)">
+    <text x="56" y="222" font-weight="600">GPTZero</text>
+    <text x="270" y="222" text-anchor="middle" fill="rgba(251,191,36,0.85)">Limited</text>
+    <text x="400" y="222" text-anchor="middle">Good</text>
+    <text x="530" y="222" text-anchor="middle" fill="#4ade80">✓</text>
+    <text x="660" y="222" text-anchor="middle" fill="rgba(255,255,255,0.3)">—</text>
+    <text x="800" y="222" text-anchor="middle" fill="rgba(255,255,255,0.3)">—</text>
+    <text x="930" y="222" text-anchor="middle" fill="rgba(255,255,255,0.3)">—</text>
+    <text x="1060" y="222" text-anchor="middle">3–5 sec</text>
+  </g>
+
+  <!-- Row 3 -->
+  <rect x="41" y="244" width="1118" height="1" fill="rgba(255,255,255,0.05)"/>
+  <g font-size="11" fill="rgba(255,255,255,0.7)">
+    <text x="56" y="268" font-weight="600">Copyleaks</text>
+    <text x="270" y="268" text-anchor="middle" fill="rgba(251,191,36,0.85)">Limited</text>
+    <text x="400" y="268" text-anchor="middle">Very High</text>
+    <text x="530" y="268" text-anchor="middle" fill="#4ade80">✓</text>
+    <text x="660" y="268" text-anchor="middle" fill="#4ade80">✓</text>
+    <text x="800" y="268" text-anchor="middle" fill="#4ade80">✓</text>
+    <text x="930" y="268" text-anchor="middle" fill="#4ade80">✓</text>
+    <text x="1060" y="268" text-anchor="middle">4–8 sec</text>
+  </g>
+
+  <!-- Row 4 -->
+  <rect x="41" y="290" width="1118" height="1" fill="rgba(255,255,255,0.05)"/>
+  <g font-size="11" fill="rgba(255,255,255,0.7)">
+    <text x="56" y="314" font-weight="600">Originality.ai</text>
+    <text x="270" y="314" text-anchor="middle" fill="#f87171">Paid Only</text>
+    <text x="400" y="314" text-anchor="middle">Very High</text>
+    <text x="530" y="314" text-anchor="middle" fill="#4ade80">✓</text>
+    <text x="660" y="314" text-anchor="middle" fill="#4ade80">✓</text>
+    <text x="800" y="314" text-anchor="middle" fill="#4ade80">✓</text>
+    <text x="930" y="314" text-anchor="middle" fill="rgba(255,255,255,0.3)">—</text>
+    <text x="1060" y="314" text-anchor="middle">2–4 sec</text>
+  </g>
+
+  <!-- Row 5 -->
+  <rect x="41" y="336" width="1118" height="1" fill="rgba(255,255,255,0.05)"/>
+  <g font-size="11" fill="rgba(255,255,255,0.7)">
+    <text x="56" y="360" font-weight="600">Turnitin AI</text>
+    <text x="270" y="360" text-anchor="middle" fill="#f87171">Institutional</text>
+    <text x="400" y="360" text-anchor="middle">Very High</text>
+    <text x="530" y="360" text-anchor="middle" fill="#4ade80">✓</text>
+    <text x="660" y="360" text-anchor="middle" fill="rgba(255,255,255,0.3)">—</text>
+    <text x="800" y="360" text-anchor="middle" fill="#4ade80">✓</text>
+    <text x="930" y="360" text-anchor="middle" fill="rgba(255,255,255,0.3)">—</text>
+    <text x="1060" y="360" text-anchor="middle">5–15 sec</text>
+  </g>
+
+  <!-- Row 6 -->
+  <rect x="41" y="382" width="1118" height="1" fill="rgba(255,255,255,0.05)"/>
+  <g font-size="11" fill="rgba(255,255,255,0.7)">
+    <text x="56" y="406" font-weight="600">Writer.com Detector</text>
+    <text x="270" y="406" text-anchor="middle" fill="rgba(251,191,36,0.85)">Limited</text>
+    <text x="400" y="406" text-anchor="middle">Good</text>
+    <text x="530" y="406" text-anchor="middle" fill="#4ade80">✓</text>
+    <text x="660" y="406" text-anchor="middle" fill="rgba(255,255,255,0.3)">—</text>
+    <text x="800" y="406" text-anchor="middle" fill="rgba(255,255,255,0.3)">—</text>
+    <text x="930" y="406" text-anchor="middle" fill="rgba(255,255,255,0.3)">—</text>
+    <text x="1060" y="406" text-anchor="middle">2–3 sec</text>
+  </g>
+
+  <!-- Row 7 -->
+  <rect x="41" y="428" width="1118" height="1" fill="rgba(255,255,255,0.05)"/>
+  <g font-size="11" fill="rgba(255,255,255,0.7)">
+    <text x="56" y="452" font-weight="600">Sapling AI Detector</text>
+    <text x="270" y="452" text-anchor="middle" fill="rgba(251,191,36,0.85)">Limited</text>
+    <text x="400" y="452" text-anchor="middle">Moderate</text>
+    <text x="530" y="452" text-anchor="middle" fill="#4ade80">✓</text>
+    <text x="660" y="452" text-anchor="middle" fill="rgba(255,255,255,0.3)">—</text>
+    <text x="800" y="452" text-anchor="middle" fill="rgba(255,255,255,0.3)">—</text>
+    <text x="930" y="452" text-anchor="middle" fill="rgba(255,255,255,0.3)">—</text>
+    <text x="1060" y="452" text-anchor="middle">1–2 sec</text>
+  </g>
+</svg>

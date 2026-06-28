@@ -1,0 +1,107 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="75%"><stop offset="0%" stop-color="#0d0520"/><stop offset="100%" stop-color="#07070f"/></radialGradient>
+    <radialGradient id="gL" cx="20%" cy="50%" r="45%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.2"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gR" cx="80%" cy="50%" r="45%"><stop offset="0%" stop-color="#dc2626" stop-opacity="0.12"/><stop offset="100%" stop-color="#dc2626" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="rG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#dc2626"/><stop offset="100%" stop-color="#f87171"/></linearGradient>
+    <linearGradient id="pG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#130b2e" stop-opacity="0.95"/><stop offset="100%" stop-color="#0c0820" stop-opacity="0.95"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#5b21b6" flood-opacity="0.28"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <rect width="1200" height="500" fill="url(#bg)"/>
+  <ellipse cx="300" cy="250" rx="420" ry="300" fill="url(#gL)"/>
+  <ellipse cx="900" cy="250" rx="420" ry="300" fill="url(#gR)"/>
+
+  <!-- Title -->
+  <text x="600" y="48" text-anchor="middle" font-size="11" font-weight="600" fill="#a78bfa" letter-spacing="1">DETECTION ACCURACY</text>
+  <text x="600" y="80" text-anchor="middle" font-size="28" font-weight="800" fill="url(#aG)" filter="url(#glow)">What AI Detectors Can (and Can't) Do</text>
+
+  <!-- Left: What it CAN detect -->
+  <rect x="40" y="108" width="540" height="368" rx="14" fill="url(#pG)" stroke="rgba(34,197,94,0.2)" stroke-width="1" filter="url(#sh)"/>
+  <rect x="40" y="108" width="540" height="48" rx="14" fill="rgba(34,197,94,0.1)"/>
+  <rect x="40" y="138" width="540" height="18" fill="rgba(34,197,94,0.1)"/>
+  <text x="310" y="140" text-anchor="middle" font-size="15" font-weight="700" fill="#4ade80">✓ What AI Detectors Do Well</text>
+
+  <!-- Accuracy bars -->
+  <g font-size="11">
+    <text x="60" y="182" fill="rgba(255,255,255,0.7)">Pure AI-generated content (GPT-4)</text>
+    <rect x="60" y="188" width="480" height="10" rx="5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="60" y="188" width="432" height="10" rx="5" fill="rgba(34,197,94,0.65)"/>
+    <text x="498" y="199" font-size="10" fill="#4ade80">90%</text>
+
+    <text x="60" y="218" fill="rgba(255,255,255,0.7)">ChatGPT-generated blog posts</text>
+    <rect x="60" y="224" width="480" height="10" rx="5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="60" y="224" width="408" height="10" rx="5" fill="rgba(34,197,94,0.6)"/>
+    <text x="474" y="235" font-size="10" fill="#4ade80">85%</text>
+
+    <text x="60" y="254" fill="rgba(255,255,255,0.7)">Unedited AI essays</text>
+    <rect x="60" y="260" width="480" height="10" rx="5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="60" y="260" width="422" height="10" rx="5" fill="rgba(34,197,94,0.62)"/>
+    <text x="488" y="271" font-size="10" fill="#4ade80">88%</text>
+
+    <text x="60" y="290" fill="rgba(255,255,255,0.7)">AI product descriptions</text>
+    <rect x="60" y="296" width="480" height="10" rx="5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="60" y="296" width="384" height="10" rx="5" fill="rgba(34,197,94,0.55)"/>
+    <text x="450" y="307" font-size="10" fill="#4ade80">80%</text>
+
+    <text x="60" y="326" fill="rgba(255,255,255,0.7)">Multi-model text detection</text>
+    <rect x="60" y="332" width="480" height="10" rx="5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="60" y="332" width="396" height="10" rx="5" fill="rgba(34,197,94,0.57)"/>
+    <text x="462" y="343" font-size="10" fill="#4ade80">82%</text>
+  </g>
+
+  <!-- Strengths list -->
+  <line x1="60" y1="362" x2="560" y2="362" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <g font-size="11" fill="rgba(255,255,255,0.55)">
+    <text x="60" y="384">✓  Identifies consistent AI patterns (low perplexity)</text>
+    <text x="60" y="402">✓  Detects uniform sentence structure</text>
+    <text x="60" y="420">✓  Flags absence of personal experience or anecdote</text>
+    <text x="60" y="438">✓  Catches overly balanced, hedged phrasing</text>
+    <text x="60" y="456">✓  Works across English and 50+ languages</text>
+  </g>
+
+  <!-- Right: Limitations -->
+  <rect x="620" y="108" width="540" height="368" rx="14" fill="url(#pG)" stroke="rgba(239,68,68,0.2)" stroke-width="1" filter="url(#sh)"/>
+  <rect x="620" y="108" width="540" height="48" rx="14" fill="rgba(239,68,68,0.1)"/>
+  <rect x="620" y="138" width="540" height="18" fill="rgba(239,68,68,0.1)"/>
+  <text x="890" y="140" text-anchor="middle" font-size="15" font-weight="700" fill="#f87171">⚠ Known Limitations</text>
+
+  <g font-size="11">
+    <text x="640" y="182" fill="rgba(255,255,255,0.7)">Heavily edited AI content</text>
+    <rect x="640" y="188" width="480" height="10" rx="5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="640" y="188" width="192" height="10" rx="5" fill="rgba(239,68,68,0.55)"/>
+    <text x="838" y="199" font-size="10" fill="#f87171">40%</text>
+
+    <text x="640" y="218" fill="rgba(255,255,255,0.7)">AI + human co-written content</text>
+    <rect x="640" y="224" width="480" height="10" rx="5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="640" y="224" width="240" height="10" rx="5" fill="rgba(239,68,68,0.5)"/>
+    <text x="886" y="235" font-size="10" fill="#f87171">50%</text>
+
+    <text x="640" y="254" fill="rgba(255,255,255,0.7)">AI-humanized / paraphrased text</text>
+    <rect x="640" y="260" width="480" height="10" rx="5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="640" y="260" width="168" height="10" rx="5" fill="rgba(239,68,68,0.45)"/>
+    <text x="814" y="271" font-size="10" fill="#f87171">35%</text>
+
+    <text x="640" y="290" fill="rgba(255,255,255,0.7)">Short text under 50 words</text>
+    <rect x="640" y="296" width="480" height="10" rx="5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="640" y="296" width="144" height="10" rx="5" fill="rgba(239,68,68,0.4)"/>
+    <text x="790" y="307" font-size="10" fill="#f87171">30%</text>
+
+    <text x="640" y="326" fill="rgba(255,255,255,0.7)">Technical / code-heavy content</text>
+    <rect x="640" y="332" width="480" height="10" rx="5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="640" y="332" width="216" height="10" rx="5" fill="rgba(239,68,68,0.48)"/>
+    <text x="862" y="343" font-size="10" fill="#f87171">45%</text>
+  </g>
+
+  <line x1="640" y1="362" x2="1140" y2="362" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <g font-size="11" fill="rgba(255,255,255,0.55)">
+    <text x="640" y="384">⚠  No detector is 100% accurate — always verify</text>
+    <text x="640" y="402">⚠  False positives possible with formal human writing</text>
+    <text x="640" y="420">⚠  Detection drops when AI is humanized or edited</text>
+    <text x="640" y="438">⚠  Short snippets lack enough signal to analyze</text>
+    <text x="640" y="456">⚠  Use as one signal among several, not a verdict</text>
+  </g>
+</svg>

@@ -1,0 +1,115 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="75%"><stop offset="0%" stop-color="#0d0520"/><stop offset="100%" stop-color="#07070f"/></radialGradient>
+    <radialGradient id="gC" cx="50%" cy="50%" r="65%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.16"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="pG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#130b2e" stop-opacity="0.97"/><stop offset="100%" stop-color="#0c0820" stop-opacity="0.97"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#5b21b6" flood-opacity="0.28"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="nodeSh"><feDropShadow dx="0" dy="6" stdDeviation="14" flood-color="#7c3aed" flood-opacity="0.4"/></filter>
+  </defs>
+
+  <rect width="1200" height="500" fill="url(#bg)"/>
+  <ellipse cx="600" cy="250" rx="700" ry="320" fill="url(#gC)"/>
+
+  <!-- Title -->
+  <text x="600" y="44" text-anchor="middle" font-size="11" font-weight="700" fill="#a78bfa" letter-spacing="1">HOW IT WORKS</text>
+  <text x="600" y="76" text-anchor="middle" font-size="26" font-weight="800" fill="url(#aG)" filter="url(#glow)">From Product Details to Ready-to-Publish Copy</text>
+  <text x="600" y="102" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.42)">Five steps — under 30 seconds — no copywriting experience needed</text>
+
+  <!-- Connector line behind steps -->
+  <line x1="116" y1="268" x2="1084" y2="268" stroke="rgba(167,139,250,0.12)" stroke-width="2" stroke-dasharray="6,4"/>
+
+  <!-- Step nodes -->
+  <!-- Step 1 -->
+  <rect x="30" y="148" width="212" height="240" rx="14" fill="url(#pG)" stroke="rgba(167,139,250,0.2)" stroke-width="1" filter="url(#sh)"/>
+  <circle cx="136" cy="148" r="22" fill="url(#bG)" filter="url(#nodeSh)"/>
+  <text x="136" y="155" text-anchor="middle" font-size="16" font-weight="900" fill="#fff">1</text>
+  <text x="136" y="200" text-anchor="middle" font-size="22">📋</text>
+  <text x="136" y="226" text-anchor="middle" font-size="13" font-weight="700" fill="rgba(255,255,255,0.9)">Enter Product</text>
+  <text x="136" y="242" text-anchor="middle" font-size="13" font-weight="700" fill="rgba(255,255,255,0.9)">Details</text>
+  <text x="136" y="268" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.45)">Product name, key</text>
+  <text x="136" y="282" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.45)">features and your</text>
+  <text x="136" y="296" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.45)">target audience</text>
+  <text x="136" y="320" text-anchor="middle" font-size="9" fill="rgba(167,139,250,0.6)">⏱ ~10 seconds</text>
+  <rect x="60" y="332" width="152" height="36" rx="8" fill="rgba(167,139,250,0.08)" stroke="rgba(167,139,250,0.15)" stroke-width="1"/>
+  <text x="136" y="345" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.5)">💡 Tip: The more detail</text>
+  <text x="136" y="358" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.5)">you add, the better</text>
+
+  <!-- Arrow 1→2 -->
+  <polygon points="252,268 270,261 270,275" fill="#a78bfa" opacity="0.6"/>
+
+  <!-- Step 2 -->
+  <rect x="248" y="148" width="212" height="240" rx="14" fill="url(#pG)" stroke="rgba(167,139,250,0.2)" stroke-width="1" filter="url(#sh)"/>
+  <circle cx="354" cy="148" r="22" fill="url(#bG)" filter="url(#nodeSh)"/>
+  <text x="354" y="155" text-anchor="middle" font-size="16" font-weight="900" fill="#fff">2</text>
+  <text x="354" y="200" text-anchor="middle" font-size="22">🎯</text>
+  <text x="354" y="226" text-anchor="middle" font-size="13" font-weight="700" fill="rgba(255,255,255,0.9)">Choose Tone</text>
+  <text x="354" y="242" text-anchor="middle" font-size="13" font-weight="700" fill="rgba(255,255,255,0.9)">&amp; Platform</text>
+  <text x="354" y="268" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.45)">Select Professional,</text>
+  <text x="354" y="282" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.45)">Luxury, Friendly or</text>
+  <text x="354" y="296" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.45)">Sales tone + platform</text>
+  <text x="354" y="320" text-anchor="middle" font-size="9" fill="rgba(167,139,250,0.6)">⏱ ~5 seconds</text>
+  <rect x="278" y="332" width="152" height="36" rx="8" fill="rgba(167,139,250,0.08)" stroke="rgba(167,139,250,0.15)" stroke-width="1"/>
+  <text x="354" y="345" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.5)">💡 Tip: Match tone to</text>
+  <text x="354" y="358" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.5)">your brand personality</text>
+
+  <!-- Arrow 2→3 -->
+  <polygon points="470,268 488,261 488,275" fill="#a78bfa" opacity="0.6"/>
+
+  <!-- Step 3 -->
+  <rect x="466" y="148" width="212" height="240" rx="14" fill="url(#pG)" stroke="rgba(167,139,250,0.2)" stroke-width="1" filter="url(#sh)"/>
+  <circle cx="572" cy="148" r="22" fill="url(#bG)" filter="url(#nodeSh)"/>
+  <text x="572" y="155" text-anchor="middle" font-size="16" font-weight="900" fill="#fff">3</text>
+  <text x="572" y="200" text-anchor="middle" font-size="22">✦</text>
+  <text x="572" y="226" text-anchor="middle" font-size="13" font-weight="700" fill="rgba(255,255,255,0.9)">Generate</text>
+  <text x="572" y="242" text-anchor="middle" font-size="13" font-weight="700" fill="rgba(255,255,255,0.9)">Description</text>
+  <text x="572" y="268" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.45)">AI writes your title,</text>
+  <text x="572" y="282" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.45)">full description, 5</text>
+  <text x="572" y="296" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.45)">bullets, meta + keys</text>
+  <text x="572" y="320" text-anchor="middle" font-size="9" fill="rgba(167,139,250,0.6)">⏱ ~8 seconds</text>
+  <rect x="496" y="332" width="152" height="36" rx="8" fill="rgba(167,139,250,0.08)" stroke="rgba(167,139,250,0.15)" stroke-width="1"/>
+  <text x="572" y="345" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.5)">💡 Tip: Review the SEO</text>
+  <text x="572" y="358" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.5)">score before copying</text>
+
+  <!-- Arrow 3→4 -->
+  <polygon points="688,268 706,261 706,275" fill="#a78bfa" opacity="0.6"/>
+
+  <!-- Step 4 -->
+  <rect x="684" y="148" width="212" height="240" rx="14" fill="url(#pG)" stroke="rgba(167,139,250,0.2)" stroke-width="1" filter="url(#sh)"/>
+  <circle cx="790" cy="148" r="22" fill="url(#bG)" filter="url(#nodeSh)"/>
+  <text x="790" y="155" text-anchor="middle" font-size="16" font-weight="900" fill="#fff">4</text>
+  <text x="790" y="200" text-anchor="middle" font-size="22">📊</text>
+  <text x="790" y="226" text-anchor="middle" font-size="13" font-weight="700" fill="rgba(255,255,255,0.9)">Review Score</text>
+  <text x="790" y="242" text-anchor="middle" font-size="13" font-weight="700" fill="rgba(255,255,255,0.9)">&amp; Edit</text>
+  <text x="790" y="268" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.45)">Check SEO score,</text>
+  <text x="790" y="282" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.45)">readability and tweak</text>
+  <text x="790" y="296" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.45)">any section needed</text>
+  <text x="790" y="320" text-anchor="middle" font-size="9" fill="rgba(167,139,250,0.6)">⏱ ~30 seconds</text>
+  <rect x="714" y="332" width="152" height="36" rx="8" fill="rgba(167,139,250,0.08)" stroke="rgba(167,139,250,0.15)" stroke-width="1"/>
+  <text x="790" y="345" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.5)">💡 Tip: Regenerate if</text>
+  <text x="790" y="358" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.5)">score is below 80</text>
+
+  <!-- Arrow 4→5 -->
+  <polygon points="906,268 924,261 924,275" fill="#a78bfa" opacity="0.6"/>
+
+  <!-- Step 5 -->
+  <rect x="902" y="148" width="268" height="240" rx="14" fill="url(#pG)" stroke="rgba(34,197,94,0.25)" stroke-width="1" filter="url(#sh)"/>
+  <circle cx="1036" cy="148" r="22" fill="url(#bG)" filter="url(#nodeSh)"/>
+  <text x="1036" y="155" text-anchor="middle" font-size="16" font-weight="900" fill="#fff">5</text>
+  <text x="1036" y="200" text-anchor="middle" font-size="22">🚀</text>
+  <text x="1036" y="226" text-anchor="middle" font-size="13" font-weight="700" fill="rgba(255,255,255,0.9)">Copy &amp; Publish</text>
+  <text x="1036" y="242" text-anchor="middle" font-size="13" font-weight="700" fill="rgba(255,255,255,0.9)">to Your Store</text>
+  <text x="1036" y="268" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.45)">Copy each section or</text>
+  <text x="1036" y="282" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.45)">download full output,</text>
+  <text x="1036" y="296" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.45)">paste and go live</text>
+  <text x="1036" y="320" text-anchor="middle" font-size="9" fill="#4ade80">✓ Done — publish ready</text>
+  <rect x="926" y="332" width="220" height="36" rx="8" fill="rgba(34,197,94,0.08)" stroke="rgba(34,197,94,0.18)" stroke-width="1"/>
+  <text x="1036" y="345" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.5)">💡 Tip: Run through</text>
+  <text x="1036" y="358" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.5)">AI Grammar Checker for final polish</text>
+
+  <!-- Total time badge -->
+  <rect x="466" y="456" width="268" height="32" rx="10" fill="url(#bG)" filter="url(#sh)"/>
+  <text x="600" y="477" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">⚡ Total time: Under 60 seconds · 100% Free</text>
+</svg>

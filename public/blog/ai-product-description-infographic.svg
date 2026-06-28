@@ -1,0 +1,152 @@
+<svg viewBox="0 0 900 1200" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="30%" r="80%"><stop offset="0%" stop-color="#0d0520"/><stop offset="100%" stop-color="#07070f"/></radialGradient>
+    <radialGradient id="gT" cx="50%" cy="15%" r="60%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.22"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gB" cx="50%" cy="85%" r="60%"><stop offset="0%" stop-color="#2563eb" stop-opacity="0.12"/><stop offset="100%" stop-color="#2563eb" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="pG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#130b2e" stop-opacity="0.97"/><stop offset="100%" stop-color="#0c0820" stop-opacity="0.97"/></linearGradient>
+    <linearGradient id="greenG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#059669"/><stop offset="100%" stop-color="#4ade80"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#5b21b6" flood-opacity="0.3"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <rect width="900" height="1200" fill="url(#bg)"/>
+  <ellipse cx="450" cy="180" rx="600" ry="300" fill="url(#gT)"/>
+  <ellipse cx="450" cy="1020" rx="600" ry="300" fill="url(#gB)"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="900" height="128" fill="rgba(124,58,237,0.08)"/>
+  <line x1="0" y1="128" x2="900" y2="128" stroke="rgba(167,139,250,0.15)" stroke-width="1"/>
+  <text x="450" y="46" text-anchor="middle" font-size="11" font-weight="700" fill="#a78bfa" letter-spacing="2">TOOLNEST AI</text>
+  <text x="450" y="84" text-anchor="middle" font-size="30" font-weight="900" fill="url(#aG)" filter="url(#glow)">AI Product Description</text>
+  <text x="450" y="116" text-anchor="middle" font-size="30" font-weight="900" fill="url(#aG)" filter="url(#glow)">Generator — 2026 Guide</text>
+
+  <!-- Stats row -->
+  <rect x="24" y="144" width="852" height="80" rx="14" fill="url(#pG)" stroke="rgba(167,139,250,0.16)" stroke-width="1"/>
+  <g text-anchor="middle" font-size="22" font-weight="900">
+    <text x="150" y="196" fill="url(#aG)" filter="url(#glow)">60s</text>
+    <text x="150" y="213" font-size="10" font-weight="400" fill="rgba(255,255,255,0.4)">to generate</text>
+    <line x1="300" y1="152" x2="300" y2="216" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="450" y="196" fill="url(#aG)" filter="url(#glow)">5 Platforms</text>
+    <text x="450" y="213" font-size="10" font-weight="400" fill="rgba(255,255,255,0.4)">Shopify · Amazon · Etsy · Woo · eBay</text>
+    <line x1="600" y1="152" x2="600" y2="216" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="750" y="196" fill="#4ade80" filter="url(#glow)">96/100</text>
+    <text x="750" y="213" font-size="10" font-weight="400" fill="rgba(255,255,255,0.4)">avg SEO score</text>
+  </g>
+
+  <!-- Section 1: 5-Step Guide -->
+  <text x="450" y="256" text-anchor="middle" font-size="14" font-weight="700" fill="#a78bfa" letter-spacing="1">✦ 5 STEPS TO WRITE DESCRIPTIONS THAT SELL</text>
+  <line x1="60" y1="264" x2="840" y2="264" stroke="rgba(167,139,250,0.1)" stroke-width="1"/>
+
+  <!-- Steps 1–5 vertical list -->
+  <g>
+    <!-- Step 1 -->
+    <rect x="24" y="276" width="852" height="76" rx="12" fill="url(#pG)" stroke="rgba(167,139,250,0.14)" stroke-width="1"/>
+    <circle cx="70" cy="314" r="22" fill="url(#bG)" filter="url(#sh)"/>
+    <text x="70" y="320" text-anchor="middle" font-size="16" font-weight="900" fill="#fff">1</text>
+    <text x="106" y="308" font-size="13" font-weight="700" fill="rgba(255,255,255,0.9)">📋  Enter Your Product Details</text>
+    <text x="106" y="326" font-size="11" fill="rgba(255,255,255,0.45)">Product name, key features, target audience, materials or specifications — the more detail, the better your output.</text>
+    <text x="840" y="320" text-anchor="end" font-size="10" fill="#a78bfa" font-weight="600">~10 sec</text>
+
+    <!-- Step 2 -->
+    <rect x="24" y="362" width="852" height="76" rx="12" fill="url(#pG)" stroke="rgba(167,139,250,0.14)" stroke-width="1"/>
+    <circle cx="70" cy="400" r="22" fill="url(#bG)" filter="url(#sh)"/>
+    <text x="70" y="406" text-anchor="middle" font-size="16" font-weight="900" fill="#fff">2</text>
+    <text x="106" y="394" font-size="13" font-weight="700" fill="rgba(255,255,255,0.9)">🎯  Select Tone of Voice &amp; Platform</text>
+    <text x="106" y="412" font-size="11" fill="rgba(255,255,255,0.45)">Choose Professional, Luxury, Friendly or Sales tone. Pick your platform: Shopify, Amazon, Etsy, WooCommerce or eBay.</text>
+    <text x="840" y="406" text-anchor="end" font-size="10" fill="#a78bfa" font-weight="600">~5 sec</text>
+
+    <!-- Step 3 -->
+    <rect x="24" y="448" width="852" height="76" rx="12" fill="url(#pG)" stroke="rgba(167,139,250,0.14)" stroke-width="1"/>
+    <circle cx="70" cy="486" r="22" fill="url(#bG)" filter="url(#sh)"/>
+    <text x="70" y="492" text-anchor="middle" font-size="16" font-weight="900" fill="#fff">3</text>
+    <text x="106" y="480" font-size="13" font-weight="700" fill="rgba(255,255,255,0.9)">✦  Generate Your Description</text>
+    <text x="106" y="498" font-size="11" fill="rgba(255,255,255,0.45)">Click Generate. AI writes your title, full description, 5 bullet points, meta description and 8 SEO keywords instantly.</text>
+    <text x="840" y="492" text-anchor="end" font-size="10" fill="#a78bfa" font-weight="600">~8 sec</text>
+
+    <!-- Step 4 -->
+    <rect x="24" y="534" width="852" height="76" rx="12" fill="url(#pG)" stroke="rgba(167,139,250,0.14)" stroke-width="1"/>
+    <circle cx="70" cy="572" r="22" fill="url(#bG)" filter="url(#sh)"/>
+    <text x="70" y="578" text-anchor="middle" font-size="16" font-weight="900" fill="#fff">4</text>
+    <text x="106" y="566" font-size="13" font-weight="700" fill="rgba(255,255,255,0.9)">📊  Review Score &amp; Edit</text>
+    <text x="106" y="584" font-size="11" fill="rgba(255,255,255,0.45)">Check your SEO score (aim for 85+) and readability grade. Tweak any section. Regenerate until satisfied.</text>
+    <text x="840" y="578" text-anchor="end" font-size="10" fill="#a78bfa" font-weight="600">~30 sec</text>
+
+    <!-- Step 5 -->
+    <rect x="24" y="620" width="852" height="76" rx="12" fill="url(#pG)" stroke="rgba(34,197,94,0.2)" stroke-width="1"/>
+    <circle cx="70" cy="658" r="22" fill="url(#bG)" filter="url(#sh)"/>
+    <text x="70" y="664" text-anchor="middle" font-size="16" font-weight="900" fill="#fff">5</text>
+    <text x="106" y="652" font-size="13" font-weight="700" fill="rgba(255,255,255,0.9)">🚀  Copy &amp; Publish to Your Store</text>
+    <text x="106" y="670" font-size="11" fill="rgba(255,255,255,0.45)">Copy individual sections or export full output. Paste directly into your store admin. Done — live in seconds.</text>
+    <text x="840" y="664" text-anchor="end" font-size="10" fill="#4ade80" font-weight="600">✓ Done</text>
+  </g>
+
+  <!-- Section 2: Platform outputs -->
+  <text x="450" y="738" text-anchor="middle" font-size="14" font-weight="700" fill="#a78bfa" letter-spacing="1">✦ PLATFORM-OPTIMISED OUTPUT</text>
+  <line x1="60" y1="746" x2="840" y2="746" stroke="rgba(167,139,250,0.1)" stroke-width="1"/>
+
+  <!-- Platform grid: 5 items, 2 rows -->
+  <rect x="24" y="756" width="164" height="80" rx="10" fill="url(#pG)" stroke="rgba(167,139,250,0.15)" stroke-width="1"/>
+  <text x="106" y="790" text-anchor="middle" font-size="18">🛒</text>
+  <text x="106" y="810" text-anchor="middle" font-size="12" font-weight="700" fill="#a78bfa">Shopify</text>
+  <text x="106" y="827" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.4)">Lifestyle-driven tone</text>
+
+  <rect x="198" y="756" width="164" height="80" rx="10" fill="url(#pG)" stroke="rgba(251,191,36,0.18)" stroke-width="1"/>
+  <text x="280" y="790" text-anchor="middle" font-size="18">📦</text>
+  <text x="280" y="810" text-anchor="middle" font-size="12" font-weight="700" fill="#fde68a">Amazon</text>
+  <text x="280" y="827" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.4)">Keyword + bullets</text>
+
+  <rect x="372" y="756" width="164" height="80" rx="10" fill="url(#pG)" stroke="rgba(239,68,68,0.18)" stroke-width="1"/>
+  <text x="454" y="790" text-anchor="middle" font-size="18">🎨</text>
+  <text x="454" y="810" text-anchor="middle" font-size="12" font-weight="700" fill="#fca5a5">Etsy</text>
+  <text x="454" y="827" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.4)">Artisan &amp; handmade</text>
+
+  <rect x="546" y="756" width="164" height="80" rx="10" fill="url(#pG)" stroke="rgba(96,165,250,0.18)" stroke-width="1"/>
+  <text x="628" y="790" text-anchor="middle" font-size="18">🔵</text>
+  <text x="628" y="810" text-anchor="middle" font-size="12" font-weight="700" fill="#93c5fd">WooCommerce</text>
+  <text x="628" y="827" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.4)">Trust + conversion</text>
+
+  <rect x="720" y="756" width="156" height="80" rx="10" fill="url(#pG)" stroke="rgba(52,211,153,0.18)" stroke-width="1"/>
+  <text x="798" y="790" text-anchor="middle" font-size="18">🏷</text>
+  <text x="798" y="810" text-anchor="middle" font-size="12" font-weight="700" fill="#6ee7b7">eBay</text>
+  <text x="798" y="827" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.4)">Deal-focused specs</text>
+
+  <!-- Section 3: Pro Tips -->
+  <text x="450" y="878" text-anchor="middle" font-size="14" font-weight="700" fill="#a78bfa" letter-spacing="1">✦ PRO TIPS FOR HIGHER CONVERSIONS</text>
+  <line x1="60" y1="886" x2="840" y2="886" stroke="rgba(167,139,250,0.1)" stroke-width="1"/>
+
+  <!-- Tips grid -->
+  <rect x="24" y="898" width="412" height="68" rx="10" fill="url(#pG)" stroke="rgba(167,139,250,0.12)" stroke-width="1"/>
+  <text x="44" y="924" font-size="18">💡</text>
+  <text x="68" y="920" font-size="11" font-weight="700" fill="rgba(255,255,255,0.85)">Add benefits, not just features</text>
+  <text x="68" y="937" font-size="10" fill="rgba(255,255,255,0.42)">Say "40H battery so you never miss a beat" not "40H battery"</text>
+  <text x="68" y="954" font-size="10" fill="rgba(255,255,255,0.42)">Customers buy outcomes, not specifications.</text>
+
+  <rect x="446" y="898" width="430" height="68" rx="10" fill="url(#pG)" stroke="rgba(167,139,250,0.12)" stroke-width="1"/>
+  <text x="466" y="924" font-size="18">🔍</text>
+  <text x="490" y="920" font-size="11" font-weight="700" fill="rgba(255,255,255,0.85)">Include your primary keyword early</text>
+  <text x="490" y="937" font-size="10" fill="rgba(255,255,255,0.42)">Put your main keyword in the first sentence of your description</text>
+  <text x="490" y="954" font-size="10" fill="rgba(255,255,255,0.42)">and in the product title for maximum SEO impact.</text>
+
+  <rect x="24" y="976" width="412" height="68" rx="10" fill="url(#pG)" stroke="rgba(167,139,250,0.12)" stroke-width="1"/>
+  <text x="44" y="1002" font-size="18">✅</text>
+  <text x="68" y="998" font-size="11" font-weight="700" fill="rgba(255,255,255,0.85)">Use 5-bullet format on Amazon</text>
+  <text x="68" y="1015" font-size="10" fill="rgba(255,255,255,0.42)">Amazon shoppers scan bullets first. Lead each bullet with a</text>
+  <text x="68" y="1032" font-size="10" fill="rgba(255,255,255,0.42)">CAPS benefit keyword then explain it concisely.</text>
+
+  <rect x="446" y="976" width="430" height="68" rx="10" fill="url(#pG)" stroke="rgba(167,139,250,0.12)" stroke-width="1"/>
+  <text x="466" y="1002" font-size="18">⚡</text>
+  <text x="490" y="998" font-size="11" font-weight="700" fill="rgba(255,255,255,0.85)">Always include a strong CTA</text>
+  <text x="490" y="1015" font-size="10" fill="rgba(255,255,255,0.42)">"Order now", "Shop today", "Get yours" — end your</text>
+  <text x="490" y="1032" font-size="10" fill="rgba(255,255,255,0.42)">description with urgency to lift conversion rates.</text>
+
+  <!-- CTA -->
+  <rect x="24" y="1062" width="852" height="100" rx="16" fill="url(#bG)" filter="url(#sh)"/>
+  <text x="450" y="1104" text-anchor="middle" font-size="20" font-weight="900" fill="#fff" filter="url(#glow)">✦ Write Descriptions That Sell Today</text>
+  <text x="450" y="1128" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.75)">100% Free · No Account Required · Instant Output</text>
+  <text x="450" y="1148" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.55)">toolnestai.net/ai-tools/ai-product-description-generator</text>
+
+  <!-- Footer -->
+  <text x="450" y="1186" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.25)">© 2026 ToolNest AI · toolnestai.net</text>
+</svg>
