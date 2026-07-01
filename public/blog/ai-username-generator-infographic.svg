@@ -1,0 +1,134 @@
+<svg viewBox="0 0 900 1200" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="30%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gT" cx="50%" cy="10%" r="50%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.3"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gB" cx="50%" cy="90%" r="50%"><stop offset="0%" stop-color="#2563eb" stop-opacity="0.18"/><stop offset="100%" stop-color="#2563eb" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="pG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#130b2e" stop-opacity="0.97"/><stop offset="100%" stop-color="#0c0820" stop-opacity="0.97"/></linearGradient>
+    <linearGradient id="robG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4338ca"/></linearGradient>
+    <linearGradient id="robFG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1e1060"/><stop offset="100%" stop-color="#110a3a"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#5b21b6" flood-opacity="0.3"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="neon"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="robGlow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="900" height="1200" fill="url(#bg)"/>
+  <ellipse cx="450" cy="180" rx="500" ry="350" fill="url(#gT)"/>
+  <ellipse cx="450" cy="1050" rx="500" ry="300" fill="url(#gB)"/>
+
+  <!-- HEADER -->
+  <text x="450" y="50" text-anchor="middle" font-size="11" font-weight="700" fill="#a78bfa" letter-spacing="1.5">TOOLNEST AI</text>
+  <text x="450" y="94" text-anchor="middle" font-size="38" font-weight="900" fill="url(#aG)" filter="url(#glow)">AI Username</text>
+  <text x="450" y="136" text-anchor="middle" font-size="38" font-weight="900" fill="url(#aG)" filter="url(#glow)">Generator</text>
+  <text x="450" y="168" text-anchor="middle" font-size="14" fill="rgba(255,255,255,0.5)">The complete guide to creating usernames that get remembered</text>
+  <line x1="100" y1="184" x2="800" y2="184" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+
+  <!-- STAT STRIP -->
+  <rect x="28" y="194" width="844" height="68" rx="12" fill="url(#pG)" stroke="rgba(167,139,250,0.18)" stroke-width="1"/>
+  <g text-anchor="middle">
+    <text x="148" y="220" font-size="22" font-weight="900" fill="url(#aG)">7+</text>
+    <text x="148" y="238" font-size="9" fill="rgba(255,255,255,0.42)">platforms supported</text>
+    <text x="148" y="252" font-size="9" fill="rgba(255,255,255,0.42)">in one tool</text>
+    <line x1="272" y1="202" x2="272" y2="254" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="370" y="220" font-size="22" font-weight="900" fill="url(#aG)">&lt;10s</text>
+    <text x="370" y="238" font-size="9" fill="rgba(255,255,255,0.42)">to generate a full</text>
+    <text x="370" y="252" font-size="9" fill="rgba(255,255,255,0.42)">batch of names</text>
+    <line x1="492" y1="202" x2="492" y2="254" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="592" y="220" font-size="22" font-weight="900" fill="url(#aG)">Free</text>
+    <text x="592" y="238" font-size="9" fill="rgba(255,255,255,0.42)">no account, no</text>
+    <text x="592" y="252" font-size="9" fill="rgba(255,255,255,0.42)">subscription needed</text>
+    <line x1="712" y1="202" x2="712" y2="254" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="800" y="220" font-size="22" font-weight="900" fill="url(#aG)">∞</text>
+    <text x="800" y="238" font-size="9" fill="rgba(255,255,255,0.42)">unlimited</text>
+    <text x="800" y="252" font-size="9" fill="rgba(255,255,255,0.42)">generations</text>
+  </g>
+
+  <!-- SECTION 1: Steps -->
+  <text x="450" y="298" text-anchor="middle" font-size="14" font-weight="800" fill="url(#aG)">① How to Generate Your Perfect Username</text>
+  <g>
+    <circle cx="64" cy="338" r="20" fill="url(#bG)" filter="url(#sh)"/>
+    <text x="64" y="344" text-anchor="middle" font-size="14" font-weight="900" fill="#fff">1</text>
+    <line x1="64" y1="358" x2="64" y2="406" stroke="rgba(167,139,250,0.25)" stroke-width="1.5" stroke-dasharray="4 3"/>
+    <rect x="96" y="316" width="776" height="52" rx="10" fill="url(#pG)" stroke="rgba(167,139,250,0.15)" stroke-width="1"/>
+    <text x="116" y="337" font-size="12" font-weight="700" fill="#a78bfa">Choose Your Style &amp; Platform</text>
+    <text x="116" y="355" font-size="10" fill="rgba(255,255,255,0.45)">Select Cool &amp; Modern, Gamer, Aesthetic or Professional. Pick your target platform or choose All Platforms.</text>
+
+    <circle cx="64" cy="418" r="20" fill="url(#bG)" filter="url(#sh)"/>
+    <text x="64" y="424" text-anchor="middle" font-size="14" font-weight="900" fill="#fff">2</text>
+    <line x1="64" y1="438" x2="64" y2="486" stroke="rgba(167,139,250,0.25)" stroke-width="1.5" stroke-dasharray="4 3"/>
+    <rect x="96" y="396" width="776" height="52" rx="10" fill="url(#pG)" stroke="rgba(167,139,250,0.15)" stroke-width="1"/>
+    <text x="116" y="417" font-size="12" font-weight="700" fill="#93c5fd">Add Keywords (Optional but Powerful)</text>
+    <text x="116" y="435" font-size="10" fill="rgba(255,255,255,0.45)">Enter words that represent you — your interests, aesthetic or niche. E.g. "night, wolf, gaming" or "minimal, fashion".</text>
+
+    <circle cx="64" cy="498" r="20" fill="url(#bG)" filter="url(#sh)"/>
+    <text x="64" y="504" text-anchor="middle" font-size="14" font-weight="900" fill="#fff">3</text>
+    <line x1="64" y1="518" x2="64" y2="566" stroke="rgba(167,139,250,0.25)" stroke-width="1.5" stroke-dasharray="4 3"/>
+    <rect x="96" y="476" width="776" height="52" rx="10" fill="url(#pG)" stroke="rgba(167,139,250,0.15)" stroke-width="1"/>
+    <text x="116" y="497" font-size="12" font-weight="700" fill="#c4b5fd">Set Length &amp; Number Preference</text>
+    <text x="116" y="515" font-size="10" fill="rgba(255,255,255,0.45)">Short (under 8), Medium (6–12) or Long. Choose whether to allow numbers — useful for uniqueness when a name is taken.</text>
+
+    <circle cx="64" cy="578" r="20" fill="url(#bG)" filter="url(#sh)"/>
+    <text x="64" y="584" text-anchor="middle" font-size="14" font-weight="900" fill="#fff">4</text>
+    <line x1="64" y1="598" x2="64" y2="646" stroke="rgba(167,139,250,0.25)" stroke-width="1.5" stroke-dasharray="4 3"/>
+    <rect x="96" y="556" width="776" height="52" rx="10" fill="url(#pG)" stroke="rgba(167,139,250,0.15)" stroke-width="1"/>
+    <text x="116" y="577" font-size="12" font-weight="700" fill="#6ee7b7">Generate and Browse Results</text>
+    <text x="116" y="595" font-size="10" fill="rgba(255,255,255,0.45)">Click Generate. You get 8–12 unique usernames with real-time availability status for each platform.</text>
+
+    <circle cx="64" cy="658" r="20" fill="url(#bG)" filter="url(#sh)"/>
+    <text x="64" y="664" text-anchor="middle" font-size="14" font-weight="900" fill="#fff">5</text>
+    <rect x="96" y="636" width="776" height="52" rx="10" fill="url(#pG)" stroke="rgba(52,211,153,0.2)" stroke-width="1"/>
+    <text x="116" y="657" font-size="12" font-weight="700" fill="#fde68a">Save Favourites &amp; Claim Your Handle</text>
+    <text x="116" y="675" font-size="10" fill="rgba(255,255,255,0.45)">Heart the names you like. Then claim your handle on each platform before someone else does.</text>
+  </g>
+
+  <!-- SECTION 2: Mistakes -->
+  <text x="450" y="730" text-anchor="middle" font-size="14" font-weight="800" fill="url(#aG)">② 5 Username Mistakes to Avoid</text>
+  <g>
+    <rect x="28" y="742" width="404" height="58" rx="10" fill="url(#pG)" stroke="rgba(239,68,68,0.2)" stroke-width="1"/>
+    <text x="48" y="763" font-size="11" font-weight="700" fill="rgba(239,68,68,0.8)">✗ Too long or complex</text>
+    <text x="48" y="780" font-size="9" fill="rgba(255,255,255,0.42)">If people can't spell it, they can't find you</text>
+    <rect x="468" y="742" width="404" height="58" rx="10" fill="url(#pG)" stroke="rgba(239,68,68,0.2)" stroke-width="1"/>
+    <text x="488" y="763" font-size="11" font-weight="700" fill="rgba(239,68,68,0.8)">✗ Copying others</text>
+    <text x="488" y="780" font-size="9" fill="rgba(255,255,255,0.42)">XxGamer123Xx says nothing about you</text>
+    <rect x="28" y="812" width="404" height="58" rx="10" fill="url(#pG)" stroke="rgba(239,68,68,0.2)" stroke-width="1"/>
+    <text x="48" y="833" font-size="11" font-weight="700" fill="rgba(239,68,68,0.8)">✗ Too niche-specific</text>
+    <text x="48" y="850" font-size="9" fill="rgba(255,255,255,0.42)">FPSonlySniper locks you into one game</text>
+    <rect x="468" y="812" width="404" height="58" rx="10" fill="url(#pG)" stroke="rgba(239,68,68,0.2)" stroke-width="1"/>
+    <text x="488" y="833" font-size="11" font-weight="700" fill="rgba(239,68,68,0.8)">✗ Skipping availability check</text>
+    <text x="488" y="850" font-size="9" fill="rgba(255,255,255,0.42)">Your name on one platform, taken on others</text>
+    <rect x="248" y="882" width="404" height="58" rx="10" fill="url(#pG)" stroke="rgba(239,68,68,0.2)" stroke-width="1"/>
+    <text x="268" y="903" font-size="11" font-weight="700" fill="rgba(239,68,68,0.8)">✗ Numbers without meaning</text>
+    <text x="268" y="920" font-size="9" fill="rgba(255,255,255,0.42)">Random trailing digits feel like leftovers</text>
+  </g>
+
+  <!-- FOOTER CTA with robot -->
+  <ellipse cx="800" cy="1158" rx="68" ry="12" fill="rgba(124,58,237,0.5)" filter="url(#neon)"/>
+  <ellipse cx="800" cy="1150" rx="52" ry="9" fill="rgba(124,58,237,0.28)" stroke="rgba(167,139,250,0.28)" stroke-width="1"/>
+  <rect x="766" y="1062" width="68" height="82" rx="20" fill="url(#robG)" filter="url(#robGlow)"/>
+  <rect x="774" y="1073" width="52" height="34" rx="9" fill="url(#robFG)" stroke="rgba(167,139,250,0.35)" stroke-width="1.5"/>
+  <text x="800" y="1085" text-anchor="middle" font-size="7" fill="rgba(167,139,250,0.55)">A I</text>
+  <text x="800" y="1102" text-anchor="middle" font-size="16" font-weight="900" fill="url(#aG)" filter="url(#glow)">AI</text>
+  <rect x="748" y="1070" width="18" height="48" rx="9" fill="url(#robG)"/>
+  <rect x="834" y="1070" width="18" height="48" rx="9" fill="url(#robG)"/>
+  <circle cx="800" cy="1108" r="5" fill="rgba(96,165,250,0.7)" filter="url(#neon)"/>
+  <rect x="792" y="1046" width="16" height="18" rx="6" fill="url(#robG)"/>
+  <rect x="766" y="1000" width="68" height="48" rx="18" fill="url(#robG)" filter="url(#robGlow)"/>
+  <rect x="774" y="1008" width="52" height="36" rx="10" fill="url(#robFG)" stroke="rgba(167,139,250,0.45)" stroke-width="1.5"/>
+  <circle cx="789" cy="1024" r="8" fill="rgba(124,58,237,0.45)" stroke="rgba(167,139,250,0.55)" stroke-width="1.5"/>
+  <circle cx="811" cy="1024" r="8" fill="rgba(124,58,237,0.45)" stroke="rgba(167,139,250,0.55)" stroke-width="1.5"/>
+  <circle cx="789" cy="1023" r="4.5" fill="url(#aG)" filter="url(#glow)"/>
+  <circle cx="811" cy="1023" r="4.5" fill="url(#aG)" filter="url(#glow)"/>
+  <circle cx="790" cy="1022" r="2" fill="#fff"/>
+  <circle cx="812" cy="1022" r="2" fill="#fff"/>
+  <path d="M 783 1036 Q 800 1044 817 1036" stroke="url(#aG)" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <line x1="800" y1="1000" x2="800" y2="984" stroke="rgba(167,139,250,0.55)" stroke-width="2"/>
+  <circle cx="800" cy="979" r="6" fill="url(#bG)" filter="url(#neon)"/>
+  <circle cx="764" cy="1024" r="7" fill="url(#robG)" stroke="rgba(167,139,250,0.3)" stroke-width="1"/>
+  <circle cx="836" cy="1024" r="7" fill="url(#robG)" stroke="rgba(167,139,250,0.3)" stroke-width="1"/>
+
+  <rect x="28" y="960" width="700" height="76" rx="14" fill="url(#bG)" filter="url(#sh)"/>
+  <text x="378" y="988" text-anchor="middle" font-size="18" font-weight="900" fill="#fff">Generate Your Username Free</text>
+  <text x="378" y="1010" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.65)">No account. No subscription. Instant results.</text>
+  <text x="378" y="1028" text-anchor="middle" font-size="11" font-weight="700" fill="rgba(255,255,255,0.85)">toolnestai.net/ai-tools/ai-username-generator</text>
+</svg>

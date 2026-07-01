@@ -1,0 +1,151 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gL" cx="15%" cy="50%" r="55%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.38"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gR" cx="85%" cy="50%" r="50%"><stop offset="0%" stop-color="#2563eb" stop-opacity="0.22"/><stop offset="100%" stop-color="#2563eb" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gRob" cx="88%" cy="78%" r="28%"><stop offset="0%" stop-color="#7c3aed" stop-opacity="0.45"/><stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#c084fc"/></linearGradient>
+    <linearGradient id="aGh" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="pG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#130b2e" stop-opacity="0.97"/><stop offset="100%" stop-color="#0c0820" stop-opacity="0.97"/></linearGradient>
+    <linearGradient id="robG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4338ca"/></linearGradient>
+    <linearGradient id="robFG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1e1060"/><stop offset="100%" stop-color="#110a3a"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="6" stdDeviation="18" flood-color="#5b21b6" flood-opacity="0.4"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="neon"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="robGlow"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <ellipse cx="180" cy="315" rx="500" ry="420" fill="url(#gL)"/>
+  <ellipse cx="1020" cy="315" rx="480" ry="400" fill="url(#gR)"/>
+  <ellipse cx="1080" cy="500" rx="280" ry="200" fill="url(#gRob)"/>
+  <circle cx="90" cy="60" r="1.5" fill="rgba(167,139,250,0.6)"/>
+  <circle cx="350" cy="30" r="1" fill="rgba(167,139,250,0.4)"/>
+  <circle cx="1120" cy="80" r="1.2" fill="rgba(96,165,250,0.5)"/>
+
+  <!-- Logo -->
+  <polygon points="44,58 54,42 68,42 78,58 68,74 54,74" fill="none" stroke="url(#aGh)" stroke-width="2.5"/>
+  <polygon points="48,58 56,46 66,46 74,58 66,70 56,70" fill="rgba(124,58,237,0.22)"/>
+  <text x="88" y="54" font-size="14" font-weight="700" fill="rgba(255,255,255,0.9)">ToolNest AI</text>
+  <text x="88" y="71" font-size="10" fill="rgba(255,255,255,0.38)">All-in-One AI &amp; Online Tools</text>
+
+  <!-- Headline -->
+  <text x="44" y="162" font-size="62" font-weight="900" fill="url(#aG)" filter="url(#glow)" letter-spacing="-2">AI Username</text>
+  <text x="44" y="234" font-size="62" font-weight="900" fill="url(#aG)" filter="url(#glow)" letter-spacing="-2">Generator</text>
+  <text x="44" y="280" font-size="20" font-weight="700" fill="rgba(255,255,255,0.82)">Create Unique Usernames for Any Platform</text>
+  <text x="44" y="312" font-size="13" fill="rgba(255,255,255,0.42)">Free · AI-Powered · Multi-Platform · Gaming, Social Media &amp; More · 2026 Guide</text>
+
+  <!-- Feature badges -->
+  <g font-size="11" font-weight="600">
+    <rect x="44" y="334" width="144" height="30" rx="8" fill="rgba(124,58,237,0.2)" stroke="rgba(167,139,250,0.3)" stroke-width="1"/>
+    <text x="116" y="354" text-anchor="middle" fill="#a78bfa">👤 Unique &amp; Creative</text>
+    <rect x="196" y="334" width="144" height="30" rx="8" fill="rgba(124,58,237,0.2)" stroke="rgba(167,139,250,0.3)" stroke-width="1"/>
+    <text x="268" y="354" text-anchor="middle" fill="#a78bfa">✅ Availability Check</text>
+    <rect x="348" y="334" width="144" height="30" rx="8" fill="rgba(124,58,237,0.2)" stroke="rgba(167,139,250,0.3)" stroke-width="1"/>
+    <text x="420" y="354" text-anchor="middle" fill="#a78bfa">⚡ Instant Results</text>
+    <rect x="44" y="372" width="144" height="30" rx="8" fill="rgba(37,99,235,0.15)" stroke="rgba(96,165,250,0.25)" stroke-width="1"/>
+    <text x="116" y="392" text-anchor="middle" fill="#93c5fd">🎮 Gaming Ready</text>
+    <rect x="196" y="372" width="144" height="30" rx="8" fill="rgba(37,99,235,0.15)" stroke="rgba(96,165,250,0.25)" stroke-width="1"/>
+    <text x="268" y="392" text-anchor="middle" fill="#93c5fd">🌐 Multi-Platform</text>
+    <rect x="348" y="372" width="144" height="30" rx="8" fill="rgba(37,99,235,0.15)" stroke="rgba(96,165,250,0.25)" stroke-width="1"/>
+    <text x="420" y="392" text-anchor="middle" fill="#93c5fd">✦ AI-Powered</text>
+  </g>
+
+  <!-- CTA button -->
+  <rect x="44" y="420" width="236" height="48" rx="14" fill="url(#bG)" filter="url(#sh)"/>
+  <text x="162" y="450" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">Generate Free ✦</text>
+  <text x="44" y="500" font-size="12" fill="rgba(255,255,255,0.3)">toolnestai.net · Free, no account required</text>
+
+  <!-- Username preview card -->
+  <rect x="540" y="110" width="430" height="400" rx="16" fill="rgba(13,8,36,0.88)" stroke="rgba(124,58,237,0.3)" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="540" y="110" width="430" height="38" rx="16" fill="rgba(124,58,237,0.14)"/>
+  <rect x="540" y="136" width="430" height="12" fill="rgba(124,58,237,0.14)"/>
+  <circle cx="560" cy="129" r="5" fill="rgba(255,80,80,0.4)"/>
+  <circle cx="576" cy="129" r="5" fill="rgba(255,193,7,0.4)"/>
+  <circle cx="592" cy="129" r="5" fill="rgba(34,197,94,0.4)"/>
+  <text x="755" y="133" text-anchor="middle" font-size="11" font-weight="700" fill="rgba(255,255,255,0.55)">✦ Generated Usernames</text>
+  <!-- Username rows -->
+  <g font-size="9.5">
+    <rect x="556" y="158" width="398" height="28" rx="5" fill="rgba(255,255,255,0.03)"/>
+    <text x="566" y="176" font-size="12" font-weight="600" fill="rgba(255,255,255,0.9)">NightWolf_7</text>
+    <text x="660" y="176" fill="rgba(52,211,153,0.85)">Available</text>
+    <text x="718" y="176">📷</text><text x="733" y="176">♪</text><text x="748" y="176">🎮</text><text x="763" y="176">💬</text><text x="778" y="176">🐦</text><text x="793" y="176">▶</text><text x="808" y="176" fill="rgba(167,139,250,0.7)">♡</text>
+    <rect x="556" y="192" width="398" height="28" rx="5" fill="rgba(255,255,255,0.015)"/>
+    <text x="566" y="210" font-size="12" font-weight="600" fill="rgba(255,255,255,0.8)">ShadowNite</text>
+    <text x="660" y="210" fill="rgba(52,211,153,0.85)">Available</text>
+    <text x="718" y="210">📷</text><text x="733" y="210">♪</text><text x="748" y="210">🎮</text><text x="763" y="210">💬</text><text x="778" y="210">🐦</text><text x="793" y="210">▶</text><text x="808" y="210" fill="rgba(255,255,255,0.25)">♡</text>
+    <rect x="556" y="226" width="398" height="28" rx="5" fill="rgba(255,255,255,0.03)"/>
+    <text x="566" y="244" font-size="12" font-weight="600" fill="rgba(255,255,255,0.9)">WolfxLegend</text>
+    <text x="660" y="244" fill="rgba(52,211,153,0.85)">Available</text>
+    <text x="718" y="244">📷</text><text x="733" y="244">♪</text><text x="748" y="244">🎮</text><text x="763" y="244">💬</text><text x="778" y="244">🐦</text><text x="793" y="244">▶</text><text x="808" y="244" fill="rgba(167,139,250,0.7)">♡</text>
+    <rect x="556" y="260" width="398" height="28" rx="5" fill="rgba(255,255,255,0.015)"/>
+    <text x="566" y="278" font-size="12" font-weight="600" fill="rgba(255,255,255,0.8)">NiteRider_07</text>
+    <text x="660" y="278" fill="rgba(52,211,153,0.85)">Available</text>
+    <text x="718" y="278">📷</text><text x="733" y="278">♪</text><text x="748" y="278">🎮</text><text x="763" y="278">💬</text><text x="778" y="278">🐦</text><text x="793" y="278">▶</text><text x="808" y="278" fill="rgba(255,255,255,0.25)">♡</text>
+    <rect x="556" y="294" width="398" height="28" rx="5" fill="rgba(255,255,255,0.03)"/>
+    <text x="566" y="312" font-size="12" font-weight="600" fill="rgba(255,255,255,0.9)">VortexWolf</text>
+    <text x="660" y="312" fill="rgba(52,211,153,0.85)">Available</text>
+    <text x="718" y="312">📷</text><text x="733" y="312">♪</text><text x="748" y="312">🎮</text><text x="763" y="312">💬</text><text x="778" y="312">🐦</text><text x="793" y="312">▶</text><text x="808" y="312" fill="rgba(255,255,255,0.25)">♡</text>
+    <rect x="556" y="328" width="398" height="28" rx="5" fill="rgba(255,255,255,0.015)"/>
+    <text x="566" y="346" font-size="12" font-weight="600" fill="rgba(255,255,255,0.8)">LunarStrike</text>
+    <text x="660" y="346" fill="rgba(52,211,153,0.85)">Available</text>
+    <text x="718" y="346">📷</text><text x="733" y="346">♪</text><text x="748" y="346">🎮</text><text x="763" y="346">💬</text><text x="778" y="346">🐦</text><text x="793" y="346">▶</text><text x="808" y="346" fill="rgba(255,255,255,0.25)">♡</text>
+    <rect x="556" y="362" width="398" height="28" rx="5" fill="rgba(255,255,255,0.03)"/>
+    <text x="566" y="380" font-size="12" font-weight="600" fill="rgba(255,255,255,0.9)">AlphaNightX</text>
+    <text x="660" y="380" fill="rgba(52,211,153,0.85)">Available</text>
+    <text x="718" y="380">📷</text><text x="733" y="380">♪</text><text x="748" y="380">🎮</text><text x="763" y="380">💬</text><text x="778" y="380">🐦</text><text x="793" y="380">▶</text><text x="808" y="380" fill="rgba(167,139,250,0.7)">♡</text>
+  </g>
+  <line x1="556" y1="400" x2="938" y2="400" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <g font-size="8.5" fill="rgba(255,255,255,0.35)">
+    <text x="566" y="418">Style: Cool &amp; Modern</text>
+    <text x="700" y="418">Platform: All</text>
+    <text x="800" y="418">Keywords: night, wolf</text>
+  </g>
+  <g font-size="8" font-weight="600">
+    <rect x="556" y="428" width="62" height="13" rx="3" fill="rgba(124,58,237,0.2)" stroke="rgba(167,139,250,0.25)" stroke-width="1"/>
+    <text x="587" y="438" text-anchor="middle" fill="#a78bfa">Instagram</text>
+    <rect x="624" y="428" width="46" height="13" rx="3" fill="rgba(124,58,237,0.2)" stroke="rgba(167,139,250,0.25)" stroke-width="1"/>
+    <text x="647" y="438" text-anchor="middle" fill="#a78bfa">TikTok</text>
+    <rect x="676" y="428" width="56" height="13" rx="3" fill="rgba(124,58,237,0.18)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+    <text x="704" y="438" text-anchor="middle" fill="#c4b5fd">Discord</text>
+    <rect x="738" y="428" width="46" height="13" rx="3" fill="rgba(124,58,237,0.18)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+    <text x="761" y="438" text-anchor="middle" fill="#c4b5fd">Twitch</text>
+    <rect x="790" y="428" width="46" height="13" rx="3" fill="rgba(124,58,237,0.18)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+    <text x="813" y="438" text-anchor="middle" fill="#c4b5fd">Gaming</text>
+  </g>
+
+  <!-- Robot -->
+  <ellipse cx="1090" cy="568" rx="68" ry="12" fill="rgba(124,58,237,0.5)" filter="url(#neon)"/>
+  <ellipse cx="1090" cy="560" rx="52" ry="9" fill="rgba(124,58,237,0.28)" stroke="rgba(167,139,250,0.28)" stroke-width="1"/>
+  <rect x="1056" y="460" width="68" height="94" rx="22" fill="url(#robG)" filter="url(#robGlow)"/>
+  <rect x="1064" y="472" width="52" height="36" rx="10" fill="url(#robFG)" stroke="rgba(167,139,250,0.35)" stroke-width="1.5"/>
+  <text x="1090" y="484" text-anchor="middle" font-size="7.5" fill="rgba(167,139,250,0.55)">A I</text>
+  <text x="1090" y="503" text-anchor="middle" font-size="17" font-weight="900" fill="url(#aGh)" filter="url(#glow)">AI</text>
+  <rect x="1038" y="468" width="18" height="50" rx="9" fill="url(#robG)"/>
+  <rect x="1124" y="468" width="18" height="50" rx="9" fill="url(#robG)"/>
+  <circle cx="1035" cy="526" r="8" fill="rgba(96,165,250,0.45)" filter="url(#neon)"/>
+  <circle cx="1143" cy="526" r="8" fill="rgba(167,139,250,0.45)" filter="url(#neon)"/>
+  <circle cx="1090" cy="524" r="5.5" fill="rgba(96,165,250,0.7)" filter="url(#neon)"/>
+  <circle cx="1090" cy="524" r="2.8" fill="#60a5fa"/>
+  <rect x="1082" y="442" width="16" height="20" rx="6" fill="url(#robG)"/>
+  <rect x="1048" y="368" width="84" height="76" rx="24" fill="url(#robG)" filter="url(#robGlow)"/>
+  <rect x="1056" y="378" width="68" height="56" rx="14" fill="url(#robFG)" stroke="rgba(167,139,250,0.45)" stroke-width="1.5"/>
+  <circle cx="1074" cy="404" r="10" fill="rgba(124,58,237,0.45)" stroke="rgba(167,139,250,0.55)" stroke-width="1.5"/>
+  <circle cx="1106" cy="404" r="10" fill="rgba(124,58,237,0.45)" stroke="rgba(167,139,250,0.55)" stroke-width="1.5"/>
+  <circle cx="1074" cy="403" r="5.5" fill="url(#aGh)" filter="url(#glow)"/>
+  <circle cx="1106" cy="403" r="5.5" fill="url(#aGh)" filter="url(#glow)"/>
+  <circle cx="1075" cy="402" r="2.5" fill="#fff"/>
+  <circle cx="1107" cy="402" r="2.5" fill="#fff"/>
+  <path d="M 1068 422 Q 1090 434 1112 422" stroke="url(#aGh)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <line x1="1090" y1="368" x2="1090" y2="346" stroke="rgba(167,139,250,0.55)" stroke-width="2.5"/>
+  <circle cx="1090" cy="340" r="7" fill="url(#bG)" filter="url(#neon)"/>
+  <circle cx="1090" cy="340" r="3.5" fill="rgba(167,139,250,0.9)"/>
+  <circle cx="1046" cy="404" r="9" fill="url(#robG)" stroke="rgba(167,139,250,0.3)" stroke-width="1"/>
+  <circle cx="1134" cy="404" r="9" fill="url(#robG)" stroke="rgba(167,139,250,0.3)" stroke-width="1"/>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="592" width="1200" height="38" fill="rgba(124,58,237,0.06)"/>
+  <line x1="0" y1="592" x2="1200" y2="592" stroke="rgba(167,139,250,0.1)" stroke-width="1"/>
+  <text x="600" y="616" text-anchor="middle" font-size="11" font-weight="600" fill="rgba(255,255,255,0.4)">toolnestai.net — Free AI Username Generator · Gaming · Social Media · Discord · Twitch · No Account Required</text>
+</svg>

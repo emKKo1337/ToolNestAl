@@ -1,0 +1,134 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="75%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gL" cx="20%" cy="50%" r="50%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.2"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gR" cx="80%" cy="50%" r="50%"><stop offset="0%" stop-color="#2563eb" stop-opacity="0.14"/><stop offset="100%" stop-color="#2563eb" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="pG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#130b2e" stop-opacity="0.97"/><stop offset="100%" stop-color="#0c0820" stop-opacity="0.97"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#5b21b6" flood-opacity="0.28"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="500" fill="url(#bg)"/>
+  <ellipse cx="300" cy="250" rx="420" ry="300" fill="url(#gL)"/>
+  <ellipse cx="900" cy="250" rx="420" ry="300" fill="url(#gR)"/>
+
+  <text x="600" y="44" text-anchor="middle" font-size="11" font-weight="700" fill="#a78bfa" letter-spacing="1">PLATFORM USERNAME IDEAS</text>
+  <text x="600" y="76" text-anchor="middle" font-size="26" font-weight="800" fill="url(#aG)" filter="url(#glow)">Username Ideas for Every Platform</text>
+  <text x="600" y="102" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.42)">AI-generated username examples tailored to each platform's style and audience</text>
+
+  <!-- 7 platform cards in 2 rows: 4 top, 3 bottom centered -->
+  <!-- Row 1 -->
+  <!-- Instagram -->
+  <rect x="22" y="118" width="264" height="166" rx="14" fill="url(#pG)" stroke="rgba(167,139,250,0.2)" stroke-width="1" filter="url(#sh)"/>
+  <rect x="22" y="118" width="264" height="44" rx="14" fill="rgba(193,53,132,0.14)"/>
+  <rect x="22" y="148" width="264" height="14" fill="rgba(193,53,132,0.14)"/>
+  <text x="42" y="145" font-size="16">📷</text>
+  <text x="64" y="145" font-size="12" font-weight="700" fill="#f9a8d4">Instagram</text>
+  <text x="42" y="168" font-size="9" fill="rgba(255,255,255,0.4)">Trendy · Aesthetic · Visual</text>
+  <g font-size="9" fill="rgba(255,255,255,0.55)">
+    <text x="42" y="190">✦ AestheticNova</text>
+    <text x="42" y="207">✦ GoldenVibesOnly</text>
+    <text x="42" y="224">✦ SoftLuxeLife</text>
+    <text x="42" y="241">✦ MinimalMoodCo</text>
+    <text x="42" y="258">✦ UrbanGlowStyle</text>
+  </g>
+  <text x="286" y="278" text-anchor="end" font-size="7.5" fill="rgba(255,255,255,0.22)">8–15 chars ideal</text>
+
+  <!-- TikTok -->
+  <rect x="298" y="118" width="264" height="166" rx="14" fill="url(#pG)" stroke="rgba(96,165,250,0.18)" stroke-width="1" filter="url(#sh)"/>
+  <rect x="298" y="118" width="264" height="44" rx="14" fill="rgba(0,0,0,0.25)"/>
+  <rect x="298" y="148" width="264" height="14" fill="rgba(0,0,0,0.25)"/>
+  <text x="318" y="145" font-size="16">♪</text>
+  <text x="340" y="145" font-size="12" font-weight="700" fill="#f0abfc">TikTok</text>
+  <text x="318" y="168" font-size="9" fill="rgba(255,255,255,0.4)">Short · Catchy · Creator-friendly</text>
+  <g font-size="9" fill="rgba(255,255,255,0.55)">
+    <text x="318" y="190">✦ ViralByNite</text>
+    <text x="318" y="207">✦ TrendSetterX</text>
+    <text x="318" y="224">✦ ZapContent</text>
+    <text x="318" y="241">✦ NeonCreatorz</text>
+    <text x="318" y="258">✦ BoltMoments</text>
+  </g>
+  <text x="562" y="278" text-anchor="end" font-size="7.5" fill="rgba(255,255,255,0.22)">4–15 chars ideal</text>
+
+  <!-- YouTube -->
+  <rect x="574" y="118" width="264" height="166" rx="14" fill="url(#pG)" stroke="rgba(239,68,68,0.18)" stroke-width="1" filter="url(#sh)"/>
+  <rect x="574" y="118" width="264" height="44" rx="14" fill="rgba(239,68,68,0.12)"/>
+  <rect x="574" y="148" width="264" height="14" fill="rgba(239,68,68,0.12)"/>
+  <text x="594" y="145" font-size="16">▶</text>
+  <text x="616" y="145" font-size="12" font-weight="700" fill="#fca5a5">YouTube</text>
+  <text x="594" y="168" font-size="9" fill="rgba(255,255,255,0.4)">Memorable · Brand-ready · Searchable</text>
+  <g font-size="9" fill="rgba(255,255,255,0.55)">
+    <text x="594" y="190">✦ NightOwlPlays</text>
+    <text x="594" y="207">✦ VelocityVault</text>
+    <text x="594" y="224">✦ LunarLensTV</text>
+    <text x="594" y="241">✦ EpicDropsHub</text>
+    <text x="594" y="258">✦ PrimeViewZone</text>
+  </g>
+  <text x="838" y="278" text-anchor="end" font-size="7.5" fill="rgba(255,255,255,0.22)">Channel branding matters</text>
+
+  <!-- Discord -->
+  <rect x="850" y="118" width="328" height="166" rx="14" fill="url(#pG)" stroke="rgba(88,101,242,0.2)" stroke-width="1" filter="url(#sh)"/>
+  <rect x="850" y="118" width="328" height="44" rx="14" fill="rgba(88,101,242,0.12)"/>
+  <rect x="850" y="148" width="328" height="14" fill="rgba(88,101,242,0.12)"/>
+  <text x="870" y="145" font-size="16">💬</text>
+  <text x="892" y="145" font-size="12" font-weight="700" fill="#a5b4fc">Discord</text>
+  <text x="870" y="168" font-size="9" fill="rgba(255,255,255,0.4)">Unique · Community-ready · Shareable</text>
+  <g font-size="9" fill="rgba(255,255,255,0.55)">
+    <text x="870" y="190">✦ ShadowCrypt#2024</text>
+    <text x="870" y="207">✦ NeonRaider</text>
+    <text x="870" y="224">✦ VoidWatcher</text>
+    <text x="870" y="241">✦ CipherNode</text>
+    <text x="870" y="258">✦ PhantomPulse</text>
+  </g>
+  <text x="1178" y="278" text-anchor="end" font-size="7.5" fill="rgba(255,255,255,0.22)">Numbers add uniqueness</text>
+
+  <!-- Row 2 — 3 cards, centered -->
+  <!-- Twitch -->
+  <rect x="130" y="302" width="290" height="166" rx="14" fill="url(#pG)" stroke="rgba(145,70,255,0.2)" stroke-width="1" filter="url(#sh)"/>
+  <rect x="130" y="302" width="290" height="44" rx="14" fill="rgba(145,70,255,0.12)"/>
+  <rect x="130" y="332" width="290" height="14" fill="rgba(145,70,255,0.12)"/>
+  <text x="150" y="329" font-size="16">📺</text>
+  <text x="172" y="329" font-size="12" font-weight="700" fill="#c4b5fd">Twitch</text>
+  <text x="150" y="352" font-size="9" fill="rgba(255,255,255,0.4)">Epic · Gamer-ready · Memorable</text>
+  <g font-size="9" fill="rgba(255,255,255,0.55)">
+    <text x="150" y="374">✦ StormCasterLive</text>
+    <text x="150" y="391">✦ NightRaiderTV</text>
+    <text x="150" y="408">✦ VortexStreams</text>
+    <text x="150" y="425">✦ BlitzWaveGG</text>
+    <text x="150" y="442">✦ PhoenixDrops</text>
+  </g>
+  <text x="420" y="462" text-anchor="end" font-size="7.5" fill="rgba(255,255,255,0.22)">Keep under 25 chars</text>
+
+  <!-- X / Twitter -->
+  <rect x="455" y="302" width="290" height="166" rx="14" fill="url(#pG)" stroke="rgba(255,255,255,0.1)" stroke-width="1" filter="url(#sh)"/>
+  <rect x="455" y="302" width="290" height="44" rx="14" fill="rgba(255,255,255,0.06)"/>
+  <rect x="455" y="332" width="290" height="14" fill="rgba(255,255,255,0.06)"/>
+  <text x="475" y="329" font-size="16">✖</text>
+  <text x="497" y="329" font-size="12" font-weight="700" fill="rgba(255,255,255,0.85)">X (Twitter)</text>
+  <text x="475" y="352" font-size="9" fill="rgba(255,255,255,0.4)">Clean · Professional · Brandable</text>
+  <g font-size="9" fill="rgba(255,255,255,0.55)">
+    <text x="475" y="374">✦ NexaThought</text>
+    <text x="475" y="391">✦ PulseVoice</text>
+    <text x="475" y="408">✦ CleanTake_</text>
+    <text x="475" y="425">✦ SignalDrift</text>
+    <text x="475" y="442">✦ OpenMindX</text>
+  </g>
+  <text x="745" y="462" text-anchor="end" font-size="7.5" fill="rgba(255,255,255,0.22)">Under 15 chars is best</text>
+
+  <!-- Gaming -->
+  <rect x="780" y="302" width="290" height="166" rx="14" fill="url(#pG)" stroke="rgba(52,211,153,0.18)" stroke-width="1" filter="url(#sh)"/>
+  <rect x="780" y="302" width="290" height="44" rx="14" fill="rgba(52,211,153,0.08)"/>
+  <rect x="780" y="332" width="290" height="14" fill="rgba(52,211,153,0.08)"/>
+  <text x="800" y="329" font-size="16">🎮</text>
+  <text x="822" y="329" font-size="12" font-weight="700" fill="#6ee7b7">Gaming</text>
+  <text x="800" y="352" font-size="9" fill="rgba(255,255,255,0.4)">Fierce · Competitive · Iconic</text>
+  <g font-size="9" fill="rgba(255,255,255,0.55)">
+    <text x="800" y="374">✦ ShadowSniperXX</text>
+    <text x="800" y="391">✦ InfernoWolf_GG</text>
+    <text x="800" y="408">✦ ApexGhostZero</text>
+    <text x="800" y="425">✦ DarkRealmPro</text>
+    <text x="800" y="442">✦ StealthVortex7</text>
+  </g>
+  <text x="1070" y="462" text-anchor="end" font-size="7.5" fill="rgba(255,255,255,0.22)">Underscores are fine</text>
+</svg>

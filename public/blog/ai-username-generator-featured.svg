@@ -1,0 +1,231 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gL" cx="10%" cy="45%" r="55%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.38"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gR" cx="88%" cy="55%" r="52%"><stop offset="0%" stop-color="#2563eb" stop-opacity="0.22"/><stop offset="100%" stop-color="#2563eb" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gRob" cx="90%" cy="80%" r="30%"><stop offset="0%" stop-color="#7c3aed" stop-opacity="0.45"/><stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#c084fc"/></linearGradient>
+    <linearGradient id="aGh" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="lapG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1a1040"/><stop offset="100%" stop-color="#0d0824"/></linearGradient>
+    <linearGradient id="robG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4338ca"/></linearGradient>
+    <linearGradient id="robFG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1e1060"/><stop offset="100%" stop-color="#110a3a"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="8" stdDeviation="18" flood-color="#5b21b6" flood-opacity="0.4"/></filter>
+    <filter id="shSm"><feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#5b21b6" flood-opacity="0.3"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="neon"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="robGlow"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <ellipse cx="130" cy="315" rx="480" ry="420" fill="url(#gL)"/>
+  <ellipse cx="1060" cy="315" rx="460" ry="400" fill="url(#gR)"/>
+  <ellipse cx="1080" cy="500" rx="270" ry="210" fill="url(#gRob)"/>
+  <circle cx="85" cy="60" r="1.5" fill="rgba(167,139,250,0.6)"/>
+  <circle cx="360" cy="38" r="1.2" fill="rgba(167,139,250,0.5)"/>
+  <circle cx="1100" cy="72" r="1.2" fill="rgba(167,139,250,0.5)"/>
+
+  <!-- Top icon pills -->
+  <g text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.38)">
+    <rect x="398" y="12" width="108" height="52" rx="10" fill="rgba(167,139,250,0.07)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+    <text x="452" y="34" font-size="16">👤</text><text x="452" y="54">Unique &amp; Creative</text>
+    <rect x="514" y="12" width="108" height="52" rx="10" fill="rgba(167,139,250,0.07)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+    <text x="568" y="34" font-size="16">✅</text><text x="568" y="54">Availability Check</text>
+    <rect x="630" y="12" width="108" height="52" rx="10" fill="rgba(167,139,250,0.07)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+    <text x="684" y="34" font-size="16">⚡</text><text x="684" y="54">Instant Results</text>
+    <rect x="746" y="12" width="118" height="52" rx="10" fill="rgba(167,139,250,0.07)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+    <text x="805" y="34" font-size="16">🎮</text><text x="805" y="54">Gamers &amp; Streamers</text>
+    <rect x="872" y="12" width="108" height="52" rx="10" fill="rgba(167,139,250,0.07)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+    <text x="926" y="34" font-size="16">🌐</text><text x="926" y="54">Multi-Platform</text>
+    <rect x="988" y="12" width="108" height="52" rx="10" fill="rgba(167,139,250,0.07)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+    <text x="1042" y="34" font-size="16">✦</text><text x="1042" y="54">AI-Powered</text>
+  </g>
+
+  <!-- Logo -->
+  <polygon points="28,90 38,75 52,75 62,90 52,105 38,105" fill="none" stroke="url(#aGh)" stroke-width="2.5"/>
+  <polygon points="32,90 40,79 50,79 58,90 50,101 40,101" fill="rgba(124,58,237,0.25)"/>
+  <text x="68" y="87" font-size="14" font-weight="700" fill="rgba(255,255,255,0.9)">ToolNest AI</text>
+  <text x="68" y="103" font-size="9" fill="rgba(255,255,255,0.38)">All-in-One AI &amp; Online Tools</text>
+
+  <!-- Headline -->
+  <text x="28" y="168" font-size="54" font-weight="900" fill="url(#aG)" filter="url(#glow)" letter-spacing="-1.5">AI Username</text>
+  <text x="28" y="230" font-size="54" font-weight="900" fill="url(#aG)" filter="url(#glow)" letter-spacing="-1.5">Generator</text>
+  <text x="28" y="264" font-size="15" font-weight="700" fill="rgba(255,255,255,0.85)">Create Unique Usernames for Any Platform</text>
+  <text x="28" y="284" font-size="10" fill="rgba(255,255,255,0.42)">Generate creative, available and memorable</text>
+  <text x="28" y="298" font-size="10" fill="rgba(255,255,255,0.42)">usernames with the power of AI. Perfect for</text>
+  <text x="28" y="312" font-size="10" fill="rgba(255,255,255,0.42)">gaming, social media, streaming and every</text>
+  <text x="28" y="326" font-size="10" fill="rgba(255,255,255,0.42)">platform.</text>
+
+  <!-- Bullets -->
+  <g font-size="10">
+    <rect x="28" y="345" width="20" height="20" rx="5" fill="rgba(124,58,237,0.22)" stroke="rgba(167,139,250,0.3)" stroke-width="1"/>
+    <text x="38" y="359" text-anchor="middle" font-size="11">✦</text>
+    <text x="54" y="357" font-weight="700" fill="rgba(255,255,255,0.85)">AI-Powered Suggestions</text>
+    <text x="54" y="370" font-size="9" fill="rgba(255,255,255,0.38)">Get unlimited username ideas based on your style.</text>
+    <rect x="28" y="382" width="20" height="20" rx="5" fill="rgba(124,58,237,0.22)" stroke="rgba(167,139,250,0.3)" stroke-width="1"/>
+    <text x="38" y="396" text-anchor="middle" font-size="10">✅</text>
+    <text x="54" y="394" font-weight="700" fill="rgba(255,255,255,0.85)">Availability Checker</text>
+    <text x="54" y="407" font-size="9" fill="rgba(255,255,255,0.38)">Check across multiple platforms instantly.</text>
+    <rect x="28" y="419" width="20" height="20" rx="5" fill="rgba(124,58,237,0.22)" stroke="rgba(167,139,250,0.3)" stroke-width="1"/>
+    <text x="38" y="433" text-anchor="middle" font-size="10">🎮</text>
+    <text x="54" y="431" font-weight="700" fill="rgba(255,255,255,0.85)">Perfect for Gaming</text>
+    <text x="54" y="444" font-size="9" fill="rgba(255,255,255,0.38)">Find the perfect gaming nickname that stands out.</text>
+    <rect x="28" y="456" width="20" height="20" rx="5" fill="rgba(37,99,235,0.15)" stroke="rgba(96,165,250,0.25)" stroke-width="1"/>
+    <text x="38" y="470" text-anchor="middle" font-size="10">🌐</text>
+    <text x="54" y="468" font-weight="700" fill="rgba(255,255,255,0.85)">Works Everywhere</text>
+    <text x="54" y="481" font-size="9" fill="rgba(255,255,255,0.38)">Social media, forums, apps and more.</text>
+  </g>
+
+  <!-- Laptop frame -->
+  <rect x="390" y="76" width="680" height="456" rx="18" fill="url(#lapG)" stroke="rgba(124,58,237,0.3)" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="402" y="88" width="656" height="432" rx="12" fill="#060414"/>
+  <rect x="348" y="530" width="762" height="16" rx="5" fill="rgba(22,12,52,0.7)" stroke="rgba(124,58,237,0.2)" stroke-width="1"/>
+  <ellipse cx="729" cy="548" rx="332" ry="11" fill="rgba(124,58,237,0.22)" filter="url(#neon)"/>
+
+  <!-- Chrome bar -->
+  <rect x="402" y="88" width="656" height="34" rx="12" fill="rgba(124,58,237,0.14)"/>
+  <rect x="402" y="112" width="656" height="10" fill="rgba(124,58,237,0.14)"/>
+  <circle cx="420" cy="105" r="5" fill="rgba(255,80,80,0.45)"/>
+  <circle cx="436" cy="105" r="5" fill="rgba(255,193,7,0.45)"/>
+  <circle cx="452" cy="105" r="5" fill="rgba(34,197,94,0.45)"/>
+  <text x="560" y="109" font-size="12" font-weight="700" fill="rgba(255,255,255,0.6)">✦ AI Username Generator</text>
+  <rect x="968" y="95" width="80" height="18" rx="5" fill="rgba(124,58,237,0.22)" stroke="rgba(167,139,250,0.3)" stroke-width="1"/>
+  <text x="1008" y="107" text-anchor="middle" font-size="7" fill="#a78bfa">Powered by Advanced AI ✦</text>
+
+  <!-- Left form panel -->
+  <text x="414" y="142" font-size="9.5" font-weight="700" fill="rgba(255,255,255,0.6)">Your Preferences</text>
+  <text x="414" y="158" font-size="8.5" fill="rgba(255,255,255,0.38)">Username Style</text>
+  <rect x="414" y="162" width="186" height="22" rx="5" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+  <text x="422" y="176" font-size="8.5" fill="rgba(255,255,255,0.55)">Cool &amp; Modern</text><text x="591" y="176" font-size="8.5" fill="rgba(255,255,255,0.3)">▾</text>
+  <text x="414" y="198" font-size="8.5" fill="rgba(255,255,255,0.38)">Platform</text>
+  <rect x="414" y="202" width="186" height="22" rx="5" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+  <text x="422" y="216" font-size="8.5" fill="rgba(255,255,255,0.55)">All Platforms</text><text x="591" y="216" font-size="8.5" fill="rgba(255,255,255,0.3)">▾</text>
+  <text x="414" y="238" font-size="8.5" fill="rgba(255,255,255,0.38)">Keywords (Optional)</text>
+  <rect x="414" y="242" width="186" height="22" rx="5" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+  <text x="422" y="256" font-size="8.5" fill="rgba(255,255,255,0.45)">night, wolf, gaming</text>
+  <text x="414" y="278" font-size="8.5" fill="rgba(255,255,255,0.38)">Length</text>
+  <rect x="414" y="282" width="186" height="22" rx="5" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+  <text x="422" y="296" font-size="8.5" fill="rgba(255,255,255,0.55)">Medium (6-12 chars)</text><text x="591" y="296" font-size="8.5" fill="rgba(255,255,255,0.3)">▾</text>
+  <text x="414" y="318" font-size="8.5" fill="rgba(255,255,255,0.38)">Numbers</text>
+  <rect x="414" y="322" width="186" height="22" rx="5" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+  <text x="422" y="336" font-size="8.5" fill="rgba(255,255,255,0.55)">Allow Numbers</text><text x="591" y="336" font-size="8.5" fill="rgba(255,255,255,0.3)">▾</text>
+  <text x="414" y="358" font-size="8.5" fill="rgba(255,255,255,0.38)">Language</text>
+  <rect x="414" y="362" width="186" height="22" rx="5" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+  <text x="422" y="376" font-size="8.5" fill="rgba(255,255,255,0.55)">English</text><text x="591" y="376" font-size="8.5" fill="rgba(255,255,255,0.3)">▾</text>
+  <rect x="414" y="396" width="186" height="30" rx="9" fill="url(#bG)" filter="url(#shSm)"/>
+  <text x="507" y="415" text-anchor="middle" font-size="10.5" font-weight="700" fill="#fff">✦ Generate Usernames</text>
+
+  <!-- Divider -->
+  <line x1="612" y1="130" x2="612" y2="505" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+
+  <!-- Generated usernames -->
+  <text x="622" y="142" font-size="9.5" font-weight="700" fill="rgba(255,255,255,0.6)">Generated Usernames</text>
+  <g font-size="9">
+    <rect x="618" y="150" width="234" height="26" rx="5" fill="rgba(255,255,255,0.03)"/>
+    <text x="628" y="167" font-size="10.5" font-weight="600" fill="rgba(255,255,255,0.88)">NightWolf_7</text>
+    <text x="715" y="167" font-size="8.5" fill="rgba(52,211,153,0.85)">Available</text>
+    <text x="766" y="167">📷</text><text x="779" y="167">♪</text><text x="792" y="167">🎮</text><text x="806" y="167">💬</text><text x="820" y="167">🐦</text><text x="834" y="167">▶</text><text x="847" y="167" fill="rgba(167,139,250,0.7)">♡</text>
+    <rect x="618" y="182" width="234" height="26" rx="5" fill="rgba(255,255,255,0.015)"/>
+    <text x="628" y="199" font-size="10.5" font-weight="600" fill="rgba(255,255,255,0.8)">ShadowNite</text>
+    <text x="715" y="199" font-size="8.5" fill="rgba(52,211,153,0.85)">Available</text>
+    <text x="766" y="199">📷</text><text x="779" y="199">♪</text><text x="792" y="199">🎮</text><text x="806" y="199">💬</text><text x="820" y="199">🐦</text><text x="834" y="199">▶</text><text x="847" y="199" fill="rgba(255,255,255,0.25)">♡</text>
+    <rect x="618" y="214" width="234" height="26" rx="5" fill="rgba(255,255,255,0.03)"/>
+    <text x="628" y="231" font-size="10.5" font-weight="600" fill="rgba(255,255,255,0.88)">WolfxLegend</text>
+    <text x="715" y="231" font-size="8.5" fill="rgba(52,211,153,0.85)">Available</text>
+    <text x="766" y="231">📷</text><text x="779" y="231">♪</text><text x="792" y="231">🎮</text><text x="806" y="231">💬</text><text x="820" y="231">🐦</text><text x="834" y="231">▶</text><text x="847" y="231" fill="rgba(167,139,250,0.7)">♡</text>
+    <rect x="618" y="246" width="234" height="26" rx="5" fill="rgba(255,255,255,0.015)"/>
+    <text x="628" y="263" font-size="10.5" font-weight="600" fill="rgba(255,255,255,0.8)">NiteRider_07</text>
+    <text x="715" y="263" font-size="8.5" fill="rgba(52,211,153,0.85)">Available</text>
+    <text x="766" y="263">📷</text><text x="779" y="263">♪</text><text x="792" y="263">🎮</text><text x="806" y="263">💬</text><text x="820" y="263">🐦</text><text x="834" y="263">▶</text><text x="847" y="263" fill="rgba(255,255,255,0.25)">♡</text>
+    <rect x="618" y="278" width="234" height="26" rx="5" fill="rgba(255,255,255,0.03)"/>
+    <text x="628" y="295" font-size="10.5" font-weight="600" fill="rgba(255,255,255,0.88)">VortexWolf</text>
+    <text x="715" y="295" font-size="8.5" fill="rgba(52,211,153,0.85)">Available</text>
+    <text x="766" y="295">📷</text><text x="779" y="295">♪</text><text x="792" y="295">🎮</text><text x="806" y="295">💬</text><text x="820" y="295">🐦</text><text x="834" y="295">▶</text><text x="847" y="295" fill="rgba(255,255,255,0.25)">♡</text>
+    <rect x="618" y="310" width="234" height="26" rx="5" fill="rgba(255,255,255,0.015)"/>
+    <text x="628" y="327" font-size="10.5" font-weight="600" fill="rgba(255,255,255,0.8)">LunarStrike</text>
+    <text x="715" y="327" font-size="8.5" fill="rgba(52,211,153,0.85)">Available</text>
+    <text x="766" y="327">📷</text><text x="779" y="327">♪</text><text x="792" y="327">🎮</text><text x="806" y="327">💬</text><text x="820" y="327">🐦</text><text x="834" y="327">▶</text><text x="847" y="327" fill="rgba(255,255,255,0.25)">♡</text>
+    <rect x="618" y="342" width="234" height="26" rx="5" fill="rgba(255,255,255,0.03)"/>
+    <text x="628" y="359" font-size="10.5" font-weight="600" fill="rgba(255,255,255,0.88)">DarkNebula</text>
+    <text x="715" y="359" font-size="8.5" fill="rgba(52,211,153,0.85)">Available</text>
+    <text x="766" y="359">📷</text><text x="779" y="359">♪</text><text x="792" y="359">🎮</text><text x="806" y="359">💬</text><text x="820" y="359">🐦</text><text x="834" y="359">▶</text><text x="847" y="359" fill="rgba(255,255,255,0.25)">♡</text>
+    <rect x="618" y="374" width="234" height="26" rx="5" fill="rgba(255,255,255,0.015)"/>
+    <text x="628" y="391" font-size="10.5" font-weight="600" fill="rgba(255,255,255,0.8)">AlphaNightX</text>
+    <text x="715" y="391" font-size="8.5" fill="rgba(52,211,153,0.85)">Available</text>
+    <text x="766" y="391">📷</text><text x="779" y="391">♪</text><text x="792" y="391">🎮</text><text x="806" y="391">💬</text><text x="820" y="391">🐦</text><text x="834" y="391">▶</text><text x="847" y="391" fill="rgba(167,139,250,0.7)">♡</text>
+  </g>
+  <rect x="692" y="414" width="136" height="24" rx="7" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+  <text x="760" y="430" text-anchor="middle" font-size="8.5" fill="rgba(255,255,255,0.45)">↺ Generate More</text>
+
+  <!-- Right sidebar -->
+  <line x1="864" y1="130" x2="864" y2="505" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <rect x="872" y="134" width="76" height="20" rx="6" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="910" y="147" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.5)">📋 Copy All</text>
+  <text x="872" y="170" font-size="9" font-weight="700" fill="rgba(255,255,255,0.6)">Username Tips</text>
+  <g font-size="8" fill="rgba(255,255,255,0.42)">
+    <text x="872" y="185">✔ Keep it short and easy</text>
+    <text x="872" y="198">   to remember</text>
+    <text x="872" y="212">✔ Avoid complicated spellings</text>
+    <text x="872" y="225">✔ Use numbers wisely</text>
+    <text x="872" y="238">✔ Make it unique</text>
+    <text x="872" y="251">✔ Check availability before using</text>
+  </g>
+  <text x="872" y="274" font-size="9" font-weight="700" fill="rgba(255,255,255,0.6)">Platforms</text>
+  <g font-size="13" fill="rgba(255,255,255,0.55)">
+    <text x="872" y="293">📷</text><text x="894" y="293">♪</text><text x="916" y="293">💬</text><text x="938" y="293">🐦</text>
+    <text x="872" y="312">▶</text><text x="894" y="312">📺</text><text x="916" y="312">🎮</text><text x="938" y="312">···</text>
+  </g>
+  <text x="872" y="334" font-size="9" font-weight="700" fill="rgba(255,255,255,0.6)">Favorites</text>
+  <g font-size="8.5" fill="rgba(255,255,255,0.5)">
+    <text x="872" y="350">♥ NightWolf_7</text>
+    <text x="872" y="365">♥ WolfxLegend</text>
+    <text x="872" y="380">♥ AlphaNightX</text>
+  </g>
+
+  <!-- ROBOT -->
+  <ellipse cx="1128" cy="570" rx="68" ry="13" fill="rgba(124,58,237,0.5)" filter="url(#neon)"/>
+  <ellipse cx="1128" cy="562" rx="52" ry="10" fill="rgba(124,58,237,0.28)" stroke="rgba(167,139,250,0.28)" stroke-width="1"/>
+  <rect x="1094" y="450" width="68" height="100" rx="22" fill="url(#robG)" filter="url(#robGlow)"/>
+  <rect x="1102" y="462" width="52" height="38" rx="10" fill="url(#robFG)" stroke="rgba(167,139,250,0.35)" stroke-width="1.5"/>
+  <text x="1128" y="475" text-anchor="middle" font-size="8" fill="rgba(167,139,250,0.55)">A I</text>
+  <text x="1128" y="495" text-anchor="middle" font-size="18" font-weight="900" fill="url(#aGh)" filter="url(#glow)">AI</text>
+  <rect x="1076" y="458" width="18" height="54" rx="9" fill="url(#robG)"/>
+  <rect x="1162" y="458" width="18" height="54" rx="9" fill="url(#robG)"/>
+  <circle cx="1073" cy="520" r="9" fill="rgba(96,165,250,0.45)" filter="url(#neon)"/>
+  <circle cx="1181" cy="520" r="9" fill="rgba(167,139,250,0.45)" filter="url(#neon)"/>
+  <circle cx="1128" cy="518" r="6" fill="rgba(96,165,250,0.7)" filter="url(#neon)"/>
+  <circle cx="1128" cy="518" r="3" fill="#60a5fa"/>
+  <rect x="1120" y="432" width="16" height="20" rx="6" fill="url(#robG)"/>
+  <rect x="1084" y="358" width="88" height="76" rx="24" fill="url(#robG)" filter="url(#robGlow)"/>
+  <rect x="1092" y="368" width="72" height="56" rx="14" fill="url(#robFG)" stroke="rgba(167,139,250,0.45)" stroke-width="1.5"/>
+  <circle cx="1112" cy="394" r="10" fill="rgba(124,58,237,0.45)" stroke="rgba(167,139,250,0.55)" stroke-width="1.5"/>
+  <circle cx="1144" cy="394" r="10" fill="rgba(124,58,237,0.45)" stroke="rgba(167,139,250,0.55)" stroke-width="1.5"/>
+  <circle cx="1112" cy="393" r="5.5" fill="url(#aGh)" filter="url(#glow)"/>
+  <circle cx="1144" cy="393" r="5.5" fill="url(#aGh)" filter="url(#glow)"/>
+  <circle cx="1113" cy="392" r="2.5" fill="#fff"/>
+  <circle cx="1145" cy="392" r="2.5" fill="#fff"/>
+  <path d="M 1106 412 Q 1128 424 1150 412" stroke="url(#aGh)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <line x1="1128" y1="358" x2="1128" y2="336" stroke="rgba(167,139,250,0.55)" stroke-width="2.5"/>
+  <circle cx="1128" cy="330" r="7" fill="url(#bG)" filter="url(#neon)"/>
+  <circle cx="1128" cy="330" r="3.5" fill="rgba(167,139,250,0.9)"/>
+  <circle cx="1082" cy="394" r="9" fill="url(#robG)" stroke="rgba(167,139,250,0.3)" stroke-width="1"/>
+  <circle cx="1174" cy="394" r="9" fill="url(#robG)" stroke="rgba(167,139,250,0.3)" stroke-width="1"/>
+
+  <!-- Bottom platform bar -->
+  <rect x="0" y="593" width="1200" height="37" fill="rgba(124,58,237,0.06)"/>
+  <line x1="0" y1="593" x2="1200" y2="593" stroke="rgba(167,139,250,0.1)" stroke-width="1"/>
+  <g text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.32)">
+    <text x="72" y="608">📷 Instagram</text><text x="72" y="620" font-size="7">Trendy &amp; aesthetic usernames</text>
+    <line x1="144" y1="595" x2="144" y2="626" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    <text x="216" y="608">♪ TikTok</text><text x="216" y="620" font-size="7">Short, catchy names</text>
+    <line x1="288" y1="595" x2="288" y2="626" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    <text x="384" y="608">▶ YouTube</text><text x="384" y="620" font-size="7">Memorable creator names</text>
+    <line x1="480" y1="595" x2="480" y2="626" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    <text x="576" y="608">💬 Discord</text><text x="576" y="620" font-size="7">Unique community names</text>
+    <line x1="672" y1="595" x2="672" y2="626" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    <text x="768" y="608">📺 Twitch</text><text x="768" y="620" font-size="7">Epic streamer usernames</text>
+    <line x1="864" y1="595" x2="864" y2="626" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    <text x="960" y="608">✖ X (Twitter)</text><text x="960" y="620" font-size="7">Professional handles</text>
+    <line x1="1056" y1="595" x2="1056" y2="626" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    <text x="1128" y="608">🎮 Gaming</text><text x="1128" y="620" font-size="7">Epic gamer tags</text>
+  </g>
+</svg>

@@ -1,0 +1,105 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="75%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gC" cx="50%" cy="50%" r="55%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.2"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="pG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#130b2e" stop-opacity="0.97"/><stop offset="100%" stop-color="#0c0820" stop-opacity="0.97"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#5b21b6" flood-opacity="0.28"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="neon"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="500" fill="url(#bg)"/>
+  <ellipse cx="600" cy="250" rx="650" ry="340" fill="url(#gC)"/>
+
+  <text x="600" y="44" text-anchor="middle" font-size="11" font-weight="700" fill="#a78bfa" letter-spacing="1">USERNAME ANATOMY</text>
+  <text x="600" y="76" text-anchor="middle" font-size="26" font-weight="800" fill="url(#aG)" filter="url(#glow)">What Makes a Username Truly Memorable</text>
+  <text x="600" y="102" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.42)">The six qualities that separate a forgettable handle from one that builds a following</text>
+
+  <!-- Centre username display -->
+  <rect x="426" y="188" width="348" height="72" rx="18" fill="rgba(124,58,237,0.14)" stroke="rgba(167,139,250,0.35)" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="600" y="232" text-anchor="middle" font-size="28" font-weight="900" fill="url(#aG)" filter="url(#glow)" letter-spacing="1">NightWolf_7</text>
+  <text x="600" y="252" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.35)">example AI-generated username</text>
+
+  <!-- Connecting lines from centre to cards -->
+  <!-- Top-left -->
+  <line x1="426" y1="210" x2="294" y2="174" stroke="rgba(167,139,250,0.2)" stroke-width="1" stroke-dasharray="4 3"/>
+  <!-- Top-right -->
+  <line x1="774" y1="210" x2="906" y2="174" stroke="rgba(167,139,250,0.2)" stroke-width="1" stroke-dasharray="4 3"/>
+  <!-- Left -->
+  <line x1="426" y1="224" x2="254" y2="248" stroke="rgba(167,139,250,0.2)" stroke-width="1" stroke-dasharray="4 3"/>
+  <!-- Right -->
+  <line x1="774" y1="224" x2="946" y2="248" stroke="rgba(167,139,250,0.2)" stroke-width="1" stroke-dasharray="4 3"/>
+  <!-- Bottom-left -->
+  <line x1="426" y1="248" x2="294" y2="320" stroke="rgba(167,139,250,0.2)" stroke-width="1" stroke-dasharray="4 3"/>
+  <!-- Bottom-right -->
+  <line x1="774" y1="248" x2="906" y2="320" stroke="rgba(167,139,250,0.2)" stroke-width="1" stroke-dasharray="4 3"/>
+
+  <!-- TL card: Short & Pronounceable -->
+  <rect x="104" y="116" width="190" height="112" rx="12" fill="url(#pG)" stroke="rgba(167,139,250,0.2)" stroke-width="1" filter="url(#sh)"/>
+  <rect x="104" y="116" width="4" height="112" rx="2" fill="#a78bfa"/>
+  <text x="118" y="140" font-size="18">🔤</text>
+  <text x="144" y="138" font-size="11" font-weight="700" fill="#a78bfa">Short &amp; Clear</text>
+  <text x="118" y="156" font-size="9" fill="rgba(255,255,255,0.5)">Under 15 characters.</text>
+  <text x="118" y="171" font-size="9" fill="rgba(255,255,255,0.5)">Easy to say out loud,</text>
+  <text x="118" y="186" font-size="9" fill="rgba(255,255,255,0.5)">spell and remember.</text>
+  <text x="118" y="204" font-size="8" fill="rgba(255,255,255,0.28)">✓ NightWolf — 9 chars</text>
+  <text x="118" y="218" font-size="8" fill="rgba(239,68,68,0.45)">✗ NightlyWolvesPack</text>
+
+  <!-- TR card: Unique & Ownable -->
+  <rect x="906" y="116" width="190" height="112" rx="12" fill="url(#pG)" stroke="rgba(96,165,250,0.2)" stroke-width="1" filter="url(#sh)"/>
+  <rect x="906" y="116" width="4" height="112" rx="2" fill="#93c5fd"/>
+  <text x="920" y="140" font-size="18">⭐</text>
+  <text x="946" y="138" font-size="11" font-weight="700" fill="#93c5fd">Unique &amp; Own</text>
+  <text x="920" y="156" font-size="9" fill="rgba(255,255,255,0.5)">Distinct enough to</text>
+  <text x="920" y="171" font-size="9" fill="rgba(255,255,255,0.5)">stand alone. Avoids</text>
+  <text x="920" y="186" font-size="9" fill="rgba(255,255,255,0.5)">copying popular names.</text>
+  <text x="920" y="204" font-size="8" fill="rgba(255,255,255,0.28)">✓ WolfxLegend — own it</text>
+  <text x="920" y="218" font-size="8" fill="rgba(239,68,68,0.45)">✗ xXGamer123Xx</text>
+
+  <!-- ML card: Platform Availability -->
+  <rect x="54" y="196" width="200" height="112" rx="12" fill="url(#pG)" stroke="rgba(52,211,153,0.18)" stroke-width="1" filter="url(#sh)"/>
+  <rect x="54" y="196" width="4" height="112" rx="2" fill="#6ee7b7"/>
+  <text x="68" y="220" font-size="18">✅</text>
+  <text x="94" y="218" font-size="11" font-weight="700" fill="#6ee7b7">Available</text>
+  <text x="68" y="236" font-size="9" fill="rgba(255,255,255,0.5)">Same handle free on</text>
+  <text x="68" y="251" font-size="9" fill="rgba(255,255,255,0.5)">Instagram, TikTok and</text>
+  <text x="68" y="266" font-size="9" fill="rgba(255,255,255,0.5)">your target platforms.</text>
+  <text x="68" y="284" font-size="8" fill="rgba(255,255,255,0.28)">AI checks this for you</text>
+  <text x="68" y="298" font-size="8" fill="rgba(255,255,255,0.28)">across all platforms</text>
+
+  <!-- MR card: Relevant but not limiting -->
+  <rect x="946" y="196" width="200" height="112" rx="12" fill="url(#pG)" stroke="rgba(251,191,36,0.18)" stroke-width="1" filter="url(#sh)"/>
+  <rect x="946" y="196" width="4" height="112" rx="2" fill="#fde68a"/>
+  <text x="960" y="220" font-size="18">🎯</text>
+  <text x="986" y="218" font-size="11" font-weight="700" fill="#fde68a">Niche Relevant</text>
+  <text x="960" y="236" font-size="9" fill="rgba(255,255,255,0.5)">Hints at your niche</text>
+  <text x="960" y="251" font-size="9" fill="rgba(255,255,255,0.5)">without boxing you in</text>
+  <text x="960" y="266" font-size="9" fill="rgba(255,255,255,0.5)">if you expand later.</text>
+  <text x="960" y="284" font-size="8" fill="rgba(255,255,255,0.28)">✓ VortexWolf — gaming</text>
+  <text x="960" y="298" font-size="8" fill="rgba(255,255,255,0.28)">but not too literal</text>
+
+  <!-- BL card: Emotionally resonant -->
+  <rect x="104" y="310" width="190" height="112" rx="12" fill="url(#pG)" stroke="rgba(239,68,68,0.18)" stroke-width="1" filter="url(#sh)"/>
+  <rect x="104" y="310" width="4" height="112" rx="2" fill="#fca5a5"/>
+  <text x="118" y="334" font-size="18">⚡</text>
+  <text x="144" y="332" font-size="11" font-weight="700" fill="#fca5a5">Feels Like Something</text>
+  <text x="118" y="350" font-size="9" fill="rgba(255,255,255,0.5)">Evokes speed, power,</text>
+  <text x="118" y="365" font-size="9" fill="rgba(255,255,255,0.5)">mystery or energy.</text>
+  <text x="118" y="380" font-size="9" fill="rgba(255,255,255,0.5)">Neutral names are</text>
+  <text x="118" y="395" font-size="9" fill="rgba(255,255,255,0.5)">forgettable.</text>
+  <text x="118" y="413" font-size="8" fill="rgba(255,255,255,0.28)">✓ DarkNebula — vivid</text>
+
+  <!-- BR card: Consistent across platforms -->
+  <rect x="906" y="310" width="190" height="112" rx="12" fill="url(#pG)" stroke="rgba(124,58,237,0.2)" stroke-width="1" filter="url(#sh)"/>
+  <rect x="906" y="310" width="4" height="112" rx="2" fill="#c4b5fd"/>
+  <text x="920" y="334" font-size="18">🔗</text>
+  <text x="946" y="332" font-size="11" font-weight="700" fill="#c4b5fd">Cross-Platform</text>
+  <text x="920" y="350" font-size="9" fill="rgba(255,255,255,0.5)">Same or very similar</text>
+  <text x="920" y="365" font-size="9" fill="rgba(255,255,255,0.5)">handle everywhere so</text>
+  <text x="920" y="380" font-size="9" fill="rgba(255,255,255,0.5)">followers can find you.</text>
+  <text x="920" y="398" font-size="8" fill="rgba(255,255,255,0.28)">✓ NightWolf_7 across</text>
+  <text x="920" y="412" font-size="8" fill="rgba(255,255,255,0.28)">all major platforms</text>
+
+  <text x="600" y="488" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.22)">ToolNest AI · toolnestai.net/ai-tools/ai-username-generator</text>
+</svg>
