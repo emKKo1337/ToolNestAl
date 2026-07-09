@@ -1,0 +1,115 @@
+<svg viewBox="0 0 900 520" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gC" cx="50%" cy="50%" r="55%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.3"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#818cf8"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="codeG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#0d0824"/><stop offset="100%" stop-color="#080516"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#5b21b6" flood-opacity="0.35"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="900" height="520" fill="url(#bg)"/>
+  <ellipse cx="450" cy="260" rx="500" ry="380" fill="url(#gC)"/>
+
+  <!-- Header -->
+  <text x="450" y="40" text-anchor="middle" font-size="22" font-weight="900" fill="url(#aG)" filter="url(#glow)">5 Essential Schema Types for SEO</text>
+  <text x="450" y="60" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.42)">Examples, properties and rich result benefits for each structured data type</text>
+
+  <!-- Article -->
+  <rect x="28" y="78" width="270" height="196" rx="12" fill="rgba(255,255,255,0.025)" stroke="rgba(167,139,250,0.2)" stroke-width="1" filter="url(#sh)"/>
+  <rect x="28" y="78" width="270" height="36" rx="12" fill="rgba(124,58,237,0.22)"/>
+  <rect x="28" y="100" width="270" height="14" fill="rgba(124,58,237,0.22)"/>
+  <text x="43" y="100" font-size="13" font-weight="800" fill="#a78bfa">📰 Article</text>
+  <text x="43" y="116" font-size="8" fill="rgba(255,255,255,0.38)">Rich result: Article snippets, Top Stories carousel</text>
+  <rect x="38" y="122" width="250" height="142" rx="8" fill="url(#codeG)" stroke="rgba(124,58,237,0.15)" stroke-width="1"/>
+  <g font-size="7.5" font-family="monospace">
+    <text x="46" y="140" fill="rgba(255,255,255,0.65)">{</text>
+    <text x="46" y="154" fill="rgba(96,165,250,0.8)">"@type"</text><text x="94" y="154" fill="rgba(255,255,255,0.5)">: </text><text x="102" y="154" fill="rgba(167,239,150,0.8)">"Article"</text><text x="146" y="154" fill="rgba(255,255,255,0.5)">,</text>
+    <text x="46" y="168" fill="rgba(96,165,250,0.8)">"headline"</text><text x="101" y="168" fill="rgba(255,255,255,0.5)">: </text><text x="110" y="168" fill="rgba(167,239,150,0.8)">"SEO Guide 2026"</text><text x="207" y="168" fill="rgba(255,255,255,0.5)">,</text>
+    <text x="46" y="182" fill="rgba(96,165,250,0.8)">"author"</text><text x="92" y="182" fill="rgba(255,255,255,0.5)">: { "name": </text><text x="152" y="182" fill="rgba(167,239,150,0.8)">"ToolNest"</text><text x="202" y="182" fill="rgba(255,255,255,0.5)">},</text>
+    <text x="46" y="196" fill="rgba(96,165,250,0.8)">"datePublished"</text><text x="136" y="196" fill="rgba(255,255,255,0.5)">:</text>
+    <text x="56" y="210" fill="rgba(167,239,150,0.8)">"2026-07-10"</text><text x="120" y="210" fill="rgba(255,255,255,0.5)">,</text>
+    <text x="46" y="224" fill="rgba(96,165,250,0.8)">"image"</text><text x="86" y="224" fill="rgba(255,255,255,0.5)">: </text><text x="96" y="224" fill="rgba(167,239,150,0.8)">"https://..."</text>
+    <text x="46" y="238" fill="rgba(255,255,255,0.65)">}</text>
+    <text x="46" y="252" fill="rgba(34,197,94,0.6)">✓ 0 errors · Rich Results Eligible</text>
+  </g>
+
+  <!-- FAQ -->
+  <rect x="314" y="78" width="270" height="196" rx="12" fill="rgba(255,255,255,0.025)" stroke="rgba(167,139,250,0.2)" stroke-width="1" filter="url(#sh)"/>
+  <rect x="314" y="78" width="270" height="36" rx="12" fill="rgba(37,99,235,0.22)"/>
+  <rect x="314" y="100" width="270" height="14" fill="rgba(37,99,235,0.22)"/>
+  <text x="329" y="100" font-size="13" font-weight="800" fill="#60a5fa">❓ FAQPage</text>
+  <text x="329" y="116" font-size="8" fill="rgba(255,255,255,0.38)">Rich result: Expandable Q&amp;A in search results</text>
+  <rect x="324" y="122" width="250" height="142" rx="8" fill="url(#codeG)" stroke="rgba(37,99,235,0.15)" stroke-width="1"/>
+  <g font-size="7.5" font-family="monospace">
+    <text x="332" y="140" fill="rgba(255,255,255,0.65)">{</text>
+    <text x="332" y="154" fill="rgba(96,165,250,0.8)">"@type"</text><text x="380" y="154" fill="rgba(255,255,255,0.5)">: </text><text x="388" y="154" fill="rgba(167,239,150,0.8)">"FAQPage"</text><text x="438" y="154" fill="rgba(255,255,255,0.5)">,</text>
+    <text x="332" y="168" fill="rgba(96,165,250,0.8)">"mainEntity"</text><text x="398" y="168" fill="rgba(255,255,255,0.5)">: [{</text>
+    <text x="342" y="182" fill="rgba(96,165,250,0.8)">"@type"</text><text x="388" y="182" fill="rgba(255,255,255,0.5)">: </text><text x="396" y="182" fill="rgba(167,239,150,0.8)">"Question"</text><text x="446" y="182" fill="rgba(255,255,255,0.5)">,</text>
+    <text x="342" y="196" fill="rgba(96,165,250,0.8)">"name"</text><text x="374" y="196" fill="rgba(255,255,255,0.5)">: </text><text x="383" y="196" fill="rgba(167,239,150,0.8)">"What is schema?"</text><text x="477" y="196" fill="rgba(255,255,255,0.5)">,</text>
+    <text x="342" y="210" fill="rgba(96,165,250,0.8)">"acceptedAnswer"</text><text x="450" y="210" fill="rgba(255,255,255,0.5)">: {</text>
+    <text x="352" y="224" fill="rgba(96,165,250,0.8)">"text"</text><text x="384" y="224" fill="rgba(255,255,255,0.5)">: </text><text x="393" y="224" fill="rgba(167,239,150,0.8)">"A vocabulary..."</text>
+    <text x="332" y="238" fill="rgba(255,255,255,0.5)">}}]}</text>
+    <text x="332" y="252" fill="rgba(34,197,94,0.6)">✓ 0 errors · FAQ Rich Result</text>
+  </g>
+
+  <!-- Product -->
+  <rect x="600" y="78" width="270" height="196" rx="12" fill="rgba(255,255,255,0.025)" stroke="rgba(167,139,250,0.2)" stroke-width="1" filter="url(#sh)"/>
+  <rect x="600" y="78" width="270" height="36" rx="12" fill="rgba(16,185,129,0.18)"/>
+  <rect x="600" y="100" width="270" height="14" fill="rgba(16,185,129,0.18)"/>
+  <text x="615" y="100" font-size="13" font-weight="800" fill="#34d399">🛍 Product</text>
+  <text x="615" y="116" font-size="8" fill="rgba(255,255,255,0.38)">Rich result: Star ratings, price, availability</text>
+  <rect x="610" y="122" width="250" height="142" rx="8" fill="url(#codeG)" stroke="rgba(16,185,129,0.12)" stroke-width="1"/>
+  <g font-size="7.5" font-family="monospace">
+    <text x="618" y="140" fill="rgba(255,255,255,0.65)">{</text>
+    <text x="618" y="154" fill="rgba(96,165,250,0.8)">"@type"</text><text x="666" y="154" fill="rgba(255,255,255,0.5)">: </text><text x="674" y="154" fill="rgba(167,239,150,0.8)">"Product"</text><text x="718" y="154" fill="rgba(255,255,255,0.5)">,</text>
+    <text x="618" y="168" fill="rgba(96,165,250,0.8)">"name"</text><text x="654" y="168" fill="rgba(255,255,255,0.5)">: </text><text x="663" y="168" fill="rgba(167,239,150,0.8)">"Schema Validator"</text><text x="763" y="168" fill="rgba(255,255,255,0.5)">,</text>
+    <text x="618" y="182" fill="rgba(96,165,250,0.8)">"aggregateRating"</text><text x="740" y="182" fill="rgba(255,255,255,0.5)">: {</text>
+    <text x="628" y="196" fill="rgba(96,165,250,0.8)">"ratingValue"</text><text x="706" y="196" fill="rgba(255,255,255,0.5)">: </text><text x="714" y="196" fill="rgba(251,191,36,0.8)">"4.9"</text><text x="738" y="196" fill="rgba(255,255,255,0.5)">,</text>
+    <text x="628" y="210" fill="rgba(96,165,250,0.8)">"reviewCount"</text><text x="705" y="210" fill="rgba(255,255,255,0.5)">: </text><text x="714" y="210" fill="rgba(251,191,36,0.8)">"1024"</text>
+    <text x="618" y="224" fill="rgba(255,255,255,0.5)">},</text>
+    <text x="618" y="238" fill="rgba(96,165,250,0.8)">"offers"</text><text x="657" y="238" fill="rgba(255,255,255,0.5)">: { "price": </text><text x="723" y="238" fill="rgba(251,191,36,0.8)">"0"</text><text x="736" y="238" fill="rgba(255,255,255,0.5)">}</text>
+    <text x="618" y="252" fill="rgba(34,197,94,0.6)">✓ 0 errors · Star Ratings Eligible</text>
+  </g>
+
+  <!-- Organization -->
+  <rect x="28" y="290" width="270" height="196" rx="12" fill="rgba(255,255,255,0.025)" stroke="rgba(167,139,250,0.2)" stroke-width="1" filter="url(#sh)"/>
+  <rect x="28" y="290" width="270" height="36" rx="12" fill="rgba(245,158,11,0.18)"/>
+  <rect x="28" y="312" width="270" height="14" fill="rgba(245,158,11,0.18)"/>
+  <text x="43" y="312" font-size="13" font-weight="800" fill="#fbbf24">🏢 Organization</text>
+  <text x="43" y="328" font-size="8" fill="rgba(255,255,255,0.38)">Rich result: Knowledge Panel, Sitelinks</text>
+  <rect x="38" y="334" width="250" height="142" rx="8" fill="url(#codeG)" stroke="rgba(245,158,11,0.12)" stroke-width="1"/>
+  <g font-size="7.5" font-family="monospace">
+    <text x="46" y="352" fill="rgba(255,255,255,0.65)">{</text>
+    <text x="46" y="366" fill="rgba(96,165,250,0.8)">"@type"</text><text x="94" y="366" fill="rgba(255,255,255,0.5)">: </text><text x="102" y="366" fill="rgba(167,239,150,0.8)">"Organization"</text><text x="181" y="366" fill="rgba(255,255,255,0.5)">,</text>
+    <text x="46" y="380" fill="rgba(96,165,250,0.8)">"name"</text><text x="82" y="380" fill="rgba(255,255,255,0.5)">: </text><text x="91" y="380" fill="rgba(167,239,150,0.8)">"ToolNest AI"</text><text x="156" y="380" fill="rgba(255,255,255,0.5)">,</text>
+    <text x="46" y="394" fill="rgba(96,165,250,0.8)">"url"</text><text x="74" y="394" fill="rgba(255,255,255,0.5)">: </text><text x="82" y="394" fill="rgba(167,239,150,0.8)">"https://toolnestai.net"</text><text x="223" y="394" fill="rgba(255,255,255,0.5)">,</text>
+    <text x="46" y="408" fill="rgba(96,165,250,0.8)">"logo"</text><text x="82" y="408" fill="rgba(255,255,255,0.5)">: {</text>
+    <text x="56" y="422" fill="rgba(96,165,250,0.8)">"@type"</text><text x="102" y="422" fill="rgba(255,255,255,0.5)">: </text><text x="110" y="422" fill="rgba(167,239,150,0.8)">"ImageObject"</text><text x="192" y="422" fill="rgba(255,255,255,0.5)">,</text>
+    <text x="56" y="436" fill="rgba(96,165,250,0.8)">"url"</text><text x="78" y="436" fill="rgba(255,255,255,0.5)">: </text><text x="87" y="436" fill="rgba(167,239,150,0.8)">"https://.../logo.png"</text>
+    <text x="46" y="450" fill="rgba(255,255,255,0.5)">},</text>
+    <text x="46" y="464" fill="rgba(34,197,94,0.6)">✓ 0 errors · Knowledge Panel Ready</text>
+  </g>
+
+  <!-- Breadcrumb -->
+  <rect x="314" y="290" width="556" height="196" rx="12" fill="rgba(255,255,255,0.025)" stroke="rgba(167,139,250,0.2)" stroke-width="1" filter="url(#sh)"/>
+  <rect x="314" y="290" width="556" height="36" rx="12" fill="rgba(236,72,153,0.18)"/>
+  <rect x="314" y="312" width="556" height="14" fill="rgba(236,72,153,0.18)"/>
+  <text x="329" y="312" font-size="13" font-weight="800" fill="#f472b6">🍞 BreadcrumbList</text>
+  <text x="329" y="328" font-size="8" fill="rgba(255,255,255,0.38)">Rich result: Breadcrumb trail in search snippets — improves CTR by showing page hierarchy</text>
+  <rect x="324" y="334" width="536" height="142" rx="8" fill="url(#codeG)" stroke="rgba(236,72,153,0.12)" stroke-width="1"/>
+  <g font-size="7.5" font-family="monospace">
+    <text x="332" y="352" fill="rgba(255,255,255,0.65)">{</text>
+    <text x="332" y="366" fill="rgba(96,165,250,0.8)">"@type"</text><text x="380" y="366" fill="rgba(255,255,255,0.5)">: </text><text x="388" y="366" fill="rgba(167,239,150,0.8)">"BreadcrumbList"</text><text x="481" y="366" fill="rgba(255,255,255,0.5)">,  </text><text x="500" y="366" fill="rgba(96,165,250,0.8)">"itemListElement"</text><text x="600" y="366" fill="rgba(255,255,255,0.5)">: [</text>
+    <text x="342" y="380" fill="rgba(255,255,255,0.5)">{ </text><text x="358" y="380" fill="rgba(96,165,250,0.8)">"@type"</text><text x="406" y="380" fill="rgba(255,255,255,0.5)">: </text><text x="414" y="380" fill="rgba(167,239,150,0.8)">"ListItem"</text><text x="458" y="380" fill="rgba(255,255,255,0.5)">, </text><text x="466" y="380" fill="rgba(96,165,250,0.8)">"position"</text><text x="518" y="380" fill="rgba(255,255,255,0.5)">: </text><text x="526" y="380" fill="rgba(251,191,36,0.8)">1</text><text x="534" y="380" fill="rgba(255,255,255,0.5)">,</text>
+    <text x="352" y="394" fill="rgba(96,165,250,0.8)">"name"</text><text x="384" y="394" fill="rgba(255,255,255,0.5)">: </text><text x="392" y="394" fill="rgba(167,239,150,0.8)">"Home"</text><text x="422" y="394" fill="rgba(255,255,255,0.5)">,  </text><text x="438" y="394" fill="rgba(96,165,250,0.8)">"item"</text><text x="470" y="394" fill="rgba(255,255,255,0.5)">: </text><text x="478" y="394" fill="rgba(167,239,150,0.8)">"https://toolnestai.net"</text><text x="618" y="394" fill="rgba(255,255,255,0.5)">},</text>
+    <text x="342" y="408" fill="rgba(255,255,255,0.5)">{ </text><text x="358" y="408" fill="rgba(96,165,250,0.8)">"@type"</text><text x="406" y="408" fill="rgba(255,255,255,0.5)">: </text><text x="414" y="408" fill="rgba(167,239,150,0.8)">"ListItem"</text><text x="458" y="408" fill="rgba(255,255,255,0.5)">, </text><text x="466" y="408" fill="rgba(96,165,250,0.8)">"position"</text><text x="518" y="408" fill="rgba(255,255,255,0.5)">: </text><text x="526" y="408" fill="rgba(251,191,36,0.8)">2</text><text x="534" y="408" fill="rgba(255,255,255,0.5)">,</text>
+    <text x="352" y="422" fill="rgba(96,165,250,0.8)">"name"</text><text x="384" y="422" fill="rgba(255,255,255,0.5)">: </text><text x="392" y="422" fill="rgba(167,239,150,0.8)">"SEO Tools"</text><text x="447" y="422" fill="rgba(255,255,255,0.5)">,  </text><text x="463" y="422" fill="rgba(96,165,250,0.8)">"item"</text><text x="495" y="422" fill="rgba(255,255,255,0.5)">: </text><text x="503" y="422" fill="rgba(167,239,150,0.8)">"https://toolnestai.net/seo-tools"</text><text x="697" y="422" fill="rgba(255,255,255,0.5)">}]</text>
+    <text x="332" y="436" fill="rgba(255,255,255,0.65)">}</text>
+    <text x="332" y="452" fill="rgba(34,197,94,0.6)">Result in Google: ToolNest AI › SEO Tools › Schema Validator  ← breadcrumb trail shown in SERP</text>
+    <text x="332" y="464" fill="rgba(34,197,94,0.6)">✓ 0 errors · Breadcrumb Rich Result Eligible</text>
+  </g>
+
+  <!-- Footer -->
+  <text x="450" y="502" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.28)">toolnestai.net/seo-tools/schema-validator — Validate all schema types for free</text>
+</svg>

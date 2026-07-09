@@ -1,0 +1,150 @@
+<svg viewBox="0 0 900 1200" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gT" cx="50%" cy="10%" r="55%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.38"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gB" cx="50%" cy="90%" r="55%"><stop offset="0%" stop-color="#2563eb" stop-opacity="0.22"/><stop offset="100%" stop-color="#2563eb" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#818cf8"/></linearGradient>
+    <linearGradient id="aGv" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#818cf8"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#5b21b6" flood-opacity="0.4"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="neon"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="900" height="1200" fill="url(#bg)"/>
+  <ellipse cx="450" cy="120" rx="500" ry="380" fill="url(#gT)"/>
+  <ellipse cx="450" cy="1080" rx="500" ry="380" fill="url(#gB)"/>
+
+  <!-- HERO HEADER -->
+  <rect x="0" y="0" width="900" height="200" fill="rgba(124,58,237,0.08)"/>
+  <line x1="0" y1="200" x2="900" y2="200" stroke="rgba(167,139,250,0.15)" stroke-width="1"/>
+  <!-- Logo -->
+  <polygon points="50,70 62,52 78,52 90,70 78,88 62,88" fill="none" stroke="url(#aG)" stroke-width="2.5"/>
+  <polygon points="54,70 64,56 76,56 86,70 76,84 64,84" fill="rgba(124,58,237,0.2)"/>
+  <text x="98" y="65" font-size="16" font-weight="700" fill="rgba(255,255,255,0.9)">ToolNest AI</text>
+  <text x="98" y="83" font-size="9" fill="rgba(255,255,255,0.38)">toolnestai.net/seo-tools/schema-validator</text>
+  <text x="450" y="118" text-anchor="middle" font-size="36" font-weight="900" fill="url(#aG)" filter="url(#glow)">Schema Validator</text>
+  <text x="450" y="152" text-anchor="middle" font-size="15" fill="rgba(255,255,255,0.65)">The Complete 2026 Guide to Structured Data Validation</text>
+  <text x="450" y="174" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.38)">What it is · Why it matters · How to use it · Fix common errors · Get rich results</text>
+
+  <!-- SECTION 1: What is Schema Markup -->
+  <rect x="40" y="220" width="820" height="180" rx="16" fill="rgba(255,255,255,0.025)" stroke="rgba(167,139,250,0.18)" stroke-width="1"/>
+  <text x="70" y="256" font-size="18" font-weight="800" fill="url(#aG)">01 — What Is Schema Markup?</text>
+  <text x="70" y="278" font-size="11" fill="rgba(255,255,255,0.55)" font-weight="600">Schema markup is structured data code that helps search engines understand your content.</text>
+  <g font-size="10" fill="rgba(255,255,255,0.45)">
+    <text x="70" y="302">• Vocabulary from Schema.org — a joint project by Google, Bing, Yahoo and Yandex</text>
+    <text x="70" y="320">• Added to HTML as JSON-LD (recommended), Microdata or RDFa</text>
+    <text x="70" y="338">• Tells search engines: what type of content this is, who wrote it, when it was published</text>
+    <text x="70" y="356">• Unlocks Rich Results in Google Search — star ratings, FAQs, breadcrumbs, carousels and more</text>
+    <text x="70" y="374">• Used by 47% of the top 10,000 websites — it's no longer optional for competitive SEO</text>
+  </g>
+
+  <!-- SECTION 2: Why Validate -->
+  <rect x="40" y="416" width="820" height="210" rx="16" fill="rgba(255,255,255,0.025)" stroke="rgba(167,139,250,0.18)" stroke-width="1"/>
+  <text x="70" y="452" font-size="18" font-weight="800" fill="url(#aG)">02 — Why You Must Validate Your Schema</text>
+  <g font-size="10">
+    <!-- Stat boxes -->
+    <rect x="70" y="462" width="178" height="74" rx="10" fill="rgba(124,58,237,0.15)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+    <text x="159" y="494" text-anchor="middle" font-size="28" font-weight="900" fill="rgba(34,197,94,0.9)" filter="url(#glow)">30%</text>
+    <text x="159" y="513" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.55)">Higher CTR with</text>
+    <text x="159" y="527" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.55)">rich results enabled</text>
+
+    <rect x="258" y="462" width="178" height="74" rx="10" fill="rgba(124,58,237,0.15)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+    <text x="347" y="494" text-anchor="middle" font-size="28" font-weight="900" fill="rgba(96,165,250,0.9)" filter="url(#glow)">63%</text>
+    <text x="347" y="513" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.55)">Of structured data</text>
+    <text x="347" y="527" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.55)">has at least one error</text>
+
+    <rect x="446" y="462" width="178" height="74" rx="10" fill="rgba(124,58,237,0.15)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+    <text x="535" y="494" text-anchor="middle" font-size="28" font-weight="900" fill="rgba(251,191,36,0.9)" filter="url(#glow)">100%</text>
+    <text x="535" y="513" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.55)">Free to validate</text>
+    <text x="535" y="527" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.55)">with ToolNest AI</text>
+
+    <rect x="634" y="462" width="178" height="74" rx="10" fill="rgba(124,58,237,0.15)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+    <text x="723" y="494" text-anchor="middle" font-size="28" font-weight="900" fill="rgba(167,139,250,0.9)" filter="url(#glow)">&lt;5s</text>
+    <text x="723" y="513" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.55)">Average validation</text>
+    <text x="723" y="527" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.55)">time per schema</text>
+
+    <text x="70" y="560" font-size="9" fill="rgba(255,255,255,0.45)">⚠ Invalid schema = Google ignores your rich results entirely — even if your content is perfect</text>
+    <text x="70" y="577" font-size="9" fill="rgba(255,255,255,0.45)">⚠ Errors in schema can lead to manual actions and penalties in Google Search Console</text>
+    <text x="70" y="594" font-size="9" fill="rgba(255,255,255,0.45)">✓ Validating before deploying costs zero — letting errors ship costs organic traffic</text>
+    <text x="70" y="611" font-size="9" fill="rgba(255,255,255,0.45)">✓ Regular re-validation catches schema broken by CMS updates, template changes or plugin conflicts</text>
+  </g>
+
+  <!-- SECTION 3: How to Use -->
+  <rect x="40" y="642" width="820" height="248" rx="16" fill="rgba(255,255,255,0.025)" stroke="rgba(167,139,250,0.18)" stroke-width="1"/>
+  <text x="70" y="678" font-size="18" font-weight="800" fill="url(#aG)">03 — How to Validate Schema in 5 Steps</text>
+  <!-- Steps -->
+  <g font-size="9.5">
+    <!-- Step 1 -->
+    <circle cx="100" cy="718" r="18" fill="url(#bG)" filter="url(#sh)"/>
+    <text x="100" y="723" text-anchor="middle" font-size="14" font-weight="900" fill="#fff">1</text>
+    <text x="130" y="712" font-size="11" font-weight="700" fill="rgba(255,255,255,0.85)">Open ToolNest AI Schema Validator</text>
+    <text x="130" y="729" fill="rgba(255,255,255,0.45)">Visit toolnestai.net/seo-tools/schema-validator — no account needed, completely free</text>
+    <!-- Step 2 -->
+    <circle cx="100" cy="766" r="18" fill="url(#bG)" filter="url(#sh)"/>
+    <text x="100" y="771" text-anchor="middle" font-size="14" font-weight="900" fill="#fff">2</text>
+    <text x="130" y="760" font-size="11" font-weight="700" fill="rgba(255,255,255,0.85)">Paste Your Schema Code</text>
+    <text x="130" y="777" fill="rgba(255,255,255,0.45)">Paste your JSON-LD, Microdata or RDFa directly into the editor. Or enter your page URL.</text>
+    <!-- Step 3 -->
+    <circle cx="100" cy="814" r="18" fill="url(#bG)" filter="url(#sh)"/>
+    <text x="100" y="819" text-anchor="middle" font-size="14" font-weight="900" fill="#fff">3</text>
+    <text x="130" y="808" font-size="11" font-weight="700" fill="rgba(255,255,255,0.85)">Click Validate Schema</text>
+    <text x="130" y="825" fill="rgba(255,255,255,0.45)">Results appear in under 5 seconds: errors, warnings, item counts and schema types detected.</text>
+    <!-- Step 4 -->
+    <circle cx="100" cy="862" r="18" fill="url(#bG)" filter="url(#sh)"/>
+    <text x="100" y="867" text-anchor="middle" font-size="14" font-weight="900" fill="#fff">4</text>
+    <text x="130" y="856" font-size="11" font-weight="700" fill="rgba(255,255,255,0.85)">Review Errors and Warnings</text>
+    <text x="130" y="873" fill="rgba(255,255,255,0.45)">Each issue links to the exact line and explains what's wrong and how to fix it.</text>
+    <!-- Step 5 -->
+    <circle cx="100" cy="910" r="18" fill="url(#bG)" filter="url(#sh)"/>
+    <text x="100" y="915" text-anchor="middle" font-size="14" font-weight="900" fill="#fff">5</text>
+    <text x="130" y="904" font-size="11" font-weight="700" fill="rgba(255,255,255,0.85)">Check Rich Results Eligibility</text>
+    <text x="130" y="921" fill="rgba(255,255,255,0.45)">See which rich results your schema qualifies for: articles, FAQs, products, breadcrumbs and more.</text>
+    <!-- Connector line -->
+    <line x1="100" y1="736" x2="100" y2="748" stroke="rgba(167,139,250,0.3)" stroke-width="1.5" stroke-dasharray="3,3"/>
+    <line x1="100" y1="784" x2="100" y2="796" stroke="rgba(167,139,250,0.3)" stroke-width="1.5" stroke-dasharray="3,3"/>
+    <line x1="100" y1="832" x2="100" y2="844" stroke="rgba(167,139,250,0.3)" stroke-width="1.5" stroke-dasharray="3,3"/>
+    <line x1="100" y1="880" x2="100" y2="892" stroke="rgba(167,139,250,0.3)" stroke-width="1.5" stroke-dasharray="3,3"/>
+  </g>
+
+  <!-- SECTION 4: Schema Types -->
+  <rect x="40" y="906" width="820" height="158" rx="16" fill="rgba(255,255,255,0.025)" stroke="rgba(167,139,250,0.18)" stroke-width="1"/>
+  <text x="70" y="940" font-size="18" font-weight="800" fill="url(#aG)">04 — Key Schema Types &amp; Rich Results</text>
+  <g font-size="9" text-anchor="middle">
+    <rect x="66" y="950" width="130" height="96" rx="10" fill="rgba(124,58,237,0.14)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+    <text x="131" y="976" font-size="22">📰</text><text x="131" y="995" font-weight="700" fill="rgba(255,255,255,0.85)">Article</text>
+    <text x="131" y="1012" fill="rgba(255,255,255,0.42)">Top Stories,</text><text x="131" y="1025" fill="rgba(255,255,255,0.42)">Article Rich Results</text>
+    <text x="131" y="1041" fill="rgba(34,197,94,0.7)">✓ High Impact</text>
+
+    <rect x="206" y="950" width="130" height="96" rx="10" fill="rgba(37,99,235,0.14)" stroke="rgba(96,165,250,0.2)" stroke-width="1"/>
+    <text x="271" y="976" font-size="22">❓</text><text x="271" y="995" font-weight="700" fill="rgba(255,255,255,0.85)">FAQPage</text>
+    <text x="271" y="1012" fill="rgba(255,255,255,0.42)">Expandable Q&amp;A</text><text x="271" y="1025" fill="rgba(255,255,255,0.42)">in search results</text>
+    <text x="271" y="1041" fill="rgba(34,197,94,0.7)">✓ High Impact</text>
+
+    <rect x="346" y="950" width="130" height="96" rx="10" fill="rgba(16,185,129,0.12)" stroke="rgba(52,211,153,0.2)" stroke-width="1"/>
+    <text x="411" y="976" font-size="22">🛍</text><text x="411" y="995" font-weight="700" fill="rgba(255,255,255,0.85)">Product</text>
+    <text x="411" y="1012" fill="rgba(255,255,255,0.42)">Star ratings, price,</text><text x="411" y="1025" fill="rgba(255,255,255,0.42)">availability badges</text>
+    <text x="411" y="1041" fill="rgba(34,197,94,0.7)">✓ High Impact</text>
+
+    <rect x="486" y="950" width="130" height="96" rx="10" fill="rgba(245,158,11,0.12)" stroke="rgba(251,191,36,0.2)" stroke-width="1"/>
+    <text x="551" y="976" font-size="22">🏢</text><text x="551" y="995" font-weight="700" fill="rgba(255,255,255,0.85)">Organization</text>
+    <text x="551" y="1012" fill="rgba(255,255,255,0.42)">Knowledge Panel,</text><text x="551" y="1025" fill="rgba(255,255,255,0.42)">Sitelinks Searchbox</text>
+    <text x="551" y="1041" fill="rgba(251,191,36,0.7)">⚡ Branding</text>
+
+    <rect x="626" y="950" width="130" height="96" rx="10" fill="rgba(236,72,153,0.1)" stroke="rgba(244,114,182,0.2)" stroke-width="1"/>
+    <text x="691" y="976" font-size="22">🍞</text><text x="691" y="995" font-weight="700" fill="rgba(255,255,255,0.85)">BreadcrumbList</text>
+    <text x="691" y="1012" fill="rgba(255,255,255,0.42)">Breadcrumb trail</text><text x="691" y="1025" fill="rgba(255,255,255,0.42)">in search snippets</text>
+    <text x="691" y="1041" fill="rgba(96,165,250,0.7)">✓ Navigation</text>
+
+    <rect x="766" y="950" width="78" height="96" rx="10" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="805" y="976" font-size="22">+</text><text x="805" y="995" font-weight="700" fill="rgba(255,255,255,0.85)">30+ More</text>
+    <text x="805" y="1012" fill="rgba(255,255,255,0.42)">Event, Review,</text><text x="805" y="1025" fill="rgba(255,255,255,0.42)">VideoObject</text>
+    <text x="805" y="1041" fill="rgba(167,139,250,0.6)">All supported</text>
+  </g>
+
+  <!-- SECTION 5: CTA -->
+  <rect x="40" y="1080" width="820" height="100" rx="16" fill="url(#bG)" filter="url(#sh)"/>
+  <text x="450" y="1118" text-anchor="middle" font-size="22" font-weight="900" fill="#fff" filter="url(#glow)">Validate Your Schema for Free</text>
+  <text x="450" y="1142" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.75)">No account · No limits · Instant results · AI-powered</text>
+  <rect x="330" y="1153" width="240" height="18" rx="6" fill="rgba(255,255,255,0.15)"/>
+  <text x="450" y="1166" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.9)">toolnestai.net/seo-tools/schema-validator</text>
+</svg>

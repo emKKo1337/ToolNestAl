@@ -1,0 +1,110 @@
+<svg viewBox="0 0 900 540" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gL" cx="20%" cy="50%" r="50%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.25"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#818cf8"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+  </defs>
+  <rect width="900" height="540" fill="url(#bg)"/>
+  <ellipse cx="180" cy="270" rx="400" ry="350" fill="url(#gL)"/>
+
+  <!-- Header -->
+  <text x="450" y="42" text-anchor="middle" font-size="22" font-weight="900" fill="url(#aG)">Common Schema Validation Errors &amp; How to Fix Them</text>
+  <text x="450" y="62" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.42)">The most frequent structured data issues — and the exact fixes you need</text>
+
+  <!-- Column headers -->
+  <rect x="28" y="78" width="258" height="26" rx="6" fill="rgba(124,58,237,0.18)" stroke="rgba(167,139,250,0.25)" stroke-width="1"/>
+  <text x="157" y="95" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(167,139,250,0.9)">Error Type</text>
+  <rect x="294" y="78" width="278" height="26" rx="6" fill="rgba(239,68,68,0.12)" stroke="rgba(239,68,68,0.3)" stroke-width="1"/>
+  <text x="433" y="95" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(239,68,68,0.9)">The Problem</text>
+  <rect x="580" y="78" width="292" height="26" rx="6" fill="rgba(34,197,94,0.1)" stroke="rgba(34,197,94,0.25)" stroke-width="1"/>
+  <text x="726" y="95" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(34,197,94,0.9)">The Fix</text>
+
+  <!-- Row 1 -->
+  <rect x="28" y="112" width="258" height="68" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="44" y="133" font-size="9" font-weight="700" fill="rgba(239,68,68,0.85)">⛔ Missing Required Property</text>
+  <text x="44" y="149" font-size="8.5" fill="rgba(255,255,255,0.45)">"name" property required for</text>
+  <text x="44" y="163" font-size="8.5" fill="rgba(255,255,255,0.45)">Organization type is missing.</text>
+  <text x="44" y="175" font-size="8" fill="rgba(167,139,250,0.6)">Severity: Error</text>
+  <rect x="294" y="112" width="278" height="68" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="310" y="133" font-size="8.5" fill="rgba(255,255,255,0.5)" font-family="monospace">{"@type": "Organization"}</text>
+  <text x="310" y="149" font-size="8.5" fill="rgba(255,255,255,0.38)">Schema.org defines mandatory fields</text>
+  <text x="310" y="163" font-size="8.5" fill="rgba(255,255,255,0.38)">for each type. Missing them causes</text>
+  <text x="310" y="177" font-size="8.5" fill="rgba(255,255,255,0.38)">Google to skip the rich result.</text>
+  <rect x="580" y="112" width="292" height="68" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(34,197,94,0.12)" stroke-width="1"/>
+  <text x="596" y="133" font-size="8.5" fill="rgba(34,197,94,0.8)" font-family="monospace">{"@type": "Organization",</text>
+  <text x="596" y="149" font-size="8.5" fill="rgba(34,197,94,0.8)" font-family="monospace">  "name": "ToolNest AI",</text>
+  <text x="596" y="163" font-size="8.5" fill="rgba(34,197,94,0.8)" font-family="monospace">  "url": "https://toolnestai.net"}</text>
+  <text x="596" y="177" font-size="8" fill="rgba(255,255,255,0.3)">Add all required fields for the type</text>
+
+  <!-- Row 2 -->
+  <rect x="28" y="188" width="258" height="68" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="44" y="209" font-size="9" font-weight="700" fill="rgba(251,191,36,0.85)">⚠ Invalid Property Value</text>
+  <text x="44" y="225" font-size="8.5" fill="rgba(255,255,255,0.45)">"datePublished" value must be</text>
+  <text x="44" y="239" font-size="8.5" fill="rgba(255,255,255,0.45)">a valid ISO 8601 date string.</text>
+  <text x="44" y="251" font-size="8" fill="rgba(251,191,36,0.6)">Severity: Warning</text>
+  <rect x="294" y="188" width="278" height="68" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="310" y="209" font-size="8.5" fill="rgba(255,255,255,0.5)" font-family="monospace">"datePublished": "July 2026"</text>
+  <text x="310" y="225" font-size="8.5" fill="rgba(255,255,255,0.38)">Properties have expected data types.</text>
+  <text x="310" y="239" font-size="8.5" fill="rgba(255,255,255,0.38)">Dates must follow ISO 8601 format</text>
+  <text x="310" y="253" font-size="8.5" fill="rgba(255,255,255,0.38)">(YYYY-MM-DD or YYYY-MM-DDTHH:MM).</text>
+  <rect x="580" y="188" width="292" height="68" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(34,197,94,0.12)" stroke-width="1"/>
+  <text x="596" y="209" font-size="8.5" fill="rgba(34,197,94,0.8)" font-family="monospace">"datePublished": "2026-07-10"</text>
+  <text x="596" y="225" font-size="8.5" fill="rgba(255,255,255,0.38)">Use strict ISO 8601 format.</text>
+  <text x="596" y="239" font-size="8.5" fill="rgba(255,255,255,0.38)">For articles, also include</text>
+  <text x="596" y="253" font-size="8.5" fill="rgba(255,255,255,0.38)">dateModified to signal freshness.</text>
+
+  <!-- Row 3 -->
+  <rect x="28" y="264" width="258" height="68" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="44" y="285" font-size="9" font-weight="700" fill="rgba(239,68,68,0.85)">⛔ Unknown @type</text>
+  <text x="44" y="301" font-size="8.5" fill="rgba(255,255,255,0.45)">"@type": "BlogArticle" is not</text>
+  <text x="44" y="315" font-size="8.5" fill="rgba(255,255,255,0.45)">a recognized Schema.org type.</text>
+  <text x="44" y="327" font-size="8" fill="rgba(239,68,68,0.6)">Severity: Error</text>
+  <rect x="294" y="264" width="278" height="68" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="310" y="285" font-size="8.5" fill="rgba(255,255,255,0.5)" font-family="monospace">"@type": "BlogArticle"</text>
+  <text x="310" y="301" font-size="8.5" fill="rgba(255,255,255,0.38)">Schema.org has defined types only.</text>
+  <text x="310" y="315" font-size="8.5" fill="rgba(255,255,255,0.38)">Custom or mistyped types are not</text>
+  <text x="310" y="329" font-size="8.5" fill="rgba(255,255,255,0.38)">understood by Google's parser.</text>
+  <rect x="580" y="264" width="292" height="68" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(34,197,94,0.12)" stroke-width="1"/>
+  <text x="596" y="285" font-size="8.5" fill="rgba(34,197,94,0.8)" font-family="monospace">"@type": "Article"</text>
+  <text x="596" y="301" font-size="8.5" fill="rgba(255,255,255,0.38)">Use valid types: Article, BlogPosting,</text>
+  <text x="596" y="315" font-size="8.5" fill="rgba(255,255,255,0.38)">NewsArticle, Product, FAQPage,</text>
+  <text x="596" y="329" font-size="8.5" fill="rgba(255,255,255,0.38)">Organization, BreadcrumbList, etc.</text>
+
+  <!-- Row 4 -->
+  <rect x="28" y="340" width="258" height="68" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="44" y="361" font-size="9" font-weight="700" fill="rgba(251,191,36,0.85)">⚠ Misleading / Spammy Content</text>
+  <text x="44" y="377" font-size="8.5" fill="rgba(255,255,255,0.45)">Schema content does not match</text>
+  <text x="44" y="391" font-size="8.5" fill="rgba(255,255,255,0.45)">visible page content.</text>
+  <text x="44" y="403" font-size="8" fill="rgba(251,191,36,0.6)">Severity: Policy Violation</text>
+  <rect x="294" y="340" width="278" height="68" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="310" y="361" font-size="8.5" fill="rgba(255,255,255,0.38)">Adding a 5-star rating to a page</text>
+  <text x="310" y="375" font-size="8.5" fill="rgba(255,255,255,0.38)">with no visible reviews violates</text>
+  <text x="310" y="389" font-size="8.5" fill="rgba(255,255,255,0.38)">Google's structured data policies.</text>
+  <text x="310" y="403" font-size="8.5" fill="rgba(255,255,255,0.38)">Can result in manual actions.</text>
+  <rect x="580" y="340" width="292" height="68" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(34,197,94,0.12)" stroke-width="1"/>
+  <text x="596" y="361" font-size="8.5" fill="rgba(255,255,255,0.38)">Schema must reflect actual content</text>
+  <text x="596" y="375" font-size="8.5" fill="rgba(255,255,255,0.38)">visible to users. Only add reviews,</text>
+  <text x="596" y="389" font-size="8.5" fill="rgba(255,255,255,0.38)">ratings or dates that genuinely</text>
+  <text x="596" y="403" font-size="8.5" fill="rgba(255,255,255,0.38)">appear on the page.</text>
+
+  <!-- Row 5 -->
+  <rect x="28" y="416" width="258" height="68" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="44" y="437" font-size="9" font-weight="700" fill="rgba(239,68,68,0.85)">⛔ Invalid JSON Syntax</text>
+  <text x="44" y="453" font-size="8.5" fill="rgba(255,255,255,0.45)">Unexpected token at position 47.</text>
+  <text x="44" y="469" font-size="8.5" fill="rgba(255,255,255,0.45)">JSON-LD could not be parsed.</text>
+  <text x="44" y="481" font-size="8" fill="rgba(239,68,68,0.6)">Severity: Fatal Error</text>
+  <rect x="294" y="416" width="278" height="68" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="310" y="437" font-size="8.5" fill="rgba(255,255,255,0.5)" font-family="monospace">"name": "ToolNest AI",, ← typo</text>
+  <text x="310" y="453" font-size="8.5" fill="rgba(255,255,255,0.38)">Trailing commas, missing quotes,</text>
+  <text x="310" y="467" font-size="8.5" fill="rgba(255,255,255,0.38)">unclosed brackets or special</text>
+  <text x="310" y="481" font-size="8.5" fill="rgba(255,255,255,0.38)">characters break JSON parsing.</text>
+  <rect x="580" y="416" width="292" height="68" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(34,197,94,0.12)" stroke-width="1"/>
+  <text x="596" y="437" font-size="8.5" fill="rgba(34,197,94,0.8)" font-family="monospace">"name": "ToolNest AI",  ← fixed</text>
+  <text x="596" y="453" font-size="8.5" fill="rgba(255,255,255,0.38)">Paste your JSON-LD into the</text>
+  <text x="596" y="467" font-size="8.5" fill="rgba(255,255,255,0.38)">ToolNest AI Schema Validator —</text>
+  <text x="596" y="481" font-size="8.5" fill="rgba(255,255,255,0.38)">it pinpoints the exact error line.</text>
+
+  <!-- Footer -->
+  <text x="450" y="528" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.28)">toolnestai.net/seo-tools/schema-validator</text>
+</svg>

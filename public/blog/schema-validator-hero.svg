@@ -1,0 +1,235 @@
+<svg viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gL" cx="10%" cy="45%" r="55%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.36"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gR" cx="88%" cy="55%" r="50%"><stop offset="0%" stop-color="#2563eb" stop-opacity="0.2"/><stop offset="100%" stop-color="#2563eb" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gRob" cx="90%" cy="82%" r="28%"><stop offset="0%" stop-color="#7c3aed" stop-opacity="0.45"/><stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#818cf8"/></linearGradient>
+    <linearGradient id="aGh" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="lapG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1a1040"/><stop offset="100%" stop-color="#0d0824"/></linearGradient>
+    <linearGradient id="robG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4338ca"/></linearGradient>
+    <linearGradient id="robFG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1e1060"/><stop offset="100%" stop-color="#110a3a"/></linearGradient>
+    <linearGradient id="codeG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#0d0824"/><stop offset="100%" stop-color="#080516"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="6" stdDeviation="16" flood-color="#5b21b6" flood-opacity="0.35"/></filter>
+    <filter id="shSm"><feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#5b21b6" flood-opacity="0.3"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="neon"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="robGlow"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <ellipse cx="130" cy="337" rx="480" ry="420" fill="url(#gL)"/>
+  <ellipse cx="1060" cy="337" rx="460" ry="400" fill="url(#gR)"/>
+  <ellipse cx="1080" cy="560" rx="270" ry="200" fill="url(#gRob)"/>
+
+  <!-- Top pills -->
+  <g text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.38)">
+    <rect x="398" y="14" width="108" height="52" rx="10" fill="rgba(167,139,250,0.07)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+    <text x="452" y="36" font-size="16">✓</text><text x="452" y="56">Validate Schema</text>
+    <rect x="514" y="14" width="108" height="52" rx="10" fill="rgba(167,139,250,0.07)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+    <text x="568" y="36" font-size="16">&lt;/&gt;</text><text x="568" y="56">JSON-LD Support</text>
+    <rect x="630" y="14" width="108" height="52" rx="10" fill="rgba(167,139,250,0.07)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+    <text x="684" y="36" font-size="16">★</text><text x="684" y="56">Rich Results Check</text>
+    <rect x="746" y="14" width="108" height="52" rx="10" fill="rgba(167,139,250,0.07)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+    <text x="800" y="36" font-size="16">⚠</text><text x="800" y="56">Error Detection</text>
+    <rect x="862" y="14" width="108" height="52" rx="10" fill="rgba(167,139,250,0.07)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+    <text x="916" y="36" font-size="16">🔍</text><text x="916" y="56">SEO Friendly</text>
+    <rect x="978" y="14" width="118" height="52" rx="10" fill="rgba(167,139,250,0.07)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+    <text x="1037" y="36" font-size="16">✦</text><text x="1037" y="56">AI Powered</text>
+  </g>
+
+  <!-- Logo -->
+  <polygon points="28,92 38,77 52,77 62,92 52,107 38,107" fill="none" stroke="url(#aGh)" stroke-width="2.5"/>
+  <polygon points="32,92 40,81 50,81 58,92 50,103 40,103" fill="rgba(124,58,237,0.25)"/>
+  <text x="68" y="89" font-size="14" font-weight="700" fill="rgba(255,255,255,0.9)">ToolNest AI</text>
+  <text x="68" y="105" font-size="9" fill="rgba(255,255,255,0.38)">All-in-One AI &amp; Online Tools</text>
+
+  <!-- Headline -->
+  <text x="28" y="178" font-size="55" font-weight="900" fill="url(#aG)" filter="url(#glow)" letter-spacing="-1.5">Schema</text>
+  <text x="28" y="242" font-size="55" font-weight="900" fill="url(#aG)" filter="url(#glow)" letter-spacing="-1.5">Validator</text>
+  <text x="28" y="276" font-size="13" font-weight="700" fill="rgba(255,255,255,0.85)">Validate Schema Markup &amp; JSON-LD for Better SEO</text>
+  <text x="28" y="296" font-size="10" fill="rgba(255,255,255,0.42)">Ensure your structured data is correct, complete</text>
+  <text x="28" y="310" font-size="10" fill="rgba(255,255,255,0.42)">and optimized for search engines. Get more rich</text>
+  <text x="28" y="324" font-size="10" fill="rgba(255,255,255,0.42)">results and higher click-through rates.</text>
+
+  <!-- Bullets -->
+  <g font-size="10">
+    <rect x="28" y="340" width="20" height="20" rx="5" fill="rgba(124,58,237,0.22)" stroke="rgba(167,139,250,0.3)" stroke-width="1"/>
+    <text x="38" y="354" text-anchor="middle" font-size="11">✓</text>
+    <text x="54" y="352" font-weight="700" fill="rgba(255,255,255,0.85)">Accurate Validation</text>
+    <text x="54" y="365" font-size="9" fill="rgba(255,255,255,0.38)">Errors, warnings and best practice checks.</text>
+    <rect x="28" y="376" width="20" height="20" rx="5" fill="rgba(124,58,237,0.22)" stroke="rgba(167,139,250,0.3)" stroke-width="1"/>
+    <text x="38" y="390" text-anchor="middle" font-size="11">{}</text>
+    <text x="54" y="388" font-weight="700" fill="rgba(255,255,255,0.85)">JSON-LD, Microdata &amp; RDFa</text>
+    <text x="54" y="401" font-size="9" fill="rgba(255,255,255,0.38)">All major structured data formats in one place.</text>
+    <rect x="28" y="412" width="20" height="20" rx="5" fill="rgba(124,58,237,0.22)" stroke="rgba(167,139,250,0.3)" stroke-width="1"/>
+    <text x="38" y="426" text-anchor="middle" font-size="11">★</text>
+    <text x="54" y="424" font-weight="700" fill="rgba(255,255,255,0.85)">Rich Results Preview</text>
+    <text x="54" y="437" font-size="9" fill="rgba(255,255,255,0.38)">See which rich results your schema qualifies for.</text>
+    <rect x="28" y="448" width="20" height="20" rx="5" fill="rgba(37,99,235,0.15)" stroke="rgba(96,165,250,0.25)" stroke-width="1"/>
+    <text x="38" y="462" text-anchor="middle" font-size="11">⚡</text>
+    <text x="54" y="460" font-weight="700" fill="rgba(255,255,255,0.85)">Instant &amp; AI-Powered</text>
+    <text x="54" y="473" font-size="9" fill="rgba(255,255,255,0.38)">Fast, reliable results with AI technology.</text>
+  </g>
+
+  <!-- Laptop frame -->
+  <rect x="388" y="78" width="764" height="520" rx="18" fill="url(#lapG)" stroke="rgba(124,58,237,0.3)" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="400" y="90" width="740" height="496" rx="12" fill="#060414"/>
+  <rect x="346" y="596" width="868" height="16" rx="5" fill="rgba(22,12,52,0.7)" stroke="rgba(124,58,237,0.2)" stroke-width="1"/>
+  <ellipse cx="780" cy="614" rx="370" ry="11" fill="rgba(124,58,237,0.22)" filter="url(#neon)"/>
+
+  <!-- Chrome bar -->
+  <rect x="400" y="90" width="740" height="34" rx="12" fill="rgba(124,58,237,0.14)"/>
+  <rect x="400" y="114" width="740" height="10" fill="rgba(124,58,237,0.14)"/>
+  <circle cx="418" cy="107" r="5" fill="rgba(255,80,80,0.45)"/>
+  <circle cx="434" cy="107" r="5" fill="rgba(255,193,7,0.45)"/>
+  <circle cx="450" cy="107" r="5" fill="rgba(34,197,94,0.45)"/>
+  <text x="565" y="111" font-size="12" font-weight="700" fill="rgba(255,255,255,0.6)">✓ Schema Validator</text>
+  <rect x="1056" y="95" width="76" height="18" rx="5" fill="rgba(124,58,237,0.22)" stroke="rgba(167,139,250,0.3)" stroke-width="1"/>
+  <text x="1094" y="107" text-anchor="middle" font-size="7" fill="#a78bfa">Powered by Advanced AI ✦</text>
+
+  <!-- Code editor -->
+  <text x="414" y="146" font-size="9" font-weight="700" fill="rgba(255,255,255,0.6)">Schema Markup</text>
+  <text x="414" y="160" font-size="7.5" fill="rgba(255,255,255,0.32)">Paste your JSON-LD, Microdata or RDFa code</text>
+  <rect x="414" y="164" width="298" height="336" rx="8" fill="url(#codeG)" stroke="rgba(124,58,237,0.2)" stroke-width="1"/>
+  <g font-size="7.5" fill="rgba(255,255,255,0.2)" font-family="monospace">
+    <text x="422" y="181">1</text><text x="422" y="195">2</text><text x="422" y="209">3</text>
+    <text x="422" y="223">4</text><text x="422" y="237">5</text><text x="422" y="251">6</text>
+    <text x="422" y="265">7</text><text x="422" y="279">8</text><text x="422" y="293">9</text>
+    <text x="419" y="307">10</text><text x="419" y="321">11</text><text x="419" y="335">12</text>
+    <text x="419" y="349">13</text><text x="419" y="363">14</text><text x="419" y="377">15</text>
+    <text x="419" y="391">16</text><text x="419" y="405">17</text><text x="419" y="419">18</text>
+    <text x="419" y="433">19</text><text x="419" y="447">20</text>
+  </g>
+  <g font-size="7.5" font-family="monospace">
+    <text x="436" y="181" fill="rgba(255,255,255,0.7)">{</text>
+    <text x="436" y="195" fill="rgba(96,165,250,0.8)">"@context"</text><text x="497" y="195" fill="rgba(255,255,255,0.5)">: </text><text x="508" y="195" fill="rgba(167,239,150,0.8)">"https://schema.org"</text><text x="603" y="195" fill="rgba(255,255,255,0.5)">,</text>
+    <text x="436" y="209" fill="rgba(96,165,250,0.8)">"@type"</text><text x="469" y="209" fill="rgba(255,255,255,0.5)">: </text><text x="479" y="209" fill="rgba(167,239,150,0.8)">"Article"</text><text x="517" y="209" fill="rgba(255,255,255,0.5)">,</text>
+    <text x="436" y="223" fill="rgba(96,165,250,0.8)">"headline"</text><text x="484" y="223" fill="rgba(255,255,255,0.5)">: </text><text x="494" y="223" fill="rgba(167,239,150,0.8)">"How to Improve SEO</text>
+    <text x="449" y="237" fill="rgba(167,239,150,0.8)">with Structured Data"</text><text x="557" y="237" fill="rgba(255,255,255,0.5)">,</text>
+    <text x="436" y="251" fill="rgba(96,165,250,0.8)">"image"</text><text x="469" y="251" fill="rgba(255,255,255,0.5)">: </text><text x="479" y="251" fill="rgba(167,239,150,0.8)">"https://toolnestai.net</text>
+    <text x="449" y="265" fill="rgba(167,239,150,0.8)">/images/schema.jpg"</text><text x="549" y="265" fill="rgba(255,255,255,0.5)">,</text>
+    <text x="436" y="279" fill="rgba(96,165,250,0.8)">"author"</text><text x="470" y="279" fill="rgba(255,255,255,0.5)">: {</text>
+    <text x="449" y="293" fill="rgba(96,165,250,0.8)">"@type"</text><text x="480" y="293" fill="rgba(255,255,255,0.5)">: </text><text x="490" y="293" fill="rgba(167,239,150,0.8)">"Organization"</text><text x="556" y="293" fill="rgba(255,255,255,0.5)">,</text>
+    <text x="449" y="307" fill="rgba(96,165,250,0.8)">"name"</text><text x="476" y="307" fill="rgba(255,255,255,0.5)">: </text><text x="485" y="307" fill="rgba(167,239,150,0.8)">"ToolNest AI"</text>
+    <text x="436" y="321" fill="rgba(255,255,255,0.5)">},</text>
+    <text x="436" y="335" fill="rgba(96,165,250,0.8)">"publisher"</text><text x="487" y="335" fill="rgba(255,255,255,0.5)">: {</text>
+    <text x="449" y="349" fill="rgba(96,165,250,0.8)">"@type"</text><text x="480" y="349" fill="rgba(255,255,255,0.5)">: </text><text x="490" y="349" fill="rgba(167,239,150,0.8)">"Organization"</text><text x="556" y="349" fill="rgba(255,255,255,0.5)">,</text>
+    <text x="449" y="363" fill="rgba(96,165,250,0.8)">"name"</text><text x="476" y="363" fill="rgba(255,255,255,0.5)">: </text><text x="485" y="363" fill="rgba(167,239,150,0.8)">"ToolNest AI"</text><text x="536" y="363" fill="rgba(255,255,255,0.5)">,</text>
+    <text x="449" y="377" fill="rgba(96,165,250,0.8)">"logo"</text><text x="473" y="377" fill="rgba(255,255,255,0.5)">: {</text>
+    <text x="462" y="391" fill="rgba(96,165,250,0.8)">"@type"</text><text x="493" y="391" fill="rgba(255,255,255,0.5)">: </text><text x="502" y="391" fill="rgba(167,239,150,0.8)">"ImageObject"</text>
+    <text x="462" y="405" fill="rgba(96,165,250,0.8)">"url"</text><text x="479" y="405" fill="rgba(255,255,255,0.5)">: </text><text x="488" y="405" fill="rgba(167,239,150,0.8)">"https://toolnestai</text>
+    <text x="475" y="419" fill="rgba(167,239,150,0.8)">.net/logo"</text>
+    <text x="449" y="433" fill="rgba(255,255,255,0.5)">},</text>
+    <text x="436" y="447" fill="rgba(96,165,250,0.8)">"datePublished"</text><text x="516" y="447" fill="rgba(255,255,255,0.5)">: </text><text x="525" y="447" fill="rgba(167,239,150,0.8)">"2026-05-20"</text>
+  </g>
+  <!-- Buttons -->
+  <rect x="414" y="508" width="58" height="24" rx="6" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="443" y="523" text-anchor="middle" font-size="8.5" fill="rgba(255,255,255,0.5)">Clear</text>
+  <rect x="480" y="508" width="126" height="24" rx="6" fill="url(#bG)" filter="url(#shSm)"/>
+  <text x="543" y="523" text-anchor="middle" font-size="8.5" font-weight="700" fill="#fff">▶ Validate Schema</text>
+  <rect x="614" y="508" width="76" height="24" rx="6" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="652" y="523" text-anchor="middle" font-size="8.5" fill="rgba(255,255,255,0.45)">Example</text>
+
+  <!-- Divider -->
+  <line x1="724" y1="132" x2="724" y2="572" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+
+  <!-- Validation Results -->
+  <text x="736" y="146" font-size="9" font-weight="700" fill="rgba(255,255,255,0.6)">Validation Results</text>
+  <rect x="1096" y="136" width="36" height="18" rx="5" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+  <text x="1114" y="148" text-anchor="middle" font-size="7.5" fill="rgba(255,255,255,0.45)">↓ Export</text>
+
+  <!-- Valid Schema -->
+  <rect x="736" y="154" width="352" height="56" rx="10" fill="rgba(34,197,94,0.08)" stroke="rgba(34,197,94,0.25)" stroke-width="1"/>
+  <circle cx="756" cy="182" r="14" fill="rgba(34,197,94,0.2)" stroke="rgba(34,197,94,0.5)" stroke-width="1.5"/>
+  <text x="756" y="187" text-anchor="middle" font-size="14" fill="rgba(34,197,94,0.9)">✓</text>
+  <text x="778" y="173" font-size="12" font-weight="700" fill="rgba(255,255,255,0.88)">Valid Schema</text>
+  <text x="778" y="188" font-size="8.5" fill="rgba(255,255,255,0.42)">No critical errors found</text>
+  <text x="1074" y="172" text-anchor="middle" font-size="22" font-weight="900" fill="rgba(34,197,94,0.9)">0</text>
+  <text x="1074" y="187" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.38)">Errors</text>
+
+  <!-- Stats -->
+  <rect x="736" y="218" width="80" height="58" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <text x="776" y="245" text-anchor="middle" font-size="22" font-weight="900" fill="rgba(34,197,94,0.9)">0</text>
+  <text x="776" y="261" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.38)">Errors</text>
+  <rect x="824" y="218" width="80" height="58" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <text x="864" y="245" text-anchor="middle" font-size="22" font-weight="900" fill="rgba(251,191,36,0.9)">2</text>
+  <text x="864" y="261" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.38)">Warnings</text>
+  <rect x="912" y="218" width="88" height="58" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <text x="956" y="245" text-anchor="middle" font-size="22" font-weight="900" fill="rgba(167,139,250,0.9)">17</text>
+  <text x="956" y="261" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.38)">Items Detected</text>
+  <rect x="1008" y="218" width="80" height="58" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <text x="1048" y="243" text-anchor="middle" font-size="19" font-weight="900" fill="rgba(34,197,94,0.9)">100%</text>
+  <text x="1048" y="261" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.38)">Valid</text>
+
+  <!-- Schema Types -->
+  <text x="736" y="298" font-size="9" font-weight="700" fill="rgba(255,255,255,0.6)">Detected Schema Types</text>
+  <g font-size="8.5" fill="rgba(255,255,255,0.55)">
+    <text x="736" y="316">✓ Article</text>
+    <text x="736" y="332">✓ Organization</text>
+    <text x="736" y="348">✓ ImageObject</text>
+    <text x="736" y="364">✓ WebSite</text>
+  </g>
+
+  <!-- Rich Results -->
+  <text x="892" y="298" font-size="9" font-weight="700" fill="rgba(255,255,255,0.6)">Rich Results Preview</text>
+  <g font-size="8.5">
+    <rect x="892" y="304" width="192" height="22" rx="4" fill="rgba(255,255,255,0.02)"/>
+    <text x="900" y="319" fill="rgba(255,255,255,0.5)">📰 Article</text>
+    <text x="1068" y="319" fill="rgba(34,197,94,0.85)">Eligible</text>
+    <rect x="892" y="328" width="192" height="22" rx="4" fill="rgba(255,255,255,0.015)"/>
+    <text x="900" y="343" fill="rgba(255,255,255,0.5)">🍞 Breadcrumbs</text>
+    <text x="1068" y="343" fill="rgba(34,197,94,0.85)">Eligible</text>
+    <rect x="892" y="352" width="192" height="22" rx="4" fill="rgba(255,255,255,0.02)"/>
+    <text x="900" y="367" fill="rgba(255,255,255,0.5)">❓ FAQ</text>
+    <text x="1068" y="367" fill="rgba(34,197,94,0.85)">Eligible</text>
+    <rect x="892" y="376" width="192" height="22" rx="4" fill="rgba(255,255,255,0.015)"/>
+    <text x="900" y="391" fill="rgba(255,255,255,0.5)">🔍 Sitelinks Searchbox</text>
+    <text x="1068" y="391" fill="rgba(34,197,94,0.85)">Eligible</text>
+  </g>
+  <text x="736" y="420" font-size="8.5" fill="rgba(167,139,250,0.6)">👁 View Full Results</text>
+
+  <!-- Robot -->
+  <ellipse cx="1140" cy="614" rx="70" ry="13" fill="rgba(124,58,237,0.5)" filter="url(#neon)"/>
+  <ellipse cx="1140" cy="606" rx="54" ry="10" fill="rgba(124,58,237,0.28)" stroke="rgba(167,139,250,0.28)" stroke-width="1"/>
+  <rect x="1106" y="494" width="68" height="100" rx="22" fill="url(#robG)" filter="url(#robGlow)"/>
+  <rect x="1114" y="506" width="52" height="38" rx="10" fill="url(#robFG)" stroke="rgba(167,139,250,0.35)" stroke-width="1.5"/>
+  <text x="1140" y="519" text-anchor="middle" font-size="8" fill="rgba(167,139,250,0.55)">A I</text>
+  <text x="1140" y="539" text-anchor="middle" font-size="18" font-weight="900" fill="url(#aGh)" filter="url(#glow)">AI</text>
+  <rect x="1088" y="502" width="18" height="54" rx="9" fill="url(#robG)"/>
+  <rect x="1174" y="502" width="18" height="54" rx="9" fill="url(#robG)"/>
+  <circle cx="1085" cy="564" r="9" fill="rgba(96,165,250,0.45)" filter="url(#neon)"/>
+  <circle cx="1193" cy="564" r="9" fill="rgba(167,139,250,0.45)" filter="url(#neon)"/>
+  <circle cx="1140" cy="562" r="6" fill="rgba(96,165,250,0.7)" filter="url(#neon)"/>
+  <circle cx="1140" cy="562" r="3" fill="#60a5fa"/>
+  <rect x="1132" y="476" width="16" height="20" rx="6" fill="url(#robG)"/>
+  <rect x="1096" y="402" width="88" height="76" rx="24" fill="url(#robG)" filter="url(#robGlow)"/>
+  <rect x="1104" y="412" width="72" height="56" rx="14" fill="url(#robFG)" stroke="rgba(167,139,250,0.45)" stroke-width="1.5"/>
+  <circle cx="1124" cy="438" r="10" fill="rgba(124,58,237,0.45)" stroke="rgba(167,139,250,0.55)" stroke-width="1.5"/>
+  <circle cx="1156" cy="438" r="10" fill="rgba(124,58,237,0.45)" stroke="rgba(167,139,250,0.55)" stroke-width="1.5"/>
+  <circle cx="1124" cy="437" r="5.5" fill="url(#aGh)" filter="url(#glow)"/>
+  <circle cx="1156" cy="437" r="5.5" fill="url(#aGh)" filter="url(#glow)"/>
+  <circle cx="1125" cy="436" r="2.5" fill="#fff"/>
+  <circle cx="1157" cy="436" r="2.5" fill="#fff"/>
+  <path d="M 1118 456 Q 1140 468 1162 456" stroke="url(#aGh)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <line x1="1140" y1="402" x2="1140" y2="380" stroke="rgba(167,139,250,0.55)" stroke-width="2.5"/>
+  <circle cx="1140" cy="374" r="7" fill="url(#bG)" filter="url(#neon)"/>
+  <circle cx="1140" cy="374" r="3.5" fill="rgba(167,139,250,0.9)"/>
+  <circle cx="1094" cy="438" r="9" fill="url(#robG)" stroke="rgba(167,139,250,0.3)" stroke-width="1"/>
+  <circle cx="1186" cy="438" r="9" fill="url(#robG)" stroke="rgba(167,139,250,0.3)" stroke-width="1"/>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="638" width="1200" height="37" fill="rgba(124,58,237,0.06)"/>
+  <line x1="0" y1="638" x2="1200" y2="638" stroke="rgba(167,139,250,0.1)" stroke-width="1"/>
+  <g text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.32)">
+    <text x="100" y="653">🔍 SEO Analyzer</text><text x="100" y="665" font-size="7">Analyze your website's SEO</text>
+    <line x1="200" y1="640" x2="200" y2="670" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    <text x="340" y="653">🏷 Meta Tag Generator</text><text x="340" y="665" font-size="7">Optimized titles &amp; descriptions</text>
+    <line x1="480" y1="640" x2="480" y2="670" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    <text x="600" y="653">🗺 Sitemap Generator</text><text x="600" y="665" font-size="7">Create XML sitemaps quickly</text>
+    <line x1="720" y1="640" x2="720" y2="670" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    <text x="860" y="653">🤖 Robots.txt Generator</text><text x="860" y="665" font-size="7">Robots.txt for better indexing</text>
+    <line x1="1000" y1="640" x2="1000" y2="670" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    <text x="1100" y="653">📤 Open Graph Generator</text><text x="1100" y="665" font-size="7">Perfect OG tags for social</text>
+  </g>
+</svg>

@@ -1,0 +1,105 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gL" cx="15%" cy="50%" r="55%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.4"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gR" cx="85%" cy="50%" r="50%"><stop offset="0%" stop-color="#2563eb" stop-opacity="0.22"/><stop offset="100%" stop-color="#2563eb" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="6" stdDeviation="18" flood-color="#5b21b6" flood-opacity="0.5"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <ellipse cx="200" cy="315" rx="500" ry="420" fill="url(#gL)"/>
+  <ellipse cx="1000" cy="315" rx="460" ry="380" fill="url(#gR)"/>
+
+  <!-- Logo -->
+  <polygon points="60,58 74,38 92,38 106,58 92,78 74,78" fill="none" stroke="url(#aG)" stroke-width="2.5"/>
+  <polygon points="65,58 75,44 91,44 101,58 91,72 75,72" fill="rgba(124,58,237,0.25)"/>
+  <text x="116" y="54" font-size="16" font-weight="700" fill="rgba(255,255,255,0.9)">ToolNest AI</text>
+  <text x="116" y="72" font-size="9" fill="rgba(255,255,255,0.38)">Free Online Tools · SEO · AI</text>
+
+  <!-- Badge -->
+  <rect x="60" y="110" width="130" height="26" rx="13" fill="rgba(124,58,237,0.22)" stroke="rgba(167,139,250,0.35)" stroke-width="1"/>
+  <text x="125" y="127" text-anchor="middle" font-size="9.5" font-weight="700" fill="rgba(167,139,250,0.9)">✦ SEO TOOLS · 2026</text>
+
+  <!-- Headline -->
+  <text x="60" y="210" font-size="68" font-weight="900" fill="url(#aG)" filter="url(#glow)" letter-spacing="-2">Schema</text>
+  <text x="60" y="286" font-size="68" font-weight="900" fill="url(#aG)" filter="url(#glow)" letter-spacing="-2">Validator</text>
+  <text x="60" y="334" font-size="18" fill="rgba(255,255,255,0.7)" font-weight="600">How to Validate Schema Markup &amp; JSON-LD</text>
+  <text x="60" y="358" font-size="18" fill="rgba(255,255,255,0.7)" font-weight="600">for Better SEO — Free Tool Inside</text>
+
+  <!-- Pills -->
+  <rect x="60" y="390" width="110" height="26" rx="13" fill="rgba(34,197,94,0.12)" stroke="rgba(34,197,94,0.3)" stroke-width="1"/>
+  <text x="115" y="407" text-anchor="middle" font-size="9" fill="rgba(34,197,94,0.85)">✓ Zero Errors</text>
+  <rect x="180" y="390" width="128" height="26" rx="13" fill="rgba(167,139,250,0.1)" stroke="rgba(167,139,250,0.25)" stroke-width="1"/>
+  <text x="244" y="407" text-anchor="middle" font-size="9" fill="rgba(167,139,250,0.85)">{} JSON-LD Support</text>
+  <rect x="318" y="390" width="128" height="26" rx="13" fill="rgba(96,165,250,0.1)" stroke="rgba(96,165,250,0.25)" stroke-width="1"/>
+  <text x="382" y="407" text-anchor="middle" font-size="9" fill="rgba(96,165,250,0.85)">★ Rich Results Check</text>
+
+  <!-- CTA -->
+  <rect x="60" y="440" width="210" height="44" rx="12" fill="url(#bG)" filter="url(#sh)"/>
+  <text x="165" y="467" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">Validate for Free →</text>
+
+  <!-- Right panel -->
+  <rect x="640" y="60" width="520" height="508" rx="18" fill="rgba(13,8,36,0.9)" stroke="rgba(124,58,237,0.3)" stroke-width="1.5" filter="url(#sh)"/>
+  <!-- Chrome -->
+  <rect x="640" y="60" width="520" height="34" rx="18" fill="rgba(124,58,237,0.16)"/>
+  <rect x="640" y="80" width="520" height="14" fill="rgba(124,58,237,0.16)"/>
+  <circle cx="660" cy="77" r="5" fill="rgba(255,80,80,0.4)"/>
+  <circle cx="678" cy="77" r="5" fill="rgba(255,193,7,0.4)"/>
+  <circle cx="696" cy="77" r="5" fill="rgba(34,197,94,0.4)"/>
+  <text x="900" y="81" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(255,255,255,0.5)">✓ Schema Validator — ToolNest AI</text>
+
+  <!-- Valid badge -->
+  <rect x="660" y="104" width="480" height="54" rx="10" fill="rgba(34,197,94,0.08)" stroke="rgba(34,197,94,0.25)" stroke-width="1"/>
+  <circle cx="684" cy="131" r="14" fill="rgba(34,197,94,0.2)" stroke="rgba(34,197,94,0.5)" stroke-width="1.5"/>
+  <text x="684" y="136" text-anchor="middle" font-size="14" fill="rgba(34,197,94,0.95)">✓</text>
+  <text x="706" y="124" font-size="14" font-weight="700" fill="rgba(255,255,255,0.9)">Valid Schema — 0 Errors Found</text>
+  <text x="706" y="142" font-size="9.5" fill="rgba(255,255,255,0.42)">Your structured data is correct and eligible for rich results</text>
+
+  <!-- Stats -->
+  <g text-anchor="middle">
+    <rect x="660" y="168" width="110" height="60" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="715" y="198" font-size="26" font-weight="900" fill="rgba(34,197,94,0.9)">0</text>
+    <text x="715" y="217" font-size="9" fill="rgba(255,255,255,0.38)">Errors</text>
+    <rect x="780" y="168" width="110" height="60" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="835" y="198" font-size="26" font-weight="900" fill="rgba(251,191,36,0.9)">2</text>
+    <text x="835" y="217" font-size="9" fill="rgba(255,255,255,0.38)">Warnings</text>
+    <rect x="900" y="168" width="110" height="60" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="955" y="198" font-size="26" font-weight="900" fill="rgba(167,139,250,0.9)">17</text>
+    <text x="955" y="217" font-size="9" fill="rgba(255,255,255,0.38)">Items</text>
+    <rect x="1020" y="168" width="120" height="60" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="1080" y="195" font-size="22" font-weight="900" fill="rgba(34,197,94,0.9)">100%</text>
+    <text x="1080" y="217" font-size="9" fill="rgba(255,255,255,0.38)">Valid</text>
+  </g>
+
+  <!-- Schema Types -->
+  <text x="670" y="254" font-size="10" font-weight="700" fill="rgba(255,255,255,0.55)">Detected Schema Types</text>
+  <g font-size="9.5" fill="rgba(34,197,94,0.75)">
+    <text x="670" y="272">✓ Article</text><text x="670" y="288">✓ Organization</text>
+    <text x="790" y="272">✓ BreadcrumbList</text><text x="790" y="288">✓ FAQPage</text>
+    <text x="930" y="272">✓ ImageObject</text><text x="930" y="288">✓ WebSite</text>
+  </g>
+
+  <!-- Rich Results -->
+  <text x="670" y="316" font-size="10" font-weight="700" fill="rgba(255,255,255,0.55)">Rich Results Preview</text>
+  <g font-size="9">
+    <rect x="670" y="322" width="460" height="22" rx="4" fill="rgba(255,255,255,0.02)"/>
+    <text x="678" y="337" fill="rgba(255,255,255,0.5)">📰 Article Rich Result</text><text x="1098" y="337" text-anchor="end" fill="rgba(34,197,94,0.85)">Eligible</text>
+    <rect x="670" y="346" width="460" height="22" rx="4" fill="rgba(255,255,255,0.015)"/>
+    <text x="678" y="361" fill="rgba(255,255,255,0.5)">❓ FAQ Rich Result</text><text x="1098" y="361" text-anchor="end" fill="rgba(34,197,94,0.85)">Eligible</text>
+    <rect x="670" y="370" width="460" height="22" rx="4" fill="rgba(255,255,255,0.02)"/>
+    <text x="678" y="385" fill="rgba(255,255,255,0.5)">🍞 Breadcrumb Rich Result</text><text x="1098" y="385" text-anchor="end" fill="rgba(34,197,94,0.85)">Eligible</text>
+    <rect x="670" y="394" width="460" height="22" rx="4" fill="rgba(255,255,255,0.015)"/>
+    <text x="678" y="409" fill="rgba(255,255,255,0.5)">🔍 Sitelinks Searchbox</text><text x="1098" y="409" text-anchor="end" fill="rgba(34,197,94,0.85)">Eligible</text>
+  </g>
+
+  <!-- Export -->
+  <rect x="1028" y="440" width="112" height="28" rx="8" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="1084" y="458" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.5)">↓ Export Results</text>
+
+  <!-- Bottom -->
+  <line x1="0" y1="590" x2="1200" y2="590" stroke="rgba(167,139,250,0.1)" stroke-width="1"/>
+  <text x="60" y="614" font-size="10" fill="rgba(255,255,255,0.3)">toolnestai.net/seo-tools/schema-validator</text>
+  <text x="1140" y="614" text-anchor="end" font-size="10" fill="rgba(255,255,255,0.3)">Free · No login · Instant</text>
+</svg>
