@@ -1,0 +1,131 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gL" cx="15%" cy="50%" r="55%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.42"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gR" cx="85%" cy="50%" r="50%"><stop offset="0%" stop-color="#2563eb" stop-opacity="0.24"/><stop offset="100%" stop-color="#2563eb" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="codeG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#0d0824"/><stop offset="100%" stop-color="#080516"/></linearGradient>
+    <linearGradient id="robG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4338ca"/></linearGradient>
+    <linearGradient id="robFG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1e1060"/><stop offset="100%" stop-color="#110a3a"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="6" stdDeviation="18" flood-color="#5b21b6" flood-opacity="0.5"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="neon"><feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <ellipse cx="200" cy="315" rx="520" ry="440" fill="url(#gL)"/>
+  <ellipse cx="1000" cy="315" rx="480" ry="400" fill="url(#gR)"/>
+
+  <!-- Logo -->
+  <polygon points="60,58 74,38 92,38 106,58 92,78 74,78" fill="none" stroke="url(#aG)" stroke-width="2.5"/>
+  <polygon points="65,58 75,44 91,44 101,58 91,72 75,72" fill="rgba(124,58,237,0.25)"/>
+  <text x="116" y="54" font-size="16" font-weight="700" fill="rgba(255,255,255,0.9)">ToolNest AI</text>
+  <text x="116" y="72" font-size="9" fill="rgba(255,255,255,0.38)">Free Online Tools · AI · Marketing</text>
+
+  <!-- Badge -->
+  <rect x="60" y="110" width="138" height="26" rx="13" fill="rgba(124,58,237,0.22)" stroke="rgba(167,139,250,0.35)" stroke-width="1"/>
+  <text x="129" y="127" text-anchor="middle" font-size="9.5" font-weight="700" fill="rgba(167,139,250,0.9)">✦ AI TOOLS · 2026</text>
+
+  <!-- Headline -->
+  <text x="60" y="210" font-size="66" font-weight="900" fill="url(#aG)" filter="url(#glow)" letter-spacing="-2">AI Slogan</text>
+  <text x="60" y="284" font-size="66" font-weight="900" fill="url(#aG)" filter="url(#glow)" letter-spacing="-2">Generator</text>
+  <text x="60" y="332" font-size="18" fill="rgba(255,255,255,0.7)" font-weight="600">Create Catchy Brand Slogans with AI</text>
+  <text x="60" y="356" font-size="18" fill="rgba(255,255,255,0.7)" font-weight="600">in Under 10 Seconds — Free Tool Inside</text>
+
+  <!-- Pills -->
+  <rect x="60" y="386" width="118" height="26" rx="13" fill="rgba(34,197,94,0.12)" stroke="rgba(34,197,94,0.3)" stroke-width="1"/>
+  <text x="119" y="403" text-anchor="middle" font-size="9" fill="rgba(34,197,94,0.85)">✓ Completely Free</text>
+  <rect x="188" y="386" width="128" height="26" rx="13" fill="rgba(167,139,250,0.1)" stroke="rgba(167,139,250,0.25)" stroke-width="1"/>
+  <text x="252" y="403" text-anchor="middle" font-size="9" fill="rgba(167,139,250,0.85)">✦ 8–12 Ideas per Batch</text>
+  <rect x="326" y="386" width="118" height="26" rx="13" fill="rgba(96,165,250,0.1)" stroke="rgba(96,165,250,0.25)" stroke-width="1"/>
+  <text x="385" y="403" text-anchor="middle" font-size="9" fill="rgba(96,165,250,0.85)">◎ Any Industry</text>
+
+  <!-- CTA -->
+  <rect x="60" y="436" width="220" height="44" rx="12" fill="url(#bG)" filter="url(#sh)"/>
+  <text x="170" y="463" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">Generate for Free →</text>
+
+  <!-- RIGHT PANEL -->
+  <rect x="630" y="60" width="534" height="508" rx="18" fill="rgba(13,8,36,0.9)" stroke="rgba(124,58,237,0.3)" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="630" y="60" width="534" height="34" rx="18" fill="rgba(124,58,237,0.18)"/>
+  <rect x="630" y="80" width="534" height="14" fill="rgba(124,58,237,0.18)"/>
+  <circle cx="652" cy="77" r="5" fill="rgba(255,80,80,0.45)"/>
+  <circle cx="670" cy="77" r="5" fill="rgba(255,193,7,0.45)"/>
+  <circle cx="688" cy="77" r="5" fill="rgba(34,197,94,0.45)"/>
+  <text x="897" y="81" text-anchor="middle" font-size="9.5" font-weight="700" fill="rgba(255,255,255,0.45)">✦ AI Slogan Generator</text>
+
+  <!-- Form panel -->
+  <rect x="644" y="102" width="240" height="340" rx="10" fill="url(#codeG)" stroke="rgba(124,58,237,0.15)" stroke-width="1"/>
+  <text x="660" y="124" font-size="10" font-weight="700" fill="rgba(255,255,255,0.6)">Your Brand Details</text>
+  <text x="660" y="145" font-size="8" fill="rgba(255,255,255,0.38)">Business / Brand Name</text>
+  <rect x="660" y="150" width="208" height="22" rx="5" fill="rgba(255,255,255,0.05)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+  <text x="672" y="165" font-size="8.5" fill="rgba(255,255,255,0.55)">EcoPure</text>
+  <text x="660" y="188" font-size="8" fill="rgba(255,255,255,0.38)">Industry</text>
+  <rect x="660" y="193" width="208" height="22" rx="5" fill="rgba(255,255,255,0.05)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+  <text x="672" y="208" font-size="8.5" fill="rgba(255,255,255,0.55)">Eco-Friendly Products</text>
+  <text x="660" y="230" font-size="8" fill="rgba(255,255,255,0.38)">Tone of Voice</text>
+  <rect x="660" y="235" width="208" height="22" rx="5" fill="rgba(255,255,255,0.05)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+  <text x="672" y="250" font-size="8.5" fill="rgba(255,255,255,0.55)">Inspiring</text>
+  <text x="660" y="272" font-size="8" fill="rgba(255,255,255,0.38)">Slogan Length</text>
+  <rect x="660" y="277" width="208" height="22" rx="5" fill="rgba(255,255,255,0.05)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+  <text x="672" y="292" font-size="8.5" fill="rgba(255,255,255,0.55)">Short (4-6 words)</text>
+  <text x="660" y="314" font-size="8" fill="rgba(255,255,255,0.38)">Key Focus</text>
+  <rect x="660" y="319" width="208" height="22" rx="5" fill="rgba(255,255,255,0.05)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+  <text x="672" y="334" font-size="8.5" fill="rgba(255,255,255,0.42)">sustainability, clean, future</text>
+  <rect x="660" y="356" width="208" height="34" rx="8" fill="url(#bG)" filter="url(#sh)"/>
+  <text x="764" y="377" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">✦ Generate Slogans</text>
+  <text x="764" y="418" text-anchor="middle" font-size="7.5" fill="rgba(255,255,255,0.35)">Free · No account · Unlimited</text>
+  <text x="764" y="432" text-anchor="middle" font-size="7.5" fill="rgba(255,255,255,0.25)">toolnestai.net</text>
+
+  <!-- Results panel -->
+  <rect x="894" y="102" width="256" height="340" rx="10" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="910" y="124" font-size="10" font-weight="700" fill="rgba(255,255,255,0.6)">Generated Slogans</text>
+  <g font-size="8.5">
+    <rect x="904" y="130" width="236" height="24" rx="5" fill="rgba(255,255,255,0.025)"/>
+    <text x="916" y="146" fill="rgba(255,255,255,0.35)">☆</text><text x="928" y="146" fill="rgba(255,255,255,0.7)">Clean Today, Green Tomorrow.</text>
+    <rect x="904" y="157" width="236" height="24" rx="5" fill="rgba(255,255,255,0.018)"/>
+    <text x="916" y="173" fill="rgba(255,255,255,0.35)">☆</text><text x="928" y="173" fill="rgba(255,255,255,0.7)">Better Products, Better Planet.</text>
+    <rect x="904" y="184" width="236" height="24" rx="5" fill="rgba(255,255,255,0.025)"/>
+    <text x="916" y="200" fill="rgba(255,255,255,0.35)">☆</text><text x="928" y="200" fill="rgba(255,255,255,0.7)">Pure Choices, Powerful Future.</text>
+    <rect x="904" y="211" width="236" height="24" rx="5" fill="rgba(124,58,237,0.1)" stroke="rgba(167,139,250,0.15)" stroke-width="1"/>
+    <text x="916" y="227" fill="rgba(251,191,36,0.7)">★</text><text x="928" y="227" fill="rgba(255,255,255,0.9)">Sustainability Starts with You.</text>
+    <rect x="904" y="238" width="236" height="24" rx="5" fill="rgba(255,255,255,0.018)"/>
+    <text x="916" y="254" fill="rgba(255,255,255,0.35)">☆</text><text x="928" y="254" fill="rgba(255,255,255,0.7)">Good for You, Good for Earth.</text>
+    <rect x="904" y="265" width="236" height="24" rx="5" fill="rgba(255,255,255,0.025)"/>
+    <text x="916" y="281" fill="rgba(255,255,255,0.35)">☆</text><text x="928" y="281" fill="rgba(255,255,255,0.7)">Eco by Choice, Future by Design.</text>
+    <rect x="904" y="292" width="236" height="24" rx="5" fill="rgba(255,255,255,0.018)"/>
+    <text x="916" y="308" fill="rgba(255,255,255,0.35)">☆</text><text x="928" y="308" fill="rgba(255,255,255,0.7)">Small Choices, Big Impact.</text>
+    <rect x="904" y="319" width="236" height="24" rx="5" fill="rgba(255,255,255,0.025)"/>
+    <text x="916" y="335" fill="rgba(255,255,255,0.35)">☆</text><text x="928" y="335" fill="rgba(255,255,255,0.7)">Live Green, Love Clean.</text>
+  </g>
+  <text x="1022" y="382" text-anchor="middle" font-size="8" fill="rgba(167,139,250,0.5)">↺ Generate More</text>
+  <rect x="904" y="389" width="236" height="22" rx="6" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <text x="1022" y="404" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.38)">↓ Export All Slogans</text>
+
+  <!-- Robot -->
+  <ellipse cx="897" cy="590" rx="52" ry="8" fill="rgba(124,58,237,0.35)" filter="url(#neon)"/>
+  <rect x="872" y="583" width="50" height="7" rx="3.5" fill="url(#bG)"/>
+  <rect x="856" y="490" width="82" height="90" rx="18" fill="url(#robG)" stroke="rgba(167,139,250,0.35)" stroke-width="1.5"/>
+  <rect x="866" y="508" width="62" height="40" rx="8" fill="url(#robFG)" stroke="rgba(96,165,250,0.3)" stroke-width="1"/>
+  <text x="897" y="533" text-anchor="middle" font-size="16" font-weight="900" fill="url(#aG)" filter="url(#glow)">AI</text>
+  <rect x="838" y="498" width="18" height="52" rx="9" fill="url(#robG)"/>
+  <rect x="938" y="498" width="18" height="52" rx="9" fill="url(#robG)"/>
+  <circle cx="847" cy="557" r="8" fill="url(#robG)" stroke="rgba(167,139,250,0.3)" stroke-width="1"/>
+  <circle cx="947" cy="557" r="8" fill="url(#robG)" stroke="rgba(167,139,250,0.3)" stroke-width="1"/>
+  <rect x="862" y="424" width="70" height="68" rx="18" fill="url(#robG)" stroke="rgba(167,139,250,0.4)" stroke-width="1.5"/>
+  <rect x="854" y="443" width="8" height="22" rx="4" fill="rgba(124,58,237,0.6)"/>
+  <rect x="932" y="443" width="8" height="22" rx="4" fill="rgba(124,58,237,0.6)"/>
+  <rect x="872" y="432" width="50" height="44" rx="10" fill="url(#robFG)" stroke="rgba(96,165,250,0.22)" stroke-width="1"/>
+  <ellipse cx="886" cy="449" rx="6" ry="6" fill="rgba(96,165,250,0.9)" filter="url(#glow)"/>
+  <ellipse cx="886" cy="449" rx="2" ry="2" fill="#fff"/>
+  <ellipse cx="908" cy="449" rx="6" ry="6" fill="rgba(96,165,250,0.9)" filter="url(#glow)"/>
+  <ellipse cx="908" cy="449" rx="2" ry="2" fill="#fff"/>
+  <path d="M 883 463 Q 897 472 911 463" stroke="rgba(167,139,250,0.8)" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <line x1="897" y1="424" x2="897" y2="406" stroke="rgba(167,139,250,0.5)" stroke-width="2"/>
+  <circle cx="897" cy="400" r="7" fill="rgba(124,58,237,0.5)" stroke="rgba(167,139,250,0.7)" stroke-width="1.5" filter="url(#glow)"/>
+  <circle cx="897" cy="400" r="3.5" fill="rgba(167,139,250,0.9)"/>
+
+  <!-- Bottom bar -->
+  <line x1="0" y1="592" x2="1200" y2="592" stroke="rgba(167,139,250,0.1)" stroke-width="1"/>
+  <text x="60" y="616" font-size="10" fill="rgba(255,255,255,0.3)">toolnestai.net/ai-tools/ai-slogan-generator</text>
+  <text x="1140" y="616" text-anchor="end" font-size="10" fill="rgba(255,255,255,0.3)">Free · No login · Instant</text>
+</svg>

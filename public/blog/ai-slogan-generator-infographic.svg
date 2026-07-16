@@ -1,0 +1,144 @@
+<svg viewBox="0 0 900 1200" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gT" cx="50%" cy="10%" r="55%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.38"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gB" cx="50%" cy="90%" r="55%"><stop offset="0%" stop-color="#2563eb" stop-opacity="0.22"/><stop offset="100%" stop-color="#2563eb" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#818cf8"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#5b21b6" flood-opacity="0.4"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="900" height="1200" fill="url(#bg)"/>
+  <ellipse cx="450" cy="120" rx="500" ry="380" fill="url(#gT)"/>
+  <ellipse cx="450" cy="1080" rx="500" ry="380" fill="url(#gB)"/>
+
+  <!-- HEADER -->
+  <rect x="0" y="0" width="900" height="200" fill="rgba(124,58,237,0.08)"/>
+  <line x1="0" y1="200" x2="900" y2="200" stroke="rgba(167,139,250,0.15)" stroke-width="1"/>
+  <polygon points="50,70 62,52 78,52 90,70 78,88 62,88" fill="none" stroke="url(#aG)" stroke-width="2.5"/>
+  <polygon points="54,70 64,56 76,56 86,70 76,84 64,84" fill="rgba(124,58,237,0.2)"/>
+  <text x="98" y="65" font-size="16" font-weight="700" fill="rgba(255,255,255,0.9)">ToolNest AI</text>
+  <text x="98" y="83" font-size="9" fill="rgba(255,255,255,0.38)">toolnestai.net/ai-tools/ai-slogan-generator</text>
+  <text x="450" y="122" text-anchor="middle" font-size="38" font-weight="900" fill="url(#aG)" filter="url(#glow)">AI Slogan Generator</text>
+  <text x="450" y="152" text-anchor="middle" font-size="15" fill="rgba(255,255,255,0.65)">The Complete 2026 Guide to Creating Catchy Brand Slogans</text>
+  <text x="450" y="174" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.38)">What makes a great slogan · How to use AI · Examples by industry · Common mistakes</text>
+
+  <!-- SECTION 1: Why Your Slogan Matters -->
+  <rect x="40" y="220" width="820" height="168" rx="16" fill="rgba(255,255,255,0.025)" stroke="rgba(167,139,250,0.18)" stroke-width="1"/>
+  <text x="70" y="256" font-size="18" font-weight="800" fill="url(#aG)">01 — Why Your Slogan Matters More Than You Think</text>
+  <g font-size="10" fill="rgba(255,255,255,0.45)">
+    <text x="70" y="280">• A slogan is the first sentence your audience hears about your brand — often before they read a single word of copy</text>
+    <text x="70" y="298">• Great slogans outlive campaigns: "Just Do It," "Think Different," "I'm Lovin' It" are remembered decades after launch</text>
+    <text x="70" y="316">• A bad slogan is worse than no slogan — it creates the wrong impression and takes years to undo</text>
+    <text x="70" y="334">• Businesses with clear, memorable taglines report up to 28% higher brand recall in consumer studies</text>
+    <text x="70" y="352">• Your slogan does marketing work 24/7 — on packaging, social bios, email footers, ad headlines and storefronts</text>
+    <text x="70" y="370">• The right slogan takes 30 seconds to choose and protects your brand identity for years</text>
+  </g>
+
+  <!-- SECTION 2: 6 Qualities -->
+  <rect x="40" y="404" width="820" height="220" rx="16" fill="rgba(255,255,255,0.025)" stroke="rgba(167,139,250,0.18)" stroke-width="1"/>
+  <text x="70" y="440" font-size="18" font-weight="800" fill="url(#aG)">02 — 6 Qualities Every Great Slogan Shares</text>
+  <g text-anchor="middle" font-size="9">
+    <rect x="58" y="452" width="122" height="152" rx="10" fill="rgba(124,58,237,0.14)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+    <text x="119" y="488" font-size="22">✂</text>
+    <text x="119" y="508" font-weight="700" fill="rgba(255,255,255,0.85)">Short &amp; Punchy</text>
+    <text x="119" y="526" fill="rgba(255,255,255,0.42)">Under 7 words.</text>
+    <text x="119" y="542" fill="rgba(255,255,255,0.42)">Fast to say and</text>
+    <text x="119" y="558" fill="rgba(255,255,255,0.42)">easy to recall.</text>
+    <text x="119" y="591" fill="rgba(34,197,94,0.7)">"Just Do It"</text>
+
+    <rect x="190" y="452" width="122" height="152" rx="10" fill="rgba(37,99,235,0.14)" stroke="rgba(96,165,250,0.2)" stroke-width="1"/>
+    <text x="251" y="488" font-size="22">🎯</text>
+    <text x="251" y="508" font-weight="700" fill="rgba(255,255,255,0.85)">Brand Relevant</text>
+    <text x="251" y="526" fill="rgba(255,255,255,0.42)">Reflects what</text>
+    <text x="251" y="542" fill="rgba(255,255,255,0.42)">you do or what</text>
+    <text x="251" y="558" fill="rgba(255,255,255,0.42)">you stand for.</text>
+    <text x="251" y="591" fill="rgba(34,197,94,0.7)">"Think Different"</text>
+
+    <rect x="322" y="452" width="122" height="152" rx="10" fill="rgba(16,185,129,0.12)" stroke="rgba(52,211,153,0.2)" stroke-width="1"/>
+    <text x="383" y="488" font-size="22">◇</text>
+    <text x="383" y="508" font-weight="700" fill="rgba(255,255,255,0.85)">Unique</text>
+    <text x="383" y="526" fill="rgba(255,255,255,0.42)">Impossible to</text>
+    <text x="383" y="542" fill="rgba(255,255,255,0.42)">confuse with a</text>
+    <text x="383" y="558" fill="rgba(255,255,255,0.42)">competitor.</text>
+    <text x="383" y="591" fill="rgba(34,197,94,0.7)">"Opens Happiness"</text>
+
+    <rect x="454" y="452" width="122" height="152" rx="10" fill="rgba(245,158,11,0.12)" stroke="rgba(251,191,36,0.2)" stroke-width="1"/>
+    <text x="515" y="488" font-size="22">💜</text>
+    <text x="515" y="508" font-weight="700" fill="rgba(255,255,255,0.85)">Emotional</text>
+    <text x="515" y="526" fill="rgba(255,255,255,0.42)">Evokes a feeling.</text>
+    <text x="515" y="542" fill="rgba(255,255,255,0.42)">Connects with</text>
+    <text x="515" y="558" fill="rgba(255,255,255,0.42)">your audience.</text>
+    <text x="515" y="591" fill="rgba(34,197,94,0.7)">"I'm Lovin' It"</text>
+
+    <rect x="586" y="452" width="122" height="152" rx="10" fill="rgba(236,72,153,0.1)" stroke="rgba(244,114,182,0.2)" stroke-width="1"/>
+    <text x="647" y="488" font-size="22">⧗</text>
+    <text x="647" y="508" font-weight="700" fill="rgba(255,255,255,0.85)">Timeless</text>
+    <text x="647" y="526" fill="rgba(255,255,255,0.42)">Works in 2026</text>
+    <text x="647" y="542" fill="rgba(255,255,255,0.42)">and still works</text>
+    <text x="647" y="558" fill="rgba(255,255,255,0.42)">in 2036.</text>
+    <text x="647" y="591" fill="rgba(34,197,94,0.7)">"Because You're Worth It"</text>
+
+    <rect x="718" y="452" width="122" height="152" rx="10" fill="rgba(167,139,250,0.1)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+    <text x="779" y="488" font-size="22">🧠</text>
+    <text x="779" y="508" font-weight="700" fill="rgba(255,255,255,0.85)">Memorable</text>
+    <text x="779" y="526" fill="rgba(255,255,255,0.42)">Rhyme, rhythm</text>
+    <text x="779" y="542" fill="rgba(255,255,255,0.42)">or alliteration</text>
+    <text x="779" y="558" fill="rgba(255,255,255,0.42)">helps it stick.</text>
+    <text x="779" y="591" fill="rgba(34,197,94,0.7)">"Finger Lickin' Good"</text>
+  </g>
+
+  <!-- SECTION 3: Step-by-Step -->
+  <rect x="40" y="640" width="820" height="248" rx="16" fill="rgba(255,255,255,0.025)" stroke="rgba(167,139,250,0.18)" stroke-width="1"/>
+  <text x="70" y="676" font-size="18" font-weight="800" fill="url(#aG)">03 — How to Generate a Slogan in 5 Steps</text>
+  <g font-size="9.5">
+    <circle cx="100" cy="716" r="18" fill="url(#bG)" filter="url(#sh)"/>
+    <text x="100" y="721" text-anchor="middle" font-size="14" font-weight="900" fill="#fff">1</text>
+    <text x="130" y="710" font-size="11" font-weight="700" fill="rgba(255,255,255,0.85)">Enter Your Brand Name &amp; Industry</text>
+    <text x="130" y="727" fill="rgba(255,255,255,0.45)">Add your business name and select your industry — this gives the AI the context it needs to produce relevant output.</text>
+    <line x1="100" y1="734" x2="100" y2="748" stroke="rgba(167,139,250,0.3)" stroke-width="1.5" stroke-dasharray="3,3"/>
+
+    <circle cx="100" cy="764" r="18" fill="url(#bG)" filter="url(#sh)"/>
+    <text x="100" y="769" text-anchor="middle" font-size="14" font-weight="900" fill="#fff">2</text>
+    <text x="130" y="758" font-size="11" font-weight="700" fill="rgba(255,255,255,0.85)">Choose Tone of Voice</text>
+    <text x="130" y="775" fill="rgba(255,255,255,0.45)">Inspiring, bold, playful, professional, minimal or witty — tone shapes every word the AI produces.</text>
+    <line x1="100" y1="782" x2="100" y2="796" stroke="rgba(167,139,250,0.3)" stroke-width="1.5" stroke-dasharray="3,3"/>
+
+    <circle cx="100" cy="812" r="18" fill="url(#bG)" filter="url(#sh)"/>
+    <text x="100" y="817" text-anchor="middle" font-size="14" font-weight="900" fill="#fff">3</text>
+    <text x="130" y="806" font-size="11" font-weight="700" fill="rgba(255,255,255,0.85)">Set Length &amp; Add Key Focus Words</text>
+    <text x="130" y="823" fill="rgba(255,255,255,0.45)">Short (4-6 words), medium or long. Add optional keywords: "sustainable, premium, future" shapes the vocabulary used.</text>
+    <line x1="100" y1="830" x2="100" y2="844" stroke="rgba(167,139,250,0.3)" stroke-width="1.5" stroke-dasharray="3,3"/>
+
+    <circle cx="100" cy="860" r="18" fill="url(#bG)" filter="url(#sh)"/>
+    <text x="100" y="865" text-anchor="middle" font-size="14" font-weight="900" fill="#fff">4</text>
+    <text x="130" y="854" font-size="11" font-weight="700" fill="rgba(255,255,255,0.85)">Generate &amp; Browse Results</text>
+    <text x="130" y="871" fill="rgba(255,255,255,0.45)">8–12 unique slogans appear in under 10 seconds. Star your favourites. Click Generate More for a fresh batch.</text>
+    <line x1="100" y1="878" x2="100" y2="892" stroke="rgba(167,139,250,0.3)" stroke-width="1.5" stroke-dasharray="3,3"/>
+
+    <circle cx="100" cy="908" r="18" fill="url(#bG)" filter="url(#sh)"/>
+    <text x="100" y="913" text-anchor="middle" font-size="14" font-weight="900" fill="#fff">5</text>
+    <text x="130" y="902" font-size="11" font-weight="700" fill="rgba(255,255,255,0.85)">Copy, Save or Export</text>
+    <text x="130" y="919" fill="rgba(255,255,255,0.45)">Copy any slogan with one click. Export your full shortlist. Test the top 3 with real people before committing.</text>
+  </g>
+
+  <!-- SECTION 4: Mistakes to Avoid -->
+  <rect x="40" y="904" width="820" height="180" rx="16" fill="rgba(255,255,255,0.025)" stroke="rgba(167,139,250,0.18)" stroke-width="1"/>
+  <text x="70" y="940" font-size="18" font-weight="800" fill="url(#aG)">04 — Common Slogan Mistakes to Avoid</text>
+  <g font-size="9.5" fill="rgba(255,255,255,0.45)">
+    <text x="70" y="964">⛔  Too vague — "Quality You Can Trust" means nothing and applies to every business equally</text>
+    <text x="70" y="982">⛔  Too long — if it takes more than 3 seconds to say, it's a sentence, not a slogan</text>
+    <text x="70" y="1000">⛔  Over-explained — a slogan that needs explaining has failed at its job</text>
+    <text x="70" y="1018">⛔  Trend-dependent — slang or current memes date your brand within 12 months</text>
+    <text x="70" y="1036">⛔  Copying competitors — "The Number One Choice for X" sounds like every other brand in your space</text>
+    <text x="70" y="1054">⛔  Settling on the first batch — regenerate with different keywords until something genuinely clicks</text>
+    <text x="70" y="1072">✓   The fix for all of these: use specific keywords, try multiple tone settings, and regenerate freely</text>
+  </g>
+
+  <!-- SECTION 5: CTA -->
+  <rect x="40" y="1100" width="820" height="80" rx="16" fill="url(#bG)" filter="url(#sh)"/>
+  <text x="450" y="1138" text-anchor="middle" font-size="22" font-weight="900" fill="#fff" filter="url(#glow)">Generate Your Slogan for Free</text>
+  <text x="450" y="1162" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.75)">No account · No limits · 8–12 ideas in under 10 seconds</text>
+  <rect x="300" y="1172" width="300" height="18" rx="6" fill="rgba(255,255,255,0.15)"/>
+  <text x="450" y="1185" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.9)">toolnestai.net/ai-tools/ai-slogan-generator</text>
+</svg>
