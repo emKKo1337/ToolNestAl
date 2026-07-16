@@ -1,0 +1,84 @@
+<svg viewBox="0 0 900 520" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gL" cx="20%" cy="50%" r="55%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.25"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#818cf8"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="cG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#0d0824"/><stop offset="100%" stop-color="#080516"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="4" stdDeviation="10" flood-color="#5b21b6" flood-opacity="0.3"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="900" height="520" fill="url(#bg)"/>
+  <ellipse cx="180" cy="260" rx="400" ry="340" fill="url(#gL)"/>
+
+  <text x="450" y="38" text-anchor="middle" font-size="21" font-weight="900" fill="url(#aG)" filter="url(#glow)">Common Meta Tag SEO Mistakes &amp; How to Fix Them</text>
+  <text x="450" y="57" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.42)">The errors that silently kill your click-through rate — and the exact fixes</text>
+
+  <!-- Column headers -->
+  <rect x="28" y="70" width="272" height="26" rx="6" fill="rgba(239,68,68,0.15)" stroke="rgba(239,68,68,0.3)" stroke-width="1"/>
+  <text x="164" y="87" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(239,68,68,0.9)">⛔  The Mistake</text>
+  <rect x="308" y="70" width="564" height="26" rx="6" fill="rgba(34,197,94,0.1)" stroke="rgba(34,197,94,0.25)" stroke-width="1"/>
+  <text x="590" y="87" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(34,197,94,0.9)">✓  The Fix</text>
+
+  <!-- Row 1 -->
+  <rect x="28" y="102" width="272" height="72" rx="8" fill="rgba(255,255,255,0.025)" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="44" y="121" font-size="9" font-weight="700" fill="rgba(239,68,68,0.85)">Title tag too long or too short</text>
+  <text x="44" y="137" font-size="8" fill="rgba(255,255,255,0.45)">Titles over 60 characters get truncated</text>
+  <text x="44" y="151" font-size="8" fill="rgba(255,255,255,0.45)">in search results. Under 30 characters</text>
+  <text x="44" y="165" font-size="8" fill="rgba(255,255,255,0.45)">wastes prime keyword real estate.</text>
+  <rect x="308" y="102" width="564" height="72" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(34,197,94,0.1)" stroke-width="1"/>
+  <text x="324" y="121" font-size="8.5" fill="rgba(255,255,255,0.55)">Keep titles between 50–60 characters. Put your primary keyword first.</text>
+  <text x="324" y="137" font-size="8" font-family="monospace" fill="rgba(239,68,68,0.7)">✗  "Welcome to Our Website - Home Page - Company Name - Best Products"  (84 chars)</text>
+  <text x="324" y="153" font-size="8" font-family="monospace" fill="rgba(34,197,94,0.8)">✓  "Best AI Tools for Productivity in 2026 | ToolNest AI"  (54 chars)</text>
+  <text x="324" y="169" font-size="8" fill="rgba(255,255,255,0.35)">The ToolNest AI Meta Tag Generator counts characters in real time and flags issues.</text>
+
+  <!-- Row 2 -->
+  <rect x="28" y="180" width="272" height="72" rx="8" fill="rgba(255,255,255,0.025)" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="44" y="199" font-size="9" font-weight="700" fill="rgba(239,68,68,0.85)">Missing or duplicate meta descriptions</text>
+  <text x="44" y="215" font-size="8" fill="rgba(255,255,255,0.45)">Pages with no description get a random</text>
+  <text x="44" y="229" font-size="8" fill="rgba(255,255,255,0.45)">snippet pulled by Google — often ugly.</text>
+  <text x="44" y="243" font-size="8" fill="rgba(255,255,255,0.45)">Duplicates confuse crawlers and waste CTR.</text>
+  <rect x="308" y="180" width="564" height="72" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(34,197,94,0.1)" stroke-width="1"/>
+  <text x="324" y="199" font-size="8.5" fill="rgba(255,255,255,0.55)">Write a unique description for every indexed page. Target 150–160 characters.</text>
+  <text x="324" y="215" font-size="8" font-family="monospace" fill="rgba(239,68,68,0.7)">✗  No meta description set  ← Google pulls random text, often mid-sentence</text>
+  <text x="324" y="231" font-size="8" font-family="monospace" fill="rgba(34,197,94,0.8)">✓  Unique, keyword-rich description with a clear reason to click</text>
+  <text x="324" y="247" font-size="8" fill="rgba(255,255,255,0.35)">Include a soft CTA: "Learn how to...", "Discover the...", "Get started with..."</text>
+
+  <!-- Row 3 -->
+  <rect x="28" y="258" width="272" height="72" rx="8" fill="rgba(255,255,255,0.025)" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="44" y="277" font-size="9" font-weight="700" fill="rgba(239,68,68,0.85)">Keyword stuffing in meta tags</text>
+  <text x="44" y="293" font-size="8" fill="rgba(255,255,255,0.45)">Packing titles/descriptions with keywords</text>
+  <text x="44" y="307" font-size="8" fill="rgba(255,255,255,0.45)">looks spammy to both users and Google.</text>
+  <text x="44" y="321" font-size="8" fill="rgba(255,255,255,0.45)">Can trigger manual penalties in Search Console.</text>
+  <rect x="308" y="258" width="564" height="72" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(34,197,94,0.1)" stroke-width="1"/>
+  <text x="324" y="277" font-size="8.5" fill="rgba(255,255,255,0.55)">Use each keyword once, naturally. Write for the human reader — Google follows.</text>
+  <text x="324" y="293" font-size="8" font-family="monospace" fill="rgba(239,68,68,0.7)">✗  "AI tools AI productivity AI software best AI tools AI solutions AI 2026"</text>
+  <text x="324" y="309" font-size="8" font-family="monospace" fill="rgba(34,197,94,0.8)">✓  "The best AI tools to boost productivity in 2026 — reviewed and ranked."</text>
+  <text x="324" y="325" font-size="8" fill="rgba(255,255,255,0.35)">One primary keyword in the title. One natural mention in the description.</text>
+
+  <!-- Row 4 -->
+  <rect x="28" y="336" width="272" height="72" rx="8" fill="rgba(255,255,255,0.025)" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="44" y="355" font-size="9" font-weight="700" fill="rgba(239,68,68,0.85)">Missing Open Graph tags</text>
+  <text x="44" y="371" font-size="8" fill="rgba(255,255,255,0.45)">Pages without og:image look broken when</text>
+  <text x="44" y="385" font-size="8" fill="rgba(255,255,255,0.45)">shared. No preview image = far fewer clicks</text>
+  <text x="44" y="399" font-size="8" fill="rgba(255,255,255,0.45)">from social channels.</text>
+  <rect x="308" y="336" width="564" height="72" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(34,197,94,0.1)" stroke-width="1"/>
+  <text x="324" y="355" font-size="8.5" fill="rgba(255,255,255,0.55)">Add og:title, og:description, og:image (1200×630px) and og:url to every page.</text>
+  <text x="324" y="371" font-size="8" font-family="monospace" fill="rgba(239,68,68,0.7)">✗  No og: tags → social share shows blank card or random image</text>
+  <text x="324" y="387" font-size="8" font-family="monospace" fill="rgba(34,197,94,0.8)">✓  og:image set → rich preview card with title, description, branded image</text>
+  <text x="324" y="403" font-size="8" fill="rgba(255,255,255,0.35)">Use the ToolNest AI Open Graph Generator to create and preview your OG tags.</text>
+
+  <!-- Row 5 -->
+  <rect x="28" y="414" width="272" height="72" rx="8" fill="rgba(255,255,255,0.025)" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="44" y="433" font-size="9" font-weight="700" fill="rgba(239,68,68,0.85)">Wrong or missing canonical tag</text>
+  <text x="44" y="449" font-size="8" fill="rgba(255,255,255,0.45)">Duplicate pages (with params, trailing</text>
+  <text x="44" y="463" font-size="8" fill="rgba(255,255,255,0.45)">slashes, HTTP/HTTPS) split link equity</text>
+  <text x="44" y="477" font-size="8" fill="rgba(255,255,255,0.45)">and confuse Google's indexer.</text>
+  <rect x="308" y="414" width="564" height="72" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(34,197,94,0.1)" stroke-width="1"/>
+  <text x="324" y="433" font-size="8.5" fill="rgba(255,255,255,0.55)">Add a self-referencing canonical to every page pointing to its clean URL.</text>
+  <text x="324" y="449" font-size="8" font-family="monospace" fill="rgba(239,68,68,0.7)">✗  page.com/article  and  page.com/article?utm=email  both indexed separately</text>
+  <text x="324" y="465" font-size="8" font-family="monospace" fill="rgba(34,197,94,0.8)">✓  &lt;link rel="canonical" href="https://page.com/article"/&gt; on both versions</text>
+  <text x="324" y="481" font-size="8" fill="rgba(255,255,255,0.35)">The ToolNest AI Meta Tag Generator automatically produces a canonical for each page.</text>
+
+  <text x="450" y="510" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.28)">toolnestai.net/seo-tools/meta-tag-generator</text>
+</svg>

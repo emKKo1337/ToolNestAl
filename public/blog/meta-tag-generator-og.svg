@@ -1,0 +1,147 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gL" cx="15%" cy="50%" r="55%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.42"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gR" cx="85%" cy="50%" r="50%"><stop offset="0%" stop-color="#2563eb" stop-opacity="0.24"/><stop offset="100%" stop-color="#2563eb" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="cG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#0d0824"/><stop offset="100%" stop-color="#080516"/></linearGradient>
+    <linearGradient id="robG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4338ca"/></linearGradient>
+    <linearGradient id="robFG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1e1060"/><stop offset="100%" stop-color="#110a3a"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="6" stdDeviation="18" flood-color="#5b21b6" flood-opacity="0.5"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="neon"><feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <ellipse cx="200" cy="315" rx="520" ry="440" fill="url(#gL)"/>
+  <ellipse cx="1000" cy="315" rx="480" ry="400" fill="url(#gR)"/>
+
+  <!-- Logo -->
+  <polygon points="60,58 74,38 92,38 106,58 92,78 74,78" fill="none" stroke="url(#aG)" stroke-width="2.5"/>
+  <polygon points="65,58 75,44 91,44 101,58 91,72 75,72" fill="rgba(124,58,237,0.25)"/>
+  <text x="116" y="54" font-size="16" font-weight="700" fill="rgba(255,255,255,0.9)">ToolNest AI</text>
+  <text x="116" y="72" font-size="9" fill="rgba(255,255,255,0.38)">Free Online Tools · SEO · AI</text>
+
+  <!-- Badge -->
+  <rect x="60" y="108" width="138" height="26" rx="13" fill="rgba(124,58,237,0.22)" stroke="rgba(167,139,250,0.35)" stroke-width="1"/>
+  <text x="129" y="125" text-anchor="middle" font-size="9.5" font-weight="700" fill="rgba(167,139,250,0.9)">✦ SEO TOOLS · 2026</text>
+
+  <!-- Headline -->
+  <text x="60" y="208" font-size="64" font-weight="900" fill="url(#aG)" filter="url(#glow)" letter-spacing="-2">Meta Tag</text>
+  <text x="60" y="280" font-size="64" font-weight="900" fill="url(#aG)" filter="url(#glow)" letter-spacing="-2">Generator</text>
+  <text x="60" y="328" font-size="18" fill="rgba(255,255,255,0.7)" font-weight="600">Create Perfect SEO Meta Tags in Seconds</text>
+  <text x="60" y="352" font-size="18" fill="rgba(255,255,255,0.7)" font-weight="600">Title · Description · OG · Robots · Canonical</text>
+
+  <!-- Pills -->
+  <rect x="60" y="382" width="118" height="26" rx="13" fill="rgba(34,197,94,0.12)" stroke="rgba(34,197,94,0.3)" stroke-width="1"/>
+  <text x="119" y="399" text-anchor="middle" font-size="9" fill="rgba(34,197,94,0.85)">✓ Completely Free</text>
+  <rect x="188" y="382" width="130" height="26" rx="13" fill="rgba(167,139,250,0.1)" stroke="rgba(167,139,250,0.25)" stroke-width="1"/>
+  <text x="253" y="399" text-anchor="middle" font-size="9" fill="rgba(167,139,250,0.85)">⌖ Full Tag Set &lt;10s</text>
+  <rect x="328" y="382" width="118" height="26" rx="13" fill="rgba(96,165,250,0.1)" stroke="rgba(96,165,250,0.25)" stroke-width="1"/>
+  <text x="387" y="399" text-anchor="middle" font-size="9" fill="rgba(96,165,250,0.85)">↑ Boost CTR</text>
+
+  <!-- CTA -->
+  <rect x="60" y="432" width="220" height="44" rx="12" fill="url(#bG)" filter="url(#sh)"/>
+  <text x="170" y="459" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">Generate for Free →</text>
+
+  <!-- RIGHT PANEL -->
+  <rect x="628" y="58" width="540" height="510" rx="18" fill="rgba(13,8,36,0.92)" stroke="rgba(124,58,237,0.3)" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="628" y="58" width="540" height="34" rx="18" fill="rgba(124,58,237,0.2)"/>
+  <rect x="628" y="78" width="540" height="14" fill="rgba(124,58,237,0.2)"/>
+  <circle cx="650" cy="75" r="5" fill="rgba(255,80,80,0.45)"/>
+  <circle cx="668" cy="75" r="5" fill="rgba(255,193,7,0.45)"/>
+  <circle cx="686" cy="75" r="5" fill="rgba(34,197,94,0.45)"/>
+  <rect x="646" y="90" width="14" height="14" rx="3" fill="url(#bG)"/>
+  <text x="655" y="102" text-anchor="middle" font-size="8" fill="#fff">⌖</text>
+  <text x="668" y="102" font-size="10" font-weight="800" fill="rgba(255,255,255,0.85)">Meta Tag Generator</text>
+
+  <!-- Left form mini -->
+  <rect x="642" y="112" width="232" height="318" rx="8" fill="url(#cG)" stroke="rgba(124,58,237,0.15)" stroke-width="1"/>
+  <text x="656" y="132" font-size="9" font-weight="700" fill="rgba(255,255,255,0.6)">Input Details</text>
+  <text x="656" y="152" font-size="7.5" fill="rgba(255,255,255,0.38)">Page Title / Topic</text>
+  <rect x="656" y="157" width="202" height="20" rx="5" fill="rgba(255,255,255,0.05)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+  <text x="664" y="171" font-size="7.5" fill="rgba(255,255,255,0.55)">Best AI Tools for Productivity in 2026</text>
+  <text x="656" y="192" font-size="7.5" fill="rgba(255,255,255,0.38)">Focus Keyword</text>
+  <rect x="656" y="197" width="202" height="20" rx="5" fill="rgba(255,255,255,0.05)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+  <text x="664" y="211" font-size="7.5" fill="rgba(255,255,255,0.55)">ai productivity tools</text>
+  <text x="656" y="232" font-size="7.5" fill="rgba(255,255,255,0.38)">Page Description (Optional)</text>
+  <rect x="656" y="237" width="202" height="60" rx="5" fill="rgba(255,255,255,0.05)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+  <text x="664" y="252" font-size="7" fill="rgba(255,255,255,0.42)">Discover the best AI tools to boost</text>
+  <text x="664" y="264" font-size="7" fill="rgba(255,255,255,0.42)">your productivity in 2026. Save time,</text>
+  <text x="664" y="276" font-size="7" fill="rgba(255,255,255,0.42)">automate tasks and get more done.</text>
+  <text x="656" y="312" font-size="7.5" fill="rgba(255,255,255,0.38)">Language</text>
+  <rect x="656" y="317" width="202" height="20" rx="5" fill="rgba(255,255,255,0.05)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+  <text x="664" y="331" font-size="7.5" fill="rgba(255,255,255,0.55)">English</text>
+  <text x="656" y="352" font-size="7.5" fill="rgba(255,255,255,0.38)">Tone</text>
+  <rect x="656" y="357" width="202" height="20" rx="5" fill="rgba(255,255,255,0.05)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+  <text x="664" y="371" font-size="7.5" fill="rgba(255,255,255,0.55)">Professional</text>
+  <rect x="656" y="392" width="202" height="30" rx="8" fill="url(#bG)" filter="url(#sh)"/>
+  <text x="757" y="411" text-anchor="middle" font-size="9.5" font-weight="700" fill="#fff">✦ Generate Meta Tags</text>
+
+  <!-- Right results mini -->
+  <rect x="884" y="112" width="270" height="318" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="898" y="132" font-size="9" font-weight="700" fill="rgba(255,255,255,0.6)">Generated Meta Tags</text>
+  <rect x="1118" y="120" width="26" height="16" rx="5" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="1131" y="132" text-anchor="middle" font-size="6.5" fill="rgba(255,255,255,0.4)">⎘ All</text>
+  <g font-size="7.5">
+    <rect x="892" y="140" width="254" height="52" rx="6" fill="rgba(255,255,255,0.025)" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    <text x="904" y="156" font-weight="700" fill="rgba(255,255,255,0.5)">Meta Title</text>
+    <text x="1138" y="156" text-anchor="end" fill="rgba(34,197,94,0.75)">58 / 60</text>
+    <text x="904" y="170" fill="rgba(255,255,255,0.72)">Best AI Tools for Productivity in</text>
+    <text x="904" y="184" fill="rgba(255,255,255,0.72)">2026 | Boost Efficiency &amp; Save Time</text>
+
+    <rect x="892" y="198" width="254" height="64" rx="6" fill="rgba(255,255,255,0.025)" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    <text x="904" y="214" font-weight="700" fill="rgba(255,255,255,0.5)">Meta Description</text>
+    <text x="1138" y="214" text-anchor="end" fill="rgba(34,197,94,0.75)">149 / 160</text>
+    <text x="904" y="228" fill="rgba(255,255,255,0.65)">Discover the best AI tools to boost</text>
+    <text x="904" y="242" fill="rgba(255,255,255,0.65)">productivity in 2026. Save time,</text>
+    <text x="904" y="256" fill="rgba(255,255,255,0.65)">automate tasks, get more done.</text>
+
+    <rect x="892" y="268" width="254" height="40" rx="6" fill="rgba(255,255,255,0.025)" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    <text x="904" y="284" font-weight="700" fill="rgba(255,255,255,0.5)">Meta Keywords</text>
+    <text x="904" y="300" fill="rgba(255,255,255,0.6)">ai productivity tools, best ai tools, ai 2026...</text>
+
+    <rect x="892" y="314" width="254" height="30" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    <text x="904" y="330" font-weight="700" fill="rgba(255,255,255,0.5)">Robots Meta Tag</text>
+    <text x="1138" y="330" text-anchor="end" fill="rgba(255,255,255,0.3)">⎘</text>
+    <text x="904" y="338" fill="rgba(255,255,255,0.6)">index, follow</text>
+
+    <rect x="892" y="350" width="254" height="30" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    <text x="904" y="366" font-weight="700" fill="rgba(255,255,255,0.5)">Canonical Tag</text>
+    <text x="1138" y="366" text-anchor="end" fill="rgba(255,255,255,0.3)">⎘</text>
+    <text x="904" y="374" fill="rgba(255,255,255,0.55)">https://yoursite.com/best-ai-tools-2026</text>
+
+    <rect x="892" y="386" width="254" height="30" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    <text x="904" y="402" font-weight="700" fill="rgba(255,255,255,0.5)">Open Graph Tags</text>
+    <text x="1138" y="402" text-anchor="end" fill="rgba(255,255,255,0.3)">⎘</text>
+    <text x="904" y="410" fill="rgba(255,255,255,0.5)">og:title, og:description, og:image...</text>
+  </g>
+
+  <!-- Robot -->
+  <ellipse cx="898" cy="585" rx="52" ry="8" fill="rgba(124,58,237,0.35)" filter="url(#neon)"/>
+  <rect x="872" y="577" width="52" height="7" rx="3.5" fill="url(#bG)"/>
+  <rect x="854" y="485" width="88" height="88" rx="20" fill="url(#robG)" stroke="rgba(167,139,250,0.35)" stroke-width="1.5"/>
+  <rect x="866" y="503" width="64" height="42" rx="8" fill="url(#robFG)" stroke="rgba(96,165,250,0.3)" stroke-width="1"/>
+  <text x="898" y="529" text-anchor="middle" font-size="16" font-weight="900" fill="url(#aG)" filter="url(#glow)">AI</text>
+  <rect x="836" y="500" width="18" height="50" rx="9" fill="url(#robG)"/>
+  <rect x="942" y="500" width="18" height="50" rx="9" fill="url(#robG)"/>
+  <circle cx="845" cy="556" r="8" fill="url(#robG)" stroke="rgba(167,139,250,0.3)" stroke-width="1"/>
+  <circle cx="951" cy="556" r="8" fill="url(#robG)" stroke="rgba(167,139,250,0.3)" stroke-width="1"/>
+  <rect x="860" y="418" width="76" height="70" rx="18" fill="url(#robG)" stroke="rgba(167,139,250,0.4)" stroke-width="1.5"/>
+  <rect x="852" y="436" width="8" height="20" rx="4" fill="rgba(124,58,237,0.6)"/>
+  <rect x="936" y="436" width="8" height="20" rx="4" fill="rgba(124,58,237,0.6)"/>
+  <rect x="870" y="426" width="56" height="48" rx="10" fill="url(#robFG)" stroke="rgba(96,165,250,0.22)" stroke-width="1"/>
+  <ellipse cx="883" cy="443" rx="5.5" ry="5.5" fill="rgba(96,165,250,0.9)" filter="url(#glow)"/>
+  <ellipse cx="883" cy="443" rx="2" ry="2" fill="#fff"/>
+  <ellipse cx="913" cy="443" rx="5.5" ry="5.5" fill="rgba(96,165,250,0.9)" filter="url(#glow)"/>
+  <ellipse cx="913" cy="443" rx="2" ry="2" fill="#fff"/>
+  <path d="M 880 460 Q 898 470 916 460" stroke="rgba(167,139,250,0.8)" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <line x1="898" y1="418" x2="898" y2="400" stroke="rgba(167,139,250,0.5)" stroke-width="2"/>
+  <circle cx="898" cy="393" r="7" fill="rgba(124,58,237,0.5)" stroke="rgba(167,139,250,0.7)" stroke-width="1.5" filter="url(#glow)"/>
+  <circle cx="898" cy="393" r="3.5" fill="rgba(167,139,250,0.9)"/>
+
+  <!-- Bottom bar -->
+  <line x1="0" y1="592" x2="1200" y2="592" stroke="rgba(167,139,250,0.1)" stroke-width="1"/>
+  <text x="60" y="616" font-size="10" fill="rgba(255,255,255,0.3)">toolnestai.net/seo-tools/meta-tag-generator</text>
+  <text x="1140" y="616" text-anchor="end" font-size="10" fill="rgba(255,255,255,0.3)">Free · No login · Instant results</text>
+</svg>

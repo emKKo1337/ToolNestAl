@@ -1,0 +1,117 @@
+<svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gC" cx="50%" cy="40%" r="60%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.28"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#818cf8"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#5b21b6" flood-opacity="0.38"/></filter>
+  </defs>
+  <rect width="900" height="460" fill="url(#bg)"/>
+  <ellipse cx="450" cy="230" rx="500" ry="340" fill="url(#gC)"/>
+
+  <text x="450" y="36" text-anchor="middle" font-size="20" font-weight="900" fill="url(#aG)">Meta Tag Generator: How to Generate Tags</text>
+  <text x="450" y="55" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.42)">ToolNest AI vs Manual Coding vs WordPress Plugins</text>
+
+  <!-- Column headers -->
+  <rect x="248" y="66" width="196" height="48" rx="10" fill="url(#bG)" filter="url(#sh)"/>
+  <text x="346" y="86" text-anchor="middle" font-size="11" font-weight="800" fill="#fff">✦ ToolNest AI</text>
+  <text x="346" y="103" text-anchor="middle" font-size="8.5" fill="rgba(255,255,255,0.75)">Meta Tag Generator</text>
+
+  <rect x="452" y="66" width="196" height="48" rx="10" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.14)" stroke-width="1.5"/>
+  <text x="550" y="86" text-anchor="middle" font-size="11" font-weight="800" fill="rgba(255,255,255,0.7)">✎ Manual Coding</text>
+  <text x="550" y="103" text-anchor="middle" font-size="8.5" fill="rgba(255,255,255,0.42)">Write tags by hand in HTML</text>
+
+  <rect x="656" y="66" width="216" height="48" rx="10" fill="rgba(37,99,235,0.16)" stroke="rgba(96,165,250,0.28)" stroke-width="1.5"/>
+  <text x="764" y="86" text-anchor="middle" font-size="11" font-weight="800" fill="#60a5fa">⊞ WP Plugin</text>
+  <text x="764" y="103" text-anchor="middle" font-size="8.5" fill="rgba(255,255,255,0.45)">Yoast / RankMath etc.</text>
+
+  <!-- Row labels -->
+  <g font-size="9" fill="rgba(255,255,255,0.55)">
+    <rect x="28" y="122" width="210" height="28" rx="6" fill="rgba(255,255,255,0.025)"/>
+    <text x="42" y="140" font-weight="600">Cost</text>
+    <rect x="28" y="156" width="210" height="28" rx="6" fill="rgba(255,255,255,0.02)"/>
+    <text x="42" y="174" font-weight="600">Time to generate full tag set</text>
+    <rect x="28" y="190" width="210" height="28" rx="6" fill="rgba(255,255,255,0.025)"/>
+    <text x="42" y="208" font-weight="600">Requires coding knowledge</text>
+    <rect x="28" y="224" width="210" height="28" rx="6" fill="rgba(255,255,255,0.02)"/>
+    <text x="42" y="242" font-weight="600">Character count guidance</text>
+    <rect x="28" y="258" width="210" height="28" rx="6" fill="rgba(255,255,255,0.025)"/>
+    <text x="42" y="276" font-weight="600">Open Graph + Twitter tags</text>
+    <rect x="28" y="292" width="210" height="28" rx="6" fill="rgba(255,255,255,0.02)"/>
+    <text x="42" y="310" font-weight="600">Canonical tag generated</text>
+    <rect x="28" y="326" width="210" height="28" rx="6" fill="rgba(255,255,255,0.025)"/>
+    <text x="42" y="344" font-weight="600">Works for any website/CMS</text>
+    <rect x="28" y="360" width="210" height="28" rx="6" fill="rgba(255,255,255,0.02)"/>
+    <text x="42" y="378" font-weight="600">One-click copy all tags</text>
+    <rect x="28" y="394" width="210" height="28" rx="6" fill="rgba(255,255,255,0.025)"/>
+    <text x="42" y="412" font-weight="600">Export ready HTML</text>
+  </g>
+
+  <!-- ToolNest AI column -->
+  <g text-anchor="middle" font-size="9">
+    <rect x="248" y="122" width="196" height="28" rx="6" fill="rgba(124,58,237,0.08)"/>
+    <text x="346" y="141" fill="rgba(34,197,94,0.9)" font-weight="700">Free forever</text>
+    <rect x="248" y="156" width="196" height="28" rx="6" fill="rgba(124,58,237,0.06)"/>
+    <text x="346" y="175" fill="rgba(34,197,94,0.9)" font-weight="700">Under 10 seconds</text>
+    <rect x="248" y="190" width="196" height="28" rx="6" fill="rgba(124,58,237,0.08)"/>
+    <text x="346" y="209" fill="rgba(34,197,94,0.9)" font-weight="700">✓ No — paste &amp; click</text>
+    <rect x="248" y="224" width="196" height="28" rx="6" fill="rgba(124,58,237,0.06)"/>
+    <text x="346" y="243" fill="rgba(34,197,94,0.9)" font-weight="700">✓ Real-time counter</text>
+    <rect x="248" y="258" width="196" height="28" rx="6" fill="rgba(124,58,237,0.08)"/>
+    <text x="346" y="277" fill="rgba(34,197,94,0.9)" font-weight="700">✓ Included</text>
+    <rect x="248" y="292" width="196" height="28" rx="6" fill="rgba(124,58,237,0.06)"/>
+    <text x="346" y="311" fill="rgba(34,197,94,0.9)" font-weight="700">✓ Auto-generated</text>
+    <rect x="248" y="326" width="196" height="28" rx="6" fill="rgba(124,58,237,0.08)"/>
+    <text x="346" y="345" fill="rgba(34,197,94,0.9)" font-weight="700">✓ Any CMS or static</text>
+    <rect x="248" y="360" width="196" height="28" rx="6" fill="rgba(124,58,237,0.06)"/>
+    <text x="346" y="379" fill="rgba(34,197,94,0.9)" font-weight="700">✓ One click</text>
+    <rect x="248" y="394" width="196" height="28" rx="6" fill="rgba(124,58,237,0.08)"/>
+    <text x="346" y="413" fill="rgba(34,197,94,0.9)" font-weight="700">✓ Export HTML</text>
+  </g>
+
+  <!-- Manual Coding column -->
+  <g text-anchor="middle" font-size="9">
+    <rect x="452" y="122" width="196" height="28" rx="6" fill="rgba(255,255,255,0.02)"/>
+    <text x="550" y="141" fill="rgba(34,197,94,0.85)">Free (your time)</text>
+    <rect x="452" y="156" width="196" height="28" rx="6" fill="rgba(255,255,255,0.015)"/>
+    <text x="550" y="175" fill="rgba(251,191,36,0.85)">15–30 minutes</text>
+    <rect x="452" y="190" width="196" height="28" rx="6" fill="rgba(255,255,255,0.02)"/>
+    <text x="550" y="209" fill="rgba(239,68,68,0.85)">✗ HTML required</text>
+    <rect x="452" y="224" width="196" height="28" rx="6" fill="rgba(255,255,255,0.015)"/>
+    <text x="550" y="243" fill="rgba(239,68,68,0.85)">✗ Manual counting</text>
+    <rect x="452" y="258" width="196" height="28" rx="6" fill="rgba(255,255,255,0.02)"/>
+    <text x="550" y="277" fill="rgba(251,191,36,0.85)">⚠ Must write manually</text>
+    <rect x="452" y="292" width="196" height="28" rx="6" fill="rgba(255,255,255,0.015)"/>
+    <text x="550" y="311" fill="rgba(251,191,36,0.85)">⚠ Easy to forget</text>
+    <rect x="452" y="326" width="196" height="28" rx="6" fill="rgba(255,255,255,0.02)"/>
+    <text x="550" y="345" fill="rgba(34,197,94,0.85)">✓ Any platform</text>
+    <rect x="452" y="360" width="196" height="28" rx="6" fill="rgba(255,255,255,0.015)"/>
+    <text x="550" y="379" fill="rgba(239,68,68,0.85)">✗ Paste one by one</text>
+    <rect x="452" y="394" width="196" height="28" rx="6" fill="rgba(255,255,255,0.02)"/>
+    <text x="550" y="413" fill="rgba(239,68,68,0.85)">✗ Write yourself</text>
+  </g>
+
+  <!-- WP Plugin column -->
+  <g text-anchor="middle" font-size="9">
+    <rect x="656" y="122" width="216" height="28" rx="6" fill="rgba(37,99,235,0.05)"/>
+    <text x="764" y="141" fill="rgba(34,197,94,0.85)">Free (basic) / paid</text>
+    <rect x="656" y="156" width="216" height="28" rx="6" fill="rgba(37,99,235,0.04)"/>
+    <text x="764" y="175" fill="rgba(34,197,94,0.85)">Fast once set up</text>
+    <rect x="656" y="190" width="216" height="28" rx="6" fill="rgba(37,99,235,0.05)"/>
+    <text x="764" y="209" fill="rgba(34,197,94,0.85)">✓ GUI-based</text>
+    <rect x="656" y="224" width="216" height="28" rx="6" fill="rgba(37,99,235,0.04)"/>
+    <text x="764" y="243" fill="rgba(34,197,94,0.85)">✓ Built-in counters</text>
+    <rect x="656" y="258" width="216" height="28" rx="6" fill="rgba(37,99,235,0.05)"/>
+    <text x="764" y="277" fill="rgba(34,197,94,0.85)">✓ Included</text>
+    <rect x="656" y="292" width="216" height="28" rx="6" fill="rgba(37,99,235,0.04)"/>
+    <text x="764" y="311" fill="rgba(34,197,94,0.85)">✓ Auto-generated</text>
+    <rect x="656" y="326" width="216" height="28" rx="6" fill="rgba(37,99,235,0.05)"/>
+    <text x="764" y="345" fill="rgba(239,68,68,0.85)">✗ WordPress only</text>
+    <rect x="656" y="360" width="216" height="28" rx="6" fill="rgba(37,99,235,0.04)"/>
+    <text x="764" y="379" fill="rgba(34,197,94,0.85)">✓ Easy copy</text>
+    <rect x="656" y="394" width="216" height="28" rx="6" fill="rgba(37,99,235,0.05)"/>
+    <text x="764" y="413" fill="rgba(251,191,36,0.85)">⚠ Within WP only</text>
+  </g>
+
+  <text x="450" y="446" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.28)">toolnestai.net/seo-tools/meta-tag-generator — works for WordPress, Shopify, Webflow, HTML and any CMS</text>
+</svg>
