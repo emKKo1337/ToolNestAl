@@ -1,0 +1,133 @@
+<svg viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gT" cx="50%" cy="0%" r="60%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.3"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="lapG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1a1040"/><stop offset="100%" stop-color="#0d0824"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="6" stdDeviation="18" flood-color="#5b21b6" flood-opacity="0.45"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <ellipse cx="600" cy="100" rx="700" ry="300" fill="url(#gT)"/>
+
+  <text x="600" y="46" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.3)">ToolNest AI — Calculators › Word Counter</text>
+  <text x="600" y="82" text-anchor="middle" font-size="34" font-weight="900" fill="url(#aG)" filter="url(#glow)">Word Counter — Count Words, Characters &amp; Reading Time Free</text>
+  <text x="600" y="108" text-anchor="middle" font-size="14" fill="rgba(255,255,255,0.45)">Real-time text statistics: words, characters, sentences, paragraphs and reading time · no sign-up</text>
+
+  <!-- Laptop frame -->
+  <rect x="80" y="128" width="1040" height="500" rx="14" fill="url(#lapG)" stroke="rgba(124,58,237,0.3)" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="80" y="128" width="1040" height="34" rx="14" fill="rgba(255,255,255,0.05)"/>
+  <rect x="80" y="146" width="1040" height="16" fill="rgba(255,255,255,0.02)"/>
+  <circle cx="106" cy="145" r="6" fill="rgba(239,68,68,0.6)"/>
+  <circle cx="126" cy="145" r="6" fill="rgba(251,191,36,0.6)"/>
+  <circle cx="146" cy="145" r="6" fill="rgba(34,197,94,0.6)"/>
+  <text x="600" y="150" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.2)">toolnestai.net/calculators/word-counter</text>
+
+  <!-- Main textarea -->
+  <rect x="96" y="174" width="640" height="310" rx="10" fill="rgba(0,0,0,0.45)" stroke="rgba(124,58,237,0.35)" stroke-width="1.5"/>
+  <text x="112" y="194" font-size="10" fill="rgba(255,255,255,0.6)">The quick brown fox jumps over the lazy dog. Pack my box with five dozen</text>
+  <text x="112" y="210" font-size="10" fill="rgba(255,255,255,0.6)">liquor jugs. How vexingly quick daft zebras jump!</text>
+  <text x="112" y="240" font-size="10" fill="rgba(255,255,255,0.6)">The five boxing wizards jump quickly. Sphinx of black quartz, judge my vow.</text>
+  <text x="112" y="256" font-size="10" fill="rgba(255,255,255,0.6)">Waltz, bad nymph, for quick jigs vex. Blowzy night-frumps vex'd jack q.</text>
+  <text x="112" y="286" font-size="10" fill="rgba(255,255,255,0.6)">Mr. Jock, TV quiz PhD, bags few lynx. Sympathizing would fix Quaker</text>
+  <text x="112" y="302" font-size="10" fill="rgba(255,255,255,0.6)">objectives, Wendy. Amazingly few discotheques provide jukeboxes.</text>
+  <text x="112" y="332" font-size="10" fill="rgba(255,255,255,0.6)">Sixty zips were quickly picked from the woven jute bag. The job requires</text>
+  <text x="112" y="348" font-size="10" fill="rgba(255,255,255,0.6)">extra pluck and zeal from every young wage earner.</text>
+  <rect x="509" y="338" width="2" height="14" fill="rgba(167,139,250,0.8)"/>
+
+  <!-- Word count progress bar for Twitter -->
+  <rect x="112" y="366" width="608" height="4" rx="2" fill="rgba(255,255,255,0.05)"/>
+  <rect x="112" y="366" width="91" height="4" rx="2" fill="rgba(52,211,153,0.6)"/>
+  <text x="112" y="382" font-size="8.5" fill="rgba(255,255,255,0.25)">Twitter: 120/280 chars used</text>
+  <text x="600" y="382" text-anchor="end" font-size="8.5" fill="rgba(255,255,255,0.25)">160 remaining</text>
+
+  <!-- Toolbar -->
+  <rect x="96" y="390" width="640" height="30" rx="6" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="112" y="408" font-size="9" fill="rgba(255,255,255,0.35)">📋 Paste</text>
+  <text x="168" y="408" font-size="9" fill="rgba(255,255,255,0.35)">📄 Upload TXT</text>
+  <text x="258" y="408" font-size="9" fill="rgba(255,255,255,0.35)">⬇ Download</text>
+  <text x="358" y="408" font-size="9" fill="rgba(255,255,255,0.35)">🔤 Find &amp; Replace</text>
+  <text x="480" y="408" font-size="9" fill="rgba(255,255,255,0.35)">🗑 Clear</text>
+  <text x="648" y="408" text-anchor="end" font-size="9" fill="rgba(167,139,250,0.6)">✓ Auto-save</text>
+
+  <!-- Right panel: stats -->
+  <rect x="752" y="174" width="352" height="246" rx="10" fill="rgba(255,255,255,0.025)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <text x="772" y="196" font-size="10" font-weight="700" fill="rgba(255,255,255,0.3)">TEXT STATISTICS</text>
+
+  <g text-anchor="start">
+    <!-- Words -->
+    <rect x="768" y="204" width="320" height="30" rx="6" fill="rgba(124,58,237,0.1)" stroke="rgba(124,58,237,0.2)" stroke-width="1"/>
+    <text x="784" y="222" font-size="10" fill="rgba(255,255,255,0.65)">Words</text>
+    <text x="1080" y="222" text-anchor="end" font-size="16" font-weight="900" fill="#a78bfa">127</text>
+
+    <!-- Chars with spaces -->
+    <rect x="768" y="240" width="320" height="30" rx="6" fill="rgba(14,116,144,0.08)" stroke="rgba(14,116,144,0.18)" stroke-width="1"/>
+    <text x="784" y="258" font-size="10" fill="rgba(255,255,255,0.65)">Characters (with spaces)</text>
+    <text x="1080" y="258" text-anchor="end" font-size="16" font-weight="900" fill="#67e8f9">718</text>
+
+    <!-- Chars no spaces -->
+    <rect x="768" y="276" width="320" height="30" rx="6" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="784" y="294" font-size="10" fill="rgba(255,255,255,0.65)">Characters (no spaces)</text>
+    <text x="1080" y="294" text-anchor="end" font-size="16" font-weight="900" fill="rgba(255,255,255,0.7)">592</text>
+
+    <!-- Sentences -->
+    <rect x="768" y="312" width="320" height="30" rx="6" fill="rgba(251,191,36,0.07)" stroke="rgba(251,191,36,0.17)" stroke-width="1"/>
+    <text x="784" y="330" font-size="10" fill="rgba(255,255,255,0.65)">Sentences</text>
+    <text x="1080" y="330" text-anchor="end" font-size="16" font-weight="900" fill="#fbbf24">11</text>
+
+    <!-- Paragraphs -->
+    <rect x="768" y="348" width="320" height="30" rx="6" fill="rgba(239,68,68,0.06)" stroke="rgba(239,68,68,0.15)" stroke-width="1"/>
+    <text x="784" y="366" font-size="10" fill="rgba(255,255,255,0.65)">Paragraphs</text>
+    <text x="1080" y="366" text-anchor="end" font-size="16" font-weight="900" fill="#f87171">3</text>
+
+    <!-- Reading time -->
+    <rect x="768" y="384" width="320" height="30" rx="6" fill="rgba(168,85,247,0.07)" stroke="rgba(168,85,247,0.17)" stroke-width="1"/>
+    <text x="784" y="402" font-size="10" fill="rgba(255,255,255,0.65)">Reading time</text>
+    <text x="1080" y="402" text-anchor="end" font-size="14" font-weight="900" fill="#c084fc">~1 min</text>
+  </g>
+
+  <!-- Platform limits panel -->
+  <rect x="752" y="430" width="352" height="110" rx="10" fill="rgba(255,255,255,0.025)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <text x="772" y="450" font-size="10" font-weight="700" fill="rgba(255,255,255,0.3)">PLATFORM CHARACTER LIMITS</text>
+  <g font-size="9">
+    <text x="772" y="468" fill="rgba(255,255,255,0.5)">Twitter / X post</text>
+    <rect x="900" y="458" width="190" height="6" rx="3" fill="rgba(255,255,255,0.05)"/>
+    <rect x="900" y="458" width="48" height="6" rx="3" fill="rgba(52,211,153,0.5)"/>
+    <text x="1096" y="466" text-anchor="end" font-size="8" fill="rgba(52,211,153,0.7)">120/280</text>
+
+    <text x="772" y="488" fill="rgba(255,255,255,0.5)">Meta description</text>
+    <rect x="900" y="478" width="190" height="6" rx="3" fill="rgba(255,255,255,0.05)"/>
+    <rect x="900" y="478" width="90" height="6" rx="3" fill="rgba(251,191,36,0.5)"/>
+    <text x="1096" y="486" text-anchor="end" font-size="8" fill="rgba(251,191,36,0.7)">75/160</text>
+
+    <text x="772" y="508" fill="rgba(255,255,255,0.5)">LinkedIn post</text>
+    <rect x="900" y="498" width="190" height="6" rx="3" fill="rgba(255,255,255,0.05)"/>
+    <rect x="900" y="498" width="20" height="6" rx="3" fill="rgba(167,139,250,0.5)"/>
+    <text x="1096" y="506" text-anchor="end" font-size="8" fill="rgba(167,139,250,0.7)">120/3000</text>
+
+    <text x="772" y="528" fill="rgba(255,255,255,0.5)">Instagram caption</text>
+    <rect x="900" y="518" width="190" height="6" rx="3" fill="rgba(255,255,255,0.05)"/>
+    <rect x="900" y="518" width="10" height="6" rx="3" fill="rgba(96,165,250,0.5)"/>
+    <text x="1096" y="526" text-anchor="end" font-size="8" fill="rgba(96,165,250,0.7)">120/2200</text>
+  </g>
+
+  <!-- Stats row -->
+  <g text-anchor="middle">
+    <rect x="80" y="638" width="248" height="48" rx="8" fill="rgba(124,58,237,0.15)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+    <text x="204" y="660" font-size="16" font-weight="900" fill="#a78bfa">Real-time</text>
+    <text x="204" y="678" font-size="9" fill="rgba(255,255,255,0.45)">updates as you type</text>
+
+    <rect x="338" y="638" width="248" height="48" rx="8" fill="rgba(14,116,144,0.12)" stroke="rgba(14,116,144,0.28)" stroke-width="1"/>
+    <text x="462" y="660" font-size="16" font-weight="900" fill="#67e8f9">6 metrics</text>
+    <text x="462" y="678" font-size="9" fill="rgba(255,255,255,0.45)">words · chars · sentences · more</text>
+
+    <rect x="596" y="638" width="248" height="48" rx="8" fill="rgba(16,185,129,0.1)" stroke="rgba(16,185,129,0.25)" stroke-width="1"/>
+    <text x="720" y="660" font-size="16" font-weight="900" fill="#34d399">No limit</text>
+    <text x="720" y="678" font-size="9" fill="rgba(255,255,255,0.45)">paste any size document</text>
+
+    <rect x="854" y="638" width="248" height="48" rx="8" fill="rgba(251,191,36,0.08)" stroke="rgba(251,191,36,0.2)" stroke-width="1"/>
+    <text x="978" y="660" font-size="16" font-weight="900" fill="#fbbf24">Private</text>
+    <text x="978" y="678" font-size="9" fill="rgba(255,255,255,0.45)">text never leaves your browser</text>
+  </g>
+</svg>

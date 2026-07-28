@@ -1,0 +1,191 @@
+<svg viewBox="0 0 900 1200" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gT" cx="50%" cy="10%" r="50%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.3"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gB" cx="50%" cy="90%" r="50%"><stop offset="0%" stop-color="#0e7490" stop-opacity="0.2"/><stop offset="100%" stop-color="#0e7490" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#5b21b6" flood-opacity="0.35"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="900" height="1200" fill="url(#bg)"/>
+  <ellipse cx="450" cy="150" rx="500" ry="300" fill="url(#gT)"/>
+  <ellipse cx="450" cy="1050" rx="500" ry="300" fill="url(#gB)"/>
+
+  <text x="450" y="52" text-anchor="middle" font-size="26" font-weight="900" fill="url(#aG)" filter="url(#glow)">Word Counter</text>
+  <text x="450" y="80" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.45)">The complete guide to counting words, characters &amp; reading time — plus platform limits</text>
+
+  <!-- Section 1: Why word counts matter -->
+  <rect x="28" y="100" width="844" height="190" rx="12" fill="rgba(255,255,255,0.025)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <text x="48" y="124" font-size="12" font-weight="800" fill="url(#aG)">01 — Why Word Count Matters</text>
+  <g font-size="10" fill="rgba(255,255,255,0.65)">
+    <circle cx="56" cy="148" r="4" fill="#a78bfa"/>
+    <text x="70" y="152">Every platform has a character or word limit — knowing it before writing saves time</text>
+    <circle cx="56" cy="172" r="4" fill="#a78bfa"/>
+    <text x="70" y="176">SEO titles truncate at ~60 chars in Google — overruns hurt click-through rates</text>
+    <circle cx="56" cy="196" r="4" fill="#a78bfa"/>
+    <text x="70" y="200">Academic submissions have strict word limits — staying within them is required</text>
+    <circle cx="56" cy="220" r="4" fill="#a78bfa"/>
+    <text x="70" y="224">Reading time estimates help readers decide whether to commit — 200–250 wpm is average</text>
+    <circle cx="56" cy="244" r="4" fill="#a78bfa"/>
+    <text x="70" y="248">Blog posts of 1,500+ words perform better in search than thin content</text>
+    <circle cx="56" cy="268" r="4" fill="#a78bfa"/>
+    <text x="70" y="272">Sentence and paragraph counts reveal readability — shorter is usually clearer</text>
+  </g>
+
+  <!-- Section 2: 6 metrics explained -->
+  <rect x="28" y="308" width="844" height="130" rx="12" fill="rgba(124,58,237,0.08)" stroke="rgba(124,58,237,0.2)" stroke-width="1"/>
+  <text x="48" y="332" font-size="12" font-weight="800" fill="url(#aG)">02 — 6 Metrics the Word Counter Tracks</text>
+  <g text-anchor="middle">
+    <rect x="44" y="346" width="128" height="70" rx="8" fill="rgba(124,58,237,0.15)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+    <text x="108" y="372" font-size="14" font-weight="900" fill="#a78bfa">Words</text>
+    <text x="108" y="390" font-size="8" fill="rgba(255,255,255,0.5)">Sequences of</text>
+    <text x="108" y="402" font-size="8" fill="rgba(255,255,255,0.5)">non-space chars</text>
+
+    <rect x="184" y="346" width="128" height="70" rx="8" fill="rgba(14,116,144,0.1)" stroke="rgba(14,116,144,0.22)" stroke-width="1"/>
+    <text x="248" y="372" font-size="14" font-weight="900" fill="#67e8f9">Chars+</text>
+    <text x="248" y="390" font-size="8" fill="rgba(255,255,255,0.5)">Characters</text>
+    <text x="248" y="402" font-size="8" fill="rgba(255,255,255,0.5)">with spaces</text>
+
+    <rect x="324" y="346" width="128" height="70" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+    <text x="388" y="372" font-size="14" font-weight="900" fill="rgba(255,255,255,0.75)">Chars-</text>
+    <text x="388" y="390" font-size="8" fill="rgba(255,255,255,0.5)">Characters</text>
+    <text x="388" y="402" font-size="8" fill="rgba(255,255,255,0.5)">no spaces</text>
+
+    <rect x="464" y="346" width="128" height="70" rx="8" fill="rgba(251,191,36,0.08)" stroke="rgba(251,191,36,0.2)" stroke-width="1"/>
+    <text x="528" y="372" font-size="14" font-weight="900" fill="#fbbf24">Sentences</text>
+    <text x="528" y="390" font-size="8" fill="rgba(255,255,255,0.5)">Ends at . ! ?</text>
+    <text x="528" y="402" font-size="8" fill="rgba(255,255,255,0.5)">punctuation</text>
+
+    <rect x="604" y="346" width="128" height="70" rx="8" fill="rgba(239,68,68,0.07)" stroke="rgba(239,68,68,0.17)" stroke-width="1"/>
+    <text x="668" y="372" font-size="14" font-weight="900" fill="#f87171">Paragraphs</text>
+    <text x="668" y="390" font-size="8" fill="rgba(255,255,255,0.5)">Blocks between</text>
+    <text x="668" y="402" font-size="8" fill="rgba(255,255,255,0.5)">blank lines</text>
+
+    <rect x="744" y="346" width="128" height="70" rx="8" fill="rgba(168,85,247,0.08)" stroke="rgba(168,85,247,0.18)" stroke-width="1"/>
+    <text x="808" y="372" font-size="14" font-weight="900" fill="#c084fc">Read time</text>
+    <text x="808" y="390" font-size="8" fill="rgba(255,255,255,0.5)">words ÷ 238</text>
+    <text x="808" y="402" font-size="8" fill="rgba(255,255,255,0.5)">wpm average</text>
+  </g>
+
+  <!-- Section 3: Reading speed facts -->
+  <rect x="28" y="456" width="844" height="200" rx="12" fill="rgba(255,255,255,0.025)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <text x="48" y="480" font-size="12" font-weight="800" fill="url(#aG)">03 — Reading Speed &amp; Time Estimates</text>
+  <text x="48" y="498" font-size="9" fill="rgba(255,255,255,0.4)">Reading time = word count ÷ average reading speed (238 wpm for adults)</text>
+
+  <g text-anchor="middle">
+    <rect x="44" y="508" width="188" height="130" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="138" y="532" font-size="13" font-weight="700" fill="rgba(255,255,255,0.7)">Short content</text>
+    <text x="138" y="552" font-size="11" font-weight="900" fill="#a78bfa">100–300 words</text>
+    <text x="138" y="570" font-size="9" fill="rgba(255,255,255,0.4)">~1 minute</text>
+    <text x="138" y="590" font-size="8.5" fill="rgba(255,255,255,0.35)">Social posts, emails,</text>
+    <text x="138" y="605" font-size="8.5" fill="rgba(255,255,255,0.35)">product descriptions</text>
+    <text x="138" y="620" font-size="8.5" fill="rgba(255,255,255,0.35)">ad copy</text>
+
+    <rect x="244" y="508" width="188" height="130" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="338" y="532" font-size="13" font-weight="700" fill="rgba(255,255,255,0.7)">Medium content</text>
+    <text x="338" y="552" font-size="11" font-weight="900" fill="#67e8f9">500–800 words</text>
+    <text x="338" y="570" font-size="9" fill="rgba(255,255,255,0.4)">2–4 minutes</text>
+    <text x="338" y="590" font-size="8.5" fill="rgba(255,255,255,0.35)">News articles, how-to</text>
+    <text x="338" y="605" font-size="8.5" fill="rgba(255,255,255,0.35)">guides, landing pages</text>
+    <text x="338" y="620" font-size="8.5" fill="rgba(255,255,255,0.35)">newsletter issues</text>
+
+    <rect x="444" y="508" width="188" height="130" rx="8" fill="rgba(124,58,237,0.08)" stroke="rgba(124,58,237,0.2)" stroke-width="1"/>
+    <text x="538" y="532" font-size="13" font-weight="700" fill="rgba(255,255,255,0.7)">Long-form SEO</text>
+    <text x="538" y="552" font-size="11" font-weight="900" fill="#a78bfa">1,500–2,500 words</text>
+    <text x="538" y="570" font-size="9" fill="rgba(255,255,255,0.4)">6–10 minutes</text>
+    <text x="538" y="590" font-size="8.5" fill="rgba(255,255,255,0.35)">Blog posts, guides,</text>
+    <text x="538" y="605" font-size="8.5" fill="rgba(255,255,255,0.35)">tutorials — ideal</text>
+    <text x="538" y="620" font-size="8.5" fill="rgba(255,255,255,0.35)">for search ranking</text>
+
+    <rect x="644" y="508" width="188" height="130" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="738" y="532" font-size="13" font-weight="700" fill="rgba(255,255,255,0.7)">Pillar content</text>
+    <text x="738" y="552" font-size="11" font-weight="900" fill="#34d399">3,000–10,000 words</text>
+    <text x="738" y="570" font-size="9" fill="rgba(255,255,255,0.4)">12–40 minutes</text>
+    <text x="738" y="590" font-size="8.5" fill="rgba(255,255,255,0.35)">Ultimate guides, white</text>
+    <text x="738" y="605" font-size="8.5" fill="rgba(255,255,255,0.35)">papers, case studies,</text>
+    <text x="738" y="620" font-size="8.5" fill="rgba(255,255,255,0.35)">technical docs</text>
+  </g>
+
+  <!-- Section 4: Platform limits summary -->
+  <rect x="28" y="674" width="844" height="290" rx="12" fill="rgba(255,255,255,0.025)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <text x="48" y="698" font-size="12" font-weight="800" fill="url(#aG)">04 — Platform Character Limits at a Glance</text>
+
+  <g font-size="10">
+    <rect x="44" y="708" width="810" height="26" rx="5" fill="rgba(52,211,153,0.06)" stroke="rgba(52,211,153,0.12)" stroke-width="1"/>
+    <text x="60" y="724" fill="rgba(255,255,255,0.65)">🐦  Twitter / X post</text>
+    <rect x="280" y="712" width="530" height="10" rx="5" fill="rgba(255,255,255,0.04)"/>
+    <rect x="280" y="712" width="71" height="10" rx="5" fill="rgba(52,211,153,0.4)"/>
+    <text x="824" y="724" text-anchor="end" font-weight="700" fill="rgba(52,211,153,0.9)">280 chars</text>
+
+    <rect x="44" y="740" width="810" height="26" rx="5" fill="rgba(167,139,250,0.05)" stroke="rgba(167,139,250,0.1)" stroke-width="1"/>
+    <text x="60" y="756" fill="rgba(255,255,255,0.65)">📸  Instagram caption</text>
+    <rect x="280" y="744" width="530" height="10" rx="5" fill="rgba(255,255,255,0.04)"/>
+    <rect x="280" y="744" width="420" height="10" rx="5" fill="rgba(167,139,250,0.3)"/>
+    <text x="824" y="756" text-anchor="end" font-weight="700" fill="rgba(167,139,250,0.9)">2,200 chars</text>
+
+    <rect x="44" y="772" width="810" height="26" rx="5" fill="rgba(251,191,36,0.05)" stroke="rgba(251,191,36,0.1)" stroke-width="1"/>
+    <text x="60" y="788" fill="rgba(255,255,255,0.65)">💼  LinkedIn post</text>
+    <rect x="280" y="776" width="530" height="10" rx="5" fill="rgba(255,255,255,0.04)"/>
+    <rect x="280" y="776" width="460" height="10" rx="5" fill="rgba(251,191,36,0.28)"/>
+    <text x="824" y="788" text-anchor="end" font-weight="700" fill="rgba(251,191,36,0.9)">3,000 chars</text>
+
+    <rect x="44" y="804" width="810" height="26" rx="5" fill="rgba(239,68,68,0.05)" stroke="rgba(239,68,68,0.1)" stroke-width="1"/>
+    <text x="60" y="820" fill="rgba(255,255,255,0.65)">🔍  SEO title tag</text>
+    <rect x="280" y="808" width="530" height="10" rx="5" fill="rgba(255,255,255,0.04)"/>
+    <rect x="280" y="808" width="15" height="10" rx="5" fill="rgba(239,68,68,0.45)"/>
+    <text x="824" y="820" text-anchor="end" font-weight="700" fill="rgba(239,68,68,0.9)">~60 chars</text>
+
+    <rect x="44" y="836" width="810" height="26" rx="5" fill="rgba(239,68,68,0.05)" stroke="rgba(239,68,68,0.1)" stroke-width="1"/>
+    <text x="60" y="852" fill="rgba(255,255,255,0.65)">🔍  SEO meta description</text>
+    <rect x="280" y="840" width="530" height="10" rx="5" fill="rgba(255,255,255,0.04)"/>
+    <rect x="280" y="840" width="41" height="10" rx="5" fill="rgba(239,68,68,0.35)"/>
+    <text x="824" y="852" text-anchor="end" font-weight="700" fill="rgba(239,68,68,0.9)">~160 chars</text>
+
+    <rect x="44" y="868" width="810" height="26" rx="5" fill="rgba(96,165,250,0.05)" stroke="rgba(96,165,250,0.1)" stroke-width="1"/>
+    <text x="60" y="884" fill="rgba(255,255,255,0.65)">✉  Email subject line</text>
+    <rect x="280" y="872" width="530" height="10" rx="5" fill="rgba(255,255,255,0.04)"/>
+    <rect x="280" y="872" width="9" height="10" rx="5" fill="rgba(96,165,250,0.45)"/>
+    <text x="824" y="884" text-anchor="end" font-weight="700" fill="rgba(96,165,250,0.9)">40–50 chars</text>
+
+    <rect x="44" y="900" width="810" height="26" rx="5" fill="rgba(52,211,153,0.05)" stroke="rgba(52,211,153,0.1)" stroke-width="1"/>
+    <text x="60" y="916" fill="rgba(255,255,255,0.65)">▶  YouTube description</text>
+    <rect x="280" y="904" width="530" height="10" rx="5" fill="rgba(255,255,255,0.04)"/>
+    <rect x="280" y="904" width="495" height="10" rx="5" fill="rgba(52,211,153,0.2)"/>
+    <text x="824" y="916" text-anchor="end" font-weight="700" fill="rgba(52,211,153,0.9)">5,000 chars</text>
+
+    <rect x="44" y="932" width="810" height="26" rx="5" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="60" y="948" fill="rgba(255,255,255,0.65)">📝  Blog post (SEO optimal)</text>
+    <rect x="280" y="936" width="530" height="10" rx="5" fill="rgba(255,255,255,0.04)"/>
+    <rect x="280" y="936" width="240" height="10" rx="5" fill="rgba(167,139,250,0.2)"/>
+    <text x="824" y="948" text-anchor="end" font-weight="700" fill="rgba(167,139,250,0.9)">1,500–2,500 words</text>
+  </g>
+
+  <!-- Section 5: Tips -->
+  <rect x="28" y="982" width="844" height="100" rx="12" fill="rgba(255,255,255,0.025)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <text x="48" y="1006" font-size="12" font-weight="800" fill="url(#aG)">05 — 5 Tips for Using the Word Counter</text>
+  <g font-size="9.5" fill="rgba(255,255,255,0.6)">
+    <circle cx="62" cy="1030" r="12" fill="url(#bG)"/>
+    <text x="62" y="1034" text-anchor="middle" font-size="9" font-weight="900" fill="white">1</text>
+    <text x="82" y="1034">Paste any text — updates in real time</text>
+    <circle cx="270" cy="1030" r="12" fill="url(#bG)"/>
+    <text x="270" y="1034" text-anchor="middle" font-size="9" font-weight="900" fill="white">2</text>
+    <text x="290" y="1034">Check chars for SEO titles and descriptions</text>
+    <circle cx="516" cy="1030" r="12" fill="url(#bG)"/>
+    <text x="516" y="1034" text-anchor="middle" font-size="9" font-weight="900" fill="white">3</text>
+    <text x="536" y="1034">Use reading time for content briefs</text>
+    <circle cx="714" cy="1030" r="12" fill="url(#bG)"/>
+    <text x="714" y="1034" text-anchor="middle" font-size="9" font-weight="900" fill="white">4</text>
+    <text x="734" y="1034">Upload TXT files — no size limit</text>
+
+    <circle cx="62" cy="1060" r="12" fill="url(#bG)"/>
+    <text x="62" y="1064" text-anchor="middle" font-size="9" font-weight="900" fill="white">5</text>
+    <text x="82" y="1064">Your text is never sent to a server — fully private</text>
+  </g>
+
+  <!-- CTA -->
+  <rect x="28" y="1110" width="844" height="66" rx="12" fill="url(#bG)" filter="url(#sh)"/>
+  <text x="450" y="1142" text-anchor="middle" font-size="18" font-weight="900" fill="#fff">Count Words Free — Real-Time Stats</text>
+  <text x="450" y="1162" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.75)">Words · Characters · Sentences · Paragraphs · Reading Time · Platform Limits</text>
+  <text x="450" y="1170" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(255,255,255,0.4)">toolnestai.net/calculators/word-counter</text>
+</svg>

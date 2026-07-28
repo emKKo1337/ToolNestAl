@@ -1,0 +1,116 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="30%" cy="40%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gL" cx="15%" cy="50%" r="55%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.45"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gR" cx="85%" cy="50%" r="55%"><stop offset="0%" stop-color="#0e7490" stop-opacity="0.28"/><stop offset="100%" stop-color="#0e7490" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="lapG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1a1040"/><stop offset="100%" stop-color="#0d0824"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="8" stdDeviation="20" flood-color="#5b21b6" flood-opacity="0.5"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <ellipse cx="180" cy="315" rx="600" ry="500" fill="url(#gL)"/>
+  <ellipse cx="1020" cy="315" rx="600" ry="500" fill="url(#gR)"/>
+
+  <!-- Left -->
+  <text x="60" y="70" font-size="14" font-weight="700" fill="url(#aG)" filter="url(#glow)">ToolNest AI</text>
+  <text x="60" y="106" font-size="13" fill="rgba(255,255,255,0.35)">Calculators › Word Counter</text>
+  <text x="60" y="185" font-size="52" font-weight="900" fill="url(#aG)" filter="url(#glow)">Word</text>
+  <text x="60" y="245" font-size="52" font-weight="900" fill="url(#aG)" filter="url(#glow)">Counter</text>
+  <text x="60" y="300" font-size="18" fill="rgba(255,255,255,0.6)">Words · Characters · Sentences</text>
+  <text x="60" y="328" font-size="18" fill="rgba(255,255,255,0.6)">Reading time · Real-time · Free</text>
+
+  <!-- Stat badges -->
+  <rect x="60" y="358" width="110" height="52" rx="8" fill="rgba(124,58,237,0.2)" stroke="rgba(124,58,237,0.4)" stroke-width="1"/>
+  <text x="115" y="382" text-anchor="middle" font-size="16" font-weight="900" fill="#a78bfa">Live</text>
+  <text x="115" y="400" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.45)">real-time stats</text>
+
+  <rect x="182" y="358" width="110" height="52" rx="8" fill="rgba(14,116,144,0.15)" stroke="rgba(14,116,144,0.35)" stroke-width="1"/>
+  <text x="237" y="382" text-anchor="middle" font-size="20" font-weight="900" fill="#67e8f9">6</text>
+  <text x="237" y="400" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.45)">metrics</text>
+
+  <rect x="304" y="358" width="110" height="52" rx="8" fill="rgba(16,185,129,0.12)" stroke="rgba(16,185,129,0.3)" stroke-width="1"/>
+  <text x="359" y="382" text-anchor="middle" font-size="20" font-weight="900" fill="#34d399">0</text>
+  <text x="359" y="400" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.45)">data stored</text>
+
+  <rect x="426" y="358" width="110" height="52" rx="8" fill="rgba(251,191,36,0.1)" stroke="rgba(251,191,36,0.25)" stroke-width="1"/>
+  <text x="481" y="382" text-anchor="middle" font-size="20" font-weight="900" fill="#fbbf24">Free</text>
+  <text x="481" y="400" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.45)">always</text>
+
+  <text x="60" y="560" font-size="14" fill="rgba(255,255,255,0.25)">toolnestai.net/calculators/word-counter</text>
+
+  <!-- Right: Laptop with stats UI -->
+  <rect x="630" y="60" width="530" height="490" rx="16" fill="url(#lapG)" stroke="rgba(124,58,237,0.3)" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="630" y="60" width="530" height="36" rx="16" fill="rgba(255,255,255,0.05)"/>
+  <rect x="630" y="78" width="530" height="18" fill="rgba(255,255,255,0.02)"/>
+  <circle cx="655" cy="78" r="6" fill="rgba(239,68,68,0.6)"/>
+  <circle cx="675" cy="78" r="6" fill="rgba(251,191,36,0.6)"/>
+  <circle cx="695" cy="78" r="6" fill="rgba(34,197,94,0.6)"/>
+
+  <!-- Textarea -->
+  <rect x="642" y="106" width="506" height="170" rx="10" fill="rgba(0,0,0,0.45)" stroke="rgba(124,58,237,0.35)" stroke-width="1.5"/>
+  <text x="658" y="124" font-size="9.5" fill="rgba(255,255,255,0.55)">The quick brown fox jumps over the lazy dog.</text>
+  <text x="658" y="140" font-size="9.5" fill="rgba(255,255,255,0.55)">Pack my box with five dozen liquor jugs.</text>
+  <text x="658" y="156" font-size="9.5" fill="rgba(255,255,255,0.55)">How vexingly quick daft zebras jump!</text>
+  <text x="658" y="186" font-size="9.5" fill="rgba(255,255,255,0.55)">The five boxing wizards jump quickly. Sphinx</text>
+  <text x="658" y="202" font-size="9.5" fill="rgba(255,255,255,0.55)">of black quartz, judge my vow. Waltz, bad</text>
+  <text x="658" y="218" font-size="9.5" fill="rgba(255,255,255,0.55)">nymph, for quick jigs vex.</text>
+  <rect x="842" y="208" width="2" height="14" fill="rgba(167,139,250,0.8)"/>
+
+  <!-- Stat grid 2×3 -->
+  <g text-anchor="middle">
+    <rect x="642" y="286" width="154" height="52" rx="7" fill="rgba(124,58,237,0.12)" stroke="rgba(124,58,237,0.25)" stroke-width="1"/>
+    <text x="719" y="308" font-size="20" font-weight="900" fill="#a78bfa">57</text>
+    <text x="719" y="328" font-size="8.5" fill="rgba(255,255,255,0.4)">Words</text>
+
+    <rect x="806" y="286" width="154" height="52" rx="7" fill="rgba(14,116,144,0.1)" stroke="rgba(14,116,144,0.2)" stroke-width="1"/>
+    <text x="883" y="308" font-size="20" font-weight="900" fill="#67e8f9">312</text>
+    <text x="883" y="328" font-size="8.5" fill="rgba(255,255,255,0.4)">Characters (with spaces)</text>
+
+    <rect x="970" y="286" width="154" height="52" rx="7" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="1047" y="308" font-size="20" font-weight="900" fill="rgba(255,255,255,0.7)">258</text>
+    <text x="1047" y="328" font-size="8.5" fill="rgba(255,255,255,0.4)">Chars (no spaces)</text>
+
+    <rect x="642" y="348" width="154" height="52" rx="7" fill="rgba(251,191,36,0.08)" stroke="rgba(251,191,36,0.18)" stroke-width="1"/>
+    <text x="719" y="370" font-size="20" font-weight="900" fill="#fbbf24">6</text>
+    <text x="719" y="390" font-size="8.5" fill="rgba(255,255,255,0.4)">Sentences</text>
+
+    <rect x="806" y="348" width="154" height="52" rx="7" fill="rgba(239,68,68,0.07)" stroke="rgba(239,68,68,0.15)" stroke-width="1"/>
+    <text x="883" y="370" font-size="20" font-weight="900" fill="#f87171">2</text>
+    <text x="883" y="390" font-size="8.5" fill="rgba(255,255,255,0.4)">Paragraphs</text>
+
+    <rect x="970" y="348" width="154" height="52" rx="7" fill="rgba(168,85,247,0.07)" stroke="rgba(168,85,247,0.17)" stroke-width="1"/>
+    <text x="1047" y="370" font-size="18" font-weight="900" fill="#c084fc">~1 min</text>
+    <text x="1047" y="390" font-size="8.5" fill="rgba(255,255,255,0.4)">Reading time</text>
+  </g>
+
+  <!-- Platform limits mini -->
+  <text x="658" y="422" font-size="8.5" font-weight="700" fill="rgba(255,255,255,0.25)">PLATFORM LIMITS</text>
+  <g font-size="8.5">
+    <text x="658" y="440" fill="rgba(255,255,255,0.45)">Twitter</text>
+    <rect x="710" y="432" width="100" height="5" rx="2" fill="rgba(255,255,255,0.06)"/>
+    <rect x="710" y="432" width="20" height="5" rx="2" fill="rgba(52,211,153,0.5)"/>
+    <text x="820" y="440" fill="rgba(52,211,153,0.7)">120/280</text>
+
+    <text x="658" y="458" fill="rgba(255,255,255,0.45)">Meta desc</text>
+    <rect x="710" y="450" width="100" height="5" rx="2" fill="rgba(255,255,255,0.06)"/>
+    <rect x="710" y="450" width="47" height="5" rx="2" fill="rgba(251,191,36,0.5)"/>
+    <text x="820" y="458" fill="rgba(251,191,36,0.7)">75/160</text>
+
+    <text x="658" y="476" fill="rgba(255,255,255,0.45)">SEO title</text>
+    <rect x="710" y="468" width="100" height="5" rx="2" fill="rgba(255,255,255,0.06)"/>
+    <rect x="710" y="468" width="6" height="5" rx="2" fill="rgba(239,68,68,0.5)"/>
+    <text x="820" y="476" fill="rgba(239,68,68,0.7)">4/60</text>
+  </g>
+
+  <!-- Buttons -->
+  <rect x="642" y="494" width="240" height="30" rx="8" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="762" y="513" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.45)">Clear</text>
+  <rect x="898" y="494" width="240" height="30" rx="8" fill="url(#bG)" filter="url(#sh)"/>
+  <text x="1018" y="513" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">Copy Text</text>
+
+  <!-- Laptop base -->
+  <rect x="620" y="550" width="560" height="14" rx="4" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <rect x="760" y="562" width="260" height="8" rx="4" fill="rgba(255,255,255,0.03)"/>
+</svg>
