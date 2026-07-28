@@ -1,0 +1,150 @@
+<svg viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="30%" cy="40%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gL" cx="15%" cy="50%" r="55%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.4"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gR" cx="85%" cy="50%" r="55%"><stop offset="0%" stop-color="#0e7490" stop-opacity="0.22"/><stop offset="100%" stop-color="#0e7490" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="lapG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1a1040"/><stop offset="100%" stop-color="#0d0824"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="8" stdDeviation="20" flood-color="#5b21b6" flood-opacity="0.45"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <ellipse cx="180" cy="337" rx="600" ry="500" fill="url(#gL)"/>
+  <ellipse cx="1020" cy="337" rx="600" ry="500" fill="url(#gR)"/>
+
+  <!-- Left -->
+  <text x="60" y="70" font-size="14" font-weight="700" fill="url(#aG)" filter="url(#glow)">ToolNest AI</text>
+  <text x="60" y="106" font-size="13" fill="rgba(255,255,255,0.35)">Image Tools › Image Compressor</text>
+  <text x="60" y="178" font-size="50" font-weight="900" fill="url(#aG)" filter="url(#glow)">Image</text>
+  <text x="60" y="236" font-size="50" font-weight="900" fill="url(#aG)" filter="url(#glow)">Compressor</text>
+  <text x="60" y="290" font-size="17" fill="rgba(255,255,255,0.6)">Reduce image file size up to 90%</text>
+  <text x="60" y="316" font-size="17" fill="rgba(255,255,255,0.6)">without visible quality loss</text>
+
+  <!-- Stats row -->
+  <rect x="60" y="340" width="100" height="58" rx="8" fill="rgba(124,58,237,0.15)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+  <text x="110" y="366" text-anchor="middle" font-size="22" font-weight="900" fill="#a78bfa">90%</text>
+  <text x="110" y="382" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.4)">max size</text>
+  <text x="110" y="392" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.4)">reduction</text>
+
+  <rect x="172" y="340" width="100" height="58" rx="8" fill="rgba(14,116,144,0.12)" stroke="rgba(14,116,144,0.3)" stroke-width="1"/>
+  <text x="222" y="366" text-anchor="middle" font-size="22" font-weight="900" fill="#67e8f9">4</text>
+  <text x="222" y="382" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.4)">formats</text>
+  <text x="222" y="392" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.4)">supported</text>
+
+  <rect x="284" y="340" width="100" height="58" rx="8" fill="rgba(16,185,129,0.1)" stroke="rgba(16,185,129,0.25)" stroke-width="1"/>
+  <text x="334" y="366" text-anchor="middle" font-size="22" font-weight="900" fill="#34d399">∞</text>
+  <text x="334" y="382" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.4)">batch</text>
+  <text x="334" y="392" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.4)">images</text>
+
+  <rect x="396" y="340" width="100" height="58" rx="8" fill="rgba(251,191,36,0.1)" stroke="rgba(251,191,36,0.25)" stroke-width="1"/>
+  <text x="446" y="366" text-anchor="middle" font-size="22" font-weight="900" fill="#fbbf24">0</text>
+  <text x="446" y="382" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.4)">uploads to</text>
+  <text x="446" y="392" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.4)">any server</text>
+
+  <!-- Features list -->
+  <g font-size="11" fill="rgba(255,255,255,0.55)">
+    <text x="60" y="430">✦  Drag &amp; drop batch upload</text>
+    <text x="60" y="452">✦  Adjustable quality slider (1–100)</text>
+    <text x="60" y="474">✦  Convert to WebP on compress</text>
+    <text x="60" y="496">✦  Privacy-first — no server uploads</text>
+    <text x="60" y="518">✦  Download individual or all at once</text>
+  </g>
+
+  <text x="60" y="610" font-size="14" fill="rgba(255,255,255,0.25)">toolnestai.net/image-tools/image-compressor</text>
+
+  <!-- Right laptop -->
+  <rect x="630" y="42" width="540" height="540" rx="16" fill="url(#lapG)" stroke="rgba(124,58,237,0.3)" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="630" y="42" width="540" height="36" rx="16" fill="rgba(255,255,255,0.05)"/>
+  <rect x="630" y="60" width="540" height="18" fill="rgba(255,255,255,0.02)"/>
+  <circle cx="655" cy="60" r="6" fill="rgba(239,68,68,0.6)"/>
+  <circle cx="675" cy="60" r="6" fill="rgba(251,191,36,0.6)"/>
+  <circle cx="695" cy="60" r="6" fill="rgba(34,197,94,0.6)"/>
+
+  <!-- Before/After comparison split -->
+  <text x="890" y="106" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(255,255,255,0.4)" letter-spacing="1">BEFORE / AFTER COMPARISON</text>
+
+  <!-- Before panel -->
+  <rect x="644" y="115" width="250" height="200" rx="8" fill="rgba(239,68,68,0.08)" stroke="rgba(239,68,68,0.2)" stroke-width="1"/>
+  <rect x="644" y="115" width="250" height="22" rx="8" fill="rgba(239,68,68,0.15)"/>
+  <rect x="644" y="129" width="250" height="8" fill="rgba(239,68,68,0.15)"/>
+  <text x="769" y="130" text-anchor="middle" font-size="9" font-weight="700" fill="rgba(239,68,68,0.8)">ORIGINAL</text>
+  <!-- Image placeholder grid -->
+  <rect x="654" y="144" width="230" height="135" rx="4" fill="rgba(255,255,255,0.04)"/>
+  <line x1="654" y1="167" x2="884" y2="167" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <line x1="654" y1="190" x2="884" y2="190" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <line x1="654" y1="213" x2="884" y2="213" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <line x1="654" y1="236" x2="884" y2="236" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <line x1="731" y1="144" x2="731" y2="279" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <line x1="808" y1="144" x2="808" y2="279" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="769" y="218" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.15)">hero-banner.jpg</text>
+  <rect x="654" y="286" width="230" height="22" rx="4" fill="rgba(239,68,68,0.1)"/>
+  <text x="769" y="300" text-anchor="middle" font-size="9" fill="rgba(239,68,68,0.7)">2.4 MB · 4000×2500px</text>
+
+  <!-- Arrow -->
+  <text x="904" y="222" text-anchor="middle" font-size="22" fill="url(#aG)">→</text>
+
+  <!-- After panel -->
+  <rect x="918" y="115" width="244" height="200" rx="8" fill="rgba(16,185,129,0.08)" stroke="rgba(16,185,129,0.2)" stroke-width="1"/>
+  <rect x="918" y="115" width="244" height="22" rx="8" fill="rgba(16,185,129,0.15)"/>
+  <rect x="918" y="129" width="244" height="8" fill="rgba(16,185,129,0.15)"/>
+  <text x="1040" y="130" text-anchor="middle" font-size="9" font-weight="700" fill="rgba(52,211,153,0.8)">COMPRESSED</text>
+  <rect x="928" y="144" width="224" height="135" rx="4" fill="rgba(255,255,255,0.04)"/>
+  <line x1="928" y1="167" x2="1152" y2="167" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <line x1="928" y1="190" x2="1152" y2="190" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <line x1="928" y1="213" x2="1152" y2="213" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <line x1="928" y1="236" x2="1152" y2="236" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <line x1="1004" y1="144" x2="1004" y2="279" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <line x1="1080" y1="144" x2="1080" y2="279" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="1040" y="218" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.15)">hero-banner.jpg</text>
+  <rect x="928" y="286" width="224" height="22" rx="4" fill="rgba(16,185,129,0.1)"/>
+  <text x="1040" y="300" text-anchor="middle" font-size="9" fill="rgba(52,211,153,0.7)">312 KB · −87% saved</text>
+
+  <!-- Savings badge -->
+  <rect x="800" y="260" width="88" height="36" rx="18" fill="url(#bG)" filter="url(#sh)"/>
+  <text x="844" y="276" text-anchor="middle" font-size="10" font-weight="900" fill="#fff">−87%</text>
+  <text x="844" y="290" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.7)">saved</text>
+
+  <!-- Quality slider -->
+  <rect x="644" y="328" width="518" height="50" rx="8" fill="rgba(255,255,255,0.025)"/>
+  <text x="660" y="346" font-size="9" font-weight="700" fill="rgba(255,255,255,0.4)">QUALITY</text>
+  <text x="1148" y="346" text-anchor="end" font-size="9" font-weight="700" fill="rgba(167,139,250,0.8)">80%</text>
+  <rect x="660" y="352" width="480" height="6" rx="3" fill="rgba(255,255,255,0.08)"/>
+  <rect x="660" y="352" width="384" height="6" rx="3" fill="url(#bG)"/>
+  <circle cx="1044" cy="355" r="8" fill="#a78bfa" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+  <text x="660" y="372" font-size="7.5" fill="rgba(255,255,255,0.25)">Smaller file · more compression</text>
+  <text x="1140" y="372" text-anchor="end" font-size="7.5" fill="rgba(255,255,255,0.25)">Larger file · better quality</text>
+
+  <!-- Format row -->
+  <g font-size="9">
+    <rect x="644" y="388" width="110" height="32" rx="6" fill="rgba(124,58,237,0.2)" stroke="rgba(124,58,237,0.4)" stroke-width="1"/>
+    <text x="699" y="408" text-anchor="middle" fill="rgba(167,139,250,0.9)" font-weight="700">JPEG</text>
+    <rect x="762" y="388" width="110" height="32" rx="6" fill="rgba(14,116,144,0.15)" stroke="rgba(14,116,144,0.35)" stroke-width="1"/>
+    <text x="817" y="408" text-anchor="middle" fill="rgba(103,232,249,0.8)" font-weight="700">PNG</text>
+    <rect x="880" y="388" width="110" height="32" rx="6" fill="rgba(16,185,129,0.12)" stroke="rgba(16,185,129,0.3)" stroke-width="1"/>
+    <text x="935" y="408" text-anchor="middle" fill="rgba(52,211,153,0.8)" font-weight="700">WebP</text>
+    <rect x="998" y="388" width="110" height="32" rx="6" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <text x="1053" y="408" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-weight="700">GIF</text>
+    <rect x="1116" y="388" width="46" height="32" rx="6" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="1139" y="408" text-anchor="middle" fill="rgba(255,255,255,0.3)">SVG</text>
+  </g>
+
+  <!-- Compress button -->
+  <rect x="644" y="432" width="518" height="36" rx="10" fill="url(#bG)" filter="url(#sh)"/>
+  <text x="903" y="454" text-anchor="middle" font-size="13" font-weight="900" fill="#fff">⬇  Compress &amp; Download</text>
+
+  <!-- Progress bars -->
+  <text x="660" y="488" font-size="9" font-weight="700" fill="rgba(255,255,255,0.35)" letter-spacing="1">COMPRESSED FILES</text>
+  <rect x="644" y="496" width="518" height="28" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <rect x="644" y="496" width="452" height="28" rx="6" fill="rgba(16,185,129,0.08)"/>
+  <text x="660" y="514" font-size="8" fill="rgba(255,255,255,0.6)">hero-banner.jpg</text>
+  <text x="1140" y="514" text-anchor="end" font-size="8" fill="rgba(52,211,153,0.8)">312 KB  −87%</text>
+  <rect x="644" y="530" width="518" height="28" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <rect x="644" y="530" width="434" height="28" rx="6" fill="rgba(16,185,129,0.06)"/>
+  <text x="660" y="548" font-size="8" fill="rgba(255,255,255,0.6)">product-photo.png</text>
+  <text x="1140" y="548" text-anchor="end" font-size="8" fill="rgba(52,211,153,0.8)">284 KB  −84%</text>
+
+  <!-- Laptop base -->
+  <rect x="620" y="582" width="560" height="14" rx="4" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <rect x="760" y="594" width="260" height="8" rx="4" fill="rgba(255,255,255,0.03)"/>
+</svg>

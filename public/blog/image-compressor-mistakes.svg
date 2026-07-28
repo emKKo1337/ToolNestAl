@@ -1,0 +1,75 @@
+<svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gL" cx="20%" cy="50%" r="55%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.22"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#818cf8"/></linearGradient>
+  </defs>
+  <rect width="900" height="460" fill="url(#bg)"/>
+  <ellipse cx="180" cy="230" rx="400" ry="320" fill="url(#gL)"/>
+
+  <text x="450" y="36" text-anchor="middle" font-size="20" font-weight="900" fill="url(#aG)">5 Image Compression Mistakes &amp; How to Fix Them</text>
+  <text x="450" y="54" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.38)">Errors that bloat your pages and hurt performance — and the exact fixes</text>
+
+  <!-- Headers -->
+  <rect x="28" y="66" width="270" height="24" rx="6" fill="rgba(239,68,68,0.15)" stroke="rgba(239,68,68,0.3)" stroke-width="1"/>
+  <text x="163" y="82" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(239,68,68,0.9)">⛔  The Mistake</text>
+  <rect x="306" y="66" width="566" height="24" rx="6" fill="rgba(34,197,94,0.1)" stroke="rgba(34,197,94,0.25)" stroke-width="1"/>
+  <text x="589" y="82" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(34,197,94,0.9)">✓  The Fix</text>
+
+  <!-- Row 1 -->
+  <rect x="28" y="96" width="270" height="64" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="44" y="114" font-size="9" font-weight="700" fill="rgba(239,68,68,0.85)">Uploading uncompressed originals</text>
+  <text x="44" y="130" font-size="8" fill="rgba(255,255,255,0.42)">Camera RAW or unedited exports</text>
+  <text x="44" y="144" font-size="8" fill="rgba(255,255,255,0.42)">can be 10–40 MB per image.</text>
+  <rect x="306" y="96" width="566" height="64" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(34,197,94,0.08)" stroke-width="1"/>
+  <text x="322" y="112" font-size="8.5" fill="rgba(255,255,255,0.5)">Always compress before upload. Use 80% quality for photos — visually identical.</text>
+  <text x="322" y="128" font-size="8" font-family="monospace" fill="rgba(239,68,68,0.7)">✗  hero.jpg = 8.4 MB → direct upload to CMS</text>
+  <text x="322" y="144" font-size="8" font-family="monospace" fill="rgba(34,197,94,0.8)">✓  hero.jpg → compress → 680 KB → upload</text>
+  <text x="322" y="156" font-size="7.5" fill="rgba(255,255,255,0.3)">A 680 KB image loads 12× faster than an 8 MB one on mobile.</text>
+
+  <!-- Row 2 -->
+  <rect x="28" y="166" width="270" height="64" rx="7" fill="rgba(255,255,255,0.025)" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="44" y="184" font-size="9" font-weight="700" fill="rgba(239,68,68,0.85)">Using PNG for photographs</text>
+  <text x="44" y="200" font-size="8" fill="rgba(255,255,255,0.42)">PNG is lossless — great for logos,</text>
+  <text x="44" y="214" font-size="8" fill="rgba(255,255,255,0.42)">terrible for photos (2–5× larger).</text>
+  <rect x="306" y="166" width="566" height="64" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(34,197,94,0.08)" stroke-width="1"/>
+  <text x="322" y="182" font-size="8.5" fill="rgba(255,255,255,0.5)">Use JPEG or WebP for photos. Save PNG for logos and transparent-bg images only.</text>
+  <text x="322" y="198" font-size="8" font-family="monospace" fill="rgba(239,68,68,0.7)">✗  blog-photo.png = 4.1 MB (no transparency needed)</text>
+  <text x="322" y="214" font-size="8" font-family="monospace" fill="rgba(34,197,94,0.8)">✓  blog-photo.jpg = 310 KB — same visible quality</text>
+  <text x="322" y="226" font-size="7.5" fill="rgba(255,255,255,0.3)">Or convert to WebP for even smaller files with full transparency support.</text>
+
+  <!-- Row 3 -->
+  <rect x="28" y="236" width="270" height="64" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="44" y="254" font-size="9" font-weight="700" fill="rgba(239,68,68,0.85)">Compressing too aggressively</text>
+  <text x="44" y="270" font-size="8" fill="rgba(255,255,255,0.42)">Quality below 60% shows visible</text>
+  <text x="44" y="284" font-size="8" fill="rgba(255,255,255,0.42)">artefacts — blocky, blurry images.</text>
+  <rect x="306" y="236" width="566" height="64" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(34,197,94,0.08)" stroke-width="1"/>
+  <text x="322" y="252" font-size="8.5" fill="rgba(255,255,255,0.5)">Stay between 75–85% quality. This gives 60–80% file reduction with no visible loss.</text>
+  <text x="322" y="268" font-size="8" font-family="monospace" fill="rgba(239,68,68,0.7)">✗  Quality 30% → 95 KB but blocky JPEG artefacts</text>
+  <text x="322" y="284" font-size="8" font-family="monospace" fill="rgba(34,197,94,0.8)">✓  Quality 80% → 380 KB, visually lossless result</text>
+  <text x="322" y="296" font-size="7.5" fill="rgba(255,255,255,0.3)">Use the quality slider — preview the result before downloading.</text>
+
+  <!-- Row 4 -->
+  <rect x="28" y="306" width="270" height="64" rx="7" fill="rgba(255,255,255,0.025)" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="44" y="324" font-size="9" font-weight="700" fill="rgba(239,68,68,0.85)">Not resizing oversized images</text>
+  <text x="44" y="340" font-size="8" fill="rgba(255,255,255,0.42)">A 4000×3000px image displayed</text>
+  <text x="44" y="354" font-size="8" fill="rgba(255,255,255,0.42)">at 800×600 wastes bytes.</text>
+  <rect x="306" y="306" width="566" height="64" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(34,197,94,0.08)" stroke-width="1"/>
+  <text x="322" y="322" font-size="8.5" fill="rgba(255,255,255,0.5)">Resize to the largest display size first, then compress. Resolution × quality = size.</text>
+  <text x="322" y="338" font-size="8" font-family="monospace" fill="rgba(239,68,68,0.7)">✗  4000×3000px → compress only → still 1.2 MB</text>
+  <text x="322" y="354" font-size="8" font-family="monospace" fill="rgba(34,197,94,0.8)">✓  Resize to 1200×900 → compress → 180 KB</text>
+  <text x="322" y="366" font-size="7.5" fill="rgba(255,255,255,0.3)">Match image dimensions to the largest @2x display size needed.</text>
+
+  <!-- Row 5 -->
+  <rect x="28" y="376" width="270" height="64" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="44" y="394" font-size="9" font-weight="700" fill="rgba(239,68,68,0.85)">Skipping WebP for modern sites</text>
+  <text x="44" y="410" font-size="8" fill="rgba(255,255,255,0.42)">JPEG and PNG are older formats.</text>
+  <text x="44" y="424" font-size="8" fill="rgba(255,255,255,0.42)">WebP is 25–35% smaller at same quality.</text>
+  <rect x="306" y="376" width="566" height="64" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(34,197,94,0.08)" stroke-width="1"/>
+  <text x="322" y="392" font-size="8.5" fill="rgba(255,255,255,0.5)">Convert to WebP — 97%+ browser support. Use &lt;picture&gt; for legacy fallback.</text>
+  <text x="322" y="408" font-size="8" font-family="monospace" fill="rgba(239,68,68,0.7)">✗  hero.jpg = 420 KB at quality 80</text>
+  <text x="322" y="424" font-size="8" font-family="monospace" fill="rgba(34,197,94,0.8)">✓  hero.webp = 294 KB at same quality — 30% smaller</text>
+  <text x="322" y="436" font-size="7.5" fill="rgba(255,255,255,0.3)">Use the ToolNest AI compressor to convert JPEG/PNG → WebP in one click.</text>
+
+  <text x="450" y="454" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.25)">toolnestai.net/image-tools/image-compressor</text>
+</svg>
