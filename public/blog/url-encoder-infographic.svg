@@ -1,0 +1,158 @@
+<svg viewBox="0 0 900 1200" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gT" cx="50%" cy="10%" r="50%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.3"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gB" cx="50%" cy="90%" r="50%"><stop offset="0%" stop-color="#0e7490" stop-opacity="0.2"/><stop offset="100%" stop-color="#0e7490" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#5b21b6" flood-opacity="0.35"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="900" height="1200" fill="url(#bg)"/>
+  <ellipse cx="450" cy="150" rx="500" ry="300" fill="url(#gT)"/>
+  <ellipse cx="450" cy="1050" rx="500" ry="300" fill="url(#gB)"/>
+
+  <text x="450" y="52" text-anchor="middle" font-size="26" font-weight="900" fill="url(#aG)" filter="url(#glow)">URL Encoder / Decoder</text>
+  <text x="450" y="80" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.45)">How percent-encoding works, when to use each function, and the full %XX reference</text>
+
+  <!-- Section 1: Why URLs need encoding -->
+  <rect x="28" y="100" width="844" height="190" rx="12" fill="rgba(255,255,255,0.025)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <text x="48" y="124" font-size="12" font-weight="800" fill="url(#aG)">01 — Why URLs Need Encoding</text>
+  <g font-size="10" fill="rgba(255,255,255,0.65)">
+    <circle cx="56" cy="148" r="4" fill="#a78bfa"/>
+    <text x="70" y="152">URLs can only contain a limited set of ASCII characters — everything else must be encoded</text>
+    <circle cx="56" cy="172" r="4" fill="#a78bfa"/>
+    <text x="70" y="176">Special characters like spaces, &amp;, =, ?, # have special meaning in URL structure</text>
+    <circle cx="56" cy="196" r="4" fill="#a78bfa"/>
+    <text x="70" y="200">If a query param value contains &amp; or =, those must be encoded or the URL is misread</text>
+    <circle cx="56" cy="220" r="4" fill="#a78bfa"/>
+    <text x="70" y="224">Non-ASCII characters (accented, emoji, CJK) must be UTF-8 encoded first, then percent-encoded</text>
+    <circle cx="56" cy="244" r="4" fill="#a78bfa"/>
+    <text x="70" y="248">Percent-encoding replaces each unsafe byte with % followed by two hex digits: space → %20</text>
+    <circle cx="56" cy="268" r="4" fill="#a78bfa"/>
+    <text x="70" y="272">RFC 3986 defines which characters are safe — unreserved chars never need encoding</text>
+  </g>
+
+  <!-- Section 2: URL anatomy -->
+  <rect x="28" y="308" width="844" height="130" rx="12" fill="rgba(124,58,237,0.08)" stroke="rgba(124,58,237,0.2)" stroke-width="1"/>
+  <text x="48" y="332" font-size="12" font-weight="800" fill="url(#aG)">02 — Anatomy of a URL</text>
+  <text x="48" y="352" font-family="monospace" font-size="11" fill="rgba(255,255,255,0.75)">https://example.com/path/to/page?q=hello+world&amp;lang=en#section</text>
+  <g font-size="9" text-anchor="middle">
+    <rect x="44" y="362" width="68" height="48" rx="6" fill="rgba(167,139,250,0.1)" stroke="rgba(167,139,250,0.25)" stroke-width="1"/>
+    <text x="78" y="380" fill="rgba(167,139,250,0.8)">https://</text>
+    <text x="78" y="396" font-size="8" fill="rgba(255,255,255,0.4)">scheme</text>
+    <text x="78" y="408" font-size="7.5" fill="rgba(255,255,255,0.3)">never encoded</text>
+
+    <rect x="120" y="362" width="120" height="48" rx="6" fill="rgba(96,165,250,0.1)" stroke="rgba(96,165,250,0.25)" stroke-width="1"/>
+    <text x="180" y="380" fill="rgba(96,165,250,0.8)">example.com</text>
+    <text x="180" y="396" font-size="8" fill="rgba(255,255,255,0.4)">host</text>
+    <text x="180" y="408" font-size="7.5" fill="rgba(255,255,255,0.3)">IDN encode if non-ASCII</text>
+
+    <rect x="248" y="362" width="120" height="48" rx="6" fill="rgba(52,211,153,0.08)" stroke="rgba(52,211,153,0.22)" stroke-width="1"/>
+    <text x="308" y="380" fill="rgba(52,211,153,0.8)">/path/to/page</text>
+    <text x="308" y="396" font-size="8" fill="rgba(255,255,255,0.4)">path</text>
+    <text x="308" y="408" font-size="7.5" fill="rgba(255,255,255,0.3)">encode segments only</text>
+
+    <rect x="376" y="362" width="188" height="48" rx="6" fill="rgba(251,191,36,0.08)" stroke="rgba(251,191,36,0.22)" stroke-width="1"/>
+    <text x="470" y="380" fill="rgba(251,191,36,0.8)">?q=hello+world&amp;lang=en</text>
+    <text x="470" y="396" font-size="8" fill="rgba(255,255,255,0.4)">query string</text>
+    <text x="470" y="408" font-size="7.5" fill="rgba(255,255,255,0.3)">encode param values individually</text>
+
+    <rect x="572" y="362" width="100" height="48" rx="6" fill="rgba(239,68,68,0.07)" stroke="rgba(239,68,68,0.2)" stroke-width="1"/>
+    <text x="622" y="380" fill="rgba(239,68,68,0.8)">#section</text>
+    <text x="622" y="396" font-size="8" fill="rgba(255,255,255,0.4)">fragment</text>
+    <text x="622" y="408" font-size="7.5" fill="rgba(255,255,255,0.3)">not sent to server</text>
+  </g>
+
+  <!-- Section 3: encode function comparison -->
+  <rect x="28" y="456" width="844" height="230" rx="12" fill="rgba(255,255,255,0.025)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <text x="48" y="480" font-size="12" font-weight="800" fill="url(#aG)">03 — encode Functions Compared</text>
+
+  <rect x="44" y="490" width="400" height="180" rx="8" fill="rgba(124,58,237,0.08)" stroke="rgba(124,58,237,0.2)" stroke-width="1"/>
+  <text x="244" y="512" text-anchor="middle" font-size="11" font-weight="700" fill="rgba(167,139,250,0.9)">encodeURIComponent</text>
+  <text x="60" y="532" font-size="9" fill="rgba(255,255,255,0.55)">Encodes all chars except:</text>
+  <text x="60" y="548" font-family="monospace" font-size="9" fill="rgba(167,139,250,0.7)">A–Z  a–z  0–9  -  _  .  !  ~  *  '  (  )</text>
+  <text x="60" y="570" font-size="9" fill="rgba(255,255,255,0.4)">✓ Use for: query param values, form data,</text>
+  <text x="60" y="586" font-size="9" fill="rgba(255,255,255,0.4)">  JSON payloads, hash values, path segments</text>
+  <text x="60" y="608" font-size="9" fill="rgba(239,68,68,0.7)">✗ Don't use on full URLs — breaks structure</text>
+  <text x="60" y="626" font-family="monospace" font-size="8.5" fill="rgba(255,255,255,0.45)">encodeURIComponent("a&amp;b") → "a%26b" ✓</text>
+  <text x="60" y="644" font-family="monospace" font-size="8.5" fill="rgba(255,255,255,0.45)">encodeURIComponent("https://…") → broken ✗</text>
+
+  <rect x="456" y="490" width="400" height="180" rx="8" fill="rgba(14,116,144,0.08)" stroke="rgba(14,116,144,0.2)" stroke-width="1"/>
+  <text x="656" y="512" text-anchor="middle" font-size="11" font-weight="700" fill="rgba(103,232,249,0.9)">encodeURI</text>
+  <text x="472" y="532" font-size="9" fill="rgba(255,255,255,0.55)">Also preserves URL structural chars:</text>
+  <text x="472" y="548" font-family="monospace" font-size="9" fill="rgba(103,232,249,0.7)">; , / ? : @ &amp; = + $ #</text>
+  <text x="472" y="570" font-size="9" fill="rgba(255,255,255,0.4)">✓ Use for: encoding a full URL before placing</text>
+  <text x="472" y="586" font-size="9" fill="rgba(255,255,255,0.4)">  it inside an href or another URL</text>
+  <text x="472" y="608" font-size="9" fill="rgba(239,68,68,0.7)">✗ Don't use for param values with &amp; or =</text>
+  <text x="472" y="626" font-family="monospace" font-size="8.5" fill="rgba(255,255,255,0.45)">encodeURI("https://ex.com?q=a b") → safe ✓</text>
+  <text x="472" y="644" font-family="monospace" font-size="8.5" fill="rgba(255,255,255,0.45)">encodeURI("a&amp;b") → "a&amp;b" NOT encoded ✗</text>
+
+  <!-- Section 4: Most common encodings -->
+  <rect x="28" y="704" width="844" height="256" rx="12" fill="rgba(255,255,255,0.025)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <text x="48" y="728" font-size="12" font-weight="800" fill="url(#aG)">04 — Most Common Percent-Encodings</text>
+  <text x="48" y="746" font-size="9" fill="rgba(255,255,255,0.4)">Unreserved chars never need encoding: A–Z  a–z  0–9  -  _  .  ~</text>
+
+  <g font-family="monospace" font-size="10">
+    <!-- 3 columns x 8 rows -->
+    <g fill="rgba(255,255,255,0.5)">
+      <text x="56" y="768">space<tspan fill="rgba(167,139,250,0.85)"> → %20</tspan></text>
+      <text x="56" y="788">!    <tspan fill="rgba(167,139,250,0.85)"> → %21</tspan></text>
+      <text x="56" y="808">"    <tspan fill="rgba(167,139,250,0.85)"> → %22</tspan></text>
+      <text x="56" y="828">#    <tspan fill="rgba(167,139,250,0.85)"> → %23</tspan></text>
+      <text x="56" y="848">$    <tspan fill="rgba(167,139,250,0.85)"> → %24</tspan></text>
+      <text x="56" y="868">%    <tspan fill="rgba(167,139,250,0.85)"> → %25</tspan></text>
+      <text x="56" y="888">&amp;    <tspan fill="rgba(167,139,250,0.85)"> → %26</tspan></text>
+      <text x="56" y="908">'    <tspan fill="rgba(167,139,250,0.85)"> → %27</tspan></text>
+
+      <text x="330" y="768">(   <tspan fill="rgba(96,165,250,0.85)"> → %28</tspan></text>
+      <text x="330" y="788">)   <tspan fill="rgba(96,165,250,0.85)"> → %29</tspan></text>
+      <text x="330" y="808">*   <tspan fill="rgba(96,165,250,0.85)"> → %2A</tspan></text>
+      <text x="330" y="828">+   <tspan fill="rgba(96,165,250,0.85)"> → %2B</tspan></text>
+      <text x="330" y="848">,   <tspan fill="rgba(96,165,250,0.85)"> → %2C</tspan></text>
+      <text x="330" y="868">/   <tspan fill="rgba(96,165,250,0.85)"> → %2F</tspan></text>
+      <text x="330" y="888">:   <tspan fill="rgba(96,165,250,0.85)"> → %3A</tspan></text>
+      <text x="330" y="908">;   <tspan fill="rgba(96,165,250,0.85)"> → %3B</tspan></text>
+
+      <text x="604" y="768">=   <tspan fill="rgba(52,211,153,0.85)"> → %3D</tspan></text>
+      <text x="604" y="788">?   <tspan fill="rgba(52,211,153,0.85)"> → %3F</tspan></text>
+      <text x="604" y="808">@   <tspan fill="rgba(52,211,153,0.85)"> → %40</tspan></text>
+      <text x="604" y="828">[   <tspan fill="rgba(52,211,153,0.85)"> → %5B</tspan></text>
+      <text x="604" y="848">\   <tspan fill="rgba(52,211,153,0.85)"> → %5C</tspan></text>
+      <text x="604" y="868">]   <tspan fill="rgba(52,211,153,0.85)"> → %5D</tspan></text>
+      <text x="604" y="888">{   <tspan fill="rgba(52,211,153,0.85)"> → %7B</tspan></text>
+      <text x="604" y="908">}   <tspan fill="rgba(52,211,153,0.85)"> → %7D</tspan></text>
+    </g>
+  </g>
+
+  <!-- Section 5: Step guide -->
+  <rect x="28" y="978" width="844" height="104" rx="12" fill="rgba(255,255,255,0.025)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <text x="48" y="1002" font-size="12" font-weight="800" fill="url(#aG)">05 — How to Encode a URL in 4 Steps</text>
+  <g font-size="9.5" fill="rgba(255,255,255,0.6)">
+    <circle cx="76" cy="1030" r="18" fill="url(#bG)"/>
+    <text x="76" y="1035" text-anchor="middle" font-size="11" font-weight="900" fill="white">1</text>
+    <text x="104" y="1026" font-size="11" font-weight="700" fill="rgba(255,255,255,0.85)">Identify what to encode</text>
+    <text x="104" y="1044" font-size="9" fill="rgba(255,255,255,0.45)">Full URL → encodeURI · Param value → encodeURIComponent</text>
+
+    <circle cx="310" cy="1030" r="18" fill="url(#bG)"/>
+    <text x="310" y="1035" text-anchor="middle" font-size="11" font-weight="900" fill="white">2</text>
+    <text x="338" y="1026" font-size="11" font-weight="700" fill="rgba(255,255,255,0.85)">Paste into the tool</text>
+    <text x="338" y="1044" font-size="9" fill="rgba(255,255,255,0.45)">Input field accepts any text or URL</text>
+
+    <circle cx="538" cy="1030" r="18" fill="url(#bG)"/>
+    <text x="538" y="1035" text-anchor="middle" font-size="11" font-weight="900" fill="white">3</text>
+    <text x="566" y="1026" font-size="11" font-weight="700" fill="rgba(255,255,255,0.85)">Click Encode or Decode</text>
+    <text x="566" y="1044" font-size="9" fill="rgba(255,255,255,0.45)">Output appears instantly below</text>
+
+    <circle cx="754" cy="1030" r="18" fill="url(#bG)"/>
+    <text x="754" y="1035" text-anchor="middle" font-size="11" font-weight="900" fill="white">4</text>
+    <text x="782" y="1026" font-size="11" font-weight="700" fill="rgba(255,255,255,0.85)">Copy and use</text>
+    <text x="782" y="1044" font-size="9" fill="rgba(255,255,255,0.45)">One click copies encoded result</text>
+  </g>
+
+  <!-- CTA -->
+  <rect x="28" y="1110" width="844" height="66" rx="12" fill="url(#bG)" filter="url(#sh)"/>
+  <text x="450" y="1142" text-anchor="middle" font-size="18" font-weight="900" fill="#fff">Encode &amp; Decode URLs Free</text>
+  <text x="450" y="1162" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.75)">encodeURIComponent · encodeURI · Decode · Full URL mode · instant results</text>
+  <text x="450" y="1170" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(255,255,255,0.4)">toolnestai.net/developer-tools/url-encoder</text>
+</svg>

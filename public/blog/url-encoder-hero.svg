@@ -1,0 +1,150 @@
+<svg viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gT" cx="50%" cy="0%" r="60%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.3"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="lapG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1a1040"/><stop offset="100%" stop-color="#0d0824"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="6" stdDeviation="18" flood-color="#5b21b6" flood-opacity="0.45"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <ellipse cx="600" cy="100" rx="700" ry="300" fill="url(#gT)"/>
+
+  <text x="600" y="46" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.3)">ToolNest AI — Developer Tools › URL Encoder / Decoder</text>
+  <text x="600" y="82" text-anchor="middle" font-size="34" font-weight="900" fill="url(#aG)" filter="url(#glow)">URL Encoder &amp; Decoder — Free Online Tool</text>
+  <text x="600" y="108" text-anchor="middle" font-size="14" fill="rgba(255,255,255,0.45)">Encode special characters to %XX format · decode %XX back to text · encodeURI &amp; encodeURIComponent modes</text>
+
+  <!-- Laptop frame -->
+  <rect x="80" y="128" width="1040" height="500" rx="14" fill="url(#lapG)" stroke="rgba(124,58,237,0.3)" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="80" y="128" width="1040" height="34" rx="14" fill="rgba(255,255,255,0.05)"/>
+  <rect x="80" y="146" width="1040" height="16" fill="rgba(255,255,255,0.02)"/>
+  <circle cx="106" cy="145" r="6" fill="rgba(239,68,68,0.6)"/>
+  <circle cx="126" cy="145" r="6" fill="rgba(251,191,36,0.6)"/>
+  <circle cx="146" cy="145" r="6" fill="rgba(34,197,94,0.6)"/>
+  <text x="600" y="150" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.2)">toolnestai.net/developer-tools/url-encoder</text>
+
+  <!-- Mode tabs -->
+  <g font-size="9" text-anchor="middle">
+    <rect x="96" y="174" width="138" height="26" rx="6" fill="url(#bG)"/>
+    <text x="165" y="191" fill="#fff" font-weight="700">encodeURIComponent</text>
+    <rect x="240" y="174" width="100" height="26" rx="6" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <text x="290" y="191" fill="rgba(255,255,255,0.4)">encodeURI</text>
+    <rect x="346" y="174" width="80" height="26" rx="6" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <text x="386" y="191" fill="rgba(255,255,255,0.4)">Decode</text>
+    <rect x="432" y="174" width="100" height="26" rx="6" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <text x="482" y="191" fill="rgba(255,255,255,0.4)">Full URL</text>
+  </g>
+
+  <!-- Input area -->
+  <text x="96" y="218" font-size="9" font-weight="700" fill="rgba(255,255,255,0.3)">INPUT — paste your text or URL here</text>
+  <rect x="96" y="224" width="536" height="96" rx="9" fill="rgba(0,0,0,0.5)" stroke="rgba(124,58,237,0.45)" stroke-width="1.5"/>
+  <text x="112" y="246" font-size="10" font-family="monospace" fill="rgba(255,255,255,0.75)">https://example.com/search?q=hello world</text>
+  <text x="112" y="264" font-size="10" font-family="monospace" fill="rgba(255,255,255,0.75)">&amp;lang=en&amp;price=$29.99&amp;tag=url encoding</text>
+  <text x="112" y="298" font-size="9" fill="rgba(255,255,255,0.25)">2 lines · 81 characters</text>
+  <rect x="580" y="226" width="46" height="22" rx="5" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="603" y="241" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.4)">Clear</text>
+
+  <!-- Action buttons -->
+  <rect x="96" y="330" width="252" height="34" rx="9" fill="url(#bG)" filter="url(#sh)"/>
+  <text x="222" y="351" text-anchor="middle" font-size="13" font-weight="900" fill="#fff">↓  Encode</text>
+  <rect x="360" y="330" width="272" height="34" rx="9" fill="rgba(14,116,144,0.35)" stroke="rgba(14,116,144,0.6)" stroke-width="1.5"/>
+  <text x="496" y="351" text-anchor="middle" font-size="13" font-weight="800" fill="#67e8f9">↑  Decode</text>
+
+  <!-- Output area -->
+  <text x="96" y="380" font-size="9" font-weight="700" fill="rgba(255,255,255,0.3)">OUTPUT</text>
+  <rect x="96" y="386" width="536" height="96" rx="9" fill="rgba(0,0,0,0.35)" stroke="rgba(52,211,153,0.3)" stroke-width="1.5"/>
+  <text x="112" y="408" font-size="10" font-family="monospace" fill="rgba(52,211,153,0.85)">https%3A%2F%2Fexample.com%2Fsearch</text>
+  <text x="112" y="426" font-size="10" font-family="monospace" fill="rgba(52,211,153,0.85)">%3Fq%3Dhello%20world%26lang%3Den</text>
+  <text x="112" y="444" font-size="10" font-family="monospace" fill="rgba(52,211,153,0.85)">%26price%3D%2429.99%26tag%3Durl%20encoding</text>
+  <rect x="580" y="388" width="46" height="22" rx="5" fill="rgba(52,211,153,0.15)" stroke="rgba(52,211,153,0.35)" stroke-width="1"/>
+  <text x="603" y="403" text-anchor="middle" font-size="8" fill="rgba(52,211,153,0.8)">Copy</text>
+
+  <!-- Swap button -->
+  <rect x="96" y="492" width="536" height="30" rx="7" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="364" y="511" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.35)">⇅  Swap input and output</text>
+
+  <!-- Right panel: char reference -->
+  <rect x="648" y="174" width="456" height="348" rx="10" fill="rgba(255,255,255,0.025)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="668" y="196" font-size="10" font-weight="700" fill="rgba(255,255,255,0.3)">PERCENT-ENCODING REFERENCE</text>
+
+  <g font-family="monospace" font-size="9.5">
+    <!-- Safe chars note -->
+    <text x="668" y="216" font-size="8.5" fill="rgba(255,255,255,0.3)">Safe chars (never encoded): A–Z  a–z  0–9  -  _  .  ~</text>
+
+    <!-- Table header -->
+    <rect x="660" y="224" width="432" height="18" rx="4" fill="rgba(124,58,237,0.08)"/>
+    <text x="676" y="236" font-size="8" font-weight="700" fill="rgba(167,139,250,0.7)">Char</text>
+    <text x="730" y="236" font-size="8" font-weight="700" fill="rgba(167,139,250,0.7)">%XX</text>
+    <text x="800" y="236" font-size="8" font-weight="700" fill="rgba(167,139,250,0.7)">Char</text>
+    <text x="854" y="236" font-size="8" font-weight="700" fill="rgba(167,139,250,0.7)">%XX</text>
+    <text x="924" y="236" font-size="8" font-weight="700" fill="rgba(167,139,250,0.7)">Char</text>
+    <text x="978" y="236" font-size="8" font-weight="700" fill="rgba(167,139,250,0.7)">%XX</text>
+
+    <!-- Rows -->
+    <g fill="rgba(255,255,255,0.5)">
+      <text x="676" y="254">space</text><text x="730" y="254" fill="rgba(167,139,250,0.8)">%20</text>
+      <text x="800" y="254">!</text><text x="854" y="254" fill="rgba(96,165,250,0.8)">%21</text>
+      <text x="924" y="254">"</text><text x="978" y="254" fill="rgba(52,211,153,0.8)">%22</text>
+
+      <text x="676" y="272">#</text><text x="730" y="272" fill="rgba(167,139,250,0.8)">%23</text>
+      <text x="800" y="272">$</text><text x="854" y="272" fill="rgba(96,165,250,0.8)">%24</text>
+      <text x="924" y="272">%</text><text x="978" y="272" fill="rgba(52,211,153,0.8)">%25</text>
+
+      <text x="676" y="290">&amp;</text><text x="730" y="290" fill="rgba(167,139,250,0.8)">%26</text>
+      <text x="800" y="290">'</text><text x="854" y="290" fill="rgba(96,165,250,0.8)">%27</text>
+      <text x="924" y="290">(</text><text x="978" y="290" fill="rgba(52,211,153,0.8)">%28</text>
+
+      <text x="676" y="308">)</text><text x="730" y="308" fill="rgba(167,139,250,0.8)">%29</text>
+      <text x="800" y="308">*</text><text x="854" y="308" fill="rgba(96,165,250,0.8)">%2A</text>
+      <text x="924" y="308">+</text><text x="978" y="308" fill="rgba(52,211,153,0.8)">%2B</text>
+
+      <text x="676" y="326">,</text><text x="730" y="326" fill="rgba(167,139,250,0.8)">%2C</text>
+      <text x="800" y="326">/</text><text x="854" y="326" fill="rgba(96,165,250,0.8)">%2F</text>
+      <text x="924" y="326">:</text><text x="978" y="326" fill="rgba(52,211,153,0.8)">%3A</text>
+
+      <text x="676" y="344">;</text><text x="730" y="344" fill="rgba(167,139,250,0.8)">%3B</text>
+      <text x="800" y="344">=</text><text x="854" y="344" fill="rgba(96,165,250,0.8)">%3D</text>
+      <text x="924" y="344">?</text><text x="978" y="344" fill="rgba(52,211,153,0.8)">%3F</text>
+
+      <text x="676" y="362">@</text><text x="730" y="362" fill="rgba(167,139,250,0.8)">%40</text>
+      <text x="800" y="362">[</text><text x="854" y="362" fill="rgba(96,165,250,0.8)">%5B</text>
+      <text x="924" y="362">]</text><text x="978" y="362" fill="rgba(52,211,153,0.8)">%5D</text>
+
+      <text x="676" y="380">\</text><text x="730" y="380" fill="rgba(167,139,250,0.8)">%5C</text>
+      <text x="800" y="380">^</text><text x="854" y="380" fill="rgba(96,165,250,0.8)">%5E</text>
+      <text x="924" y="380">`</text><text x="978" y="380" fill="rgba(52,211,153,0.8)">%60</text>
+
+      <text x="676" y="398">{</text><text x="730" y="398" fill="rgba(167,139,250,0.8)">%7B</text>
+      <text x="800" y="398">|</text><text x="854" y="398" fill="rgba(96,165,250,0.8)">%7C</text>
+      <text x="924" y="398">}</text><text x="978" y="398" fill="rgba(52,211,153,0.8)">%7D</text>
+    </g>
+
+    <!-- encodeURI vs encodeURIComponent note -->
+    <rect x="660" y="410" width="432" height="100" rx="7" fill="rgba(124,58,237,0.07)" stroke="rgba(124,58,237,0.18)" stroke-width="1"/>
+    <text x="676" y="428" font-size="8.5" font-weight="700" fill="rgba(167,139,250,0.8)">encodeURIComponent — encodes everything except:</text>
+    <text x="676" y="444" fill="rgba(255,255,255,0.55)">A–Z  a–z  0–9  -  _  .  !  ~  *  '  (  )</text>
+    <text x="676" y="462" font-size="8.5" font-weight="700" fill="rgba(96,165,250,0.8)">encodeURI — also keeps these characters:</text>
+    <text x="676" y="478" fill="rgba(255,255,255,0.55)">; , / ? : @ &amp; = + $ #  (URL structural chars)</text>
+    <text x="676" y="498" font-size="8" fill="rgba(255,255,255,0.3)">Use encodeURIComponent for query parameter values · encodeURI for full URLs</text>
+  </g>
+
+  <!-- Stats row -->
+  <g text-anchor="middle">
+    <rect x="80" y="638" width="248" height="48" rx="8" fill="rgba(124,58,237,0.15)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+    <text x="204" y="660" font-size="16" font-weight="900" fill="#a78bfa">RFC 3986</text>
+    <text x="204" y="678" font-size="9" fill="rgba(255,255,255,0.45)">percent-encoding standard</text>
+
+    <rect x="338" y="638" width="248" height="48" rx="8" fill="rgba(14,116,144,0.12)" stroke="rgba(14,116,144,0.28)" stroke-width="1"/>
+    <text x="462" y="660" font-size="16" font-weight="900" fill="#67e8f9">4 modes</text>
+    <text x="462" y="678" font-size="9" fill="rgba(255,255,255,0.45)">encode · decode · encodeURI · full URL</text>
+
+    <rect x="596" y="638" width="248" height="48" rx="8" fill="rgba(16,185,129,0.1)" stroke="rgba(16,185,129,0.25)" stroke-width="1"/>
+    <text x="720" y="660" font-size="16" font-weight="900" fill="#34d399">Instant</text>
+    <text x="720" y="678" font-size="9" fill="rgba(255,255,255,0.45)">no page reload required</text>
+
+    <rect x="854" y="638" width="248" height="48" rx="8" fill="rgba(251,191,36,0.08)" stroke="rgba(251,191,36,0.2)" stroke-width="1"/>
+    <text x="978" y="660" font-size="16" font-weight="900" fill="#fbbf24">Private</text>
+    <text x="978" y="678" font-size="9" fill="rgba(255,255,255,0.45)">runs entirely in your browser</text>
+  </g>
+</svg>

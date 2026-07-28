@@ -1,0 +1,70 @@
+<svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gC" cx="50%" cy="40%" r="60%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.2"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+  </defs>
+  <rect width="900" height="460" fill="url(#bg)"/>
+  <ellipse cx="450" cy="230" rx="500" ry="320" fill="url(#gC)"/>
+
+  <text x="450" y="36" text-anchor="middle" font-size="20" font-weight="900" fill="url(#aG)">encodeURIComponent vs encodeURI — When to Use Each</text>
+  <text x="450" y="54" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.38)">The most common source of URL encoding bugs — choosing the wrong function</text>
+
+  <!-- Column headers -->
+  <rect x="28" y="64" width="410" height="24" rx="6" fill="rgba(124,58,237,0.15)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+  <text x="233" y="80" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(167,139,250,0.85)">encodeURIComponent</text>
+  <rect x="462" y="64" width="410" height="24" rx="6" fill="rgba(14,116,144,0.15)" stroke="rgba(14,116,144,0.3)" stroke-width="1"/>
+  <text x="667" y="80" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(103,232,249,0.85)">encodeURI</text>
+
+  <!-- Row: What it encodes -->
+  <rect x="28" y="94" width="410" height="48" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(124,58,237,0.12)" stroke-width="1"/>
+  <text x="44" y="112" font-size="8.5" font-weight="700" fill="rgba(255,255,255,0.4)">WHAT IT ENCODES</text>
+  <text x="44" y="130" font-size="9" fill="rgba(255,255,255,0.6)">Everything except: A–Z a–z 0–9 - _ . ! ~ * ' ( )</text>
+  <rect x="462" y="94" width="410" height="48" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(14,116,144,0.12)" stroke-width="1"/>
+  <text x="478" y="112" font-size="8.5" font-weight="700" fill="rgba(255,255,255,0.4)">WHAT IT ENCODES</text>
+  <text x="478" y="130" font-size="9" fill="rgba(255,255,255,0.6)">Only chars that are NOT valid anywhere in a URL</text>
+
+  <!-- Row: What it preserves -->
+  <rect x="28" y="148" width="410" height="52" rx="6" fill="rgba(255,255,255,0.025)" stroke="rgba(124,58,237,0.12)" stroke-width="1"/>
+  <text x="44" y="166" font-size="8.5" font-weight="700" fill="rgba(255,255,255,0.4)">WHAT IT PRESERVES (does NOT encode)</text>
+  <text x="44" y="183" font-family="monospace" font-size="9" fill="rgba(167,139,250,0.7)">A–Z  a–z  0–9  -  _  .  !  ~  *  '  (  )</text>
+  <rect x="462" y="148" width="410" height="52" rx="6" fill="rgba(255,255,255,0.025)" stroke="rgba(14,116,144,0.12)" stroke-width="1"/>
+  <text x="478" y="166" font-size="8.5" font-weight="700" fill="rgba(255,255,255,0.4)">WHAT IT PRESERVES (does NOT encode)</text>
+  <text x="478" y="183" font-family="monospace" font-size="9" fill="rgba(103,232,249,0.7)">; , / ? : @ &amp; = + $ #  (and unreserved chars)</text>
+
+  <!-- Row: Use case -->
+  <rect x="28" y="206" width="410" height="64" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(124,58,237,0.12)" stroke-width="1"/>
+  <text x="44" y="224" font-size="8.5" font-weight="700" fill="rgba(255,255,255,0.4)">USE FOR</text>
+  <text x="44" y="242" font-size="9" fill="rgba(255,255,255,0.6)">Query parameter values, form field values,</text>
+  <text x="44" y="258" font-size="9" fill="rgba(255,255,255,0.6)">path segments with special chars, API payloads</text>
+  <rect x="462" y="206" width="410" height="64" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(14,116,144,0.12)" stroke-width="1"/>
+  <text x="478" y="224" font-size="8.5" font-weight="700" fill="rgba(255,255,255,0.4)">USE FOR</text>
+  <text x="478" y="242" font-size="9" fill="rgba(255,255,255,0.6)">Encoding a full URL before embedding it inside</text>
+  <text x="478" y="258" font-size="9" fill="rgba(255,255,255,0.6)">another URL or HTML attribute</text>
+
+  <!-- Row: Example -->
+  <rect x="28" y="276" width="410" height="80" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(124,58,237,0.12)" stroke-width="1"/>
+  <text x="44" y="294" font-size="8.5" font-weight="700" fill="rgba(255,255,255,0.4)">EXAMPLE</text>
+  <text x="44" y="312" font-family="monospace" font-size="8.5" fill="rgba(255,255,255,0.45)">Input:   hello world &amp; price=$10</text>
+  <text x="44" y="330" font-family="monospace" font-size="8.5" fill="rgba(167,139,250,0.8)">Output: hello%20world%20%26%20price%3D%2410</text>
+  <text x="44" y="348" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.3)">→ safe to use as a query param value</text>
+  <rect x="462" y="276" width="410" height="80" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(14,116,144,0.12)" stroke-width="1"/>
+  <text x="478" y="294" font-size="8.5" font-weight="700" fill="rgba(255,255,255,0.4)">EXAMPLE</text>
+  <text x="478" y="312" font-family="monospace" font-size="8.5" fill="rgba(255,255,255,0.45)">Input:   https://ex.com/path?q=hello world</text>
+  <text x="478" y="330" font-family="monospace" font-size="8.5" fill="rgba(103,232,249,0.8)">Output: https://ex.com/path?q=hello%20world</text>
+  <text x="478" y="348" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.3)">→ URL structure preserved, space encoded</text>
+
+  <!-- Row: Common mistake -->
+  <rect x="28" y="362" width="410" height="68" rx="6" fill="rgba(239,68,68,0.05)" stroke="rgba(239,68,68,0.15)" stroke-width="1"/>
+  <text x="44" y="380" font-size="8.5" font-weight="700" fill="rgba(239,68,68,0.8)">COMMON MISTAKE</text>
+  <text x="44" y="398" font-size="9" fill="rgba(255,255,255,0.55)">Using encodeURIComponent on a full URL breaks</text>
+  <text x="44" y="414" font-size="9" fill="rgba(255,255,255,0.55)">it — the ://, ?, and &amp; all get percent-encoded</text>
+  <text x="44" y="430" font-family="monospace" font-size="8.5" fill="rgba(239,68,68,0.7)">https%3A%2F%2Fex.com%3Fq%3Dhello → broken URL</text>
+  <rect x="462" y="362" width="410" height="68" rx="6" fill="rgba(239,68,68,0.05)" stroke="rgba(239,68,68,0.15)" stroke-width="1"/>
+  <text x="478" y="380" font-size="8.5" font-weight="700" fill="rgba(239,68,68,0.8)">COMMON MISTAKE</text>
+  <text x="478" y="398" font-size="9" fill="rgba(255,255,255,0.55)">Using encodeURI on a query param value that</text>
+  <text x="478" y="414" font-size="9" fill="rgba(255,255,255,0.55)">contains &amp; or = — those chars are NOT encoded</text>
+  <text x="478" y="430" font-family="monospace" font-size="8.5" fill="rgba(239,68,68,0.7)">q=a&amp;b → looks like two params instead of one</text>
+
+  <text x="450" y="454" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.22)">toolnestai.net/developer-tools/url-encoder</text>
+</svg>
