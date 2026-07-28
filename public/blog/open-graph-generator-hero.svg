@@ -1,0 +1,156 @@
+<svg viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gL" cx="25%" cy="50%" r="55%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.35"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gR" cx="80%" cy="40%" r="45%"><stop offset="0%" stop-color="#2563eb" stop-opacity="0.22"/><stop offset="100%" stop-color="#2563eb" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="lapG" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#1a1040"/><stop offset="100%" stop-color="#0d0824"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="8" stdDeviation="20" flood-color="#5b21b6" flood-opacity="0.45"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <ellipse cx="300" cy="337" rx="500" ry="400" fill="url(#gL)"/>
+  <ellipse cx="960" cy="250" rx="380" ry="300" fill="url(#gR)"/>
+
+  <!-- Left column -->
+  <text x="52" y="90" font-size="13" font-weight="700" fill="#a78bfa" letter-spacing="3">TOOLNEST AI</text>
+  <text x="52" y="150" font-size="42" font-weight="900" fill="url(#aG)" filter="url(#glow)" letter-spacing="-1">Open Graph</text>
+  <text x="52" y="198" font-size="42" font-weight="900" fill="url(#aG)" filter="url(#glow)" letter-spacing="-1">Generator</text>
+  <text x="52" y="245" font-size="15" fill="rgba(255,255,255,0.55)">Build og: tags with live Facebook, LinkedIn,</text>
+  <text x="52" y="266" font-size="15" fill="rgba(255,255,255,0.55)">Discord &amp; WhatsApp previews in seconds.</text>
+
+  <g font-size="13" fill="rgba(255,255,255,0.72)">
+    <circle cx="60" cy="305" r="4" fill="#a78bfa"/>
+    <text x="74" y="310">og:title, og:description, og:image, og:url</text>
+    <circle cx="60" cy="331" r="4" fill="#a78bfa"/>
+    <text x="74" y="336">Live multi-platform preview cards</text>
+    <circle cx="60" cy="357" r="4" fill="#a78bfa"/>
+    <text x="74" y="362">Twitter Card support included</text>
+    <circle cx="60" cy="383" r="4" fill="#a78bfa"/>
+    <text x="74" y="388">SEO Score + copy all HTML</text>
+  </g>
+
+  <g font-size="10" font-weight="700">
+    <rect x="52" y="415" width="102" height="24" rx="12" fill="rgba(124,58,237,0.25)" stroke="#7c3aed" stroke-width="1"/>
+    <text x="103" y="431" text-anchor="middle" fill="#a78bfa">✓ OG Tags</text>
+    <rect x="163" y="415" width="118" height="24" rx="12" fill="rgba(37,99,235,0.2)" stroke="#3b82f6" stroke-width="1"/>
+    <text x="222" y="431" text-anchor="middle" fill="#60a5fa">✓ Live Preview</text>
+    <rect x="291" y="415" width="98" height="24" rx="12" fill="rgba(16,185,129,0.18)" stroke="#10b981" stroke-width="1"/>
+    <text x="340" y="431" text-anchor="middle" fill="#34d399">✓ Free Forever</text>
+  </g>
+
+  <!-- Laptop -->
+  <rect x="460" y="30" width="700" height="510" rx="16" fill="url(#lapG)" stroke="rgba(255,255,255,0.08)" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="460" y="30" width="700" height="36" rx="16" fill="rgba(255,255,255,0.06)"/>
+  <rect x="460" y="48" width="700" height="18" fill="rgba(255,255,255,0.06)"/>
+  <circle cx="486" cy="48" r="6" fill="#ef4444" opacity="0.8"/>
+  <circle cx="506" cy="48" r="6" fill="#f59e0b" opacity="0.8"/>
+  <circle cx="526" cy="48" r="6" fill="#22c55e" opacity="0.8"/>
+  <rect x="562" y="37" width="436" height="20" rx="10" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="780" y="51" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.35)">toolnestai.net/seo-tools/open-graph-generator</text>
+
+  <text x="476" y="100" font-size="14" font-weight="800" fill="#a78bfa">⊞ Open Graph Generator</text>
+  <text x="476" y="118" font-size="9" fill="rgba(255,255,255,0.35)">Live previews for Facebook · LinkedIn · Discord · WhatsApp</text>
+
+  <!-- Left input panel -->
+  <rect x="468" y="128" width="240" height="396" rx="10" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="480" y="148" font-size="10" font-weight="700" fill="rgba(255,255,255,0.6)" letter-spacing="1">INPUT DETAILS</text>
+
+  <g font-size="9" fill="rgba(255,255,255,0.45)">
+    <text x="480" y="168">Page Title</text>
+    <rect x="480" y="172" width="216" height="22" rx="5" fill="rgba(255,255,255,0.06)" stroke="rgba(124,58,237,0.5)" stroke-width="1"/>
+    <text x="488" y="187" fill="rgba(255,255,255,0.8)" font-size="9">10 Best AI Productivity Tools in 2026</text>
+    <text x="688" y="191" text-anchor="end" font-size="7.5" fill="rgba(34,197,94,0.8)">38/60</text>
+
+    <text x="480" y="208">Description</text>
+    <rect x="480" y="212" width="216" height="40" rx="5" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+    <text x="488" y="226" fill="rgba(255,255,255,0.7)" font-size="8">Discover the best AI tools to boost your</text>
+    <text x="488" y="237" fill="rgba(255,255,255,0.7)" font-size="8">productivity in 2026 — free and reviewed.</text>
+    <text x="688" y="249" text-anchor="end" font-size="7.5" fill="rgba(34,197,94,0.8)">92/160</text>
+
+    <text x="480" y="265">Page URL</text>
+    <rect x="480" y="269" width="216" height="22" rx="5" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+    <text x="488" y="284" fill="rgba(255,255,255,0.5)" font-size="9">https://yoursite.com/best-ai-tools</text>
+
+    <text x="480" y="305">OG Image URL (1200×630px)</text>
+    <rect x="480" y="309" width="216" height="22" rx="5" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+    <text x="488" y="324" fill="rgba(255,255,255,0.5)" font-size="9">https://yoursite.com/og-image.jpg</text>
+
+    <text x="480" y="345">Site Name</text>
+    <rect x="480" y="349" width="216" height="22" rx="5" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+    <text x="488" y="364" fill="rgba(255,255,255,0.7)" font-size="9">ToolNest AI</text>
+
+    <text x="480" y="385">Type</text>
+    <rect x="480" y="389" width="100" height="22" rx="5" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+    <text x="488" y="404" fill="rgba(255,255,255,0.7)" font-size="9">article ▾</text>
+    <text x="590" y="385">Locale</text>
+    <rect x="590" y="389" width="106" height="22" rx="5" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+    <text x="598" y="404" fill="rgba(255,255,255,0.7)" font-size="9">en_US ▾</text>
+  </g>
+
+  <rect x="480" y="430" width="216" height="30" rx="8" fill="url(#bG)" filter="url(#sh)"/>
+  <text x="588" y="449" text-anchor="middle" font-size="11" font-weight="800" fill="#fff">✦ Generate OG Tags</text>
+
+  <rect x="480" y="468" width="105" height="22" rx="5" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="533" y="483" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.5)">☐ Twitter Cards</text>
+  <rect x="591" y="468" width="105" height="22" rx="5" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="644" y="483" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.5)">☐ Article Tags</text>
+
+  <!-- Right preview -->
+  <rect x="720" y="128" width="430" height="396" rx="10" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <text x="732" y="148" font-size="10" font-weight="700" fill="rgba(255,255,255,0.6)" letter-spacing="1">LIVE PREVIEW</text>
+
+  <rect x="732" y="155" width="60" height="18" rx="9" fill="url(#bG)"/>
+  <text x="762" y="168" text-anchor="middle" font-size="8" font-weight="700" fill="#fff">Facebook</text>
+  <rect x="798" y="155" width="60" height="18" rx="9" fill="rgba(255,255,255,0.07)"/>
+  <text x="828" y="168" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.4)">LinkedIn</text>
+  <rect x="864" y="155" width="60" height="18" rx="9" fill="rgba(255,255,255,0.07)"/>
+  <text x="894" y="168" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.4)">Discord</text>
+  <rect x="930" y="155" width="72" height="18" rx="9" fill="rgba(255,255,255,0.07)"/>
+  <text x="966" y="168" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.4)">WhatsApp</text>
+
+  <!-- Facebook card -->
+  <rect x="732" y="180" width="406" height="220" rx="8" fill="#1a1a2e" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <rect x="732" y="180" width="406" height="138" rx="8" fill="rgba(124,58,237,0.18)"/>
+  <rect x="732" y="305" width="406" height="13" fill="#1a1a2e"/>
+  <text x="935" y="242" text-anchor="middle" font-size="32" fill="rgba(167,139,250,0.25)">🔗</text>
+  <text x="935" y="285" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.25)">og:image • 1200×630px</text>
+  <text x="748" y="320" font-size="8" fill="rgba(255,255,255,0.3)">YOURSITE.COM</text>
+  <text x="748" y="334" font-size="11" font-weight="700" fill="rgba(255,255,255,0.85)">10 Best AI Productivity Tools in 2026</text>
+  <text x="748" y="349" font-size="8.5" fill="rgba(255,255,255,0.45)">Discover the best AI tools to boost your productivity in 2026 — free.</text>
+  <text x="1110" y="395" text-anchor="end" font-size="8" fill="rgba(255,255,255,0.2)">👍 Like  💬 Comment  ↗ Share</text>
+
+  <!-- Generated code -->
+  <rect x="732" y="412" width="406" height="98" rx="6" fill="rgba(0,0,0,0.45)" stroke="rgba(124,58,237,0.25)" stroke-width="1"/>
+  <text x="744" y="428" font-size="8" font-family="monospace" fill="rgba(167,139,250,0.8)">&lt;meta property="og:title" content="10 Best AI..." /&gt;</text>
+  <text x="744" y="442" font-size="8" font-family="monospace" fill="rgba(167,139,250,0.55)">&lt;meta property="og:description" content="..." /&gt;</text>
+  <text x="744" y="456" font-size="8" font-family="monospace" fill="rgba(167,139,250,0.55)">&lt;meta property="og:image" content="https://..." /&gt;</text>
+  <text x="744" y="470" font-size="8" font-family="monospace" fill="rgba(167,139,250,0.55)">&lt;meta property="og:url" content="https://..." /&gt;</text>
+  <text x="744" y="484" font-size="8" font-family="monospace" fill="rgba(167,139,250,0.55)">&lt;meta property="og:type" content="article" /&gt;</text>
+  <rect x="1074" y="500" width="58" height="18" rx="6" fill="url(#bG)"/>
+  <text x="1103" y="512" text-anchor="middle" font-size="8" font-weight="700" fill="#fff">⎘ Copy All</text>
+  <rect x="1006" y="500" width="62" height="18" rx="6" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="1037" y="512" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.5)">↓ Download</text>
+
+  <!-- SEO score -->
+  <rect x="1074" y="407" width="60" height="22" rx="11" fill="rgba(34,197,94,0.18)" stroke="rgba(34,197,94,0.4)" stroke-width="1"/>
+  <text x="1104" y="422" text-anchor="middle" font-size="9" font-weight="800" fill="#22c55e">92 / 100</text>
+
+  <!-- Bottom strip -->
+  <g font-size="9" text-anchor="middle">
+    <rect x="52" y="572" width="160" height="52" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="132" y="604" fill="rgba(255,255,255,0.6)" font-weight="600">Meta Tag Generator</text>
+    <rect x="224" y="572" width="160" height="52" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="304" y="604" fill="rgba(255,255,255,0.6)" font-weight="600">Twitter Card Generator</text>
+    <rect x="396" y="572" width="160" height="52" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="476" y="604" fill="rgba(255,255,255,0.6)" font-weight="600">SERP Preview</text>
+    <rect x="568" y="572" width="160" height="52" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="648" y="604" fill="rgba(255,255,255,0.6)" font-weight="600">Meta Tags Analyzer</text>
+    <rect x="740" y="572" width="160" height="52" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="820" y="604" fill="rgba(255,255,255,0.6)" font-weight="600">Schema Validator</text>
+    <rect x="912" y="572" width="244" height="52" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="1034" y="604" fill="rgba(255,255,255,0.6)" font-weight="600">OG Image Preview</text>
+  </g>
+</svg>

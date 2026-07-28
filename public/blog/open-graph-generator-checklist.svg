@@ -1,0 +1,101 @@
+<svg viewBox="0 0 900 440" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gC" cx="50%" cy="40%" r="60%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.2"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="4" stdDeviation="10" flood-color="#5b21b6" flood-opacity="0.3"/></filter>
+  </defs>
+  <rect width="900" height="440" fill="url(#bg)"/>
+  <ellipse cx="450" cy="220" rx="500" ry="300" fill="url(#gC)"/>
+
+  <text x="450" y="36" text-anchor="middle" font-size="20" font-weight="900" fill="url(#aG)">Open Graph Tag Checklist — Before You Publish</text>
+  <text x="450" y="54" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.38)">Run through every item before sharing your page on social media</text>
+
+  <!-- Left column -->
+  <text x="44" y="82" font-size="10" font-weight="700" fill="rgba(167,139,250,0.7)" letter-spacing="1">REQUIRED TAGS</text>
+
+  <g font-size="9.5">
+    <rect x="28" y="90" width="406" height="36" rx="7" fill="rgba(34,197,94,0.07)" stroke="rgba(34,197,94,0.2)" stroke-width="1"/>
+    <rect x="40" y="101" width="14" height="14" rx="3" fill="rgba(34,197,94,0.25)" stroke="rgba(34,197,94,0.5)" stroke-width="1"/>
+    <text x="48" y="111" text-anchor="middle" font-size="9" fill="rgba(34,197,94,0.9)">✓</text>
+    <text x="62" y="107" font-weight="700" fill="rgba(255,255,255,0.8)">og:title</text>
+    <text x="62" y="120" font-size="8.5" fill="rgba(255,255,255,0.45)">Under 60 chars · primary keyword near start</text>
+
+    <rect x="28" y="132" width="406" height="36" rx="7" fill="rgba(34,197,94,0.05)" stroke="rgba(34,197,94,0.15)" stroke-width="1"/>
+    <rect x="40" y="143" width="14" height="14" rx="3" fill="rgba(34,197,94,0.25)" stroke="rgba(34,197,94,0.5)" stroke-width="1"/>
+    <text x="48" y="153" text-anchor="middle" font-size="9" fill="rgba(34,197,94,0.9)">✓</text>
+    <text x="62" y="149" font-weight="700" fill="rgba(255,255,255,0.8)">og:description</text>
+    <text x="62" y="162" font-size="8.5" fill="rgba(255,255,255,0.45)">2–3 sentences · under 155 chars · include CTA</text>
+
+    <rect x="28" y="174" width="406" height="36" rx="7" fill="rgba(34,197,94,0.07)" stroke="rgba(34,197,94,0.2)" stroke-width="1"/>
+    <rect x="40" y="185" width="14" height="14" rx="3" fill="rgba(34,197,94,0.25)" stroke="rgba(34,197,94,0.5)" stroke-width="1"/>
+    <text x="48" y="195" text-anchor="middle" font-size="9" fill="rgba(34,197,94,0.9)">✓</text>
+    <text x="62" y="191" font-weight="700" fill="rgba(255,255,255,0.8)">og:image</text>
+    <text x="62" y="204" font-size="8.5" fill="rgba(255,255,255,0.45)">Absolute HTTPS URL · 1200×630px · under 8 MB</text>
+
+    <rect x="28" y="216" width="406" height="36" rx="7" fill="rgba(34,197,94,0.05)" stroke="rgba(34,197,94,0.15)" stroke-width="1"/>
+    <rect x="40" y="227" width="14" height="14" rx="3" fill="rgba(34,197,94,0.25)" stroke="rgba(34,197,94,0.5)" stroke-width="1"/>
+    <text x="48" y="237" text-anchor="middle" font-size="9" fill="rgba(34,197,94,0.9)">✓</text>
+    <text x="62" y="233" font-weight="700" fill="rgba(255,255,255,0.8)">og:url</text>
+    <text x="62" y="246" font-size="8.5" fill="rgba(255,255,255,0.45)">Exact canonical URL · matches rel="canonical"</text>
+  </g>
+
+  <!-- Recommended -->
+  <text x="44" y="272" font-size="10" font-weight="700" fill="rgba(251,191,36,0.7)" letter-spacing="1">RECOMMENDED TAGS</text>
+  <g font-size="9.5">
+    <rect x="28" y="280" width="406" height="36" rx="7" fill="rgba(251,191,36,0.05)" stroke="rgba(251,191,36,0.18)" stroke-width="1"/>
+    <rect x="40" y="291" width="14" height="14" rx="3" fill="rgba(251,191,36,0.2)" stroke="rgba(251,191,36,0.4)" stroke-width="1"/>
+    <text x="62" y="297" font-weight="700" fill="rgba(255,255,255,0.8)">og:type</text>
+    <text x="62" y="310" font-size="8.5" fill="rgba(255,255,255,0.45)">website · article · product · video.movie</text>
+
+    <rect x="28" y="322" width="406" height="36" rx="7" fill="rgba(251,191,36,0.04)" stroke="rgba(251,191,36,0.14)" stroke-width="1"/>
+    <rect x="40" y="333" width="14" height="14" rx="3" fill="rgba(251,191,36,0.2)" stroke="rgba(251,191,36,0.4)" stroke-width="1"/>
+    <text x="62" y="339" font-weight="700" fill="rgba(255,255,255,0.8)">og:site_name</text>
+    <text x="62" y="352" font-size="8.5" fill="rgba(255,255,255,0.45)">Your brand name — shown below the card</text>
+
+    <rect x="28" y="364" width="406" height="36" rx="7" fill="rgba(251,191,36,0.05)" stroke="rgba(251,191,36,0.18)" stroke-width="1"/>
+    <rect x="40" y="375" width="14" height="14" rx="3" fill="rgba(251,191,36,0.2)" stroke="rgba(251,191,36,0.4)" stroke-width="1"/>
+    <text x="62" y="381" font-weight="700" fill="rgba(255,255,255,0.8)">og:image:width / og:image:height</text>
+    <text x="62" y="394" font-size="8.5" fill="rgba(255,255,255,0.45)">Tell platforms the dimensions (1200 / 630) to skip re-fetching</text>
+  </g>
+
+  <!-- Right column — Twitter Card + Article tags -->
+  <text x="480" y="82" font-size="10" font-weight="700" fill="rgba(167,139,250,0.7)" letter-spacing="1">TWITTER CARD TAGS</text>
+  <g font-size="9.5">
+    <rect x="464" y="90" width="406" height="36" rx="7" fill="rgba(124,58,237,0.08)" stroke="rgba(124,58,237,0.2)" stroke-width="1"/>
+    <text x="480" y="107" font-weight="700" fill="rgba(255,255,255,0.8)">twitter:card</text>
+    <text x="480" y="120" font-size="8.5" fill="rgba(255,255,255,0.45)">"summary_large_image" for full-width card · "summary" for thumbnail</text>
+
+    <rect x="464" y="132" width="406" height="36" rx="7" fill="rgba(124,58,237,0.05)" stroke="rgba(124,58,237,0.14)" stroke-width="1"/>
+    <text x="480" y="149" font-weight="700" fill="rgba(255,255,255,0.8)">twitter:title</text>
+    <text x="480" y="162" font-size="8.5" fill="rgba(255,255,255,0.45)">Can differ from og:title · optimise for Twitter audience</text>
+
+    <rect x="464" y="174" width="406" height="36" rx="7" fill="rgba(124,58,237,0.08)" stroke="rgba(124,58,237,0.2)" stroke-width="1"/>
+    <text x="480" y="191" font-weight="700" fill="rgba(255,255,255,0.8)">twitter:description</text>
+    <text x="480" y="204" font-size="8.5" fill="rgba(255,255,255,0.45)">Under 200 chars · Twitter truncates at ~125 chars in preview</text>
+
+    <rect x="464" y="216" width="406" height="36" rx="7" fill="rgba(124,58,237,0.05)" stroke="rgba(124,58,237,0.14)" stroke-width="1"/>
+    <text x="480" y="233" font-weight="700" fill="rgba(255,255,255,0.8)">twitter:image</text>
+    <text x="480" y="246" font-size="8.5" fill="rgba(255,255,255,0.45)">Same as og:image · or Twitter-specific crop · 2:1 ratio preferred</text>
+  </g>
+
+  <text x="480" y="272" font-size="10" font-weight="700" fill="rgba(167,139,250,0.7)" letter-spacing="1">ARTICLE-SPECIFIC TAGS</text>
+  <g font-size="9.5">
+    <rect x="464" y="280" width="406" height="36" rx="7" fill="rgba(37,99,235,0.07)" stroke="rgba(59,130,246,0.2)" stroke-width="1"/>
+    <text x="480" y="297" font-weight="700" fill="rgba(255,255,255,0.8)">article:published_time</text>
+    <text x="480" y="310" font-size="8.5" fill="rgba(255,255,255,0.45)">ISO 8601 date — "2026-07-28T09:00:00Z"</text>
+
+    <rect x="464" y="322" width="406" height="36" rx="7" fill="rgba(37,99,235,0.05)" stroke="rgba(59,130,246,0.14)" stroke-width="1"/>
+    <text x="480" y="339" font-weight="700" fill="rgba(255,255,255,0.8)">article:author</text>
+    <text x="480" y="352" font-size="8.5" fill="rgba(255,255,255,0.45)">Author name or URL of author profile page</text>
+
+    <rect x="464" y="364" width="406" height="36" rx="7" fill="rgba(37,99,235,0.07)" stroke="rgba(59,130,246,0.2)" stroke-width="1"/>
+    <text x="480" y="381" font-weight="700" fill="rgba(255,255,255,0.8)">article:section / article:tag</text>
+    <text x="480" y="394" font-size="8.5" fill="rgba(255,255,255,0.45)">Category and keyword tags for the article</text>
+  </g>
+
+  <!-- CTA bar -->
+  <rect x="28" y="410" width="844" height="22" rx="8" fill="rgba(124,58,237,0.18)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+  <text x="450" y="425" text-anchor="middle" font-size="9.5" font-weight="700" fill="rgba(167,139,250,0.9)">Generate all these tags instantly — free at toolnestai.net/seo-tools/open-graph-generator</text>
+</svg>
