@@ -1,0 +1,75 @@
+<svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gL" cx="20%" cy="50%" r="55%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.22"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#818cf8"/></linearGradient>
+  </defs>
+  <rect width="900" height="460" fill="url(#bg)"/>
+  <ellipse cx="180" cy="230" rx="400" ry="320" fill="url(#gL)"/>
+
+  <text x="450" y="36" text-anchor="middle" font-size="20" font-weight="900" fill="url(#aG)">5 QR Code Mistakes &amp; How to Fix Them</text>
+  <text x="450" y="54" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.38)">Common errors that produce QR codes that won't scan — and the correct approach</text>
+
+  <!-- Column headers -->
+  <rect x="28" y="66" width="270" height="24" rx="6" fill="rgba(239,68,68,0.15)" stroke="rgba(239,68,68,0.3)" stroke-width="1"/>
+  <text x="163" y="82" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(239,68,68,0.9)">⛔  The Mistake</text>
+  <rect x="306" y="66" width="566" height="24" rx="6" fill="rgba(34,197,94,0.1)" stroke="rgba(34,197,94,0.25)" stroke-width="1"/>
+  <text x="589" y="82" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(34,197,94,0.9)">✓  The Fix</text>
+
+  <!-- Row 1: Too small to print -->
+  <rect x="28" y="96" width="270" height="64" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="44" y="114" font-size="9" font-weight="700" fill="rgba(239,68,68,0.85)">Printing the QR code too small</text>
+  <text x="44" y="130" font-size="8" fill="rgba(255,255,255,0.42)">QR codes smaller than 2 cm × 2 cm</text>
+  <text x="44" y="144" font-size="8" fill="rgba(255,255,255,0.42)">often fail to scan reliably in print.</text>
+  <rect x="306" y="96" width="566" height="64" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(34,197,94,0.08)" stroke-width="1"/>
+  <text x="322" y="112" font-size="8.5" fill="rgba(255,255,255,0.5)">Use at least 2 cm × 2 cm for print. For large-format (posters, banners), export as SVG — it scales</text>
+  <text x="322" y="126" font-size="8.5" fill="rgba(255,255,255,0.5)">infinitely without pixelation. Rule of thumb: minimum size = scanning distance ÷ 10.</text>
+  <text x="322" y="142" font-size="8" font-family="monospace" fill="rgba(239,68,68,0.7)">✗  2 cm on a poster viewed from 2 m away</text>
+  <text x="322" y="156" font-size="8" font-family="monospace" fill="rgba(34,197,94,0.8)">✓  Export as SVG → scale to 20 cm for that poster</text>
+
+  <!-- Row 2: Low contrast -->
+  <rect x="28" y="166" width="270" height="64" rx="7" fill="rgba(255,255,255,0.025)" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="44" y="184" font-size="9" font-weight="700" fill="rgba(239,68,68,0.85)">Low contrast between modules</text>
+  <text x="44" y="200" font-size="8" fill="rgba(255,255,255,0.42)">Dark QR on dark background or</text>
+  <text x="44" y="214" font-size="8" fill="rgba(255,255,255,0.42)">light QR on light background fails.</text>
+  <rect x="306" y="166" width="566" height="64" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(34,197,94,0.08)" stroke-width="1"/>
+  <text x="322" y="182" font-size="8.5" fill="rgba(255,255,255,0.5)">Always maintain high contrast — dark modules on a light background is the safest option.</text>
+  <text x="322" y="196" font-size="8.5" fill="rgba(255,255,255,0.5)">If using a custom colour, test with a contrast ratio tool (WCAG AA minimum 4.5:1).</text>
+  <text x="322" y="212" font-size="8" font-family="monospace" fill="rgba(239,68,68,0.7)">✗  Dark purple modules on dark navy background</text>
+  <text x="322" y="226" font-size="8" font-family="monospace" fill="rgba(34,197,94,0.8)">✓  Black (#000) on white (#fff) — always scannable</text>
+
+  <!-- Row 3: Covering finder patterns -->
+  <rect x="28" y="236" width="270" height="64" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="44" y="254" font-size="9" font-weight="700" fill="rgba(239,68,68,0.85)">Covering the finder patterns</text>
+  <text x="44" y="270" font-size="8" fill="rgba(255,255,255,0.42)">Overlapping logos or design elements</text>
+  <text x="44" y="284" font-size="8" fill="rgba(255,255,255,0.42)">on the three corner squares break scanning.</text>
+  <rect x="306" y="236" width="566" height="64" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(34,197,94,0.08)" stroke-width="1"/>
+  <text x="322" y="252" font-size="8.5" fill="rgba(255,255,255,0.5)">Never cover the three corner finder patterns (the large squares). Logos can go in the centre</text>
+  <text x="322" y="266" font-size="8.5" fill="rgba(255,255,255,0.5)">only with H-level error correction (30% redundancy) which allows up to 30% damage recovery.</text>
+  <text x="322" y="282" font-size="8" font-family="monospace" fill="rgba(239,68,68,0.7)">✗  Logo overlapping top-left corner finder</text>
+  <text x="322" y="296" font-size="8" font-family="monospace" fill="rgba(34,197,94,0.8)">✓  Logo centred · error correction set to H</text>
+
+  <!-- Row 4: No quiet zone -->
+  <rect x="28" y="306" width="270" height="64" rx="7" fill="rgba(255,255,255,0.025)" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="44" y="324" font-size="9" font-weight="700" fill="rgba(239,68,68,0.85)">No quiet zone (white border)</text>
+  <text x="44" y="340" font-size="8" fill="rgba(255,255,255,0.42)">QR codes require a clear white</text>
+  <text x="44" y="354" font-size="8" fill="rgba(255,255,255,0.42)">margin around all four sides.</text>
+  <rect x="306" y="306" width="566" height="64" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(34,197,94,0.08)" stroke-width="1"/>
+  <text x="322" y="322" font-size="8.5" fill="rgba(255,255,255,0.5)">Always leave a quiet zone of at least 4 modules (the width of 4 QR squares) on every side.</text>
+  <text x="322" y="336" font-size="8.5" fill="rgba(255,255,255,0.5)">Most generators add this automatically — check that it isn't cropped during print or design.</text>
+  <text x="322" y="352" font-size="8" font-family="monospace" fill="rgba(239,68,68,0.7)">✗  QR code touching the edge of a flyer</text>
+  <text x="322" y="366" font-size="8" font-family="monospace" fill="rgba(34,197,94,0.8)">✓  Clear white border on all 4 sides preserved</text>
+
+  <!-- Row 5: Wrong URL typed -->
+  <rect x="28" y="376" width="270" height="64" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="44" y="394" font-size="9" font-weight="700" fill="rgba(239,68,68,0.85)">Typo in the encoded URL</text>
+  <text x="44" y="410" font-size="8" fill="rgba(255,255,255,0.42)">A typo in the URL makes the QR</text>
+  <text x="44" y="424" font-size="8" fill="rgba(255,255,255,0.42)">code useless — it cannot be fixed.</text>
+  <rect x="306" y="376" width="566" height="64" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(34,197,94,0.08)" stroke-width="1"/>
+  <text x="322" y="392" font-size="8.5" fill="rgba(255,255,255,0.5)">Always scan and test the QR code yourself before printing. Copy-paste the URL instead</text>
+  <text x="322" y="406" font-size="8.5" fill="rgba(255,255,255,0.5)">of typing it. Use a URL shortener if you want to update the destination later (dynamic QR).</text>
+  <text x="322" y="422" font-size="8" font-family="monospace" fill="rgba(239,68,68,0.7)">✗  htps://toolnestai.net — missing letter, 404</text>
+  <text x="322" y="436" font-size="8" font-family="monospace" fill="rgba(34,197,94,0.8)">✓  Test scan before committing to print run</text>
+
+  <text x="450" y="452" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.25)">toolnestai.net/calculators/qr-code-generator</text>
+</svg>

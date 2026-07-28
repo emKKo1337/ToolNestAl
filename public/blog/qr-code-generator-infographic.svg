@@ -1,0 +1,164 @@
+<svg viewBox="0 0 900 1200" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gT" cx="50%" cy="10%" r="50%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.3"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gB" cx="50%" cy="90%" r="50%"><stop offset="0%" stop-color="#0e7490" stop-opacity="0.2"/><stop offset="100%" stop-color="#0e7490" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#5b21b6" flood-opacity="0.35"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="900" height="1200" fill="url(#bg)"/>
+  <ellipse cx="450" cy="150" rx="500" ry="300" fill="url(#gT)"/>
+  <ellipse cx="450" cy="1050" rx="500" ry="300" fill="url(#gB)"/>
+
+  <text x="450" y="52" text-anchor="middle" font-size="26" font-weight="900" fill="url(#aG)" filter="url(#glow)">QR Code Generator</text>
+  <text x="450" y="80" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.45)">The complete guide — how QR codes work, content types, error correction &amp; best practices</text>
+
+  <!-- Section 1: What is a QR code -->
+  <rect x="28" y="100" width="844" height="190" rx="12" fill="rgba(255,255,255,0.025)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <text x="48" y="124" font-size="12" font-weight="800" fill="url(#aG)">01 — How QR Codes Work</text>
+  <g font-size="10" fill="rgba(255,255,255,0.65)">
+    <circle cx="56" cy="148" r="4" fill="#a78bfa"/>
+    <text x="70" y="152">QR stands for Quick Response — invented by Denso Wave in 1994 to track automotive parts</text>
+    <circle cx="56" cy="172" r="4" fill="#a78bfa"/>
+    <text x="70" y="176">Data is encoded in a 2D matrix of black (dark) and white (light) square modules</text>
+    <circle cx="56" cy="196" r="4" fill="#a78bfa"/>
+    <text x="70" y="200">Three large corner squares (finder patterns) tell the scanner the code's position and orientation</text>
+    <circle cx="56" cy="220" r="4" fill="#a78bfa"/>
+    <text x="70" y="224">Error correction (Reed-Solomon) allows part of the code to be damaged and still scan correctly</text>
+    <circle cx="56" cy="244" r="4" fill="#a78bfa"/>
+    <text x="70" y="248">Modern smartphones scan QR codes natively — no app required on iOS 11+ and Android 8+</text>
+    <circle cx="56" cy="268" r="4" fill="#a78bfa"/>
+    <text x="70" y="272">QR codes can store URLs, text, contacts, Wi-Fi credentials, phone numbers and email addresses</text>
+  </g>
+
+  <!-- Section 2: Key stats -->
+  <rect x="28" y="308" width="844" height="130" rx="12" fill="rgba(124,58,237,0.08)" stroke="rgba(124,58,237,0.2)" stroke-width="1"/>
+  <text x="48" y="332" font-size="12" font-weight="800" fill="url(#aG)">02 — Key Numbers</text>
+  <g text-anchor="middle">
+    <rect x="44" y="346" width="175" height="70" rx="8" fill="rgba(124,58,237,0.15)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+    <text x="132" y="375" font-size="22" font-weight="900" fill="#a78bfa">6</text>
+    <text x="132" y="394" font-size="9" fill="rgba(255,255,255,0.55)">content types</text>
+    <text x="132" y="406" font-size="9" fill="rgba(255,255,255,0.55)">URL · Text · Wi-Fi · vCard · Email · Phone</text>
+
+    <rect x="233" y="346" width="175" height="70" rx="8" fill="rgba(14,116,144,0.12)" stroke="rgba(14,116,144,0.25)" stroke-width="1"/>
+    <text x="321" y="375" font-size="22" font-weight="900" fill="#67e8f9">4</text>
+    <text x="321" y="394" font-size="9" fill="rgba(255,255,255,0.55)">error correction</text>
+    <text x="321" y="406" font-size="9" fill="rgba(255,255,255,0.55)">levels: L 7% · M 15% · Q 25% · H 30%</text>
+
+    <rect x="422" y="346" width="175" height="70" rx="8" fill="rgba(16,185,129,0.1)" stroke="rgba(16,185,129,0.25)" stroke-width="1"/>
+    <text x="510" y="375" font-size="22" font-weight="900" fill="#34d399">∞</text>
+    <text x="510" y="394" font-size="9" fill="rgba(255,255,255,0.55)">static codes</text>
+    <text x="510" y="406" font-size="9" fill="rgba(255,255,255,0.55)">never expire as long as destination is live</text>
+
+    <rect x="611" y="346" width="175" height="70" rx="8" fill="rgba(251,191,36,0.1)" stroke="rgba(251,191,36,0.25)" stroke-width="1"/>
+    <text x="699" y="375" font-size="22" font-weight="900" fill="#fbbf24">2 cm</text>
+    <text x="699" y="394" font-size="9" fill="rgba(255,255,255,0.55)">minimum print size</text>
+    <text x="699" y="406" font-size="9" fill="rgba(255,255,255,0.55)">for reliable scanning in print</text>
+  </g>
+
+  <!-- Section 3: Content types -->
+  <rect x="28" y="456" width="844" height="310" rx="12" fill="rgba(255,255,255,0.025)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <text x="48" y="480" font-size="12" font-weight="800" fill="url(#aG)">03 — Content Types &amp; When to Use Each</text>
+
+  <g>
+    <rect x="44" y="490" width="810" height="40" rx="6" fill="rgba(124,58,237,0.09)" stroke="rgba(124,58,237,0.2)" stroke-width="1"/>
+    <rect x="44" y="490" width="4" height="40" rx="2" fill="#a78bfa"/>
+    <text x="58" y="507" font-size="9" font-weight="700" fill="rgba(167,139,250,0.85)">🔗  URL — Opens a website in the phone's browser</text>
+    <text x="58" y="522" font-size="8.5" fill="rgba(255,255,255,0.45)">Most common type · menus, business cards, posters, packaging, event signage</text>
+
+    <rect x="44" y="536" width="810" height="40" rx="6" fill="rgba(96,165,250,0.07)" stroke="rgba(96,165,250,0.18)" stroke-width="1"/>
+    <rect x="44" y="536" width="4" height="40" rx="2" fill="#60a5fa"/>
+    <text x="58" y="553" font-size="9" font-weight="700" fill="rgba(147,197,253,0.85)">📝  Text — Plain readable text displayed on screen</text>
+    <text x="58" y="568" font-size="8.5" fill="rgba(255,255,255,0.45)">Short messages, instructions, promo codes, addresses, table numbers</text>
+
+    <rect x="44" y="582" width="810" height="40" rx="6" fill="rgba(16,185,129,0.07)" stroke="rgba(16,185,129,0.18)" stroke-width="1"/>
+    <rect x="44" y="582" width="4" height="40" rx="2" fill="#34d399"/>
+    <text x="58" y="599" font-size="9" font-weight="700" fill="rgba(52,211,153,0.85)">📶  Wi-Fi — Connects device to network automatically</text>
+    <text x="58" y="614" font-size="8.5" fill="rgba(255,255,255,0.45)">Hotels, cafés, events, offices, classrooms — scan to connect, no typing</text>
+
+    <rect x="44" y="628" width="810" height="40" rx="6" fill="rgba(251,191,36,0.07)" stroke="rgba(251,191,36,0.18)" stroke-width="1"/>
+    <rect x="44" y="628" width="4" height="40" rx="2" fill="#fbbf24"/>
+    <text x="58" y="645" font-size="9" font-weight="700" fill="rgba(251,191,36,0.85)">👤  vCard — Adds contact details to phone's address book</text>
+    <text x="58" y="660" font-size="8.5" fill="rgba(255,255,255,0.45)">Business cards, conference badges, networking events — scan to save contact</text>
+
+    <rect x="44" y="674" width="810" height="40" rx="6" fill="rgba(239,68,68,0.07)" stroke="rgba(239,68,68,0.18)" stroke-width="1"/>
+    <rect x="44" y="674" width="4" height="40" rx="2" fill="#f87171"/>
+    <text x="58" y="691" font-size="9" font-weight="700" fill="rgba(252,165,165,0.85)">✉  Email — Opens mail app with pre-filled recipient and subject</text>
+    <text x="58" y="706" font-size="8.5" fill="rgba(255,255,255,0.45)">Feedback forms, support contact, newsletter sign-ups</text>
+
+    <rect x="44" y="720" width="810" height="36" rx="6" fill="rgba(168,85,247,0.07)" stroke="rgba(168,85,247,0.18)" stroke-width="1"/>
+    <rect x="44" y="720" width="4" height="36" rx="2" fill="#c084fc"/>
+    <text x="58" y="737" font-size="9" font-weight="700" fill="rgba(216,180,254,0.85)">📞  Phone — Opens phone dialler with number pre-filled</text>
+    <text x="58" y="752" font-size="8.5" fill="rgba(255,255,255,0.45)">Restaurant tables, shop windows, support leaflets — one tap to call</text>
+  </g>
+
+  <!-- Section 4: Error correction -->
+  <rect x="28" y="784" width="844" height="180" rx="12" fill="rgba(255,255,255,0.025)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <text x="48" y="808" font-size="12" font-weight="800" fill="url(#aG)">04 — Error Correction Levels</text>
+  <text x="48" y="826" font-size="9" fill="rgba(255,255,255,0.4)">Higher error correction = larger QR code (more modules) but survives more damage</text>
+
+  <g text-anchor="middle">
+    <rect x="44" y="836" width="188" height="114" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="138" y="860" font-size="16" font-weight="900" fill="rgba(255,255,255,0.7)">L — 7%</text>
+    <text x="138" y="878" font-size="9" fill="rgba(255,255,255,0.4)">Recovery up to 7%</text>
+    <text x="138" y="894" font-size="9" fill="rgba(255,255,255,0.4)">Smallest QR code</text>
+    <text x="138" y="912" font-size="9" fill="rgba(255,255,255,0.4)">Good for digital screens</text>
+    <text x="138" y="930" font-size="9" fill="rgba(255,255,255,0.4)">where damage is unlikely</text>
+
+    <rect x="242" y="836" width="188" height="114" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="336" y="860" font-size="16" font-weight="900" fill="rgba(251,191,36,0.8)">M — 15%</text>
+    <text x="336" y="878" font-size="9" fill="rgba(255,255,255,0.4)">Recovery up to 15%</text>
+    <text x="336" y="894" font-size="9" fill="rgba(255,255,255,0.4)">Balanced size/durability</text>
+    <text x="336" y="912" font-size="9" fill="rgba(255,255,255,0.4)">Good default for most</text>
+    <text x="336" y="930" font-size="9" fill="rgba(255,255,255,0.4)">indoor print use cases</text>
+
+    <rect x="440" y="836" width="188" height="114" rx="8" fill="rgba(124,58,237,0.1)" stroke="rgba(124,58,237,0.25)" stroke-width="1"/>
+    <text x="534" y="860" font-size="16" font-weight="900" fill="#a78bfa">Q — 25%</text>
+    <text x="534" y="878" font-size="9" fill="rgba(255,255,255,0.4)">Recovery up to 25%</text>
+    <text x="534" y="894" font-size="9" fill="rgba(255,255,255,0.4)">Recommended for print</text>
+    <text x="534" y="912" font-size="9" fill="rgba(255,255,255,0.4)">Handles light scratching,</text>
+    <text x="534" y="930" font-size="9" fill="rgba(255,255,255,0.4)">smudging or small tears</text>
+
+    <rect x="638" y="836" width="188" height="114" rx="8" fill="rgba(52,211,153,0.07)" stroke="rgba(52,211,153,0.2)" stroke-width="1"/>
+    <text x="732" y="860" font-size="16" font-weight="900" fill="rgba(52,211,153,0.8)">H — 30%</text>
+    <text x="732" y="878" font-size="9" fill="rgba(255,255,255,0.4)">Recovery up to 30%</text>
+    <text x="732" y="894" font-size="9" fill="rgba(255,255,255,0.4)">Use with logo overlays</text>
+    <text x="732" y="912" font-size="9" fill="rgba(255,255,255,0.4)">Largest QR code size</text>
+    <text x="732" y="930" font-size="9" fill="rgba(255,255,255,0.4)">Best for outdoor/industrial</text>
+  </g>
+
+  <!-- Section 5: 5 steps -->
+  <rect x="28" y="982" width="844" height="100" rx="12" fill="rgba(255,255,255,0.025)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <text x="48" y="1006" font-size="12" font-weight="800" fill="url(#aG)">05 — Generate a QR Code in 5 Steps</text>
+  <g font-size="9.5" fill="rgba(255,255,255,0.6)">
+    <circle cx="62" cy="1026" r="12" fill="url(#bG)"/>
+    <text x="62" y="1030" text-anchor="middle" font-size="9" font-weight="900" fill="white">1</text>
+    <text x="82" y="1030">Choose content type (URL, Text, Wi-Fi…)</text>
+    <circle cx="266" cy="1026" r="12" fill="url(#bG)"/>
+    <text x="266" y="1030" text-anchor="middle" font-size="9" font-weight="900" fill="white">2</text>
+    <text x="286" y="1030">Enter your data</text>
+    <circle cx="430" cy="1026" r="12" fill="url(#bG)"/>
+    <text x="430" y="1030" text-anchor="middle" font-size="9" font-weight="900" fill="white">3</text>
+    <text x="450" y="1030">Set size &amp; error correction</text>
+    <circle cx="610" cy="1026" r="12" fill="url(#bG)"/>
+    <text x="610" y="1030" text-anchor="middle" font-size="9" font-weight="900" fill="white">4</text>
+    <text x="630" y="1030">Generate &amp; preview</text>
+    <circle cx="756" cy="1026" r="12" fill="url(#bG)"/>
+    <text x="756" y="1030" text-anchor="middle" font-size="9" font-weight="900" fill="white">5</text>
+    <text x="776" y="1030">Test scan · download PNG or SVG</text>
+
+    <text x="62" y="1058" font-size="8.5" fill="rgba(255,255,255,0.3)">URL, Text, Wi-Fi</text>
+    <text x="266" y="1058" font-size="8.5" fill="rgba(255,255,255,0.3)">Copy-paste to avoid typos</text>
+    <text x="430" y="1058" font-size="8.5" fill="rgba(255,255,255,0.3)">Q level for print</text>
+    <text x="610" y="1058" font-size="8.5" fill="rgba(255,255,255,0.3)">Check it scans correctly</text>
+    <text x="756" y="1058" font-size="8.5" fill="rgba(255,255,255,0.3)">SVG for large formats</text>
+  </g>
+
+  <!-- CTA -->
+  <rect x="28" y="1110" width="844" height="66" rx="12" fill="url(#bG)" filter="url(#sh)"/>
+  <text x="450" y="1142" text-anchor="middle" font-size="18" font-weight="900" fill="#fff">Generate a QR Code Free — No Sign-Up</text>
+  <text x="450" y="1162" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.75)">URL · Text · Wi-Fi · vCard · Email · Phone · PNG &amp; SVG download</text>
+  <text x="450" y="1170" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(255,255,255,0.4)">toolnestai.net/calculators/qr-code-generator</text>
+</svg>

@@ -1,0 +1,116 @@
+<svg viewBox="0 0 900 480" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gL" cx="20%" cy="50%" r="55%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.22"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+  </defs>
+  <rect width="900" height="480" fill="url(#bg)"/>
+  <ellipse cx="180" cy="240" rx="400" ry="320" fill="url(#gL)"/>
+
+  <text x="450" y="36" text-anchor="middle" font-size="20" font-weight="900" fill="url(#aG)">6 QR Code Content Types — What to Use Each For</text>
+  <text x="450" y="55" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.38)">Choose the right content type for your use case and the QR code encodes the correct data format</text>
+
+  <!-- Column headers -->
+  <rect x="28" y="66" width="54" height="22" rx="5" fill="rgba(124,58,237,0.15)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+  <text x="55" y="81" text-anchor="middle" font-size="9" font-weight="700" fill="rgba(167,139,250,0.85)">Type</text>
+  <rect x="88" y="66" width="180" height="22" rx="5" fill="rgba(124,58,237,0.15)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+  <text x="178" y="81" text-anchor="middle" font-size="9" font-weight="700" fill="rgba(167,139,250,0.85)">What it encodes</text>
+  <rect x="274" y="66" width="228" height="22" rx="5" fill="rgba(124,58,237,0.15)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+  <text x="388" y="81" text-anchor="middle" font-size="9" font-weight="700" fill="rgba(167,139,250,0.85)">Best used for</text>
+  <rect x="508" y="66" width="364" height="22" rx="5" fill="rgba(124,58,237,0.15)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+  <text x="690" y="81" text-anchor="middle" font-size="9" font-weight="700" fill="rgba(167,139,250,0.85)">Example encoded value</text>
+
+  <!-- Row 1: URL -->
+  <rect x="28" y="94" width="54" height="56" rx="6" fill="rgba(124,58,237,0.1)" stroke="rgba(124,58,237,0.2)" stroke-width="1"/>
+  <text x="55" y="116" text-anchor="middle" font-size="16">🔗</text>
+  <text x="55" y="138" text-anchor="middle" font-size="8" font-weight="700" fill="rgba(167,139,250,0.9)">URL</text>
+  <rect x="88" y="94" width="180" height="56" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="104" y="112" font-size="8.5" fill="rgba(255,255,255,0.65)">Any web address — opens</text>
+  <text x="104" y="126" font-size="8.5" fill="rgba(255,255,255,0.65)">directly in the phone's browser</text>
+  <text x="104" y="140" font-size="8" fill="rgba(255,255,255,0.35)">Supports http:// and https://</text>
+  <rect x="274" y="94" width="228" height="56" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="290" y="112" font-size="8.5" fill="rgba(255,255,255,0.65)">Business cards, menus, posters,</text>
+  <text x="290" y="126" font-size="8.5" fill="rgba(255,255,255,0.65)">product packaging, event flyers</text>
+  <text x="290" y="140" font-size="8" fill="rgba(255,255,255,0.35)">Most common QR use case</text>
+  <rect x="508" y="94" width="364" height="56" rx="6" fill="rgba(0,0,0,0.3)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="524" y="120" font-family="monospace" font-size="9" fill="rgba(167,139,250,0.8)">https://toolnestai.net/calculators/qr-code-generator</text>
+
+  <!-- Row 2: Text -->
+  <rect x="28" y="156" width="54" height="56" rx="6" fill="rgba(96,165,250,0.08)" stroke="rgba(96,165,250,0.18)" stroke-width="1"/>
+  <text x="55" y="178" text-anchor="middle" font-size="16">📝</text>
+  <text x="55" y="200" text-anchor="middle" font-size="8" font-weight="700" fill="rgba(147,197,253,0.9)">Text</text>
+  <rect x="88" y="156" width="180" height="56" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="104" y="174" font-size="8.5" fill="rgba(255,255,255,0.65)">Plain text — any string up to</text>
+  <text x="104" y="188" font-size="8.5" fill="rgba(255,255,255,0.65)">~2,900 chars (alphanumeric)</text>
+  <text x="104" y="202" font-size="8" fill="rgba(255,255,255,0.35)">No special prefix required</text>
+  <rect x="274" y="156" width="228" height="56" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="290" y="174" font-size="8.5" fill="rgba(255,255,255,0.65)">Short messages, addresses, notes,</text>
+  <text x="290" y="188" font-size="8.5" fill="rgba(255,255,255,0.65)">instructions, coupons, promo codes</text>
+  <text x="290" y="202" font-size="8" fill="rgba(255,255,255,0.35)">Scanned as readable text on device</text>
+  <rect x="508" y="156" width="364" height="56" rx="6" fill="rgba(0,0,0,0.3)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="524" y="182" font-family="monospace" font-size="9" fill="rgba(147,197,253,0.8)">Table 12 — Free dessert with main course</text>
+
+  <!-- Row 3: Wi-Fi -->
+  <rect x="28" y="218" width="54" height="56" rx="6" fill="rgba(16,185,129,0.08)" stroke="rgba(16,185,129,0.18)" stroke-width="1"/>
+  <text x="55" y="240" text-anchor="middle" font-size="16">📶</text>
+  <text x="55" y="262" text-anchor="middle" font-size="8" font-weight="700" fill="rgba(52,211,153,0.9)">Wi-Fi</text>
+  <rect x="88" y="218" width="180" height="56" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="104" y="236" font-size="8.5" fill="rgba(255,255,255,0.65)">Network name (SSID), password</text>
+  <text x="104" y="250" font-size="8.5" fill="rgba(255,255,255,0.65)">and security type (WPA/WEP/open)</text>
+  <text x="104" y="264" font-size="8" fill="rgba(255,255,255,0.35)">Encoded as WIFI:S:name;T:WPA;P:pass;;</text>
+  <rect x="274" y="218" width="228" height="56" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="290" y="236" font-size="8.5" fill="rgba(255,255,255,0.65)">Hotels, cafés, offices, events,</text>
+  <text x="290" y="250" font-size="8.5" fill="rgba(255,255,255,0.65)">home guest networks, classrooms</text>
+  <text x="290" y="264" font-size="8" fill="rgba(255,255,255,0.35)">Scan to connect — no typing needed</text>
+  <rect x="508" y="218" width="364" height="56" rx="6" fill="rgba(0,0,0,0.3)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="524" y="244" font-family="monospace" font-size="9" fill="rgba(52,211,153,0.8)">WIFI:S:CafeGuest;T:WPA;P:coffee2026;;</text>
+
+  <!-- Row 4: vCard -->
+  <rect x="28" y="280" width="54" height="56" rx="6" fill="rgba(251,191,36,0.08)" stroke="rgba(251,191,36,0.18)" stroke-width="1"/>
+  <text x="55" y="302" text-anchor="middle" font-size="16">👤</text>
+  <text x="55" y="324" text-anchor="middle" font-size="8" font-weight="700" fill="rgba(251,191,36,0.9)">vCard</text>
+  <rect x="88" y="280" width="180" height="56" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="104" y="298" font-size="8.5" fill="rgba(255,255,255,0.65)">Name, phone, email, company,</text>
+  <text x="104" y="312" font-size="8.5" fill="rgba(255,255,255,0.65)">job title and web URL (vCard 3.0)</text>
+  <text x="104" y="326" font-size="8" fill="rgba(255,255,255,0.35)">Adds contact directly to phone</text>
+  <rect x="274" y="280" width="228" height="56" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="290" y="298" font-size="8.5" fill="rgba(255,255,255,0.65)">Business cards, conference badges,</text>
+  <text x="290" y="312" font-size="8.5" fill="rgba(255,255,255,0.65)">networking events, email signatures</text>
+  <text x="290" y="326" font-size="8" fill="rgba(255,255,255,0.35)">Scan → Save contact in one tap</text>
+  <rect x="508" y="280" width="364" height="56" rx="6" fill="rgba(0,0,0,0.3)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="524" y="300" font-family="monospace" font-size="8.5" fill="rgba(251,191,36,0.8)">BEGIN:VCARD · FN:Jane Smith</text>
+  <text x="524" y="318" font-family="monospace" font-size="8.5" fill="rgba(251,191,36,0.8)">TEL:+1555123456 · EMAIL:jane@co.com</text>
+
+  <!-- Row 5: Email -->
+  <rect x="28" y="342" width="54" height="56" rx="6" fill="rgba(239,68,68,0.08)" stroke="rgba(239,68,68,0.18)" stroke-width="1"/>
+  <text x="55" y="364" text-anchor="middle" font-size="16">✉</text>
+  <text x="55" y="386" text-anchor="middle" font-size="8" font-weight="700" fill="rgba(252,165,165,0.9)">Email</text>
+  <rect x="88" y="342" width="180" height="56" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="104" y="360" font-size="8.5" fill="rgba(255,255,255,0.65)">Recipient address, subject line</text>
+  <text x="104" y="374" font-size="8.5" fill="rgba(255,255,255,0.65)">and pre-filled body text</text>
+  <text x="104" y="388" font-size="8" fill="rgba(255,255,255,0.35)">Encoded as mailto: URI</text>
+  <rect x="274" y="342" width="228" height="56" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="290" y="360" font-size="8.5" fill="rgba(255,255,255,0.65)">Feedback forms, support requests,</text>
+  <text x="290" y="374" font-size="8.5" fill="rgba(255,255,255,0.65)">newsletter sign-ups, complaints</text>
+  <text x="290" y="388" font-size="8" fill="rgba(255,255,255,0.35)">Opens default mail app pre-filled</text>
+  <rect x="508" y="342" width="364" height="56" rx="6" fill="rgba(0,0,0,0.3)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="524" y="368" font-family="monospace" font-size="9" fill="rgba(252,165,165,0.8)">mailto:support@co.com?subject=Feedback</text>
+
+  <!-- Row 6: Phone -->
+  <rect x="28" y="404" width="54" height="56" rx="6" fill="rgba(168,85,247,0.08)" stroke="rgba(168,85,247,0.18)" stroke-width="1"/>
+  <text x="55" y="426" text-anchor="middle" font-size="16">📞</text>
+  <text x="55" y="448" text-anchor="middle" font-size="8" font-weight="700" fill="rgba(216,180,254,0.9)">Phone</text>
+  <rect x="88" y="404" width="180" height="56" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="104" y="422" font-size="8.5" fill="rgba(255,255,255,0.65)">Phone number — triggers the</text>
+  <text x="104" y="436" font-size="8.5" fill="rgba(255,255,255,0.65)">phone dialler when scanned</text>
+  <text x="104" y="450" font-size="8" fill="rgba(255,255,255,0.35)">Encoded as tel: URI</text>
+  <rect x="274" y="404" width="228" height="56" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="290" y="422" font-size="8.5" fill="rgba(255,255,255,0.65)">Restaurant tables, shop windows,</text>
+  <text x="290" y="436" font-size="8.5" fill="rgba(255,255,255,0.65)">leaflets, support contact details</text>
+  <text x="290" y="450" font-size="8" fill="rgba(255,255,255,0.35)">Opens dialler — one tap to call</text>
+  <rect x="508" y="404" width="364" height="56" rx="6" fill="rgba(0,0,0,0.3)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="524" y="430" font-family="monospace" font-size="9" fill="rgba(216,180,254,0.8)">tel:+15551234567</text>
+
+  <text x="450" y="474" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.22)">toolnestai.net/calculators/qr-code-generator</text>
+</svg>
