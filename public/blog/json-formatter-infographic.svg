@@ -1,0 +1,171 @@
+<svg viewBox="0 0 900 1200" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gT" cx="50%" cy="10%" r="50%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.3"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gB" cx="50%" cy="90%" r="50%"><stop offset="0%" stop-color="#0d9488" stop-opacity="0.2"/><stop offset="100%" stop-color="#0d9488" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#5b21b6" flood-opacity="0.35"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="900" height="1200" fill="url(#bg)"/>
+  <ellipse cx="450" cy="150" rx="500" ry="300" fill="url(#gT)"/>
+  <ellipse cx="450" cy="1050" rx="500" ry="300" fill="url(#gB)"/>
+
+  <text x="450" y="52" text-anchor="middle" font-size="26" font-weight="900" fill="url(#aG)" filter="url(#glow)">JSON Formatter</text>
+  <text x="450" y="80" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.45)">The complete reference — data types, syntax rules, common errors &amp; formatting tips</text>
+
+  <!-- Section 1: What JSON is -->
+  <rect x="28" y="100" width="844" height="180" rx="12" fill="rgba(255,255,255,0.025)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <text x="48" y="124" font-size="12" font-weight="800" fill="url(#aG)">01 — What Is JSON?</text>
+  <g font-size="10" fill="rgba(255,255,255,0.65)">
+    <circle cx="56" cy="148" r="4" fill="#a78bfa"/>
+    <text x="70" y="152">JSON (JavaScript Object Notation) is a lightweight text format for storing and transmitting structured data</text>
+    <circle cx="56" cy="172" r="4" fill="#a78bfa"/>
+    <text x="70" y="176">Human-readable, language-independent — supported natively in Python, JavaScript, Go, Java, PHP and more</text>
+    <circle cx="56" cy="196" r="4" fill="#a78bfa"/>
+    <text x="70" y="200">Used for REST APIs, config files, databases (MongoDB, Firestore), log formats, and data interchange</text>
+    <circle cx="56" cy="220" r="4" fill="#a78bfa"/>
+    <text x="70" y="224">Derived from JavaScript object literal syntax — but JSON is stricter (double quotes only, no comments, no trailing commas)</text>
+    <circle cx="56" cy="244" r="4" fill="#a78bfa"/>
+    <text x="70" y="248">Defined in RFC 8259 (2017) — the current JSON standard used by all modern parsers</text>
+    <circle cx="56" cy="268" r="4" fill="#a78bfa"/>
+    <text x="70" y="272">A JSON formatter (beautifier) adds indentation and line breaks to make minified JSON readable</text>
+  </g>
+
+  <!-- Section 2: Data types -->
+  <rect x="28" y="298" width="844" height="260" rx="12" fill="rgba(124,58,237,0.08)" stroke="rgba(124,58,237,0.2)" stroke-width="1"/>
+  <text x="48" y="322" font-size="12" font-weight="800" fill="url(#aG)">02 — JSON Data Types</text>
+
+  <!-- String -->
+  <rect x="44" y="332" width="380" height="44" rx="6" fill="rgba(52,211,153,0.08)" stroke="rgba(52,211,153,0.2)" stroke-width="1"/>
+  <rect x="44" y="332" width="4" height="44" rx="2" fill="#34d399"/>
+  <text x="58" y="350" font-size="9" font-weight="700" fill="rgba(52,211,153,0.85)">String</text>
+  <text x="58" y="366" font-size="8.5" font-family="monospace" fill="rgba(255,255,255,0.5)">"Hello World" · "2026-07-29" · "user@email.com"</text>
+  <text x="430" y="350" font-size="8" fill="rgba(255,255,255,0.3)">Always double quotes · escape \" \\ \n \t inside</text>
+
+  <!-- Number -->
+  <rect x="44" y="382" width="380" height="44" rx="6" fill="rgba(251,191,36,0.07)" stroke="rgba(251,191,36,0.18)" stroke-width="1"/>
+  <rect x="44" y="382" width="4" height="44" rx="2" fill="#fbbf24"/>
+  <text x="58" y="400" font-size="9" font-weight="700" fill="rgba(251,191,36,0.85)">Number</text>
+  <text x="58" y="416" font-size="8.5" font-family="monospace" fill="rgba(255,255,255,0.5)">42 · -7 · 3.14 · 1.5e10 · -2.8E-4</text>
+  <text x="430" y="400" font-size="8" fill="rgba(255,255,255,0.3)">No quotes · no hex/octal · no NaN/Infinity</text>
+
+  <!-- Boolean -->
+  <rect x="44" y="432" width="380" height="44" rx="6" fill="rgba(96,165,250,0.07)" stroke="rgba(96,165,250,0.18)" stroke-width="1"/>
+  <rect x="44" y="432" width="4" height="44" rx="2" fill="#60a5fa"/>
+  <text x="58" y="450" font-size="9" font-weight="700" fill="rgba(96,165,250,0.85)">Boolean</text>
+  <text x="58" y="466" font-size="8.5" font-family="monospace" fill="rgba(255,255,255,0.5)">true · false</text>
+  <text x="430" y="450" font-size="8" fill="rgba(255,255,255,0.3)">Lowercase only — True/False are invalid</text>
+
+  <!-- Null -->
+  <rect x="44" y="482" width="380" height="44" rx="6" fill="rgba(239,68,68,0.06)" stroke="rgba(239,68,68,0.15)" stroke-width="1"/>
+  <rect x="44" y="482" width="4" height="44" rx="2" fill="#ef4444"/>
+  <text x="58" y="500" font-size="9" font-weight="700" fill="rgba(239,68,68,0.8)">Null</text>
+  <text x="58" y="516" font-size="8.5" font-family="monospace" fill="rgba(255,255,255,0.5)">null</text>
+  <text x="430" y="500" font-size="8" fill="rgba(255,255,255,0.3)">Represents absence of value — null not Null/NULL</text>
+
+  <!-- Object -->
+  <rect x="436" y="332" width="420" height="98" rx="6" fill="rgba(167,139,250,0.07)" stroke="rgba(167,139,250,0.18)" stroke-width="1"/>
+  <rect x="436" y="332" width="4" height="98" rx="2" fill="#a78bfa"/>
+  <text x="450" y="350" font-size="9" font-weight="700" fill="rgba(167,139,250,0.85)">Object</text>
+  <text x="450" y="366" font-size="8" fill="rgba(255,255,255,0.3)">Unordered key-value pairs in { }</text>
+  <g font-family="monospace" font-size="8" fill="rgba(255,255,255,0.5)">
+    <text x="450" y="382">{"key": "value", "count": 5}</text>
+    <text x="450" y="396">Keys must be strings · values can be any type</text>
+    <text x="450" y="410">No duplicate keys · no trailing comma</text>
+    <text x="450" y="424">Nesting: objects inside objects supported</text>
+  </g>
+
+  <!-- Array -->
+  <rect x="436" y="436" width="420" height="90" rx="6" fill="rgba(13,148,136,0.07)" stroke="rgba(13,148,136,0.18)" stroke-width="1"/>
+  <rect x="436" y="436" width="4" height="90" rx="2" fill="#14b8a6"/>
+  <text x="450" y="454" font-size="9" font-weight="700" fill="rgba(94,234,212,0.85)">Array</text>
+  <text x="450" y="470" font-size="8" fill="rgba(255,255,255,0.3)">Ordered list of values in [ ]</text>
+  <g font-family="monospace" font-size="8" fill="rgba(255,255,255,0.5)">
+    <text x="450" y="486">[1, "two", true, null, {"id": 3}]</text>
+    <text x="450" y="500">Values can be mixed types · no trailing comma</text>
+    <text x="450" y="514">Arrays can contain objects — API pagination</text>
+  </g>
+
+  <!-- Section 3: Formatting vs minifying -->
+  <rect x="28" y="576" width="844" height="200" rx="12" fill="rgba(255,255,255,0.025)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <text x="48" y="600" font-size="12" font-weight="800" fill="url(#aG)">03 — Formatting vs Minifying</text>
+
+  <!-- Formatted -->
+  <rect x="44" y="610" width="390" height="148" rx="8" fill="rgba(0,0,0,0.3)" stroke="rgba(34,197,94,0.2)" stroke-width="1"/>
+  <text x="60" y="628" font-size="8.5" font-weight="700" fill="rgba(34,197,94,0.7)" letter-spacing="1">FORMATTED (BEAUTIFIED)</text>
+  <g font-family="monospace" font-size="8.5" fill="rgba(255,255,255,0.55)">
+    <text x="60" y="646">{</text>
+    <text x="68" y="661">  <tspan fill="rgba(167,139,250,0.8)">"name"</tspan>: <tspan fill="rgba(52,211,153,0.8)">"Alice"</tspan>,</text>
+    <text x="68" y="676">  <tspan fill="rgba(167,139,250,0.8)">"age"</tspan>: <tspan fill="rgba(251,191,36,0.8)">30</tspan>,</text>
+    <text x="68" y="691">  <tspan fill="rgba(167,139,250,0.8)">"active"</tspan>: <tspan fill="rgba(96,165,250,0.8)">true</tspan></text>
+    <text x="60" y="706">}</text>
+    <text x="60" y="726" font-size="7.5" fill="rgba(255,255,255,0.25)">Use for: reading, debugging, code review, docs</text>
+    <text x="60" y="740" font-size="7.5" fill="rgba(255,255,255,0.25)">Larger file size · human readable · easier to edit</text>
+  </g>
+
+  <!-- Arrow -->
+  <text x="449" y="696" text-anchor="middle" font-size="18" fill="rgba(255,255,255,0.3)">⇄</text>
+
+  <!-- Minified -->
+  <rect x="464" y="610" width="390" height="148" rx="8" fill="rgba(0,0,0,0.3)" stroke="rgba(251,191,36,0.2)" stroke-width="1"/>
+  <text x="480" y="628" font-size="8.5" font-weight="700" fill="rgba(251,191,36,0.7)" letter-spacing="1">MINIFIED (COMPACT)</text>
+  <g font-family="monospace" font-size="8.5" fill="rgba(255,255,255,0.55)">
+    <text x="480" y="660">{"name":"Alice","age":30,"active":true}</text>
+    <text x="480" y="720" font-size="7.5" fill="rgba(255,255,255,0.25)">Use for: APIs, config files, network transfer, prod</text>
+    <text x="480" y="734" font-size="7.5" fill="rgba(255,255,255,0.25)">Smallest size · machine readable · hard to edit</text>
+  </g>
+
+  <!-- Section 4: Syntax rules -->
+  <rect x="28" y="794" width="844" height="284" rx="12" fill="rgba(255,255,255,0.025)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <text x="48" y="818" font-size="12" font-weight="800" fill="url(#aG)">04 — JSON Syntax Rules (Quick Reference)</text>
+
+  <g font-size="9.5">
+    <rect x="44" y="828" width="810" height="28" rx="5" fill="rgba(34,197,94,0.07)"/>
+    <text x="56" y="846" fill="rgba(34,197,94,0.8)">✓</text>
+    <text x="72" y="846" fill="rgba(255,255,255,0.7)">All keys must be double-quoted strings</text>
+    <text x="600" y="846" font-family="monospace" font-size="8" fill="rgba(167,139,250,0.7)">"name": "value"  not  name: "value"</text>
+
+    <rect x="44" y="860" width="810" height="28" rx="5" fill="rgba(255,255,255,0.02)"/>
+    <text x="56" y="878" fill="rgba(34,197,94,0.8)">✓</text>
+    <text x="72" y="878" fill="rgba(255,255,255,0.7)">Strings must use double quotes, not single</text>
+    <text x="600" y="878" font-family="monospace" font-size="8" fill="rgba(52,211,153,0.7)">"hello"  not  'hello'</text>
+
+    <rect x="44" y="892" width="810" height="28" rx="5" fill="rgba(34,197,94,0.07)"/>
+    <text x="56" y="910" fill="rgba(239,68,68,0.8)">✗</text>
+    <text x="72" y="910" fill="rgba(255,255,255,0.7)">No trailing commas after last item in object or array</text>
+    <text x="600" y="910" font-family="monospace" font-size="8" fill="rgba(239,68,68,0.7)">{"a":1,"b":2,}  is invalid</text>
+
+    <rect x="44" y="924" width="810" height="28" rx="5" fill="rgba(255,255,255,0.02)"/>
+    <text x="56" y="942" fill="rgba(239,68,68,0.8)">✗</text>
+    <text x="72" y="942" fill="rgba(255,255,255,0.7)">No comments — JSON does not support // or /* */</text>
+    <text x="600" y="942" font-family="monospace" font-size="8" fill="rgba(239,68,68,0.7)">// This comment breaks JSON</text>
+
+    <rect x="44" y="956" width="810" height="28" rx="5" fill="rgba(34,197,94,0.07)"/>
+    <text x="56" y="974" fill="rgba(34,197,94,0.8)">✓</text>
+    <text x="72" y="974" fill="rgba(255,255,255,0.7)">Boolean and null keywords must be lowercase</text>
+    <text x="600" y="974" font-family="monospace" font-size="8" fill="rgba(96,165,250,0.7)">true  false  null  (not True/False/None)</text>
+
+    <rect x="44" y="988" width="810" height="28" rx="5" fill="rgba(255,255,255,0.02)"/>
+    <text x="56" y="1006" fill="rgba(239,68,68,0.8)">✗</text>
+    <text x="72" y="1006" fill="rgba(255,255,255,0.7)">No undefined, NaN, Infinity, or function values</text>
+    <text x="600" y="1006" font-family="monospace" font-size="8" fill="rgba(239,68,68,0.7)">undefined / NaN / Infinity invalid</text>
+
+    <rect x="44" y="1020" width="810" height="28" rx="5" fill="rgba(34,197,94,0.07)"/>
+    <text x="56" y="1038" fill="rgba(34,197,94,0.8)">✓</text>
+    <text x="72" y="1038" fill="rgba(255,255,255,0.7)">Numbers: integers and floats only — no hex, no octal</text>
+    <text x="600" y="1038" font-family="monospace" font-size="8" fill="rgba(251,191,36,0.7)">42  3.14  -7  1.5e10  (not 0xFF)</text>
+
+    <rect x="44" y="1052" width="810" height="28" rx="5" fill="rgba(255,255,255,0.02)"/>
+    <text x="56" y="1070" fill="rgba(34,197,94,0.8)">✓</text>
+    <text x="72" y="1070" fill="rgba(255,255,255,0.7)">Every opening brace/bracket must have a matching close</text>
+    <text x="600" y="1070" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.4)">{  }  [  ]  must be balanced</text>
+  </g>
+
+  <!-- CTA -->
+  <rect x="28" y="1100" width="844" height="76" rx="12" fill="url(#bG)" filter="url(#sh)"/>
+  <text x="450" y="1132" text-anchor="middle" font-size="18" font-weight="900" fill="#fff">Format &amp; Validate JSON Free</text>
+  <text x="450" y="1154" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.75)">Syntax highlighting · error detection · minify · tree view · copy output</text>
+  <text x="450" y="1170" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(255,255,255,0.4)">toolnestai.net/developer-tools/json-formatter</text>
+</svg>

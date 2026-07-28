@@ -1,0 +1,127 @@
+<svg viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="30%" cy="40%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gL" cx="15%" cy="50%" r="55%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.4"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gR" cx="85%" cy="50%" r="55%"><stop offset="0%" stop-color="#0d9488" stop-opacity="0.22"/><stop offset="100%" stop-color="#0d9488" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="lapG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1a1040"/><stop offset="100%" stop-color="#0d0824"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="8" stdDeviation="20" flood-color="#5b21b6" flood-opacity="0.45"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <ellipse cx="180" cy="337" rx="600" ry="500" fill="url(#gL)"/>
+  <ellipse cx="1020" cy="337" rx="600" ry="500" fill="url(#gR)"/>
+
+  <!-- Left -->
+  <text x="60" y="70" font-size="14" font-weight="700" fill="url(#aG)" filter="url(#glow)">ToolNest AI</text>
+  <text x="60" y="106" font-size="13" fill="rgba(255,255,255,0.35)">Developer Tools › JSON Formatter</text>
+  <text x="60" y="178" font-size="50" font-weight="900" fill="url(#aG)" filter="url(#glow)">JSON</text>
+  <text x="60" y="236" font-size="50" font-weight="900" fill="url(#aG)" filter="url(#glow)">Formatter</text>
+  <text x="60" y="290" font-size="17" fill="rgba(255,255,255,0.6)">Format · Validate · Minify · Beautify</text>
+
+  <!-- Feature bullets -->
+  <g font-size="11" fill="rgba(255,255,255,0.55)">
+    <text x="60" y="330">✦  Syntax highlighting (keys, strings, numbers, booleans)</text>
+    <text x="60" y="352">✦  Instant error detection with line numbers</text>
+    <text x="60" y="374">✦  Collapsible tree view for large JSON</text>
+    <text x="60" y="396">✦  One-click minify for APIs and config files</text>
+    <text x="60" y="418">✦  Copy formatted output to clipboard</text>
+    <text x="60" y="440">✦  Works entirely in your browser — no server</text>
+  </g>
+
+  <text x="60" y="610" font-size="14" fill="rgba(255,255,255,0.25)">toolnestai.net/developer-tools/json-formatter</text>
+
+  <!-- Right laptop -->
+  <rect x="630" y="42" width="540" height="558" rx="16" fill="url(#lapG)" stroke="rgba(124,58,237,0.3)" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="630" y="42" width="540" height="36" rx="16" fill="rgba(255,255,255,0.05)"/>
+  <rect x="630" y="60" width="540" height="18" fill="rgba(255,255,255,0.02)"/>
+  <circle cx="655" cy="60" r="6" fill="rgba(239,68,68,0.6)"/>
+  <circle cx="675" cy="60" r="6" fill="rgba(251,191,36,0.6)"/>
+  <circle cx="695" cy="60" r="6" fill="rgba(34,197,94,0.6)"/>
+
+  <!-- Toolbar -->
+  <rect x="642" y="86" width="516" height="28" rx="6" fill="rgba(255,255,255,0.025)"/>
+  <rect x="650" y="92" width="70" height="16" rx="4" fill="url(#bG)"/>
+  <text x="685" y="103" text-anchor="middle" font-size="7.5" font-weight="700" fill="#fff">✦ Format</text>
+  <rect x="728" y="92" width="70" height="16" rx="4" fill="rgba(255,255,255,0.06)"/>
+  <text x="763" y="103" text-anchor="middle" font-size="7.5" fill="rgba(255,255,255,0.6)">Minify</text>
+  <rect x="806" y="92" width="70" height="16" rx="4" fill="rgba(255,255,255,0.06)"/>
+  <text x="841" y="103" text-anchor="middle" font-size="7.5" fill="rgba(255,255,255,0.6)">Validate</text>
+  <rect x="884" y="92" width="70" height="16" rx="4" fill="rgba(255,255,255,0.06)"/>
+  <text x="919" y="103" text-anchor="middle" font-size="7.5" fill="rgba(255,255,255,0.6)">⎘ Copy</text>
+  <rect x="962" y="92" width="70" height="16" rx="4" fill="rgba(255,255,255,0.06)"/>
+  <text x="997" y="103" text-anchor="middle" font-size="7.5" fill="rgba(255,255,255,0.6)">Clear</text>
+  <!-- Valid badge -->
+  <rect x="1092" y="92" width="58" height="16" rx="4" fill="rgba(34,197,94,0.15)" stroke="rgba(34,197,94,0.35)" stroke-width="1"/>
+  <text x="1121" y="103" text-anchor="middle" font-size="7" fill="rgba(34,197,94,0.9)">✓ Valid</text>
+
+  <!-- Code editor area -->
+  <rect x="642" y="120" width="516" height="470" rx="8" fill="rgba(0,0,0,0.4)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <!-- Line numbers -->
+  <rect x="642" y="120" width="28" height="470" rx="8" fill="rgba(255,255,255,0.02)"/>
+  <g font-family="monospace" font-size="8" fill="rgba(255,255,255,0.2)" text-anchor="end">
+    <text x="666" y="140">1</text>
+    <text x="666" y="155">2</text>
+    <text x="666" y="170">3</text>
+    <text x="666" y="185">4</text>
+    <text x="666" y="200">5</text>
+    <text x="666" y="215">6</text>
+    <text x="666" y="230">7</text>
+    <text x="666" y="245">8</text>
+    <text x="666" y="260">9</text>
+    <text x="666" y="275">10</text>
+    <text x="666" y="290">11</text>
+    <text x="666" y="305">12</text>
+    <text x="666" y="320">13</text>
+    <text x="666" y="335">14</text>
+    <text x="666" y="350">15</text>
+    <text x="666" y="365">16</text>
+    <text x="666" y="380">17</text>
+    <text x="666" y="395">18</text>
+    <text x="666" y="410">19</text>
+    <text x="666" y="425">20</text>
+    <text x="666" y="440">21</text>
+    <text x="666" y="455">22</text>
+    <text x="666" y="470">23</text>
+    <text x="666" y="485">24</text>
+    <text x="666" y="500">25</text>
+    <text x="666" y="515">26</text>
+    <text x="666" y="530">27</text>
+    <text x="666" y="545">28</text>
+    <text x="666" y="560">29</text>
+    <text x="666" y="575">30</text>
+  </g>
+
+  <!-- Code content with syntax highlighting -->
+  <g font-family="monospace" font-size="8">
+    <text x="676" y="140" fill="rgba(255,255,255,0.7)">{</text>
+    <text x="684" y="155" fill="rgba(167,139,250,0.85)">"api_response"</text><text x="780" y="155" fill="rgba(255,255,255,0.5)">: {</text>
+    <text x="692" y="170" fill="rgba(167,139,250,0.85)">"status"</text><text x="740" y="170" fill="rgba(255,255,255,0.5)">: </text><text x="750" y="170" fill="rgba(52,211,153,0.85)">"success"</text><text x="800" y="170" fill="rgba(255,255,255,0.5)">,</text>
+    <text x="692" y="185" fill="rgba(167,139,250,0.85)">"code"</text><text x="730" y="185" fill="rgba(255,255,255,0.5)">: </text><text x="740" y="185" fill="rgba(251,191,36,0.85)">200</text><text x="756" y="185" fill="rgba(255,255,255,0.5)">,</text>
+    <text x="692" y="200" fill="rgba(167,139,250,0.85)">"data"</text><text x="730" y="200" fill="rgba(255,255,255,0.5)">: {</text>
+    <text x="700" y="215" fill="rgba(167,139,250,0.85)">"users"</text><text x="742" y="215" fill="rgba(255,255,255,0.5)">: [</text>
+    <text x="708" y="230" fill="rgba(255,255,255,0.5)">{</text>
+    <text x="716" y="245" fill="rgba(167,139,250,0.85)">"id"</text><text x="740" y="245" fill="rgba(255,255,255,0.5)">: </text><text x="750" y="245" fill="rgba(251,191,36,0.85)">1</text><text x="756" y="245" fill="rgba(255,255,255,0.5)">,</text>
+    <text x="716" y="260" fill="rgba(167,139,250,0.85)">"name"</text><text x="752" y="260" fill="rgba(255,255,255,0.5)">: </text><text x="762" y="260" fill="rgba(52,211,153,0.85)">"Alice"</text><text x="802" y="260" fill="rgba(255,255,255,0.5)">,</text>
+    <text x="716" y="275" fill="rgba(167,139,250,0.85)">"active"</text><text x="760" y="275" fill="rgba(255,255,255,0.5)">: </text><text x="770" y="275" fill="rgba(96,165,250,0.85)">true</text>
+    <text x="708" y="290" fill="rgba(255,255,255,0.5)">},</text>
+    <text x="708" y="305" fill="rgba(255,255,255,0.5)">{</text>
+    <text x="716" y="320" fill="rgba(167,139,250,0.85)">"id"</text><text x="740" y="320" fill="rgba(255,255,255,0.5)">: </text><text x="750" y="320" fill="rgba(251,191,36,0.85)">2</text><text x="756" y="320" fill="rgba(255,255,255,0.5)">,</text>
+    <text x="716" y="335" fill="rgba(167,139,250,0.85)">"name"</text><text x="752" y="335" fill="rgba(255,255,255,0.5)">: </text><text x="762" y="335" fill="rgba(52,211,153,0.85)">"Bob"</text><text x="796" y="335" fill="rgba(255,255,255,0.5)">,</text>
+    <text x="716" y="350" fill="rgba(167,139,250,0.85)">"active"</text><text x="760" y="350" fill="rgba(255,255,255,0.5)">: </text><text x="770" y="350" fill="rgba(96,165,250,0.85)">false</text>
+    <text x="708" y="365" fill="rgba(255,255,255,0.5)">}</text>
+    <text x="700" y="380" fill="rgba(255,255,255,0.5)">],</text>
+    <text x="700" y="395" fill="rgba(167,139,250,0.85)">"total"</text><text x="742" y="395" fill="rgba(255,255,255,0.5)">: </text><text x="752" y="395" fill="rgba(251,191,36,0.85)">2</text><text x="758" y="395" fill="rgba(255,255,255,0.5)">,</text>
+    <text x="700" y="410" fill="rgba(167,139,250,0.85)">"page"</text><text x="736" y="410" fill="rgba(255,255,255,0.5)">: </text><text x="746" y="410" fill="rgba(251,191,36,0.85)">1</text>
+    <text x="692" y="425" fill="rgba(255,255,255,0.5)">},</text>
+    <text x="692" y="440" fill="rgba(167,139,250,0.85)">"timestamp"</text><text x="762" y="440" fill="rgba(255,255,255,0.5)">: </text><text x="772" y="440" fill="rgba(52,211,153,0.85)">"2026-07-29T10:00:00Z"</text>
+    <text x="684" y="455" fill="rgba(255,255,255,0.5)">}</text>
+    <text x="676" y="470" fill="rgba(255,255,255,0.7)">}</text>
+  </g>
+
+  <!-- Laptop base -->
+  <rect x="620" y="600" width="560" height="14" rx="4" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <rect x="760" y="612" width="260" height="8" rx="4" fill="rgba(255,255,255,0.03)"/>
+</svg>

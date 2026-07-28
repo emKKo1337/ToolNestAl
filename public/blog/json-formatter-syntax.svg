@@ -1,0 +1,108 @@
+<svg viewBox="0 0 900 480" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gC" cx="50%" cy="40%" r="60%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.2"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+  </defs>
+  <rect width="900" height="480" fill="url(#bg)"/>
+  <ellipse cx="450" cy="240" rx="500" ry="330" fill="url(#gC)"/>
+
+  <text x="450" y="38" text-anchor="middle" font-size="20" font-weight="900" fill="url(#aG)">JSON Syntax Highlighting — What Each Colour Means</text>
+  <text x="450" y="57" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.38)">Understanding the colour scheme used by the ToolNest AI JSON Formatter</text>
+
+  <!-- Left: colour legend -->
+  <rect x="28" y="70" width="360" height="370" rx="10" fill="rgba(255,255,255,0.025)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <text x="44" y="92" font-size="10" font-weight="700" fill="rgba(255,255,255,0.4)" letter-spacing="1">SYNTAX COLOURS</text>
+
+  <g font-size="10">
+    <!-- Keys -->
+    <rect x="44" y="100" width="328" height="44" rx="6" fill="rgba(167,139,250,0.08)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+    <rect x="52" y="112" width="12" height="12" rx="3" fill="#a78bfa"/>
+    <text x="72" y="122" font-weight="700" fill="rgba(167,139,250,0.9)">Keys / Property Names</text>
+    <text x="72" y="136" font-size="8.5" fill="rgba(255,255,255,0.4)">"id", "name", "user", "settings" — always strings in quotes</text>
+
+    <!-- String values -->
+    <rect x="44" y="150" width="328" height="44" rx="6" fill="rgba(52,211,153,0.07)" stroke="rgba(52,211,153,0.18)" stroke-width="1"/>
+    <rect x="52" y="162" width="12" height="12" rx="3" fill="#34d399"/>
+    <text x="72" y="172" font-weight="700" fill="rgba(52,211,153,0.9)">String Values</text>
+    <text x="72" y="186" font-size="8.5" fill="rgba(255,255,255,0.4)">"Alice", "admin", "2026-07-29" — text values in double quotes</text>
+
+    <!-- Number values -->
+    <rect x="44" y="200" width="328" height="44" rx="6" fill="rgba(251,191,36,0.07)" stroke="rgba(251,191,36,0.18)" stroke-width="1"/>
+    <rect x="52" y="212" width="12" height="12" rx="3" fill="#fbbf24"/>
+    <text x="72" y="222" font-weight="700" fill="rgba(251,191,36,0.9)">Number Values</text>
+    <text x="72" y="236" font-size="8.5" fill="rgba(255,255,255,0.4)">1, 42, 3.14, -7, 1.5e10 — integers and floats, no quotes</text>
+
+    <!-- Boolean / null -->
+    <rect x="44" y="250" width="328" height="44" rx="6" fill="rgba(96,165,250,0.07)" stroke="rgba(96,165,250,0.18)" stroke-width="1"/>
+    <rect x="52" y="262" width="12" height="12" rx="3" fill="#60a5fa"/>
+    <text x="72" y="272" font-weight="700" fill="rgba(96,165,250,0.9)">Boolean &amp; Null</text>
+    <text x="72" y="286" font-size="8.5" fill="rgba(255,255,255,0.4)">true, false, null — lowercase, no quotes, special keywords</text>
+
+    <!-- Braces -->
+    <rect x="44" y="300" width="328" height="44" rx="6" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <rect x="52" y="312" width="12" height="12" rx="3" fill="rgba(255,255,255,0.6)"/>
+    <text x="72" y="322" font-weight="700" fill="rgba(255,255,255,0.7)">Braces, Brackets &amp; Punctuation</text>
+    <text x="72" y="336" font-size="8.5" fill="rgba(255,255,255,0.4)">{ } [ ] : , — structure characters that define the JSON shape</text>
+
+    <!-- Error -->
+    <rect x="44" y="350" width="328" height="44" rx="6" fill="rgba(239,68,68,0.07)" stroke="rgba(239,68,68,0.2)" stroke-width="1"/>
+    <rect x="52" y="362" width="12" height="12" rx="3" fill="#ef4444"/>
+    <text x="72" y="372" font-weight="700" fill="rgba(239,68,68,0.9)">Syntax Error Highlight</text>
+    <text x="72" y="386" font-size="8.5" fill="rgba(255,255,255,0.4)">Red underline + error message with line and column number</text>
+  </g>
+
+  <!-- Right: annotated code example -->
+  <rect x="408" y="70" width="464" height="370" rx="10" fill="rgba(0,0,0,0.4)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <text x="424" y="92" font-size="10" font-weight="700" fill="rgba(255,255,255,0.35)" letter-spacing="1">ANNOTATED EXAMPLE</text>
+
+  <!-- Line numbers -->
+  <g font-family="monospace" font-size="8.5" fill="rgba(255,255,255,0.18)" text-anchor="end">
+    <text x="436" y="112">1</text>
+    <text x="436" y="127">2</text>
+    <text x="436" y="142">3</text>
+    <text x="436" y="157">4</text>
+    <text x="436" y="172">5</text>
+    <text x="436" y="187">6</text>
+    <text x="436" y="202">7</text>
+    <text x="436" y="217">8</text>
+    <text x="436" y="232">9</text>
+    <text x="436" y="247">10</text>
+    <text x="436" y="262">11</text>
+    <text x="436" y="277">12</text>
+    <text x="436" y="292">13</text>
+    <text x="436" y="307">14</text>
+    <text x="436" y="322">15</text>
+    <text x="436" y="337">16</text>
+    <text x="436" y="352">17</text>
+    <text x="436" y="367">18</text>
+    <text x="436" y="382">19</text>
+    <text x="436" y="397">20</text>
+  </g>
+
+  <g font-family="monospace" font-size="8.5">
+    <text x="446" y="112" fill="rgba(255,255,255,0.65)">{</text>
+    <text x="454" y="127" fill="rgba(167,139,250,0.9)">"product"</text><text x="514" y="127" fill="rgba(255,255,255,0.5)">: {</text>
+    <text x="462" y="142" fill="rgba(167,139,250,0.9)">"id"</text><text x="488" y="142" fill="rgba(255,255,255,0.5)">: </text><text x="498" y="142" fill="rgba(251,191,36,0.9)">1042</text><text x="520" y="142" fill="rgba(255,255,255,0.5)">,</text>
+    <text x="462" y="157" fill="rgba(167,139,250,0.9)">"name"</text><text x="500" y="157" fill="rgba(255,255,255,0.5)">: </text><text x="510" y="157" fill="rgba(52,211,153,0.9)">"Widget Pro"</text><text x="576" y="157" fill="rgba(255,255,255,0.5)">,</text>
+    <text x="462" y="172" fill="rgba(167,139,250,0.9)">"price"</text><text x="504" y="172" fill="rgba(255,255,255,0.5)">: </text><text x="514" y="172" fill="rgba(251,191,36,0.9)">29.99</text><text x="544" y="172" fill="rgba(255,255,255,0.5)">,</text>
+    <text x="462" y="187" fill="rgba(167,139,250,0.9)">"inStock"</text><text x="516" y="187" fill="rgba(255,255,255,0.5)">: </text><text x="526" y="187" fill="rgba(96,165,250,0.9)">true</text><text x="550" y="187" fill="rgba(255,255,255,0.5)">,</text>
+    <text x="462" y="202" fill="rgba(167,139,250,0.9)">"rating"</text><text x="510" y="202" fill="rgba(255,255,255,0.5)">: </text><text x="520" y="202" fill="rgba(251,191,36,0.9)">4.8</text><text x="538" y="202" fill="rgba(255,255,255,0.5)">,</text>
+    <text x="462" y="217" fill="rgba(167,139,250,0.9)">"tags"</text><text x="498" y="217" fill="rgba(255,255,255,0.5)">: [</text>
+    <text x="470" y="232" fill="rgba(52,211,153,0.9)">"electronics"</text><text x="548" y="232" fill="rgba(255,255,255,0.5)">,</text>
+    <text x="470" y="247" fill="rgba(52,211,153,0.9)">"featured"</text>
+    <text x="462" y="262" fill="rgba(255,255,255,0.5)">],</text>
+    <text x="462" y="277" fill="rgba(167,139,250,0.9)">"discount"</text><text x="524" y="277" fill="rgba(255,255,255,0.5)">: </text><text x="534" y="277" fill="rgba(96,165,250,0.9)">null</text><text x="558" y="277" fill="rgba(255,255,255,0.5)">,</text>
+    <text x="462" y="292" fill="rgba(167,139,250,0.9)">"meta"</text><text x="500" y="292" fill="rgba(255,255,255,0.5)">: {</text>
+    <text x="470" y="307" fill="rgba(167,139,250,0.9)">"views"</text><text x="514" y="307" fill="rgba(255,255,255,0.5)">: </text><text x="524" y="307" fill="rgba(251,191,36,0.9)">15840</text><text x="552" y="307" fill="rgba(255,255,255,0.5)">,</text>
+    <text x="470" y="322" fill="rgba(167,139,250,0.9)">"featured"</text><text x="530" y="322" fill="rgba(255,255,255,0.5)">: </text><text x="540" y="322" fill="rgba(96,165,250,0.9)">true</text>
+    <text x="462" y="337" fill="rgba(255,255,255,0.5)">}</text>
+    <text x="454" y="352" fill="rgba(255,255,255,0.5)">}</text>
+    <text x="446" y="367" fill="rgba(255,255,255,0.65)">}</text>
+    <!-- Valid badge -->
+    <rect x="446" y="375" width="80" height="16" rx="4" fill="rgba(34,197,94,0.15)" stroke="rgba(34,197,94,0.3)" stroke-width="1"/>
+    <text x="486" y="386" text-anchor="middle" font-size="7.5" fill="rgba(34,197,94,0.9)">✓ Valid JSON · 20 lines</text>
+  </g>
+
+  <text x="450" y="458" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.25)">toolnestai.net/developer-tools/json-formatter</text>
+</svg>
