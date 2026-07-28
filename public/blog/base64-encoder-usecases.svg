@@ -1,0 +1,96 @@
+<svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gC" cx="50%" cy="40%" r="60%"><stop offset="0%" stop-color="#0e7490" stop-opacity="0.2"/><stop offset="100%" stop-color="#0e7490" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+  </defs>
+  <rect width="900" height="460" fill="url(#bg)"/>
+  <ellipse cx="450" cy="230" rx="520" ry="320" fill="url(#gC)"/>
+
+  <text x="450" y="36" text-anchor="middle" font-size="20" font-weight="900" fill="url(#aG)">Where Base64 Appears in the Real World</text>
+  <text x="450" y="54" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.38)">Six essential use cases every developer encounters</text>
+
+  <!-- Card 1: Data URIs -->
+  <rect x="28" y="68" width="270" height="110" rx="10" fill="rgba(124,58,237,0.08)" stroke="rgba(124,58,237,0.2)" stroke-width="1"/>
+  <text x="44" y="90" font-size="11" font-weight="700" fill="#a78bfa">🖼 CSS / HTML Data URIs</text>
+  <text x="44" y="110" font-size="9" fill="rgba(255,255,255,0.55)">Embed images directly in HTML/CSS</text>
+  <text x="44" y="124" font-size="9" fill="rgba(255,255,255,0.55)">without a separate HTTP request.</text>
+  <text x="44" y="144" font-family="monospace" font-size="8" fill="rgba(167,139,250,0.75)">&lt;img src="data:image/png;base64,</text>
+  <text x="44" y="158" font-family="monospace" font-size="8" fill="rgba(167,139,250,0.75)">iVBORw0KGgoAAAANSUh..." /&gt;</text>
+  <text x="44" y="172" font-size="8" fill="rgba(255,255,255,0.3)">Best for small icons and inline assets.</text>
+
+  <!-- Card 2: JWT -->
+  <rect x="314" y="68" width="270" height="110" rx="10" fill="rgba(14,116,144,0.08)" stroke="rgba(14,116,144,0.2)" stroke-width="1"/>
+  <text x="330" y="90" font-size="11" font-weight="700" fill="#67e8f9">🔐 JWT Tokens</text>
+  <text x="330" y="110" font-size="9" fill="rgba(255,255,255,0.55)">All three JWT sections (header,</text>
+  <text x="330" y="124" font-size="9" fill="rgba(255,255,255,0.55)">payload, signature) use Base64URL.</text>
+  <text x="330" y="144" font-family="monospace" font-size="8" fill="rgba(103,232,249,0.75)">eyJhbGciOiJIUzI1NiJ9.</text>
+  <text x="330" y="158" font-family="monospace" font-size="8" fill="rgba(103,232,249,0.75)">eyJ1c2VyIjoiYWxpY2UifQ.</text>
+  <text x="330" y="172" font-size="8" fill="rgba(255,255,255,0.3)">Decode to inspect claims (never trust without sig check).</text>
+
+  <!-- Card 3: Email attachments -->
+  <rect x="600" y="68" width="272" height="110" rx="10" fill="rgba(16,185,129,0.07)" stroke="rgba(16,185,129,0.2)" stroke-width="1"/>
+  <text x="616" y="90" font-size="11" font-weight="700" fill="#34d399">📧 Email Attachments (MIME)</text>
+  <text x="616" y="110" font-size="9" fill="rgba(255,255,255,0.55)">SMTP only supports ASCII. MIME</text>
+  <text x="616" y="124" font-size="9" fill="rgba(255,255,255,0.55)">encodes attachments in Base64.</text>
+  <text x="616" y="144" font-family="monospace" font-size="8" fill="rgba(52,211,153,0.75)">Content-Transfer-Encoding: base64</text>
+  <text x="616" y="158" font-family="monospace" font-size="8" fill="rgba(52,211,153,0.75)">JVBERi0xLjQKJcOkw7zD...</text>
+  <text x="616" y="172" font-size="8" fill="rgba(255,255,255,0.3)">PDFs, images, ZIPs — all Base64 in MIME.</text>
+
+  <!-- Card 4: API payloads -->
+  <rect x="28" y="194" width="270" height="110" rx="10" fill="rgba(251,191,36,0.06)" stroke="rgba(251,191,36,0.2)" stroke-width="1"/>
+  <text x="44" y="216" font-size="11" font-weight="700" fill="#fbbf24">📡 REST API Binary Payloads</text>
+  <text x="44" y="236" font-size="9" fill="rgba(255,255,255,0.55)">JSON can't carry raw binary bytes.</text>
+  <text x="44" y="250" font-size="9" fill="rgba(255,255,255,0.55)">APIs send files as Base64 strings.</text>
+  <text x="44" y="270" font-family="monospace" font-size="8" fill="rgba(251,191,36,0.75)">{ "file": "JVBERi0xLjQ...",</text>
+  <text x="44" y="284" font-family="monospace" font-size="8" fill="rgba(251,191,36,0.75)">  "type": "application/pdf" }</text>
+  <text x="44" y="298" font-size="8" fill="rgba(255,255,255,0.3)">Google Vision API, AWS Textract, etc.</text>
+
+  <!-- Card 5: Basic Auth -->
+  <rect x="314" y="194" width="270" height="110" rx="10" fill="rgba(236,72,153,0.07)" stroke="rgba(236,72,153,0.2)" stroke-width="1"/>
+  <text x="330" y="216" font-size="11" font-weight="700" fill="#f472b6">🔑 HTTP Basic Authentication</text>
+  <text x="330" y="236" font-size="9" fill="rgba(255,255,255,0.55)">The Authorization header encodes</text>
+  <text x="330" y="250" font-size="9" fill="rgba(255,255,255,0.55)">username:password in Base64.</text>
+  <text x="330" y="270" font-family="monospace" font-size="8" fill="rgba(244,114,182,0.75)">Authorization: Basic</text>
+  <text x="330" y="284" font-family="monospace" font-size="8" fill="rgba(244,114,182,0.75)">dXNlcjpwYXNzd29yZA==</text>
+  <text x="330" y="298" font-size="8" fill="rgba(255,255,255,0.3)">Decode: user:password (not encrypted — use HTTPS).</text>
+
+  <!-- Card 6: Crypto / Fingerprints -->
+  <rect x="600" y="194" width="272" height="110" rx="10" fill="rgba(99,102,241,0.08)" stroke="rgba(99,102,241,0.22)" stroke-width="1"/>
+  <text x="616" y="216" font-size="11" font-weight="700" fill="#818cf8">🔏 Crypto Keys &amp; Certificates</text>
+  <text x="616" y="236" font-size="9" fill="rgba(255,255,255,0.55)">PEM files and SSL certificates store</text>
+  <text x="616" y="250" font-size="9" fill="rgba(255,255,255,0.55)">DER binary as Base64 between headers.</text>
+  <text x="616" y="270" font-family="monospace" font-size="8" fill="rgba(129,140,248,0.75)">-----BEGIN CERTIFICATE-----</text>
+  <text x="616" y="284" font-family="monospace" font-size="8" fill="rgba(129,140,248,0.75)">MIIDXTCCAkWgAwIBAgIJ...</text>
+  <text x="616" y="298" font-size="8" fill="rgba(255,255,255,0.3)">-----END CERTIFICATE-----</text>
+
+  <!-- Bottom: Size impact -->
+  <rect x="28" y="318" width="844" height="116" rx="10" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <text x="450" y="340" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(255,255,255,0.4)">SIZE OVERHEAD — Base64 always increases size by ~33% (every 3 bytes → 4 chars)</text>
+  <!-- Bar chart of sizes -->
+  <g text-anchor="middle" font-size="9">
+    <!-- 1KB -->
+    <rect x="60" y="356" width="100" height="14" rx="3" fill="rgba(167,139,250,0.3)"/>
+    <rect x="60" y="374" width="133" height="14" rx="3" fill="rgba(167,139,250,0.6)"/>
+    <text x="110" y="368" fill="rgba(255,255,255,0.4)">1 KB raw</text>
+    <text x="126" y="386" fill="rgba(167,139,250,0.85)">1.37 KB Base64</text>
+
+    <!-- 100KB -->
+    <rect x="260" y="356" width="100" height="14" rx="3" fill="rgba(103,232,249,0.3)"/>
+    <rect x="260" y="374" width="133" height="14" rx="3" fill="rgba(103,232,249,0.6)"/>
+    <text x="310" y="368" fill="rgba(255,255,255,0.4)">100 KB raw</text>
+    <text x="326" y="386" fill="rgba(103,232,249,0.85)">137 KB Base64</text>
+
+    <!-- 1MB -->
+    <rect x="480" y="356" width="100" height="14" rx="3" fill="rgba(52,211,153,0.3)"/>
+    <rect x="480" y="374" width="133" height="14" rx="3" fill="rgba(52,211,153,0.6)"/>
+    <text x="530" y="368" fill="rgba(255,255,255,0.4)">1 MB raw</text>
+    <text x="546" y="386" fill="rgba(52,211,153,0.85)">1.37 MB Base64</text>
+
+    <!-- Tip -->
+    <text x="450" y="418" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.35)">Use Base64 for convenience when size is not critical; for large files prefer multipart/form-data or binary streaming APIs.</text>
+  </g>
+
+  <text x="450" y="454" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">toolnestai.net/developer-tools/base64-encoder</text>
+</svg>

@@ -1,0 +1,70 @@
+<svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gC" cx="50%" cy="40%" r="60%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.2"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+  </defs>
+  <rect width="900" height="460" fill="url(#bg)"/>
+  <ellipse cx="450" cy="230" rx="500" ry="320" fill="url(#gC)"/>
+
+  <text x="450" y="36" text-anchor="middle" font-size="20" font-weight="900" fill="url(#aG)">Base64 vs Base64URL — Know the Difference</text>
+  <text x="450" y="54" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.38)">Standard Base64 breaks in URLs — Base64URL fixes it with two character substitutions</text>
+
+  <!-- Column headers -->
+  <rect x="28" y="64" width="410" height="24" rx="6" fill="rgba(124,58,237,0.15)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+  <text x="233" y="80" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(167,139,250,0.85)">Standard Base64 (RFC 4648 §4)</text>
+  <rect x="462" y="64" width="410" height="24" rx="6" fill="rgba(14,116,144,0.15)" stroke="rgba(14,116,144,0.3)" stroke-width="1"/>
+  <text x="667" y="80" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(103,232,249,0.85)">Base64URL (RFC 4648 §5)</text>
+
+  <!-- Alphabet -->
+  <rect x="28" y="94" width="410" height="54" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(124,58,237,0.12)" stroke-width="1"/>
+  <text x="44" y="112" font-size="8.5" font-weight="700" fill="rgba(255,255,255,0.38)">ALPHABET</text>
+  <text x="44" y="130" font-family="monospace" font-size="9.5" fill="rgba(167,139,250,0.75)">A–Z  a–z  0–9  +  /  =</text>
+  <text x="44" y="146" font-size="8.5" fill="rgba(255,255,255,0.4)">64 chars + padding with =</text>
+  <rect x="462" y="94" width="410" height="54" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(14,116,144,0.12)" stroke-width="1"/>
+  <text x="478" y="112" font-size="8.5" font-weight="700" fill="rgba(255,255,255,0.38)">ALPHABET</text>
+  <text x="478" y="130" font-family="monospace" font-size="9.5" fill="rgba(103,232,249,0.75)">A–Z  a–z  0–9  -  _  (= optional)</text>
+  <text x="478" y="146" font-size="8.5" fill="rgba(255,255,255,0.4)">+ → -   /  → _   = padding omitted</text>
+
+  <!-- Safe in URLs? -->
+  <rect x="28" y="154" width="410" height="54" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(124,58,237,0.12)" stroke-width="1"/>
+  <text x="44" y="172" font-size="8.5" font-weight="700" fill="rgba(255,255,255,0.38)">SAFE IN URLs / FILENAMES?</text>
+  <text x="44" y="190" font-size="13" fill="rgba(239,68,68,0.8)">✗ No</text>
+  <text x="44" y="206" font-size="8.5" fill="rgba(255,255,255,0.4)">+ / = are reserved URL characters</text>
+  <rect x="462" y="154" width="410" height="54" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(14,116,144,0.12)" stroke-width="1"/>
+  <text x="478" y="172" font-size="8.5" font-weight="700" fill="rgba(255,255,255,0.38)">SAFE IN URLs / FILENAMES?</text>
+  <text x="478" y="190" font-size="13" fill="rgba(52,211,153,0.85)">✓ Yes</text>
+  <text x="478" y="206" font-size="8.5" fill="rgba(255,255,255,0.4)">- _ are URL-safe; no = padding needed</text>
+
+  <!-- Use cases -->
+  <rect x="28" y="214" width="410" height="68" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(124,58,237,0.12)" stroke-width="1"/>
+  <text x="44" y="232" font-size="8.5" font-weight="700" fill="rgba(255,255,255,0.38)">COMMON USE CASES</text>
+  <text x="44" y="250" font-size="9" fill="rgba(255,255,255,0.6)">• Email attachments (MIME)</text>
+  <text x="44" y="266" font-size="9" fill="rgba(255,255,255,0.6)">• CSS data URIs — img src="data:image/png;base64,..."</text>
+  <text x="44" y="282" font-size="9" fill="rgba(255,255,255,0.6)">• Basic Auth header encoding</text>
+  <rect x="462" y="214" width="410" height="68" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(14,116,144,0.12)" stroke-width="1"/>
+  <text x="478" y="232" font-size="8.5" font-weight="700" fill="rgba(255,255,255,0.38)">COMMON USE CASES</text>
+  <text x="478" y="250" font-size="9" fill="rgba(255,255,255,0.6)">• JWT tokens (header.payload.signature)</text>
+  <text x="478" y="266" font-size="9" fill="rgba(255,255,255,0.6)">• OAuth 2.0 PKCE code_challenge</text>
+  <text x="478" y="282" font-size="9" fill="rgba(255,255,255,0.6)">• URL-safe binary data in query params</text>
+
+  <!-- Example -->
+  <rect x="28" y="288" width="410" height="80" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(124,58,237,0.12)" stroke-width="1"/>
+  <text x="44" y="306" font-size="8.5" font-weight="700" fill="rgba(255,255,255,0.38)">EXAMPLE — INPUT: "Hello+World/Test="</text>
+  <text x="44" y="324" font-family="monospace" font-size="8.5" fill="rgba(255,255,255,0.4)">btoa("Hello+World/Test=")  →</text>
+  <text x="44" y="342" font-family="monospace" font-size="9" fill="rgba(167,139,250,0.85)">SGVsbG8rV29ybGQvVGVzdD0=</text>
+  <text x="44" y="360" font-size="8" fill="rgba(255,255,255,0.28)">+ / = break URLs — must percent-encode: %2B%2F%3D</text>
+  <rect x="462" y="288" width="410" height="80" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(14,116,144,0.12)" stroke-width="1"/>
+  <text x="478" y="306" font-size="8.5" font-weight="700" fill="rgba(255,255,255,0.38)">EXAMPLE — SAME INPUT, URL-SAFE</text>
+  <text x="478" y="324" font-family="monospace" font-size="8.5" fill="rgba(255,255,255,0.4)">base64url("Hello+World/Test=")  →</text>
+  <text x="478" y="342" font-family="monospace" font-size="9" fill="rgba(103,232,249,0.85)">SGVsbG8rV29ybGQvVGVzdD0</text>
+  <text x="478" y="360" font-size="8" fill="rgba(255,255,255,0.28)">No + or / or = — safe to embed in any URL directly</text>
+
+  <!-- Convert rule -->
+  <rect x="28" y="374" width="844" height="56" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <text x="44" y="393" font-size="8.5" font-weight="700" fill="rgba(255,255,255,0.38)">CONVERTING BETWEEN THEM (one-liner)</text>
+  <text x="44" y="413" font-family="monospace" font-size="9.5" fill="rgba(255,255,255,0.55)">standard → url-safe:  str.replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '')</text>
+  <text x="44" y="431" font-family="monospace" font-size="9.5" fill="rgba(255,255,255,0.55)">url-safe → standard:  str.replace(/-/g, '+').replace(/_/g, '/')  then pad with = to 4-char boundary</text>
+
+  <text x="450" y="454" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">toolnestai.net/developer-tools/base64-encoder</text>
+</svg>

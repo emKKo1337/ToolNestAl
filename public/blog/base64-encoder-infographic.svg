@@ -1,0 +1,164 @@
+<svg viewBox="0 0 900 1200" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="30%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gT" cx="50%" cy="10%" r="60%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.35"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gB" cx="50%" cy="90%" r="60%"><stop offset="0%" stop-color="#0e7490" stop-opacity="0.2"/><stop offset="100%" stop-color="#0e7490" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+  </defs>
+  <rect width="900" height="1200" fill="url(#bg)"/>
+  <ellipse cx="450" cy="200" rx="700" ry="400" fill="url(#gT)"/>
+  <ellipse cx="450" cy="1000" rx="700" ry="400" fill="url(#gB)"/>
+
+  <!-- Title -->
+  <text x="450" y="52" text-anchor="middle" font-size="28" font-weight="900" fill="url(#aG)">The Complete Base64 Guide</text>
+  <text x="450" y="76" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.38)">Everything you need to know about Base64 encoding</text>
+  <text x="450" y="94" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.22)">toolnestai.net/developer-tools/base64-encoder</text>
+
+  <!-- Section 1: What is Base64? -->
+  <rect x="32" y="110" width="836" height="38" rx="8" fill="rgba(124,58,237,0.18)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+  <text x="450" y="134" text-anchor="middle" font-size="15" font-weight="800" fill="#a78bfa">01 — What Is Base64?</text>
+
+  <rect x="32" y="154" width="836" height="90" rx="10" fill="rgba(255,255,255,0.025)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="450" y="178" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.65)">Base64 is a binary-to-text encoding scheme that represents binary data</text>
+  <text x="450" y="198" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.65)">using only 64 printable ASCII characters: A–Z, a–z, 0–9, +, and /.</text>
+  <text x="450" y="218" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.65)">It was designed to safely transmit binary data over text-only channels like SMTP email.</text>
+  <text x="450" y="238" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.3)">Defined in RFC 4648 (2006). The name "64" refers to the 64 characters in the alphabet.</text>
+
+  <!-- Section 2: The Algorithm -->
+  <rect x="32" y="256" width="836" height="38" rx="8" fill="rgba(14,116,144,0.18)" stroke="rgba(14,116,144,0.3)" stroke-width="1"/>
+  <text x="450" y="280" text-anchor="middle" font-size="15" font-weight="800" fill="#67e8f9">02 — The Encoding Algorithm (Step by Step)</text>
+
+  <rect x="32" y="300" width="836" height="210" rx="10" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <!-- Steps -->
+  <g font-size="11">
+    <rect x="48" y="316" width="28" height="28" rx="14" fill="url(#bG)"/>
+    <text x="62" y="334" text-anchor="middle" font-weight="900" fill="#fff">1</text>
+    <text x="90" y="326" font-weight="700" fill="rgba(255,255,255,0.7)">Take the input as raw bytes (UTF-8 for text)</text>
+    <text x="90" y="342" font-family="monospace" font-size="9.5" fill="rgba(255,255,255,0.35)">e.g. "Man" → bytes: 77 (M), 97 (a), 110 (n) → binary: 01001101 01100001 01101110</text>
+
+    <rect x="48" y="358" width="28" height="28" rx="14" fill="url(#bG)"/>
+    <text x="62" y="376" text-anchor="middle" font-weight="900" fill="#fff">2</text>
+    <text x="90" y="368" font-weight="700" fill="rgba(255,255,255,0.7)">Group the bits into 6-bit chunks (3 bytes → 4 × 6 bits)</text>
+    <text x="90" y="384" font-family="monospace" font-size="9.5" fill="rgba(255,255,255,0.35)">010011 010110 000101 101110</text>
+
+    <rect x="48" y="400" width="28" height="28" rx="14" fill="url(#bG)"/>
+    <text x="62" y="418" text-anchor="middle" font-weight="900" fill="#fff">3</text>
+    <text x="90" y="410" font-weight="700" fill="rgba(255,255,255,0.7)">Convert each 6-bit value (0–63) to the Base64 alphabet character</text>
+    <text x="90" y="426" font-family="monospace" font-size="9.5" fill="rgba(255,255,255,0.35)">19 → T,  22 → W,  5 → F,  46 → u  →  Result: "TWFu"</text>
+
+    <rect x="48" y="442" width="28" height="28" rx="14" fill="url(#bG)"/>
+    <text x="62" y="460" text-anchor="middle" font-weight="900" fill="#fff">4</text>
+    <text x="90" y="452" font-weight="700" fill="rgba(255,255,255,0.7)">Pad with = signs if input is not a multiple of 3 bytes</text>
+    <text x="90" y="468" font-family="monospace" font-size="9.5" fill="rgba(255,255,255,0.35)">1 remaining byte → "==" padding   |   2 remaining bytes → "=" padding</text>
+
+    <rect x="48" y="484" width="28" height="28" rx="14" fill="url(#bG)"/>
+    <text x="62" y="502" text-anchor="middle" font-weight="900" fill="#fff">5</text>
+    <text x="90" y="494" font-weight="700" fill="rgba(255,255,255,0.7)">Output is always a multiple of 4 characters</text>
+    <text x="90" y="510" font-family="monospace" font-size="9.5" fill="rgba(255,255,255,0.35)">"Man" (3 bytes) → "TWFu" (4 chars)   |   "Ma" (2 bytes) → "TWE=" (4 chars)</text>
+  </g>
+
+  <!-- Section 3: Key Numbers -->
+  <rect x="32" y="524" width="836" height="38" rx="8" fill="rgba(16,185,129,0.14)" stroke="rgba(16,185,129,0.25)" stroke-width="1"/>
+  <text x="450" y="548" text-anchor="middle" font-size="15" font-weight="800" fill="#34d399">03 — Key Numbers to Know</text>
+
+  <g text-anchor="middle" font-size="10">
+    <rect x="32" y="568" width="196" height="90" rx="10" fill="rgba(124,58,237,0.1)" stroke="rgba(124,58,237,0.22)" stroke-width="1"/>
+    <text x="130" y="592" font-size="26" font-weight="900" fill="#a78bfa">64</text>
+    <text x="130" y="612" fill="rgba(255,255,255,0.5)">characters in</text>
+    <text x="130" y="628" fill="rgba(255,255,255,0.5)">the alphabet</text>
+    <text x="130" y="648" font-size="8.5" fill="rgba(255,255,255,0.28)">A–Z, a–z, 0–9, +, /</text>
+
+    <rect x="238" y="568" width="196" height="90" rx="10" fill="rgba(14,116,144,0.08)" stroke="rgba(14,116,144,0.2)" stroke-width="1"/>
+    <text x="336" y="592" font-size="26" font-weight="900" fill="#67e8f9">6</text>
+    <text x="336" y="612" fill="rgba(255,255,255,0.5)">bits per output</text>
+    <text x="336" y="628" fill="rgba(255,255,255,0.5)">character (2⁶=64)</text>
+    <text x="336" y="648" font-size="8.5" fill="rgba(255,255,255,0.28)">vs 8 bits per byte</text>
+
+    <rect x="444" y="568" width="196" height="90" rx="10" fill="rgba(16,185,129,0.07)" stroke="rgba(16,185,129,0.18)" stroke-width="1"/>
+    <text x="542" y="592" font-size="26" font-weight="900" fill="#34d399">33%</text>
+    <text x="542" y="612" fill="rgba(255,255,255,0.5)">size increase</text>
+    <text x="542" y="628" fill="rgba(255,255,255,0.5)">over raw binary</text>
+    <text x="542" y="648" font-size="8.5" fill="rgba(255,255,255,0.28)">3 bytes → 4 chars</text>
+
+    <rect x="650" y="568" width="218" height="90" rx="10" fill="rgba(251,191,36,0.07)" stroke="rgba(251,191,36,0.18)" stroke-width="1"/>
+    <text x="759" y="592" font-size="26" font-weight="900" fill="#fbbf24">76</text>
+    <text x="759" y="612" fill="rgba(255,255,255,0.5)">chars per line</text>
+    <text x="759" y="628" fill="rgba(255,255,255,0.5)">(MIME wrapping)</text>
+    <text x="759" y="648" font-size="8.5" fill="rgba(255,255,255,0.28)">CRLF every 76 chars</text>
+  </g>
+
+  <!-- Section 4: Standard vs Base64URL -->
+  <rect x="32" y="676" width="836" height="38" rx="8" fill="rgba(124,58,237,0.18)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+  <text x="450" y="700" text-anchor="middle" font-size="15" font-weight="800" fill="#a78bfa">04 — Standard Base64 vs Base64URL</text>
+
+  <g font-size="10">
+    <rect x="32" y="720" width="400" height="100" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(124,58,237,0.12)" stroke-width="1"/>
+    <text x="232" y="742" text-anchor="middle" font-size="11" font-weight="700" fill="rgba(167,139,250,0.85)">Standard Base64</text>
+    <text x="48" y="762" fill="rgba(255,255,255,0.55)">Alphabet: A–Z a–z 0–9 + / =</text>
+    <text x="48" y="780" fill="rgba(255,255,255,0.55)">Use for: MIME, data URIs, Basic Auth, PEM</text>
+    <text x="48" y="798" fill="rgba(239,68,68,0.7)">✗ Not safe in URLs — + / = break query strings</text>
+    <text x="48" y="814" font-family="monospace" font-size="8.5" fill="rgba(167,139,250,0.7)">SGVsbG8rV29ybGQvVGVzdD0=</text>
+
+    <rect x="442" y="720" width="426" height="100" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(14,116,144,0.12)" stroke-width="1"/>
+    <text x="655" y="742" text-anchor="middle" font-size="11" font-weight="700" fill="rgba(103,232,249,0.85)">Base64URL</text>
+    <text x="458" y="762" fill="rgba(255,255,255,0.55)">Alphabet: A–Z a–z 0–9 - _ (no padding)</text>
+    <text x="458" y="780" fill="rgba(255,255,255,0.55)">Use for: JWTs, OAuth PKCE, URL params</text>
+    <text x="458" y="798" fill="rgba(52,211,153,0.7)">✓ URL-safe — - and _ have no special meaning</text>
+    <text x="458" y="814" font-family="monospace" font-size="8.5" fill="rgba(103,232,249,0.7)">SGVsbG8rV29ybGQvVGVzdD0</text>
+  </g>
+
+  <!-- Section 5: 6 Real-World Use Cases -->
+  <rect x="32" y="838" width="836" height="38" rx="8" fill="rgba(14,116,144,0.18)" stroke="rgba(14,116,144,0.3)" stroke-width="1"/>
+  <text x="450" y="862" text-anchor="middle" font-size="15" font-weight="800" fill="#67e8f9">05 — 6 Real-World Use Cases</text>
+
+  <g font-size="9.5">
+    <rect x="32" y="882" width="268" height="54" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="48" y="902" font-weight="700" fill="#a78bfa">🖼 CSS Data URIs</text>
+    <text x="48" y="920" fill="rgba(255,255,255,0.5)">Inline images in HTML/CSS without</text>
+    <text x="48" y="934" fill="rgba(255,255,255,0.5)">extra HTTP requests for small assets.</text>
+
+    <rect x="314" y="882" width="268" height="54" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="330" y="902" font-weight="700" fill="#67e8f9">🔐 JWT Tokens</text>
+    <text x="330" y="920" fill="rgba(255,255,255,0.5)">Header + payload + signature all</text>
+    <text x="330" y="934" fill="rgba(255,255,255,0.5)">encoded as Base64URL sections.</text>
+
+    <rect x="596" y="882" width="272" height="54" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="612" y="902" font-weight="700" fill="#34d399">📧 MIME Email</text>
+    <text x="612" y="920" fill="rgba(255,255,255,0.5)">SMTP is ASCII-only — all binary</text>
+    <text x="612" y="934" fill="rgba(255,255,255,0.5)">attachments encoded via Base64.</text>
+
+    <rect x="32" y="944" width="268" height="54" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="48" y="964" font-weight="700" fill="#fbbf24">📡 API Payloads</text>
+    <text x="48" y="982" fill="rgba(255,255,255,0.5)">JSON can't hold raw bytes — APIs</text>
+    <text x="48" y="996" fill="rgba(255,255,255,0.5)">send files as Base64 strings.</text>
+
+    <rect x="314" y="944" width="268" height="54" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="330" y="964" font-weight="700" fill="#f472b6">🔑 HTTP Basic Auth</text>
+    <text x="330" y="982" fill="rgba(255,255,255,0.5)">Authorization: Basic encodes</text>
+    <text x="330" y="996" fill="rgba(255,255,255,0.5)">username:password in Base64.</text>
+
+    <rect x="596" y="944" width="272" height="54" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="612" y="964" font-weight="700" fill="#818cf8">🔏 PEM Certificates</text>
+    <text x="612" y="982" fill="rgba(255,255,255,0.5)">SSL/TLS certs store DER binary</text>
+    <text x="612" y="996" fill="rgba(255,255,255,0.5)">as Base64 between headers.</text>
+  </g>
+
+  <!-- Section 6: Common Mistakes -->
+  <rect x="32" y="1016" width="836" height="38" rx="8" fill="rgba(239,68,68,0.12)" stroke="rgba(239,68,68,0.22)" stroke-width="1"/>
+  <text x="450" y="1040" text-anchor="middle" font-size="15" font-weight="800" fill="rgba(239,68,68,0.85)">06 — Common Mistakes to Avoid</text>
+
+  <g font-size="10">
+    <rect x="32" y="1060" width="836" height="36" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(239,68,68,0.1)" stroke-width="1"/>
+    <text x="48" y="1082" fill="rgba(239,68,68,0.7)">✗</text>
+    <text x="68" y="1082" fill="rgba(255,255,255,0.6)">Using standard Base64 in a URL query parameter — the + and / will be misread or corrupted.</text>
+    <rect x="32" y="1100" width="836" height="36" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(239,68,68,0.1)" stroke-width="1"/>
+    <text x="48" y="1122" fill="rgba(239,68,68,0.7)">✗</text>
+    <text x="68" y="1122" fill="rgba(255,255,255,0.6)">Treating Base64 as encryption — it is encoding only, fully reversible, zero security on its own.</text>
+    <rect x="32" y="1140" width="836" height="36" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(239,68,68,0.1)" stroke-width="1"/>
+    <text x="48" y="1162" fill="rgba(239,68,68,0.7)">✗</text>
+    <text x="68" y="1162" fill="rgba(255,255,255,0.6)">Double-encoding — encoding an already-Base64 string produces garbage when decoded once.</text>
+  </g>
+
+  <text x="450" y="1192" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.22)">Free tool: toolnestai.net/developer-tools/base64-encoder</text>
+</svg>
