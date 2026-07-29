@@ -1,0 +1,122 @@
+<svg viewBox="0 0 900 1200" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="30%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gT" cx="50%" cy="10%" r="60%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.35"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gB" cx="50%" cy="90%" r="60%"><stop offset="0%" stop-color="#0e7490" stop-opacity="0.2"/><stop offset="100%" stop-color="#0e7490" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+  </defs>
+  <rect width="900" height="1200" fill="url(#bg)"/>
+  <ellipse cx="450" cy="200" rx="700" ry="400" fill="url(#gT)"/>
+  <ellipse cx="450" cy="1000" rx="700" ry="400" fill="url(#gB)"/>
+
+  <text x="450" y="52" text-anchor="middle" font-size="28" font-weight="900" fill="url(#aG)">The Complete BMI Guide</text>
+  <text x="450" y="76" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.38)">Everything you need to know about Body Mass Index</text>
+  <text x="450" y="94" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.22)">toolnestai.net/calculators/bmi-calculator</text>
+
+  <!-- Section 1 -->
+  <rect x="32" y="110" width="836" height="38" rx="8" fill="rgba(124,58,237,0.18)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+  <text x="450" y="134" text-anchor="middle" font-size="15" font-weight="800" fill="#a78bfa">01 — What Is BMI?</text>
+
+  <rect x="32" y="154" width="836" height="90" rx="10" fill="rgba(255,255,255,0.025)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="450" y="178" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.65)">Body Mass Index is a simple screening measure calculated from height and</text>
+  <text x="450" y="198" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.65)">weight. It was devised in the 1830s by Belgian mathematician Adolphe Quetelet</text>
+  <text x="450" y="218" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.65)">as a population statistics tool, not a clinical diagnostic instrument.</text>
+  <text x="450" y="238" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.3)">The WHO adopted standardized BMI categories in the 1990s for population health tracking.</text>
+
+  <!-- Section 2: Formula -->
+  <rect x="32" y="256" width="836" height="38" rx="8" fill="rgba(14,116,144,0.18)" stroke="rgba(14,116,144,0.3)" stroke-width="1"/>
+  <text x="450" y="280" text-anchor="middle" font-size="15" font-weight="800" fill="#67e8f9">02 — The Formula (Metric &amp; Imperial)</text>
+
+  <g font-size="10">
+    <rect x="32" y="300" width="404" height="110" rx="8" fill="rgba(52,211,153,0.06)" stroke="rgba(52,211,153,0.16)" stroke-width="1"/>
+    <text x="234" y="326" text-anchor="middle" font-weight="700" fill="#6ee7b7">Metric</text>
+    <text x="234" y="352" text-anchor="middle" font-family="monospace" font-size="13" fill="rgba(255,255,255,0.7)">BMI = kg ÷ m²</text>
+    <text x="234" y="376" text-anchor="middle" font-family="monospace" font-size="10" fill="rgba(52,211,153,0.8)">72 kg ÷ (1.75m)² = 23.5</text>
+    <text x="234" y="396" text-anchor="middle" font-size="8.5" fill="rgba(255,255,255,0.3)">Convert height cm → m first</text>
+
+    <rect x="464" y="300" width="404" height="110" rx="8" fill="rgba(103,232,249,0.06)" stroke="rgba(103,232,249,0.16)" stroke-width="1"/>
+    <text x="666" y="326" text-anchor="middle" font-weight="700" fill="#67e8f9">Imperial</text>
+    <text x="666" y="352" text-anchor="middle" font-family="monospace" font-size="12" fill="rgba(255,255,255,0.7)">BMI = (lb × 703) ÷ in²</text>
+    <text x="666" y="376" text-anchor="middle" font-family="monospace" font-size="10" fill="rgba(103,232,249,0.8)">159 lb × 703 ÷ (68.9in)² ≈ 23.5</text>
+    <text x="666" y="396" text-anchor="middle" font-size="8.5" fill="rgba(255,255,255,0.3)">703 is the unit conversion constant</text>
+  </g>
+
+  <!-- Section 3: Categories -->
+  <rect x="32" y="428" width="836" height="38" rx="8" fill="rgba(16,185,129,0.14)" stroke="rgba(16,185,129,0.25)" stroke-width="1"/>
+  <text x="450" y="452" text-anchor="middle" font-size="15" font-weight="800" fill="#34d399">03 — WHO BMI Categories</text>
+
+  <g text-anchor="middle" font-size="10">
+    <rect x="32" y="472" width="196" height="90" rx="10" fill="rgba(59,130,246,0.1)" stroke="rgba(59,130,246,0.22)" stroke-width="1"/>
+    <text x="130" y="498" font-size="13" font-weight="900" fill="#60a5fa">Underweight</text>
+    <text x="130" y="522" font-size="16" font-weight="900" fill="#60a5fa">&lt; 18.5</text>
+
+    <rect x="238" y="472" width="196" height="90" rx="10" fill="rgba(52,211,153,0.1)" stroke="rgba(52,211,153,0.22)" stroke-width="1"/>
+    <text x="336" y="498" font-size="13" font-weight="900" fill="#34d399">Normal</text>
+    <text x="336" y="522" font-size="16" font-weight="900" fill="#34d399">18.5–24.9</text>
+
+    <rect x="444" y="472" width="196" height="90" rx="10" fill="rgba(251,191,36,0.1)" stroke="rgba(251,191,36,0.22)" stroke-width="1"/>
+    <text x="542" y="498" font-size="13" font-weight="900" fill="#fbbf24">Overweight</text>
+    <text x="542" y="522" font-size="16" font-weight="900" fill="#fbbf24">25.0–29.9</text>
+
+    <rect x="650" y="472" width="218" height="90" rx="10" fill="rgba(239,68,68,0.1)" stroke="rgba(239,68,68,0.22)" stroke-width="1"/>
+    <text x="759" y="498" font-size="13" font-weight="900" fill="#f87171">Obese</text>
+    <text x="759" y="522" font-size="16" font-weight="900" fill="#f87171">≥ 30.0</text>
+  </g>
+
+  <!-- Section 4: Limitations -->
+  <rect x="32" y="580" width="836" height="38" rx="8" fill="rgba(239,68,68,0.12)" stroke="rgba(239,68,68,0.22)" stroke-width="1"/>
+  <text x="450" y="604" text-anchor="middle" font-size="15" font-weight="800" fill="rgba(239,68,68,0.85)">04 — Known Limitations</text>
+
+  <g font-size="10">
+    <rect x="32" y="624" width="404" height="90" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(239,68,68,0.15)" stroke-width="1"/>
+    <text x="48" y="646" font-weight="700" fill="rgba(252,165,165,0.85)">Doesn't distinguish muscle from fat</text>
+    <text x="48" y="664" fill="rgba(255,255,255,0.5)">Athletes often "overweight" by BMI</text>
+    <text x="48" y="680" fill="rgba(255,255,255,0.5)">alone despite low body fat %</text>
+
+    <rect x="464" y="624" width="404" height="90" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(251,191,36,0.15)" stroke-width="1"/>
+    <text x="480" y="646" font-weight="700" fill="rgba(253,224,71,0.85)">Ignores fat distribution</text>
+    <text x="480" y="664" fill="rgba(255,255,255,0.5)">Waist fat carries more health risk</text>
+    <text x="480" y="680" fill="rgba(255,255,255,0.5)">than hip fat at the same BMI</text>
+
+    <rect x="32" y="722" width="404" height="90" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(251,191,36,0.15)" stroke-width="1"/>
+    <text x="48" y="744" font-weight="700" fill="rgba(253,224,71,0.85)">Same formula for all groups</text>
+    <text x="48" y="762" fill="rgba(255,255,255,0.5)">Doesn't adjust for age, sex, or</text>
+    <text x="48" y="778" fill="rgba(255,255,255,0.5)">ethnicity-specific risk differences</text>
+
+    <rect x="464" y="722" width="404" height="90" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(103,232,249,0.15)" stroke-width="1"/>
+    <text x="480" y="744" font-weight="700" fill="rgba(103,232,249,0.85)">Not valid for children</text>
+    <text x="480" y="762" fill="rgba(255,255,255,0.5)">Pediatric BMI uses age/sex-specific</text>
+    <text x="480" y="778" fill="rgba(255,255,255,0.5)">percentiles, not fixed thresholds</text>
+  </g>
+
+  <!-- Section 5: How to use -->
+  <rect x="32" y="828" width="836" height="38" rx="8" fill="rgba(14,116,144,0.18)" stroke="rgba(14,116,144,0.3)" stroke-width="1"/>
+  <text x="450" y="852" text-anchor="middle" font-size="15" font-weight="800" fill="#67e8f9">05 — How to Use the BMI Calculator</text>
+
+  <g font-size="10.5">
+    <rect x="48" y="872" width="28" height="28" rx="14" fill="url(#bG)"/>
+    <text x="62" y="890" text-anchor="middle" font-weight="900" fill="#fff">1</text>
+    <text x="90" y="891" fill="rgba(255,255,255,0.65)">Choose metric (cm/kg) or imperial (ft-in/lb) units</text>
+
+    <rect x="48" y="910" width="28" height="28" rx="14" fill="url(#bG)"/>
+    <text x="62" y="928" text-anchor="middle" font-weight="900" fill="#fff">2</text>
+    <text x="90" y="929" fill="rgba(255,255,255,0.65)">Enter your height and weight</text>
+
+    <rect x="48" y="948" width="28" height="28" rx="14" fill="url(#bG)"/>
+    <text x="62" y="966" text-anchor="middle" font-weight="900" fill="#fff">3</text>
+    <text x="90" y="967" fill="rgba(255,255,255,0.65)">View your BMI value and WHO category instantly</text>
+
+    <rect x="48" y="986" width="28" height="28" rx="14" fill="url(#bG)"/>
+    <text x="62" y="1004" text-anchor="middle" font-weight="900" fill="#fff">4</text>
+    <text x="90" y="1005" fill="rgba(255,255,255,0.65)">See your healthy weight range for your exact height</text>
+  </g>
+
+  <!-- Disclaimer -->
+  <rect x="32" y="1034" width="836" height="70" rx="10" fill="rgba(124,58,237,0.08)" stroke="rgba(124,58,237,0.2)" stroke-width="1"/>
+  <text x="450" y="1058" text-anchor="middle" font-size="10.5" font-weight="700" fill="rgba(167,139,250,0.9)">MEDICAL DISCLAIMER</text>
+  <text x="450" y="1078" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">BMI is a screening tool, not a diagnosis. Consult a healthcare provider for a full assessment</text>
+  <text x="450" y="1094" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">that accounts for body composition, medical history, and individual risk factors.</text>
+
+  <text x="450" y="1130" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.28)">Free tool: toolnestai.net/calculators/bmi-calculator</text>
+</svg>

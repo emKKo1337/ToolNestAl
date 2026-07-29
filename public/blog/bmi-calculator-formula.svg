@@ -1,0 +1,53 @@
+<svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gC" cx="50%" cy="40%" r="60%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.2"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+  </defs>
+  <rect width="900" height="460" fill="url(#bg)"/>
+  <ellipse cx="450" cy="230" rx="520" ry="320" fill="url(#gC)"/>
+
+  <text x="450" y="36" text-anchor="middle" font-size="20" font-weight="900" fill="url(#aG)">The BMI Formula — Metric vs Imperial</text>
+  <text x="450" y="54" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.38)">Same concept, two different unit conventions</text>
+
+  <!-- Metric formula -->
+  <rect x="28" y="72" width="410" height="150" rx="10" fill="rgba(52,211,153,0.06)" stroke="rgba(52,211,153,0.2)" stroke-width="1"/>
+  <text x="233" y="96" text-anchor="middle" font-size="12" font-weight="700" fill="#6ee7b7">Metric Formula</text>
+  <text x="233" y="130" text-anchor="middle" font-family="monospace" font-size="16" fill="rgba(255,255,255,0.85)">BMI = weight (kg)</text>
+  <line x1="150" y1="140" x2="316" y2="140" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
+  <text x="233" y="160" text-anchor="middle" font-family="monospace" font-size="16" fill="rgba(255,255,255,0.85)">height (m)²</text>
+  <text x="233" y="192" text-anchor="middle" font-family="monospace" font-size="12" fill="rgba(52,211,153,0.8)">72 kg ÷ (1.75 m)² = 23.5</text>
+  <text x="233" y="210" text-anchor="middle" font-size="8.5" fill="rgba(255,255,255,0.3)">Height must be converted from cm to meters first</text>
+
+  <!-- Imperial formula -->
+  <rect x="462" y="72" width="410" height="150" rx="10" fill="rgba(103,232,249,0.06)" stroke="rgba(103,232,249,0.2)" stroke-width="1"/>
+  <text x="667" y="96" text-anchor="middle" font-size="12" font-weight="700" fill="#67e8f9">Imperial Formula</text>
+  <text x="667" y="130" text-anchor="middle" font-family="monospace" font-size="15" fill="rgba(255,255,255,0.85)">BMI = weight (lb) × 703</text>
+  <line x1="580" y1="140" x2="754" y2="140" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
+  <text x="667" y="160" text-anchor="middle" font-family="monospace" font-size="16" fill="rgba(255,255,255,0.85)">height (in)²</text>
+  <text x="667" y="192" text-anchor="middle" font-family="monospace" font-size="12" fill="rgba(103,232,249,0.8)">159 lb × 703 ÷ (68.9 in)² ≈ 23.5</text>
+  <text x="667" y="210" text-anchor="middle" font-size="8.5" fill="rgba(255,255,255,0.3)">703 is the conversion constant for pounds and inches</text>
+
+  <!-- Worked example -->
+  <rect x="28" y="238" width="844" height="100" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(124,58,237,0.15)" stroke-width="1"/>
+  <text x="450" y="260" text-anchor="middle" font-size="10.5" font-weight="700" fill="rgba(167,139,250,0.85)">STEP-BY-STEP WORKED EXAMPLE</text>
+  <text x="450" y="282" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">Person: 175 cm tall, weighs 72 kg</text>
+  <text x="450" y="300" text-anchor="middle" font-size="9.5" font-family="monospace" fill="rgba(255,255,255,0.6)">1. Convert height to meters: 175 cm ÷ 100 = 1.75 m</text>
+  <text x="450" y="318" text-anchor="middle" font-size="9.5" font-family="monospace" fill="rgba(255,255,255,0.6)">2. Square the height: 1.75² = 3.0625 m²   3. Divide weight by squared height: 72 ÷ 3.0625 = 23.5</text>
+
+  <!-- WHO categories -->
+  <rect x="28" y="348" width="844" height="88" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <text x="450" y="368" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(255,255,255,0.4)">WHO BMI CATEGORIES (ADULTS)</text>
+  <g text-anchor="middle" font-size="10">
+    <text x="130" y="392" fill="rgba(59,130,246,0.85)" font-weight="700">Underweight</text>
+    <text x="130" y="408" fill="rgba(255,255,255,0.5)">&lt; 18.5</text>
+    <text x="340" y="392" fill="rgba(52,211,153,0.85)" font-weight="700">Normal weight</text>
+    <text x="340" y="408" fill="rgba(255,255,255,0.5)">18.5 – 24.9</text>
+    <text x="560" y="392" fill="rgba(251,191,36,0.85)" font-weight="700">Overweight</text>
+    <text x="560" y="408" fill="rgba(255,255,255,0.5)">25.0 – 29.9</text>
+    <text x="770" y="392" fill="rgba(239,68,68,0.85)" font-weight="700">Obese</text>
+    <text x="770" y="408" fill="rgba(255,255,255,0.5)">≥ 30.0 (Class I-III)</text>
+  </g>
+
+  <text x="450" y="454" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">toolnestai.net/calculators/bmi-calculator</text>
+</svg>

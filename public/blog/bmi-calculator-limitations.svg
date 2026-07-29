@@ -1,0 +1,58 @@
+<svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gC" cx="50%" cy="40%" r="60%"><stop offset="0%" stop-color="#0e7490" stop-opacity="0.2"/><stop offset="100%" stop-color="#0e7490" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+  </defs>
+  <rect width="900" height="460" fill="url(#bg)"/>
+  <ellipse cx="450" cy="230" rx="520" ry="320" fill="url(#gC)"/>
+
+  <text x="450" y="36" text-anchor="middle" font-size="20" font-weight="900" fill="url(#aG)">Why BMI Isn't the Whole Picture</text>
+  <text x="450" y="54" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.38)">BMI is a useful screening tool, but it has well-documented limitations</text>
+
+  <!-- Athlete example -->
+  <rect x="28" y="70" width="410" height="130" rx="8" fill="rgba(239,68,68,0.06)" stroke="rgba(239,68,68,0.18)" stroke-width="1"/>
+  <text x="44" y="92" font-size="10.5" font-weight="700" fill="rgba(239,68,68,0.85)">✗ Doesn't distinguish muscle from fat</text>
+  <text x="44" y="112" font-size="9" fill="rgba(255,255,255,0.55)">A bodybuilder at 6'0", 220 lb, 8% body fat</text>
+  <text x="44" y="128" font-size="9" fill="rgba(255,255,255,0.55)">has a BMI of ~29.8 — classified "overweight"</text>
+  <text x="44" y="144" font-size="9" fill="rgba(255,255,255,0.55)">by the formula alone, despite being lean and fit.</text>
+  <text x="44" y="164" font-size="8.5" fill="rgba(255,255,255,0.3)">Muscle is denser than fat — BMI only sees total mass,</text>
+  <text x="44" y="178" font-size="8.5" fill="rgba(255,255,255,0.3)">not what that mass is made of.</text>
+
+  <!-- Fat distribution -->
+  <rect x="462" y="70" width="410" height="130" rx="8" fill="rgba(251,191,36,0.06)" stroke="rgba(251,191,36,0.18)" stroke-width="1"/>
+  <text x="478" y="92" font-size="10.5" font-weight="700" fill="rgba(251,191,36,0.85)">⚠ Ignores fat distribution</text>
+  <text x="478" y="112" font-size="9" fill="rgba(255,255,255,0.55)">Two people with identical BMI can have very</text>
+  <text x="478" y="128" font-size="9" fill="rgba(255,255,255,0.55)">different health risk if one carries fat around</text>
+  <text x="478" y="144" font-size="9" fill="rgba(255,255,255,0.55)">the waist (visceral) vs the hips (subcutaneous).</text>
+  <text x="478" y="164" font-size="8.5" fill="rgba(255,255,255,0.3)">Waist circumference and waist-to-hip ratio are often</text>
+  <text x="478" y="178" font-size="8.5" fill="rgba(255,255,255,0.3)">used alongside BMI for a fuller risk picture.</text>
+
+  <!-- Age/sex/ethnicity -->
+  <rect x="28" y="212" width="410" height="130" rx="8" fill="rgba(251,191,36,0.06)" stroke="rgba(251,191,36,0.18)" stroke-width="1"/>
+  <text x="44" y="234" font-size="10.5" font-weight="700" fill="rgba(251,191,36,0.85)">⚠ Same formula for all ages, sexes, ethnicities</text>
+  <text x="44" y="254" font-size="9" fill="rgba(255,255,255,0.55)">Body composition naturally differs by age (older</text>
+  <text x="44" y="270" font-size="9" fill="rgba(255,255,255,0.55)">adults carry more fat at the same BMI) and by</text>
+  <text x="44" y="286" font-size="9" fill="rgba(255,255,255,0.55)">sex (women naturally carry more body fat than men).</text>
+  <text x="44" y="306" font-size="8.5" fill="rgba(255,255,255,0.3)">Some health organizations use adjusted BMI thresholds</text>
+  <text x="44" y="320" font-size="8.5" fill="rgba(255,255,255,0.3)">for certain Asian populations, who show elevated health</text>
+  <text x="44" y="334" font-size="8.5" fill="rgba(255,255,255,0.3)">risk at lower BMI values than the standard WHO cutoffs.</text>
+
+  <!-- Not for children -->
+  <rect x="462" y="212" width="410" height="130" rx="8" fill="rgba(103,232,249,0.06)" stroke="rgba(103,232,249,0.18)" stroke-width="1"/>
+  <text x="478" y="234" font-size="10.5" font-weight="700" fill="rgba(103,232,249,0.85)">ℹ Different rules for children &amp; teens</text>
+  <text x="478" y="254" font-size="9" fill="rgba(255,255,255,0.55)">The adult BMI categories (18.5, 25, 30) don't</text>
+  <text x="478" y="270" font-size="9" fill="rgba(255,255,255,0.55)">apply to children — growth patterns vary by age</text>
+  <text x="478" y="286" font-size="9" fill="rgba(255,255,255,0.55)">and sex during development.</text>
+  <text x="478" y="306" font-size="8.5" fill="rgba(255,255,255,0.3)">Pediatric BMI is instead expressed as an age-and-sex</text>
+  <text x="478" y="320" font-size="8.5" fill="rgba(255,255,255,0.3)">specific percentile compared against growth charts,</text>
+  <text x="478" y="334" font-size="8.5" fill="rgba(255,255,255,0.3)">not a fixed numeric threshold.</text>
+
+  <!-- Bottom line -->
+  <rect x="28" y="352" width="844" height="72" rx="8" fill="rgba(124,58,237,0.08)" stroke="rgba(124,58,237,0.2)" stroke-width="1"/>
+  <text x="450" y="374" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(167,139,250,0.9)">THE BOTTOM LINE</text>
+  <text x="450" y="394" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.6)">BMI is a fast, free, population-level screening tool — useful for tracking trends and flagging</text>
+  <text x="450" y="410" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.6)">when a closer look might be warranted. It is not a diagnosis and should never replace a conversation with a healthcare provider.</text>
+
+  <text x="450" y="450" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">toolnestai.net/calculators/bmi-calculator</text>
+</svg>
