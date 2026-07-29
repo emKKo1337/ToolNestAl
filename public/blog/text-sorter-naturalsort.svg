@@ -1,0 +1,52 @@
+<svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gC" cx="50%" cy="40%" r="60%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.2"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+  </defs>
+  <rect width="900" height="460" fill="url(#bg)"/>
+  <ellipse cx="450" cy="230" rx="520" ry="320" fill="url(#gC)"/>
+
+  <text x="450" y="36" text-anchor="middle" font-size="20" font-weight="900" fill="url(#aG)">Lexical Sort vs Natural Sort</text>
+  <text x="450" y="54" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.38)">Why "item10" sorts before "item2" in a standard alphabetical sort</text>
+
+  <!-- Lexical (wrong for numbers) -->
+  <rect x="28" y="72" width="410" height="180" rx="10" fill="rgba(239,68,68,0.06)" stroke="rgba(239,68,68,0.2)" stroke-width="1"/>
+  <text x="233" y="96" text-anchor="middle" font-size="12" font-weight="700" fill="#f87171">Standard Lexical Sort</text>
+  <g font-family="monospace" font-size="13" text-anchor="middle" fill="rgba(252,165,165,0.85)">
+    <text x="233" y="122">item1</text>
+    <text x="233" y="146">item10</text>
+    <text x="233" y="170">item11</text>
+    <text x="233" y="194">item2</text>
+    <text x="233" y="218">item9</text>
+  </g>
+  <text x="44" y="242" font-size="9" fill="rgba(255,255,255,0.5)">Compares character by character: '1' &lt; '2', so</text>
+
+  <!-- Natural sort -->
+  <rect x="462" y="72" width="410" height="180" rx="10" fill="rgba(52,211,153,0.06)" stroke="rgba(52,211,153,0.2)" stroke-width="1"/>
+  <text x="667" y="96" text-anchor="middle" font-size="12" font-weight="700" fill="#6ee7b7">Natural Sort (numeric-aware)</text>
+  <g font-family="monospace" font-size="13" text-anchor="middle" fill="rgba(110,231,183,0.9)">
+    <text x="667" y="122">item1</text>
+    <text x="667" y="146">item2</text>
+    <text x="667" y="170">item9</text>
+    <text x="667" y="194">item10</text>
+    <text x="667" y="218">item11</text>
+  </g>
+  <text x="478" y="242" font-size="9" fill="rgba(255,255,255,0.5)">Parses embedded number chunks and compares</text>
+  <text x="478" y="256" font-size="9" fill="rgba(255,255,255,0.5)">them as actual numeric values: 2 &lt; 9 &lt; 10 &lt; 11</text>
+
+  <!-- Why -->
+  <rect x="28" y="264" width="844" height="100" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(124,58,237,0.15)" stroke-width="1"/>
+  <text x="450" y="286" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(167,139,250,0.85)">WHY "item10" COMES BEFORE "item2" IN LEXICAL SORT</text>
+  <text x="450" y="308" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">A standard string sort compares characters one at a time from left to right. Comparing "item10" and</text>
+  <text x="450" y="326" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">"item2," the first difference occurs at the 5th character: '1' vs '2'. Since '1' &lt; '2' as characters,</text>
+  <text x="450" y="344" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">"item10" is placed first — the sort never looks at the full number "10" as a single numeric value.</text>
+
+  <!-- When to use each -->
+  <rect x="28" y="374" width="844" height="66" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <text x="450" y="396" text-anchor="middle" font-size="9.5" font-weight="700" fill="rgba(255,255,255,0.4)">WHEN EACH IS THE RIGHT CHOICE</text>
+  <text x="450" y="416" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.5)">Lexical: alphabetizing pure words (names, cities). Natural: file names, version numbers, chapter titles,</text>
+  <text x="450" y="432" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.5)">or any list mixing text with embedded numbers where humans expect numeric order.</text>
+
+  <text x="450" y="452" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">toolnestai.net/text-tools/text-sorter</text>
+</svg>

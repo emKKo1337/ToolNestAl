@@ -1,0 +1,110 @@
+<svg viewBox="0 0 900 1200" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="30%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gT" cx="50%" cy="10%" r="60%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.35"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gB" cx="50%" cy="90%" r="60%"><stop offset="0%" stop-color="#0e7490" stop-opacity="0.2"/><stop offset="100%" stop-color="#0e7490" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+  </defs>
+  <rect width="900" height="1200" fill="url(#bg)"/>
+  <ellipse cx="450" cy="200" rx="700" ry="400" fill="url(#gT)"/>
+  <ellipse cx="450" cy="1000" rx="700" ry="400" fill="url(#gB)"/>
+
+  <text x="450" y="52" text-anchor="middle" font-size="28" font-weight="900" fill="url(#aG)">The Complete Text Sorting Guide</text>
+  <text x="450" y="76" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.38)">Every sort mode explained, and the bugs that trip up naive sorting</text>
+  <text x="450" y="94" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.22)">toolnestai.net/text-tools/text-sorter</text>
+
+  <!-- Section 1 -->
+  <rect x="32" y="110" width="836" height="38" rx="8" fill="rgba(124,58,237,0.18)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+  <text x="450" y="134" text-anchor="middle" font-size="15" font-weight="800" fill="#a78bfa">01 — Six Sort Modes</text>
+
+  <g font-size="10">
+    <rect x="32" y="154" width="404" height="200" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="48" y="176" fill="rgba(167,139,250,0.85)" font-weight="700">A → Z (ascending)</text>
+    <text x="48" y="194" fill="rgba(255,255,255,0.5)">Case-insensitive alphabetical order</text>
+    <text x="48" y="222" fill="rgba(103,232,249,0.85)" font-weight="700">Z → A (descending)</text>
+    <text x="48" y="240" fill="rgba(255,255,255,0.5)">Reverse alphabetical order</text>
+    <text x="48" y="268" fill="rgba(52,211,153,0.85)" font-weight="700">By Length</text>
+    <text x="48" y="286" fill="rgba(255,255,255,0.5)">Shortest line first, longest last</text>
+    <text x="48" y="314" fill="rgba(251,191,36,0.85)" font-weight="700">Numeric</text>
+    <text x="48" y="332" fill="rgba(255,255,255,0.5)">Treats each line as a number value</text>
+
+    <rect x="464" y="154" width="404" height="200" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="480" y="176" fill="rgba(244,114,182,0.85)" font-weight="700">Random (Shuffle)</text>
+    <text x="480" y="194" fill="rgba(255,255,255,0.5)">Fisher-Yates randomized order</text>
+    <text x="480" y="222" fill="rgba(129,140,248,0.85)" font-weight="700">Remove Duplicates</text>
+    <text x="480" y="240" fill="rgba(255,255,255,0.5)">Toggle alongside any sort mode</text>
+    <text x="480" y="268" fill="rgba(255,255,255,0.5)" font-weight="700">Natural sort (advanced)</text>
+    <text x="480" y="286" fill="rgba(255,255,255,0.4)">Numeric-aware string comparison</text>
+    <text x="480" y="314" fill="rgba(255,255,255,0.3)" font-size="9">All processed entirely client-side —</text>
+    <text x="480" y="330" fill="rgba(255,255,255,0.3)" font-size="9">your text never leaves your browser</text>
+  </g>
+
+  <!-- Section 2: Lexical vs Natural -->
+  <rect x="32" y="372" width="836" height="38" rx="8" fill="rgba(14,116,144,0.18)" stroke="rgba(14,116,144,0.3)" stroke-width="1"/>
+  <text x="450" y="396" text-anchor="middle" font-size="15" font-weight="800" fill="#67e8f9">02 — Lexical vs Natural Sort</text>
+
+  <g font-size="10">
+    <rect x="32" y="416" width="404" height="120" rx="8" fill="rgba(239,68,68,0.06)" stroke="rgba(239,68,68,0.16)" stroke-width="1"/>
+    <text x="234" y="440" text-anchor="middle" font-weight="700" fill="#f87171">Lexical: item1, item10, item2</text>
+    <text x="48" y="462" fill="rgba(255,255,255,0.5)">Compares character-by-character:</text>
+    <text x="48" y="480" fill="rgba(255,255,255,0.5)">'1' &lt; '2', so "item10" sorts before "item2"</text>
+    <text x="48" y="504" fill="rgba(255,255,255,0.35)" font-size="8.5">Standard default sort behavior in most languages</text>
+
+    <rect x="464" y="416" width="404" height="120" rx="8" fill="rgba(52,211,153,0.06)" stroke="rgba(52,211,153,0.16)" stroke-width="1"/>
+    <text x="666" y="440" text-anchor="middle" font-weight="700" fill="#6ee7b7">Natural: item1, item2, item10</text>
+    <text x="480" y="462" fill="rgba(255,255,255,0.5)">Parses embedded numbers as values:</text>
+    <text x="480" y="480" fill="rgba(255,255,255,0.5)">2 &lt; 10, matching human expectation</text>
+    <text x="480" y="504" fill="rgba(255,255,255,0.35)" font-size="8.5">Requires special "natural sort" comparator logic</text>
+  </g>
+
+  <!-- Section 3: Case sensitivity -->
+  <rect x="32" y="552" width="836" height="38" rx="8" fill="rgba(16,185,129,0.14)" stroke="rgba(16,185,129,0.25)" stroke-width="1"/>
+  <text x="450" y="576" text-anchor="middle" font-size="15" font-weight="800" fill="#34d399">03 — The Case-Sensitivity Bug</text>
+
+  <rect x="32" y="596" width="836" height="110" rx="10" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="450" y="620" text-anchor="middle" font-size="10.5" fill="rgba(255,255,255,0.6)">In raw ASCII order, ALL uppercase letters (A-Z, codes 65-90) sort before ANY</text>
+  <text x="450" y="640" text-anchor="middle" font-size="10.5" fill="rgba(255,255,255,0.6)">lowercase letter (a-z, codes 97-122) — so a case-sensitive sort groups "Apple,</text>
+  <text x="450" y="660" text-anchor="middle" font-size="10.5" fill="rgba(255,255,255,0.6)">Banana, Cherry" together, then "apple, banana" separately below them.</text>
+  <text x="450" y="686" text-anchor="middle" font-size="9.5" fill="rgba(52,211,153,0.8)">Fix: lowercase both strings before comparing — this is the standard default in most tools</text>
+
+  <!-- Section 4: Use cases -->
+  <rect x="32" y="726" width="836" height="38" rx="8" fill="rgba(124,58,237,0.18)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+  <text x="450" y="750" text-anchor="middle" font-size="15" font-weight="800" fill="#a78bfa">04 — Common Uses</text>
+
+  <g font-size="9.5">
+    <rect x="32" y="770" width="268" height="70" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="48" y="790" font-weight="700" fill="rgba(167,139,250,0.85)">📋 Cleaning up lists</text>
+    <text x="48" y="808" fill="rgba(255,255,255,0.5)">Alphabetizing names, tags,</text>
+    <text x="48" y="822" fill="rgba(255,255,255,0.5)">or category labels</text>
+
+    <rect x="314" y="770" width="268" height="70" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="330" y="790" font-weight="700" fill="rgba(103,232,249,0.85)">🗂 Deduplicating data</text>
+    <text x="330" y="808" fill="rgba(255,255,255,0.5)">Sort + remove duplicates in</text>
+    <text x="330" y="822" fill="rgba(255,255,255,0.5)">one step for CSV/list cleanup</text>
+
+    <rect x="596" y="770" width="272" height="70" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="612" y="790" font-weight="700" fill="rgba(52,211,153,0.85)">🎲 Randomizing order</text>
+    <text x="612" y="808" fill="rgba(255,255,255,0.5)">Shuffle quiz questions,</text>
+    <text x="612" y="822" fill="rgba(255,255,255,0.5)">giveaway entries fairly</text>
+  </g>
+
+  <!-- Section 5: mistakes -->
+  <rect x="32" y="860" width="836" height="38" rx="8" fill="rgba(239,68,68,0.12)" stroke="rgba(239,68,68,0.22)" stroke-width="1"/>
+  <text x="450" y="884" text-anchor="middle" font-size="15" font-weight="800" fill="rgba(239,68,68,0.85)">05 — Common Mistakes</text>
+
+  <g font-size="10">
+    <rect x="32" y="904" width="836" height="40" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(239,68,68,0.1)" stroke-width="1"/>
+    <text x="48" y="922" fill="rgba(239,68,68,0.7)">✗</text>
+    <text x="68" y="922" fill="rgba(255,255,255,0.6)">Expecting numeric-aware ordering from a standard alphabetical sort on mixed text+numbers</text>
+    <text x="68" y="938" fill="rgba(255,255,255,0.4)" font-size="8.5">Use natural sort mode for file names, versions, or numbered list items.</text>
+
+    <rect x="32" y="948" width="836" height="40" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(239,68,68,0.1)" stroke-width="1"/>
+    <text x="48" y="966" fill="rgba(239,68,68,0.7)">✗</text>
+    <text x="68" y="966" fill="rgba(255,255,255,0.6)">Assuming a random shuffle is fair without verifying the algorithm avoids bias</text>
+    <text x="68" y="982" fill="rgba(255,255,255,0.4)" font-size="8.5">A naive shuffle can bias toward certain orderings — use Fisher-Yates for true randomness.</text>
+  </g>
+
+  <text x="450" y="1022" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.28)">Free tool: toolnestai.net/text-tools/text-sorter</text>
+  <text x="450" y="1042" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">A-Z, Z-A, length, numeric, and random sorting — client-side, no upload</text>
+</svg>
