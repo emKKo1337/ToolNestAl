@@ -1,0 +1,48 @@
+<svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gC" cx="50%" cy="40%" r="60%"><stop offset="0%" stop-color="#0e7490" stop-opacity="0.2"/><stop offset="100%" stop-color="#0e7490" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+  </defs>
+  <rect width="900" height="460" fill="url(#bg)"/>
+  <ellipse cx="450" cy="230" rx="520" ry="320" fill="url(#gC)"/>
+
+  <text x="450" y="36" text-anchor="middle" font-size="20" font-weight="900" fill="url(#aG)">The Hidden Bug: Reversing Text with Emoji</text>
+  <text x="450" y="54" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.38)">A naive character-by-character reverse breaks on multi-byte Unicode</text>
+
+  <!-- Naive approach -->
+  <rect x="28" y="72" width="410" height="150" rx="10" fill="rgba(239,68,68,0.06)" stroke="rgba(239,68,68,0.2)" stroke-width="1"/>
+  <text x="44" y="94" font-size="10.5" font-weight="700" fill="rgba(239,68,68,0.85)">✗ Naive: split('').reverse().join('')</text>
+  <text x="44" y="118" font-family="monospace" font-size="10.5" fill="rgba(255,255,255,0.6)">Input:  "Hi 👨‍👩‍👧‍👦!"</text>
+  <text x="44" y="140" font-family="monospace" font-size="10.5" fill="rgba(252,165,165,0.85)">Output: "!�👦‍👧‍👩‍👨 iH"</text>
+  <text x="44" y="164" font-size="9" fill="rgba(255,255,255,0.5)">The family emoji is actually 7 combined</text>
+  <text x="44" y="180" font-size="9" fill="rgba(255,255,255,0.5)">Unicode code points (joined by invisible</text>
+  <text x="44" y="196" font-size="9" fill="rgba(255,255,255,0.5)">ZWJ characters) — splitting by JS "character"</text>
+  <text x="44" y="212" font-size="9" fill="rgba(255,255,255,0.5)">breaks it into garbage fragments.</text>
+
+  <!-- Correct approach -->
+  <rect x="462" y="72" width="410" height="150" rx="10" fill="rgba(52,211,153,0.06)" stroke="rgba(52,211,153,0.2)" stroke-width="1"/>
+  <text x="478" y="94" font-size="10.5" font-weight="700" fill="rgba(52,211,153,0.85)">✓ Correct: [...text].reverse().join('')</text>
+  <text x="478" y="118" font-family="monospace" font-size="10.5" fill="rgba(255,255,255,0.6)">Input:  "Hi 👨‍👩‍👧‍👦!"</text>
+  <text x="478" y="140" font-family="monospace" font-size="10.5" fill="rgba(110,231,183,0.9)">Output: "!👨‍👩‍👧‍👦 iH"</text>
+  <text x="478" y="164" font-size="9" fill="rgba(255,255,255,0.5)">The spread operator (...) iterates by</text>
+  <text x="478" y="180" font-size="9" fill="rgba(255,255,255,0.5)">Unicode code point, not by UTF-16 code</text>
+  <text x="478" y="196" font-size="9" fill="rgba(255,255,255,0.5)">unit — better, but still doesn't group</text>
+  <text x="478" y="212" font-size="9" fill="rgba(255,255,255,0.5)">ZWJ sequences as single "characters."</text>
+
+  <!-- Why -->
+  <rect x="28" y="232" width="844" height="112" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(124,58,237,0.15)" stroke-width="1"/>
+  <text x="450" y="254" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(167,139,250,0.85)">WHY THIS HAPPENS — UTF-16 SURROGATE PAIRS</text>
+  <text x="450" y="276" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">JavaScript strings are UTF-16 internally. Characters outside the Basic Multilingual Plane</text>
+  <text x="450" y="294" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">(most emoji, some rare CJK characters) are stored as TWO 16-bit "surrogate" code units, not one.</text>
+  <text x="450" y="312" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">A naive .split('') treats each surrogate half as its own "character," reversing them independently</text>
+  <text x="450" y="330" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">and corrupting the emoji into broken replacement characters (�).</text>
+
+  <!-- Fix summary -->
+  <rect x="28" y="352" width="844" height="86" rx="8" fill="rgba(52,211,153,0.05)" stroke="rgba(52,211,153,0.16)" stroke-width="1"/>
+  <text x="450" y="374" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(110,231,183,0.85)">HOW THE TOOLNEST TEXT REVERSER HANDLES THIS</text>
+  <text x="450" y="396" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">Uses proper Unicode-aware iteration (grapheme cluster segmentation) so combined emoji,</text>
+  <text x="450" y="414" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">accented letters, and multi-codepoint symbols reverse correctly as complete visual units.</text>
+
+  <text x="450" y="450" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">toolnestai.net/text-tools/text-reverser</text>
+</svg>

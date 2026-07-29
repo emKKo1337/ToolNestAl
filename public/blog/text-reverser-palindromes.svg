@@ -1,0 +1,59 @@
+<svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gC" cx="50%" cy="40%" r="60%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.2"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+  </defs>
+  <rect width="900" height="460" fill="url(#bg)"/>
+  <ellipse cx="450" cy="230" rx="520" ry="320" fill="url(#gC)"/>
+
+  <text x="450" y="36" text-anchor="middle" font-size="20" font-weight="900" fill="url(#aG)">Famous Palindromes — Words, Phrases &amp; Numbers</text>
+  <text x="450" y="54" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.38)">Text that reads identically forwards and backwards</text>
+
+  <!-- Word palindromes -->
+  <rect x="28" y="70" width="270" height="130" rx="10" fill="rgba(167,139,250,0.06)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+  <text x="44" y="92" font-size="11" font-weight="700" fill="#a78bfa">Single Words</text>
+  <text x="44" y="118" font-family="monospace" font-size="13" fill="rgba(255,255,255,0.7)">level · racecar</text>
+  <text x="44" y="140" font-family="monospace" font-size="13" fill="rgba(255,255,255,0.7)">rotator · civic</text>
+  <text x="44" y="162" font-family="monospace" font-size="13" fill="rgba(255,255,255,0.7)">kayak · madam</text>
+  <text x="44" y="184" font-size="8.5" fill="rgba(255,255,255,0.3)">No special handling needed —</text>
+  <text x="44" y="196" font-size="8.5" fill="rgba(255,255,255,0.3)">already lowercase, no punctuation</text>
+
+  <!-- Phrase palindromes -->
+  <rect x="314" y="70" width="270" height="130" rx="10" fill="rgba(103,232,249,0.06)" stroke="rgba(103,232,249,0.2)" stroke-width="1"/>
+  <text x="330" y="92" font-size="11" font-weight="700" fill="#67e8f9">Phrases (need normalizing)</text>
+  <text x="330" y="116" font-family="monospace" font-size="10.5" fill="rgba(255,255,255,0.7)">"A man, a plan, a</text>
+  <text x="330" y="132" font-family="monospace" font-size="10.5" fill="rgba(255,255,255,0.7)">canal: Panama!"</text>
+  <text x="330" y="154" font-family="monospace" font-size="10.5" fill="rgba(255,255,255,0.7)">"Was it a car or a</text>
+  <text x="330" y="170" font-family="monospace" font-size="10.5" fill="rgba(255,255,255,0.7)">cat I saw?"</text>
+  <text x="330" y="192" font-size="8.5" fill="rgba(255,255,255,0.3)">Must strip spaces, commas, and case first</text>
+
+  <!-- Numeric palindromes -->
+  <rect x="600" y="70" width="272" height="130" rx="10" fill="rgba(52,211,153,0.06)" stroke="rgba(52,211,153,0.2)" stroke-width="1"/>
+  <text x="616" y="92" font-size="11" font-weight="700" fill="#34d399">Numbers</text>
+  <text x="616" y="118" font-family="monospace" font-size="13" fill="rgba(255,255,255,0.7)">121 · 12321</text>
+  <text x="616" y="140" font-family="monospace" font-size="13" fill="rgba(255,255,255,0.7)">1001 · 909</text>
+  <text x="616" y="166" font-size="9" fill="rgba(255,255,255,0.5)">Palindromic numbers appear</text>
+  <text x="616" y="180" font-size="9" fill="rgba(255,255,255,0.5)">in number theory — e.g. checking</text>
+  <text x="616" y="194" font-size="9" fill="rgba(255,255,255,0.5)">if a number reads the same reversed</text>
+
+  <!-- Normalization worked example -->
+  <rect x="28" y="212" width="844" height="126" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(124,58,237,0.15)" stroke-width="1"/>
+  <text x="450" y="234" text-anchor="middle" font-size="10.5" font-weight="700" fill="rgba(167,139,250,0.85)">HOW "A MAN, A PLAN, A CANAL: PANAMA!" IS VERIFIED</text>
+  <text x="44" y="258" font-size="9.5" fill="rgba(255,255,255,0.55)">Original:</text>
+  <text x="110" y="258" font-family="monospace" font-size="9.5" fill="rgba(255,255,255,0.5)">"A man, a plan, a canal: Panama!"</text>
+  <text x="44" y="280" font-size="9.5" fill="rgba(255,255,255,0.55)">Step 1 — lowercase:</text>
+  <text x="200" y="280" font-family="monospace" font-size="9.5" fill="rgba(103,232,249,0.8)">"a man, a plan, a canal: panama!"</text>
+  <text x="44" y="302" font-size="9.5" fill="rgba(255,255,255,0.55)">Step 2 — strip non-letters:</text>
+  <text x="230" y="302" font-family="monospace" font-size="9.5" fill="rgba(52,211,153,0.85)">"amanaplanacanalpanama"</text>
+  <text x="44" y="324" font-size="9.5" fill="rgba(255,255,255,0.55)">Step 3 — compare to reverse:</text>
+  <text x="234" y="324" font-family="monospace" font-size="9.5" fill="rgba(251,191,36,0.85)">"amanaplanacanalpanama" ✓ identical</text>
+
+  <!-- Note -->
+  <rect x="28" y="348" width="844" height="70" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <text x="450" y="370" text-anchor="middle" font-size="9.5" font-weight="700" fill="rgba(255,255,255,0.4)">WHY PALINDROMES MATTER BEYOND WORDPLAY</text>
+  <text x="450" y="392" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.5)">Palindrome-checking logic (compare a string to its reverse) is a genuinely common programming</text>
+  <text x="450" y="408" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.5)">interview question, and the normalization technique applies broadly to any fuzzy text comparison task.</text>
+
+  <text x="450" y="446" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">toolnestai.net/text-tools/text-reverser</text>
+</svg>

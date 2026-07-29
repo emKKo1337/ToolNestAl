@@ -1,0 +1,112 @@
+<svg viewBox="0 0 900 1200" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="30%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gT" cx="50%" cy="10%" r="60%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.35"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gB" cx="50%" cy="90%" r="60%"><stop offset="0%" stop-color="#0e7490" stop-opacity="0.2"/><stop offset="100%" stop-color="#0e7490" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+  </defs>
+  <rect width="900" height="1200" fill="url(#bg)"/>
+  <ellipse cx="450" cy="200" rx="700" ry="400" fill="url(#gT)"/>
+  <ellipse cx="450" cy="1000" rx="700" ry="400" fill="url(#gB)"/>
+
+  <text x="450" y="52" text-anchor="middle" font-size="28" font-weight="900" fill="url(#aG)">The Complete Text Reversal Guide</text>
+  <text x="450" y="76" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.38)">Reversal modes, palindrome checking, and the Unicode trap</text>
+  <text x="450" y="94" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.22)">toolnestai.net/text-tools/text-reverser</text>
+
+  <!-- Section 1 -->
+  <rect x="32" y="110" width="836" height="38" rx="8" fill="rgba(124,58,237,0.18)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+  <text x="450" y="134" text-anchor="middle" font-size="15" font-weight="800" fill="#a78bfa">01 — Three Reversal Modes</text>
+
+  <g font-size="10">
+    <rect x="32" y="154" width="404" height="110" rx="8" fill="rgba(167,139,250,0.06)" stroke="rgba(167,139,250,0.16)" stroke-width="1"/>
+    <text x="48" y="176" font-weight="700" fill="#a78bfa">Character reversal</text>
+    <text x="48" y="196" font-family="monospace" fill="rgba(255,255,255,0.6)">"Hello" → "olleH"</text>
+    <text x="48" y="218" fill="rgba(255,255,255,0.5)">Reverses every letter's order —</text>
+    <text x="48" y="234" fill="rgba(255,255,255,0.5)">used for palindrome checking, novelty text</text>
+    <text x="48" y="250" fill="rgba(255,255,255,0.3)" font-size="8.5">Most common mode</text>
+
+    <rect x="464" y="154" width="404" height="110" rx="8" fill="rgba(103,232,249,0.06)" stroke="rgba(103,232,249,0.16)" stroke-width="1"/>
+    <text x="480" y="176" font-weight="700" fill="#67e8f9">Word reversal</text>
+    <text x="480" y="196" font-family="monospace" fill="rgba(255,255,255,0.6)">"Hello World" → "World Hello"</text>
+    <text x="480" y="218" fill="rgba(255,255,255,0.5)">Reverses word order while keeping each</text>
+    <text x="480" y="234" fill="rgba(255,255,255,0.5)">word spelled normally</text>
+    <text x="480" y="250" fill="rgba(255,255,255,0.3)" font-size="8.5">Useful for reordering sentence structure</text>
+  </g>
+
+  <rect x="32" y="272" width="836" height="70" rx="8" fill="rgba(52,211,153,0.06)" stroke="rgba(52,211,153,0.16)" stroke-width="1"/>
+  <text x="48" y="294" font-weight="700" font-size="10" fill="#6ee7b7">Line reversal</text>
+  <text x="48" y="314" font-family="monospace" font-size="10" fill="rgba(255,255,255,0.55)">"Line 1\nLine 2\nLine 3" → "Line 3\nLine 2\nLine 1"</text>
+  <text x="48" y="332" font-size="9" fill="rgba(255,255,255,0.4)">Reverses the order of lines in a multi-line block — useful for reordering lists or log entries</text>
+
+  <!-- Section 2: Palindromes -->
+  <rect x="32" y="360" width="836" height="38" rx="8" fill="rgba(14,116,144,0.18)" stroke="rgba(14,116,144,0.3)" stroke-width="1"/>
+  <text x="450" y="384" text-anchor="middle" font-size="15" font-weight="800" fill="#67e8f9">02 — Palindrome Checking</text>
+
+  <rect x="32" y="404" width="836" height="130" rx="10" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="48" y="428" font-size="10.5" fill="rgba(255,255,255,0.6)">1. Normalize the text — lowercase everything, strip spaces and punctuation</text>
+  <text x="48" y="450" font-family="monospace" font-size="10" fill="rgba(103,232,249,0.8)">"A man, a plan, a canal: Panama!" → "amanaplanacanalpanama"</text>
+  <text x="48" y="476" font-size="10.5" fill="rgba(255,255,255,0.6)">2. Compare the normalized string to its own reverse</text>
+  <text x="48" y="498" font-family="monospace" font-size="10" fill="rgba(52,211,153,0.85)">"amanaplanacanalpanama" reversed = "amanaplanacanalpanama" ✓ MATCH</text>
+  <text x="48" y="522" font-size="9.5" fill="rgba(255,255,255,0.35)">If normalized forward and reversed strings match exactly, it's a palindrome</text>
+
+  <!-- Section 3: The Unicode trap -->
+  <rect x="32" y="552" width="836" height="38" rx="8" fill="rgba(239,68,68,0.12)" stroke="rgba(239,68,68,0.22)" stroke-width="1"/>
+  <text x="450" y="576" text-anchor="middle" font-size="15" font-weight="800" fill="rgba(239,68,68,0.85)">03 — The Unicode Reversal Trap</text>
+
+  <g font-size="10">
+    <rect x="32" y="596" width="404" height="120" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(239,68,68,0.15)" stroke-width="1"/>
+    <text x="48" y="618" font-weight="700" fill="rgba(252,165,165,0.85)">✗ split('').reverse().join('')</text>
+    <text x="48" y="638" font-family="monospace" fill="rgba(255,255,255,0.5)">"Hi 👨‍👩‍👧‍👦!" → broken emoji</text>
+    <text x="48" y="660" fill="rgba(255,255,255,0.5)">JS strings are UTF-16 — emoji and</text>
+    <text x="48" y="676" fill="rgba(255,255,255,0.5)">combined characters use multiple</text>
+    <text x="48" y="692" fill="rgba(255,255,255,0.5)">code units, splitting them incorrectly</text>
+
+    <rect x="464" y="596" width="404" height="120" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(52,211,153,0.15)" stroke-width="1"/>
+    <text x="480" y="618" font-weight="700" fill="rgba(110,231,183,0.85)">✓ Unicode-aware reversal</text>
+    <text x="480" y="638" font-family="monospace" fill="rgba(255,255,255,0.5)">"Hi 👨‍👩‍👧‍👦!" → intact emoji</text>
+    <text x="480" y="660" fill="rgba(255,255,255,0.5)">Grapheme cluster segmentation</text>
+    <text x="480" y="676" fill="rgba(255,255,255,0.5)">groups combined characters as one</text>
+    <text x="480" y="692" fill="rgba(255,255,255,0.5)">unit before reversing</text>
+  </g>
+
+  <!-- Section 4: Uses -->
+  <rect x="32" y="734" width="836" height="38" rx="8" fill="rgba(16,185,129,0.14)" stroke="rgba(16,185,129,0.25)" stroke-width="1"/>
+  <text x="450" y="758" text-anchor="middle" font-size="15" font-weight="800" fill="#34d399">04 — Common Uses</text>
+
+  <g font-size="9.5">
+    <rect x="32" y="778" width="268" height="70" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="48" y="798" font-weight="700" fill="rgba(167,139,250,0.85)">🧩 Puzzles &amp; wordplay</text>
+    <text x="48" y="816" fill="rgba(255,255,255,0.5)">Creating and solving palindrome</text>
+    <text x="48" y="830" fill="rgba(255,255,255,0.5)">and reversed-word puzzles</text>
+
+    <rect x="314" y="778" width="268" height="70" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="330" y="798" font-weight="700" fill="rgba(103,232,249,0.85)">💻 Coding practice</text>
+    <text x="330" y="816" fill="rgba(255,255,255,0.5)">Classic interview question —</text>
+    <text x="330" y="830" fill="rgba(255,255,255,0.5)">verify your own implementation</text>
+
+    <rect x="596" y="778" width="272" height="70" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="612" y="798" font-weight="700" fill="rgba(52,211,153,0.85)">📝 Novelty text</text>
+    <text x="612" y="816" fill="rgba(255,255,255,0.5)">Mirror-text effects for social</text>
+    <text x="612" y="830" fill="rgba(255,255,255,0.5)">media captions and messages</text>
+  </g>
+
+  <!-- Section 5: mistakes -->
+  <rect x="32" y="870" width="836" height="38" rx="8" fill="rgba(239,68,68,0.12)" stroke="rgba(239,68,68,0.22)" stroke-width="1"/>
+  <text x="450" y="894" text-anchor="middle" font-size="15" font-weight="800" fill="rgba(239,68,68,0.85)">05 — Common Mistakes</text>
+
+  <g font-size="10">
+    <rect x="32" y="914" width="836" height="40" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(239,68,68,0.1)" stroke-width="1"/>
+    <text x="48" y="932" fill="rgba(239,68,68,0.7)">✗</text>
+    <text x="68" y="932" fill="rgba(255,255,255,0.6)">Using naive string.split('') on text containing emoji or combined Unicode characters</text>
+    <text x="68" y="948" fill="rgba(255,255,255,0.4)" font-size="8.5">Splits multi-code-unit characters incorrectly, producing broken output.</text>
+
+    <rect x="32" y="958" width="836" height="40" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(239,68,68,0.1)" stroke-width="1"/>
+    <text x="48" y="976" fill="rgba(239,68,68,0.7)">✗</text>
+    <text x="68" y="976" fill="rgba(255,255,255,0.6)">Checking palindromes without normalizing case, spaces, and punctuation first</text>
+    <text x="68" y="992" fill="rgba(255,255,255,0.4)" font-size="8.5">"Racecar" ≠ "racecaR" as raw strings, but they should both pass the check.</text>
+  </g>
+
+  <text x="450" y="1030" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.28)">Free tool: toolnestai.net/text-tools/text-reverser</text>
+  <text x="450" y="1050" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">Characters, words, and lines — plus a built-in palindrome checker</text>
+</svg>
