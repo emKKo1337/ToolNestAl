@@ -1,0 +1,100 @@
+<svg viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gL" cx="10%" cy="50%" r="60%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.35"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gR" cx="90%" cy="50%" r="60%"><stop offset="0%" stop-color="#0e7490" stop-opacity="0.2"/><stop offset="100%" stop-color="#0e7490" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="lapG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1a1040"/><stop offset="100%" stop-color="#0d0824"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="12" stdDeviation="24" flood-color="#5b21b6" flood-opacity="0.45"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <ellipse cx="120" cy="337" rx="700" ry="550" fill="url(#gL)"/>
+  <ellipse cx="1080" cy="337" rx="700" ry="550" fill="url(#gR)"/>
+
+  <text x="600" y="42" text-anchor="middle" font-size="13" font-weight="700" fill="url(#aG)" filter="url(#glow)">ToolNest AI — PDF Tools</text>
+  <text x="600" y="68" text-anchor="middle" font-size="30" font-weight="900" fill="url(#aG)" filter="url(#glow)">How PDF to Word Reconstructs Structure</text>
+  <text x="600" y="90" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.35)">From positioned glyphs to real Word paragraphs, headings and tables</text>
+
+  <rect x="60" y="108" width="1080" height="542" rx="18" fill="url(#lapG)" stroke="rgba(124,58,237,0.35)" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="60" y="108" width="1080" height="38" rx="18" fill="rgba(255,255,255,0.05)"/>
+  <rect x="60" y="128" width="1080" height="18" fill="rgba(255,255,255,0.02)"/>
+  <circle cx="90" cy="127" r="7" fill="rgba(239,68,68,0.65)"/>
+  <circle cx="114" cy="127" r="7" fill="rgba(251,191,36,0.65)"/>
+  <circle cx="138" cy="127" r="7" fill="rgba(34,197,94,0.65)"/>
+  <text x="600" y="132" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">toolnestai.net/pdf-tools/pdf-to-word</text>
+
+  <!-- 4-stage pipeline -->
+  <g font-size="9.5" font-weight="700" fill="rgba(255,255,255,0.35)">
+    <text x="150" y="184">STAGE 1</text>
+    <text x="410" y="184">STAGE 2</text>
+    <text x="670" y="184">STAGE 3</text>
+    <text x="930" y="184">STAGE 4</text>
+  </g>
+
+  <!-- Stage 1: raw glyphs -->
+  <rect x="90" y="196" width="220" height="200" rx="10" fill="rgba(248,113,113,0.06)" stroke="rgba(248,113,113,0.25)" stroke-width="1.5"/>
+  <text x="200" y="222" text-anchor="middle" font-size="12" font-weight="700" fill="rgba(248,113,113,0.85)">Raw text items</text>
+  <g fill="rgba(255,255,255,0.5)" font-size="8" font-family="monospace">
+    <circle cx="112" cy="248" r="2" fill="#f87171"/><text x="120" y="251">"T" x=40 y=80 sz=18</text>
+    <circle cx="112" cy="264" r="2" fill="#f87171"/><text x="120" y="267">"h" x=52 y=80 sz=18</text>
+    <circle cx="112" cy="280" r="2" fill="#f87171"/><text x="120" y="283">"e" x=61 y=80 sz=18</text>
+    <circle cx="112" cy="304" r="2" fill="#f87171"/><text x="120" y="307">"D" x=40 y=104 sz=11</text>
+    <circle cx="112" cy="320" r="2" fill="#f87171"/><text x="120" y="323">"o" x=48 y=104 sz=11</text>
+  </g>
+  <text x="200" y="360" text-anchor="middle" font-size="8.5" fill="rgba(255,255,255,0.35)">x/y position, font size,</text>
+  <text x="200" y="374" text-anchor="middle" font-size="8.5" fill="rgba(255,255,255,0.35)">font name — per pdfjs-dist</text>
+
+  <text x="332" y="300" text-anchor="middle" font-size="20" fill="rgba(255,255,255,0.3)">→</text>
+
+  <!-- Stage 2: lines/paragraphs -->
+  <rect x="350" y="196" width="220" height="200" rx="10" fill="rgba(251,191,36,0.06)" stroke="rgba(251,191,36,0.25)" stroke-width="1.5"/>
+  <text x="460" y="222" text-anchor="middle" font-size="12" font-weight="700" fill="rgba(251,191,36,0.85)">Lines → paragraphs</text>
+  <rect x="368" y="240" width="184" height="3" rx="1.5" fill="rgba(255,255,255,0.4)"/>
+  <rect x="368" y="252" width="150" height="3" rx="1.5" fill="rgba(255,255,255,0.3)"/>
+  <rect x="368" y="264" width="170" height="3" rx="1.5" fill="rgba(255,255,255,0.3)"/>
+  <rect x="368" y="288" width="120" height="3" rx="1.5" fill="rgba(255,255,255,0.4)"/>
+  <rect x="368" y="300" width="184" height="3" rx="1.5" fill="rgba(255,255,255,0.3)"/>
+  <rect x="368" y="312" width="90" height="3" rx="1.5" fill="rgba(255,255,255,0.3)"/>
+  <text x="460" y="360" text-anchor="middle" font-size="8.5" fill="rgba(255,255,255,0.35)">Y-tolerance groups lines;</text>
+  <text x="460" y="374" text-anchor="middle" font-size="8.5" fill="rgba(255,255,255,0.35)">Y-gap threshold splits paragraphs</text>
+
+  <text x="592" y="300" text-anchor="middle" font-size="20" fill="rgba(255,255,255,0.3)">→</text>
+
+  <!-- Stage 3: structure detection -->
+  <rect x="610" y="196" width="220" height="200" rx="10" fill="rgba(52,211,153,0.06)" stroke="rgba(52,211,153,0.25)" stroke-width="1.5"/>
+  <text x="720" y="222" text-anchor="middle" font-size="12" font-weight="700" fill="rgba(52,211,153,0.85)">Structure detection</text>
+  <text x="628" y="248" font-size="9" font-weight="700" fill="rgba(255,255,255,0.6)">Heading 1</text>
+  <text x="628" y="264" font-size="8.5" fill="rgba(255,255,255,0.45)">Body paragraph text</text>
+  <rect x="628" y="278" width="184" height="60" rx="4" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <line x1="628" y1="298" x2="812" y2="298" stroke="rgba(255,255,255,0.1)"/>
+  <line x1="690" y1="278" x2="690" y2="338" stroke="rgba(255,255,255,0.1)"/>
+  <line x1="752" y1="278" x2="752" y2="338" stroke="rgba(255,255,255,0.1)"/>
+  <text x="720" y="360" text-anchor="middle" font-size="8.5" fill="rgba(255,255,255,0.35)">font-size vs. median → headings;</text>
+  <text x="720" y="374" text-anchor="middle" font-size="8.5" fill="rgba(255,255,255,0.35)">shared X columns → table cells</text>
+
+  <text x="852" y="300" text-anchor="middle" font-size="20" fill="rgba(255,255,255,0.3)">→</text>
+
+  <!-- Stage 4: DOCX zip -->
+  <rect x="870" y="196" width="220" height="200" rx="10" fill="rgba(96,165,250,0.07)" stroke="rgba(96,165,250,0.3)" stroke-width="1.5"/>
+  <text x="980" y="222" text-anchor="middle" font-size="12" font-weight="700" fill="rgba(96,165,250,0.9)">DOCX (ZIP of XML)</text>
+  <g font-size="8.5" font-family="monospace" fill="rgba(255,255,255,0.5)">
+    <text x="890" y="248">📁 word/</text>
+    <text x="902" y="262">document.xml</text>
+    <text x="902" y="276">styles.xml</text>
+    <text x="890" y="294">📄 [Content_Types].xml</text>
+    <text x="890" y="312">📁 _rels/</text>
+  </g>
+  <text x="980" y="360" text-anchor="middle" font-size="8.5" fill="rgba(255,255,255,0.35)">Built with the docx library —</text>
+  <text x="980" y="374" text-anchor="middle" font-size="8.5" fill="rgba(255,255,255,0.35)">opens in Word, Docs, LibreOffice</text>
+
+  <!-- bottom note -->
+  <rect x="88" y="424" width="1024" height="88" rx="10" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="106" y="448" font-size="10" font-weight="700" fill="rgba(255,255,255,0.5)">None of this structure is stored in the PDF itself</text>
+  <text x="106" y="468" font-size="9" fill="rgba(255,255,255,0.45)">A PDF is a flat stream of positioned glyphs with no paragraph, heading, or table tags. Every stage above is a geometric</text>
+  <text x="106" y="484" font-size="9" fill="rgba(255,255,255,0.45)">inference — grouping by coordinates and font size — not a direct read of explicit structure, because none exists.</text>
+  <text x="106" y="500" font-size="9" fill="rgba(251,191,36,0.75)">⚠ Scanned (image-only) pages skip Stage 1 entirely — no glyphs exist to extract until OCR recognizes them first.</text>
+
+  <rect x="48" y="650" width="1104" height="16" rx="5" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <rect x="460" y="664" width="280" height="10" rx="5" fill="rgba(255,255,255,0.025)"/>
+</svg>
