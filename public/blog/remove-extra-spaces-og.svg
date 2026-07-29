@@ -1,0 +1,74 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="30%" cy="40%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gL" cx="15%" cy="50%" r="55%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.45"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gR" cx="85%" cy="50%" r="55%"><stop offset="0%" stop-color="#0e7490" stop-opacity="0.28"/><stop offset="100%" stop-color="#0e7490" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="lapG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1a1040"/><stop offset="100%" stop-color="#0d0824"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="8" stdDeviation="20" flood-color="#5b21b6" flood-opacity="0.5"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <ellipse cx="180" cy="315" rx="600" ry="500" fill="url(#gL)"/>
+  <ellipse cx="1020" cy="315" rx="600" ry="500" fill="url(#gR)"/>
+
+  <text x="60" y="70" font-size="14" font-weight="700" fill="url(#aG)" filter="url(#glow)">ToolNest AI</text>
+  <text x="60" y="106" font-size="13" fill="rgba(255,255,255,0.35)">Text Tools › Remove Extra Spaces</text>
+  <text x="60" y="175" font-size="38" font-weight="900" fill="url(#aG)" filter="url(#glow)">Remove</text>
+  <text x="60" y="220" font-size="38" font-weight="900" fill="url(#aG)" filter="url(#glow)">Extra Spaces</text>
+  <text x="60" y="270" font-size="18" fill="rgba(255,255,255,0.6)">Double spaces, tabs, trailing spaces</text>
+  <text x="60" y="298" font-size="18" fill="rgba(255,255,255,0.6)">Non-breaking spaces too — Free</text>
+
+  <rect x="60" y="330" width="110" height="52" rx="8" fill="rgba(124,58,237,0.2)" stroke="rgba(124,58,237,0.4)" stroke-width="1"/>
+  <text x="115" y="354" text-anchor="middle" font-size="14" font-weight="900" fill="#a78bfa">Unicode</text>
+  <text x="115" y="372" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.45)">NBSP aware</text>
+
+  <rect x="182" y="330" width="110" height="52" rx="8" fill="rgba(14,116,144,0.15)" stroke="rgba(14,116,144,0.35)" stroke-width="1"/>
+  <text x="237" y="354" text-anchor="middle" font-size="18" font-weight="900" fill="#67e8f9">Trim</text>
+  <text x="237" y="372" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.45)">leading/trailing</text>
+
+  <rect x="304" y="330" width="110" height="52" rx="8" fill="rgba(16,185,129,0.12)" stroke="rgba(16,185,129,0.3)" stroke-width="1"/>
+  <text x="359" y="354" text-anchor="middle" font-size="18" font-weight="900" fill="#34d399">Tabs</text>
+  <text x="359" y="372" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.45)">→ single space</text>
+
+  <rect x="426" y="330" width="110" height="52" rx="8" fill="rgba(251,191,36,0.1)" stroke="rgba(251,191,36,0.25)" stroke-width="1"/>
+  <text x="481" y="354" text-anchor="middle" font-size="20" font-weight="900" fill="#fbbf24">Free</text>
+  <text x="481" y="372" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.45)">no account</text>
+
+  <text x="60" y="560" font-size="14" fill="rgba(255,255,255,0.25)">toolnestai.net/text-tools/remove-extra-spaces</text>
+
+  <rect x="630" y="60" width="530" height="490" rx="16" fill="url(#lapG)" stroke="rgba(124,58,237,0.3)" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="630" y="60" width="530" height="36" rx="16" fill="rgba(255,255,255,0.05)"/>
+  <rect x="630" y="78" width="530" height="18" fill="rgba(255,255,255,0.02)"/>
+  <circle cx="655" cy="78" r="6" fill="rgba(239,68,68,0.6)"/>
+  <circle cx="675" cy="78" r="6" fill="rgba(251,191,36,0.6)"/>
+  <circle cx="695" cy="78" r="6" fill="rgba(34,197,94,0.6)"/>
+
+  <text x="648" y="122" font-size="8.5" font-weight="700" fill="rgba(255,255,255,0.3)">INPUT TEXT</text>
+  <rect x="640" y="128" width="506" height="80" rx="9" fill="rgba(0,0,0,0.5)" stroke="rgba(124,58,237,0.4)" stroke-width="1.5"/>
+  <text x="654" y="152" font-family="monospace" font-size="12" fill="rgba(255,255,255,0.75)">The   quick<tspan fill="rgba(239,68,68,0.6)">··</tspan>brown fox</text>
+  <text x="654" y="174" font-family="monospace" font-size="12" fill="rgba(255,255,255,0.75)">jumps over the lazy dog.<tspan fill="rgba(239,68,68,0.6)">···</tspan></text>
+  <text x="658" y="196" font-size="9" fill="rgba(251,191,36,0.7)">↑ trailing spaces, tab characters, double spaces</text>
+
+  <text x="648" y="232" font-size="8.5" font-weight="700" fill="rgba(52,211,153,0.75)">OUTPUT (cleaned)</text>
+  <rect x="640" y="238" width="506" height="46" rx="9" fill="rgba(52,211,153,0.08)" stroke="rgba(52,211,153,0.28)" stroke-width="1.5"/>
+  <text x="654" y="266" font-family="monospace" font-size="13" fill="rgba(110,231,183,0.95)">The quick brown fox jumps over the lazy dog.</text>
+
+  <g font-size="9" text-anchor="middle">
+    <rect x="640" y="298" width="150" height="24" rx="6" fill="url(#bG)"/>
+    <text x="715" y="314" fill="#fff" font-weight="700">☑ Collapse multi-spaces</text>
+    <rect x="798" y="298" width="150" height="24" rx="6" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="873" y="314" fill="rgba(255,255,255,0.4)">☑ Trim line edges</text>
+    <rect x="640" y="328" width="150" height="24" rx="6" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="715" y="344" fill="rgba(255,255,255,0.4)">☑ Tabs → spaces</text>
+    <rect x="798" y="328" width="150" height="24" rx="6" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="873" y="344" fill="rgba(255,255,255,0.4)">☐ Normalize NBSP</text>
+  </g>
+
+  <rect x="640" y="362" width="506" height="42" rx="7" fill="rgba(255,255,255,0.025)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="656" y="386" font-size="11" fill="rgba(255,255,255,0.55)">67 characters → 44 characters (23 removed)</text>
+
+  <rect x="620" y="550" width="560" height="14" rx="4" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <rect x="760" y="562" width="260" height="8" rx="4" fill="rgba(255,255,255,0.03)"/>
+</svg>

@@ -1,0 +1,103 @@
+<svg viewBox="0 0 900 1100" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="30%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gT" cx="50%" cy="10%" r="60%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.35"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gB" cx="50%" cy="90%" r="60%"><stop offset="0%" stop-color="#0e7490" stop-opacity="0.2"/><stop offset="100%" stop-color="#0e7490" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+  </defs>
+  <rect width="900" height="1100" fill="url(#bg)"/>
+  <ellipse cx="450" cy="180" rx="700" ry="380" fill="url(#gT)"/>
+  <ellipse cx="450" cy="920" rx="700" ry="380" fill="url(#gB)"/>
+
+  <text x="450" y="52" text-anchor="middle" font-size="26" font-weight="900" fill="url(#aG)">The Complete Whitespace Cleanup Guide</text>
+  <text x="450" y="76" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.38)">Every whitespace character, and the regex patterns to clean them</text>
+  <text x="450" y="94" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.22)">toolnestai.net/text-tools/remove-extra-spaces</text>
+
+  <!-- Section 1: whitespace types -->
+  <rect x="32" y="110" width="836" height="38" rx="8" fill="rgba(124,58,237,0.18)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+  <text x="450" y="134" text-anchor="middle" font-size="15" font-weight="800" fill="#a78bfa">01 — Four Whitespace Characters</text>
+
+  <g font-size="10">
+    <rect x="32" y="154" width="196" height="90" rx="8" fill="rgba(167,139,250,0.06)" stroke="rgba(167,139,250,0.16)" stroke-width="1"/>
+    <text x="130" y="176" text-anchor="middle" font-weight="700" fill="#a78bfa">Space</text>
+    <text x="130" y="196" text-anchor="middle" font-family="monospace" fill="rgba(255,255,255,0.5)">U+0020</text>
+    <text x="130" y="216" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-size="8.5">The standard one</text>
+
+    <rect x="238" y="154" width="196" height="90" rx="8" fill="rgba(103,232,249,0.06)" stroke="rgba(103,232,249,0.16)" stroke-width="1"/>
+    <text x="336" y="176" text-anchor="middle" font-weight="700" fill="#67e8f9">Tab</text>
+    <text x="336" y="196" text-anchor="middle" font-family="monospace" fill="rgba(255,255,255,0.5)">U+0009 (\t)</text>
+    <text x="336" y="216" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-size="8.5">From code/spreadsheets</text>
+
+    <rect x="444" y="154" width="196" height="90" rx="8" fill="rgba(251,191,36,0.06)" stroke="rgba(251,191,36,0.16)" stroke-width="1"/>
+    <text x="542" y="176" text-anchor="middle" font-weight="700" fill="#fbbf24">Non-Breaking Space</text>
+    <text x="542" y="196" text-anchor="middle" font-family="monospace" fill="rgba(255,255,255,0.5)">U+00A0</text>
+    <text x="542" y="216" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-size="8.5">Looks identical, invisible bug</text>
+
+    <rect x="650" y="154" width="218" height="90" rx="8" fill="rgba(52,211,153,0.06)" stroke="rgba(52,211,153,0.16)" stroke-width="1"/>
+    <text x="759" y="176" text-anchor="middle" font-weight="700" fill="#6ee7b7">Zero-Width Space</text>
+    <text x="759" y="196" text-anchor="middle" font-family="monospace" fill="rgba(255,255,255,0.5)">U+200B</text>
+    <text x="759" y="216" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-size="8.5">Completely invisible</text>
+  </g>
+
+  <!-- Section 2: regex patterns -->
+  <rect x="32" y="256" width="836" height="38" rx="8" fill="rgba(14,116,144,0.18)" stroke="rgba(14,116,144,0.3)" stroke-width="1"/>
+  <text x="450" y="280" text-anchor="middle" font-size="15" font-weight="800" fill="#67e8f9">02 — Four Cleanup Operations</text>
+
+  <g font-family="monospace" font-size="10">
+    <rect x="32" y="300" width="404" height="80" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="48" y="322" fill="rgba(167,139,250,0.85)">Collapse spaces</text>
+    <text x="48" y="342" fill="rgba(255,255,255,0.55)">/ {`{2,}`}/g → ' '</text>
+    <text x="48" y="362" font-family="'Segoe UI'" fill="rgba(255,255,255,0.3)" font-size="8.5">Multiple spaces → single space</text>
+
+    <rect x="464" y="300" width="404" height="80" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="480" y="322" fill="rgba(103,232,249,0.85)">Trim edges</text>
+    <text x="480" y="342" fill="rgba(255,255,255,0.55)">.trim()</text>
+    <text x="480" y="362" font-family="'Segoe UI'" fill="rgba(255,255,255,0.3)" font-size="8.5">Leading/trailing whitespace removed</text>
+  </g>
+
+  <g font-family="monospace" font-size="10">
+    <rect x="32" y="388" width="404" height="80" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="48" y="410" fill="rgba(52,211,153,0.85)">Tabs → spaces</text>
+    <text x="48" y="430" fill="rgba(255,255,255,0.55)">/\t/g → ' '</text>
+    <text x="48" y="450" font-family="'Segoe UI'" fill="rgba(255,255,255,0.3)" font-size="8.5">Then collapse with other spaces</text>
+
+    <rect x="464" y="388" width="404" height="80" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="480" y="410" fill="rgba(251,191,36,0.85)">Normalize NBSP</text>
+    <text x="480" y="430" fill="rgba(255,255,255,0.55)">/ /g → ' '</text>
+    <text x="480" y="450" font-family="'Segoe UI'" fill="rgba(255,255,255,0.3)" font-size="8.5">Must run BEFORE collapsing spaces</text>
+  </g>
+
+  <!-- Section 3: order matters -->
+  <rect x="32" y="484" width="836" height="38" rx="8" fill="rgba(239,68,68,0.12)" stroke="rgba(239,68,68,0.22)" stroke-width="1"/>
+  <text x="450" y="508" text-anchor="middle" font-size="15" font-weight="800" fill="rgba(239,68,68,0.85)">03 — Order Matters</text>
+
+  <rect x="32" y="528" width="836" height="90" rx="10" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="450" y="552" text-anchor="middle" font-family="monospace" font-size="10.5" fill="rgba(255,255,255,0.6)">Normalize NBSP → Convert tabs → Collapse spaces → Trim edges</text>
+  <text x="450" y="576" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">Collapsing spaces first misses "space + NBSP + space" sequences —</text>
+  <text x="450" y="596" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">always normalize other whitespace types to regular spaces before collapsing</text>
+
+  <!-- Section 4: real bugs -->
+  <rect x="32" y="638" width="836" height="38" rx="8" fill="rgba(16,185,129,0.14)" stroke="rgba(16,185,129,0.25)" stroke-width="1"/>
+  <text x="450" y="662" text-anchor="middle" font-size="15" font-weight="800" fill="#34d399">04 — Real Bugs This Causes</text>
+
+  <g font-size="9.5">
+    <rect x="32" y="682" width="268" height="80" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="48" y="704" font-weight="700" fill="rgba(167,139,250,0.85)">🔑 String comparison</text>
+    <text x="48" y="722" fill="rgba(255,255,255,0.5)">"admin" ≠ "admin " fails</text>
+    <text x="48" y="736" fill="rgba(255,255,255,0.5)">login or lookup checks</text>
+
+    <rect x="314" y="682" width="268" height="80" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="330" y="704" font-weight="700" fill="rgba(103,232,249,0.85)">📊 Duplicate records</text>
+    <text x="330" y="722" fill="rgba(255,255,255,0.5)">"Sales" and "Sales " become</text>
+    <text x="330" y="736" fill="rgba(255,255,255,0.5)">two different DB categories</text>
+
+    <rect x="596" y="682" width="272" height="80" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="612" y="704" font-weight="700" fill="rgba(52,211,153,0.85)">💻 Python IndentationError</text>
+    <text x="612" y="722" fill="rgba(255,255,255,0.5)">Mixed tabs/spaces break</text>
+    <text x="612" y="736" fill="rgba(255,255,255,0.5)">significant-whitespace parsing</text>
+  </g>
+
+  <text x="450" y="808" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.28)">Free tool: toolnestai.net/text-tools/remove-extra-spaces</text>
+  <text x="450" y="828" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">Collapse, trim, and normalize whitespace — client-side, instant</text>
+</svg>

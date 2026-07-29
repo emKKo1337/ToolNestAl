@@ -1,0 +1,91 @@
+<svg viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gL" cx="10%" cy="50%" r="60%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.35"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gR" cx="90%" cy="50%" r="60%"><stop offset="0%" stop-color="#0e7490" stop-opacity="0.2"/><stop offset="100%" stop-color="#0e7490" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="lapG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1a1040"/><stop offset="100%" stop-color="#0d0824"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="12" stdDeviation="24" flood-color="#5b21b6" flood-opacity="0.45"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <ellipse cx="120" cy="337" rx="700" ry="550" fill="url(#gL)"/>
+  <ellipse cx="1080" cy="337" rx="700" ry="550" fill="url(#gR)"/>
+
+  <text x="600" y="42" text-anchor="middle" font-size="13" font-weight="700" fill="url(#aG)" filter="url(#glow)">ToolNest AI — Text Tools</text>
+  <text x="600" y="68" text-anchor="middle" font-size="30" font-weight="900" fill="url(#aG)" filter="url(#glow)">Remove Extra Spaces</text>
+  <text x="600" y="90" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.35)">Double spaces, tabs, trailing whitespace, and non-breaking spaces — free, instant</text>
+
+  <rect x="60" y="108" width="1080" height="542" rx="18" fill="url(#lapG)" stroke="rgba(124,58,237,0.35)" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="60" y="108" width="1080" height="38" rx="18" fill="rgba(255,255,255,0.05)"/>
+  <rect x="60" y="128" width="1080" height="18" fill="rgba(255,255,255,0.02)"/>
+  <circle cx="90" cy="127" r="7" fill="rgba(239,68,68,0.65)"/>
+  <circle cx="114" cy="127" r="7" fill="rgba(251,191,36,0.65)"/>
+  <circle cx="138" cy="127" r="7" fill="rgba(34,197,94,0.65)"/>
+  <text x="600" y="132" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">toolnestai.net/text-tools/remove-extra-spaces</text>
+
+  <!-- Input -->
+  <text x="88" y="176" font-size="9" font-weight="700" fill="rgba(255,255,255,0.28)">INPUT TEXT (with hidden whitespace issues highlighted)</text>
+  <rect x="80" y="182" width="680" height="90" rx="10" fill="rgba(0,0,0,0.55)" stroke="rgba(124,58,237,0.45)" stroke-width="1.5"/>
+  <text x="98" y="208" font-family="monospace" font-size="14" fill="rgba(255,255,255,0.8)">The   quick<tspan fill="rgba(239,68,68,0.65)">··</tspan>brown fox</text>
+  <rect x="235" y="196" width="42" height="16" fill="rgba(239,68,68,0.15)"/>
+  <text x="98" y="234" font-family="monospace" font-size="14" fill="rgba(255,255,255,0.8)">jumps<tspan fill="rgba(251,191,36,0.65)">→</tspan>over the lazy dog.<tspan fill="rgba(239,68,68,0.65)">···</tspan></text>
+  <text x="98" y="256" font-size="9.5" fill="rgba(251,191,36,0.6)">↑ tab character (→) between "jumps" and "over"; trailing spaces at end</text>
+
+  <!-- Output -->
+  <text x="88" y="298" font-size="9" font-weight="700" fill="rgba(52,211,153,0.8)">OUTPUT (cleaned)</text>
+  <rect x="80" y="304" width="680" height="60" rx="10" fill="rgba(52,211,153,0.08)" stroke="rgba(52,211,153,0.3)" stroke-width="1.5"/>
+  <text x="98" y="340" font-family="monospace" font-size="15" fill="rgba(110,231,183,0.95)">The quick brown fox jumps over the lazy dog.</text>
+
+  <!-- Options grid -->
+  <text x="88" y="396" font-size="9" font-weight="700" fill="rgba(255,255,255,0.28)">CLEANUP OPTIONS</text>
+  <g font-size="10.5">
+    <rect x="80" y="402" width="330" height="34" rx="7" fill="url(#bG)"/>
+    <text x="96" y="423" fill="#fff" font-weight="700">☑ Collapse multiple spaces to one</text>
+    <rect x="422" y="402" width="330" height="34" rx="7" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="438" y="423" fill="rgba(255,255,255,0.4)">☑ Trim leading/trailing whitespace</text>
+
+    <rect x="80" y="444" width="330" height="34" rx="7" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="96" y="465" fill="rgba(255,255,255,0.4)">☑ Convert tabs to single space</text>
+    <rect x="422" y="444" width="330" height="34" rx="7" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="438" y="465" fill="rgba(255,255,255,0.4)">☐ Normalize non-breaking spaces</text>
+  </g>
+
+  <!-- Right panel: NBSP explainer -->
+  <rect x="820" y="182" width="300" height="296" rx="12" fill="rgba(255,255,255,0.025)" stroke="rgba(124,58,237,0.18)" stroke-width="1"/>
+  <text x="970" y="206" text-anchor="middle" font-size="11" font-weight="700" fill="rgba(255,255,255,0.5)">The Invisible Space Problem</text>
+
+  <text x="836" y="232" font-size="9.5" font-weight="700" fill="rgba(251,191,36,0.85)">Non-breaking space (U+00A0)</text>
+  <text x="836" y="250" font-size="9" fill="rgba(255,255,255,0.5)">Looks identical to a regular space</text>
+  <text x="836" y="264" font-size="9" fill="rgba(255,255,255,0.5)">but is a DIFFERENT character —</text>
+  <text x="836" y="278" font-size="9" fill="rgba(255,255,255,0.5)">common from copy-pasting web pages</text>
+
+  <rect x="836" y="292" width="268" height="60" rx="6" fill="rgba(0,0,0,0.3)"/>
+  <text x="850" y="312" font-family="monospace" font-size="10" fill="rgba(255,255,255,0.5)">" " (U+0020) regular space</text>
+  <text x="850" y="332" font-family="monospace" font-size="10" fill="rgba(251,191,36,0.8)">" " (U+00A0) non-breaking</text>
+  <text x="850" y="346" font-size="8" fill="rgba(255,255,255,0.3)">Visually identical, different byte values</text>
+
+  <text x="836" y="378" font-size="9.5" font-weight="700" fill="rgba(103,232,249,0.85)">Why it breaks things</text>
+  <text x="836" y="396" font-size="9" fill="rgba(255,255,255,0.5)">A regex checking for a literal space</text>
+  <text x="836" y="410" font-size="9" fill="rgba(255,255,255,0.5)">character (0x20) won't match a NBSP —</text>
+  <text x="836" y="424" font-size="9" fill="rgba(255,255,255,0.5)">"double spaces" that look collapsible</text>
+  <text x="836" y="438" font-size="9" fill="rgba(255,255,255,0.5)">silently survive cleanup</text>
+
+  <text x="836" y="462" font-size="9" fill="rgba(52,211,153,0.8)">Fix: normalize   → regular space first</text>
+
+  <!-- Stats -->
+  <g text-anchor="middle" font-size="9.5">
+    <rect x="80" y="494" width="220" height="46" rx="8" fill="rgba(124,58,237,0.1)" stroke="rgba(124,58,237,0.22)" stroke-width="1"/>
+    <text x="190" y="516" font-size="14" font-weight="900" fill="#a78bfa">67 → 44 chars</text>
+    <text x="190" y="532" fill="rgba(255,255,255,0.38)">23 whitespace characters removed</text>
+  </g>
+
+  <rect x="80" y="552" width="330" height="34" rx="9" fill="url(#bG)" filter="url(#sh)"/>
+  <text x="245" y="574" text-anchor="middle" font-size="13" font-weight="900" fill="#fff">Clean Text</text>
+  <rect x="422" y="552" width="330" height="34" rx="9" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="587" y="574" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.35)">Copy Result</text>
+
+  <rect x="48" y="650" width="1104" height="16" rx="5" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <rect x="460" y="664" width="280" height="10" rx="5" fill="rgba(255,255,255,0.025)"/>
+</svg>

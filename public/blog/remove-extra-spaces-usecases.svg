@@ -1,0 +1,60 @@
+<svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gC" cx="50%" cy="40%" r="60%"><stop offset="0%" stop-color="#0e7490" stop-opacity="0.2"/><stop offset="100%" stop-color="#0e7490" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+  </defs>
+  <rect width="900" height="460" fill="url(#bg)"/>
+  <ellipse cx="450" cy="230" rx="520" ry="320" fill="url(#gC)"/>
+
+  <text x="450" y="36" text-anchor="middle" font-size="20" font-weight="900" fill="url(#aG)">Where Extra Whitespace Actually Causes Problems</text>
+  <text x="450" y="54" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.38)">Not just cosmetic — whitespace bugs break real systems</text>
+
+  <!-- Card 1 -->
+  <rect x="28" y="70" width="270" height="130" rx="10" fill="rgba(124,58,237,0.08)" stroke="rgba(124,58,237,0.2)" stroke-width="1"/>
+  <text x="44" y="92" font-size="11" font-weight="700" fill="#a78bfa">🔑 String comparison bugs</text>
+  <text x="44" y="112" font-size="9" fill="rgba(255,255,255,0.55)">"admin" !== "admin " fails a</text>
+  <text x="44" y="126" font-size="9" fill="rgba(255,255,255,0.55)">login check or database lookup</text>
+  <text x="44" y="140" font-size="9" fill="rgba(255,255,255,0.55)">due to an invisible trailing space</text>
+  <text x="44" y="164" font-size="8" fill="rgba(255,255,255,0.3)">Common cause of "works locally,</text>
+  <text x="44" y="178" font-size="8" fill="rgba(255,255,255,0.3)">fails in production" bugs</text>
+
+  <!-- Card 2 -->
+  <rect x="314" y="70" width="270" height="130" rx="10" fill="rgba(14,116,144,0.08)" stroke="rgba(14,116,144,0.2)" stroke-width="1"/>
+  <text x="330" y="92" font-size="11" font-weight="700" fill="#67e8f9">📊 CSV/data import failures</text>
+  <text x="330" y="112" font-size="9" fill="rgba(255,255,255,0.55)">A trailing space in a category</text>
+  <text x="330" y="126" font-size="9" fill="rgba(255,255,255,0.55)">or ID column silently creates a</text>
+  <text x="330" y="140" font-size="9" fill="rgba(255,255,255,0.55)">duplicate record instead of matching</text>
+  <text x="330" y="164" font-size="8" fill="rgba(255,255,255,0.3)">"Sales" and "Sales " become two</text>
+  <text x="330" y="178" font-size="8" fill="rgba(255,255,255,0.3)">different categories in a database</text>
+
+  <!-- Card 3 -->
+  <rect x="600" y="70" width="272" height="130" rx="10" fill="rgba(16,185,129,0.07)" stroke="rgba(16,185,129,0.2)" stroke-width="1"/>
+  <text x="616" y="92" font-size="11" font-weight="700" fill="#34d399">🌐 Copy-pasted web content</text>
+  <text x="616" y="112" font-size="9" fill="rgba(255,255,255,0.55)">Text copied from a website often</text>
+  <text x="616" y="126" font-size="9" fill="rgba(255,255,255,0.55)">carries non-breaking spaces (NBSP)</text>
+  <text x="616" y="140" font-size="9" fill="rgba(255,255,255,0.55)">used for layout spacing</text>
+  <text x="616" y="164" font-size="8" fill="rgba(255,255,255,0.3)">These look like regular spaces</text>
+  <text x="616" y="178" font-size="8" fill="rgba(255,255,255,0.3)">but are a different character entirely</text>
+
+  <!-- Bottom rows -->
+  <rect x="28" y="212" width="410" height="90" rx="8" fill="rgba(251,191,36,0.06)" stroke="rgba(251,191,36,0.18)" stroke-width="1"/>
+  <text x="44" y="234" font-size="10.5" font-weight="700" fill="#fbbf24">💻 Code indentation issues</text>
+  <text x="44" y="254" font-size="9" fill="rgba(255,255,255,0.55)">Mixed tabs and spaces break Python's</text>
+  <text x="44" y="268" font-size="9" fill="rgba(255,255,255,0.55)">significant-whitespace indentation,</text>
+  <text x="44" y="282" font-size="9" fill="rgba(255,255,255,0.55)">causing IndentationError at runtime</text>
+
+  <rect x="462" y="212" width="410" height="90" rx="8" fill="rgba(236,72,153,0.07)" stroke="rgba(236,72,153,0.2)" stroke-width="1"/>
+  <text x="478" y="234" font-size="10.5" font-weight="700" fill="#f472b6">📝 Word/PDF export artifacts</text>
+  <text x="478" y="254" font-size="9" fill="rgba(255,255,255,0.55)">Copy-pasting from Word or a PDF</text>
+  <text x="478" y="268" font-size="9" fill="rgba(255,255,255,0.55)">frequently introduces double spaces</text>
+  <text x="478" y="282" font-size="9" fill="rgba(255,255,255,0.55)">after periods and inconsistent gaps</text>
+
+  <!-- Bottom line -->
+  <rect x="28" y="314" width="844" height="86" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(124,58,237,0.15)" stroke-width="1"/>
+  <text x="450" y="336" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(167,139,250,0.85)">THE COMMON THREAD</text>
+  <text x="450" y="358" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">Extra whitespace is invisible to the human eye but not to a computer doing exact string</text>
+  <text x="450" y="378" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">comparison — cleaning it up before processing or storing data prevents an entire class of silent bugs</text>
+
+  <text x="450" y="446" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">toolnestai.net/text-tools/remove-extra-spaces</text>
+</svg>

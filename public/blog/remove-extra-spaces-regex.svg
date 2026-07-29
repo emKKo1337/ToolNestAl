@@ -1,0 +1,50 @@
+<svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gC" cx="50%" cy="40%" r="60%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.2"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+  </defs>
+  <rect width="900" height="460" fill="url(#bg)"/>
+  <ellipse cx="450" cy="230" rx="520" ry="320" fill="url(#gC)"/>
+
+  <text x="450" y="36" text-anchor="middle" font-size="20" font-weight="900" fill="url(#aG)">The Regex Patterns Behind Whitespace Cleanup</text>
+  <text x="450" y="54" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.38)">Four operations, four patterns — combine them for a full cleanup</text>
+
+  <!-- Collapse spaces -->
+  <rect x="28" y="70" width="410" height="90" rx="8" fill="rgba(167,139,250,0.06)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+  <text x="44" y="92" font-size="10.5" font-weight="700" fill="#a78bfa">Collapse Multiple Spaces</text>
+  <text x="44" y="116" font-family="monospace" font-size="11" fill="rgba(255,255,255,0.7)">text.replace(/ {2,}/g, ' ')</text>
+  <text x="44" y="140" font-size="9" fill="rgba(255,255,255,0.5)">Matches 2+ consecutive literal spaces, replaces with one</text>
+
+  <!-- Trim -->
+  <rect x="462" y="70" width="410" height="90" rx="8" fill="rgba(103,232,249,0.06)" stroke="rgba(103,232,249,0.2)" stroke-width="1"/>
+  <text x="478" y="92" font-size="10.5" font-weight="700" fill="#67e8f9">Trim Line Edges</text>
+  <text x="478" y="116" font-family="monospace" font-size="11" fill="rgba(255,255,255,0.7)">line.trim()  or  /^\s+|\s+$/g</text>
+  <text x="478" y="140" font-size="9" fill="rgba(255,255,255,0.5)">Removes leading and trailing whitespace per line</text>
+
+  <!-- Tabs to spaces -->
+  <rect x="28" y="170" width="410" height="90" rx="8" fill="rgba(52,211,153,0.06)" stroke="rgba(52,211,153,0.2)" stroke-width="1"/>
+  <text x="44" y="192" font-size="10.5" font-weight="700" fill="#6ee7b7">Tabs to Spaces</text>
+  <text x="44" y="216" font-family="monospace" font-size="11" fill="rgba(255,255,255,0.7)">text.replace(/\t/g, ' ')</text>
+  <text x="44" y="240" font-size="9" fill="rgba(255,255,255,0.5)">Converts tab characters to a single space before collapsing</text>
+
+  <!-- NBSP normalize -->
+  <rect x="462" y="170" width="410" height="90" rx="8" fill="rgba(251,191,36,0.06)" stroke="rgba(251,191,36,0.2)" stroke-width="1"/>
+  <text x="478" y="192" font-size="10.5" font-weight="700" fill="#fbbf24">Normalize Non-Breaking Spaces</text>
+  <text x="478" y="216" font-family="monospace" font-size="11" fill="rgba(255,255,255,0.7)">text.replace(/ /g, ' ')</text>
+  <text x="478" y="240" font-size="9" fill="rgba(255,255,255,0.5)">Converts invisible NBSP (U+00A0) to a regular space</text>
+
+  <!-- Combined pipeline -->
+  <rect x="28" y="272" width="844" height="106" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(124,58,237,0.15)" stroke-width="1"/>
+  <text x="450" y="294" text-anchor="middle" font-size="10.5" font-weight="700" fill="rgba(167,139,250,0.85)">FULL CLEANUP PIPELINE (ORDER MATTERS)</text>
+  <text x="450" y="316" text-anchor="middle" font-family="monospace" font-size="10" fill="rgba(255,255,255,0.6)">text.replace(/ /g, ' ')  →  .replace(/\t/g, ' ')  →  .replace(/ {2,}/g, ' ')  →  .trim()</text>
+  <text x="450" y="340" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.5)">1. Normalize NBSP first, 2. convert tabs, 3. THEN collapse multiple spaces (or NBSPs</text>
+  <text x="450" y="356" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.5)">and tabs mixed with spaces won't be caught by a space-only collapse pattern), 4. trim edges</text>
+
+  <!-- Key gotcha -->
+  <rect x="28" y="386" width="844" height="56" rx="8" fill="rgba(239,68,68,0.06)" stroke="rgba(239,68,68,0.18)" stroke-width="1"/>
+  <text x="450" y="408" text-anchor="middle" font-size="9.5" font-weight="700" fill="rgba(239,68,68,0.85)">⚠ ORDER-DEPENDENT BUG</text>
+  <text x="450" y="426" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.55)">Collapsing spaces BEFORE normalizing NBSP or tabs misses "space + NBSP + space" sequences — normalize first, always</text>
+
+  <text x="450" y="450" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">toolnestai.net/text-tools/remove-extra-spaces</text>
+</svg>
