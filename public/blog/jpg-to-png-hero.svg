@@ -1,0 +1,64 @@
+﻿<svg viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <text x="600" y="52" text-anchor="middle" font-size="24" font-weight="900" fill="url(#aG)">JPG to PNG: What Actually Changes in the Conversion</text>
+  <text x="600" y="74" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.38)">Format differences, file size expectations, and when the conversion is worth it</text>
+  <rect x="40" y="96" width="340" height="390" rx="12" fill="rgba(251,191,36,0.05)" stroke="rgba(251,191,36,0.2)" stroke-width="1.5"/>
+  <text x="210" y="122" text-anchor="middle" font-size="11" font-weight="700" fill="rgba(251,191,36,0.7)">JPG FORMAT</text>
+  <g font-size="9.5" fill="rgba(255,255,255,0.5)">
+    <text x="60" y="150">Compression: Lossy (DCT)</text>
+    <text x="60" y="172">Transparency: None (no alpha channel)</text>
+    <text x="60" y="194">Color depth: Up to 24-bit</text>
+    <text x="60" y="216">File size: Small (60-90% compressed)</text>
+    <text x="60" y="238">Re-save safe: No (generation loss)</text>
+    <text x="60" y="268" font-weight="700" fill="rgba(251,191,36,0.85)">Best for:</text>
+    <text x="60" y="288">Photographs</text>
+    <text x="60" y="308">Images where file size matters most</text>
+    <text x="60" y="328">Content without transparency needs</text>
+    <text x="60" y="356" font-weight="700" fill="rgba(239,68,68,0.75)">Not good for:</text>
+    <text x="60" y="376">Logos, text, sharp line art</text>
+    <text x="60" y="396">Images needing transparency</text>
+    <text x="60" y="416">Images you will edit repeatedly</text>
+    <text x="60" y="436">Screenshots (artifacts on text)</text>
+  </g>
+  <text x="430" y="303" text-anchor="middle" font-size="28" fill="rgba(255,255,255,0.18)">vs</text>
+  <rect x="460" y="96" width="340" height="390" rx="12" fill="rgba(52,211,153,0.05)" stroke="rgba(52,211,153,0.22)" stroke-width="1.5"/>
+  <text x="630" y="122" text-anchor="middle" font-size="11" font-weight="700" fill="rgba(52,211,153,0.7)">PNG FORMAT</text>
+  <g font-size="9.5" fill="rgba(255,255,255,0.5)">
+    <text x="480" y="150">Compression: Lossless (DEFLATE)</text>
+    <text x="480" y="172">Transparency: Yes (full alpha channel)</text>
+    <text x="480" y="194">Color depth: Up to 48-bit</text>
+    <text x="480" y="216">File size: Larger (lossless)</text>
+    <text x="480" y="238">Re-save safe: Yes (pixel-perfect)</text>
+    <text x="480" y="268" font-weight="700" fill="rgba(52,211,153,0.85)">Best for:</text>
+    <text x="480" y="288">Logos, icons, UI elements</text>
+    <text x="480" y="308">Screenshots with text</text>
+    <text x="480" y="328">Images needing transparency</text>
+    <text x="480" y="356" font-weight="700" fill="rgba(239,68,68,0.75)">Not ideal for:</text>
+    <text x="480" y="376">Large photographs (big file sizes)</text>
+    <text x="480" y="396">Web use without size management</text>
+    <text x="480" y="416">Bandwidth-constrained scenarios</text>
+  </g>
+  <rect x="840" y="96" width="320" height="390" rx="12" fill="rgba(124,58,237,0.06)" stroke="rgba(124,58,237,0.2)" stroke-width="1.5"/>
+  <text x="1000" y="122" text-anchor="middle" font-size="11" font-weight="700" fill="rgba(167,139,250,0.7)">CONVERT WHEN...</text>
+  <g font-size="9" fill="rgba(255,255,255,0.5)">
+    <text x="860" y="155" fill="rgba(52,211,153,0.7)" font-weight="700">Good reasons:</text>
+    <text x="860" y="177">You need to edit the image</text>
+    <text x="860" y="197">and keep a lossless copy</text>
+    <text x="860" y="227">You will add transparency later</text>
+    <text x="860" y="257">You need exact pixel fidelity</text>
+    <text x="860" y="277">for editing or layering</text>
+    <text x="860" y="307" fill="rgba(239,68,68,0.7)" font-weight="700">No point converting if:</text>
+    <text x="860" y="329">You just want smaller file size</text>
+    <text x="860" y="349">(PNG will be larger than JPG)</text>
+    <text x="860" y="379">You expect transparency to appear</text>
+    <text x="860" y="399">(JPG had none — it won't appear)</text>
+    <text x="860" y="429">You want higher visual quality</text>
+    <text x="860" y="449">(existing JPG artifacts stay)</text>
+  </g>
+  <text x="600" y="530" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.22)">toolnestai.net/image-tools/jpg-to-png</text>
+</svg>

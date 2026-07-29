@@ -1,0 +1,38 @@
+﻿<svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+  </defs>
+  <rect width="900" height="460" fill="url(#bg)"/>
+  <text x="450" y="36" text-anchor="middle" font-size="20" font-weight="900" fill="url(#aG)">JPG Artifacts: What You Can and Cannot Recover</text>
+  <text x="450" y="56" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.38)">Converting to PNG locks in all existing quality — artifacts and all</text>
+  <rect x="28" y="72" width="420" height="140" rx="10" fill="rgba(52,211,153,0.06)" stroke="rgba(52,211,153,0.2)" stroke-width="1"/>
+  <text x="238" y="94" text-anchor="middle" font-size="11" font-weight="700" fill="rgba(52,211,153,0.85)">What JPG to PNG DOES preserve</text>
+  <g font-size="9.5" fill="rgba(255,255,255,0.5)">
+    <text x="48" y="118">All existing pixel color values (exactly as they are in the JPG)</text>
+    <text x="48" y="140">All brightness and contrast information</text>
+    <text x="48" y="162">Embedded color profile (sRGB, etc.)</text>
+    <text x="48" y="184">Dimensions (width x height unchanged)</text>
+    <text x="48" y="200" font-size="9" fill="rgba(52,211,153,0.6)">PNG is a lossless snapshot of the JPG as it currently exists</text>
+  </g>
+  <rect x="452" y="72" width="420" height="140" rx="10" fill="rgba(239,68,68,0.06)" stroke="rgba(239,68,68,0.2)" stroke-width="1"/>
+  <text x="662" y="94" text-anchor="middle" font-size="11" font-weight="700" fill="rgba(239,68,68,0.85)">What JPG to PNG CANNOT recover</text>
+  <g font-size="9.5" fill="rgba(255,255,255,0.5)">
+    <text x="472" y="118">Pixels discarded during original JPG compression</text>
+    <text x="472" y="140">Smoothed-out fine texture (lost permanently)</text>
+    <text x="472" y="162">DCT block artifacts baked into the JPG</text>
+    <text x="472" y="184">Transparency — JPG has none, PNG gains none</text>
+    <text x="472" y="200" font-size="9" fill="rgba(239,68,68,0.6)">Converting doesn't add quality — it locks in the current state</text>
+  </g>
+  <rect x="28" y="226" width="844" height="100" rx="10" fill="rgba(255,255,255,0.02)" stroke="rgba(124,58,237,0.15)" stroke-width="1"/>
+  <text x="450" y="248" text-anchor="middle" font-size="10.5" font-weight="700" fill="rgba(167,139,250,0.85)">THE RIGHT MENTAL MODEL</text>
+  <text x="450" y="270" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">Think of a JPG file as a photo that was already printed and then scanned. Converting it to PNG</text>
+  <text x="450" y="290" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">is like scanning that printed photo onto archival paper — the archival paper doesn't fix the print.</text>
+  <text x="450" y="310" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">It just preserves what's there without adding further degradation.</text>
+  <rect x="28" y="340" width="844" height="90" rx="8" fill="rgba(251,191,36,0.06)" stroke="rgba(251,191,36,0.18)" stroke-width="1"/>
+  <text x="450" y="362" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(251,191,36,0.85)">WHEN THIS CONVERSION IS VALUABLE</text>
+  <text x="450" y="384" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.5)">You need an editing-safe copy: further editing of PNG won't add JPEG artifacts (unlike re-saving JPG)</text>
+  <text x="450" y="404" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.5)">You need a predictable file format: PNG's spec is extremely stable, unlike JPEG's many dialect variants</text>
+  <text x="450" y="424" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.5)">You need to composite it onto a transparent background in a tool that works better with PNG</text>
+  <text x="450" y="450" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">toolnestai.net/image-tools/jpg-to-png</text>
+</svg>

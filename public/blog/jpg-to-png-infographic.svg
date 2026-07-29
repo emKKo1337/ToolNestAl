@@ -1,0 +1,83 @@
+﻿<svg viewBox="0 0 900 1200" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="30%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gT" cx="50%" cy="10%" r="60%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.35"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gB" cx="50%" cy="90%" r="60%"><stop offset="0%" stop-color="#0e7490" stop-opacity="0.2"/><stop offset="100%" stop-color="#0e7490" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+  </defs>
+  <rect width="900" height="1200" fill="url(#bg)"/>
+  <ellipse cx="450" cy="200" rx="700" ry="400" fill="url(#gT)"/>
+  <ellipse cx="450" cy="1000" rx="700" ry="400" fill="url(#gB)"/>
+  <text x="450" y="52" text-anchor="middle" font-size="26" font-weight="900" fill="url(#aG)">JPG to PNG: The Complete Guide</text>
+  <text x="450" y="76" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.38)">Format differences, when to convert, and what to expect</text>
+  <text x="450" y="96" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.22)">toolnestai.net/image-tools/jpg-to-png</text>
+  <rect x="32" y="112" width="836" height="38" rx="8" fill="rgba(124,58,237,0.18)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+  <text x="450" y="136" text-anchor="middle" font-size="15" font-weight="800" fill="#a78bfa">01 - JPG vs PNG at a Glance</text>
+  <g font-size="9.5">
+    <rect x="32" y="156" width="404" height="130" rx="8" fill="rgba(251,191,36,0.06)" stroke="rgba(251,191,36,0.16)" stroke-width="1"/>
+    <text x="48" y="178" font-weight="700" fill="#fbbf24">JPG</text>
+    <text x="48" y="198" fill="rgba(255,255,255,0.5)">Lossy compression, no transparency</text>
+    <text x="48" y="218" fill="rgba(255,255,255,0.5)">Small file sizes — 60-90% compressed</text>
+    <text x="48" y="238" fill="rgba(255,255,255,0.5)">Generation loss on repeated saves</text>
+    <text x="48" y="258" fill="rgba(255,255,255,0.3)" font-size="8.5">Best for: photos, content without transparency</text>
+    <rect x="464" y="156" width="404" height="130" rx="8" fill="rgba(52,211,153,0.06)" stroke="rgba(52,211,153,0.16)" stroke-width="1"/>
+    <text x="480" y="178" font-weight="700" fill="#6ee7b7">PNG</text>
+    <text x="480" y="198" fill="rgba(255,255,255,0.5)">Lossless compression, full transparency</text>
+    <text x="480" y="218" fill="rgba(255,255,255,0.5)">Larger file sizes (especially for photos)</text>
+    <text x="480" y="238" fill="rgba(255,255,255,0.5)">Pixel-perfect, safe for editing</text>
+    <text x="480" y="258" fill="rgba(255,255,255,0.3)" font-size="8.5">Best for: logos, screenshots, graphics</text>
+  </g>
+  <rect x="32" y="302" width="836" height="38" rx="8" fill="rgba(14,116,144,0.18)" stroke="rgba(14,116,144,0.3)" stroke-width="1"/>
+  <text x="450" y="326" text-anchor="middle" font-size="15" font-weight="800" fill="#67e8f9">02 - What the Conversion Actually Does</text>
+  <rect x="32" y="346" width="836" height="110" rx="10" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="450" y="368" text-anchor="middle" font-size="10.5" fill="rgba(255,255,255,0.6)">JPG to PNG conversion reads the current pixel values from the JPG</text>
+  <text x="450" y="388" text-anchor="middle" font-size="10.5" fill="rgba(255,255,255,0.6)">and re-encodes them as PNG. It is a lossless snapshot of whatever is currently in the JPG.</text>
+  <text x="450" y="412" text-anchor="middle" font-size="9.5" fill="rgba(251,191,36,0.75)">It does NOT recover pixels that were lost in the original JPG compression.</text>
+  <text x="450" y="432" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.4)">Existing artifacts are preserved unchanged.</text>
+  <text x="450" y="448" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.25)">The output file will be larger (typically 50-100% larger) than the original JPG.</text>
+  <rect x="32" y="472" width="836" height="38" rx="8" fill="rgba(239,68,68,0.12)" stroke="rgba(239,68,68,0.22)" stroke-width="1"/>
+  <text x="450" y="496" text-anchor="middle" font-size="15" font-weight="800" fill="rgba(239,68,68,0.85)">03 - Myths and Misconceptions</text>
+  <g font-size="9.5">
+    <rect x="32" y="516" width="836" height="72" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="48" y="538" font-weight="700" fill="rgba(239,68,68,0.8)">Myth: Converting to PNG improves image quality</text>
+    <text x="48" y="558" fill="rgba(255,255,255,0.5)">Reality: PNG preserves the current quality, it doesn't enhance it. A blurry JPG becomes a lossless blurry PNG.</text>
+    <text x="48" y="578" fill="rgba(52,211,153,0.6)">Truth: Once pixels are lost in JPG compression, they cannot be recovered by any conversion.</text>
+    <rect x="32" y="594" width="836" height="72" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="48" y="616" font-weight="700" fill="rgba(239,68,68,0.8)">Myth: PNG supports transparency if I convert from JPG</text>
+    <text x="48" y="636" fill="rgba(255,255,255,0.5)">Reality: Converting a JPG to PNG doesn't add transparency. JPG has no alpha data to convert.</text>
+    <text x="48" y="656" fill="rgba(52,211,153,0.6)">Truth: The converted PNG will have a fully opaque background — no transparency appears.</text>
+    <rect x="32" y="672" width="836" height="72" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="48" y="694" font-weight="700" fill="rgba(239,68,68,0.8)">Myth: PNG is always better than JPG</text>
+    <text x="48" y="714" fill="rgba(255,255,255,0.5)">Reality: PNG is better for specific use cases (logos, editing), JPG for others (photos, web).</text>
+    <text x="48" y="734" fill="rgba(52,211,153,0.6)">Truth: Neither format is universally better — match the format to the content and use case.</text>
+  </g>
+  <rect x="32" y="760" width="836" height="38" rx="8" fill="rgba(16,185,129,0.14)" stroke="rgba(16,185,129,0.25)" stroke-width="1"/>
+  <text x="450" y="784" text-anchor="middle" font-size="15" font-weight="800" fill="#34d399">04 - Good Reasons to Convert JPG to PNG</text>
+  <g font-size="9.5" text-anchor="middle">
+    <rect x="32" y="804" width="196" height="88" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="130" y="828" font-weight="700" fill="rgba(167,139,250,0.85)">Safe editing</text>
+    <text x="130" y="848" fill="rgba(255,255,255,0.45)">Edit without adding</text>
+    <text x="130" y="868" fill="rgba(255,255,255,0.45)">more JPG artifacts</text>
+    <rect x="236" y="804" width="196" height="88" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="334" y="828" font-weight="700" fill="rgba(103,232,249,0.85)">Stable format</text>
+    <text x="334" y="848" fill="rgba(255,255,255,0.45)">PNG spec is more</text>
+    <text x="334" y="868" fill="rgba(255,255,255,0.45)">consistent than JPEG</text>
+    <rect x="440" y="804" width="196" height="88" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="538" y="828" font-weight="700" fill="rgba(52,211,153,0.85)">Compositing</text>
+    <text x="538" y="848" fill="rgba(255,255,255,0.45)">Better for layering</text>
+    <text x="538" y="868" fill="rgba(255,255,255,0.45)">in editing software</text>
+    <rect x="644" y="804" width="224" height="88" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="756" y="828" font-weight="700" fill="rgba(251,191,36,0.85)">Future transparency</text>
+    <text x="756" y="848" fill="rgba(255,255,255,0.45)">Remove background</text>
+    <text x="756" y="868" fill="rgba(255,255,255,0.45)">after converting</text>
+  </g>
+  <rect x="32" y="908" width="836" height="38" rx="8" fill="rgba(124,58,237,0.18)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+  <text x="450" y="932" text-anchor="middle" font-size="15" font-weight="800" fill="#a78bfa">05 - When to Choose PNG Over WebP</text>
+  <rect x="32" y="952" width="836" height="90" rx="10" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="450" y="974" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">WebP (lossless mode) typically produces smaller files than PNG for the same visual quality.</text>
+  <text x="450" y="994" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">Choose PNG when: you need maximum software compatibility, print workflows, or apps that don't support WebP.</text>
+  <text x="450" y="1014" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">Choose WebP when: web use, file size matters, and you have confirmed browser/tool support.</text>
+  <text x="450" y="1070" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.28)">Free tool: toolnestai.net/image-tools/jpg-to-png</text>
+  <text x="450" y="1090" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">Instant, browser-based - your images never leave your device</text>
+</svg>

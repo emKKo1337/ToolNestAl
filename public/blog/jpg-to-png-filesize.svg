@@ -1,0 +1,38 @@
+﻿<svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+  </defs>
+  <rect width="900" height="460" fill="url(#bg)"/>
+  <text x="450" y="36" text-anchor="middle" font-size="20" font-weight="900" fill="url(#aG)">Why PNG Files Are Larger Than JPG</text>
+  <text x="450" y="56" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.38)">Converting JPG to PNG always increases file size — here's why</text>
+  <rect x="28" y="74" width="844" height="130" rx="10" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="450" y="96" text-anchor="middle" font-size="10.5" font-weight="700" fill="rgba(255,255,255,0.4)">FILE SIZE COMPARISON: SAME PHOTO</text>
+  <g font-size="9">
+    <text x="52" y="122" fill="rgba(255,255,255,0.4)">JPG quality 95%</text>
+    <rect x="180" y="110" width="500" height="16" rx="3" fill="rgba(251,191,36,0.4)"/>
+    <text x="688" y="122" fill="rgba(251,191,36,0.85)">2.1 MB</text>
+    <text x="52" y="154" fill="rgba(255,255,255,0.4)">JPG quality 82%</text>
+    <rect x="180" y="142" width="240" height="16" rx="3" fill="rgba(251,191,36,0.25)"/>
+    <text x="428" y="154" fill="rgba(255,255,255,0.5)">1.0 MB</text>
+    <text x="52" y="186" fill="rgba(255,255,255,0.4)">PNG (from JPG source)</text>
+    <rect x="180" y="174" width="680" height="16" rx="3" fill="rgba(239,68,68,0.45)"/>
+    <text x="868" y="186" text-anchor="end" fill="rgba(239,68,68,0.85)">3.4 MB</text>
+  </g>
+  <text x="450" y="216" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.35)">The PNG is 60% larger than the original JPG because it stores every pixel with zero compression loss</text>
+  <rect x="28" y="232" width="844" height="110" rx="10" fill="rgba(255,255,255,0.02)" stroke="rgba(124,58,237,0.15)" stroke-width="1"/>
+  <text x="450" y="254" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(167,139,250,0.85)">WHY LOSSLESS IS BIGGER FOR PHOTOS</text>
+  <text x="450" y="278" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">Photographic images have enormous pixel-level variation — almost every pixel has a slightly different color.</text>
+  <text x="450" y="298" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">Lossless compression (PNG's DEFLATE algorithm) can only compress data by finding repeated patterns.</text>
+  <text x="450" y="318" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">Photos have few repeated patterns at the pixel level, so lossless compression has very limited effect.</text>
+  <rect x="28" y="354" width="420" height="80" rx="8" fill="rgba(52,211,153,0.06)" stroke="rgba(52,211,153,0.18)" stroke-width="1"/>
+  <text x="238" y="376" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(52,211,153,0.85)">PNG is efficient for:</text>
+  <text x="48" y="398" font-size="9.5" fill="rgba(255,255,255,0.5)">Logos, screenshots, diagrams</text>
+  <text x="48" y="418" font-size="9.5" fill="rgba(255,255,255,0.5)">(many repeated pixels = high compression ratio)</text>
+  <rect x="452" y="354" width="420" height="80" rx="8" fill="rgba(251,191,36,0.06)" stroke="rgba(251,191,36,0.18)" stroke-width="1"/>
+  <text x="662" y="376" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(251,191,36,0.85)">PNG is inefficient for:</text>
+  <text x="472" y="398" font-size="9.5" fill="rgba(255,255,255,0.5)">Photographs, natural images</text>
+  <text x="472" y="418" font-size="9.5" fill="rgba(255,255,255,0.5)">(few repeated pixels = low compression ratio)</text>
+  <text x="450" y="450" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">toolnestai.net/image-tools/jpg-to-png</text>
+</svg>
