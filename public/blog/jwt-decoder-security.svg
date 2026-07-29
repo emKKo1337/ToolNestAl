@@ -1,0 +1,42 @@
+<svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gC" cx="50%" cy="40%" r="60%"><stop offset="0%" stop-color="#0e7490" stop-opacity="0.2"/><stop offset="100%" stop-color="#0e7490" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+  </defs>
+  <rect width="900" height="460" fill="url(#bg)"/>
+  <ellipse cx="450" cy="230" rx="520" ry="320" fill="url(#gC)"/>
+
+  <text x="450" y="36" text-anchor="middle" font-size="20" font-weight="900" fill="url(#aG)">JWT Security — What Decoding Doesn't Protect You From</text>
+  <text x="450" y="54" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.38)">A decoded JWT is readable by anyone — these are the real security boundaries</text>
+
+  <!-- Row 1: signature -->
+  <rect x="28" y="70" width="844" height="80" rx="8" fill="rgba(239,68,68,0.06)" stroke="rgba(239,68,68,0.18)" stroke-width="1"/>
+  <text x="44" y="90" font-size="10" font-weight="700" fill="rgba(239,68,68,0.85)">✗ Never trust decoded claims without verifying the signature</text>
+  <text x="44" y="108" font-size="9" fill="rgba(255,255,255,0.55)">Anyone can decode a JWT's payload and read it — Base64URL is not encryption. Anyone can also</text>
+  <text x="44" y="122" font-size="9" fill="rgba(255,255,255,0.55)">forge a fake JWT with any claims they want. Only a valid signature — verified with the secret or</text>
+  <text x="44" y="136" font-size="9" fill="rgba(255,255,255,0.55)">public key — proves the token was issued by your server and hasn't been tampered with.</text>
+
+  <!-- Row 2: alg none -->
+  <rect x="28" y="158" width="844" height="80" rx="8" fill="rgba(239,68,68,0.06)" stroke="rgba(239,68,68,0.18)" stroke-width="1"/>
+  <text x="44" y="178" font-size="10" font-weight="700" fill="rgba(239,68,68,0.85)">✗ The "alg: none" attack</text>
+  <text x="44" y="196" font-size="9" fill="rgba(255,255,255,0.55)">JWT supports an "alg: none" mode meaning "no signature." Some early libraries would accept a</text>
+  <text x="44" y="210" font-size="9" fill="rgba(255,255,255,0.55)">JWT with alg set to "none" and blindly trust its claims. Modern libraries reject this by default —</text>
+  <text x="44" y="224" font-size="9" fill="rgba(255,255,255,0.55)">but always explicitly configure your verifier to only accept the specific algorithm you expect.</text>
+
+  <!-- Row 3: storage -->
+  <rect x="28" y="246" width="844" height="80" rx="8" fill="rgba(251,191,36,0.06)" stroke="rgba(251,191,36,0.18)" stroke-width="1"/>
+  <text x="44" y="266" font-size="10" font-weight="700" fill="rgba(251,191,36,0.85)">⚠ Storing JWTs in localStorage is vulnerable to XSS</text>
+  <text x="44" y="284" font-size="9" fill="rgba(255,255,255,0.55)">JavaScript running on your page (including from a successful XSS attack) can read anything in</text>
+  <text x="44" y="298" font-size="9" fill="rgba(255,255,255,0.55)">localStorage and exfiltrate the token. Prefer httpOnly, Secure, SameSite cookies, which are</text>
+  <text x="44" y="312" font-size="9" fill="rgba(255,255,255,0.55)">inaccessible to JavaScript entirely.</text>
+
+  <!-- Row 4: no revocation -->
+  <rect x="28" y="334" width="844" height="80" rx="8" fill="rgba(251,191,36,0.06)" stroke="rgba(251,191,36,0.18)" stroke-width="1"/>
+  <text x="44" y="354" font-size="10" font-weight="700" fill="rgba(251,191,36,0.85)">⚠ JWTs cannot be revoked before they expire</text>
+  <text x="44" y="372" font-size="9" fill="rgba(255,255,255,0.55)">Once issued, a valid JWT remains valid until its exp claim passes — there is no built-in way to</text>
+  <text x="44" y="386" font-size="9" fill="rgba(255,255,255,0.55)">invalidate it early (e.g., on logout or after a password change) without maintaining a server-side</text>
+  <text x="44" y="400" font-size="9" fill="rgba(255,255,255,0.55)">denylist, which reintroduces the statefulness JWTs were meant to avoid. Keep expiry times short.</text>
+
+  <text x="450" y="440" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">toolnestai.net/developer-tools/jwt-decoder</text>
+</svg>

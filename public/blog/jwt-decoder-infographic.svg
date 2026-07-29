@@ -1,0 +1,124 @@
+<svg viewBox="0 0 900 1200" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="30%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gT" cx="50%" cy="10%" r="60%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.35"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gB" cx="50%" cy="90%" r="60%"><stop offset="0%" stop-color="#0e7490" stop-opacity="0.2"/><stop offset="100%" stop-color="#0e7490" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+  </defs>
+  <rect width="900" height="1200" fill="url(#bg)"/>
+  <ellipse cx="450" cy="200" rx="700" ry="400" fill="url(#gT)"/>
+  <ellipse cx="450" cy="1000" rx="700" ry="400" fill="url(#gB)"/>
+
+  <text x="450" y="52" text-anchor="middle" font-size="28" font-weight="900" fill="url(#aG)">The Complete JWT Guide</text>
+  <text x="450" y="76" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.38)">Everything you need to know about JSON Web Tokens</text>
+  <text x="450" y="94" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.22)">toolnestai.net/developer-tools/jwt-decoder</text>
+
+  <!-- Section 1 -->
+  <rect x="32" y="110" width="836" height="38" rx="8" fill="rgba(124,58,237,0.18)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+  <text x="450" y="134" text-anchor="middle" font-size="15" font-weight="800" fill="#a78bfa">01 — What Is a JWT?</text>
+
+  <rect x="32" y="154" width="836" height="90" rx="10" fill="rgba(255,255,255,0.025)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="450" y="178" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.65)">A JSON Web Token (JWT) is a compact, URL-safe way to represent claims to be</text>
+  <text x="450" y="198" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.65)">transferred between two parties. It consists of three Base64URL-encoded sections</text>
+  <text x="450" y="218" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.65)">separated by dots: a header, a payload, and a cryptographic signature.</text>
+  <text x="450" y="238" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.3)">Standardized in RFC 7519 (2015). Widely used for stateless authentication in APIs and SPAs.</text>
+
+  <!-- Section 2: Anatomy -->
+  <rect x="32" y="256" width="836" height="38" rx="8" fill="rgba(14,116,144,0.18)" stroke="rgba(14,116,144,0.3)" stroke-width="1"/>
+  <text x="450" y="280" text-anchor="middle" font-size="15" font-weight="800" fill="#67e8f9">02 — The Three Parts</text>
+
+  <g font-size="10">
+    <rect x="32" y="300" width="404" height="110" rx="8" fill="rgba(244,114,182,0.06)" stroke="rgba(244,114,182,0.16)" stroke-width="1"/>
+    <text x="48" y="322" font-weight="700" fill="#f472b6">Header</text>
+    <text x="48" y="340" fill="rgba(255,255,255,0.5)">Identifies the signing algorithm</text>
+    <text x="48" y="356" fill="rgba(255,255,255,0.5)">(alg) and token type (typ).</text>
+    <text x="48" y="376" font-family="monospace" font-size="9" fill="rgba(255,255,255,0.35)">{`{"alg":"HS256","typ":"JWT"}`}</text>
+    <text x="48" y="396" font-size="8.5" fill="rgba(255,255,255,0.28)">Base64URL-encoded, not encrypted</text>
+
+    <rect x="464" y="300" width="404" height="110" rx="8" fill="rgba(167,139,250,0.06)" stroke="rgba(167,139,250,0.16)" stroke-width="1"/>
+    <text x="480" y="322" font-weight="700" fill="#a78bfa">Payload (Claims)</text>
+    <text x="480" y="340" fill="rgba(255,255,255,0.5)">The actual data — user ID,</text>
+    <text x="480" y="356" fill="rgba(255,255,255,0.5)">roles, expiration time, etc.</text>
+    <text x="480" y="376" font-family="monospace" font-size="9" fill="rgba(255,255,255,0.35)">{`{"sub":"123","exp":1735689600}`}</text>
+    <text x="480" y="396" font-size="8.5" fill="rgba(255,255,255,0.28)">Readable by anyone — never put secrets here</text>
+  </g>
+
+  <rect x="32" y="418" width="836" height="94" rx="8" fill="rgba(103,232,249,0.06)" stroke="rgba(103,232,249,0.16)" stroke-width="1"/>
+  <text x="48" y="440" font-size="10" font-weight="700" fill="#67e8f9">Signature</text>
+  <text x="48" y="458" font-size="9.5" fill="rgba(255,255,255,0.55)">HMACSHA256(base64UrlEncode(header) + "." + base64UrlEncode(payload), secret_key)</text>
+  <text x="48" y="476" font-size="9.5" fill="rgba(255,255,255,0.55)">Proves the token was issued by a party holding the secret/private key and hasn't been altered.</text>
+  <text x="48" y="496" font-size="8.5" fill="rgba(255,255,255,0.3)">This is the ONLY part that provides real security — the header and payload are just encoded, not protected</text>
+
+  <!-- Section 3: How auth works -->
+  <rect x="32" y="530" width="836" height="38" rx="8" fill="rgba(16,185,129,0.14)" stroke="rgba(16,185,129,0.25)" stroke-width="1"/>
+  <text x="450" y="554" text-anchor="middle" font-size="15" font-weight="800" fill="#34d399">03 — JWT Authentication Flow</text>
+
+  <g font-size="9.5">
+    <rect x="32" y="574" width="196" height="70" rx="7" fill="rgba(124,58,237,0.1)" stroke="rgba(124,58,237,0.2)" stroke-width="1"/>
+    <text x="130" y="594" text-anchor="middle" font-weight="700" fill="#a78bfa">1. Login</text>
+    <text x="130" y="612" text-anchor="middle" fill="rgba(255,255,255,0.5)">Client submits</text>
+    <text x="130" y="626" text-anchor="middle" fill="rgba(255,255,255,0.5)">credentials</text>
+
+    <rect x="238" y="574" width="196" height="70" rx="7" fill="rgba(14,116,144,0.08)" stroke="rgba(14,116,144,0.18)" stroke-width="1"/>
+    <text x="336" y="594" text-anchor="middle" font-weight="700" fill="#67e8f9">2. Issue JWT</text>
+    <text x="336" y="612" text-anchor="middle" fill="rgba(255,255,255,0.5)">Server verifies,</text>
+    <text x="336" y="626" text-anchor="middle" fill="rgba(255,255,255,0.5)">signs a token</text>
+
+    <rect x="444" y="574" width="196" height="70" rx="7" fill="rgba(16,185,129,0.06)" stroke="rgba(16,185,129,0.16)" stroke-width="1"/>
+    <text x="542" y="594" text-anchor="middle" font-weight="700" fill="#34d399">3. Store Token</text>
+    <text x="542" y="612" text-anchor="middle" fill="rgba(255,255,255,0.5)">httpOnly cookie</text>
+    <text x="542" y="626" text-anchor="middle" fill="rgba(255,255,255,0.5)">(not localStorage)</text>
+
+    <rect x="650" y="574" width="218" height="70" rx="7" fill="rgba(251,191,36,0.06)" stroke="rgba(251,191,36,0.16)" stroke-width="1"/>
+    <text x="759" y="594" text-anchor="middle" font-weight="700" fill="#fbbf24">4. Verify Each Request</text>
+    <text x="759" y="612" text-anchor="middle" fill="rgba(255,255,255,0.5)">Server recomputes signature,</text>
+    <text x="759" y="626" text-anchor="middle" fill="rgba(255,255,255,0.5)">checks exp claim</text>
+  </g>
+
+  <text x="450" y="662" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.32)">Stateless: the server verifies using math, not a session lookup — ideal for distributed systems</text>
+
+  <!-- Section 4: Registered claims -->
+  <rect x="32" y="682" width="836" height="38" rx="8" fill="rgba(124,58,237,0.18)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+  <text x="450" y="706" text-anchor="middle" font-size="15" font-weight="800" fill="#a78bfa">04 — Standard Registered Claims</text>
+
+  <g font-family="monospace" font-size="10">
+    <rect x="32" y="726" width="404" height="120" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="48" y="748" fill="rgba(167,139,250,0.85)">iss <tspan font-family="'Segoe UI'" fill="rgba(255,255,255,0.5)">— issuer of the token</tspan></text>
+    <text x="48" y="768" fill="rgba(167,139,250,0.85)">sub <tspan font-family="'Segoe UI'" fill="rgba(255,255,255,0.5)">— subject (usually user ID)</tspan></text>
+    <text x="48" y="788" fill="rgba(167,139,250,0.85)">aud <tspan font-family="'Segoe UI'" fill="rgba(255,255,255,0.5)">— intended audience</tspan></text>
+    <text x="48" y="808" fill="rgba(167,139,250,0.85)">exp <tspan font-family="'Segoe UI'" fill="rgba(255,255,255,0.5)">— expiration timestamp</tspan></text>
+    <text x="48" y="828" fill="rgba(167,139,250,0.85)">nbf <tspan font-family="'Segoe UI'" fill="rgba(255,255,255,0.5)">— not valid before timestamp</tspan></text>
+
+    <rect x="464" y="726" width="404" height="120" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="480" y="748" fill="rgba(103,232,249,0.85)">iat <tspan font-family="'Segoe UI'" fill="rgba(255,255,255,0.5)">— issued-at timestamp</tspan></text>
+    <text x="480" y="768" fill="rgba(103,232,249,0.85)">jti <tspan font-family="'Segoe UI'" fill="rgba(255,255,255,0.5)">— unique token identifier</tspan></text>
+    <text x="480" y="796" font-family="'Segoe UI'" fill="rgba(52,211,153,0.85)">Common algorithms:</text>
+    <text x="480" y="814" fill="rgba(255,255,255,0.5)">HS256 (shared secret)</text>
+    <text x="480" y="832" fill="rgba(255,255,255,0.5)">RS256 (public/private key pair)</text>
+  </g>
+
+  <!-- Section 5: Security warnings -->
+  <rect x="32" y="862" width="836" height="38" rx="8" fill="rgba(239,68,68,0.12)" stroke="rgba(239,68,68,0.22)" stroke-width="1"/>
+  <text x="450" y="886" text-anchor="middle" font-size="15" font-weight="800" fill="rgba(239,68,68,0.85)">05 — Critical Security Rules</text>
+
+  <g font-size="10">
+    <rect x="32" y="906" width="836" height="40" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(239,68,68,0.1)" stroke-width="1"/>
+    <text x="48" y="924" fill="rgba(239,68,68,0.7)">✗</text>
+    <text x="68" y="924" fill="rgba(255,255,255,0.6)">Never trust decoded claims without verifying the signature — anyone can forge an unsigned-looking JWT.</text>
+    <text x="68" y="940" fill="rgba(255,255,255,0.4)" font-size="8.5">Decoding shows you the data; only signature verification proves it's authentic.</text>
+
+    <rect x="32" y="950" width="836" height="40" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(239,68,68,0.1)" stroke-width="1"/>
+    <text x="48" y="968" fill="rgba(239,68,68,0.7)">✗</text>
+    <text x="68" y="968" fill="rgba(255,255,255,0.6)">Reject "alg: none" tokens explicitly — always configure your verifier for the exact expected algorithm.</text>
+    <text x="68" y="984" fill="rgba(255,255,255,0.4)" font-size="8.5">Some vulnerable libraries historically accepted unsigned tokens as valid.</text>
+
+    <rect x="32" y="994" width="836" height="40" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(239,68,68,0.1)" stroke-width="1"/>
+    <text x="48" y="1012" fill="rgba(239,68,68,0.7)">✗</text>
+    <text x="68" y="1012" fill="rgba(255,255,255,0.6)">Don't store JWTs in localStorage — use httpOnly, Secure, SameSite cookies to prevent XSS token theft.</text>
+    <text x="68" y="1028" fill="rgba(255,255,255,0.4)" font-size="8.5">localStorage is readable by any JavaScript running on the page, including injected scripts.</text>
+  </g>
+
+  <text x="450" y="1064" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.28)">Free tool: toolnestai.net/developer-tools/jwt-decoder</text>
+  <text x="450" y="1084" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">Decode header, payload &amp; signature instantly — entirely client-side, never sent to a server</text>
+</svg>

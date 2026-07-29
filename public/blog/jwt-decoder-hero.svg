@@ -1,0 +1,93 @@
+<svg viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gL" cx="10%" cy="50%" r="60%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.35"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gR" cx="90%" cy="50%" r="60%"><stop offset="0%" stop-color="#0e7490" stop-opacity="0.2"/><stop offset="100%" stop-color="#0e7490" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="lapG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1a1040"/><stop offset="100%" stop-color="#0d0824"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="12" stdDeviation="24" flood-color="#5b21b6" flood-opacity="0.45"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <ellipse cx="120" cy="337" rx="700" ry="550" fill="url(#gL)"/>
+  <ellipse cx="1080" cy="337" rx="700" ry="550" fill="url(#gR)"/>
+
+  <text x="600" y="42" text-anchor="middle" font-size="13" font-weight="700" fill="url(#aG)" filter="url(#glow)">ToolNest AI — Developer Tools</text>
+  <text x="600" y="68" text-anchor="middle" font-size="34" font-weight="900" fill="url(#aG)" filter="url(#glow)">JWT Decoder</text>
+  <text x="600" y="90" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.35)">Decode header, payload &amp; signature — instantly, entirely client-side</text>
+
+  <rect x="60" y="108" width="1080" height="542" rx="18" fill="url(#lapG)" stroke="rgba(124,58,237,0.35)" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="60" y="108" width="1080" height="38" rx="18" fill="rgba(255,255,255,0.05)"/>
+  <rect x="60" y="128" width="1080" height="18" fill="rgba(255,255,255,0.02)"/>
+  <circle cx="90" cy="127" r="7" fill="rgba(239,68,68,0.65)"/>
+  <circle cx="114" cy="127" r="7" fill="rgba(251,191,36,0.65)"/>
+  <circle cx="138" cy="127" r="7" fill="rgba(34,197,94,0.65)"/>
+  <text x="600" y="132" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">toolnestai.net/developer-tools/jwt-decoder</text>
+
+  <!-- Encoded token with color-coded parts -->
+  <text x="88" y="176" font-size="9" font-weight="700" fill="rgba(255,255,255,0.28)">ENCODED JWT</text>
+  <rect x="80" y="182" width="1040" height="60" rx="10" fill="rgba(0,0,0,0.55)" stroke="rgba(124,58,237,0.45)" stroke-width="1.5"/>
+  <text x="98" y="218" font-family="monospace" font-size="13">
+    <tspan fill="#f472b6">eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9</tspan><tspan fill="rgba(255,255,255,0.4)">.</tspan><tspan fill="#a78bfa">eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkphbmUgRG9lIn0</tspan><tspan fill="rgba(255,255,255,0.4)">.</tspan><tspan fill="#67e8f9">SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c</tspan>
+  </text>
+
+  <!-- Three decoded columns -->
+  <text x="88" y="270" font-size="9" font-weight="700" fill="rgba(244,114,182,0.8)">HEADER</text>
+  <rect x="80" y="276" width="336" height="140" rx="10" fill="rgba(244,114,182,0.06)" stroke="rgba(244,114,182,0.25)" stroke-width="1.5"/>
+  <text x="98" y="300" font-family="monospace" font-size="11.5" fill="rgba(244,114,182,0.9)">{`{`}</text>
+  <text x="112" y="320" font-family="monospace" font-size="11.5" fill="rgba(244,114,182,0.9)">"alg": "HS256",</text>
+  <text x="112" y="340" font-family="monospace" font-size="11.5" fill="rgba(244,114,182,0.9)">"typ": "JWT"</text>
+  <text x="98" y="360" font-family="monospace" font-size="11.5" fill="rgba(244,114,182,0.9)">{`}`}</text>
+  <text x="98" y="392" font-size="9" fill="rgba(255,255,255,0.4)">Identifies signing algorithm</text>
+  <text x="98" y="406" font-size="9" fill="rgba(255,255,255,0.4)">and token type</text>
+
+  <text x="434" y="270" font-size="9" font-weight="700" fill="rgba(167,139,250,0.8)">PAYLOAD (CLAIMS)</text>
+  <rect x="426" y="276" width="336" height="140" rx="10" fill="rgba(167,139,250,0.06)" stroke="rgba(167,139,250,0.25)" stroke-width="1.5"/>
+  <text x="444" y="296" font-family="monospace" font-size="10.5" fill="rgba(167,139,250,0.9)">{`{`}</text>
+  <text x="458" y="313" font-family="monospace" font-size="10.5" fill="rgba(167,139,250,0.9)">"sub": "1234567890",</text>
+  <text x="458" y="330" font-family="monospace" font-size="10.5" fill="rgba(167,139,250,0.9)">"name": "Jane Doe",</text>
+  <text x="458" y="347" font-family="monospace" font-size="10.5" fill="rgba(167,139,250,0.9)">"iat": 1735603200,</text>
+  <text x="458" y="364" font-family="monospace" font-size="10.5" fill="rgba(167,139,250,0.9)">"exp": 1735689600</text>
+  <text x="444" y="381" font-family="monospace" font-size="10.5" fill="rgba(167,139,250,0.9)">{`}`}</text>
+  <text x="444" y="404" font-size="9" fill="rgba(255,255,255,0.4)">The data itself — visible to anyone</text>
+
+  <text x="780" y="270" font-size="9" font-weight="700" fill="rgba(103,232,249,0.8)">SIGNATURE</text>
+  <rect x="772" y="276" width="348" height="140" rx="10" fill="rgba(103,232,249,0.06)" stroke="rgba(103,232,249,0.25)" stroke-width="1.5"/>
+  <text x="790" y="300" font-family="monospace" font-size="9.5" fill="rgba(103,232,249,0.85)">HMACSHA256(</text>
+  <text x="806" y="318" font-family="monospace" font-size="9.5" fill="rgba(103,232,249,0.85)">base64(header) + "." +</text>
+  <text x="806" y="336" font-family="monospace" font-size="9.5" fill="rgba(103,232,249,0.85)">base64(payload),</text>
+  <text x="806" y="354" font-family="monospace" font-size="9.5" fill="rgba(103,232,249,0.85)">secret_key</text>
+  <text x="790" y="372" font-family="monospace" font-size="9.5" fill="rgba(103,232,249,0.85)">)</text>
+  <text x="790" y="398" font-size="9" fill="rgba(255,255,255,0.4)">Proves the token wasn't</text>
+  <text x="790" y="412" font-size="9" fill="rgba(255,255,255,0.4)">tampered with — requires the key</text>
+
+  <!-- Warning banner -->
+  <rect x="80" y="432" width="1040" height="70" rx="10" fill="rgba(251,191,36,0.07)" stroke="rgba(251,191,36,0.25)" stroke-width="1.5"/>
+  <text x="600" y="458" text-anchor="middle" font-size="13" font-weight="700" fill="rgba(251,191,36,0.9)">⚠ Decoding a JWT is not the same as verifying it</text>
+  <text x="600" y="478" text-anchor="middle" font-size="10.5" fill="rgba(255,255,255,0.5)">Anyone can decode the header and payload of a JWT — they are Base64URL, not encrypted. Only signature</text>
+  <text x="600" y="494" text-anchor="middle" font-size="10.5" fill="rgba(255,255,255,0.5)">verification (which requires the secret or public key) proves the token is authentic and unmodified.</text>
+
+  <!-- Claims reference -->
+  <text x="88" y="530" font-size="9" font-weight="700" fill="rgba(255,255,255,0.28)">STANDARD REGISTERED CLAIMS (RFC 7519)</text>
+  <g font-family="monospace" font-size="10">
+    <rect x="80" y="536" width="255" height="82" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="96" y="556" fill="rgba(167,139,250,0.85)">iss <tspan fill="rgba(255,255,255,0.45)">issuer</tspan></text>
+    <text x="96" y="574" fill="rgba(167,139,250,0.85)">sub <tspan fill="rgba(255,255,255,0.45)">subject (user ID)</tspan></text>
+    <text x="96" y="592" fill="rgba(167,139,250,0.85)">aud <tspan fill="rgba(255,255,255,0.45)">audience</tspan></text>
+    <text x="96" y="610" fill="rgba(167,139,250,0.85)">exp <tspan fill="rgba(255,255,255,0.45)">expiration time</tspan></text>
+
+    <rect x="349" y="536" width="255" height="82" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="365" y="556" fill="rgba(103,232,249,0.85)">nbf <tspan fill="rgba(255,255,255,0.45)">not valid before</tspan></text>
+    <text x="365" y="574" fill="rgba(103,232,249,0.85)">iat <tspan fill="rgba(255,255,255,0.45)">issued at</tspan></text>
+    <text x="365" y="592" fill="rgba(103,232,249,0.85)">jti <tspan fill="rgba(255,255,255,0.45)">JWT ID (unique)</tspan></text>
+
+    <rect x="618" y="536" width="502" height="82" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="634" y="556" fill="rgba(52,211,153,0.85)">Common algorithms:</text>
+    <text x="634" y="576" fill="rgba(255,255,255,0.5)">HS256 (HMAC+SHA256, shared secret) · RS256 (RSA, public/private key)</text>
+    <text x="634" y="594" fill="rgba(255,255,255,0.5)">ES256 (ECDSA) · none (⚠ dangerous — must always be rejected)</text>
+  </g>
+
+  <rect x="48" y="650" width="1104" height="16" rx="5" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <rect x="460" y="664" width="280" height="10" rx="5" fill="rgba(255,255,255,0.025)"/>
+</svg>
