@@ -1,0 +1,111 @@
+﻿<svg viewBox="0 0 900 1200" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="30%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gT" cx="50%" cy="10%" r="60%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.35"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gB" cx="50%" cy="90%" r="60%"><stop offset="0%" stop-color="#0e7490" stop-opacity="0.2"/><stop offset="100%" stop-color="#0e7490" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+  </defs>
+  <rect width="900" height="1200" fill="url(#bg)"/>
+  <ellipse cx="450" cy="200" rx="700" ry="400" fill="url(#gT)"/>
+  <ellipse cx="450" cy="1000" rx="700" ry="400" fill="url(#gB)"/>
+  <text x="450" y="52" text-anchor="middle" font-size="26" font-weight="900" fill="url(#aG)">Remove Background — Complete Guide</text>
+  <text x="450" y="76" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.38)">How AI removes backgrounds and how to get perfect results</text>
+  <text x="450" y="96" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.22)">toolnestai.net/image-tools/remove-background</text>
+
+  <rect x="32" y="112" width="836" height="38" rx="8" fill="rgba(124,58,237,0.18)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+  <text x="450" y="136" text-anchor="middle" font-size="15" font-weight="800" fill="#a78bfa">01 — The AI Process (4 Steps)</text>
+  <g font-size="9.5" text-anchor="middle">
+    <rect x="32" y="156" width="192" height="80" rx="8" fill="rgba(124,58,237,0.1)" stroke="rgba(124,58,237,0.2)" stroke-width="1"/>
+    <text x="128" y="178" font-weight="700" fill="#c4b5fd">Preprocess</text>
+    <text x="128" y="196" fill="rgba(255,255,255,0.5)">Resize to model input</text>
+    <text x="128" y="214" fill="rgba(255,255,255,0.5)">Normalize pixel values</text>
+
+    <rect x="236" y="156" width="192" height="80" rx="8" fill="rgba(139,92,246,0.1)" stroke="rgba(139,92,246,0.2)" stroke-width="1"/>
+    <text x="332" y="178" font-weight="700" fill="#c4b5fd">Neural Net</text>
+    <text x="332" y="196" fill="rgba(255,255,255,0.5)">U-Net encoder extracts</text>
+    <text x="332" y="214" fill="rgba(255,255,255,0.5)">hierarchical features</text>
+
+    <rect x="440" y="156" width="192" height="80" rx="8" fill="rgba(52,211,153,0.08)" stroke="rgba(52,211,153,0.2)" stroke-width="1"/>
+    <text x="536" y="178" font-weight="700" fill="#6ee7b7">Alpha Mask</text>
+    <text x="536" y="196" fill="rgba(255,255,255,0.5)">0-255 confidence per</text>
+    <text x="536" y="214" fill="rgba(255,255,255,0.5)">pixel — edge-aware</text>
+
+    <rect x="644" y="156" width="224" height="80" rx="8" fill="rgba(103,232,249,0.08)" stroke="rgba(103,232,249,0.2)" stroke-width="1"/>
+    <text x="756" y="178" font-weight="700" fill="#67e8f9">PNG Output</text>
+    <text x="756" y="196" fill="rgba(255,255,255,0.5)">Mask applied as alpha</text>
+    <text x="756" y="214" fill="rgba(255,255,255,0.5)">background transparent</text>
+  </g>
+
+  <rect x="32" y="250" width="836" height="38" rx="8" fill="rgba(14,116,144,0.18)" stroke="rgba(14,116,144,0.3)" stroke-width="1"/>
+  <text x="450" y="274" text-anchor="middle" font-size="15" font-weight="800" fill="#67e8f9">02 — Main Use Cases</text>
+  <g font-size="9.5">
+    <rect x="32" y="294" width="836" height="24" rx="6" fill="rgba(52,211,153,0.06)" stroke="rgba(52,211,153,0.14)" stroke-width="1"/>
+    <text x="450" y="310" text-anchor="middle" fill="rgba(52,211,153,0.8)">E-commerce product photos · profile pictures · logo extraction · social media content · thumbnails</text>
+
+    <rect x="32" y="326" width="404" height="70" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="48" y="346" font-size="9" font-weight="700" fill="rgba(255,255,255,0.5)">E-COMMERCE</text>
+    <text x="48" y="362" fill="rgba(255,255,255,0.45)">Amazon, eBay, Shopify mandate clean white/transparent</text>
+    <text x="48" y="378" fill="rgba(255,255,255,0.45)">backgrounds for product listings — AI removes in seconds</text>
+
+    <rect x="464" y="326" width="404" height="70" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="480" y="346" font-size="9" font-weight="700" fill="rgba(255,255,255,0.5)">DESIGN &amp; MARKETING</text>
+    <text x="480" y="362" fill="rgba(255,255,255,0.45)">Place cut-outs on brand colors, add to presentations,</text>
+    <text x="480" y="378" fill="rgba(255,255,255,0.45)">create thumbnails with punchy contrasting backgrounds</text>
+  </g>
+
+  <rect x="32" y="412" width="836" height="38" rx="8" fill="rgba(239,68,68,0.12)" stroke="rgba(239,68,68,0.22)" stroke-width="1"/>
+  <text x="450" y="436" text-anchor="middle" font-size="15" font-weight="800" fill="rgba(239,68,68,0.85)">03 — Edge Cases &amp; When AI Struggles</text>
+  <g font-size="9.5">
+    <rect x="32" y="456" width="404" height="100" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(239,68,68,0.12)" stroke-width="1"/>
+    <text x="234" y="476" text-anchor="middle" font-weight="700" fill="rgba(239,68,68,0.75)">Difficult scenarios</text>
+    <text x="48" y="496" fill="rgba(255,255,255,0.45)">• Fine hair/fur strands — need high-res source image</text>
+    <text x="48" y="514" fill="rgba(255,255,255,0.45)">• Subject same color as background — lacks contrast</text>
+    <text x="48" y="532" fill="rgba(255,255,255,0.45)">• Complex/busy backgrounds — possible edge errors</text>
+    <text x="48" y="550" fill="rgba(255,255,255,0.45)">• Glass, water, smoke — semi-transparency is hardest</text>
+
+    <rect x="464" y="456" width="404" height="100" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(52,211,153,0.12)" stroke-width="1"/>
+    <text x="666" y="476" text-anchor="middle" font-weight="700" fill="rgba(52,211,153,0.75)">How to improve results</text>
+    <text x="480" y="496" fill="rgba(255,255,255,0.45)">• Shoot against plain contrasting background</text>
+    <text x="480" y="514" fill="rgba(255,255,255,0.45)">• Use high-resolution source image (higher detail)</text>
+    <text x="480" y="532" fill="rgba(255,255,255,0.45)">• Good even lighting reduces ambiguous edges</text>
+    <text x="480" y="550" fill="rgba(255,255,255,0.45)">• Avoid wearing same color as background</text>
+  </g>
+
+  <rect x="32" y="572" width="836" height="38" rx="8" fill="rgba(124,58,237,0.18)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+  <text x="450" y="596" text-anchor="middle" font-size="15" font-weight="800" fill="#a78bfa">04 — Programmatic Approaches</text>
+  <g font-size="9">
+    <rect x="32" y="616" width="836" height="130" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="48" y="636" font-weight="700" fill="rgba(255,255,255,0.4)">Python (rembg library)</text>
+    <text x="48" y="654" fill="#a78bfa">from</text><text x="74" y="654" fill="rgba(255,255,255,0.65)"> rembg </text><text x="116" y="654" fill="#a78bfa">import</text><text x="150" y="654" fill="rgba(255,255,255,0.65)"> remove</text>
+    <text x="48" y="672" fill="rgba(255,255,255,0.65)">from PIL </text><text x="104" y="672" fill="#a78bfa">import</text><text x="138" y="672" fill="rgba(255,255,255,0.65)"> Image</text>
+    <text x="48" y="690" fill="rgba(255,255,255,0.65)">img = Image.open(</text><text x="200" y="690" fill="#6ee7b7">"photo.jpg"</text><text x="274" y="690" fill="rgba(255,255,255,0.65)">)</text>
+    <text x="48" y="708" fill="rgba(255,255,255,0.65)">output = remove(img)         </text><text x="252" y="708" fill="rgba(255,255,255,0.3)">    # returns RGBA</text>
+    <text x="48" y="726" fill="rgba(255,255,255,0.65)">output.save(</text><text x="124" y="726" fill="#6ee7b7">"result.png"</text><text x="196" y="726" fill="rgba(255,255,255,0.65)">)</text>
+  </g>
+
+  <rect x="32" y="762" width="836" height="38" rx="8" fill="rgba(16,185,129,0.14)" stroke="rgba(16,185,129,0.25)" stroke-width="1"/>
+  <text x="450" y="786" text-anchor="middle" font-size="15" font-weight="800" fill="#34d399">05 — Best Practices</text>
+  <g text-anchor="middle" font-size="9.5">
+    <rect x="32" y="806" width="270" height="90" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="167" y="828" font-weight="700" fill="rgba(167,139,250,0.85)">Always save as PNG</text>
+    <text x="167" y="848" fill="rgba(255,255,255,0.5)">PNG preserves the alpha</text>
+    <text x="167" y="866" fill="rgba(255,255,255,0.5)">channel — JPG has no</text>
+    <text x="167" y="884" fill="rgba(255,255,255,0.5)">transparency support</text>
+
+    <rect x="315" y="806" width="270" height="90" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="450" y="828" font-weight="700" fill="rgba(103,232,249,0.85)">Check edges at 100%</text>
+    <text x="450" y="848" fill="rgba(255,255,255,0.5)">Zoom in on hair or</text>
+    <text x="450" y="866" fill="rgba(255,255,255,0.5)">complex edges before</text>
+    <text x="450" y="884" fill="rgba(255,255,255,0.5)">using in final output</text>
+
+    <rect x="598" y="806" width="270" height="90" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="733" y="828" font-weight="700" fill="rgba(52,211,153,0.85)">Use high-res source</text>
+    <text x="733" y="848" fill="rgba(255,255,255,0.5)">More pixels = more edge</text>
+    <text x="733" y="866" fill="rgba(255,255,255,0.5)">detail for the model to</text>
+    <text x="733" y="884" fill="rgba(255,255,255,0.5)">preserve accurately</text>
+  </g>
+
+  <text x="450" y="960" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.28)">Free tool: toolnestai.net/image-tools/remove-background</text>
+  <text x="450" y="980" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">Private and free — no upload, runs entirely in your browser</text>
+</svg>

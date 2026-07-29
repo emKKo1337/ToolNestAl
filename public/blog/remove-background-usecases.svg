@@ -1,0 +1,76 @@
+﻿<svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gC" cx="50%" cy="40%" r="60%"><stop offset="0%" stop-color="#0e7490" stop-opacity="0.2"/><stop offset="100%" stop-color="#0e7490" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+  </defs>
+  <rect width="900" height="460" fill="url(#bg)"/>
+  <ellipse cx="450" cy="230" rx="520" ry="320" fill="url(#gC)"/>
+  <text x="450" y="36" text-anchor="middle" font-size="20" font-weight="900" fill="url(#aG)">Background Removal Use Cases + Tips</text>
+  <text x="450" y="54" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.38)">Common applications and how to get the best results</text>
+  <!-- Use case cards -->
+  <g font-size="9.5" text-anchor="middle">
+    <rect x="28" y="70" width="200" height="160" rx="10" fill="rgba(52,211,153,0.06)" stroke="rgba(52,211,153,0.2)" stroke-width="1"/>
+    <text x="128" y="96" font-size="11" font-weight="700" fill="#6ee7b7">Product Photos</text>
+    <text x="128" y="118" fill="rgba(255,255,255,0.5)">E-commerce requires</text>
+    <text x="128" y="136" fill="rgba(255,255,255,0.5)">white/transparent bg</text>
+    <text x="128" y="158" fill="rgba(255,255,255,0.5)">Amazon, Shopify &amp; eBay</text>
+    <text x="128" y="176" fill="rgba(255,255,255,0.5)">mandate clean product</text>
+    <text x="128" y="194" fill="rgba(255,255,255,0.5)">shots with no background</text>
+    <text x="128" y="220" font-size="8.5" fill="rgba(52,211,153,0.7)">Tip: use good lighting</text>
+
+    <rect x="240" y="70" width="200" height="160" rx="10" fill="rgba(103,232,249,0.06)" stroke="rgba(103,232,249,0.2)" stroke-width="1"/>
+    <text x="340" y="96" font-size="11" font-weight="700" fill="#67e8f9">Profile Pictures</text>
+    <text x="340" y="118" fill="rgba(255,255,255,0.5)">LinkedIn, CV, and</text>
+    <text x="340" y="136" fill="rgba(255,255,255,0.5)">team pages need</text>
+    <text x="340" y="158" fill="rgba(255,255,255,0.5)">consistent backgrounds</text>
+    <text x="340" y="176" fill="rgba(255,255,255,0.5)">Place cut-out on any</text>
+    <text x="340" y="194" fill="rgba(255,255,255,0.5)">color or company brand</text>
+    <text x="340" y="220" font-size="8.5" fill="rgba(103,232,249,0.7)">Tip: shoot against plain bg</text>
+
+    <rect x="452" y="70" width="200" height="160" rx="10" fill="rgba(167,139,250,0.06)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+    <text x="552" y="96" font-size="11" font-weight="700" fill="#a78bfa">Logo Extraction</text>
+    <text x="552" y="118" fill="rgba(255,255,255,0.5)">Extract a logo from a</text>
+    <text x="552" y="136" fill="rgba(255,255,255,0.5)">screenshot or scan</text>
+    <text x="552" y="158" fill="rgba(255,255,255,0.5)">Place on any color for</text>
+    <text x="552" y="176" fill="rgba(255,255,255,0.5)">presentations, merch,</text>
+    <text x="552" y="194" fill="rgba(255,255,255,0.5)">or marketing assets</text>
+    <text x="552" y="220" font-size="8.5" fill="rgba(167,139,250,0.7)">Tip: high-res source helps</text>
+
+    <rect x="664" y="70" width="208" height="160" rx="10" fill="rgba(251,191,36,0.06)" stroke="rgba(251,191,36,0.2)" stroke-width="1"/>
+    <text x="768" y="96" font-size="11" font-weight="700" fill="#fbbf24">Social Content</text>
+    <text x="768" y="118" fill="rgba(255,255,255,0.5)">Cut subjects out for</text>
+    <text x="768" y="136" fill="rgba(255,255,255,0.5)">Instagram Stories,</text>
+    <text x="768" y="158" fill="rgba(255,255,255,0.5)">stickers, memes &amp;</text>
+    <text x="768" y="176" fill="rgba(255,255,255,0.5)">YouTube thumbnails</text>
+    <text x="768" y="194" fill="rgba(255,255,255,0.5)">with bold backgrounds</text>
+    <text x="768" y="220" font-size="8.5" fill="rgba(251,191,36,0.7)">Tip: PNG preserves alpha</text>
+  </g>
+  <!-- Edge case table -->
+  <rect x="28" y="248" width="835" height="24" rx="6" fill="rgba(239,68,68,0.1)" stroke="rgba(239,68,68,0.18)" stroke-width="1"/>
+  <text x="450" y="264" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(239,68,68,0.8)">EDGE CASES — when AI struggles and how to help</text>
+  <g font-size="9" text-anchor="middle">
+    <rect x="28" y="278" width="195" height="62" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="126" y="298" font-weight="700" fill="rgba(255,255,255,0.55)">Fine hair/fur</text>
+    <text x="126" y="316" fill="rgba(255,255,255,0.4)">Use high-res source image,</text>
+    <text x="126" y="332" fill="rgba(255,255,255,0.4)">bright contrasting background</text>
+
+    <rect x="232" y="278" width="195" height="62" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="330" y="298" font-weight="700" fill="rgba(255,255,255,0.55)">Same color as bg</text>
+    <text x="330" y="316" fill="rgba(255,255,255,0.4)">Wear/place a contrasting</text>
+    <text x="330" y="332" fill="rgba(255,255,255,0.4)">color to create separation</text>
+
+    <rect x="436" y="278" width="195" height="62" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="534" y="298" font-weight="700" fill="rgba(255,255,255,0.55)">Busy backgrounds</text>
+    <text x="534" y="316" fill="rgba(255,255,255,0.4)">AI still beats manual,</text>
+    <text x="534" y="332" fill="rgba(255,255,255,0.4)">but may need refinement</text>
+
+    <rect x="640" y="278" width="222" height="62" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="751" y="298" font-weight="700" fill="rgba(255,255,255,0.55)">Glass / water / smoke</text>
+    <text x="751" y="316" fill="rgba(255,255,255,0.4)">Semi-transparent objects</text>
+    <text x="751" y="332" fill="rgba(255,255,255,0.4)">are hardest to handle</text>
+  </g>
+  <text x="450" y="404" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.35)">Best results: high resolution, clear subject-background contrast, well-lit photos</text>
+  <text x="450" y="444" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">toolnestai.net/image-tools/remove-background</text>
+</svg>
