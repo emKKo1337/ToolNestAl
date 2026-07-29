@@ -1,0 +1,87 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="30%" cy="40%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gL" cx="15%" cy="50%" r="55%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.45"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gR" cx="85%" cy="50%" r="55%"><stop offset="0%" stop-color="#0e7490" stop-opacity="0.28"/><stop offset="100%" stop-color="#0e7490" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="lapG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1a1040"/><stop offset="100%" stop-color="#0d0824"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="8" stdDeviation="20" flood-color="#5b21b6" flood-opacity="0.5"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <ellipse cx="180" cy="315" rx="600" ry="500" fill="url(#gL)"/>
+  <ellipse cx="1020" cy="315" rx="600" ry="500" fill="url(#gR)"/>
+
+  <text x="60" y="70" font-size="14" font-weight="700" fill="url(#aG)" filter="url(#glow)">ToolNest AI</text>
+  <text x="60" y="106" font-size="13" fill="rgba(255,255,255,0.35)">Calculators › Age Calculator</text>
+  <text x="60" y="185" font-size="52" font-weight="900" fill="url(#aG)" filter="url(#glow)">Age</text>
+  <text x="60" y="245" font-size="52" font-weight="900" fill="url(#aG)" filter="url(#glow)">Calculator</text>
+  <text x="60" y="300" font-size="18" fill="rgba(255,255,255,0.6)">Years, months, days, hours, seconds</text>
+  <text x="60" y="328" font-size="18" fill="rgba(255,255,255,0.6)">Any date range — Free, instant</text>
+
+  <rect x="60" y="358" width="110" height="52" rx="8" fill="rgba(124,58,237,0.2)" stroke="rgba(124,58,237,0.4)" stroke-width="1"/>
+  <text x="115" y="382" text-anchor="middle" font-size="14" font-weight="900" fill="#a78bfa">Exact</text>
+  <text x="115" y="400" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.45)">to the second</text>
+
+  <rect x="182" y="358" width="110" height="52" rx="8" fill="rgba(14,116,144,0.15)" stroke="rgba(14,116,144,0.35)" stroke-width="1"/>
+  <text x="237" y="382" text-anchor="middle" font-size="18" font-weight="900" fill="#67e8f9">Any Date</text>
+  <text x="237" y="400" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.45)">past or future</text>
+
+  <rect x="304" y="358" width="110" height="52" rx="8" fill="rgba(16,185,129,0.12)" stroke="rgba(16,185,129,0.3)" stroke-width="1"/>
+  <text x="359" y="382" text-anchor="middle" font-size="18" font-weight="900" fill="#34d399">Zodiac</text>
+  <text x="359" y="400" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.45)">+ birthstone</text>
+
+  <rect x="426" y="358" width="110" height="52" rx="8" fill="rgba(251,191,36,0.1)" stroke="rgba(251,191,36,0.25)" stroke-width="1"/>
+  <text x="481" y="382" text-anchor="middle" font-size="20" font-weight="900" fill="#fbbf24">Free</text>
+  <text x="481" y="400" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.45)">no account</text>
+
+  <text x="60" y="560" font-size="14" fill="rgba(255,255,255,0.25)">toolnestai.net/calculators/age-calculator</text>
+
+  <rect x="630" y="60" width="530" height="490" rx="16" fill="url(#lapG)" stroke="rgba(124,58,237,0.3)" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="630" y="60" width="530" height="36" rx="16" fill="rgba(255,255,255,0.05)"/>
+  <rect x="630" y="78" width="530" height="18" fill="rgba(255,255,255,0.02)"/>
+  <circle cx="655" cy="78" r="6" fill="rgba(239,68,68,0.6)"/>
+  <circle cx="675" cy="78" r="6" fill="rgba(251,191,36,0.6)"/>
+  <circle cx="695" cy="78" r="6" fill="rgba(34,197,94,0.6)"/>
+
+  <text x="648" y="122" font-size="8.5" font-weight="700" fill="rgba(255,255,255,0.3)">DATE OF BIRTH</text>
+  <rect x="640" y="128" width="242" height="34" rx="8" fill="rgba(0,0,0,0.5)" stroke="rgba(124,58,237,0.4)" stroke-width="1.5"/>
+  <text x="761" y="150" text-anchor="middle" font-family="monospace" font-size="12" fill="rgba(167,139,250,0.9)">March 15, 1990</text>
+  <rect x="898" y="128" width="248" height="34" rx="8" fill="rgba(0,0,0,0.4)" stroke="rgba(103,232,249,0.3)" stroke-width="1.5"/>
+  <text x="1022" y="150" text-anchor="middle" font-family="monospace" font-size="12" fill="rgba(103,232,249,0.85)">Today</text>
+
+  <rect x="640" y="176" width="506" height="88" rx="10" fill="rgba(124,58,237,0.1)" stroke="rgba(124,58,237,0.25)" stroke-width="1.5"/>
+  <text x="893" y="218" text-anchor="middle" font-size="30" font-weight="900" fill="#a78bfa">36 years, 4 months</text>
+  <text x="893" y="240" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.5)">Born a Pisces ♓ — Aquamarine birthstone</text>
+
+  <g text-anchor="middle" font-size="9">
+    <rect x="640" y="278" width="120" height="46" rx="7" fill="rgba(14,116,144,0.1)" stroke="rgba(14,116,144,0.22)" stroke-width="1"/>
+    <text x="700" y="298" font-size="14" font-weight="900" fill="#67e8f9">437</text>
+    <text x="700" y="314" fill="rgba(255,255,255,0.4)">months</text>
+
+    <rect x="768" y="278" width="120" height="46" rx="7" fill="rgba(16,185,129,0.08)" stroke="rgba(16,185,129,0.2)" stroke-width="1"/>
+    <text x="828" y="298" font-size="14" font-weight="900" fill="#34d399">13,285</text>
+    <text x="828" y="314" fill="rgba(255,255,255,0.4)">days</text>
+
+    <rect x="896" y="278" width="120" height="46" rx="7" fill="rgba(251,191,36,0.07)" stroke="rgba(251,191,36,0.18)" stroke-width="1"/>
+    <text x="956" y="298" font-size="13" font-weight="900" fill="#fbbf24">318,840</text>
+    <text x="956" y="314" fill="rgba(255,255,255,0.4)">hours</text>
+
+    <rect x="1024" y="278" width="122" height="46" rx="7" fill="rgba(244,114,182,0.07)" stroke="rgba(244,114,182,0.18)" stroke-width="1"/>
+    <text x="1085" y="298" font-size="12" font-weight="900" fill="#f472b6">1.148B</text>
+    <text x="1085" y="314" fill="rgba(255,255,255,0.4)">seconds</text>
+  </g>
+
+  <text x="648" y="350" font-size="8.5" font-weight="700" fill="rgba(255,255,255,0.3)">FUN FACTS</text>
+  <g font-size="9.5">
+    <rect x="640" y="356" width="506" height="90" rx="7" fill="rgba(255,255,255,0.025)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="656" y="378" fill="rgba(255,255,255,0.55)">🎂 Next birthday: in 228 days</text>
+    <text x="656" y="398" fill="rgba(255,255,255,0.55)">💓 Heartbeats since birth: ~1.47 billion</text>
+    <text x="656" y="418" fill="rgba(255,255,255,0.55)">🌙 Full moons witnessed: 449</text>
+    <text x="656" y="438" fill="rgba(255,255,255,0.55)">🌍 Orbits around the sun: 36</text>
+  </g>
+
+  <rect x="620" y="550" width="560" height="14" rx="4" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <rect x="760" y="562" width="260" height="8" rx="4" fill="rgba(255,255,255,0.03)"/>
+</svg>

@@ -1,0 +1,59 @@
+<svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gC" cx="50%" cy="40%" r="60%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.2"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+  </defs>
+  <rect width="900" height="460" fill="url(#bg)"/>
+  <ellipse cx="450" cy="230" rx="520" ry="320" fill="url(#gC)"/>
+
+  <text x="450" y="36" text-anchor="middle" font-size="20" font-weight="900" fill="url(#aG)">The Leap Year Rule (and Why Feb 29 Babies Are Special)</text>
+  <text x="450" y="54" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.38)">The Gregorian calendar's 3-part rule for deciding which years get an extra day</text>
+
+  <!-- Rule flowchart -->
+  <rect x="28" y="72" width="270" height="90" rx="8" fill="rgba(52,211,153,0.06)" stroke="rgba(52,211,153,0.2)" stroke-width="1"/>
+  <text x="163" y="94" text-anchor="middle" font-size="10.5" font-weight="700" fill="#6ee7b7">Rule 1: Divisible by 4?</text>
+  <text x="163" y="116" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">If NOT divisible by 4 →</text>
+  <text x="163" y="132" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">common year (365 days)</text>
+  <text x="163" y="150" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.3)">e.g. 2025, 2026, 2027</text>
+
+  <rect x="314" y="72" width="270" height="90" rx="8" fill="rgba(251,191,36,0.06)" stroke="rgba(251,191,36,0.2)" stroke-width="1"/>
+  <text x="449" y="94" text-anchor="middle" font-size="10.5" font-weight="700" fill="#fde047">Rule 2: Divisible by 100?</text>
+  <text x="449" y="116" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">If divisible by 4 AND 100 →</text>
+  <text x="449" y="132" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">NOT a leap year (exception)</text>
+  <text x="449" y="150" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.3)">e.g. 1900, 2100, 2200</text>
+
+  <rect x="600" y="72" width="272" height="90" rx="8" fill="rgba(103,232,249,0.06)" stroke="rgba(103,232,249,0.2)" stroke-width="1"/>
+  <text x="736" y="94" text-anchor="middle" font-size="10.5" font-weight="700" fill="#67e8f9">Rule 3: Divisible by 400?</text>
+  <text x="736" y="116" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">If also divisible by 400 →</text>
+  <text x="736" y="132" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">IS a leap year (exception to exception)</text>
+  <text x="736" y="150" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.3)">e.g. 1600, 2000, 2400</text>
+
+  <!-- Examples table -->
+  <rect x="28" y="174" width="844" height="130" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <text x="450" y="196" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(255,255,255,0.4)">WORKED EXAMPLES</text>
+  <g font-size="9.5" font-family="monospace">
+    <text x="48" y="218" fill="rgba(255,255,255,0.55)">2024 ÷ 4 = 506 ✓, ÷ 100 = not whole →</text>
+    <text x="48" y="234" fill="rgba(52,211,153,0.85)">LEAP YEAR (Feb has 29 days)</text>
+
+    <text x="326" y="218" fill="rgba(255,255,255,0.55)">1900 ÷ 4 = 475 ✓, ÷ 100 = 19 ✓, ÷ 400 = not whole →</text>
+    <text x="326" y="234" fill="rgba(239,68,68,0.8)">NOT a leap year (Feb has 28 days)</text>
+
+    <text x="48" y="260" fill="rgba(255,255,255,0.55)">2000 ÷ 4 = 500 ✓, ÷ 100 = 20 ✓, ÷ 400 = 5 ✓ →</text>
+    <text x="48" y="276" fill="rgba(52,211,153,0.85)">LEAP YEAR (all three conditions satisfied)</text>
+
+    <text x="326" y="260" fill="rgba(255,255,255,0.55)">2026 ÷ 4 = 506.5 (not whole) →</text>
+    <text x="326" y="276" fill="rgba(239,68,68,0.8)">NOT a leap year (common year, 365 days)</text>
+  </g>
+  <text x="450" y="298" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.32)">This 3-tier rule keeps the calendar aligned with Earth's ~365.2422-day orbit — accurate to 1 day per ~3,300 years</text>
+
+  <!-- Feb 29 babies -->
+  <rect x="28" y="314" width="844" height="118" rx="8" fill="rgba(167,139,250,0.06)" stroke="rgba(167,139,250,0.18)" stroke-width="1"/>
+  <text x="450" y="336" text-anchor="middle" font-size="10.5" font-weight="700" fill="rgba(167,139,250,0.85)">HOW AGE CALCULATORS HANDLE FEBRUARY 29 BIRTHDAYS</text>
+  <text x="450" y="358" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">Someone born on Feb 29 only has a "real" birthday once every 4 years. In non-leap years, most</text>
+  <text x="450" y="376" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">systems (and the ToolNest Age Calculator) treat their birthday as occurring on either Feb 28</text>
+  <text x="450" y="394" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">or March 1, depending on the convention — legally, most jurisdictions default to Feb 28 or March 1.</text>
+  <text x="450" y="416" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.32)">A person born Feb 29, 2000 turns exactly 26 years old on Feb 29, 2026 (a leap year) — their 26th "real" birthday</text>
+
+  <text x="450" y="452" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">toolnestai.net/calculators/age-calculator</text>
+</svg>

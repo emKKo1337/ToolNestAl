@@ -1,0 +1,139 @@
+<svg viewBox="0 0 900 1200" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="30%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gT" cx="50%" cy="10%" r="60%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.35"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gB" cx="50%" cy="90%" r="60%"><stop offset="0%" stop-color="#0e7490" stop-opacity="0.2"/><stop offset="100%" stop-color="#0e7490" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+  </defs>
+  <rect width="900" height="1200" fill="url(#bg)"/>
+  <ellipse cx="450" cy="200" rx="700" ry="400" fill="url(#gT)"/>
+  <ellipse cx="450" cy="1000" rx="700" ry="400" fill="url(#gB)"/>
+
+  <text x="450" y="52" text-anchor="middle" font-size="28" font-weight="900" fill="url(#aG)">The Complete Age Calculation Guide</text>
+  <text x="450" y="76" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.38)">Everything you need to know about calculating dates and ages precisely</text>
+  <text x="450" y="94" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.22)">toolnestai.net/calculators/age-calculator</text>
+
+  <!-- Section 1 -->
+  <rect x="32" y="110" width="836" height="38" rx="8" fill="rgba(124,58,237,0.18)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+  <text x="450" y="134" text-anchor="middle" font-size="15" font-weight="800" fill="#a78bfa">01 — How Age Is Actually Calculated</text>
+
+  <rect x="32" y="154" width="836" height="90" rx="10" fill="rgba(255,255,255,0.025)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="450" y="178" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.65)">Age is calculated by finding the difference between a birth date and a reference</text>
+  <text x="450" y="198" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.65)">date (usually today), then breaking that difference into years, months, and days —</text>
+  <text x="450" y="218" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.65)">accounting for varying month lengths and leap years along the way.</text>
+  <text x="450" y="238" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.3)">Simple subtraction of years is wrong if the birthday hasn't occurred yet this year.</text>
+
+  <!-- Section 2: Leap year rule -->
+  <rect x="32" y="256" width="836" height="38" rx="8" fill="rgba(14,116,144,0.18)" stroke="rgba(14,116,144,0.3)" stroke-width="1"/>
+  <text x="450" y="280" text-anchor="middle" font-size="15" font-weight="800" fill="#67e8f9">02 — The Leap Year Rule</text>
+
+  <g font-size="10">
+    <rect x="32" y="300" width="404" height="80" rx="8" fill="rgba(52,211,153,0.06)" stroke="rgba(52,211,153,0.16)" stroke-width="1"/>
+    <text x="48" y="322" font-weight="700" fill="#6ee7b7">Divisible by 4 → leap year</text>
+    <text x="48" y="340" fill="rgba(255,255,255,0.5)">Unless also divisible by 100</text>
+    <text x="48" y="356" fill="rgba(255,255,255,0.5)">(then it's NOT a leap year)</text>
+    <text x="48" y="372" font-size="8.5" fill="rgba(255,255,255,0.3)">e.g. 2024 ✓, 2026 ✗, 1900 ✗</text>
+
+    <rect x="464" y="300" width="404" height="80" rx="8" fill="rgba(103,232,249,0.06)" stroke="rgba(103,232,249,0.16)" stroke-width="1"/>
+    <text x="480" y="322" font-weight="700" fill="#67e8f9">Divisible by 400 → exception</text>
+    <text x="480" y="340" fill="rgba(255,255,255,0.5)">Overrides the ÷100 rule —</text>
+    <text x="480" y="356" fill="rgba(255,255,255,0.5)">these years ARE leap years</text>
+    <text x="480" y="372" font-size="8.5" fill="rgba(255,255,255,0.3)">e.g. 2000 ✓, 1600 ✓, 2400 ✓</text>
+  </g>
+
+  <rect x="32" y="390" width="836" height="70" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(124,58,237,0.15)" stroke-width="1"/>
+  <text x="450" y="412" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(167,139,250,0.85)">Why It Matters for Age Calculators</text>
+  <text x="450" y="432" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">People born on Feb 29 only have a calendar-exact birthday every 4 years. Accurate age calculators</text>
+  <text x="450" y="448" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">must define a fallback (usually Feb 28 or March 1) for non-leap years to avoid errors.</text>
+
+  <!-- Section 3: Age breakdown -->
+  <rect x="32" y="474" width="836" height="38" rx="8" fill="rgba(16,185,129,0.14)" stroke="rgba(16,185,129,0.25)" stroke-width="1"/>
+  <text x="450" y="498" text-anchor="middle" font-size="15" font-weight="800" fill="#34d399">03 — Age in Every Unit</text>
+
+  <g text-anchor="middle" font-size="10">
+    <rect x="32" y="518" width="196" height="90" rx="10" fill="rgba(124,58,237,0.1)" stroke="rgba(124,58,237,0.22)" stroke-width="1"/>
+    <text x="130" y="546" font-size="18" font-weight="900" fill="#a78bfa">36y 4m 14d</text>
+    <text x="130" y="566" fill="rgba(255,255,255,0.5)">calendar</text>
+    <text x="130" y="580" fill="rgba(255,255,255,0.5)">breakdown</text>
+
+    <rect x="238" y="518" width="196" height="90" rx="10" fill="rgba(14,116,144,0.08)" stroke="rgba(14,116,144,0.2)" stroke-width="1"/>
+    <text x="336" y="546" font-size="18" font-weight="900" fill="#67e8f9">437</text>
+    <text x="336" y="566" fill="rgba(255,255,255,0.5)">total</text>
+    <text x="336" y="580" fill="rgba(255,255,255,0.5)">months</text>
+
+    <rect x="444" y="518" width="196" height="90" rx="10" fill="rgba(16,185,129,0.07)" stroke="rgba(16,185,129,0.18)" stroke-width="1"/>
+    <text x="542" y="546" font-size="16" font-weight="900" fill="#34d399">13,285</text>
+    <text x="542" y="566" fill="rgba(255,255,255,0.5)">total</text>
+    <text x="542" y="580" fill="rgba(255,255,255,0.5)">days</text>
+
+    <rect x="650" y="518" width="218" height="90" rx="10" fill="rgba(251,191,36,0.07)" stroke="rgba(251,191,36,0.18)" stroke-width="1"/>
+    <text x="759" y="546" font-size="14" font-weight="900" fill="#fbbf24">318,840</text>
+    <text x="759" y="566" fill="rgba(255,255,255,0.5)">total</text>
+    <text x="759" y="580" fill="rgba(255,255,255,0.5)">hours</text>
+  </g>
+
+  <!-- Section 4: Calculation methods -->
+  <rect x="32" y="626" width="836" height="38" rx="8" fill="rgba(124,58,237,0.18)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+  <text x="450" y="650" text-anchor="middle" font-size="15" font-weight="800" fill="#a78bfa">04 — Two Calculation Methods</text>
+
+  <g font-size="10">
+    <rect x="32" y="670" width="404" height="90" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(167,139,250,0.15)" stroke-width="1"/>
+    <text x="48" y="692" font-weight="700" fill="#a78bfa">Calendar Method (common)</text>
+    <text x="48" y="710" fill="rgba(255,255,255,0.5)">Subtract birth year from current year;</text>
+    <text x="48" y="726" fill="rgba(255,255,255,0.5)">subtract 1 more if this year's birthday</text>
+    <text x="48" y="742" fill="rgba(255,255,255,0.5)">hasn't occurred yet.</text>
+
+    <rect x="464" y="670" width="404" height="90" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(103,232,249,0.15)" stroke-width="1"/>
+    <text x="480" y="692" font-weight="700" fill="#67e8f9">Full-Day Method (precise)</text>
+    <text x="480" y="710" fill="rgba(255,255,255,0.5)">Count exact elapsed days between</text>
+    <text x="480" y="726" fill="rgba(255,255,255,0.5)">dates, then convert to years/months/</text>
+    <text x="480" y="742" fill="rgba(255,255,255,0.5)">days — required for legal/medical use.</text>
+  </g>
+
+  <!-- Section 5: Use cases -->
+  <rect x="32" y="780" width="836" height="38" rx="8" fill="rgba(14,116,144,0.18)" stroke="rgba(14,116,144,0.3)" stroke-width="1"/>
+  <text x="450" y="804" text-anchor="middle" font-size="15" font-weight="800" fill="#67e8f9">05 — Beyond Birthdays</text>
+
+  <g font-size="9.5">
+    <rect x="32" y="824" width="268" height="60" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="48" y="844" font-weight="700" fill="rgba(167,139,250,0.85)">📋 Legal Eligibility</text>
+    <text x="48" y="860" fill="rgba(255,255,255,0.5)">Voting, licenses, retirement cutoffs</text>
+    <text x="48" y="874" fill="rgba(255,255,255,0.5)">requiring exact age precision</text>
+
+    <rect x="314" y="824" width="268" height="60" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="330" y="844" font-weight="700" fill="rgba(103,232,249,0.85)">💼 Employment Duration</text>
+    <text x="330" y="860" fill="rgba(255,255,255,0.5)">Tenure calculations for severance</text>
+    <text x="330" y="874" fill="rgba(255,255,255,0.5)">pay and vacation accrual</text>
+
+    <rect x="596" y="824" width="272" height="60" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="612" y="844" font-weight="700" fill="rgba(52,211,153,0.85)">🏥 Medical Dates</text>
+    <text x="612" y="860" fill="rgba(255,255,255,0.5)">Gestational age, treatment</text>
+    <text x="612" y="874" fill="rgba(255,255,255,0.5)">schedules, diagnosis tracking</text>
+  </g>
+
+  <!-- Section 6: How to use -->
+  <rect x="32" y="912" width="836" height="38" rx="8" fill="rgba(16,185,129,0.14)" stroke="rgba(16,185,129,0.25)" stroke-width="1"/>
+  <text x="450" y="936" text-anchor="middle" font-size="15" font-weight="800" fill="#34d399">06 — How to Use the Age Calculator</text>
+
+  <g font-size="10.5">
+    <rect x="48" y="956" width="28" height="28" rx="14" fill="url(#bG)"/>
+    <text x="62" y="974" text-anchor="middle" font-weight="900" fill="#fff">1</text>
+    <text x="90" y="975" fill="rgba(255,255,255,0.65)">Enter the date of birth (or the earlier date in any date range)</text>
+
+    <rect x="48" y="994" width="28" height="28" rx="14" fill="url(#bG)"/>
+    <text x="62" y="1012" text-anchor="middle" font-weight="900" fill="#fff">2</text>
+    <text x="90" y="1013" fill="rgba(255,255,255,0.65)">Enter the "as of" date — defaults to today, but can be any past or future date</text>
+
+    <rect x="48" y="1032" width="28" height="28" rx="14" fill="url(#bG)"/>
+    <text x="62" y="1050" text-anchor="middle" font-weight="900" fill="#fff">3</text>
+    <text x="90" y="1051" fill="rgba(255,255,255,0.65)">View the exact breakdown in years, months, days, hours, and seconds</text>
+
+    <rect x="48" y="1070" width="28" height="28" rx="14" fill="url(#bG)"/>
+    <text x="62" y="1088" text-anchor="middle" font-weight="900" fill="#fff">4</text>
+    <text x="90" y="1089" fill="rgba(255,255,255,0.65)">Check zodiac sign, birthstone, and fun facts like next birthday countdown</text>
+  </g>
+
+  <text x="450" y="1128" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.28)">Free tool: toolnestai.net/calculators/age-calculator</text>
+  <text x="450" y="1148" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">Instant, client-side date calculations — any date range, past or future</text>
+</svg>
