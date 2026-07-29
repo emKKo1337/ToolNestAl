@@ -1,0 +1,100 @@
+<svg viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gL" cx="10%" cy="50%" r="60%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.35"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gR" cx="90%" cy="50%" r="60%"><stop offset="0%" stop-color="#0e7490" stop-opacity="0.2"/><stop offset="100%" stop-color="#0e7490" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="lapG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1a1040"/><stop offset="100%" stop-color="#0d0824"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="12" stdDeviation="24" flood-color="#5b21b6" flood-opacity="0.45"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <ellipse cx="120" cy="337" rx="700" ry="550" fill="url(#gL)"/>
+  <ellipse cx="1080" cy="337" rx="700" ry="550" fill="url(#gR)"/>
+
+  <text x="600" y="42" text-anchor="middle" font-size="13" font-weight="700" fill="url(#aG)" filter="url(#glow)">ToolNest AI — Text Tools</text>
+  <text x="600" y="68" text-anchor="middle" font-size="30" font-weight="900" fill="url(#aG)" filter="url(#glow)">Remove Duplicate Lines</text>
+  <text x="600" y="90" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.35)">Case-sensitive &amp; insensitive modes, keep-first or keep-last — free, instant</text>
+
+  <rect x="60" y="108" width="1080" height="542" rx="18" fill="url(#lapG)" stroke="rgba(124,58,237,0.35)" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="60" y="108" width="1080" height="38" rx="18" fill="rgba(255,255,255,0.05)"/>
+  <rect x="60" y="128" width="1080" height="18" fill="rgba(255,255,255,0.02)"/>
+  <circle cx="90" cy="127" r="7" fill="rgba(239,68,68,0.65)"/>
+  <circle cx="114" cy="127" r="7" fill="rgba(251,191,36,0.65)"/>
+  <circle cx="138" cy="127" r="7" fill="rgba(34,197,94,0.65)"/>
+  <text x="600" y="132" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">toolnestai.net/text-tools/remove-duplicate-lines</text>
+
+  <!-- Options -->
+  <g font-size="10" text-anchor="middle">
+    <rect x="80" y="158" width="150" height="26" rx="6" fill="url(#bG)"/>
+    <text x="155" y="176" fill="#fff" font-weight="700">☑ Case-sensitive</text>
+    <rect x="238" y="158" width="150" height="26" rx="6" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="313" y="176" fill="rgba(255,255,255,0.4)">☐ Trim whitespace</text>
+    <rect x="396" y="158" width="150" height="26" rx="6" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="471" y="176" fill="rgba(255,255,255,0.4)">Keep: First ▾</text>
+  </g>
+
+  <!-- Before/After -->
+  <text x="88" y="212" font-size="9" font-weight="700" fill="rgba(255,255,255,0.28)">INPUT (8 lines, 3 duplicates)</text>
+  <rect x="80" y="218" width="330" height="240" rx="10" fill="rgba(0,0,0,0.4)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="98" y="244" font-family="monospace" font-size="12.5" fill="rgba(255,255,255,0.6)">alice@email.com</text>
+  <text x="98" y="268" font-family="monospace" font-size="12.5" fill="rgba(255,255,255,0.6)">bob@email.com</text>
+  <text x="98" y="292" font-family="monospace" font-size="12.5" fill="rgba(239,68,68,0.75)">alice@email.com  ← dup</text>
+  <text x="98" y="316" font-family="monospace" font-size="12.5" fill="rgba(255,255,255,0.6)">carol@email.com</text>
+  <text x="98" y="340" font-family="monospace" font-size="12.5" fill="rgba(251,191,36,0.8)">Bob@email.com  ← diff case</text>
+  <text x="98" y="364" font-family="monospace" font-size="12.5" fill="rgba(255,255,255,0.6)">dave@email.com</text>
+  <text x="98" y="388" font-family="monospace" font-size="12.5" fill="rgba(239,68,68,0.75)">carol@email.com  ← dup</text>
+  <text x="98" y="412" font-family="monospace" font-size="12.5" fill="rgba(251,191,36,0.8)">dave@email.com   ← dup</text>
+
+  <text x="432" y="330" text-anchor="middle" font-size="22" fill="rgba(255,255,255,0.3)">→</text>
+
+  <text x="464" y="212" font-size="9" font-weight="700" fill="rgba(52,211,153,0.8)">OUTPUT (5 unique, order preserved)</text>
+  <rect x="456" y="218" width="330" height="240" rx="10" fill="rgba(52,211,153,0.08)" stroke="rgba(52,211,153,0.28)" stroke-width="1"/>
+  <text x="474" y="244" font-family="monospace" font-size="12.5" fill="rgba(110,231,183,0.9)">alice@email.com</text>
+  <text x="474" y="268" font-family="monospace" font-size="12.5" fill="rgba(110,231,183,0.9)">bob@email.com</text>
+  <text x="474" y="292" font-family="monospace" font-size="12.5" fill="rgba(110,231,183,0.9)">carol@email.com</text>
+  <text x="474" y="316" font-family="monospace" font-size="12.5" fill="rgba(110,231,183,0.9)">Bob@email.com</text>
+  <text x="474" y="340" font-family="monospace" font-size="12.5" fill="rgba(110,231,183,0.9)">dave@email.com</text>
+  <text x="474" y="370" font-size="10" fill="rgba(251,191,36,0.75)">⚠ "Bob" kept separately from "bob"</text>
+  <text x="474" y="388" font-size="9.5" fill="rgba(255,255,255,0.35)">(case-sensitive mode treats them as different)</text>
+
+  <!-- Right panel -->
+  <rect x="820" y="218" width="300" height="240" rx="12" fill="rgba(255,255,255,0.025)" stroke="rgba(124,58,237,0.18)" stroke-width="1"/>
+  <text x="970" y="242" text-anchor="middle" font-size="11" font-weight="700" fill="rgba(255,255,255,0.5)">How It Works</text>
+
+  <g font-size="9.5">
+    <text x="836" y="266" fill="rgba(167,139,250,0.85)" font-weight="700">1. Split into lines</text>
+    <text x="836" y="282" fill="rgba(255,255,255,0.5)">By newline character (\n)</text>
+
+    <text x="836" y="306" fill="rgba(103,232,249,0.85)" font-weight="700">2. Track seen lines</text>
+    <text x="836" y="322" fill="rgba(255,255,255,0.5)">Using a Set/HashSet — O(1)</text>
+    <text x="836" y="338" fill="rgba(255,255,255,0.5)">lookup per line, O(n) total</text>
+
+    <text x="836" y="362" fill="rgba(52,211,153,0.85)" font-weight="700">3. Filter duplicates</text>
+    <text x="836" y="378" fill="rgba(255,255,255,0.5)">Keep first (or last)</text>
+    <text x="836" y="394" fill="rgba(255,255,255,0.5)">occurrence of each line</text>
+
+    <text x="836" y="418" fill="rgba(251,191,36,0.85)" font-weight="700">4. Rejoin</text>
+    <text x="836" y="434" fill="rgba(255,255,255,0.5)">Original order preserved</text>
+  </g>
+
+  <!-- Stats and buttons -->
+  <g text-anchor="middle" font-size="9.5">
+    <rect x="80" y="478" width="220" height="46" rx="8" fill="rgba(124,58,237,0.1)" stroke="rgba(124,58,237,0.22)" stroke-width="1"/>
+    <text x="190" y="500" font-size="14" font-weight="900" fill="#a78bfa">8 → 5 lines</text>
+    <text x="190" y="516" fill="rgba(255,255,255,0.38)">3 duplicates removed</text>
+
+    <rect x="316" y="478" width="470" height="46" rx="8" fill="rgba(14,116,144,0.08)" stroke="rgba(14,116,144,0.2)" stroke-width="1"/>
+    <text x="551" y="500" font-size="12" font-weight="900" fill="#67e8f9">Case-sensitive mode — order preserved</text>
+    <text x="551" y="516" fill="rgba(255,255,255,0.38)">First occurrence kept for each unique line</text>
+  </g>
+
+  <rect x="80" y="538" width="330" height="34" rx="9" fill="url(#bG)" filter="url(#sh)"/>
+  <text x="245" y="560" text-anchor="middle" font-size="13" font-weight="900" fill="#fff">Copy Result</text>
+  <rect x="820" y="478" width="300" height="34" rx="9" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="970" y="500" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.35)">Download .txt</text>
+
+  <rect x="48" y="650" width="1104" height="16" rx="5" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <rect x="460" y="664" width="280" height="10" rx="5" fill="rgba(255,255,255,0.025)"/>
+</svg>

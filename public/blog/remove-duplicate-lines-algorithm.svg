@@ -1,0 +1,63 @@
+<svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gC" cx="50%" cy="40%" r="60%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.2"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+  </defs>
+  <rect width="900" height="460" fill="url(#bg)"/>
+  <ellipse cx="450" cy="230" rx="520" ry="320" fill="url(#gC)"/>
+
+  <text x="450" y="36" text-anchor="middle" font-size="20" font-weight="900" fill="url(#aG)">O(n²) vs O(n) — Why Algorithm Choice Matters</text>
+  <text x="450" y="54" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.38)">The naive approach to deduplication doesn't scale — here's why</text>
+
+  <!-- Naive nested loop -->
+  <rect x="28" y="70" width="410" height="150" rx="10" fill="rgba(239,68,68,0.06)" stroke="rgba(239,68,68,0.2)" stroke-width="1"/>
+  <text x="233" y="94" text-anchor="middle" font-size="12" font-weight="700" fill="#f87171">✗ Naive: Nested Loop — O(n²)</text>
+  <text x="44" y="118" font-family="monospace" font-size="9.5" fill="rgba(255,255,255,0.6)">for each line in list:</text>
+  <text x="44" y="134" font-family="monospace" font-size="9.5" fill="rgba(255,255,255,0.6)">  for each other line in list:</text>
+  <text x="44" y="150" font-family="monospace" font-size="9.5" fill="rgba(255,255,255,0.6)">    if line == other line: mark duplicate</text>
+  <text x="44" y="174" font-size="9" fill="rgba(255,255,255,0.5)">Every line compared against every other line —</text>
+  <text x="44" y="190" font-size="9" fill="rgba(255,255,255,0.5)">10,000 lines = up to 100,000,000 comparisons</text>
+  <text x="44" y="206" font-size="8.5" fill="rgba(255,255,255,0.3)">Becomes noticeably slow beyond a few thousand lines</text>
+
+  <!-- Hash set -->
+  <rect x="462" y="70" width="410" height="150" rx="10" fill="rgba(52,211,153,0.06)" stroke="rgba(52,211,153,0.2)" stroke-width="1"/>
+  <text x="667" y="94" text-anchor="middle" font-size="12" font-weight="700" fill="#6ee7b7">✓ Hash Set: Single Pass — O(n)</text>
+  <text x="478" y="118" font-family="monospace" font-size="9.5" fill="rgba(255,255,255,0.6)">seen = new Set()</text>
+  <text x="478" y="134" font-family="monospace" font-size="9.5" fill="rgba(255,255,255,0.6)">for each line in list:</text>
+  <text x="478" y="150" font-family="monospace" font-size="9.5" fill="rgba(255,255,255,0.6)">  if !seen.has(line): output line; seen.add(line)</text>
+  <text x="478" y="174" font-size="9" fill="rgba(255,255,255,0.5)">Each line checked once against a hash set —</text>
+  <text x="478" y="190" font-size="9" fill="rgba(255,255,255,0.5)">10,000 lines = ~10,000 constant-time lookups</text>
+  <text x="478" y="206" font-size="8.5" fill="rgba(255,255,255,0.3)">Scales linearly — handles millions of lines quickly</text>
+
+  <!-- Timing comparison chart -->
+  <rect x="28" y="232" width="844" height="130" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <text x="450" y="254" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(255,255,255,0.4)">APPROXIMATE PROCESSING TIME BY LIST SIZE</text>
+  <g font-size="9" text-anchor="middle">
+    <text x="150" y="272" fill="rgba(255,255,255,0.5)">1,000 lines</text>
+    <rect x="100" y="278" width="60" height="10" rx="2" fill="rgba(52,211,153,0.6)"/>
+    <rect x="100" y="292" width="80" height="10" rx="2" fill="rgba(239,68,68,0.5)"/>
+    <text x="230" y="286" fill="rgba(52,211,153,0.75)" font-size="8">O(n): ~1ms</text>
+    <text x="230" y="300" fill="rgba(239,68,68,0.7)" font-size="8">O(n²): ~50ms</text>
+
+    <text x="450" y="272" fill="rgba(255,255,255,0.5)">10,000 lines</text>
+    <rect x="400" y="278" width="60" height="10" rx="2" fill="rgba(52,211,153,0.6)"/>
+    <rect x="400" y="292" width="140" height="10" rx="2" fill="rgba(239,68,68,0.5)"/>
+    <text x="550" y="286" fill="rgba(52,211,153,0.75)" font-size="8">O(n): ~5ms</text>
+    <text x="550" y="300" fill="rgba(239,68,68,0.7)" font-size="8">O(n²): ~5 sec</text>
+
+    <text x="720" y="272" fill="rgba(255,255,255,0.5)">100,000 lines</text>
+    <rect x="670" y="278" width="60" height="10" rx="2" fill="rgba(52,211,153,0.6)"/>
+    <rect x="670" y="292" width="170" height="10" rx="2" fill="rgba(239,68,68,0.5)"/>
+    <text x="500" y="326" text-anchor="middle" fill="rgba(52,211,153,0.75)" font-size="8">O(n): ~50ms</text>
+    <text x="500" y="342" text-anchor="middle" fill="rgba(239,68,68,0.7)" font-size="8">O(n²): several minutes (browser may freeze)</text>
+  </g>
+
+  <!-- Note -->
+  <rect x="28" y="372" width="844" height="66" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(124,58,237,0.15)" stroke-width="1"/>
+  <text x="450" y="394" text-anchor="middle" font-size="9.5" font-weight="700" fill="rgba(167,139,250,0.85)">WHY THIS MATTERS FOR ONLINE TOOLS</text>
+  <text x="450" y="414" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.5)">The ToolNest Remove Duplicate Lines tool uses hash-based O(n) deduplication, so it stays instant</text>
+  <text x="450" y="428" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.5)">even on large pasted lists — no noticeable slowdown as your input grows.</text>
+
+  <text x="450" y="450" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">toolnestai.net/text-tools/remove-duplicate-lines</text>
+</svg>
