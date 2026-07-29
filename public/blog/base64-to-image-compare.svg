@@ -1,0 +1,38 @@
+﻿<svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+  </defs>
+  <rect width="900" height="460" fill="url(#bg)"/>
+  <text x="450" y="36" text-anchor="middle" font-size="20" font-weight="900" fill="url(#aG)">Base64 Encoder vs Decoder — When to Use Each</text>
+  <text x="450" y="54" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.38)">Encoding converts image → text string. Decoding converts text string → image file.</text>
+  <!-- Encode column -->
+  <rect x="28" y="72" width="400" height="340" rx="10" fill="rgba(167,139,250,0.05)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+  <text x="228" y="100" text-anchor="middle" font-size="13" font-weight="700" fill="#a78bfa">Encoding (Image → Base64)</text>
+  <text x="228" y="120" text-anchor="middle" font-size="10" fill="rgba(167,139,250,0.7)">Image file → Base64 text string</text>
+  <g font-size="9.5">
+    <text x="44" y="158" fill="rgba(255,255,255,0.5)">• You want to embed an image in HTML/CSS</text>
+    <text x="44" y="178" fill="rgba(255,255,255,0.5)">• You need to send an image in a JSON payload</text>
+    <text x="44" y="198" fill="rgba(255,255,255,0.5)">• You want inline images in HTML email</text>
+    <text x="44" y="218" fill="rgba(255,255,255,0.5)">• You need a self-contained HTML document</text>
+    <text x="44" y="238" fill="rgba(255,255,255,0.5)">• An API accepts images as Base64 strings</text>
+    <text x="228" y="280" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.3)">Tool: Image to Base64</text>
+    <text x="228" y="298" text-anchor="middle" font-size="9.5" font-family="monospace" fill="rgba(52,211,153,0.6)">Image file → [encode] → iVBORw0KGgo...</text>
+  </g>
+
+  <!-- Decode column -->
+  <rect x="472" y="72" width="400" height="340" rx="10" fill="rgba(52,211,153,0.05)" stroke="rgba(52,211,153,0.2)" stroke-width="1"/>
+  <text x="672" y="100" text-anchor="middle" font-size="13" font-weight="700" fill="#6ee7b7">Decoding (Base64 → Image)</text>
+  <text x="672" y="120" text-anchor="middle" font-size="10" fill="rgba(52,211,153,0.7)">Base64 text string → Image file</text>
+  <g font-size="9.5">
+    <text x="488" y="158" fill="rgba(255,255,255,0.5)">• You received a Base64 string and need the image</text>
+    <text x="488" y="178" fill="rgba(255,255,255,0.5)">• API response contains a Base64-encoded image</text>
+    <text x="488" y="198" fill="rgba(255,255,255,0.5)">• You want to preview what a Data URI looks like</text>
+    <text x="488" y="218" fill="rgba(255,255,255,0.5)">• Debug a Data URI that isn't rendering correctly</text>
+    <text x="488" y="238" fill="rgba(255,255,255,0.5)">• Extract and download an image from a Data URI</text>
+    <text x="672" y="280" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.3)">Tool: Base64 to Image</text>
+    <text x="672" y="298" text-anchor="middle" font-size="9.5" font-family="monospace" fill="rgba(167,139,250,0.6)">iVBORw0KGgo... → [decode] → Image file</text>
+  </g>
+
+  <text x="450" y="446" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">toolnestai.net/image-tools/base64-to-image</text>
+</svg>

@@ -1,0 +1,77 @@
+﻿<svg viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <text x="600" y="52" text-anchor="middle" font-size="24" font-weight="900" fill="url(#aG)">Base64 Decoding — Reverse of Encoding</text>
+  <text x="600" y="74" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.38)">Parsing Data URIs, stripping prefixes, and common input format variations</text>
+  <!-- 3 step process -->
+  <g text-anchor="middle" font-size="9.5">
+    <rect x="30" y="96" width="360" height="490" rx="12" fill="rgba(167,139,250,0.05)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+    <text x="210" y="126" font-size="13" font-weight="700" fill="#a78bfa">Input Variants</text>
+    <text x="210" y="146" font-size="10" fill="rgba(167,139,250,0.7)">The tool handles all common formats</text>
+    <rect x="50" y="162" width="320" height="50" rx="6" fill="rgba(167,139,250,0.08)" stroke="rgba(167,139,250,0.15)" stroke-width="1"/>
+    <text x="210" y="182" font-size="9" font-family="monospace" fill="rgba(52,211,153,0.8)">data:image/png;base64,iVBOR...</text>
+    <text x="210" y="200" font-size="8.5" fill="rgba(255,255,255,0.35)">Full Data URI (most common)</text>
+    <rect x="50" y="220" width="320" height="50" rx="6" fill="rgba(167,139,250,0.06)" stroke="rgba(167,139,250,0.12)" stroke-width="1"/>
+    <text x="210" y="240" font-size="9" font-family="monospace" fill="rgba(255,255,255,0.65)">iVBORw0KGgoAAAANSUhEUg...</text>
+    <text x="210" y="258" font-size="8.5" fill="rgba(255,255,255,0.35)">Raw Base64 (no prefix)</text>
+    <rect x="50" y="278" width="320" height="50" rx="6" fill="rgba(167,139,250,0.06)" stroke="rgba(167,139,250,0.12)" stroke-width="1"/>
+    <text x="210" y="298" font-size="9" font-family="monospace" fill="rgba(255,255,255,0.65)">/9j/4AAQSkZJRgABAQEA...</text>
+    <text x="210" y="316" font-size="8.5" fill="rgba(255,255,255,0.35)">JPEG (starts with /9j/)</text>
+    <rect x="50" y="336" width="320" height="50" rx="6" fill="rgba(167,139,250,0.06)" stroke="rgba(167,139,200,0.12)" stroke-width="1"/>
+    <text x="210" y="356" font-size="9" font-family="monospace" fill="rgba(255,255,255,0.65)">R0lGODlhAQABAIAAAAAAAP...</text>
+    <text x="210" y="374" font-size="8.5" fill="rgba(255,255,255,0.35)">GIF (starts with R0lGOD)</text>
+    <text x="210" y="430" fill="rgba(255,255,255,0.5)">Strip prefix if present,</text>
+    <text x="210" y="450" fill="rgba(255,255,255,0.5)">pass raw string to atob()</text>
+    <text x="210" y="490" fill="rgba(255,255,255,0.5)">Detect MIME from prefix</text>
+    <text x="210" y="510" fill="rgba(255,255,255,0.5)">or from magic bytes</text>
+    <text x="210" y="550" font-size="10" font-weight="700" fill="rgba(167,139,250,0.8)">Handles all variations</text>
+
+    <rect x="420" y="96" width="360" height="490" rx="12" fill="rgba(52,211,153,0.05)" stroke="rgba(52,211,153,0.2)" stroke-width="1"/>
+    <text x="600" y="126" font-size="13" font-weight="700" fill="#6ee7b7">Decoding Steps</text>
+    <text x="600" y="146" font-size="10" fill="rgba(52,211,153,0.7)">atob() → binary → Blob → URL</text>
+    <g font-family="monospace" font-size="9">
+      <rect x="440" y="162" width="320" height="50" rx="6" fill="rgba(52,211,153,0.06)" stroke="rgba(52,211,153,0.12)" stroke-width="1"/>
+      <text x="600" y="180" fill="rgba(255,255,255,0.65)">1. atob(base64string)</text>
+      <text x="600" y="198" font-size="8" fill="rgba(255,255,255,0.35)">→ binary string (one char per byte)</text>
+      <rect x="440" y="220" width="320" height="50" rx="6" fill="rgba(52,211,153,0.06)" stroke="rgba(52,211,153,0.12)" stroke-width="1"/>
+      <text x="600" y="238" fill="rgba(255,255,255,0.65)">2. Convert to Uint8Array</text>
+      <text x="600" y="256" font-size="8" fill="rgba(255,255,255,0.35)">byte-by-byte with charCodeAt()</text>
+      <rect x="440" y="278" width="320" height="50" rx="6" fill="rgba(52,211,153,0.06)" stroke="rgba(52,211,153,0.12)" stroke-width="1"/>
+      <text x="600" y="296" fill="rgba(255,255,255,0.65)">3. new Blob([bytes], {type})</text>
+      <text x="600" y="314" font-size="8" fill="rgba(255,255,255,0.35)">create binary Blob object</text>
+      <rect x="440" y="336" width="320" height="50" rx="6" fill="rgba(52,211,153,0.06)" stroke="rgba(52,211,153,0.12)" stroke-width="1"/>
+      <text x="600" y="354" fill="rgba(255,255,255,0.65)">4. URL.createObjectURL(blob)</text>
+      <text x="600" y="372" font-size="8" fill="rgba(255,255,255,0.35)">→ blob: URL for preview/download</text>
+    </g>
+    <text x="600" y="430" fill="rgba(255,255,255,0.5)">Or use canvas + drawImage +</text>
+    <text x="600" y="450" fill="rgba(255,255,255,0.5)">toBlob() for format conversion</text>
+    <text x="600" y="550" font-size="10" font-weight="700" fill="rgba(52,211,153,0.8)">All client-side, no server</text>
+
+    <rect x="810" y="96" width="360" height="490" rx="12" fill="rgba(251,191,36,0.05)" stroke="rgba(251,191,36,0.2)" stroke-width="1"/>
+    <text x="990" y="126" font-size="13" font-weight="700" fill="#fbbf24">Magic Byte Detection</text>
+    <text x="990" y="146" font-size="10" fill="rgba(251,191,36,0.7)">Identify format from start bytes</text>
+    <g font-size="9">
+      <rect x="830" y="162" width="320" height="38" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+      <text x="990" y="183" font-family="monospace" fill="rgba(255,255,255,0.65)">PNG: iVBORw0KGgo</text>
+      <text x="990" y="197" fill="rgba(255,255,255,0.3)">= bytes 89 50 4E 47</text>
+      <rect x="830" y="208" width="320" height="38" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+      <text x="990" y="229" font-family="monospace" fill="rgba(255,255,255,0.65)">JPEG: /9j/</text>
+      <text x="990" y="243" fill="rgba(255,255,255,0.3)">= bytes FF D8 FF</text>
+      <rect x="830" y="254" width="320" height="38" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+      <text x="990" y="275" font-family="monospace" fill="rgba(255,255,255,0.65)">GIF: R0lGOD</text>
+      <text x="990" y="289" fill="rgba(255,255,255,0.3)">= bytes 47 49 46 38</text>
+      <rect x="830" y="300" width="320" height="38" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+      <text x="990" y="321" font-family="monospace" fill="rgba(255,255,255,0.65)">WebP: UklGR</text>
+      <text x="990" y="335" fill="rgba(255,255,255,0.3)">= RIFF header bytes</text>
+    </g>
+    <text x="990" y="400" fill="rgba(255,255,255,0.5)">When Data URI prefix is</text>
+    <text x="990" y="420" fill="rgba(255,255,255,0.5)">missing, check first few</text>
+    <text x="990" y="440" fill="rgba(255,255,255,0.5)">Base64 chars to determine</text>
+    <text x="990" y="460" fill="rgba(255,255,255,0.5)">the image format</text>
+    <text x="990" y="550" font-size="10" font-weight="700" fill="rgba(251,191,36,0.8)">Auto-detects format</text>
+  </g>
+  <text x="600" y="635" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.22)">toolnestai.net/image-tools/base64-to-image</text>
+</svg>
