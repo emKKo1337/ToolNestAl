@@ -1,0 +1,54 @@
+﻿<svg viewBox="0 0 900 1200" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="30%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gT" cx="50%" cy="10%" r="60%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.35"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gB" cx="50%" cy="90%" r="60%"><stop offset="0%" stop-color="#0e7490" stop-opacity="0.2"/><stop offset="100%" stop-color="#0e7490" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+  </defs>
+  <rect width="900" height="1200" fill="url(#bg)"/>
+  <ellipse cx="450" cy="200" rx="700" ry="400" fill="url(#gT)"/>
+  <ellipse cx="450" cy="1000" rx="700" ry="400" fill="url(#gB)"/>
+  <text x="450" y="52" text-anchor="middle" font-size="26" font-weight="900" fill="url(#aG)">Image Blur — Complete Guide</text>
+  <text x="450" y="76" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.38)">Gaussian, motion, radial, and box blur algorithms explained</text>
+  <text x="450" y="96" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.22)">toolnestai.net/image-tools/image-blur</text>
+  <!-- Sec 1 -->
+  <rect x="32" y="112" width="836" height="38" rx="8" fill="rgba(124,58,237,0.18)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+  <text x="450" y="136" text-anchor="middle" font-size="15" font-weight="800" fill="#a78bfa">01 — Gaussian Blur</text>
+  <rect x="32" y="156" width="836" height="80" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="450" y="178" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.6)">Applies a bell-curve kernel — nearby pixels contribute more, distant pixels less. Result is smooth and isotropic.</text>
+  <text x="450" y="200" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.6)">Sigma (radius) controls the spread. Larger sigma = more blur. Separable kernel = computationally efficient.</text>
+  <text x="450" y="222" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.3)">Best for: background softening, noise reduction, depth-of-field effects</text>
+  <!-- Sec 2 -->
+  <rect x="32" y="252" width="836" height="38" rx="8" fill="rgba(14,116,144,0.18)" stroke="rgba(14,116,144,0.3)" stroke-width="1"/>
+  <text x="450" y="276" text-anchor="middle" font-size="15" font-weight="800" fill="#67e8f9">02 — Motion Blur</text>
+  <rect x="32" y="296" width="836" height="80" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="450" y="318" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.6)">A linear kernel along a specified angle. Samples pixels only in one direction, creating a speed-streak appearance.</text>
+  <text x="450" y="338" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.6)">Horizontal (angle=0°), vertical (angle=90°), or any diagonal. Length controls how long the streak is.</text>
+  <text x="450" y="358" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.3)">Best for: speed effects, simulating panning camera shots</text>
+  <!-- Sec 3 -->
+  <rect x="32" y="392" width="836" height="38" rx="8" fill="rgba(52,211,153,0.12)" stroke="rgba(52,211,153,0.22)" stroke-width="1"/>
+  <text x="450" y="416" text-anchor="middle" font-size="15" font-weight="800" fill="#34d399">03 — Radial Blur</text>
+  <rect x="32" y="436" width="836" height="80" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="450" y="458" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.6)">Two variants: spin (rotates sample points around center) and zoom (samples along radial rays outward).</text>
+  <text x="450" y="478" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.6)">Creates emphasis on the center point — surrounding content streaks radially away from it.</text>
+  <text x="450" y="498" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.3)">Best for: zoom burst effect, emphasizing a rotating subject</text>
+  <!-- Sec 4 -->
+  <rect x="32" y="532" width="836" height="38" rx="8" fill="rgba(251,191,36,0.12)" stroke="rgba(251,191,36,0.22)" stroke-width="1"/>
+  <text x="450" y="556" text-anchor="middle" font-size="15" font-weight="800" fill="#fbbf24">04 — Privacy Blurring</text>
+  <rect x="32" y="576" width="836" height="100" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="450" y="598" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.6)">Gaussian blur with high sigma (15–40+) is the standard technique for obscuring faces, license plates,</text>
+  <text x="450" y="616" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.6)">screen content, and identifying information in images before sharing.</text>
+  <text x="450" y="636" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.6)">Stack blur or pixelation (large box blur) produces an even harder-to-reverse result.</text>
+  <text x="450" y="656" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.3)">Note: blurring is NOT encryption — sufficiently strong blur CAN be partially reversed by AI</text>
+  <!-- Sec 5 -->
+  <rect x="32" y="692" width="836" height="38" rx="8" fill="rgba(167,139,250,0.14)" stroke="rgba(167,139,250,0.25)" stroke-width="1"/>
+  <text x="450" y="716" text-anchor="middle" font-size="15" font-weight="800" fill="#c4b5fd">05 — Code Examples</text>
+  <rect x="32" y="736" width="836" height="120" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="50" y="758" font-size="9" font-family="monospace" fill="rgba(167,139,250,0.7)">// CSS — Gaussian blur in browser</text>
+  <text x="50" y="776" font-size="9" font-family="monospace" fill="rgba(255,255,255,0.5)">.blurred {'{'} filter: blur(8px); {'}'}</text>
+  <text x="50" y="800" font-size="9" font-family="monospace" fill="rgba(52,211,153,0.7)">// Canvas API — Gaussian blur</text>
+  <text x="50" y="818" font-size="9" font-family="monospace" fill="rgba(255,255,255,0.5)">ctx.filter = 'blur(8px)'; ctx.drawImage(img, 0, 0);</text>
+  <text x="50" y="842" font-size="9" font-family="monospace" fill="rgba(103,232,249,0.7)"># Python Pillow</text>
+  <text x="50" y="860" font-size="9" font-family="monospace" fill="rgba(255,255,255,0.5)">img.filter(ImageFilter.GaussianBlur(radius=8))</text>
+  <text x="450" y="1000" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.28)">Free tool: toolnestai.net/image-tools/image-blur</text>
+</svg>

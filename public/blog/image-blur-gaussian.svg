@@ -1,0 +1,48 @@
+﻿<svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bellG" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/></linearGradient>
+  </defs>
+  <rect width="900" height="460" fill="url(#bg)"/>
+  <text x="450" y="36" text-anchor="middle" font-size="20" font-weight="900" fill="url(#aG)">Gaussian Blur — The Bell Curve Kernel</text>
+  <text x="450" y="54" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.38)">How sigma (radius) controls the spread of the convolution kernel</text>
+  <!-- Bell curve -->
+  <rect x="28" y="72" width="420" height="260" rx="10" fill="rgba(167,139,250,0.04)" stroke="rgba(167,139,250,0.18)" stroke-width="1"/>
+  <text x="238" y="96" text-anchor="middle" font-size="11" font-weight="700" fill="#a78bfa">Gaussian Distribution (Bell Curve)</text>
+  <!-- Axis -->
+  <line x1="50" y1="300" x2="430" y2="300" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+  <line x1="238" y1="110" x2="238" y2="300" stroke="rgba(255,255,255,0.1)" stroke-width="1" stroke-dasharray="4,4"/>
+  <!-- Low sigma bell -->
+  <path d="M100,295 Q140,250 170,180 Q200,110 238,105 Q276,110 306,180 Q336,250 376,295" fill="url(#bellG)" opacity="0.6"/>
+  <path d="M100,295 Q140,250 170,180 Q200,110 238,105 Q276,110 306,180 Q336,250 376,295" fill="none" stroke="rgba(167,139,250,0.8)" stroke-width="2"/>
+  <!-- High sigma bell -->
+  <path d="M60,295 Q120,280 200,230 Q238,200 238,190 Q238,200 276,230 Q360,280 416,295" fill="none" stroke="rgba(103,232,249,0.5)" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <text x="238" y="324" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.35)">pixel position</text>
+  <text x="52" y="190" font-size="9" fill="rgba(167,139,250,0.8)">σ=2</text>
+  <text x="60" y="240" font-size="9" fill="rgba(103,232,249,0.6)">σ=8</text>
+  <text x="150" y="148" font-size="8.5" fill="rgba(255,255,255,0.4)">weight</text>
+  <!-- Sigma table -->
+  <rect x="470" y="72" width="400" height="260" rx="10" fill="rgba(103,232,249,0.04)" stroke="rgba(103,232,249,0.16)" stroke-width="1"/>
+  <text x="670" y="96" text-anchor="middle" font-size="11" font-weight="700" fill="#67e8f9">Sigma Value Guide</text>
+  <g font-size="9.5" text-anchor="middle">
+    <rect x="490" y="108" width="360" height="42" rx="6" fill="rgba(52,211,153,0.06)" stroke="rgba(52,211,153,0.15)" stroke-width="1"/>
+    <text x="670" y="128" fill="rgba(52,211,153,0.9)" font-weight="700">σ = 1–2 (Subtle)</text>
+    <text x="670" y="144" font-size="8.5" fill="rgba(255,255,255,0.45)">Slight softening, noise smoothing</text>
+    <rect x="490" y="156" width="360" height="42" rx="6" fill="rgba(103,232,249,0.06)" stroke="rgba(103,232,249,0.15)" stroke-width="1"/>
+    <text x="670" y="176" fill="rgba(103,232,249,0.9)" font-weight="700">σ = 3–6 (Moderate)</text>
+    <text x="670" y="192" font-size="8.5" fill="rgba(255,255,255,0.45)">Background blur, depth-of-field feel</text>
+    <rect x="490" y="204" width="360" height="42" rx="6" fill="rgba(251,191,36,0.06)" stroke="rgba(251,191,36,0.15)" stroke-width="1"/>
+    <text x="670" y="224" fill="rgba(251,191,36,0.9)" font-weight="700">σ = 7–14 (Heavy)</text>
+    <text x="670" y="240" font-size="8.5" fill="rgba(255,255,255,0.45)">Strong blur, dreamy/soft effect</text>
+    <rect x="490" y="252" width="360" height="42" rx="6" fill="rgba(239,68,68,0.06)" stroke="rgba(239,68,68,0.15)" stroke-width="1"/>
+    <text x="670" y="272" fill="rgba(239,68,68,0.9)" font-weight="700">σ = 15+ (Extreme)</text>
+    <text x="670" y="288" font-size="8.5" fill="rgba(255,255,255,0.45)">Privacy blurring, full obscuration</text>
+  </g>
+  <!-- Key property -->
+  <rect x="28" y="348" width="844" height="82" rx="10" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="450" y="372" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(167,139,250,0.85)">KEY MATHEMATICAL PROPERTY</text>
+  <text x="450" y="394" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">Gaussian blur is separable: a 2D Gaussian kernel can be applied as two 1D passes (horizontal then vertical).</text>
+  <text x="450" y="412" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">This reduces complexity from O(r²) to O(2r) per pixel, making large-radius Gaussian blur computationally practical.</text>
+  <text x="450" y="446" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">toolnestai.net/image-tools/image-blur</text>
+</svg>

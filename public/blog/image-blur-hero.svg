@@ -1,0 +1,86 @@
+﻿<svg viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <filter id="blur3"><feGaussianBlur stdDeviation="3"/></filter>
+    <filter id="blur8"><feGaussianBlur stdDeviation="8"/></filter>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <text x="600" y="52" text-anchor="middle" font-size="24" font-weight="900" fill="url(#aG)">Blur Types — How Each Algorithm Works</text>
+  <text x="600" y="74" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.38)">Gaussian, motion, radial, and box blur — what each does to pixels</text>
+  <!-- 4 columns -->
+  <g text-anchor="middle">
+    <rect x="30" y="96" width="270" height="490" rx="12" fill="rgba(167,139,250,0.05)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+    <text x="165" y="124" font-size="13" font-weight="700" fill="#a78bfa">Gaussian Blur</text>
+    <text x="165" y="144" font-size="10" fill="rgba(167,139,250,0.7)">Weighted average by distance</text>
+    <!-- kernel diagram -->
+    <g font-size="8.5" font-family="monospace">
+      <rect x="50" y="160" width="230" height="80" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+      <text x="165" y="180" fill="rgba(255,255,255,0.35)">3×3 Gaussian kernel</text>
+      <text x="165" y="200" fill="rgba(167,139,250,0.7)">1  2  1</text>
+      <text x="165" y="216" fill="rgba(167,139,250,0.85)">2  4  2</text>
+      <text x="165" y="232" fill="rgba(167,139,250,0.7)">1  2  1</text>
+    </g>
+    <text x="165" y="274" font-size="9.5" fill="rgba(255,255,255,0.55)">Pixels closest to center</text>
+    <text x="165" y="292" font-size="9.5" fill="rgba(255,255,255,0.55)">contribute most. Result is</text>
+    <text x="165" y="310" font-size="9.5" fill="rgba(255,255,255,0.55)">perfectly smooth, isotropic.</text>
+    <text x="165" y="344" font-size="9.5" font-weight="700" fill="rgba(167,139,250,0.8)">Use case:</text>
+    <text x="165" y="362" font-size="9.5" fill="rgba(255,255,255,0.5)">Background softening,</text>
+    <text x="165" y="380" font-size="9.5" fill="rgba(255,255,255,0.5)">noise reduction, DOF effect</text>
+    <text x="165" y="540" font-size="10" font-weight="700" fill="rgba(167,139,250,0.8)">Sigma controls radius</text>
+
+    <rect x="320" y="96" width="270" height="490" rx="12" fill="rgba(103,232,249,0.05)" stroke="rgba(103,232,249,0.2)" stroke-width="1"/>
+    <text x="455" y="124" font-size="13" font-weight="700" fill="#67e8f9">Motion Blur</text>
+    <text x="455" y="144" font-size="10" fill="rgba(103,232,249,0.7)">Directional linear streak</text>
+    <g font-size="8.5">
+      <rect x="340" y="160" width="230" height="80" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+      <text x="455" y="178" fill="rgba(255,255,255,0.35)">Horizontal kernel (length=5)</text>
+      <text x="455" y="200" font-family="monospace" fill="rgba(103,232,249,0.7)">0  0  0  0  0</text>
+      <text x="455" y="216" font-family="monospace" fill="rgba(103,232,249,0.85)">1  1  1  1  1</text>
+      <text x="455" y="232" font-family="monospace" fill="rgba(103,232,249,0.7)">0  0  0  0  0</text>
+    </g>
+    <text x="455" y="274" font-size="9.5" fill="rgba(255,255,255,0.55)">Samples only along one</text>
+    <text x="455" y="292" font-size="9.5" fill="rgba(255,255,255,0.55)">axis (at angle θ). Creates</text>
+    <text x="455" y="310" font-size="9.5" fill="rgba(255,255,255,0.55)">a speed-streak appearance.</text>
+    <text x="455" y="344" font-size="9.5" font-weight="700" fill="rgba(103,232,249,0.8)">Use case:</text>
+    <text x="455" y="362" font-size="9.5" fill="rgba(255,255,255,0.5)">Speed effects, panning</text>
+    <text x="455" y="380" font-size="9.5" fill="rgba(255,255,255,0.5)">photography simulation</text>
+    <text x="455" y="540" font-size="10" font-weight="700" fill="rgba(103,232,249,0.8)">Angle + length params</text>
+
+    <rect x="610" y="96" width="270" height="490" rx="12" fill="rgba(52,211,153,0.05)" stroke="rgba(52,211,153,0.2)" stroke-width="1"/>
+    <text x="745" y="124" font-size="13" font-weight="700" fill="#6ee7b7">Radial Blur</text>
+    <text x="745" y="144" font-size="10" fill="rgba(52,211,153,0.7)">Spin or zoom from center</text>
+    <g font-size="9.5">
+      <rect x="630" y="160" width="230" height="80" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+      <text x="745" y="185" fill="rgba(255,255,255,0.5)">Spin: rotate sample points</text>
+      <text x="745" y="205" fill="rgba(255,255,255,0.5)">around center by ±angle</text>
+      <text x="745" y="225" fill="rgba(255,255,255,0.5)">then average the results</text>
+    </g>
+    <text x="745" y="274" font-size="9.5" fill="rgba(255,255,255,0.55)">Zoom variant samples along</text>
+    <text x="745" y="292" font-size="9.5" fill="rgba(255,255,255,0.55)">rays from center outward,</text>
+    <text x="745" y="310" font-size="9.5" fill="rgba(255,255,255,0.55)">creating an explosion effect.</text>
+    <text x="745" y="344" font-size="9.5" font-weight="700" fill="rgba(52,211,153,0.8)">Use case:</text>
+    <text x="745" y="362" font-size="9.5" fill="rgba(255,255,255,0.5)">Creative zoom burst effect,</text>
+    <text x="745" y="380" font-size="9.5" fill="rgba(255,255,255,0.5)">rotating subject emphasis</text>
+    <text x="745" y="540" font-size="10" font-weight="700" fill="rgba(52,211,153,0.8)">Center point + strength</text>
+
+    <rect x="900" y="96" width="270" height="490" rx="12" fill="rgba(251,191,36,0.05)" stroke="rgba(251,191,36,0.2)" stroke-width="1"/>
+    <text x="1035" y="124" font-size="13" font-weight="700" fill="#fbbf24">Box Blur</text>
+    <text x="1035" y="144" font-size="10" fill="rgba(251,191,36,0.7)">Simple equal-weight average</text>
+    <g font-size="8.5">
+      <rect x="920" y="160" width="230" height="80" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+      <text x="1035" y="178" fill="rgba(255,255,255,0.35)">3×3 box kernel</text>
+      <text x="1035" y="200" font-family="monospace" fill="rgba(251,191,36,0.7)">1  1  1</text>
+      <text x="1035" y="216" font-family="monospace" fill="rgba(251,191,36,0.85)">1  1  1</text>
+      <text x="1035" y="232" font-family="monospace" fill="rgba(251,191,36,0.7)">1  1  1</text>
+    </g>
+    <text x="1035" y="274" font-size="9.5" fill="rgba(255,255,255,0.55)">Simplest convolution — every</text>
+    <text x="1035" y="292" font-size="9.5" fill="rgba(255,255,255,0.55)">neighbor weighted equally.</text>
+    <text x="1035" y="310" font-size="9.5" fill="rgba(255,255,255,0.55)">Faster but less smooth than Gaussian.</text>
+    <text x="1035" y="344" font-size="9.5" font-weight="700" fill="rgba(251,191,36,0.8)">Use case:</text>
+    <text x="1035" y="362" font-size="9.5" fill="rgba(255,255,255,0.5)">Fast preview, pixelation</text>
+    <text x="1035" y="380" font-size="9.5" fill="rgba(255,255,255,0.5)">effect at larger kernel sizes</text>
+    <text x="1035" y="540" font-size="10" font-weight="700" fill="rgba(251,191,36,0.8)">Fastest, least quality</text>
+  </g>
+  <text x="600" y="635" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.22)">toolnestai.net/image-tools/image-blur</text>
+</svg>
