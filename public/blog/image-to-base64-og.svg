@@ -1,0 +1,54 @@
+﻿<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="30%" cy="40%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gL" cx="15%" cy="50%" r="55%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.45"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gR" cx="85%" cy="50%" r="55%"><stop offset="0%" stop-color="#0e7490" stop-opacity="0.28"/><stop offset="100%" stop-color="#0e7490" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="lapG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1a1040"/><stop offset="100%" stop-color="#0d0824"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="8" stdDeviation="18" flood-color="#5b21b6" flood-opacity="0.45"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <ellipse cx="180" cy="315" rx="600" ry="500" fill="url(#gL)"/>
+  <ellipse cx="1020" cy="315" rx="600" ry="500" fill="url(#gR)"/>
+  <text x="60" y="70" font-size="14" font-weight="700" fill="url(#aG)" filter="url(#glow)">ToolNest AI</text>
+  <text x="60" y="106" font-size="13" fill="rgba(255,255,255,0.35)">Image Tools - Image to Base64</text>
+  <text x="60" y="185" font-size="46" font-weight="900" fill="url(#aG)" filter="url(#glow)">Image to</text>
+  <text x="60" y="247" font-size="46" font-weight="900" fill="url(#aG)" filter="url(#glow)">Base64</text>
+  <text x="60" y="300" font-size="18" fill="rgba(255,255,255,0.6)">Encode images to Data URI</text>
+  <text x="60" y="328" font-size="18" fill="rgba(255,255,255,0.6)">HTML, CSS, JSON, Email — free</text>
+  <text x="60" y="560" font-size="14" fill="rgba(255,255,255,0.25)">toolnestai.net/image-tools/image-to-base64</text>
+  <rect x="630" y="80" width="510" height="440" rx="16" fill="url(#lapG)" stroke="rgba(124,58,237,0.3)" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="630" y="80" width="510" height="36" rx="16" fill="rgba(255,255,255,0.05)"/>
+  <rect x="630" y="98" width="510" height="18" fill="rgba(255,255,255,0.02)"/>
+  <circle cx="655" cy="98" r="6" fill="rgba(239,68,68,0.6)"/>
+  <circle cx="675" cy="98" r="6" fill="rgba(251,191,36,0.6)"/>
+  <circle cx="695" cy="98" r="6" fill="rgba(34,197,94,0.6)"/>
+  <!-- Code output -->
+  <rect x="648" y="126" width="474" height="240" rx="8" fill="rgba(52,211,153,0.05)" stroke="rgba(52,211,153,0.15)" stroke-width="1"/>
+  <text x="664" y="148" font-size="9" font-family="monospace" fill="rgba(52,211,153,0.8)">data:image/png;base64,</text>
+  <text x="664" y="166" font-size="8.5" font-family="monospace" fill="rgba(255,255,255,0.4)">iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACA</text>
+  <text x="664" y="182" font-size="8.5" font-family="monospace" fill="rgba(255,255,255,0.4)">YAAABccvqrhAAAAAXNSR0IArs4c6QAAAARn</text>
+  <text x="664" y="198" font-size="8.5" font-family="monospace" fill="rgba(255,255,255,0.4)">QU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAAq</text>
+  <text x="664" y="214" font-size="8.5" font-family="monospace" fill="rgba(255,255,255,0.4)">MAA7MGAAAJiklEQVR4Ae3Bv2sUCQDG8e/c</text>
+  <text x="664" y="230" font-size="8.5" font-family="monospace" fill="rgba(255,255,255,0.4)">7tXa2tra2toqKioqKioqKioqKioqKioqKi...</text>
+  <text x="664" y="260" font-size="8.5" font-family="monospace" fill="rgba(255,255,255,0.3)">...continues for full image data...</text>
+  <text x="884" y="340" text-anchor="middle" font-size="9" fill="rgba(52,211,153,0.6)">~33% larger than source</text>
+  <g text-anchor="middle" font-size="9.5">
+    <rect x="648" y="382" width="114" height="44" rx="8" fill="rgba(167,139,250,0.1)" stroke="rgba(167,139,250,0.22)" stroke-width="1"/>
+    <text x="705" y="400" fill="#a78bfa" font-weight="700">Data URI</text>
+    <text x="705" y="416" fill="rgba(255,255,255,0.4)">full URL</text>
+    <rect x="774" y="382" width="114" height="44" rx="8" fill="rgba(103,232,249,0.1)" stroke="rgba(103,232,249,0.22)" stroke-width="1"/>
+    <text x="831" y="400" fill="#67e8f9" font-weight="700">CSS bg</text>
+    <text x="831" y="416" fill="rgba(255,255,255,0.4)">url(...)</text>
+    <rect x="900" y="382" width="114" height="44" rx="8" fill="rgba(52,211,153,0.1)" stroke="rgba(52,211,153,0.22)" stroke-width="1"/>
+    <text x="957" y="400" fill="#6ee7b7" font-weight="700">JSON</text>
+    <text x="957" y="416" fill="rgba(255,255,255,0.4)">API payload</text>
+    <rect x="1026" y="382" width="106" height="44" rx="8" fill="rgba(251,191,36,0.1)" stroke="rgba(251,191,36,0.22)" stroke-width="1"/>
+    <text x="1079" y="400" fill="#fbbf24" font-weight="700">HTML img</text>
+    <text x="1079" y="416" fill="rgba(255,255,255,0.4)">src attr</text>
+  </g>
+  <rect x="648" y="438" width="474" height="44" rx="8" fill="url(#bG)" filter="url(#sh)"/>
+  <text x="885" y="465" text-anchor="middle" font-size="13" font-weight="900" fill="#fff">Convert Image to Base64 Free</text>
+</svg>

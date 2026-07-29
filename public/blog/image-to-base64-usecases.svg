@@ -1,0 +1,37 @@
+﻿<svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gC" cx="50%" cy="40%" r="60%"><stop offset="0%" stop-color="#0e7490" stop-opacity="0.2"/><stop offset="100%" stop-color="#0e7490" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+  </defs>
+  <rect width="900" height="460" fill="url(#bg)"/>
+  <ellipse cx="450" cy="230" rx="520" ry="320" fill="url(#gC)"/>
+  <text x="450" y="36" text-anchor="middle" font-size="20" font-weight="900" fill="url(#aG)">Base64 Data URI Formats — When to Use Each</text>
+  <text x="450" y="54" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.38)">HTML, CSS, JSON, Email — four output formats from the same Base64 string</text>
+  <g font-size="9" font-family="monospace">
+    <!-- HTML img -->
+    <rect x="28" y="70" width="835" height="78" rx="8" fill="rgba(167,139,250,0.06)" stroke="rgba(167,139,250,0.18)" stroke-width="1"/>
+    <text x="44" y="92" font-family="'Segoe UI',sans-serif" font-size="10" font-weight="700" fill="#a78bfa">HTML img src</text>
+    <text x="44" y="112" fill="#67e8f9">&lt;img</text><text x="84" y="112" fill="rgba(255,255,255,0.65)"> src=</text><text x="114" y="112" fill="#fbbf24">"data:image/png;base64,iVBORw0KGgoAAAANSUhEUg..."</text><text x="770" y="112" fill="#67e8f9"> /&gt;</text>
+    <text x="44" y="134" font-family="'Segoe UI',sans-serif" font-size="9" fill="rgba(255,255,255,0.35)">Embeds image directly in HTML — no separate HTTP request for the image file</text>
+
+    <!-- CSS background -->
+    <rect x="28" y="158" width="835" height="78" rx="8" fill="rgba(103,232,249,0.06)" stroke="rgba(103,232,249,0.18)" stroke-width="1"/>
+    <text x="44" y="180" font-family="'Segoe UI',sans-serif" font-size="10" font-weight="700" fill="#67e8f9">CSS background-image</text>
+    <text x="44" y="200" fill="rgba(255,255,255,0.55)">.icon</text><text x="76" y="200" fill="rgba(255,255,255,0.4)"> { background-image: </text><text x="242" y="200" fill="#fbbf24">url(data:image/png;base64,iVBORw0KGgo...)</text><text x="638" y="200" fill="rgba(255,255,255,0.4)"> }</text>
+    <text x="44" y="222" font-family="'Segoe UI',sans-serif" font-size="9" fill="rgba(255,255,255,0.35)">Useful for CSS-only icon or background without needing an external file reference</text>
+
+    <!-- JSON -->
+    <rect x="28" y="246" width="835" height="78" rx="8" fill="rgba(52,211,153,0.06)" stroke="rgba(52,211,153,0.18)" stroke-width="1"/>
+    <text x="44" y="268" font-family="'Segoe UI',sans-serif" font-size="10" font-weight="700" fill="#6ee7b7">JSON API payload</text>
+    <text x="44" y="288" fill="rgba(255,255,255,0.4)">{ </text><text x="60" y="288" fill="#a78bfa">"image"</text><text x="112" y="288" fill="rgba(255,255,255,0.4)">: </text><text x="120" y="288" fill="#fbbf24">"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQ..."</text><text x="660" y="288" fill="rgba(255,255,255,0.4)"> }</text>
+    <text x="44" y="310" font-family="'Segoe UI',sans-serif" font-size="9" fill="rgba(255,255,255,0.35)">Send image data inline in a REST API or webhook payload — no separate upload endpoint needed</text>
+
+    <!-- Email -->
+    <rect x="28" y="334" width="835" height="78" rx="8" fill="rgba(251,191,36,0.06)" stroke="rgba(251,191,36,0.18)" stroke-width="1"/>
+    <text x="44" y="356" font-family="'Segoe UI',sans-serif" font-size="10" font-weight="700" fill="#fbbf24">HTML Email inline image</text>
+    <text x="44" y="376" fill="#67e8f9">&lt;img</text><text x="84" y="376" fill="rgba(255,255,255,0.65)"> src=</text><text x="114" y="376" fill="#fbbf24">"data:image/png;base64,iVBORw0KGgoAAAANSUhEUg..."</text><text x="680" y="376" fill="#67e8f9"> width=</text><text x="740" y="376" fill="#fbbf24">"100"</text><text x="790" y="376" fill="#67e8f9"> /&gt;</text>
+    <text x="44" y="398" font-family="'Segoe UI',sans-serif" font-size="9" fill="rgba(255,255,255,0.35)">Inline image bypasses email clients that block external image loading — useful for signatures and logos</text>
+  </g>
+  <text x="450" y="444" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">toolnestai.net/image-tools/image-to-base64</text>
+</svg>

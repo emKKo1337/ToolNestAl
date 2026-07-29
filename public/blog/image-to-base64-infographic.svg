@@ -1,0 +1,104 @@
+﻿<svg viewBox="0 0 900 1200" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="30%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gT" cx="50%" cy="10%" r="60%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.35"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gB" cx="50%" cy="90%" r="60%"><stop offset="0%" stop-color="#0e7490" stop-opacity="0.2"/><stop offset="100%" stop-color="#0e7490" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+  </defs>
+  <rect width="900" height="1200" fill="url(#bg)"/>
+  <ellipse cx="450" cy="200" rx="700" ry="400" fill="url(#gT)"/>
+  <ellipse cx="450" cy="1000" rx="700" ry="400" fill="url(#gB)"/>
+  <text x="450" y="52" text-anchor="middle" font-size="26" font-weight="900" fill="url(#aG)">Image to Base64 Complete Guide</text>
+  <text x="450" y="76" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.38)">How encoding works, Data URI formats, trade-offs and when NOT to use it</text>
+  <text x="450" y="96" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.22)">toolnestai.net/image-tools/image-to-base64</text>
+
+  <rect x="32" y="112" width="836" height="38" rx="8" fill="rgba(124,58,237,0.18)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+  <text x="450" y="136" text-anchor="middle" font-size="15" font-weight="800" fill="#a78bfa">01 — How Base64 Works</text>
+  <g font-size="9.5" text-anchor="middle">
+    <rect x="32" y="156" width="258" height="90" rx="8" fill="rgba(167,139,250,0.06)" stroke="rgba(167,139,250,0.18)" stroke-width="1"/>
+    <text x="161" y="178" font-weight="700" fill="#a78bfa">3 bytes → 4 chars</text>
+    <text x="161" y="198" fill="rgba(255,255,255,0.5)">24 bits split into four</text>
+    <text x="161" y="218" fill="rgba(255,255,255,0.5)">6-bit groups (0-63 each)</text>
+    <text x="161" y="236" fill="rgba(255,255,255,0.35)">→ +33% size increase</text>
+
+    <rect x="302" y="156" width="258" height="90" rx="8" fill="rgba(103,232,249,0.06)" stroke="rgba(103,232,249,0.18)" stroke-width="1"/>
+    <text x="431" y="178" font-weight="700" fill="#67e8f9">64-character alphabet</text>
+    <text x="431" y="198" fill="rgba(255,255,255,0.5)">A-Z, a-z, 0-9, +, /</text>
+    <text x="431" y="218" fill="rgba(255,255,255,0.5)">all safe in text/HTML</text>
+    <text x="431" y="236" fill="rgba(255,255,255,0.35)">= pad character</text>
+
+    <rect x="572" y="156" width="296" height="90" rx="8" fill="rgba(52,211,153,0.06)" stroke="rgba(52,211,153,0.18)" stroke-width="1"/>
+    <text x="720" y="178" font-weight="700" fill="#6ee7b7">Data URI prefix</text>
+    <text x="720" y="198" fill="rgba(255,255,255,0.5)">data:[type];base64,[data]</text>
+    <text x="720" y="218" fill="rgba(255,255,255,0.5)">tells browser what format</text>
+    <text x="720" y="236" fill="rgba(255,255,255,0.35)">before the data</text>
+  </g>
+
+  <rect x="32" y="260" width="836" height="38" rx="8" fill="rgba(14,116,144,0.18)" stroke="rgba(14,116,144,0.3)" stroke-width="1"/>
+  <text x="450" y="284" text-anchor="middle" font-size="15" font-weight="800" fill="#67e8f9">02 — Four Output Formats</text>
+  <g font-size="9" font-family="monospace">
+    <rect x="32" y="304" width="836" height="44" rx="6" fill="rgba(167,139,250,0.04)" stroke="rgba(167,139,250,0.12)" stroke-width="1"/>
+    <text x="44" y="324" fill="#67e8f9">&lt;img src=</text><text x="120" y="324" fill="#fbbf24">"data:image/png;base64,..."</text><text x="380" y="324" fill="#67e8f9">/&gt;</text>
+    <text x="44" y="340" font-family="'Segoe UI',sans-serif" font-size="8.5" fill="rgba(255,255,255,0.3)">HTML img — embed image without a separate HTTP request</text>
+
+    <rect x="32" y="356" width="836" height="44" rx="6" fill="rgba(103,232,249,0.04)" stroke="rgba(103,232,249,0.12)" stroke-width="1"/>
+    <text x="44" y="376" fill="rgba(255,255,255,0.5)">.icon</text><text x="80" y="376" fill="rgba(255,255,255,0.4)"> { background: </text><text x="204" y="376" fill="#fbbf24">url(data:image/png;base64,...)</text><text x="468" y="376" fill="rgba(255,255,255,0.4)"> }</text>
+    <text x="44" y="392" font-family="'Segoe UI',sans-serif" font-size="8.5" fill="rgba(255,255,255,0.3)">CSS background — inline icon without external file</text>
+
+    <rect x="32" y="408" width="836" height="44" rx="6" fill="rgba(52,211,153,0.04)" stroke="rgba(52,211,153,0.12)" stroke-width="1"/>
+    <text x="44" y="428" fill="rgba(255,255,255,0.4)">{ </text><text x="58" y="428" fill="#a78bfa">"image"</text><text x="120" y="428" fill="rgba(255,255,255,0.4)">: </text><text x="130" y="428" fill="#fbbf24">"data:image/jpeg;base64,..."</text><text x="396" y="428" fill="rgba(255,255,255,0.4)"> }</text>
+    <text x="44" y="444" font-family="'Segoe UI',sans-serif" font-size="8.5" fill="rgba(255,255,255,0.3)">JSON — send image inline in API payload without separate upload</text>
+  </g>
+
+  <rect x="32" y="462" width="836" height="38" rx="8" fill="rgba(239,68,68,0.12)" stroke="rgba(239,68,68,0.22)" stroke-width="1"/>
+  <text x="450" y="486" text-anchor="middle" font-size="15" font-weight="800" fill="rgba(239,68,68,0.85)">03 — Trade-offs (When NOT to Use)</text>
+  <g font-size="9.5">
+    <rect x="32" y="506" width="404" height="80" rx="8" fill="rgba(239,68,68,0.05)" stroke="rgba(239,68,68,0.12)" stroke-width="1"/>
+    <text x="234" y="528" text-anchor="middle" font-weight="700" fill="rgba(239,68,68,0.75)">Avoid for large images</text>
+    <text x="48" y="548" fill="rgba(255,255,255,0.5)">A 1 MB JPEG becomes 1.33 MB as Base64</text>
+    <text x="48" y="566" fill="rgba(255,255,255,0.5)">Large strings slow HTML parsing and</text>
+    <text x="48" y="580" fill="rgba(255,255,255,0.5)">prevent browser caching of the image</text>
+
+    <rect x="464" y="506" width="404" height="80" rx="8" fill="rgba(52,211,153,0.05)" stroke="rgba(52,211,153,0.12)" stroke-width="1"/>
+    <text x="666" y="528" text-anchor="middle" font-weight="700" fill="rgba(52,211,153,0.75)">Good for small assets</text>
+    <text x="480" y="548" fill="rgba(255,255,255,0.5)">Tiny icons, spacers, loading spinners</text>
+    <text x="480" y="566" fill="rgba(255,255,255,0.5)">Email inline images (bypass blocking)</text>
+    <text x="480" y="580" fill="rgba(255,255,255,0.5)">Self-contained HTML files and demos</text>
+  </g>
+
+  <rect x="32" y="600" width="836" height="38" rx="8" fill="rgba(124,58,237,0.18)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+  <text x="450" y="624" text-anchor="middle" font-size="15" font-weight="800" fill="#a78bfa">04 — Code Examples</text>
+  <g font-size="9" font-family="monospace">
+    <rect x="32" y="644" width="836" height="110" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="48" y="664" font-family="'Segoe UI',sans-serif" font-weight="700" fill="rgba(255,255,255,0.4)">JavaScript (FileReader API)</text>
+    <text x="48" y="682" fill="rgba(255,255,255,0.65)">reader.readAsDataURL(file);</text>
+    <text x="48" y="700" fill="rgba(255,255,255,0.65)">reader.onload = e =&gt; console.log(e.target.result);</text>
+    <text x="48" y="718" fill="rgba(255,255,255,0.35)">    </text><text x="60" y="718" fill="rgba(255,255,255,0.35)">// "data:image/png;base64,iVBORw0KGgo..."</text>
+    <text x="48" y="736" font-family="'Segoe UI',sans-serif" font-weight="700" fill="rgba(255,255,255,0.4)">Python</text>
+    <text x="48" y="750" fill="rgba(255,255,255,0.65)">import base64; data = base64.b64encode(open("img.png","rb").read()).decode()</text>
+  </g>
+
+  <rect x="32" y="768" width="836" height="38" rx="8" fill="rgba(16,185,129,0.14)" stroke="rgba(16,185,129,0.25)" stroke-width="1"/>
+  <text x="450" y="792" text-anchor="middle" font-size="15" font-weight="800" fill="#34d399">05 — Quick Decision Guide</text>
+  <g text-anchor="middle" font-size="9.5">
+    <rect x="32" y="812" width="270" height="90" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="167" y="834" font-weight="700" fill="rgba(52,211,153,0.85)">Use Base64 when</text>
+    <text x="167" y="854" fill="rgba(255,255,255,0.5)">Tiny icon/asset (&lt;5KB)</text>
+    <text x="167" y="872" fill="rgba(255,255,255,0.5)">Self-contained HTML doc</text>
+    <text x="167" y="890" fill="rgba(255,255,255,0.35)">Email inline image</text>
+
+    <rect x="315" y="812" width="270" height="90" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="450" y="834" font-weight="700" fill="rgba(239,68,68,0.75)">Avoid Base64 when</text>
+    <text x="450" y="854" fill="rgba(255,255,255,0.5)">Image &gt; 10-20KB</text>
+    <text x="450" y="872" fill="rgba(255,255,255,0.5)">Browser caching matters</text>
+    <text x="450" y="890" fill="rgba(255,255,255,0.35)">Performance is critical</text>
+
+    <rect x="598" y="812" width="270" height="90" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="733" y="834" font-weight="700" fill="rgba(103,232,249,0.85)">API use case</text>
+    <text x="733" y="854" fill="rgba(255,255,255,0.5)">Send image inline in</text>
+    <text x="733" y="872" fill="rgba(255,255,255,0.5)">JSON payload — no</text>
+    <text x="733" y="890" fill="rgba(255,255,255,0.35)">separate upload endpoint</text>
+  </g>
+
+  <text x="450" y="960" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.28)">Free tool: toolnestai.net/image-tools/image-to-base64</text>
+</svg>

@@ -1,0 +1,78 @@
+﻿<svg viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <text x="600" y="52" text-anchor="middle" font-size="24" font-weight="900" fill="url(#aG)">How Base64 Encoding Works — Binary to ASCII</text>
+  <text x="600" y="74" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.38)">The 6-bit groups, the 64-character alphabet, and why files grow ~33% in size</text>
+  <!-- Step 1: Binary -->
+  <rect x="30" y="96" width="350" height="490" rx="12" fill="rgba(167,139,250,0.05)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+  <text x="205" y="126" text-anchor="middle" font-size="13" font-weight="700" fill="#a78bfa">Step 1: Binary bytes</text>
+  <text x="205" y="146" text-anchor="middle" font-size="10" fill="rgba(167,139,250,0.7)">Image file = sequence of bytes (8 bits each)</text>
+  <g font-family="monospace" font-size="11" text-anchor="middle">
+    <rect x="50" y="162" width="310" height="50" rx="6" fill="rgba(167,139,250,0.08)" stroke="rgba(167,139,250,0.15)" stroke-width="1"/>
+    <text x="205" y="183" fill="rgba(255,255,255,0.65)">0100 1101 · 0110 0001 · 0110 1110</text>
+    <text x="205" y="201" fill="rgba(255,255,255,0.4)" font-size="9">three bytes = 24 bits</text>
+    <rect x="50" y="222" width="310" height="120" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="205" y="244" fill="rgba(255,255,255,0.45)" font-size="9">77 decimal = 0x4D = 'M'</text>
+    <text x="205" y="262" fill="rgba(255,255,255,0.45)" font-size="9">97 decimal = 0x61 = 'a'</text>
+    <text x="205" y="280" fill="rgba(255,255,255,0.45)" font-size="9">110 decimal = 0x6E = 'n'</text>
+    <text x="205" y="320" fill="rgba(255,255,255,0.45)" font-size="9">ASCII "Man" in binary</text>
+  </g>
+  <text x="205" y="370" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.5)">Any binary file (image, PDF,</text>
+  <text x="205" y="390" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.5)">audio) is just a sequence</text>
+  <text x="205" y="410" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.5)">of byte values 0-255</text>
+  <text x="205" y="450" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.5)">Problem: not all byte values</text>
+  <text x="205" y="470" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.5)">are safe in text contexts</text>
+  <text x="205" y="490" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.5)">HTML, JSON, CSS need</text>
+  <text x="205" y="510" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.5)">text-safe encoding</text>
+
+  <!-- Step 2: 6-bit groups -->
+  <rect x="420" y="96" width="350" height="490" rx="12" fill="rgba(103,232,249,0.05)" stroke="rgba(103,232,249,0.2)" stroke-width="1"/>
+  <text x="595" y="126" text-anchor="middle" font-size="13" font-weight="700" fill="#67e8f9">Step 2: 6-bit groups</text>
+  <text x="595" y="146" text-anchor="middle" font-size="10" fill="rgba(103,232,249,0.7)">24 bits → four 6-bit groups</text>
+  <g font-family="monospace" font-size="11" text-anchor="middle">
+    <rect x="440" y="162" width="310" height="80" rx="6" fill="rgba(103,232,249,0.08)" stroke="rgba(103,232,249,0.15)" stroke-width="1"/>
+    <text x="595" y="188" fill="rgba(255,255,255,0.65)" font-size="10">010011 · 010110 · 000101 · 101110</text>
+    <text x="595" y="212" fill="rgba(255,255,255,0.4)" font-size="9">= 19 · 22 · 5 · 46</text>
+    <text x="595" y="230" fill="rgba(255,255,255,0.3)" font-size="8.5">four 6-bit values (0-63 each)</text>
+  </g>
+  <text x="595" y="280" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.5)">6 bits = 2^6 = 64 possible</text>
+  <text x="595" y="300" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.5)">values (0-63)</text>
+  <text x="595" y="340" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.5)">Each 6-bit group maps to</text>
+  <text x="595" y="360" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.5)">one character from a</text>
+  <text x="595" y="380" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.5)">64-character alphabet</text>
+  <g font-family="monospace" font-size="10" text-anchor="middle" fill="rgba(255,255,255,0.4)">
+    <rect x="440" y="400" width="310" height="60" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="595" y="422">A-Z (0-25)</text>
+    <text x="595" y="440">a-z (26-51)</text>
+    <text x="595" y="458">0-9, +, / (52-63)</text>
+  </g>
+  <text x="595" y="510" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.5)">= sign pads to 4-char</text>
+  <text x="595" y="530" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.5)">multiples at end</text>
+
+  <!-- Step 3: Output -->
+  <rect x="810" y="96" width="360" height="490" rx="12" fill="rgba(52,211,153,0.05)" stroke="rgba(52,211,153,0.2)" stroke-width="1"/>
+  <text x="990" y="126" text-anchor="middle" font-size="13" font-weight="700" fill="#6ee7b7">Step 3: Base64 string</text>
+  <text x="990" y="146" text-anchor="middle" font-size="10" fill="rgba(52,211,153,0.7)">19,22,5,46 → TWFu (for "Man")</text>
+  <g font-family="monospace" font-size="9" text-anchor="middle">
+    <rect x="830" y="162" width="320" height="60" rx="6" fill="rgba(52,211,153,0.08)" stroke="rgba(52,211,153,0.15)" stroke-width="1"/>
+    <text x="990" y="187" fill="rgba(52,211,153,0.85)" font-size="10">TWFu</text>
+    <text x="990" y="207" fill="rgba(255,255,255,0.4)">T=19, W=22, F=5, u=46</text>
+    <rect x="830" y="232" width="320" height="120" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="990" y="254" fill="rgba(255,255,255,0.45)">data:image/png;base64,</text>
+    <text x="990" y="272" fill="rgba(255,255,255,0.45)">iVBORw0KGgoAAAANSUhEUg</text>
+    <text x="990" y="290" fill="rgba(255,255,255,0.45)">AAAQAAAAEACAYAAABccv...</text>
+    <text x="990" y="316" fill="rgba(255,255,255,0.3)" font-size="8.5">complete PNG as text string</text>
+  </g>
+  <text x="990" y="378" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.5)">The string can be embedded</text>
+  <text x="990" y="398" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.5)">directly in HTML, CSS, JSON</text>
+  <text x="990" y="438" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.5)">3 bytes → 4 chars means</text>
+  <text x="990" y="458" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.5)">file size grows ~33%</text>
+  <text x="990" y="478" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.5)">HTTP gzip compression</text>
+  <text x="990" y="498" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.5)">partially offsets this</text>
+  <text x="990" y="530" font-size="10" font-weight="700" fill="rgba(52,211,153,0.8)" text-anchor="middle">Safe in any text context</text>
+
+  <text x="600" y="640" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.22)">toolnestai.net/image-tools/image-to-base64</text>
+</svg>
