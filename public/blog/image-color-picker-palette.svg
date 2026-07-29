@@ -1,0 +1,78 @@
+﻿<svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gC" cx="50%" cy="40%" r="60%"><stop offset="0%" stop-color="#0e7490" stop-opacity="0.2"/><stop offset="100%" stop-color="#0e7490" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+  </defs>
+  <rect width="900" height="460" fill="url(#bg)"/>
+  <ellipse cx="450" cy="230" rx="520" ry="320" fill="url(#gC)"/>
+  <text x="450" y="36" text-anchor="middle" font-size="20" font-weight="900" fill="url(#aG)">Color Palette Extraction — How It Works</text>
+  <text x="450" y="54" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.38)">Dominant color algorithms: quantization, k-means clustering, and median cut</text>
+  <!-- Step 1 -->
+  <rect x="28" y="70" width="256" height="300" rx="10" fill="rgba(167,139,250,0.05)" stroke="rgba(167,139,250,0.18)" stroke-width="1"/>
+  <text x="156" y="96" text-anchor="middle" font-size="11" font-weight="700" fill="#a78bfa">Step 1: Pixel Sampling</text>
+  <text x="40" y="120" font-size="9.5" fill="rgba(255,255,255,0.5)">Image decoded to pixel array</text>
+  <text x="40" y="138" font-size="9.5" fill="rgba(255,255,255,0.5)">Each pixel is a point in</text>
+  <text x="40" y="156" font-size="9.5" fill="rgba(255,255,255,0.5)">3D RGB color space</text>
+  <text x="40" y="194" font-size="9.5" fill="rgba(255,255,255,0.5)">Often downsampled first</text>
+  <text x="40" y="212" font-size="9.5" fill="rgba(255,255,255,0.5)">(e.g. 50px thumbnail)</text>
+  <text x="40" y="230" font-size="9.5" fill="rgba(255,255,255,0.5)">to reduce compute</text>
+  <g>
+    <rect x="48" y="250" width="20" height="20" rx="3" fill="#7c3aed"/>
+    <rect x="74" y="250" width="20" height="20" rx="3" fill="#0e7490"/>
+    <rect x="100" y="250" width="20" height="20" rx="3" fill="#7c3aed"/>
+    <rect x="126" y="250" width="20" height="20" rx="3" fill="#0e7490"/>
+    <rect x="152" y="250" width="20" height="20" rx="3" fill="#f97316"/>
+    <rect x="178" y="250" width="20" height="20" rx="3" fill="#7c3aed"/>
+    <rect x="204" y="250" width="20" height="20" rx="3" fill="#22c55e"/>
+    <rect x="48" y="276" width="20" height="20" rx="3" fill="#7c3aed"/>
+    <rect x="74" y="276" width="20" height="20" rx="3" fill="#0e7490"/>
+    <rect x="100" y="276" width="20" height="20" rx="3" fill="#f97316"/>
+    <rect x="126" y="276" width="20" height="20" rx="3" fill="#7c3aed"/>
+    <rect x="152" y="276" width="20" height="20" rx="3" fill="#7c3aed"/>
+    <rect x="178" y="276" width="20" height="20" rx="3" fill="#22c55e"/>
+    <rect x="204" y="276" width="20" height="20" rx="3" fill="#0e7490"/>
+  </g>
+  <text x="156" y="346" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.35)">millions of pixels</text>
+
+  <!-- Arrow -->
+  <text x="309" y="230" text-anchor="middle" font-size="18" fill="rgba(255,255,255,0.25)">→</text>
+
+  <!-- Step 2 -->
+  <rect x="322" y="70" width="256" height="300" rx="10" fill="rgba(52,211,153,0.05)" stroke="rgba(52,211,153,0.18)" stroke-width="1"/>
+  <text x="450" y="96" text-anchor="middle" font-size="11" font-weight="700" fill="#6ee7b7">Step 2: K-means / Median Cut</text>
+  <text x="334" y="120" font-size="9.5" fill="rgba(255,255,255,0.5)">Group similar colors into k</text>
+  <text x="334" y="138" font-size="9.5" fill="rgba(255,255,255,0.5)">clusters in 3D color space</text>
+  <text x="334" y="176" font-size="9.5" fill="rgba(255,255,255,0.5)">k-means: iteratively finds</text>
+  <text x="334" y="194" font-size="9.5" fill="rgba(255,255,255,0.5)">cluster centroids in RGB</text>
+  <text x="334" y="212" font-size="9.5" fill="rgba(255,255,255,0.5)">color space</text>
+  <text x="334" y="250" font-size="9.5" fill="rgba(255,255,255,0.5)">Median cut: recursively</text>
+  <text x="334" y="268" font-size="9.5" fill="rgba(255,255,255,0.5)">splits color space along</text>
+  <text x="334" y="286" font-size="9.5" fill="rgba(255,255,255,0.5)">widest color axis</text>
+  <text x="334" y="324" font-size="9.5" fill="rgba(255,255,255,0.5)">Result: k cluster centers</text>
+
+  <!-- Arrow -->
+  <text x="603" y="230" text-anchor="middle" font-size="18" fill="rgba(255,255,255,0.25)">→</text>
+
+  <!-- Step 3 -->
+  <rect x="616" y="70" width="256" height="300" rx="10" fill="rgba(251,191,36,0.05)" stroke="rgba(251,191,36,0.18)" stroke-width="1"/>
+  <text x="744" y="96" text-anchor="middle" font-size="11" font-weight="700" fill="#fbbf24">Step 3: Palette Output</text>
+  <text x="628" y="120" font-size="9.5" fill="rgba(255,255,255,0.5)">Dominant colors ranked</text>
+  <text x="628" y="138" font-size="9.5" fill="rgba(255,255,255,0.5)">by cluster size (pixels)</text>
+  <g text-anchor="middle">
+    <rect x="628" y="158" width="230" height="36" rx="6" fill="#7c3aed"/>
+    <text x="743" y="181" font-size="11" fill="rgba(255,255,255,0.85)">#7c3aed — 38% of pixels</text>
+    <rect x="628" y="202" width="230" height="36" rx="6" fill="#0e7490"/>
+    <text x="743" y="225" font-size="11" fill="rgba(255,255,255,0.85)">#0e7490 — 28% of pixels</text>
+    <rect x="628" y="246" width="230" height="36" rx="6" fill="#f97316"/>
+    <text x="743" y="269" font-size="11" fill="rgba(255,255,255,0.85)">#f97316 — 20% of pixels</text>
+    <rect x="628" y="290" width="110" height="36" rx="6" fill="#22c55e"/>
+    <rect x="748" y="290" width="110" height="36" rx="6" fill="#1a1040"/>
+  </g>
+
+  <!-- Note -->
+  <rect x="28" y="382" width="844" height="50" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="450" y="404" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.5)">Dominant color extraction is useful for: automatic brand color identification, CSS variable generation,</text>
+  <text x="450" y="422" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.5)">design inspiration from photos, matching UI colors to content images, and generative art workflows</text>
+  <text x="450" y="444" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">toolnestai.net/image-tools/image-color-picker</text>
+</svg>

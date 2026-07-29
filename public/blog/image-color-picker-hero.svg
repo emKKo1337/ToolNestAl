@@ -1,0 +1,77 @@
+﻿<svg viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <text x="600" y="52" text-anchor="middle" font-size="24" font-weight="900" fill="url(#aG)">Color Spaces: HEX, RGB, HSL, and CMYK Compared</text>
+  <text x="600" y="74" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.38)">Which format to use when and how each represents the same color differently</text>
+  <!-- 4 columns -->
+  <g text-anchor="middle" font-size="9.5">
+    <rect x="30" y="96" width="270" height="480" rx="12" fill="rgba(167,139,250,0.05)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+    <text x="165" y="126" font-size="13" font-weight="700" fill="#a78bfa">HEX</text>
+    <text x="165" y="146" font-size="10" fill="rgba(167,139,250,0.7)">#RRGGBB</text>
+    <rect x="55" y="162" width="220" height="50" rx="8" fill="#7c3aed"/>
+    <text x="165" y="192" fill="rgba(255,255,255,0.85)" font-weight="700" font-size="14">#7c3aed</text>
+    <text x="165" y="250" fill="rgba(255,255,255,0.5)">6-digit hexadecimal</text>
+    <text x="165" y="270" fill="rgba(255,255,255,0.5)">00=0, FF=255</text>
+    <text x="165" y="310" fill="rgba(255,255,255,0.5)">Universal in CSS,</text>
+    <text x="165" y="330" fill="rgba(255,255,255,0.5)">HTML, design tools</text>
+    <text x="165" y="370" fill="rgba(255,255,255,0.5)">8-digit variant</text>
+    <text x="165" y="390" fill="rgba(255,255,255,0.5)">#RRGGBBAA adds</text>
+    <text x="165" y="410" fill="rgba(255,255,255,0.5)">alpha channel</text>
+    <text x="165" y="450" font-size="10" font-weight="700" fill="rgba(167,139,250,0.8)">Best for: CSS, web dev</text>
+    <text x="165" y="470" fill="rgba(255,255,255,0.45)">Shortest format for</text>
+    <text x="165" y="490" fill="rgba(255,255,255,0.45)">copy-paste workflow</text>
+    <text x="165" y="540" font-size="9" fill="rgba(255,255,255,0.3)">3-char shorthand: #RGB</text>
+    <text x="165" y="558" font-size="9" fill="rgba(255,255,255,0.3)">e.g. #7c3aed → #73e</text>
+
+    <rect x="320" y="96" width="270" height="480" rx="12" fill="rgba(103,232,249,0.05)" stroke="rgba(103,232,249,0.2)" stroke-width="1"/>
+    <text x="455" y="126" font-size="13" font-weight="700" fill="#67e8f9">RGB</text>
+    <text x="455" y="146" font-size="10" fill="rgba(103,232,249,0.7)">Red, Green, Blue</text>
+    <rect x="345" y="162" width="220" height="50" rx="8" fill="#7c3aed"/>
+    <text x="455" y="192" fill="rgba(255,255,255,0.85)" font-weight="700" font-size="12">rgb(124, 58, 237)</text>
+    <text x="455" y="250" fill="rgba(255,255,255,0.5)">Three channels: R, G, B</text>
+    <text x="455" y="270" fill="rgba(255,255,255,0.5)">each 0–255</text>
+    <text x="455" y="310" fill="rgba(255,255,255,0.5)">Additive color model</text>
+    <text x="455" y="330" fill="rgba(255,255,255,0.5)">used by displays and</text>
+    <text x="455" y="350" fill="rgba(255,255,255,0.5)">digital screens</text>
+    <text x="455" y="390" fill="rgba(255,255,255,0.5)">rgba(R, G, B, A)</text>
+    <text x="455" y="410" fill="rgba(255,255,255,0.5)">adds alpha 0-1</text>
+    <text x="455" y="450" font-size="10" font-weight="700" fill="rgba(103,232,249,0.8)">Best for: code, CSS</text>
+    <text x="455" y="470" fill="rgba(255,255,255,0.45)">Intuitive for tweaking</text>
+    <text x="455" y="490" fill="rgba(255,255,255,0.45)">individual channels</text>
+
+    <rect x="610" y="96" width="270" height="480" rx="12" fill="rgba(52,211,153,0.05)" stroke="rgba(52,211,153,0.2)" stroke-width="1"/>
+    <text x="745" y="126" font-size="13" font-weight="700" fill="#6ee7b7">HSL</text>
+    <text x="745" y="146" font-size="10" fill="rgba(52,211,153,0.7)">Hue, Saturation, Lightness</text>
+    <rect x="635" y="162" width="220" height="50" rx="8" fill="#7c3aed"/>
+    <text x="745" y="192" fill="rgba(255,255,255,0.85)" font-weight="700" font-size="12">hsl(263, 83%, 58%)</text>
+    <text x="745" y="250" fill="rgba(255,255,255,0.5)">Hue: 0-360° (color wheel)</text>
+    <text x="745" y="270" fill="rgba(255,255,255,0.5)">Saturation: 0-100% vivid</text>
+    <text x="745" y="290" fill="rgba(255,255,255,0.5)">Lightness: 0-100% bright</text>
+    <text x="745" y="330" fill="rgba(255,255,255,0.5)">Intuitive for designers</text>
+    <text x="745" y="350" fill="rgba(255,255,255,0.5)">to adjust a hue while</text>
+    <text x="745" y="370" fill="rgba(255,255,255,0.5)">keeping saturation</text>
+    <text x="745" y="450" font-size="10" font-weight="700" fill="rgba(52,211,153,0.8)">Best for: design systems</text>
+    <text x="745" y="470" fill="rgba(255,255,255,0.45)">Perceptual model —</text>
+    <text x="745" y="490" fill="rgba(255,255,255,0.45)">easier human reasoning</text>
+
+    <rect x="900" y="96" width="270" height="480" rx="12" fill="rgba(251,191,36,0.05)" stroke="rgba(251,191,36,0.2)" stroke-width="1"/>
+    <text x="1035" y="126" font-size="13" font-weight="700" fill="#fbbf24">CMYK</text>
+    <text x="1035" y="146" font-size="10" fill="rgba(251,191,36,0.7)">Cyan, Magenta, Yellow, Key</text>
+    <rect x="925" y="162" width="220" height="50" rx="8" fill="#7c3aed"/>
+    <text x="1035" y="192" fill="rgba(255,255,255,0.85)" font-weight="700" font-size="11">cmyk(48, 76, 0, 7)</text>
+    <text x="1035" y="250" fill="rgba(255,255,255,0.5)">Subtractive model for</text>
+    <text x="1035" y="270" fill="rgba(255,255,255,0.5)">physical printing</text>
+    <text x="1035" y="310" fill="rgba(255,255,255,0.5)">Ink percentages 0-100%</text>
+    <text x="1035" y="330" fill="rgba(255,255,255,0.5)">K=black ink saves CMY</text>
+    <text x="1035" y="370" fill="rgba(255,255,255,0.5)">Not native to screens —</text>
+    <text x="1035" y="390" fill="rgba(255,255,255,0.5)">conversion involves</text>
+    <text x="1035" y="410" fill="rgba(255,255,255,0.5)">color profile (sRGB)</text>
+    <text x="1035" y="450" font-size="10" font-weight="700" fill="rgba(251,191,36,0.8)">Best for: print design</text>
+    <text x="1035" y="470" fill="rgba(255,255,255,0.45)">Required by InDesign</text>
+    <text x="1035" y="490" fill="rgba(255,255,255,0.45)">Illustrator, press shops</text>
+  </g>
+  <text x="600" y="620" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.22)">toolnestai.net/image-tools/image-color-picker</text>
+</svg>

@@ -1,0 +1,74 @@
+﻿<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="30%" cy="40%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gL" cx="15%" cy="50%" r="55%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.45"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gR" cx="85%" cy="50%" r="55%"><stop offset="0%" stop-color="#0e7490" stop-opacity="0.28"/><stop offset="100%" stop-color="#0e7490" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="lapG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1a1040"/><stop offset="100%" stop-color="#0d0824"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="8" stdDeviation="20" flood-color="#5b21b6" flood-opacity="0.5"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <ellipse cx="180" cy="315" rx="600" ry="500" fill="url(#gL)"/>
+  <ellipse cx="1020" cy="315" rx="600" ry="500" fill="url(#gR)"/>
+  <text x="60" y="70" font-size="14" font-weight="700" fill="url(#aG)" filter="url(#glow)">ToolNest AI</text>
+  <text x="60" y="106" font-size="13" fill="rgba(255,255,255,0.35)">Image Tools - Image Color Picker</text>
+  <text x="60" y="185" font-size="42" font-weight="900" fill="url(#aG)" filter="url(#glow)">Image Color</text>
+  <text x="60" y="245" font-size="42" font-weight="900" fill="url(#aG)" filter="url(#glow)">Picker</text>
+  <text x="60" y="300" font-size="18" fill="rgba(255,255,255,0.6)">Pick any color from any image</text>
+  <text x="60" y="328" font-size="18" fill="rgba(255,255,255,0.6)">HEX, RGB, HSL — instant copy</text>
+  <g>
+    <rect x="60" y="358" width="90" height="52" rx="8" fill="rgba(124,58,237,0.2)" stroke="rgba(124,58,237,0.4)" stroke-width="1"/>
+    <text x="105" y="382" text-anchor="middle" font-size="13" font-weight="900" fill="#a78bfa">HEX</text>
+    <text x="105" y="400" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.45)">copy one-click</text>
+    <rect x="162" y="358" width="90" height="52" rx="8" fill="rgba(14,116,144,0.15)" stroke="rgba(14,116,144,0.35)" stroke-width="1"/>
+    <text x="207" y="382" text-anchor="middle" font-size="13" font-weight="900" fill="#67e8f9">RGB</text>
+    <text x="207" y="400" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.45)">0-255 values</text>
+    <rect x="264" y="358" width="90" height="52" rx="8" fill="rgba(16,185,129,0.12)" stroke="rgba(16,185,129,0.3)" stroke-width="1"/>
+    <text x="309" y="382" text-anchor="middle" font-size="13" font-weight="900" fill="#34d399">HSL</text>
+    <text x="309" y="400" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.45)">hue angle</text>
+    <rect x="366" y="358" width="110" height="52" rx="8" fill="rgba(251,191,36,0.1)" stroke="rgba(251,191,36,0.25)" stroke-width="1"/>
+    <text x="421" y="382" text-anchor="middle" font-size="11" font-weight="900" fill="#fbbf24">Palette</text>
+    <text x="421" y="400" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.45)">dominant colors</text>
+  </g>
+  <text x="60" y="560" font-size="14" fill="rgba(255,255,255,0.25)">toolnestai.net/image-tools/image-color-picker</text>
+  <!-- Laptop UI -->
+  <rect x="630" y="60" width="530" height="490" rx="16" fill="url(#lapG)" stroke="rgba(124,58,237,0.3)" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="630" y="60" width="530" height="36" rx="16" fill="rgba(255,255,255,0.05)"/>
+  <rect x="630" y="78" width="530" height="18" fill="rgba(255,255,255,0.02)"/>
+  <circle cx="655" cy="78" r="6" fill="rgba(239,68,68,0.6)"/>
+  <circle cx="675" cy="78" r="6" fill="rgba(251,191,36,0.6)"/>
+  <circle cx="695" cy="78" r="6" fill="rgba(34,197,94,0.6)"/>
+  <!-- Canvas with color picker crosshair -->
+  <rect x="648" y="108" width="340" height="230" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <!-- Color gradient mock -->
+  <rect x="654" y="114" width="328" height="80" rx="4" fill="rgba(167,139,250,0.25)"/>
+  <rect x="654" y="196" width="328" height="80" rx="4" fill="rgba(14,116,144,0.2)"/>
+  <rect x="654" y="278" width="100" height="54" rx="4" fill="rgba(239,68,68,0.2)"/>
+  <rect x="758" y="278" width="100" height="54" rx="4" fill="rgba(251,191,36,0.2)"/>
+  <rect x="862" y="278" width="120" height="54" rx="4" fill="rgba(52,211,153,0.2)"/>
+  <!-- Crosshair -->
+  <circle cx="765" cy="195" r="12" fill="none" stroke="#a78bfa" stroke-width="2"/>
+  <line x1="765" y1="175" x2="765" y2="215" stroke="#a78bfa" stroke-width="1.5"/>
+  <line x1="745" y1="195" x2="785" y2="195" stroke="#a78bfa" stroke-width="1.5"/>
+  <!-- Color info panel -->
+  <rect x="998" y="108" width="154" height="230" rx="8" fill="rgba(167,139,250,0.08)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+  <rect x="1012" y="122" width="126" height="60" rx="6" fill="#7B5CF0"/>
+  <text x="1075" y="198" text-anchor="middle" font-size="8.5" fill="rgba(255,255,255,0.5)">Picked color</text>
+  <text x="1075" y="218" text-anchor="middle" font-size="11" font-weight="700" fill="#a78bfa">#7B5CF0</text>
+  <text x="1075" y="236" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.45)">rgb(123,92,240)</text>
+  <text x="1075" y="254" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.45)">hsl(255,85%,65%)</text>
+  <rect x="1010" y="268" width="132" height="28" rx="6" fill="url(#bG)"/>
+  <text x="1076" y="286" text-anchor="middle" font-size="9.5" font-weight="700" fill="#fff">Copy HEX</text>
+  <!-- Palette row -->
+  <rect x="648" y="350" width="504" height="38" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="660" y="366" font-size="8.5" fill="rgba(255,255,255,0.35)">Dominant palette</text>
+  <circle cx="732" cy="369" r="11" fill="#7B5CF0"/>
+  <circle cx="760" cy="369" r="11" fill="#0e7490"/>
+  <circle cx="788" cy="369" r="11" fill="#f97316"/>
+  <circle cx="816" cy="369" r="11" fill="#22c55e"/>
+  <circle cx="844" cy="369" r="11" fill="#e879f9"/>
+  <circle cx="872" cy="369" r="11" fill="#facc15"/>
+  <rect x="620" y="550" width="560" height="14" rx="4" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+</svg>
