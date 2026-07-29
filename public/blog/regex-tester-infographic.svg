@@ -1,0 +1,155 @@
+<svg viewBox="0 0 900 1200" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="30%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gT" cx="50%" cy="10%" r="60%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.35"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gB" cx="50%" cy="90%" r="60%"><stop offset="0%" stop-color="#0e7490" stop-opacity="0.2"/><stop offset="100%" stop-color="#0e7490" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+  </defs>
+  <rect width="900" height="1200" fill="url(#bg)"/>
+  <ellipse cx="450" cy="200" rx="700" ry="400" fill="url(#gT)"/>
+  <ellipse cx="450" cy="1000" rx="700" ry="400" fill="url(#gB)"/>
+
+  <text x="450" y="52" text-anchor="middle" font-size="28" font-weight="900" fill="url(#aG)">The Complete Regex Guide</text>
+  <text x="450" y="76" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.38)">Everything you need to write and debug regular expressions</text>
+  <text x="450" y="94" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.22)">toolnestai.net/developer-tools/regex-tester</text>
+
+  <!-- Section 1 -->
+  <rect x="32" y="110" width="836" height="38" rx="8" fill="rgba(124,58,237,0.18)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+  <text x="450" y="134" text-anchor="middle" font-size="15" font-weight="800" fill="#a78bfa">01 — What Is a Regular Expression?</text>
+
+  <rect x="32" y="154" width="836" height="90" rx="10" fill="rgba(255,255,255,0.025)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="450" y="178" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.65)">A regular expression (regex) is a sequence of characters that defines a search</text>
+  <text x="450" y="198" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.65)">pattern. It is used to validate input, search and replace text, extract substrings,</text>
+  <text x="450" y="218" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.65)">and split strings — built into nearly every programming language and text editor.</text>
+  <text x="450" y="238" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.3)">The core syntax traces back to formal language theory from the 1950s (Kleene's regular sets).</text>
+
+  <!-- Section 2: Building blocks -->
+  <rect x="32" y="256" width="836" height="38" rx="8" fill="rgba(14,116,144,0.18)" stroke="rgba(14,116,144,0.3)" stroke-width="1"/>
+  <text x="450" y="280" text-anchor="middle" font-size="15" font-weight="800" fill="#67e8f9">02 — The Building Blocks</text>
+
+  <g font-size="10">
+    <rect x="32" y="300" width="404" height="106" rx="8" fill="rgba(167,139,250,0.06)" stroke="rgba(167,139,250,0.16)" stroke-width="1"/>
+    <text x="48" y="322" font-weight="700" fill="#a78bfa">Character Classes</text>
+    <text x="48" y="342" font-family="monospace" fill="rgba(255,255,255,0.6)">\d digit    \w word char    \s whitespace</text>
+    <text x="48" y="360" font-family="monospace" fill="rgba(255,255,255,0.6)">. any char    [abc] one of a,b,c</text>
+    <text x="48" y="378" font-family="monospace" fill="rgba(255,255,255,0.6)">[^abc] not a,b,c    [a-z] range</text>
+    <text x="48" y="398" font-size="8.5" fill="rgba(255,255,255,0.3)">Match one character at a time from a set</text>
+
+    <rect x="464" y="300" width="404" height="106" rx="8" fill="rgba(103,232,249,0.06)" stroke="rgba(103,232,249,0.16)" stroke-width="1"/>
+    <text x="480" y="322" font-weight="700" fill="#67e8f9">Quantifiers</text>
+    <text x="480" y="342" font-family="monospace" fill="rgba(255,255,255,0.6)">*  0 or more     +  1 or more</text>
+    <text x="480" y="360" font-family="monospace" fill="rgba(255,255,255,0.6)">?  0 or 1        {`{n,m}`}  between n and m</text>
+    <text x="480" y="378" font-family="monospace" fill="rgba(255,255,255,0.6)">*?  lazy (fewest possible)</text>
+    <text x="480" y="398" font-size="8.5" fill="rgba(255,255,255,0.3)">Control how many times something repeats</text>
+
+    <rect x="32" y="414" width="404" height="106" rx="8" fill="rgba(52,211,153,0.06)" stroke="rgba(52,211,153,0.16)" stroke-width="1"/>
+    <text x="48" y="436" font-weight="700" fill="#34d399">Anchors &amp; Boundaries</text>
+    <text x="48" y="456" font-family="monospace" fill="rgba(255,255,255,0.6)">^  start of string    $  end of string</text>
+    <text x="48" y="474" font-family="monospace" fill="rgba(255,255,255,0.6)">\b  word boundary    \B  not a boundary</text>
+    <text x="48" y="512" font-size="8.5" fill="rgba(255,255,255,0.3)">Match a position, not a character</text>
+
+    <rect x="464" y="414" width="404" height="106" rx="8" fill="rgba(251,191,36,0.07)" stroke="rgba(251,191,36,0.18)" stroke-width="1"/>
+    <text x="480" y="436" font-weight="700" fill="#fbbf24">Groups &amp; Alternation</text>
+    <text x="480" y="456" font-family="monospace" fill="rgba(255,255,255,0.6)">(...)  capture group    (?:...)  non-capturing</text>
+    <text x="480" y="474" font-family="monospace" fill="rgba(255,255,255,0.6)">(?&lt;name&gt;...)  named group    a|b  either a or b</text>
+    <text x="480" y="512" font-size="8.5" fill="rgba(255,255,255,0.3)">Group sub-patterns and extract matched text</text>
+  </g>
+
+  <!-- Section 3: Flags -->
+  <rect x="32" y="534" width="836" height="38" rx="8" fill="rgba(16,185,129,0.14)" stroke="rgba(16,185,129,0.25)" stroke-width="1"/>
+  <text x="450" y="558" text-anchor="middle" font-size="15" font-weight="800" fill="#34d399">03 — The 6 JavaScript Regex Flags</text>
+
+  <g text-anchor="middle" font-size="10">
+    <rect x="32" y="578" width="130" height="76" rx="8" fill="rgba(124,58,237,0.1)" stroke="rgba(124,58,237,0.22)" stroke-width="1"/>
+    <text x="97" y="602" font-size="18" font-weight="900" fill="#a78bfa">g</text>
+    <text x="97" y="620" fill="rgba(255,255,255,0.5)">global —</text>
+    <text x="97" y="634" fill="rgba(255,255,255,0.5)">find all matches</text>
+    <text x="97" y="648" font-size="8" fill="rgba(255,255,255,0.28)">not just the first</text>
+
+    <rect x="170" y="578" width="130" height="76" rx="8" fill="rgba(14,116,144,0.08)" stroke="rgba(14,116,144,0.2)" stroke-width="1"/>
+    <text x="235" y="602" font-size="18" font-weight="900" fill="#67e8f9">i</text>
+    <text x="235" y="620" fill="rgba(255,255,255,0.5)">ignore case —</text>
+    <text x="235" y="634" fill="rgba(255,255,255,0.5)">A matches a</text>
+
+    <rect x="308" y="578" width="130" height="76" rx="8" fill="rgba(16,185,129,0.07)" stroke="rgba(16,185,129,0.18)" stroke-width="1"/>
+    <text x="373" y="602" font-size="18" font-weight="900" fill="#34d399">m</text>
+    <text x="373" y="620" fill="rgba(255,255,255,0.5)">multiline —</text>
+    <text x="373" y="634" fill="rgba(255,255,255,0.5)">^ $ per line</text>
+
+    <rect x="446" y="578" width="130" height="76" rx="8" fill="rgba(251,191,36,0.07)" stroke="rgba(251,191,36,0.18)" stroke-width="1"/>
+    <text x="511" y="602" font-size="18" font-weight="900" fill="#fbbf24">s</text>
+    <text x="511" y="620" fill="rgba(255,255,255,0.5)">dotall —</text>
+    <text x="511" y="634" fill="rgba(255,255,255,0.5)">. matches \n</text>
+
+    <rect x="584" y="578" width="130" height="76" rx="8" fill="rgba(244,114,182,0.07)" stroke="rgba(244,114,182,0.18)" stroke-width="1"/>
+    <text x="649" y="602" font-size="18" font-weight="900" fill="#f472b6">u</text>
+    <text x="649" y="620" fill="rgba(255,255,255,0.5)">unicode —</text>
+    <text x="649" y="634" fill="rgba(255,255,255,0.5)">full UTF-16</text>
+
+    <rect x="722" y="578" width="146" height="76" rx="8" fill="rgba(129,140,248,0.08)" stroke="rgba(129,140,248,0.18)" stroke-width="1"/>
+    <text x="795" y="602" font-size="18" font-weight="900" fill="#818cf8">y</text>
+    <text x="795" y="620" fill="rgba(255,255,255,0.5)">sticky —</text>
+    <text x="795" y="634" fill="rgba(255,255,255,0.5)">match at lastIndex</text>
+  </g>
+
+  <!-- Section 4: Common patterns -->
+  <rect x="32" y="674" width="836" height="38" rx="8" fill="rgba(124,58,237,0.18)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+  <text x="450" y="698" text-anchor="middle" font-size="15" font-weight="800" fill="#a78bfa">04 — 4 Ready-to-Use Patterns</text>
+
+  <g font-size="9.5">
+    <rect x="32" y="718" width="404" height="56" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="48" y="736" font-weight="700" fill="rgba(167,139,250,0.85)">Email</text>
+    <text x="48" y="752" font-family="monospace" fill="rgba(255,255,255,0.55)">/^[\w.+-]+@[\w-]+\.[a-zA-Z]{`{2,}`}$/</text>
+    <text x="48" y="766" font-size="8" fill="rgba(255,255,255,0.28)">name@domain.tld with dots and plus-addressing</text>
+
+    <rect x="464" y="718" width="404" height="56" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="480" y="736" font-weight="700" fill="rgba(103,232,249,0.85)">URL</text>
+    <text x="480" y="752" font-family="monospace" fill="rgba(255,255,255,0.55)">/^https?:\/\/[\w.-]+\.[a-z]{`{2,}`}(\/\S*)?$/i</text>
+    <text x="480" y="766" font-size="8" fill="rgba(255,255,255,0.28)">http:// or https:// with optional path</text>
+
+    <rect x="32" y="782" width="404" height="56" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="48" y="800" font-weight="700" fill="rgba(52,211,153,0.85)">Hex Color</text>
+    <text x="48" y="816" font-family="monospace" fill="rgba(255,255,255,0.55)">/^#([0-9a-f]{`{3}`}|[0-9a-f]{`{6}`})$/i</text>
+    <text x="48" y="830" font-size="8" fill="rgba(255,255,255,0.28)">3-digit or 6-digit hex, case-insensitive</text>
+
+    <rect x="464" y="782" width="404" height="56" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="480" y="800" font-weight="700" fill="rgba(251,191,36,0.85)">ISO Date</text>
+    <text x="480" y="816" font-family="monospace" fill="rgba(255,255,255,0.55)">/^\d{`{4}`}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])$/</text>
+    <text x="480" y="830" font-size="8" fill="rgba(255,255,255,0.28)">YYYY-MM-DD with valid month/day ranges</text>
+  </g>
+
+  <!-- Section 5: Backtracking warning -->
+  <rect x="32" y="852" width="836" height="38" rx="8" fill="rgba(239,68,68,0.12)" stroke="rgba(239,68,68,0.22)" stroke-width="1"/>
+  <text x="450" y="876" text-anchor="middle" font-size="15" font-weight="800" fill="rgba(239,68,68,0.85)">05 — Avoid Catastrophic Backtracking</text>
+
+  <rect x="32" y="896" width="836" height="96" rx="10" fill="rgba(255,255,255,0.02)" stroke="rgba(239,68,68,0.15)" stroke-width="1"/>
+  <text x="450" y="920" text-anchor="middle" font-size="10.5" fill="rgba(255,255,255,0.6)">Nested quantifiers like <tspan font-family="monospace" fill="rgba(239,68,68,0.8)">(a+)+</tspan> create exponential-time matching on certain inputs —</text>
+  <text x="450" y="940" text-anchor="middle" font-size="10.5" fill="rgba(255,255,255,0.6)">a 30-character string can take over a second; 40 characters can take 15+ minutes.</text>
+  <text x="450" y="960" text-anchor="middle" font-size="10.5" fill="rgba(52,211,153,0.75)">Fix: flatten nested quantifiers over the same characters — use a+ instead of (a+)+</text>
+  <text x="450" y="980" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.3)">The ToolNest Regex Tester shows execution time so you can catch this before it ships</text>
+
+  <!-- Section 6: How to use -->
+  <rect x="32" y="1008" width="836" height="38" rx="8" fill="rgba(14,116,144,0.18)" stroke="rgba(14,116,144,0.3)" stroke-width="1"/>
+  <text x="450" y="1032" text-anchor="middle" font-size="15" font-weight="800" fill="#67e8f9">06 — How to Use the Regex Tester</text>
+
+  <g font-size="10.5">
+    <rect x="48" y="1052" width="28" height="28" rx="14" fill="url(#bG)"/>
+    <text x="62" y="1070" text-anchor="middle" font-weight="900" fill="#fff">1</text>
+    <text x="90" y="1071" fill="rgba(255,255,255,0.65)">Type or paste your pattern into the regex input field</text>
+
+    <rect x="48" y="1090" width="28" height="28" rx="14" fill="url(#bG)"/>
+    <text x="62" y="1108" text-anchor="middle" font-weight="900" fill="#fff">2</text>
+    <text x="90" y="1109" fill="rgba(255,255,255,0.65)">Toggle flags (g, i, m, s, u, y) to change matching behavior</text>
+
+    <rect x="48" y="1128" width="28" height="28" rx="14" fill="url(#bG)"/>
+    <text x="62" y="1146" text-anchor="middle" font-weight="900" fill="#fff">3</text>
+    <text x="90" y="1147" fill="rgba(255,255,255,0.65)">Paste your test string — matches highlight live as you type</text>
+
+    <rect x="48" y="1166" width="28" height="28" rx="14" fill="url(#bG)"/>
+    <text x="62" y="1184" text-anchor="middle" font-weight="900" fill="#fff">4</text>
+    <text x="90" y="1185" fill="rgba(255,255,255,0.65)">Inspect capture groups, match indices, and execution time in the results panel</text>
+  </g>
+
+  <text x="450" y="1198" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.22)">Free tool: toolnestai.net/developer-tools/regex-tester</text>
+</svg>

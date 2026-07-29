@@ -1,0 +1,81 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="30%" cy="40%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gL" cx="15%" cy="50%" r="55%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.45"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gR" cx="85%" cy="50%" r="55%"><stop offset="0%" stop-color="#0e7490" stop-opacity="0.28"/><stop offset="100%" stop-color="#0e7490" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="lapG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1a1040"/><stop offset="100%" stop-color="#0d0824"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="8" stdDeviation="20" flood-color="#5b21b6" flood-opacity="0.5"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <ellipse cx="180" cy="315" rx="600" ry="500" fill="url(#gL)"/>
+  <ellipse cx="1020" cy="315" rx="600" ry="500" fill="url(#gR)"/>
+
+  <text x="60" y="70" font-size="14" font-weight="700" fill="url(#aG)" filter="url(#glow)">ToolNest AI</text>
+  <text x="60" y="106" font-size="13" fill="rgba(255,255,255,0.35)">Developer Tools › Regex Tester</text>
+  <text x="60" y="185" font-size="52" font-weight="900" fill="url(#aG)" filter="url(#glow)">Regex</text>
+  <text x="60" y="245" font-size="52" font-weight="900" fill="url(#aG)" filter="url(#glow)">Tester</text>
+  <text x="60" y="300" font-size="18" fill="rgba(255,255,255,0.6)">Live highlighting · Groups · Cheat sheet</text>
+  <text x="60" y="328" font-size="18" fill="rgba(255,255,255,0.6)">Test regex patterns instantly — Free</text>
+
+  <rect x="60" y="358" width="110" height="52" rx="8" fill="rgba(124,58,237,0.2)" stroke="rgba(124,58,237,0.4)" stroke-width="1"/>
+  <text x="115" y="382" text-anchor="middle" font-size="14" font-weight="900" fill="#a78bfa">Live</text>
+  <text x="115" y="400" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.45)">as-you-type</text>
+
+  <rect x="182" y="358" width="110" height="52" rx="8" fill="rgba(14,116,144,0.15)" stroke="rgba(14,116,144,0.35)" stroke-width="1"/>
+  <text x="237" y="382" text-anchor="middle" font-size="20" font-weight="900" fill="#67e8f9">6</text>
+  <text x="237" y="400" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.45)">regex flags</text>
+
+  <rect x="304" y="358" width="110" height="52" rx="8" fill="rgba(16,185,129,0.12)" stroke="rgba(16,185,129,0.3)" stroke-width="1"/>
+  <text x="359" y="382" text-anchor="middle" font-size="18" font-weight="900" fill="#34d399">Groups</text>
+  <text x="359" y="400" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.45)">capture &amp; named</text>
+
+  <rect x="426" y="358" width="110" height="52" rx="8" fill="rgba(251,191,36,0.1)" stroke="rgba(251,191,36,0.25)" stroke-width="1"/>
+  <text x="481" y="382" text-anchor="middle" font-size="20" font-weight="900" fill="#fbbf24">Free</text>
+  <text x="481" y="400" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.45)">no account</text>
+
+  <text x="60" y="560" font-size="14" fill="rgba(255,255,255,0.25)">toolnestai.net/developer-tools/regex-tester</text>
+
+  <rect x="630" y="60" width="530" height="490" rx="16" fill="url(#lapG)" stroke="rgba(124,58,237,0.3)" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="630" y="60" width="530" height="36" rx="16" fill="rgba(255,255,255,0.05)"/>
+  <rect x="630" y="78" width="530" height="18" fill="rgba(255,255,255,0.02)"/>
+  <circle cx="655" cy="78" r="6" fill="rgba(239,68,68,0.6)"/>
+  <circle cx="675" cy="78" r="6" fill="rgba(251,191,36,0.6)"/>
+  <circle cx="695" cy="78" r="6" fill="rgba(34,197,94,0.6)"/>
+
+  <text x="648" y="122" font-size="8.5" font-weight="700" fill="rgba(255,255,255,0.3)">PATTERN</text>
+  <rect x="640" y="128" width="506" height="34" rx="8" fill="rgba(0,0,0,0.5)" stroke="rgba(124,58,237,0.4)" stroke-width="1.5"/>
+  <text x="656" y="150" font-family="monospace" font-size="13" fill="rgba(167,139,250,0.9)">/^(\d{3})-(\d{3})-(\d{4})$/gm</text>
+
+  <text x="648" y="184" font-size="8.5" font-weight="700" fill="rgba(255,255,255,0.3)">TEST STRING</text>
+  <rect x="640" y="190" width="506" height="70" rx="8" fill="rgba(0,0,0,0.4)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="656" y="212" font-family="monospace" font-size="10.5" fill="rgba(255,255,255,0.55)">Call </text>
+  <rect x="682" y="200" width="86" height="16" rx="3" fill="rgba(52,211,153,0.3)"/>
+  <text x="688" y="212" font-family="monospace" font-size="10.5" fill="#6ee7b7">555-123-4567</text>
+  <text x="656" y="234" font-family="monospace" font-size="10.5" fill="rgba(255,255,255,0.55)">or </text>
+  <rect x="676" y="222" width="86" height="16" rx="3" fill="rgba(52,211,153,0.3)"/>
+  <text x="682" y="234" font-family="monospace" font-size="10.5" fill="#6ee7b7">800-555-0199</text>
+
+  <rect x="640" y="270" width="164" height="44" rx="7" fill="rgba(52,211,153,0.1)" stroke="rgba(52,211,153,0.22)" stroke-width="1"/>
+  <text x="722" y="292" text-anchor="middle" font-size="16" font-weight="900" fill="#34d399">2 matches</text>
+  <text x="722" y="306" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.4)">found instantly</text>
+
+  <rect x="812" y="270" width="164" height="44" rx="7" fill="rgba(124,58,237,0.1)" stroke="rgba(124,58,237,0.22)" stroke-width="1"/>
+  <text x="894" y="292" text-anchor="middle" font-size="16" font-weight="900" fill="#a78bfa">3 groups</text>
+  <text x="894" y="306" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.4)">captured per match</text>
+
+  <text x="648" y="336" font-size="8.5" font-weight="700" fill="rgba(255,255,255,0.3)">QUICK REFERENCE</text>
+  <g font-family="monospace" font-size="9.5">
+    <rect x="640" y="342" width="506" height="124" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="656" y="364" fill="rgba(255,255,255,0.5)">\d <tspan fill="rgba(167,139,250,0.8)">digit</tspan>   \w <tspan fill="rgba(167,139,250,0.8)">word char</tspan>   \s <tspan fill="rgba(167,139,250,0.8)">whitespace</tspan></text>
+    <text x="656" y="388" fill="rgba(255,255,255,0.5)">^ <tspan fill="rgba(103,232,249,0.8)">start</tspan>   $ <tspan fill="rgba(103,232,249,0.8)">end</tspan>   \b <tspan fill="rgba(103,232,249,0.8)">word boundary</tspan></text>
+    <text x="656" y="412" fill="rgba(255,255,255,0.5)">* <tspan fill="rgba(52,211,153,0.8)">0+</tspan>   + <tspan fill="rgba(52,211,153,0.8)">1+</tspan>   ? <tspan fill="rgba(52,211,153,0.8)">0 or 1</tspan>   {`{n,m}`} <tspan fill="rgba(52,211,153,0.8)">count</tspan></text>
+    <text x="656" y="436" fill="rgba(255,255,255,0.5)">(...) <tspan fill="rgba(251,191,36,0.8)">group</tspan>   [...] <tspan fill="rgba(251,191,36,0.8)">char class</tspan>   a|b <tspan fill="rgba(251,191,36,0.8)">or</tspan></text>
+    <text x="656" y="458" fill="rgba(255,255,255,0.4)">Full cheat sheet included in the article →</text>
+  </g>
+
+  <rect x="620" y="550" width="560" height="14" rx="4" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <rect x="760" y="562" width="260" height="8" rx="4" fill="rgba(255,255,255,0.03)"/>
+</svg>

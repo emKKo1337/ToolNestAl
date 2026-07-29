@@ -1,0 +1,62 @@
+<svg viewBox="0 0 900 480" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gC" cx="50%" cy="40%" r="60%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.2"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+  </defs>
+  <rect width="900" height="480" fill="url(#bg)"/>
+  <ellipse cx="450" cy="240" rx="520" ry="330" fill="url(#gC)"/>
+
+  <text x="450" y="36" text-anchor="middle" font-size="20" font-weight="900" fill="url(#aG)">6 Common Regex Patterns, Ready to Use</text>
+  <text x="450" y="54" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.38)">Copy-paste patterns for the most frequent validation tasks</text>
+
+  <!-- Email -->
+  <rect x="28" y="70" width="410" height="90" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(124,58,237,0.15)" stroke-width="1"/>
+  <text x="44" y="90" font-size="10.5" font-weight="700" fill="#a78bfa">Email Address</text>
+  <text x="44" y="112" font-family="monospace" font-size="9.5" fill="rgba(255,255,255,0.65)">/^[\w.+-]+@[\w-]+\.[a-zA-Z]{2,}$/</text>
+  <text x="44" y="132" font-size="8.5" fill="rgba(255,255,255,0.4)">Matches: name@domain.tld — covers dots, plus-addressing,</text>
+  <text x="44" y="146" font-size="8.5" fill="rgba(255,255,255,0.4)">hyphenated domains. Not fully RFC 5322 compliant (none are practical).</text>
+
+  <!-- URL -->
+  <rect x="462" y="70" width="410" height="90" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(14,116,144,0.15)" stroke-width="1"/>
+  <text x="478" y="90" font-size="10.5" font-weight="700" fill="#67e8f9">URL</text>
+  <text x="478" y="112" font-family="monospace" font-size="9.5" fill="rgba(255,255,255,0.65)">/^https?:\/\/[\w.-]+\.[a-z]{2,}(\/\S*)?$/i</text>
+  <text x="478" y="132" font-size="8.5" fill="rgba(255,255,255,0.4)">Matches: http:// or https:// URLs with an optional path.</text>
+  <text x="478" y="146" font-size="8.5" fill="rgba(255,255,255,0.4)">The i flag makes the scheme case-insensitive (HTTP:// also matches).</text>
+
+  <!-- IPv4 -->
+  <rect x="28" y="170" width="410" height="90" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(16,185,129,0.15)" stroke-width="1"/>
+  <text x="44" y="190" font-size="10.5" font-weight="700" fill="#34d399">IPv4 Address</text>
+  <text x="44" y="212" font-family="monospace" font-size="9.5" fill="rgba(255,255,255,0.65)">/^(\d{1,3}\.){3}\d{1,3}$/</text>
+  <text x="44" y="232" font-size="8.5" fill="rgba(255,255,255,0.4)">Matches: 192.168.1.1 — structurally correct but does not</text>
+  <text x="44" y="246" font-size="8.5" fill="rgba(255,255,255,0.4)">validate each octet is 0-255. Add range checks for strict validation.</text>
+
+  <!-- Phone -->
+  <rect x="462" y="170" width="410" height="90" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(251,191,36,0.15)" stroke-width="1"/>
+  <text x="478" y="190" font-size="10.5" font-weight="700" fill="#fbbf24">US Phone Number</text>
+  <text x="478" y="212" font-family="monospace" font-size="9.5" fill="rgba(255,255,255,0.65)">/^\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}$/</text>
+  <text x="478" y="232" font-size="8.5" fill="rgba(255,255,255,0.4)">Matches: (555) 123-4567, 555-123-4567, 555.123.4567,</text>
+  <text x="478" y="246" font-size="8.5" fill="rgba(255,255,255,0.4)">5551234567 — flexible separators, optional parentheses.</text>
+
+  <!-- Hex color -->
+  <rect x="28" y="270" width="410" height="90" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(236,72,153,0.15)" stroke-width="1"/>
+  <text x="44" y="290" font-size="10.5" font-weight="700" fill="#f472b6">Hex Color Code</text>
+  <text x="44" y="312" font-family="monospace" font-size="9.5" fill="rgba(255,255,255,0.65)">/^#([0-9a-f]{3}|[0-9a-f]{6})$/i</text>
+  <text x="44" y="332" font-size="8.5" fill="rgba(255,255,255,0.4)">Matches: #ddb7ff, #fff — supports both 3-digit shorthand</text>
+  <text x="44" y="346" font-size="8.5" fill="rgba(255,255,255,0.4)">and 6-digit full hex, case-insensitive via the i flag.</text>
+
+  <!-- Strong password -->
+  <rect x="462" y="270" width="410" height="90" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(99,102,241,0.15)" stroke-width="1"/>
+  <text x="478" y="290" font-size="10.5" font-weight="700" fill="#818cf8">Strong Password</text>
+  <text x="478" y="312" font-family="monospace" font-size="9" fill="rgba(255,255,255,0.65)">/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^\w\s]).{8,}$/</text>
+  <text x="478" y="332" font-size="8.5" fill="rgba(255,255,255,0.4)">Requires: 1 lowercase, 1 uppercase, 1 digit, 1 symbol,</text>
+  <text x="478" y="346" font-size="8.5" fill="rgba(255,255,255,0.4)">min 8 chars. Uses lookaheads — see the ToolNest Password Generator.</text>
+
+  <!-- ISO Date -->
+  <rect x="28" y="370" width="844" height="64" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="44" y="392" font-size="10.5" font-weight="700" fill="rgba(255,255,255,0.65)">ISO 8601 Date (YYYY-MM-DD)</text>
+  <text x="480" y="392" font-family="monospace" font-size="9.5" fill="rgba(255,255,255,0.65)">/^\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])$/</text>
+  <text x="44" y="414" font-size="8.5" fill="rgba(255,255,255,0.4)">Matches: 2026-07-29 — validates month is 01-12 and day is 01-31 (does not check days-per-month or leap years).</text>
+
+  <text x="450" y="454" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">toolnestai.net/developer-tools/regex-tester</text>
+</svg>
