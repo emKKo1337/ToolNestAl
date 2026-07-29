@@ -1,0 +1,49 @@
+<svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gC" cx="50%" cy="40%" r="60%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.2"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+  </defs>
+  <rect width="900" height="460" fill="url(#bg)"/>
+  <ellipse cx="450" cy="230" rx="520" ry="320" fill="url(#gC)"/>
+
+  <text x="450" y="36" text-anchor="middle" font-size="20" font-weight="900" fill="url(#aG)">Lossy vs Lossless Compression</text>
+  <text x="450" y="54" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.38)">The fundamental trade-off behind every image format choice</text>
+
+  <!-- Lossless -->
+  <rect x="28" y="70" width="410" height="170" rx="10" fill="rgba(52,211,153,0.06)" stroke="rgba(52,211,153,0.2)" stroke-width="1"/>
+  <text x="233" y="94" text-anchor="middle" font-size="12" font-weight="700" fill="#6ee7b7">Lossless (PNG, lossless WebP)</text>
+  <text x="44" y="120" font-size="9.5" fill="rgba(255,255,255,0.55)">Every original pixel is preserved exactly —</text>
+  <text x="44" y="136" font-size="9.5" fill="rgba(255,255,255,0.55)">decompressing returns bit-for-bit identical</text>
+  <text x="44" y="152" font-size="9.5" fill="rgba(255,255,255,0.55)">data to the source image.</text>
+  <text x="44" y="176" font-size="9.5" font-weight="700" fill="rgba(52,211,153,0.8)">Trade-off: larger file sizes</text>
+  <text x="44" y="196" font-size="9" fill="rgba(255,255,255,0.5)">Best for: logos, screenshots, line art,</text>
+  <text x="44" y="212" font-size="9" fill="rgba(255,255,255,0.5)">anything with sharp edges or flat colors</text>
+  <text x="44" y="228" font-size="9" fill="rgba(255,255,255,0.5)">where compression artifacts would be obvious</text>
+
+  <!-- Lossy -->
+  <rect x="462" y="70" width="410" height="170" rx="10" fill="rgba(251,191,36,0.06)" stroke="rgba(251,191,36,0.2)" stroke-width="1"/>
+  <text x="667" y="94" text-anchor="middle" font-size="12" font-weight="700" fill="#fbbf24">Lossy (JPG, lossy WebP)</text>
+  <text x="478" y="120" font-size="9.5" fill="rgba(255,255,255,0.55)">Some data is permanently discarded to</text>
+  <text x="478" y="136" font-size="9.5" fill="rgba(255,255,255,0.55)">achieve much smaller file sizes — the</text>
+  <text x="478" y="152" font-size="9.5" fill="rgba(255,255,255,0.55)">algorithm exploits how human vision works.</text>
+  <text x="478" y="176" font-size="9.5" font-weight="700" fill="rgba(251,191,36,0.8)">Trade-off: irreversible quality loss</text>
+  <text x="478" y="196" font-size="9" fill="rgba(255,255,255,0.5)">Best for: photographs with natural gradients</text>
+  <text x="478" y="212" font-size="9" fill="rgba(255,255,255,0.5)">and complex color variation, where small</text>
+  <text x="478" y="228" font-size="9" fill="rgba(255,255,255,0.5)">artifacts blend in and aren't noticeable</text>
+
+  <!-- How lossy works -->
+  <rect x="28" y="252" width="844" height="106" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(124,58,237,0.15)" stroke-width="1"/>
+  <text x="450" y="274" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(167,139,250,0.85)">HOW JPEG COMPRESSION ACTUALLY WORKS</text>
+  <text x="450" y="296" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">JPEG splits the image into 8×8 pixel blocks, transforms each block into frequency data (DCT),</text>
+  <text x="450" y="314" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">then discards high-frequency detail human eyes are less sensitive to — this is where the "quality"</text>
+  <text x="450" y="332" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">setting comes in: lower quality discards more, producing smaller files with visible blocky artifacts</text>
+
+  <!-- Choosing rule -->
+  <rect x="28" y="368" width="844" height="66" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <text x="450" y="390" text-anchor="middle" font-size="9.5" font-weight="700" fill="rgba(255,255,255,0.4)">SIMPLE DECISION RULE</text>
+  <text x="450" y="410" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.5)">Has sharp edges, text, or flat colors (logo, screenshot, diagram)? → Lossless (PNG/WebP)</text>
+  <text x="450" y="426" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.5)">Has smooth gradients and natural detail (photograph)? → Lossy (JPG/WebP) for smaller files</text>
+
+  <text x="450" y="450" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">toolnestai.net/image-tools/image-converter</text>
+</svg>

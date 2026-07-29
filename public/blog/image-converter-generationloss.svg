@@ -1,0 +1,67 @@
+<svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gC" cx="50%" cy="40%" r="60%"><stop offset="0%" stop-color="#0e7490" stop-opacity="0.2"/><stop offset="100%" stop-color="#0e7490" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+  </defs>
+  <rect width="900" height="460" fill="url(#bg)"/>
+  <ellipse cx="450" cy="230" rx="520" ry="320" fill="url(#gC)"/>
+
+  <text x="450" y="36" text-anchor="middle" font-size="20" font-weight="900" fill="url(#aG)">Generation Loss — Why Re-Saving JPG Degrades Quality</text>
+  <text x="450" y="54" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.38)">Each JPG re-save compounds compression artifacts, even with no visible edits</text>
+
+  <!-- Generation chain -->
+  <rect x="28" y="72" width="844" height="140" rx="10" fill="rgba(255,255,255,0.02)" stroke="rgba(239,68,68,0.18)" stroke-width="1"/>
+  <text x="450" y="94" text-anchor="middle" font-size="10.5" font-weight="700" fill="rgba(239,68,68,0.8)">RE-SAVING THE SAME JPG REPEATEDLY (even with zero edits)</text>
+
+  <g text-anchor="middle" font-size="9.5">
+    <rect x="52" y="112" width="140" height="60" rx="6" fill="rgba(52,211,153,0.1)" stroke="rgba(52,211,153,0.25)" stroke-width="1"/>
+    <text x="122" y="136" font-weight="700" fill="#6ee7b7">Generation 1</text>
+    <text x="122" y="154" fill="rgba(255,255,255,0.5)">Original save</text>
+    <text x="122" y="168" fill="rgba(255,255,255,0.35)" font-size="8">Sharp, clean</text>
+
+    <text x="212" y="150" fill="rgba(255,255,255,0.3)">→</text>
+
+    <rect x="232" y="112" width="140" height="60" rx="6" fill="rgba(251,191,36,0.08)" stroke="rgba(251,191,36,0.2)" stroke-width="1"/>
+    <text x="302" y="136" font-weight="700" fill="#fbbf24">Generation 2</text>
+    <text x="302" y="154" fill="rgba(255,255,255,0.5)">Re-saved once</text>
+    <text x="302" y="168" fill="rgba(255,255,255,0.35)" font-size="8">Slight new artifacts</text>
+
+    <text x="392" y="150" fill="rgba(255,255,255,0.3)">→</text>
+
+    <rect x="412" y="112" width="140" height="60" rx="6" fill="rgba(249,115,22,0.08)" stroke="rgba(249,115,22,0.2)" stroke-width="1"/>
+    <text x="482" y="136" font-weight="700" fill="#fb923c">Generation 5</text>
+    <text x="482" y="154" fill="rgba(255,255,255,0.5)">Re-saved 5 times</text>
+    <text x="482" y="168" fill="rgba(255,255,255,0.35)" font-size="8">Visible blockiness</text>
+
+    <text x="572" y="150" fill="rgba(255,255,255,0.3)">→</text>
+
+    <rect x="592" y="112" width="140" height="60" rx="6" fill="rgba(239,68,68,0.1)" stroke="rgba(239,68,68,0.25)" stroke-width="1"/>
+    <text x="662" y="136" font-weight="700" fill="#f87171">Generation 20</text>
+    <text x="662" y="154" fill="rgba(255,255,255,0.5)">Re-saved 20 times</text>
+    <text x="662" y="168" fill="rgba(255,255,255,0.35)" font-size="8">Severely degraded</text>
+
+    <text x="752" y="150" fill="rgba(255,255,255,0.3)">→</text>
+
+    <rect x="772" y="112" width="80" height="60" rx="6" fill="rgba(153,27,27,0.15)" stroke="rgba(239,68,68,0.3)" stroke-width="1"/>
+    <text x="812" y="145" font-weight="700" fill="#dc2626" font-size="9">Unusable</text>
+  </g>
+
+  <text x="450" y="196" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.35)">Each save re-runs the lossy DCT compression algorithm, discarding a little more detail every time</text>
+
+  <!-- Why this happens -->
+  <rect x="28" y="224" width="844" height="90" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(124,58,237,0.15)" stroke-width="1"/>
+  <text x="450" y="246" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(167,139,250,0.85)">WHY THIS DOESN'T HAPPEN WITH LOSSLESS FORMATS</text>
+  <text x="450" y="268" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">A lossless format (PNG, lossless WebP) always decompresses to the exact original pixel data —</text>
+  <text x="450" y="286" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">there's nothing left to lose on a second save, because nothing was discarded on the first one.</text>
+  <text x="450" y="304" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">Re-saving a PNG 100 times produces byte-for-byte identical output every time.</text>
+
+  <!-- Golden rule -->
+  <rect x="28" y="324" width="844" height="90" rx="8" fill="rgba(52,211,153,0.05)" stroke="rgba(52,211,153,0.16)" stroke-width="1"/>
+  <text x="450" y="346" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(110,231,183,0.85)">THE GOLDEN RULE</text>
+  <text x="450" y="368" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">Always convert from the original source file, never from a previously-converted lossy copy.</text>
+  <text x="450" y="386" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">Keep a lossless master copy (PNG, TIFF, or the camera RAW file) and export lossy versions</text>
+  <text x="450" y="404" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">from that master each time, rather than re-compressing an already-compressed JPG</text>
+
+  <text x="450" y="440" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">toolnestai.net/image-tools/image-converter</text>
+</svg>

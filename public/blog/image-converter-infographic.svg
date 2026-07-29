@@ -1,0 +1,88 @@
+<svg viewBox="0 0 900 1150" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="30%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gT" cx="50%" cy="10%" r="60%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.35"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gB" cx="50%" cy="90%" r="60%"><stop offset="0%" stop-color="#0e7490" stop-opacity="0.2"/><stop offset="100%" stop-color="#0e7490" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+  </defs>
+  <rect width="900" height="1150" fill="url(#bg)"/>
+  <ellipse cx="450" cy="200" rx="700" ry="400" fill="url(#gT)"/>
+  <ellipse cx="450" cy="950" rx="700" ry="400" fill="url(#gB)"/>
+
+  <text x="450" y="52" text-anchor="middle" font-size="26" font-weight="900" fill="url(#aG)">The Complete Image Format Guide</text>
+  <text x="450" y="76" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.38)">JPG, PNG, WebP compared — and the mistakes that degrade quality</text>
+  <text x="450" y="94" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.22)">toolnestai.net/image-tools/image-converter</text>
+
+  <!-- Section 1: format table -->
+  <rect x="32" y="110" width="836" height="38" rx="8" fill="rgba(124,58,237,0.18)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+  <text x="450" y="134" text-anchor="middle" font-size="15" font-weight="800" fill="#a78bfa">01 — Format Comparison</text>
+
+  <g font-size="10">
+    <rect x="32" y="154" width="404" height="100" rx="8" fill="rgba(167,139,250,0.06)" stroke="rgba(167,139,250,0.16)" stroke-width="1"/>
+    <text x="48" y="176" font-weight="700" fill="#a78bfa">PNG</text>
+    <text x="48" y="196" fill="rgba(255,255,255,0.5)">Lossless, supports transparency</text>
+    <text x="48" y="212" fill="rgba(255,255,255,0.5)">Best for: logos, screenshots, graphics</text>
+    <text x="48" y="232" fill="rgba(255,255,255,0.3)" font-size="8.5">Larger file sizes than JPG/WebP</text>
+
+    <rect x="464" y="154" width="404" height="100" rx="8" fill="rgba(103,232,249,0.06)" stroke="rgba(103,232,249,0.16)" stroke-width="1"/>
+    <text x="480" y="176" font-weight="700" fill="#67e8f9">JPG</text>
+    <text x="480" y="196" fill="rgba(255,255,255,0.5)">Lossy, no transparency</text>
+    <text x="480" y="212" fill="rgba(255,255,255,0.5)">Best for: photographs</text>
+    <text x="480" y="232" fill="rgba(255,255,255,0.3)" font-size="8.5">Adjustable quality vs file size trade-off</text>
+  </g>
+
+  <rect x="32" y="262" width="836" height="72" rx="8" fill="rgba(52,211,153,0.06)" stroke="rgba(52,211,153,0.16)" stroke-width="1"/>
+  <text x="48" y="284" font-weight="700" font-size="10" fill="#6ee7b7">WebP — the modern default</text>
+  <text x="48" y="304" font-size="9.5" fill="rgba(255,255,255,0.55)">Supports both lossy AND lossless modes, plus transparency — typically 25-35%</text>
+  <text x="48" y="320" font-size="9.5" fill="rgba(255,255,255,0.55)">smaller than equivalent-quality JPG or PNG. Best general-purpose choice for web images.</text>
+
+  <!-- Section 2: lossy vs lossless -->
+  <rect x="32" y="350" width="836" height="38" rx="8" fill="rgba(14,116,144,0.18)" stroke="rgba(14,116,144,0.3)" stroke-width="1"/>
+  <text x="450" y="374" text-anchor="middle" font-size="15" font-weight="800" fill="#67e8f9">02 — Lossy vs Lossless</text>
+
+  <rect x="32" y="394" width="836" height="90" rx="10" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="450" y="418" text-anchor="middle" font-size="10.5" fill="rgba(255,255,255,0.6)">Lossless preserves every pixel exactly — larger files, safe for repeated editing</text>
+  <text x="450" y="438" text-anchor="middle" font-size="10.5" fill="rgba(255,255,255,0.6)">Lossy discards data humans are less likely to notice — smaller files, degrades with re-saves</text>
+  <text x="450" y="462" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.3)">Rule: sharp edges/flat colors → lossless. Smooth photo gradients → lossy is fine</text>
+
+  <!-- Section 3: generation loss -->
+  <rect x="32" y="502" width="836" height="38" rx="8" fill="rgba(239,68,68,0.12)" stroke="rgba(239,68,68,0.22)" stroke-width="1"/>
+  <text x="450" y="526" text-anchor="middle" font-size="15" font-weight="800" fill="rgba(239,68,68,0.85)">03 — Generation Loss</text>
+
+  <rect x="32" y="546" width="836" height="100" rx="10" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="450" y="570" text-anchor="middle" font-size="10.5" fill="rgba(255,255,255,0.6)">Every time a JPG is re-saved, the lossy compression algorithm runs again,</text>
+  <text x="450" y="590" text-anchor="middle" font-size="10.5" fill="rgba(255,255,255,0.6)">discarding a little more detail — even with zero visible edits between saves.</text>
+  <text x="450" y="614" text-anchor="middle" font-size="9.5" fill="rgba(52,211,153,0.8)">Fix: always convert from the original source, keep a lossless master copy</text>
+  <text x="450" y="632" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.3)">PNG re-saved 100 times stays byte-for-byte identical — no generation loss risk</text>
+
+  <!-- Section 4: transparency -->
+  <rect x="32" y="662" width="836" height="38" rx="8" fill="rgba(124,58,237,0.18)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+  <text x="450" y="686" text-anchor="middle" font-size="15" font-weight="800" fill="#a78bfa">04 — The Transparency Trap</text>
+
+  <rect x="32" y="706" width="836" height="80" rx="10" fill="rgba(251,191,36,0.06)" stroke="rgba(251,191,36,0.18)" stroke-width="1"/>
+  <text x="450" y="730" text-anchor="middle" font-size="10.5" fill="rgba(255,255,255,0.6)">JPG has no alpha channel — converting any transparent PNG or WebP to JPG</text>
+  <text x="450" y="750" text-anchor="middle" font-size="10.5" fill="rgba(255,255,255,0.6)">silently fills every transparent pixel with a solid background color (usually white)</text>
+  <text x="450" y="774" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.3)">Always check for a transparency warning before converting logos or graphics to JPG</text>
+
+  <!-- Section 5: uses -->
+  <rect x="32" y="814" width="836" height="38" rx="8" fill="rgba(16,185,129,0.14)" stroke="rgba(16,185,129,0.25)" stroke-width="1"/>
+  <text x="450" y="838" text-anchor="middle" font-size="15" font-weight="800" fill="#34d399">05 — Choosing a Format Quickly</text>
+
+  <g text-anchor="middle" font-size="9.5">
+    <rect x="32" y="858" width="270" height="80" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="167" y="880" font-weight="700" fill="rgba(167,139,250,0.85)">Website images</text>
+    <text x="167" y="900" fill="rgba(255,255,255,0.5)">WebP (or JPG fallback)</text>
+
+    <rect x="315" y="858" width="270" height="80" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="450" y="880" font-weight="700" fill="rgba(103,232,249,0.85)">Logo with transparency</text>
+    <text x="450" y="900" fill="rgba(255,255,255,0.5)">PNG or WebP</text>
+
+    <rect x="598" y="858" width="270" height="80" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="733" y="880" font-weight="700" fill="rgba(52,211,153,0.85)">Print / archival</text>
+    <text x="733" y="900" fill="rgba(255,255,255,0.5)">PNG or TIFF (lossless)</text>
+  </g>
+
+  <text x="450" y="960" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.28)">Free tool: toolnestai.net/image-tools/image-converter</text>
+  <text x="450" y="980" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">JPG, PNG, WebP, GIF, BMP — any format to any format, client-side</text>
+</svg>
