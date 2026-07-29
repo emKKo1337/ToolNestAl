@@ -1,0 +1,50 @@
+<svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gC" cx="50%" cy="40%" r="60%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.2"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+  </defs>
+  <rect width="900" height="460" fill="url(#bg)"/>
+  <ellipse cx="450" cy="230" rx="520" ry="320" fill="url(#gC)"/>
+
+  <text x="450" y="36" text-anchor="middle" font-size="20" font-weight="900" fill="url(#aG)">Hyphens vs Underscores in URLs</text>
+  <text x="450" y="54" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.38)">Google has explicitly stated a preference — here's why it matters</text>
+
+  <!-- Hyphens -->
+  <rect x="28" y="72" width="410" height="160" rx="10" fill="rgba(52,211,153,0.06)" stroke="rgba(52,211,153,0.2)" stroke-width="1"/>
+  <text x="233" y="96" text-anchor="middle" font-size="12" font-weight="700" fill="#6ee7b7">✓ Hyphens (kebab-case)</text>
+  <text x="233" y="122" text-anchor="middle" font-family="monospace" font-size="13" fill="rgba(110,231,183,0.9)">best-coffee-shops-portland</text>
+  <text x="44" y="148" font-size="9.5" fill="rgba(255,255,255,0.55)">Google explicitly treats hyphens as word</text>
+  <text x="44" y="164" font-size="9.5" fill="rgba(255,255,255,0.55)">separators — each segment is indexed as</text>
+  <text x="44" y="180" font-size="9.5" fill="rgba(255,255,255,0.55)">its own searchable term.</text>
+  <text x="44" y="204" font-size="9.5" fill="rgba(52,211,153,0.75)">"best" "coffee" "shops" "portland" — 4 distinct</text>
+  <text x="44" y="220" font-size="9.5" fill="rgba(52,211,153,0.75)">searchable keywords recognized independently</text>
+
+  <!-- Underscores -->
+  <rect x="462" y="72" width="410" height="160" rx="10" fill="rgba(239,68,68,0.06)" stroke="rgba(239,68,68,0.2)" stroke-width="1"/>
+  <text x="667" y="96" text-anchor="middle" font-size="12" font-weight="700" fill="#f87171">✗ Underscores (snake_case)</text>
+  <text x="667" y="122" text-anchor="middle" font-family="monospace" font-size="13" fill="rgba(252,165,165,0.9)">best_coffee_shops_portland</text>
+  <text x="478" y="148" font-size="9.5" fill="rgba(255,255,255,0.55)">Historically, Google's indexing treated</text>
+  <text x="478" y="164" font-size="9.5" fill="rgba(255,255,255,0.55)">underscores as joining characters rather</text>
+  <text x="478" y="180" font-size="9.5" fill="rgba(255,255,255,0.55)">than word separators.</text>
+  <text x="478" y="204" font-size="9.5" fill="rgba(239,68,68,0.75)">"best_coffee_shops_portland" — historically</text>
+  <text x="478" y="220" font-size="9.5" fill="rgba(239,68,68,0.75)">read as ONE token, not 4 separate keywords</text>
+
+  <!-- Note -->
+  <rect x="28" y="244" width="844" height="66" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(124,58,237,0.15)" stroke-width="1"/>
+  <text x="450" y="266" text-anchor="middle" font-size="9.5" font-weight="700" fill="rgba(167,139,250,0.85)">HAS THIS CHANGED?</text>
+  <text x="450" y="286" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">Google's algorithms have improved significantly since this distinction was first noted publicly.</text>
+  <text x="450" y="302" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">Regardless, hyphens remain the universal convention — safest choice, no ambiguity, matches every major CMS default.</text>
+
+  <!-- Other rules -->
+  <rect x="28" y="322" width="844" height="112" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <text x="450" y="344" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(255,255,255,0.4)">OTHER SLUG BEST PRACTICES</text>
+  <text x="44" y="366" font-size="9.5" fill="rgba(255,255,255,0.55)">✓ Always lowercase — avoids case-sensitivity issues across servers</text>
+  <text x="44" y="386" font-size="9.5" fill="rgba(255,255,255,0.55)">✓ Remove stop words for very long titles (a, the, and) if it improves readability</text>
+  <text x="44" y="406" font-size="9.5" fill="rgba(255,255,255,0.55)">✓ Keep slugs stable — changing a published URL slug breaks existing links and loses SEO history</text>
+  <text x="470" y="366" font-size="9.5" fill="rgba(255,255,255,0.55)">✓ Target 3-5 words / under 60 characters</text>
+  <text x="470" y="386" font-size="9.5" fill="rgba(255,255,255,0.55)">✓ Include your target keyword near the start</text>
+  <text x="470" y="406" font-size="9.5" fill="rgba(255,255,255,0.55)">✓ Set up a 301 redirect if a slug must change</text>
+
+  <text x="450" y="452" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">toolnestai.net/text-tools/slug-generator</text>
+</svg>

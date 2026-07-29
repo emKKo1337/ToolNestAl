@@ -1,0 +1,125 @@
+<svg viewBox="0 0 900 1200" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="30%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gT" cx="50%" cy="10%" r="60%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.35"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gB" cx="50%" cy="90%" r="60%"><stop offset="0%" stop-color="#0e7490" stop-opacity="0.2"/><stop offset="100%" stop-color="#0e7490" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+  </defs>
+  <rect width="900" height="1200" fill="url(#bg)"/>
+  <ellipse cx="450" cy="200" rx="700" ry="400" fill="url(#gT)"/>
+  <ellipse cx="450" cy="1000" rx="700" ry="400" fill="url(#gB)"/>
+
+  <text x="450" y="52" text-anchor="middle" font-size="28" font-weight="900" fill="url(#aG)">The Complete URL Slug Guide</text>
+  <text x="450" y="76" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.38)">Everything you need to know about SEO-friendly URL slugs</text>
+  <text x="450" y="94" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.22)">toolnestai.net/text-tools/slug-generator</text>
+
+  <!-- Section 1 -->
+  <rect x="32" y="110" width="836" height="38" rx="8" fill="rgba(124,58,237,0.18)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+  <text x="450" y="134" text-anchor="middle" font-size="15" font-weight="800" fill="#a78bfa">01 — What Is a URL Slug?</text>
+
+  <rect x="32" y="154" width="836" height="90" rx="10" fill="rgba(255,255,255,0.025)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="450" y="178" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.65)">A slug is the human-readable part of a URL that identifies a specific page —</text>
+  <text x="450" y="198" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.65)">everything after the domain and path prefix. It's derived from a page title but</text>
+  <text x="450" y="218" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.65)">stripped of spaces, symbols, and special characters to be URL-safe.</text>
+  <text x="450" y="238" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.3)">example.com/blog/best-coffee-shops-portland — "best-coffee-shops-portland" is the slug</text>
+
+  <!-- Section 2: Transformation steps -->
+  <rect x="32" y="256" width="836" height="38" rx="8" fill="rgba(14,116,144,0.18)" stroke="rgba(14,116,144,0.3)" stroke-width="1"/>
+  <text x="450" y="280" text-anchor="middle" font-size="15" font-weight="800" fill="#67e8f9">02 — 4-Step Transformation</text>
+
+  <g font-size="10.5">
+    <rect x="48" y="300" width="28" height="28" rx="14" fill="url(#bG)"/>
+    <text x="62" y="318" text-anchor="middle" font-weight="900" fill="#fff">1</text>
+    <text x="90" y="319" fill="rgba(255,255,255,0.65)">Transliterate accents: Café → cafe, Résumé → resume, Naïve → naive</text>
+
+    <rect x="48" y="338" width="28" height="28" rx="14" fill="url(#bG)"/>
+    <text x="62" y="356" text-anchor="middle" font-weight="900" fill="#fff">2</text>
+    <text x="90" y="357" fill="rgba(255,255,255,0.65)">Strip symbols and punctuation: &amp; ! ( ) ? — removed entirely</text>
+
+    <rect x="48" y="376" width="28" height="28" rx="14" fill="url(#bG)"/>
+    <text x="62" y="394" text-anchor="middle" font-weight="900" fill="#fff">3</text>
+    <text x="90" y="395" fill="rgba(255,255,255,0.65)">Convert to lowercase — avoids case-sensitivity bugs across servers</text>
+
+    <rect x="48" y="414" width="28" height="28" rx="14" fill="url(#bG)"/>
+    <text x="62" y="432" text-anchor="middle" font-weight="900" fill="#fff">4</text>
+    <text x="90" y="433" fill="rgba(255,255,255,0.65)">Replace spaces with hyphens, collapse repeated hyphens into one</text>
+  </g>
+
+  <!-- Section 3: hyphens vs underscores -->
+  <rect x="32" y="456" width="836" height="38" rx="8" fill="rgba(16,185,129,0.14)" stroke="rgba(16,185,129,0.25)" stroke-width="1"/>
+  <text x="450" y="480" text-anchor="middle" font-size="15" font-weight="800" fill="#34d399">03 — Hyphens, Not Underscores</text>
+
+  <g font-size="10">
+    <rect x="32" y="500" width="404" height="80" rx="8" fill="rgba(52,211,153,0.06)" stroke="rgba(52,211,153,0.16)" stroke-width="1"/>
+    <text x="234" y="524" text-anchor="middle" font-weight="700" fill="#6ee7b7">✓ best-coffee-shops</text>
+    <text x="234" y="546" text-anchor="middle" fill="rgba(255,255,255,0.5)">Hyphens = 4 separate</text>
+    <text x="234" y="562" text-anchor="middle" fill="rgba(255,255,255,0.5)">searchable keywords</text>
+
+    <rect x="464" y="500" width="404" height="80" rx="8" fill="rgba(239,68,68,0.06)" stroke="rgba(239,68,68,0.16)" stroke-width="1"/>
+    <text x="666" y="524" text-anchor="middle" font-weight="700" fill="#f87171">✗ best_coffee_shops</text>
+    <text x="666" y="546" text-anchor="middle" fill="rgba(255,255,255,0.5)">Underscores historically</text>
+    <text x="666" y="562" text-anchor="middle" fill="rgba(255,255,255,0.5)">read as one joined token</text>
+  </g>
+
+  <!-- Section 4: Length -->
+  <rect x="32" y="596" width="836" height="38" rx="8" fill="rgba(124,58,237,0.18)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+  <text x="450" y="620" text-anchor="middle" font-size="15" font-weight="800" fill="#a78bfa">04 — Keep It Short: 3-5 Words, Under 60 Chars</text>
+
+  <g text-anchor="middle" font-size="10">
+    <rect x="32" y="640" width="270" height="80" rx="8" fill="rgba(52,211,153,0.1)" stroke="rgba(52,211,153,0.22)" stroke-width="1"/>
+    <text x="167" y="664" font-weight="700" fill="#34d399">0–60 chars</text>
+    <text x="167" y="684" fill="rgba(255,255,255,0.5)">Ideal — fully</text>
+    <text x="167" y="700" fill="rgba(255,255,255,0.5)">visible in search results</text>
+
+    <rect x="315" y="640" width="270" height="80" rx="8" fill="rgba(251,191,36,0.1)" stroke="rgba(251,191,36,0.22)" stroke-width="1"/>
+    <text x="450" y="664" font-weight="700" fill="#fbbf24">60–80 chars</text>
+    <text x="450" y="684" fill="rgba(255,255,255,0.5)">Risky — may get</text>
+    <text x="450" y="700" fill="rgba(255,255,255,0.5)">truncated with "..."</text>
+
+    <rect x="598" y="640" width="270" height="80" rx="8" fill="rgba(239,68,68,0.1)" stroke="rgba(239,68,68,0.22)" stroke-width="1"/>
+    <text x="733" y="664" font-weight="700" fill="#f87171">80+ chars</text>
+    <text x="733" y="684" fill="rgba(255,255,255,0.5)">Truncated —</text>
+    <text x="733" y="700" fill="rgba(255,255,255,0.5)">hides your keywords</text>
+  </g>
+
+  <!-- Section 5: Best practices -->
+  <rect x="32" y="738" width="836" height="38" rx="8" fill="rgba(14,116,144,0.18)" stroke="rgba(14,116,144,0.3)" stroke-width="1"/>
+  <text x="450" y="762" text-anchor="middle" font-size="15" font-weight="800" fill="#67e8f9">05 — Best Practices</text>
+
+  <g font-size="9.5">
+    <rect x="32" y="782" width="404" height="90" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="48" y="804" font-weight="700" fill="rgba(167,139,250,0.85)">Include your target keyword</text>
+    <text x="48" y="822" fill="rgba(255,255,255,0.5)">Place it near the start of the slug</text>
+    <text x="48" y="838" fill="rgba(255,255,255,0.5)">for maximum SEO relevance signal</text>
+
+    <rect x="464" y="782" width="404" height="90" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="480" y="804" font-weight="700" fill="rgba(103,232,249,0.85)">Keep slugs stable once published</text>
+    <text x="480" y="822" fill="rgba(255,255,255,0.5)">Changing a live URL breaks existing</text>
+    <text x="480" y="838" fill="rgba(255,255,255,0.5)">links and resets accumulated SEO value</text>
+  </g>
+
+  <!-- Section 6: Mistakes -->
+  <rect x="32" y="884" width="836" height="38" rx="8" fill="rgba(239,68,68,0.12)" stroke="rgba(239,68,68,0.22)" stroke-width="1"/>
+  <text x="450" y="908" text-anchor="middle" font-size="15" font-weight="800" fill="rgba(239,68,68,0.85)">06 — Common Mistakes</text>
+
+  <g font-size="10">
+    <rect x="32" y="928" width="836" height="40" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(239,68,68,0.1)" stroke-width="1"/>
+    <text x="48" y="946" fill="rgba(239,68,68,0.7)">✗</text>
+    <text x="68" y="946" fill="rgba(255,255,255,0.6)">Using the full page title verbatim as the slug, including stop words and filler phrases</text>
+    <text x="68" y="962" fill="rgba(255,255,255,0.4)" font-size="8.5">Produces overly long slugs that get truncated in search results.</text>
+
+    <rect x="32" y="972" width="836" height="40" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(239,68,68,0.1)" stroke-width="1"/>
+    <text x="48" y="990" fill="rgba(239,68,68,0.7)">✗</text>
+    <text x="68" y="990" fill="rgba(255,255,255,0.6)">Changing a slug after publishing without setting up a 301 redirect</text>
+    <text x="68" y="1006" fill="rgba(255,255,255,0.4)" font-size="8.5">Breaks all existing inbound links and loses accumulated search ranking.</text>
+
+    <rect x="32" y="1016" width="836" height="40" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(239,68,68,0.1)" stroke-width="1"/>
+    <text x="48" y="1034" fill="rgba(239,68,68,0.7)">✗</text>
+    <text x="68" y="1034" fill="rgba(255,255,255,0.6)">Leaving accented characters or emoji unencoded in the raw URL</text>
+    <text x="68" y="1050" fill="rgba(255,255,255,0.4)" font-size="8.5">Renders as ugly %XX sequences in some browsers and breaks copy-paste sharing.</text>
+  </g>
+
+  <text x="450" y="1090" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.28)">Free tool: toolnestai.net/text-tools/slug-generator</text>
+  <text x="450" y="1110" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">SEO-friendly URL slugs, instantly — handles accents, symbols, and Unicode</text>
+</svg>

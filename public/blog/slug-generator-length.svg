@@ -1,0 +1,54 @@
+<svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gC" cx="50%" cy="40%" r="60%"><stop offset="0%" stop-color="#0e7490" stop-opacity="0.2"/><stop offset="100%" stop-color="#0e7490" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+  </defs>
+  <rect width="900" height="460" fill="url(#bg)"/>
+  <ellipse cx="450" cy="230" rx="520" ry="320" fill="url(#gC)"/>
+
+  <text x="450" y="36" text-anchor="middle" font-size="20" font-weight="900" fill="url(#aG)">Slug Length &amp; Structure — What Actually Matters for SEO</text>
+  <text x="450" y="54" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.38)">Shorter, keyword-focused slugs consistently outperform long verbatim titles</text>
+
+  <!-- Length comparison -->
+  <rect x="28" y="70" width="410" height="130" rx="8" fill="rgba(239,68,68,0.06)" stroke="rgba(239,68,68,0.18)" stroke-width="1"/>
+  <text x="44" y="92" font-size="10.5" font-weight="700" fill="rgba(239,68,68,0.85)">✗ Too Long (full title as slug)</text>
+  <text x="44" y="114" font-family="monospace" font-size="9" fill="rgba(252,165,165,0.85)">/blog/10-best-cafe-resume-tips-and-tricks-</text>
+  <text x="44" y="128" font-family="monospace" font-size="9" fill="rgba(252,165,165,0.85)">for-2026-that-actually-work-guaranteed</text>
+  <text x="44" y="150" font-size="9" fill="rgba(255,255,255,0.5)">78 characters — gets truncated with "..." in</text>
+  <text x="44" y="164" font-size="9" fill="rgba(255,255,255,0.5)">Google search results, hiding the ending</text>
+  <text x="44" y="184" font-size="8.5" fill="rgba(255,255,255,0.3)">Google typically displays ~50-60 characters of a URL</text>
+
+  <rect x="462" y="70" width="410" height="130" rx="8" fill="rgba(52,211,153,0.06)" stroke="rgba(52,211,153,0.2)" stroke-width="1"/>
+  <text x="478" y="92" font-size="10.5" font-weight="700" fill="rgba(52,211,153,0.85)">✓ Optimized (keyword-focused)</text>
+  <text x="478" y="114" font-family="monospace" font-size="10" fill="rgba(110,231,183,0.9)">/blog/cafe-resume-tips-2026</text>
+  <text x="478" y="150" font-size="9" fill="rgba(255,255,255,0.5)">27 characters — fully visible in search</text>
+  <text x="478" y="164" font-size="9" fill="rgba(255,255,255,0.5)">results, contains the core keywords</text>
+  <text x="478" y="184" font-size="8.5" fill="rgba(255,255,255,0.3)">Removed filler: "10 best", "and tricks for", "that actually work"</text>
+
+  <!-- Char count bar -->
+  <rect x="28" y="212" width="844" height="86" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <text x="450" y="232" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(255,255,255,0.4)">RECOMMENDED SLUG LENGTH</text>
+  <rect x="60" y="244" width="780" height="24" rx="4" fill="rgba(52,211,153,0.15)"/>
+  <rect x="60" y="244" width="470" height="24" fill="rgba(52,211,153,0.5)"/>
+  <rect x="530" y="244" width="150" height="24" fill="rgba(251,191,36,0.5)"/>
+  <rect x="680" y="244" width="160" height="24" fill="rgba(239,68,68,0.5)"/>
+  <g font-size="9" text-anchor="middle" fill="rgba(255,255,255,0.6)">
+    <text x="295" y="260">0–60 chars: ideal</text>
+    <text x="605" y="260">60–80: risky</text>
+    <text x="760" y="260">80+: truncated</text>
+  </g>
+  <text x="450" y="288" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.32)">3-5 keyword-relevant words is usually enough — you don't need every word from the title</text>
+
+  <!-- What to keep/remove -->
+  <rect x="28" y="308" width="844" height="112" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(124,58,237,0.15)" stroke-width="1"/>
+  <text x="450" y="330" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(167,139,250,0.85)">WHAT TO KEEP vs REMOVE FROM A TITLE-BASED SLUG</text>
+  <text x="44" y="352" font-size="9.5" font-weight="700" fill="rgba(52,211,153,0.85)">Keep:</text>
+  <text x="90" y="352" font-size="9.5" fill="rgba(255,255,255,0.55)">Target keyword, core topic nouns, distinguishing numbers (year, version)</text>
+  <text x="44" y="374" font-size="9.5" font-weight="700" fill="rgba(239,68,68,0.8)">Remove:</text>
+  <text x="100" y="374" font-size="9.5" fill="rgba(255,255,255,0.55)">Filler phrases ("the best", "ultimate guide to"), stop words when trimming length,</text>
+  <text x="100" y="392" font-size="9.5" fill="rgba(255,255,255,0.55)">punctuation, emoji, and marketing superlatives ("amazing", "incredible")</text>
+  <text x="450" y="414" text-anchor="middle" font-size="8.5" fill="rgba(255,255,255,0.3)">The page's actual &lt;title&gt; tag and H1 can stay verbose — only the URL slug needs trimming</text>
+
+  <text x="450" y="450" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">toolnestai.net/text-tools/slug-generator</text>
+</svg>
