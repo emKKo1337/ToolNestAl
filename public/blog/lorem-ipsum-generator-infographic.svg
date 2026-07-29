@@ -1,0 +1,129 @@
+<svg viewBox="0 0 900 1200" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="30%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gT" cx="50%" cy="10%" r="60%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.35"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gB" cx="50%" cy="90%" r="60%"><stop offset="0%" stop-color="#0e7490" stop-opacity="0.2"/><stop offset="100%" stop-color="#0e7490" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+  </defs>
+  <rect width="900" height="1200" fill="url(#bg)"/>
+  <ellipse cx="450" cy="200" rx="700" ry="400" fill="url(#gT)"/>
+  <ellipse cx="450" cy="1000" rx="700" ry="400" fill="url(#gB)"/>
+
+  <text x="450" y="52" text-anchor="middle" font-size="28" font-weight="900" fill="url(#aG)">The Complete Lorem Ipsum Guide</text>
+  <text x="450" y="76" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.38)">2,000 years of history, and how to use placeholder text well</text>
+  <text x="450" y="94" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.22)">toolnestai.net/text-tools/lorem-ipsum-generator</text>
+
+  <!-- Section 1 -->
+  <rect x="32" y="110" width="836" height="38" rx="8" fill="rgba(124,58,237,0.18)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+  <text x="450" y="134" text-anchor="middle" font-size="15" font-weight="800" fill="#a78bfa">01 — What Is Lorem Ipsum?</text>
+
+  <rect x="32" y="154" width="836" height="90" rx="10" fill="rgba(255,255,255,0.025)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="450" y="178" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.65)">Lorem Ipsum is scrambled Latin text used as placeholder content in design</text>
+  <text x="450" y="198" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.65)">mockups and layouts. It originates from Cicero's 45 BC essay "De Finibus Bonorum</text>
+  <text x="450" y="218" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.65)">et Malorum," rearranged by an unknown 16th-century typesetter.</text>
+  <text x="450" y="238" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.3)">"Lorem" itself is a fragment of "dolorem," cut off mid-word during the scrambling.</text>
+
+  <!-- Section 2: Timeline -->
+  <rect x="32" y="256" width="836" height="38" rx="8" fill="rgba(14,116,144,0.18)" stroke="rgba(14,116,144,0.3)" stroke-width="1"/>
+  <text x="450" y="280" text-anchor="middle" font-size="15" font-weight="800" fill="#67e8f9">02 — 2,000 Years of History</text>
+
+  <g font-size="10">
+    <rect x="32" y="300" width="196" height="90" rx="8" fill="rgba(167,139,250,0.06)" stroke="rgba(167,139,250,0.16)" stroke-width="1"/>
+    <text x="130" y="322" text-anchor="middle" font-weight="700" fill="#a78bfa">45 BC</text>
+    <text x="130" y="342" text-anchor="middle" fill="rgba(255,255,255,0.5)">Cicero writes</text>
+    <text x="130" y="358" text-anchor="middle" fill="rgba(255,255,255,0.5)">"De Finibus"</text>
+
+    <rect x="238" y="300" width="196" height="90" rx="8" fill="rgba(103,232,249,0.06)" stroke="rgba(103,232,249,0.16)" stroke-width="1"/>
+    <text x="336" y="322" text-anchor="middle" font-weight="700" fill="#67e8f9">1500s</text>
+    <text x="336" y="342" text-anchor="middle" fill="rgba(255,255,255,0.5)">Unknown printer</text>
+    <text x="336" y="358" text-anchor="middle" fill="rgba(255,255,255,0.5)">scrambles the text</text>
+
+    <rect x="444" y="300" width="196" height="90" rx="8" fill="rgba(52,211,153,0.06)" stroke="rgba(52,211,153,0.16)" stroke-width="1"/>
+    <text x="542" y="322" text-anchor="middle" font-weight="700" fill="#34d399">1960s</text>
+    <text x="542" y="342" text-anchor="middle" fill="rgba(255,255,255,0.5)">Letraset sheets</text>
+    <text x="542" y="358" text-anchor="middle" fill="rgba(255,255,255,0.5)">popularize it widely</text>
+
+    <rect x="650" y="300" width="218" height="90" rx="8" fill="rgba(251,191,36,0.07)" stroke="rgba(251,191,36,0.18)" stroke-width="1"/>
+    <text x="759" y="322" text-anchor="middle" font-weight="700" fill="#fbbf24">1980s–Today</text>
+    <text x="759" y="342" text-anchor="middle" fill="rgba(255,255,255,0.5)">Desktop publishing &amp;</text>
+    <text x="759" y="358" text-anchor="middle" fill="rgba(255,255,255,0.5)">web design make it standard</text>
+  </g>
+
+  <!-- Section 3: Why it works -->
+  <rect x="32" y="408" width="836" height="38" rx="8" fill="rgba(16,185,129,0.14)" stroke="rgba(16,185,129,0.25)" stroke-width="1"/>
+  <text x="450" y="432" text-anchor="middle" font-size="15" font-weight="800" fill="#34d399">03 — Why It Still Works</text>
+
+  <g font-size="10">
+    <rect x="32" y="452" width="404" height="80" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="48" y="474" font-weight="700" fill="rgba(167,139,250,0.85)">Neutral — doesn't distract</text>
+    <text x="48" y="492" fill="rgba(255,255,255,0.5)">Not being coherent in any modern</text>
+    <text x="48" y="508" fill="rgba(255,255,255,0.5)">language keeps focus on layout, not content</text>
+
+    <rect x="464" y="452" width="404" height="80" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="480" y="474" font-weight="700" fill="rgba(103,232,249,0.85)">Realistic word distribution</text>
+    <text x="480" y="492" fill="rgba(255,255,255,0.5)">Mimics natural English word/letter</text>
+    <text x="480" y="508" fill="rgba(255,255,255,0.5)">length, unlike "aaa bbb ccc" filler</text>
+  </g>
+
+  <!-- Section 4: When to use what -->
+  <rect x="32" y="546" width="836" height="38" rx="8" fill="rgba(124,58,237,0.18)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+  <text x="450" y="570" text-anchor="middle" font-size="15" font-weight="800" fill="#a78bfa">04 — Choosing the Right Placeholder</text>
+
+  <g font-size="9.5">
+    <rect x="32" y="590" width="268" height="90" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(167,139,250,0.15)" stroke-width="1"/>
+    <text x="48" y="612" font-weight="700" fill="#a78bfa">Classic Lorem Ipsum</text>
+    <text x="48" y="630" fill="rgba(255,255,255,0.5)">Professional client work,</text>
+    <text x="48" y="646" fill="rgba(255,255,255,0.5)">early wireframes</text>
+    <text x="48" y="666" fill="rgba(255,255,255,0.35)" font-size="8.5">Universally recognized as placeholder</text>
+
+    <rect x="314" y="590" width="268" height="90" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(103,232,249,0.15)" stroke-width="1"/>
+    <text x="330" y="612" font-weight="700" fill="#67e8f9">Themed Placeholder</text>
+    <text x="330" y="630" fill="rgba(255,255,255,0.5)">Internal prototypes,</text>
+    <text x="330" y="646" fill="rgba(255,255,255,0.5)">fun demos</text>
+    <text x="330" y="666" fill="rgba(255,255,255,0.35)" font-size="8.5">Bacon ipsum, cupcake ipsum, etc.</text>
+
+    <rect x="596" y="590" width="272" height="90" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(52,211,153,0.15)" stroke-width="1"/>
+    <text x="612" y="612" font-weight="700" fill="#34d399">Real Sample Content</text>
+    <text x="612" y="630" fill="rgba(255,255,255,0.5)">Final QA before launch</text>
+    <text x="612" y="666" fill="rgba(255,255,255,0.35)" font-size="8.5">Catches real content-length issues</text>
+  </g>
+
+  <!-- Section 5: Modes -->
+  <rect x="32" y="698" width="836" height="38" rx="8" fill="rgba(14,116,144,0.18)" stroke="rgba(14,116,144,0.3)" stroke-width="1"/>
+  <text x="450" y="722" text-anchor="middle" font-size="15" font-weight="800" fill="#67e8f9">05 — Generator Modes</text>
+
+  <g text-anchor="middle" font-size="10">
+    <rect x="32" y="742" width="196" height="76" rx="8" fill="rgba(124,58,237,0.1)" stroke="rgba(124,58,237,0.22)" stroke-width="1"/>
+    <text x="130" y="766" font-weight="700" fill="#a78bfa">Paragraphs</text>
+    <text x="130" y="786" fill="rgba(255,255,255,0.5)">Full block text</text>
+    <text x="130" y="802" fill="rgba(255,255,255,0.5)">for body copy</text>
+
+    <rect x="238" y="742" width="196" height="76" rx="8" fill="rgba(14,116,144,0.08)" stroke="rgba(14,116,144,0.2)" stroke-width="1"/>
+    <text x="336" y="766" font-weight="700" fill="#67e8f9">Sentences</text>
+    <text x="336" y="786" fill="rgba(255,255,255,0.5)">Single lines for</text>
+    <text x="336" y="802" fill="rgba(255,255,255,0.5)">short UI copy</text>
+
+    <rect x="444" y="742" width="196" height="76" rx="8" fill="rgba(16,185,129,0.07)" stroke="rgba(16,185,129,0.18)" stroke-width="1"/>
+    <text x="542" y="766" font-weight="700" fill="#34d399">Words</text>
+    <text x="542" y="786" fill="rgba(255,255,255,0.5)">Labels, buttons,</text>
+    <text x="542" y="802" fill="rgba(255,255,255,0.5)">tags</text>
+
+    <rect x="650" y="742" width="218" height="76" rx="8" fill="rgba(251,191,36,0.07)" stroke="rgba(251,191,36,0.18)" stroke-width="1"/>
+    <text x="759" y="766" font-weight="700" fill="#fbbf24">Lists</text>
+    <text x="759" y="786" fill="rgba(255,255,255,0.5)">Bullet points,</text>
+    <text x="759" y="802" fill="rgba(255,255,255,0.5)">nav menus</text>
+  </g>
+
+  <!-- Section 6: warning -->
+  <rect x="32" y="838" width="836" height="38" rx="8" fill="rgba(239,68,68,0.12)" stroke="rgba(239,68,68,0.22)" stroke-width="1"/>
+  <text x="450" y="862" text-anchor="middle" font-size="15" font-weight="800" fill="rgba(239,68,68,0.85)">06 — The #1 Mistake</text>
+
+  <rect x="32" y="882" width="836" height="90" rx="10" fill="rgba(255,255,255,0.02)" stroke="rgba(239,68,68,0.15)" stroke-width="1"/>
+  <text x="450" y="906" text-anchor="middle" font-size="10.5" fill="rgba(255,255,255,0.6)">Shipping placeholder text to production has happened to real companies —</text>
+  <text x="450" y="926" text-anchor="middle" font-size="10.5" fill="rgba(255,255,255,0.6)">Lorem Ipsum spotted live on a public website is a memorable, embarrassing launch mistake.</text>
+  <text x="450" y="950" text-anchor="middle" font-size="9.5" fill="rgba(52,211,153,0.8)">Fix: add a pre-launch content audit that searches the codebase for "lorem ipsum"</text>
+
+  <text x="450" y="1010" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.28)">Free tool: toolnestai.net/text-tools/lorem-ipsum-generator</text>
+  <text x="450" y="1030" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">Paragraphs, sentences, words, and lists — classic Latin placeholder text, free</text>
+</svg>
