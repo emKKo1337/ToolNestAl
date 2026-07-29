@@ -1,0 +1,47 @@
+<svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gC" cx="50%" cy="40%" r="60%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.2"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+  </defs>
+  <rect width="900" height="460" fill="url(#bg)"/>
+  <ellipse cx="450" cy="230" rx="520" ry="320" fill="url(#gC)"/>
+
+  <text x="450" y="36" text-anchor="middle" font-size="20" font-weight="900" fill="url(#aG)">Aspect Ratio Math — Why Locking Matters</text>
+  <text x="450" y="54" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.38)">Resizing without locking the ratio stretches or squashes the image</text>
+
+  <!-- Formula -->
+  <rect x="28" y="70" width="844" height="90" rx="8" fill="rgba(167,139,250,0.06)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+  <text x="450" y="94" text-anchor="middle" font-size="11" font-weight="700" fill="#a78bfa">THE FORMULA</text>
+  <text x="450" y="118" text-anchor="middle" font-family="monospace" font-size="13" fill="rgba(255,255,255,0.75)">new_height = original_height × (new_width ÷ original_width)</text>
+  <text x="450" y="142" text-anchor="middle" font-family="monospace" font-size="12" fill="rgba(52,211,153,0.85)">2000 × (1500 ÷ 3000) = 1000  →  correct: 1500 × 1000</text>
+
+  <!-- Distorted vs correct -->
+  <rect x="28" y="172" width="410" height="170" rx="10" fill="rgba(239,68,68,0.06)" stroke="rgba(239,68,68,0.2)" stroke-width="1"/>
+  <text x="233" y="196" text-anchor="middle" font-size="12" font-weight="700" fill="#f87171">✗ Without Locking — Distorted</text>
+  <rect x="90" y="216" width="280" height="90" rx="4" fill="rgba(255,255,255,0.06)" stroke="rgba(239,68,68,0.4)" stroke-width="1.5" transform="scale(1, 0.7)" transform-origin="230 260"/>
+  <text x="230" y="268" text-anchor="middle" font-size="10" fill="rgba(252,165,165,0.8)">1500 × 500 (squashed)</text>
+  <text x="44" y="322" font-size="9" fill="rgba(255,255,255,0.55)">Setting width=1500 and height=500 manually</text>
+  <text x="44" y="336" font-size="9" fill="rgba(255,255,255,0.55)">ignores the original 3:2 ratio — faces and</text>
+  <text x="44" y="350" font-size="9" fill="rgba(255,255,255,0.55)">objects appear visibly squashed</text>
+
+  <!-- Locked -->
+  <rect x="462" y="172" width="410" height="170" rx="10" fill="rgba(52,211,153,0.06)" stroke="rgba(52,211,153,0.2)" stroke-width="1"/>
+  <text x="667" y="196" text-anchor="middle" font-size="12" font-weight="700" fill="#6ee7b7">✓ With Locking — Proportional</text>
+  <rect x="574" y="220" width="186" height="124" rx="4" fill="rgba(255,255,255,0.06)" stroke="rgba(52,211,153,0.4)" stroke-width="1.5"/>
+  <text x="667" y="286" text-anchor="middle" font-size="10" fill="rgba(110,231,183,0.8)">1500 × 1000</text>
+  <text x="478" y="322" font-size="9" fill="rgba(255,255,255,0.55)">Changing width automatically recalculates</text>
+  <text x="478" y="336" font-size="9" fill="rgba(255,255,255,0.55)">height to preserve the exact 3:2 ratio —</text>
+  <text x="478" y="350" font-size="9" fill="rgba(255,255,255,0.55)">everything looks proportionally correct</text>
+
+  <!-- Common ratios -->
+  <rect x="28" y="356" width="844" height="80" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <text x="450" y="378" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(255,255,255,0.4)">COMMON ASPECT RATIOS</text>
+  <text x="90" y="402" text-anchor="middle" font-size="9.5" fill="rgba(167,139,250,0.85)">3:2 — DSLR photos</text>
+  <text x="270" y="402" text-anchor="middle" font-size="9.5" fill="rgba(103,232,249,0.85)">4:3 — older cameras, iPads</text>
+  <text x="480" y="402" text-anchor="middle" font-size="9.5" fill="rgba(52,211,153,0.85)">16:9 — video, widescreen</text>
+  <text x="670" y="402" text-anchor="middle" font-size="9.5" fill="rgba(251,191,36,0.85)">1:1 — Instagram square</text>
+  <text x="450" y="422" text-anchor="middle" font-size="8.5" fill="rgba(255,255,255,0.3)">Cropping (not resizing) is needed to convert between different ratios without distortion</text>
+
+  <text x="450" y="450" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">toolnestai.net/image-tools/image-resizer</text>
+</svg>

@@ -1,0 +1,92 @@
+<svg viewBox="0 0 900 1100" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="30%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gT" cx="50%" cy="10%" r="60%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.35"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gB" cx="50%" cy="90%" r="60%"><stop offset="0%" stop-color="#0e7490" stop-opacity="0.2"/><stop offset="100%" stop-color="#0e7490" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+  </defs>
+  <rect width="900" height="1100" fill="url(#bg)"/>
+  <ellipse cx="450" cy="180" rx="700" ry="380" fill="url(#gT)"/>
+  <ellipse cx="450" cy="920" rx="700" ry="380" fill="url(#gB)"/>
+
+  <text x="450" y="52" text-anchor="middle" font-size="26" font-weight="900" fill="url(#aG)">The Complete Image Resizing Guide</text>
+  <text x="450" y="76" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.38)">Aspect ratio math, upscaling risk, and how to resize without distortion</text>
+  <text x="450" y="94" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.22)">toolnestai.net/image-tools/image-resizer</text>
+
+  <!-- Section 1 -->
+  <rect x="32" y="110" width="836" height="38" rx="8" fill="rgba(124,58,237,0.18)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+  <text x="450" y="134" text-anchor="middle" font-size="15" font-weight="800" fill="#a78bfa">01 — The Aspect Ratio Formula</text>
+
+  <rect x="32" y="154" width="836" height="90" rx="10" fill="rgba(255,255,255,0.025)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="450" y="184" text-anchor="middle" font-family="monospace" font-size="12" fill="rgba(167,139,250,0.85)">new_height = original_height × (new_width ÷ original_width)</text>
+  <text x="450" y="210" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.55)">2000 × (1500 ÷ 3000) = 1000 → resizing to 1500 wide correctly gives 1000 tall</text>
+  <text x="450" y="230" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.3)">Locking the aspect ratio applies this formula automatically as you adjust one dimension</text>
+
+  <!-- Section 2: distortion -->
+  <rect x="32" y="256" width="836" height="38" rx="8" fill="rgba(14,116,144,0.18)" stroke="rgba(14,116,144,0.3)" stroke-width="1"/>
+  <text x="450" y="280" text-anchor="middle" font-size="15" font-weight="800" fill="#67e8f9">02 — Locked vs Unlocked Resize</text>
+
+  <g font-size="10">
+    <rect x="32" y="300" width="404" height="90" rx="8" fill="rgba(239,68,68,0.06)" stroke="rgba(239,68,68,0.16)" stroke-width="1"/>
+    <text x="234" y="322" text-anchor="middle" font-weight="700" fill="#f87171">✗ Unlocked: distorted</text>
+    <text x="48" y="344" fill="rgba(255,255,255,0.5)">Manually setting both width and height</text>
+    <text x="48" y="360" fill="rgba(255,255,255,0.5)">ignores the original ratio — visible squashing</text>
+
+    <rect x="464" y="300" width="404" height="90" rx="8" fill="rgba(52,211,153,0.06)" stroke="rgba(52,211,153,0.16)" stroke-width="1"/>
+    <text x="666" y="322" text-anchor="middle" font-weight="700" fill="#6ee7b7">✓ Locked: proportional</text>
+    <text x="480" y="344" fill="rgba(255,255,255,0.5)">Changing one dimension auto-updates</text>
+    <text x="480" y="360" fill="rgba(255,255,255,0.5)">the other to preserve the exact ratio</text>
+  </g>
+
+  <!-- Section 3: down vs upscale -->
+  <rect x="32" y="408" width="836" height="38" rx="8" fill="rgba(16,185,129,0.14)" stroke="rgba(16,185,129,0.25)" stroke-width="1"/>
+  <text x="450" y="432" text-anchor="middle" font-size="15" font-weight="800" fill="#34d399">03 — Downscale vs Upscale Risk</text>
+
+  <g font-size="10">
+    <rect x="32" y="452" width="404" height="90" rx="8" fill="rgba(52,211,153,0.06)" stroke="rgba(52,211,153,0.16)" stroke-width="1"/>
+    <text x="48" y="474" font-weight="700" fill="#6ee7b7">✓ Downscaling — always safe</text>
+    <text x="48" y="494" fill="rgba(255,255,255,0.5)">Averages real pixels into fewer pixels</text>
+    <text x="48" y="510" fill="rgba(255,255,255,0.5)">No data is invented, no quality risk</text>
+
+    <rect x="464" y="452" width="404" height="90" rx="8" fill="rgba(251,191,36,0.07)" stroke="rgba(251,191,36,0.18)" stroke-width="1"/>
+    <text x="480" y="474" font-weight="700" fill="#fbbf24">⚠ Upscaling — quality loss</text>
+    <text x="480" y="494" fill="rgba(255,255,255,0.5)">Must invent new pixels via interpolation</text>
+    <text x="480" y="510" fill="rgba(255,255,255,0.5)">Result is visibly softer, never sharper</text>
+  </g>
+
+  <!-- Section 4: interpolation -->
+  <rect x="32" y="560" width="836" height="38" rx="8" fill="rgba(124,58,237,0.18)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+  <text x="450" y="584" text-anchor="middle" font-size="15" font-weight="800" fill="#a78bfa">04 — Interpolation Algorithms</text>
+
+  <g font-size="9.5">
+    <rect x="32" y="604" width="404" height="90" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="48" y="626" font-weight="700" fill="rgba(167,139,250,0.85)">Nearest neighbor / Bilinear</text>
+    <text x="48" y="644" fill="rgba(255,255,255,0.5)">Fastest but blockier or slightly blurry</text>
+    <text x="48" y="660" fill="rgba(255,255,255,0.5)">Nearest: good for pixel art only</text>
+
+    <rect x="464" y="604" width="404" height="90" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="480" y="626" font-weight="700" fill="rgba(103,232,249,0.85)">Bicubic / Lanczos</text>
+    <text x="480" y="644" fill="rgba(255,255,255,0.5)">Sharper results, standard for photos</text>
+    <text x="480" y="660" fill="rgba(255,255,255,0.5)">Lanczos excels at downscaling detail</text>
+  </g>
+
+  <!-- Section 5: mistakes -->
+  <rect x="32" y="712" width="836" height="38" rx="8" fill="rgba(239,68,68,0.12)" stroke="rgba(239,68,68,0.22)" stroke-width="1"/>
+  <text x="450" y="736" text-anchor="middle" font-size="15" font-weight="800" fill="rgba(239,68,68,0.85)">05 — Common Mistakes</text>
+
+  <g font-size="10">
+    <rect x="32" y="756" width="836" height="40" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(239,68,68,0.1)" stroke-width="1"/>
+    <text x="48" y="774" fill="rgba(239,68,68,0.7)">✗</text>
+    <text x="68" y="774" fill="rgba(255,255,255,0.6)">Manually typing both width and height without locking the aspect ratio</text>
+    <text x="68" y="790" fill="rgba(255,255,255,0.4)" font-size="8.5">Produces visibly stretched or squashed images.</text>
+
+    <rect x="32" y="800" width="836" height="40" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(239,68,68,0.1)" stroke-width="1"/>
+    <text x="48" y="818" fill="rgba(239,68,68,0.7)">✗</text>
+    <text x="68" y="818" fill="rgba(255,255,255,0.6)">Upscaling a small image expecting sharp results — quality can only degrade, never improve</text>
+    <text x="68" y="834" fill="rgba(255,255,255,0.4)" font-size="8.5">Use an AI upscaler if you truly need more apparent detail than the source has.</text>
+  </g>
+
+  <text x="450" y="874" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.28)">Free tool: toolnestai.net/image-tools/image-resizer</text>
+  <text x="450" y="894" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">Exact pixels or percentage, aspect ratio locked — client-side, instant</text>
+</svg>

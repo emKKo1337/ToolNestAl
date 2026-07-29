@@ -1,0 +1,46 @@
+<svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gC" cx="50%" cy="40%" r="60%"><stop offset="0%" stop-color="#0e7490" stop-opacity="0.2"/><stop offset="100%" stop-color="#0e7490" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+  </defs>
+  <rect width="900" height="460" fill="url(#bg)"/>
+  <ellipse cx="450" cy="230" rx="520" ry="320" fill="url(#gC)"/>
+
+  <text x="450" y="36" text-anchor="middle" font-size="20" font-weight="900" fill="url(#aG)">Downscaling vs Upscaling — Why One Loses More Quality</text>
+  <text x="450" y="54" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.38)">Resizing smaller is safe; resizing larger invents pixel data that never existed</text>
+
+  <!-- Downscaling -->
+  <rect x="28" y="70" width="410" height="150" rx="10" fill="rgba(52,211,153,0.06)" stroke="rgba(52,211,153,0.2)" stroke-width="1"/>
+  <text x="233" y="94" text-anchor="middle" font-size="12" font-weight="700" fill="#6ee7b7">✓ Downscaling (making smaller)</text>
+  <text x="44" y="118" font-size="9.5" fill="rgba(255,255,255,0.55)">Averages multiple original pixels into</text>
+  <text x="44" y="134" font-size="9.5" fill="rgba(255,255,255,0.55)">each new pixel — real data is combined,</text>
+  <text x="44" y="150" font-size="9.5" fill="rgba(255,255,255,0.55)">not invented. Always safe, no quality risk.</text>
+  <text x="44" y="174" font-family="monospace" font-size="10" fill="rgba(110,231,183,0.85)">3000×2000 → 1500×1000: sharp, clean result</text>
+  <text x="44" y="196" font-size="8.5" fill="rgba(255,255,255,0.3)">Common algorithm: bicubic or Lanczos resampling</text>
+
+  <!-- Upscaling -->
+  <rect x="462" y="70" width="410" height="150" rx="10" fill="rgba(251,191,36,0.06)" stroke="rgba(251,191,36,0.2)" stroke-width="1"/>
+  <text x="667" y="94" text-anchor="middle" font-size="12" font-weight="700" fill="#fbbf24">⚠ Upscaling (making larger)</text>
+  <text x="478" y="118" font-size="9.5" fill="rgba(255,255,255,0.55)">Must invent new pixel values that never</text>
+  <text x="478" y="134" font-size="9.5" fill="rgba(255,255,255,0.55)">existed in the original — interpolated by</text>
+  <text x="478" y="150" font-size="9.5" fill="rgba(255,255,255,0.55)">guessing from nearby real pixels.</text>
+  <text x="478" y="174" font-family="monospace" font-size="10" fill="rgba(253,224,71,0.85)">800×600 → 3000×2250: visibly softer/blurry</text>
+  <text x="478" y="196" font-size="8.5" fill="rgba(255,255,255,0.3)">AI upscalers (ESRGAN etc.) do better but aren't magic</text>
+
+  <!-- Interpolation methods -->
+  <rect x="28" y="232" width="844" height="122" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(124,58,237,0.15)" stroke-width="1"/>
+  <text x="450" y="254" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(167,139,250,0.85)">COMMON INTERPOLATION ALGORITHMS</text>
+  <text x="60" y="278" font-size="9.5" font-weight="700" fill="rgba(167,139,250,0.85)">Nearest neighbor</text>
+  <text x="180" y="278" font-size="9" fill="rgba(255,255,255,0.5)">Fastest, blockiest — good for pixel art only</text>
+  <text x="60" y="300" font-size="9.5" font-weight="700" fill="rgba(103,232,249,0.85)">Bilinear</text>
+  <text x="180" y="300" font-size="9" fill="rgba(255,255,255,0.5)">Averages 4 nearby pixels — smoother, slightly blurry</text>
+  <text x="60" y="322" font-size="9.5" font-weight="700" fill="rgba(52,211,153,0.85)">Bicubic</text>
+  <text x="180" y="322" font-size="9" fill="rgba(255,255,255,0.5)">Averages 16 nearby pixels — sharper, standard for photos</text>
+  <text x="60" y="344" font-size="9.5" font-weight="700" fill="rgba(251,191,36,0.85)">Lanczos</text>
+  <text x="180" y="344" font-size="9" fill="rgba(255,255,255,0.5)">Sinc-based, sharpest edges — best for downscaling detail</text>
+
+  <text x="450" y="376" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.4)">The ToolNest Image Resizer warns you when a requested size would upscale beyond the original resolution</text>
+
+  <text x="450" y="410" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">toolnestai.net/image-tools/image-resizer</text>
+</svg>
