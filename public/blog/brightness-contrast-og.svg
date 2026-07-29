@@ -1,0 +1,58 @@
+﻿<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="30%" cy="40%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gL" cx="15%" cy="50%" r="55%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.45"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gR" cx="85%" cy="50%" r="55%"><stop offset="0%" stop-color="#0e7490" stop-opacity="0.28"/><stop offset="100%" stop-color="#0e7490" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="lapG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1a1040"/><stop offset="100%" stop-color="#0d0824"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="8" stdDeviation="20" flood-color="#5b21b6" flood-opacity="0.5"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <ellipse cx="180" cy="315" rx="600" ry="500" fill="url(#gL)"/>
+  <ellipse cx="1020" cy="315" rx="600" ry="500" fill="url(#gR)"/>
+  <text x="60" y="70" font-size="14" font-weight="700" fill="url(#aG)" filter="url(#glow)">ToolNest AI</text>
+  <text x="60" y="106" font-size="13" fill="rgba(255,255,255,0.35)">Image Tools › Brightness &amp; Contrast</text>
+  <text x="60" y="178" font-size="40" font-weight="900" fill="url(#aG)" filter="url(#glow)">Brightness</text>
+  <text x="60" y="232" font-size="40" font-weight="900" fill="url(#aG)" filter="url(#glow)">&amp; Contrast</text>
+  <text x="60" y="284" font-size="17" fill="rgba(255,255,255,0.6)">Gamma · Levels · Curves</text>
+  <text x="60" y="312" font-size="17" fill="rgba(255,255,255,0.6)">Free, private, instant</text>
+  <rect x="60" y="342" width="120" height="52" rx="8" fill="rgba(124,58,237,0.2)" stroke="rgba(124,58,237,0.4)" stroke-width="1"/>
+  <text x="120" y="366" text-anchor="middle" font-size="14" font-weight="900" fill="#a78bfa">Brightness</text>
+  <text x="120" y="384" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.45)">linear +/-</text>
+  <rect x="190" y="342" width="120" height="52" rx="8" fill="rgba(14,116,144,0.15)" stroke="rgba(14,116,144,0.35)" stroke-width="1"/>
+  <text x="250" y="366" text-anchor="middle" font-size="14" font-weight="900" fill="#67e8f9">Contrast</text>
+  <text x="250" y="384" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.45)">spread range</text>
+  <rect x="320" y="342" width="120" height="52" rx="8" fill="rgba(16,185,129,0.12)" stroke="rgba(16,185,129,0.3)" stroke-width="1"/>
+  <text x="380" y="366" text-anchor="middle" font-size="14" font-weight="900" fill="#34d399">Gamma</text>
+  <text x="380" y="384" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.45)">power curve</text>
+  <text x="60" y="555" font-size="14" fill="rgba(255,255,255,0.25)">toolnestai.net/image-tools/brightness-contrast</text>
+  <!-- right panel -->
+  <rect x="630" y="60" width="530" height="490" rx="16" fill="url(#lapG)" stroke="rgba(124,58,237,0.3)" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="630" y="60" width="530" height="36" rx="16" fill="rgba(255,255,255,0.05)"/>
+  <rect x="630" y="78" width="530" height="18" fill="rgba(255,255,255,0.02)"/>
+  <circle cx="655" cy="78" r="6" fill="rgba(239,68,68,0.6)"/>
+  <circle cx="675" cy="78" r="6" fill="rgba(251,191,36,0.6)"/>
+  <circle cx="695" cy="78" r="6" fill="rgba(34,197,94,0.6)"/>
+  <!-- formula boxes -->
+  <rect x="648" y="108" width="490" height="60" rx="8" fill="rgba(251,191,36,0.05)" stroke="rgba(251,191,36,0.15)" stroke-width="1"/>
+  <text x="893" y="130" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.3)">Brightness</text>
+  <text x="893" y="152" text-anchor="middle" font-size="11" font-family="monospace" fill="rgba(251,191,36,0.8)">output = clamp(input + b, 0, 255)</text>
+  <rect x="648" y="180" width="490" height="60" rx="8" fill="rgba(167,139,250,0.05)" stroke="rgba(167,139,250,0.15)" stroke-width="1"/>
+  <text x="893" y="202" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.3)">Contrast</text>
+  <text x="893" y="224" text-anchor="middle" font-size="10" font-family="monospace" fill="rgba(167,139,250,0.8)">output = clamp((input − 128) × c + 128, 0, 255)</text>
+  <rect x="648" y="252" width="490" height="60" rx="8" fill="rgba(52,211,153,0.05)" stroke="rgba(52,211,153,0.15)" stroke-width="1"/>
+  <text x="893" y="274" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.3)">Gamma</text>
+  <text x="893" y="296" text-anchor="middle" font-size="11" font-family="monospace" fill="rgba(52,211,153,0.8)">output = (input/255)^γ × 255</text>
+  <!-- sliders -->
+  <text x="648" y="338" font-size="9" fill="rgba(255,255,255,0.3)">Brightness: +30</text>
+  <rect x="648" y="344" width="490" height="5" rx="2" fill="rgba(255,255,255,0.05)"/>
+  <rect x="793" y="344" width="145" height="5" rx="2" fill="url(#aG)"/>
+  <text x="648" y="370" font-size="9" fill="rgba(255,255,255,0.3)">Contrast: +50</text>
+  <rect x="648" y="376" width="490" height="5" rx="2" fill="rgba(255,255,255,0.05)"/>
+  <rect x="793" y="376" width="200" height="5" rx="2" fill="url(#aG)"/>
+  <rect x="648" y="400" width="490" height="36" rx="8" fill="url(#bG)" filter="url(#sh)"/>
+  <text x="893" y="422" text-anchor="middle" font-size="12" font-weight="900" fill="#fff">Adjust Brightness &amp; Contrast Free</text>
+  <rect x="620" y="550" width="560" height="14" rx="4" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+</svg>

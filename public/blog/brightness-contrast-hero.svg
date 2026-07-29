@@ -1,0 +1,67 @@
+﻿<svg viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="diagG1" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#111"/><stop offset="100%" stop-color="#fff"/></linearGradient>
+    <linearGradient id="diagG2" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="20%" stop-color="#111"/><stop offset="80%" stop-color="#fff"/></linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <text x="600" y="52" text-anchor="middle" font-size="24" font-weight="900" fill="url(#aG)">Brightness vs Contrast vs Gamma</text>
+  <text x="600" y="74" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.38)">Three different operations on pixel values — how each changes the tonal range</text>
+  <!-- 3 columns -->
+  <g text-anchor="middle">
+    <!-- Brightness -->
+    <rect x="30" y="96" width="360" height="490" rx="12" fill="rgba(251,191,36,0.05)" stroke="rgba(251,191,36,0.2)" stroke-width="1"/>
+    <text x="210" y="124" font-size="13" font-weight="700" fill="#fbbf24">Brightness</text>
+    <text x="210" y="144" font-size="10" fill="rgba(251,191,36,0.7)">Linear shift of all values</text>
+    <rect x="50" y="160" width="320" height="55" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="210" y="182" font-size="10" fill="rgba(255,255,255,0.4)">Formula:</text>
+    <text x="210" y="202" font-size="12" font-family="monospace" fill="rgba(251,191,36,0.85)">output = clamp(input + b, 0, 255)</text>
+    <!-- gradient bar original -->
+    <rect x="50" y="232" width="320" height="20" rx="4" fill="url(#diagG1)"/>
+    <text x="50" y="224" font-size="8.5" fill="rgba(255,255,255,0.35)" text-anchor="start">Original:</text>
+    <!-- shifted bar -->
+    <rect x="50" y="270" width="320" height="20" rx="4" fill="url(#diagG2)"/>
+    <text x="50" y="262" font-size="8.5" fill="rgba(255,255,255,0.35)" text-anchor="start">Brightness +50 (clips dark shadows):</text>
+    <text x="210" y="322" font-size="9.5" fill="rgba(255,255,255,0.55)">Shifts entire tonal range up or down.</text>
+    <text x="210" y="340" font-size="9.5" fill="rgba(255,255,255,0.55)">Positive b: adds to every pixel</text>
+    <text x="210" y="358" font-size="9.5" fill="rgba(255,255,255,0.55)">Negative b: subtracts from every pixel</text>
+    <text x="210" y="378" font-size="9.5" fill="rgba(251,191,36,0.7)">Risk: clips highlights (→255) or</text>
+    <text x="210" y="396" font-size="9.5" fill="rgba(251,191,36,0.7)">crushes shadows (→0) at extremes</text>
+    <text x="210" y="540" font-size="10" font-weight="700" fill="rgba(251,191,36,0.8)">Uniform shift</text>
+    <!-- Contrast -->
+    <rect x="420" y="96" width="360" height="490" rx="12" fill="rgba(167,139,250,0.05)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+    <text x="600" y="124" font-size="13" font-weight="700" fill="#a78bfa">Contrast</text>
+    <text x="600" y="144" font-size="10" fill="rgba(167,139,250,0.7)">Scale from center (128)</text>
+    <rect x="440" y="160" width="320" height="55" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="600" y="182" font-size="10" fill="rgba(255,255,255,0.4)">Formula:</text>
+    <text x="600" y="202" font-size="11" font-family="monospace" fill="rgba(167,139,250,0.85)">out = clamp((in − 128) × c + 128, 0, 255)</text>
+    <text x="600" y="232" font-size="8.5" fill="rgba(255,255,255,0.35)">Low contrast (c=0.5):</text>
+    <rect x="440" y="238" width="320" height="20" rx="4" fill="#888"/>
+    <text x="600" y="282" font-size="8.5" fill="rgba(255,255,255,0.35)">High contrast (c=1.8):</text>
+    <rect x="440" y="288" width="160" height="20" rx="4" fill="#000"/>
+    <rect x="600" y="288" width="160" height="20" rx="4" fill="#fff"/>
+    <text x="600" y="336" font-size="9.5" fill="rgba(255,255,255,0.55)">Scales pixel values away from (c&gt;1)</text>
+    <text x="600" y="354" font-size="9.5" fill="rgba(255,255,255,0.55)">or toward (c&lt;1) the mid-gray point 128.</text>
+    <text x="600" y="374" font-size="9.5" fill="rgba(167,139,250,0.7)">c&gt;1: shadows darker, highlights brighter</text>
+    <text x="600" y="392" font-size="9.5" fill="rgba(167,139,250,0.7)">c&lt;1: everything washed toward gray</text>
+    <text x="600" y="540" font-size="10" font-weight="700" fill="rgba(167,139,250,0.8)">Pivot around 128</text>
+    <!-- Gamma -->
+    <rect x="810" y="96" width="360" height="490" rx="12" fill="rgba(52,211,153,0.05)" stroke="rgba(52,211,153,0.2)" stroke-width="1"/>
+    <text x="990" y="124" font-size="13" font-weight="700" fill="#6ee7b7">Gamma</text>
+    <text x="990" y="144" font-size="10" fill="rgba(52,211,153,0.7)">Non-linear power function</text>
+    <rect x="830" y="160" width="320" height="55" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="990" y="182" font-size="10" fill="rgba(255,255,255,0.4)">Formula:</text>
+    <text x="990" y="202" font-size="11" font-family="monospace" fill="rgba(52,211,153,0.85)">output = (input/255)^γ × 255</text>
+    <text x="990" y="242" font-size="9.5" fill="rgba(255,255,255,0.55)">γ &lt; 1: brightens mid-tones</text>
+    <text x="990" y="262" font-size="9.5" fill="rgba(255,255,255,0.55)">γ = 1: no change</text>
+    <text x="990" y="282" font-size="9.5" fill="rgba(255,255,255,0.55)">γ &gt; 1: darkens mid-tones</text>
+    <text x="990" y="314" font-size="9.5" fill="rgba(52,211,153,0.7)">Unlike brightness, gamma preserves</text>
+    <text x="990" y="332" font-size="9.5" fill="rgba(52,211,153,0.7)">both black (0) and white (255) —</text>
+    <text x="990" y="350" font-size="9.5" fill="rgba(52,211,153,0.7)">only mid-tones are moved.</text>
+    <text x="990" y="390" font-size="9.5" fill="rgba(255,255,255,0.5)">Standard display gamma: sRGB ≈ 2.2</text>
+    <text x="990" y="408" font-size="9.5" fill="rgba(255,255,255,0.5)">Correct underexposed photo: γ=0.5–0.7</text>
+    <text x="990" y="540" font-size="10" font-weight="700" fill="rgba(52,211,153,0.8)">Curve stays black/white</text>
+  </g>
+  <text x="600" y="635" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.22)">toolnestai.net/image-tools/brightness-contrast</text>
+</svg>

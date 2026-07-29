@@ -1,0 +1,84 @@
+﻿<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="30%" cy="40%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gL" cx="15%" cy="50%" r="55%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.45"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gR" cx="85%" cy="50%" r="55%"><stop offset="0%" stop-color="#0e7490" stop-opacity="0.28"/><stop offset="100%" stop-color="#0e7490" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="lapG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1a1040"/><stop offset="100%" stop-color="#0d0824"/></linearGradient>
+    <linearGradient id="brightG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#111"/><stop offset="100%" stop-color="#fff"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="8" stdDeviation="20" flood-color="#5b21b6" flood-opacity="0.5"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <ellipse cx="180" cy="315" rx="600" ry="500" fill="url(#gL)"/>
+  <ellipse cx="1020" cy="315" rx="600" ry="500" fill="url(#gR)"/>
+  <text x="60" y="70" font-size="14" font-weight="700" fill="url(#aG)" filter="url(#glow)">ToolNest AI</text>
+  <text x="60" y="106" font-size="13" fill="rgba(255,255,255,0.35)">Image Tools - Brightness &amp; Contrast</text>
+  <text x="60" y="185" font-size="40" font-weight="900" fill="url(#aG)" filter="url(#glow)">Brightness</text>
+  <text x="60" y="238" font-size="40" font-weight="900" fill="url(#aG)" filter="url(#glow)">&amp; Contrast</text>
+  <text x="60" y="290" font-size="17" fill="rgba(255,255,255,0.6)">Gamma, levels, curves — free</text>
+  <text x="60" y="318" font-size="17" fill="rgba(255,255,255,0.6)">private, instant, no upload</text>
+  <g>
+    <rect x="60" y="348" width="115" height="52" rx="8" fill="rgba(124,58,237,0.2)" stroke="rgba(124,58,237,0.4)" stroke-width="1"/>
+    <text x="117" y="372" text-anchor="middle" font-size="11" font-weight="900" fill="#a78bfa">Brightness</text>
+    <text x="117" y="390" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.45)">linear shift</text>
+    <rect x="185" y="348" width="115" height="52" rx="8" fill="rgba(14,116,144,0.15)" stroke="rgba(14,116,144,0.35)" stroke-width="1"/>
+    <text x="242" y="372" text-anchor="middle" font-size="11" font-weight="900" fill="#67e8f9">Contrast</text>
+    <text x="242" y="390" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.45)">mid-point stretch</text>
+    <rect x="310" y="348" width="115" height="52" rx="8" fill="rgba(16,185,129,0.12)" stroke="rgba(16,185,129,0.3)" stroke-width="1"/>
+    <text x="367" y="372" text-anchor="middle" font-size="11" font-weight="900" fill="#34d399">Gamma</text>
+    <text x="367" y="390" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.45)">non-linear</text>
+    <rect x="435" y="348" width="100" height="52" rx="8" fill="rgba(251,191,36,0.1)" stroke="rgba(251,191,36,0.25)" stroke-width="1"/>
+    <text x="485" y="372" text-anchor="middle" font-size="11" font-weight="900" fill="#fbbf24">Histogram</text>
+    <text x="485" y="390" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.45)">levels</text>
+  </g>
+  <text x="60" y="555" font-size="14" fill="rgba(255,255,255,0.25)">toolnestai.net/image-tools/brightness-contrast</text>
+  <!-- Laptop UI right -->
+  <rect x="630" y="60" width="530" height="490" rx="16" fill="url(#lapG)" stroke="rgba(124,58,237,0.3)" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="630" y="60" width="530" height="36" rx="16" fill="rgba(255,255,255,0.05)"/>
+  <rect x="630" y="78" width="530" height="18" fill="rgba(255,255,255,0.02)"/>
+  <circle cx="655" cy="78" r="6" fill="rgba(239,68,68,0.6)"/>
+  <circle cx="675" cy="78" r="6" fill="rgba(251,191,36,0.6)"/>
+  <circle cx="695" cy="78" r="6" fill="rgba(34,197,94,0.6)"/>
+  <!-- Image preview panels -->
+  <rect x="648" y="108" width="228" height="140" rx="8" fill="rgba(60,60,60,0.5)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <text x="762" y="126" text-anchor="middle" font-size="8.5" fill="rgba(255,255,255,0.35)">Before</text>
+  <rect x="660" y="136" width="204" height="100" rx="4" fill="rgba(110,110,110,0.4)"/>
+  <rect x="894" y="108" width="228" height="140" rx="8" fill="rgba(167,139,250,0.07)" stroke="rgba(167,139,250,0.18)" stroke-width="1"/>
+  <text x="1008" y="126" text-anchor="middle" font-size="8.5" fill="rgba(167,139,250,0.4)">After (Br+30, Cn+50)</text>
+  <rect x="906" y="136" width="204" height="100" rx="4" fill="rgba(200,190,230,0.25)"/>
+  <!-- Brightness slider -->
+  <text x="648" y="274" font-size="9" fill="rgba(255,255,255,0.3)">Brightness: +30</text>
+  <rect x="648" y="280" width="500" height="5" rx="2" fill="rgba(255,255,255,0.06)"/>
+  <rect x="798" y="280" width="150" height="5" rx="2" fill="url(#aG)"/>
+  <circle cx="948" cy="282" r="7" fill="#fff" stroke="rgba(124,58,237,0.6)" stroke-width="2"/>
+  <!-- Contrast slider -->
+  <text x="648" y="308" font-size="9" fill="rgba(255,255,255,0.3)">Contrast: +50</text>
+  <rect x="648" y="314" width="500" height="5" rx="2" fill="rgba(255,255,255,0.06)"/>
+  <rect x="798" y="314" width="200" height="5" rx="2" fill="url(#aG)"/>
+  <circle cx="998" cy="316" r="7" fill="#fff" stroke="rgba(124,58,237,0.6)" stroke-width="2"/>
+  <!-- Gamma slider -->
+  <text x="648" y="342" font-size="9" fill="rgba(255,255,255,0.3)">Gamma: 0.85</text>
+  <rect x="648" y="348" width="500" height="5" rx="2" fill="rgba(255,255,255,0.06)"/>
+  <rect x="648" y="348" width="220" height="5" rx="2" fill="url(#aG)"/>
+  <circle cx="868" cy="350" r="7" fill="#fff" stroke="rgba(124,58,237,0.6)" stroke-width="2"/>
+  <!-- Histogram preview -->
+  <rect x="648" y="374" width="500" height="60" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="660" y="390" font-size="8" fill="rgba(255,255,255,0.25)">Histogram</text>
+  <g opacity="0.5">
+    <rect x="660" y="396" width="8" height="28" rx="1" fill="rgba(167,139,250,0.5)"/>
+    <rect x="671" y="390" width="8" height="34" rx="1" fill="rgba(167,139,250,0.6)"/>
+    <rect x="682" y="384" width="8" height="40" rx="1" fill="rgba(167,139,250,0.7)"/>
+    <rect x="693" y="378" width="8" height="46" rx="1" fill="rgba(167,139,250,0.8)"/>
+    <rect x="704" y="382" width="8" height="42" rx="1" fill="rgba(167,139,250,0.75)"/>
+    <rect x="715" y="388" width="8" height="36" rx="1" fill="rgba(167,139,250,0.65)"/>
+    <rect x="726" y="394" width="8" height="30" rx="1" fill="rgba(167,139,250,0.55)"/>
+  </g>
+  <!-- buttons -->
+  <rect x="648" y="448" width="242" height="36" rx="8" fill="url(#bG)" filter="url(#sh)"/>
+  <text x="769" y="470" text-anchor="middle" font-size="12" font-weight="900" fill="#fff">Download</text>
+  <rect x="902" y="448" width="246" height="36" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <text x="1025" y="470" text-anchor="middle" font-size="12" font-weight="700" fill="rgba(255,255,255,0.5)">Reset</text>
+  <rect x="620" y="550" width="560" height="14" rx="4" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+</svg>
