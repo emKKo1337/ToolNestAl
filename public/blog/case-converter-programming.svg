@@ -1,0 +1,74 @@
+<svg viewBox="0 0 900 480" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gC" cx="50%" cy="40%" r="60%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.2"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+  </defs>
+  <rect width="900" height="480" fill="url(#bg)"/>
+  <ellipse cx="450" cy="240" rx="520" ry="330" fill="url(#gC)"/>
+
+  <text x="450" y="36" text-anchor="middle" font-size="20" font-weight="900" fill="url(#aG)">Naming Conventions by Programming Language</text>
+  <text x="450" y="54" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.38)">Each language ecosystem has its own dominant case convention</text>
+
+  <!-- Table header -->
+  <g font-size="9" font-weight="700" text-anchor="middle">
+    <text x="80" y="76" fill="rgba(255,255,255,0.4)">LANGUAGE</text>
+    <text x="260" y="76" fill="rgba(255,255,255,0.4)">VARIABLES</text>
+    <text x="440" y="76" fill="rgba(255,255,255,0.4)">FUNCTIONS</text>
+    <text x="620" y="76" fill="rgba(255,255,255,0.4)">CLASSES/TYPES</text>
+    <text x="800" y="76" fill="rgba(255,255,255,0.4)">CONSTANTS</text>
+  </g>
+  <line x1="28" y1="84" x2="872" y2="84" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+
+  <!-- JavaScript -->
+  <rect x="28" y="92" width="844" height="52" rx="6" fill="rgba(251,191,36,0.05)"/>
+  <text x="80" y="122" text-anchor="middle" font-size="11" font-weight="700" fill="#fbbf24">JavaScript</text>
+  <text x="260" y="122" text-anchor="middle" font-family="monospace" font-size="10" fill="rgba(244,114,182,0.85)">camelCase</text>
+  <text x="440" y="122" text-anchor="middle" font-family="monospace" font-size="10" fill="rgba(244,114,182,0.85)">camelCase</text>
+  <text x="620" y="122" text-anchor="middle" font-family="monospace" font-size="10" fill="rgba(52,211,153,0.85)">PascalCase</text>
+  <text x="800" y="122" text-anchor="middle" font-family="monospace" font-size="10" fill="rgba(103,232,249,0.85)">CONSTANT_CASE</text>
+
+  <!-- Python -->
+  <rect x="28" y="144" width="844" height="52" rx="6" fill="rgba(103,232,249,0.05)"/>
+  <text x="80" y="174" text-anchor="middle" font-size="11" font-weight="700" fill="#67e8f9">Python</text>
+  <text x="260" y="174" text-anchor="middle" font-family="monospace" font-size="10" fill="rgba(129,140,248,0.85)">snake_case</text>
+  <text x="440" y="174" text-anchor="middle" font-family="monospace" font-size="10" fill="rgba(129,140,248,0.85)">snake_case</text>
+  <text x="620" y="174" text-anchor="middle" font-family="monospace" font-size="10" fill="rgba(52,211,153,0.85)">PascalCase</text>
+  <text x="800" y="174" text-anchor="middle" font-family="monospace" font-size="10" fill="rgba(103,232,249,0.85)">CONSTANT_CASE</text>
+
+  <!-- Java/C# -->
+  <rect x="28" y="196" width="844" height="52" rx="6" fill="rgba(52,211,153,0.05)"/>
+  <text x="80" y="226" text-anchor="middle" font-size="11" font-weight="700" fill="#34d399">Java / C#</text>
+  <text x="260" y="226" text-anchor="middle" font-family="monospace" font-size="10" fill="rgba(244,114,182,0.85)">camelCase</text>
+  <text x="440" y="226" text-anchor="middle" font-family="monospace" font-size="10" fill="rgba(244,114,182,0.85)">camelCase</text>
+  <text x="620" y="226" text-anchor="middle" font-family="monospace" font-size="10" fill="rgba(52,211,153,0.85)">PascalCase</text>
+  <text x="800" y="226" text-anchor="middle" font-family="monospace" font-size="10" fill="rgba(103,232,249,0.85)">CONSTANT_CASE</text>
+
+  <!-- Ruby -->
+  <rect x="28" y="248" width="844" height="52" rx="6" fill="rgba(239,68,68,0.05)"/>
+  <text x="80" y="278" text-anchor="middle" font-size="11" font-weight="700" fill="#f87171">Ruby</text>
+  <text x="260" y="278" text-anchor="middle" font-family="monospace" font-size="10" fill="rgba(129,140,248,0.85)">snake_case</text>
+  <text x="440" y="278" text-anchor="middle" font-family="monospace" font-size="10" fill="rgba(129,140,248,0.85)">snake_case</text>
+  <text x="620" y="278" text-anchor="middle" font-family="monospace" font-size="10" fill="rgba(52,211,153,0.85)">PascalCase</text>
+  <text x="800" y="278" text-anchor="middle" font-family="monospace" font-size="10" fill="rgba(103,232,249,0.85)">CONSTANT_CASE</text>
+
+  <!-- CSS/HTML -->
+  <rect x="28" y="300" width="844" height="52" rx="6" fill="rgba(167,139,250,0.05)"/>
+  <text x="80" y="330" text-anchor="middle" font-size="11" font-weight="700" fill="#a78bfa">CSS / HTML</text>
+  <text x="260" y="330" text-anchor="middle" font-family="monospace" font-size="10" fill="rgba(251,191,36,0.85)">kebab-case</text>
+  <text x="440" y="330" text-anchor="middle" font-family="monospace" font-size="9" fill="rgba(255,255,255,0.3)">n/a</text>
+  <text x="620" y="330" text-anchor="middle" font-family="monospace" font-size="10" fill="rgba(251,191,36,0.85)">kebab-case (classes)</text>
+  <text x="800" y="330" text-anchor="middle" font-family="monospace" font-size="10" fill="rgba(251,191,36,0.85)">kebab-case (--vars)</text>
+
+  <!-- URLs -->
+  <rect x="28" y="352" width="844" height="52" rx="6" fill="rgba(14,116,144,0.06)"/>
+  <text x="80" y="382" text-anchor="middle" font-size="11" font-weight="700" fill="#67e8f9">URL slugs</text>
+  <text x="440" y="382" text-anchor="middle" font-family="monospace" font-size="11" fill="rgba(251,191,36,0.85)">kebab-case (SEO-friendly, readable, hyphen-separated)</text>
+
+  <!-- Note -->
+  <rect x="28" y="414" width="844" height="52" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(124,58,237,0.15)" stroke-width="1"/>
+  <text x="450" y="436" text-anchor="middle" font-size="9.5" font-weight="700" fill="rgba(167,139,250,0.85)">Why does this matter?</text>
+  <text x="450" y="454" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.55)">Mixing conventions within a codebase (e.g. snake_case in a JS file) triggers linter warnings and confuses readers — consistency matters more than any single "correct" choice.</text>
+
+  <text x="450" y="474" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">toolnestai.net/text-tools/case-converter</text>
+</svg>

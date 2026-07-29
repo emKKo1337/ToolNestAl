@@ -1,0 +1,98 @@
+<svg viewBox="0 0 900 1200" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="30%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gT" cx="50%" cy="10%" r="60%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.35"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gB" cx="50%" cy="90%" r="60%"><stop offset="0%" stop-color="#0e7490" stop-opacity="0.2"/><stop offset="100%" stop-color="#0e7490" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+  </defs>
+  <rect width="900" height="1200" fill="url(#bg)"/>
+  <ellipse cx="450" cy="200" rx="700" ry="400" fill="url(#gT)"/>
+  <ellipse cx="450" cy="1000" rx="700" ry="400" fill="url(#gB)"/>
+
+  <text x="450" y="52" text-anchor="middle" font-size="28" font-weight="900" fill="url(#aG)">The Complete Case Conversion Guide</text>
+  <text x="450" y="76" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.38)">Every text case format explained, with when to use each</text>
+  <text x="450" y="94" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.22)">toolnestai.net/text-tools/case-converter</text>
+
+  <!-- Section 1 -->
+  <rect x="32" y="110" width="836" height="38" rx="8" fill="rgba(124,58,237,0.18)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+  <text x="450" y="134" text-anchor="middle" font-size="15" font-weight="800" fill="#a78bfa">01 — 10 Case Formats at a Glance</text>
+
+  <g font-family="monospace" font-size="10">
+    <rect x="32" y="154" width="404" height="220" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="48" y="178" fill="rgba(167,139,250,0.85)">UPPERCASE</text><text x="220" y="178" font-family="'Segoe UI'" fill="rgba(255,255,255,0.4)">THE QUICK FOX</text>
+    <text x="48" y="202" fill="rgba(103,232,249,0.85)">lowercase</text><text x="220" y="202" font-family="'Segoe UI'" fill="rgba(255,255,255,0.4)">the quick fox</text>
+    <text x="48" y="226" fill="rgba(52,211,153,0.85)">Title Case</text><text x="220" y="226" font-family="'Segoe UI'" fill="rgba(255,255,255,0.4)">The Quick Fox</text>
+    <text x="48" y="250" fill="rgba(251,191,36,0.85)">Sentence case</text><text x="220" y="250" font-family="'Segoe UI'" fill="rgba(255,255,255,0.4)">The quick fox</text>
+    <text x="48" y="274" fill="rgba(244,114,182,0.85)">camelCase</text><text x="220" y="274" font-family="'Segoe UI'" fill="rgba(255,255,255,0.4)">theQuickFox</text>
+    <text x="48" y="298" fill="rgba(52,211,153,0.7)">PascalCase</text><text x="220" y="298" font-family="'Segoe UI'" fill="rgba(255,255,255,0.4)">TheQuickFox</text>
+    <text x="48" y="322" fill="rgba(129,140,248,0.85)">snake_case</text><text x="220" y="322" font-family="'Segoe UI'" fill="rgba(255,255,255,0.4)">the_quick_fox</text>
+    <text x="48" y="346" fill="rgba(251,191,36,0.7)">kebab-case</text><text x="220" y="346" font-family="'Segoe UI'" fill="rgba(255,255,255,0.4)">the-quick-fox</text>
+
+    <rect x="464" y="154" width="404" height="220" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="480" y="178" fill="rgba(103,232,249,0.7)">CONSTANT_CASE</text><text x="480" y="198" font-family="'Segoe UI'" fill="rgba(255,255,255,0.4)">THE_QUICK_FOX</text>
+    <text x="480" y="226" fill="rgba(167,139,250,0.7)">aLtErNaTiNg cAsE</text><text x="480" y="246" font-family="'Segoe UI'" fill="rgba(255,255,255,0.4)">tHe qUiCk FoX</text>
+    <text x="480" y="274" fill="rgba(244,114,182,0.7)">InVeRsE cAsE</text><text x="480" y="294" font-family="'Segoe UI'" fill="rgba(255,255,255,0.4)">Swaps each letter's</text>
+    <text x="480" y="310" font-family="'Segoe UI'" fill="rgba(255,255,255,0.4)">existing case</text>
+    <text x="480" y="338" font-family="'Segoe UI'" font-size="9" fill="rgba(255,255,255,0.3)">10+ formats total, applied instantly</text>
+    <text x="480" y="354" font-family="'Segoe UI'" font-size="9" fill="rgba(255,255,255,0.3)">as you type — no page reload needed</text>
+  </g>
+
+  <!-- Section 2: Programming conventions -->
+  <rect x="32" y="392" width="836" height="38" rx="8" fill="rgba(14,116,144,0.18)" stroke="rgba(14,116,144,0.3)" stroke-width="1"/>
+  <text x="450" y="416" text-anchor="middle" font-size="15" font-weight="800" fill="#67e8f9">02 — Naming Conventions by Language</text>
+
+  <g font-size="10">
+    <rect x="32" y="436" width="404" height="90" rx="8" fill="rgba(251,191,36,0.06)" stroke="rgba(251,191,36,0.16)" stroke-width="1"/>
+    <text x="48" y="458" font-weight="700" fill="#fbbf24">JavaScript / Java / C#</text>
+    <text x="48" y="476" font-family="monospace" fill="rgba(255,255,255,0.55)">camelCase vars, PascalCase classes</text>
+    <text x="48" y="494" font-family="monospace" fill="rgba(255,255,255,0.55)">CONSTANT_CASE for constants</text>
+    <text x="48" y="512" font-size="8.5" fill="rgba(255,255,255,0.3)">e.g. userName, class UserProfile</text>
+
+    <rect x="464" y="436" width="404" height="90" rx="8" fill="rgba(103,232,249,0.06)" stroke="rgba(103,232,249,0.16)" stroke-width="1"/>
+    <text x="480" y="458" font-weight="700" fill="#67e8f9">Python / Ruby</text>
+    <text x="480" y="476" font-family="monospace" fill="rgba(255,255,255,0.55)">snake_case vars &amp; functions,</text>
+    <text x="480" y="494" font-family="monospace" fill="rgba(255,255,255,0.55)">PascalCase classes</text>
+    <text x="480" y="512" font-size="8.5" fill="rgba(255,255,255,0.3)">e.g. user_name, class UserProfile</text>
+  </g>
+
+  <rect x="32" y="534" width="836" height="70" rx="8" fill="rgba(52,211,153,0.06)" stroke="rgba(52,211,153,0.16)" stroke-width="1"/>
+  <text x="48" y="556" font-weight="700" font-size="10" fill="#6ee7b7">CSS / HTML / URLs</text>
+  <text x="48" y="576" font-family="monospace" font-size="10" fill="rgba(255,255,255,0.55)">kebab-case for CSS classes, HTML attributes, and SEO-friendly URL slugs</text>
+  <text x="48" y="594" font-size="8.5" fill="rgba(255,255,255,0.3)">e.g. .user-profile-card, /blog/my-article-title</text>
+
+  <!-- Section 3: Title case rules -->
+  <rect x="32" y="622" width="836" height="38" rx="8" fill="rgba(16,185,129,0.14)" stroke="rgba(16,185,129,0.25)" stroke-width="1"/>
+  <text x="450" y="646" text-anchor="middle" font-size="15" font-weight="800" fill="#34d399">03 — Title Case Has Real Rules</text>
+
+  <rect x="32" y="666" width="836" height="130" rx="10" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="48" y="690" font-size="10.5" fill="rgba(239,68,68,0.75)">✗ Naive: "The Lord Of The Rings" (capitalizes every word)</text>
+  <text x="48" y="712" font-size="10.5" fill="rgba(52,211,153,0.8)">✓ Correct: "The Lord of the Rings" (minor words stay lowercase)</text>
+  <text x="48" y="738" font-size="9.5" fill="rgba(255,255,255,0.5)">Minor words that stay lowercase (unless first/last word): articles (a, an, the),</text>
+  <text x="48" y="754" font-size="9.5" fill="rgba(255,255,255,0.5)">coordinating conjunctions (and, but, or), and short prepositions (in, on, of, to)</text>
+  <text x="48" y="778" font-size="9" fill="rgba(255,255,255,0.3)">Style guides differ: AP capitalizes 4+ letter prepositions; Chicago/MLA lowercase all prepositions</text>
+
+  <!-- Section 4: Common mistakes -->
+  <rect x="32" y="814" width="836" height="38" rx="8" fill="rgba(239,68,68,0.12)" stroke="rgba(239,68,68,0.22)" stroke-width="1"/>
+  <text x="450" y="838" text-anchor="middle" font-size="15" font-weight="800" fill="rgba(239,68,68,0.85)">04 — Common Mistakes</text>
+
+  <g font-size="10">
+    <rect x="32" y="858" width="836" height="40" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(239,68,68,0.1)" stroke-width="1"/>
+    <text x="48" y="876" fill="rgba(239,68,68,0.7)">✗</text>
+    <text x="68" y="876" fill="rgba(255,255,255,0.6)">Mixing naming conventions within one codebase — pick one per language and stay consistent.</text>
+    <text x="68" y="892" fill="rgba(255,255,255,0.4)" font-size="8.5">Inconsistency confuses readers and often triggers linter warnings.</text>
+
+    <rect x="32" y="902" width="836" height="40" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(239,68,68,0.1)" stroke-width="1"/>
+    <text x="48" y="920" fill="rgba(239,68,68,0.7)">✗</text>
+    <text x="68" y="920" fill="rgba(255,255,255,0.6)">Using spaces or uppercase letters in URL slugs — breaks SEO and can cause encoding issues.</text>
+    <text x="68" y="936" fill="rgba(255,255,255,0.4)" font-size="8.5">Always use lowercase kebab-case for URL paths.</text>
+
+    <rect x="32" y="946" width="836" height="40" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(239,68,68,0.1)" stroke-width="1"/>
+    <text x="48" y="964" fill="rgba(239,68,68,0.7)">✗</text>
+    <text x="68" y="964" fill="rgba(255,255,255,0.6)">Treating "Title Case" as "capitalize every word" — this breaks style-guide compliant titles.</text>
+    <text x="68" y="980" fill="rgba(255,255,255,0.4)" font-size="8.5">Minor words like "of," "the," "and" should stay lowercase mid-title.</text>
+  </g>
+
+  <text x="450" y="1020" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.28)">Free tool: toolnestai.net/text-tools/case-converter</text>
+  <text x="450" y="1040" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">10+ case formats, instant conversion — for writing, code, and data cleanup</text>
+</svg>

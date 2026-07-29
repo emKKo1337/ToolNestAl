@@ -1,0 +1,91 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="30%" cy="40%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gL" cx="15%" cy="50%" r="55%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.45"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gR" cx="85%" cy="50%" r="55%"><stop offset="0%" stop-color="#0e7490" stop-opacity="0.28"/><stop offset="100%" stop-color="#0e7490" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="lapG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1a1040"/><stop offset="100%" stop-color="#0d0824"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="8" stdDeviation="20" flood-color="#5b21b6" flood-opacity="0.5"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <ellipse cx="180" cy="315" rx="600" ry="500" fill="url(#gL)"/>
+  <ellipse cx="1020" cy="315" rx="600" ry="500" fill="url(#gR)"/>
+
+  <text x="60" y="70" font-size="14" font-weight="700" fill="url(#aG)" filter="url(#glow)">ToolNest AI</text>
+  <text x="60" y="106" font-size="13" fill="rgba(255,255,255,0.35)">Text Tools › Case Converter</text>
+  <text x="60" y="185" font-size="52" font-weight="900" fill="url(#aG)" filter="url(#glow)">Case</text>
+  <text x="60" y="245" font-size="52" font-weight="900" fill="url(#aG)" filter="url(#glow)">Converter</text>
+  <text x="60" y="300" font-size="18" fill="rgba(255,255,255,0.6)">UPPERCASE · lowercase · Title Case</text>
+  <text x="60" y="328" font-size="18" fill="rgba(255,255,255,0.6)">camelCase · snake_case · more — Free</text>
+
+  <rect x="60" y="358" width="110" height="52" rx="8" fill="rgba(124,58,237,0.2)" stroke="rgba(124,58,237,0.4)" stroke-width="1"/>
+  <text x="115" y="382" text-anchor="middle" font-size="14" font-weight="900" fill="#a78bfa">10+</text>
+  <text x="115" y="400" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.45)">case formats</text>
+
+  <rect x="182" y="358" width="110" height="52" rx="8" fill="rgba(14,116,144,0.15)" stroke="rgba(14,116,144,0.35)" stroke-width="1"/>
+  <text x="237" y="382" text-anchor="middle" font-size="18" font-weight="900" fill="#67e8f9">Instant</text>
+  <text x="237" y="400" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.45)">as you type</text>
+
+  <rect x="304" y="358" width="110" height="52" rx="8" fill="rgba(16,185,129,0.12)" stroke="rgba(16,185,129,0.3)" stroke-width="1"/>
+  <text x="359" y="382" text-anchor="middle" font-size="16" font-weight="900" fill="#34d399">Dev-ready</text>
+  <text x="359" y="400" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.45)">code naming</text>
+
+  <rect x="426" y="358" width="110" height="52" rx="8" fill="rgba(251,191,36,0.1)" stroke="rgba(251,191,36,0.25)" stroke-width="1"/>
+  <text x="481" y="382" text-anchor="middle" font-size="20" font-weight="900" fill="#fbbf24">Free</text>
+  <text x="481" y="400" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.45)">no account</text>
+
+  <text x="60" y="560" font-size="14" fill="rgba(255,255,255,0.25)">toolnestai.net/text-tools/case-converter</text>
+
+  <rect x="630" y="60" width="530" height="490" rx="16" fill="url(#lapG)" stroke="rgba(124,58,237,0.3)" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="630" y="60" width="530" height="36" rx="16" fill="rgba(255,255,255,0.05)"/>
+  <rect x="630" y="78" width="530" height="18" fill="rgba(255,255,255,0.02)"/>
+  <circle cx="655" cy="78" r="6" fill="rgba(239,68,68,0.6)"/>
+  <circle cx="675" cy="78" r="6" fill="rgba(251,191,36,0.6)"/>
+  <circle cx="695" cy="78" r="6" fill="rgba(34,197,94,0.6)"/>
+
+  <text x="648" y="122" font-size="8.5" font-weight="700" fill="rgba(255,255,255,0.3)">INPUT TEXT</text>
+  <rect x="640" y="128" width="506" height="38" rx="8" fill="rgba(0,0,0,0.5)" stroke="rgba(124,58,237,0.4)" stroke-width="1.5"/>
+  <text x="654" y="152" font-family="monospace" font-size="13" fill="rgba(255,255,255,0.8)">the Quick Brown Fox jumps</text>
+
+  <g font-family="monospace" font-size="9.5">
+    <rect x="640" y="176" width="245" height="30" rx="6" fill="rgba(167,139,250,0.08)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+    <text x="652" y="188" font-size="7" font-family="'Segoe UI'" fill="rgba(255,255,255,0.35)">UPPERCASE</text>
+    <text x="652" y="200" fill="rgba(167,139,250,0.9)">THE QUICK BROWN FOX</text>
+
+    <rect x="901" y="176" width="245" height="30" rx="6" fill="rgba(244,114,182,0.08)" stroke="rgba(244,114,182,0.2)" stroke-width="1"/>
+    <text x="913" y="188" font-size="7" font-family="'Segoe UI'" fill="rgba(255,255,255,0.35)">camelCase</text>
+    <text x="913" y="200" fill="rgba(244,114,182,0.9)">theQuickBrownFox</text>
+
+    <rect x="640" y="210" width="245" height="30" rx="6" fill="rgba(129,140,248,0.08)" stroke="rgba(129,140,248,0.2)" stroke-width="1"/>
+    <text x="652" y="222" font-size="7" font-family="'Segoe UI'" fill="rgba(255,255,255,0.35)">snake_case</text>
+    <text x="652" y="234" fill="rgba(129,140,248,0.9)">the_quick_brown_fox</text>
+
+    <rect x="901" y="210" width="245" height="30" rx="6" fill="rgba(251,191,36,0.08)" stroke="rgba(251,191,36,0.2)" stroke-width="1"/>
+    <text x="913" y="222" font-size="7" font-family="'Segoe UI'" fill="rgba(255,255,255,0.35)">kebab-case</text>
+    <text x="913" y="234" fill="rgba(251,191,36,0.9)">the-quick-brown-fox</text>
+
+    <rect x="640" y="244" width="245" height="30" rx="6" fill="rgba(52,211,153,0.08)" stroke="rgba(52,211,153,0.2)" stroke-width="1"/>
+    <text x="652" y="256" font-size="7" font-family="'Segoe UI'" fill="rgba(255,255,255,0.35)">Title Case</text>
+    <text x="652" y="268" fill="rgba(52,211,153,0.9)">The Quick Brown Fox</text>
+
+    <rect x="901" y="244" width="245" height="30" rx="6" fill="rgba(103,232,249,0.08)" stroke="rgba(103,232,249,0.2)" stroke-width="1"/>
+    <text x="913" y="256" font-size="7" font-family="'Segoe UI'" fill="rgba(255,255,255,0.35)">PascalCase</text>
+    <text x="913" y="268" fill="rgba(103,232,249,0.9)">TheQuickBrownFox</text>
+  </g>
+
+  <text x="648" y="298" font-size="8.5" font-weight="700" fill="rgba(255,255,255,0.3)">WHEN TO USE EACH</text>
+  <g font-size="9.5">
+    <rect x="640" y="304" width="506" height="130" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="656" y="326" fill="rgba(244,114,182,0.85)">camelCase</text><text x="740" y="326" fill="rgba(255,255,255,0.5)"> — JS/Java variables</text>
+    <text x="656" y="346" fill="rgba(129,140,248,0.85)">snake_case</text><text x="744" y="346" fill="rgba(255,255,255,0.5)"> — Python variables</text>
+    <text x="656" y="366" fill="rgba(251,191,36,0.85)">kebab-case</text><text x="744" y="366" fill="rgba(255,255,255,0.5)"> — URL slugs, CSS classes</text>
+    <text x="656" y="386" fill="rgba(103,232,249,0.85)">PascalCase</text><text x="748" y="386" fill="rgba(255,255,255,0.5)"> — class names</text>
+    <text x="656" y="406" fill="rgba(52,211,153,0.85)">Title Case</text><text x="740" y="406" fill="rgba(255,255,255,0.5)"> — headlines, article titles</text>
+    <text x="656" y="424" fill="rgba(255,255,255,0.35)">Real Title Case follows style-guide rules — not just capitalizing every word</text>
+  </g>
+
+  <rect x="620" y="550" width="560" height="14" rx="4" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <rect x="760" y="562" width="260" height="8" rx="4" fill="rgba(255,255,255,0.03)"/>
+</svg>

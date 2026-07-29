@@ -1,0 +1,52 @@
+<svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gC" cx="50%" cy="40%" r="60%"><stop offset="0%" stop-color="#0e7490" stop-opacity="0.2"/><stop offset="100%" stop-color="#0e7490" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+  </defs>
+  <rect width="900" height="460" fill="url(#bg)"/>
+  <ellipse cx="450" cy="230" rx="520" ry="320" fill="url(#gC)"/>
+
+  <text x="450" y="36" text-anchor="middle" font-size="20" font-weight="900" fill="url(#aG)">Title Case Has Rules — It's Not "Capitalize Every Word"</text>
+  <text x="450" y="54" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.38)">Style guides define which "minor words" stay lowercase</text>
+
+  <!-- Wrong vs right -->
+  <rect x="28" y="70" width="410" height="90" rx="8" fill="rgba(239,68,68,0.06)" stroke="rgba(239,68,68,0.2)" stroke-width="1"/>
+  <text x="44" y="92" font-size="10.5" font-weight="700" fill="rgba(239,68,68,0.85)">✗ Naive "capitalize every word"</text>
+  <text x="44" y="114" font-family="monospace" font-size="11" fill="rgba(252,165,165,0.85)">"The Lord Of The Rings"</text>
+  <text x="44" y="132" font-size="9" fill="rgba(255,255,255,0.5)">"Of" and the second "The" shouldn't be capitalized —</text>
+  <text x="44" y="146" font-size="9" fill="rgba(255,255,255,0.5)">they're minor words in the middle of the title.</text>
+
+  <rect x="462" y="70" width="410" height="90" rx="8" fill="rgba(52,211,153,0.06)" stroke="rgba(52,211,153,0.2)" stroke-width="1"/>
+  <text x="478" y="92" font-size="10.5" font-weight="700" fill="rgba(52,211,153,0.85)">✓ Proper Title Case (AP/Chicago style)</text>
+  <text x="478" y="114" font-family="monospace" font-size="11" fill="rgba(110,231,183,0.9)">"The Lord of the Rings"</text>
+  <text x="478" y="132" font-size="9" fill="rgba(255,255,255,0.5)">"of" and the second "the" are lowercase minor</text>
+  <text x="478" y="146" font-size="9" fill="rgba(255,255,255,0.5)">words — only the first/last word and major words capitalize.</text>
+
+  <!-- Minor words list -->
+  <rect x="28" y="170" width="844" height="130" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <text x="450" y="192" text-anchor="middle" font-size="10.5" font-weight="700" fill="rgba(255,255,255,0.4)">MINOR WORDS THAT STAY LOWERCASE (unless first or last word)</text>
+  <g font-family="monospace" font-size="10.5">
+    <text x="60" y="216" fill="rgba(167,139,250,0.85)">Articles:</text>
+    <text x="150" y="216" fill="rgba(255,255,255,0.6)">a, an, the</text>
+
+    <text x="60" y="240" fill="rgba(103,232,249,0.85)">Coordinating conjunctions:</text>
+    <text x="280" y="240" fill="rgba(255,255,255,0.6)">and, but, or, nor, for, so, yet</text>
+
+    <text x="60" y="264" fill="rgba(52,211,153,0.85)">Short prepositions (≤4 letters, style-dependent):</text>
+    <text x="440" y="264" fill="rgba(255,255,255,0.6)">in, on, at, to, of, by, up, off</text>
+
+    <text x="60" y="288" fill="rgba(251,191,36,0.85)">Exception:</text>
+    <text x="150" y="288" fill="rgba(255,255,255,0.6)">ALWAYS capitalize the first and last word, no matter what</text>
+  </g>
+
+  <!-- Style guide differences -->
+  <rect x="28" y="310" width="844" height="110" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(124,58,237,0.15)" stroke-width="1"/>
+  <text x="450" y="332" text-anchor="middle" font-size="10.5" font-weight="700" fill="rgba(167,139,250,0.85)">STYLE GUIDES DISAGREE ON THE DETAILS</text>
+  <text x="60" y="354" font-size="9.5" fill="rgba(255,255,255,0.55)"><tspan font-weight="700" fill="rgba(167,139,250,0.85)">AP Style:</tspan> capitalizes prepositions of 4+ letters (e.g. "With," "From")</text>
+  <text x="60" y="374" font-size="9.5" fill="rgba(255,255,255,0.55)"><tspan font-weight="700" fill="rgba(103,232,249,0.85)">Chicago Style:</tspan> lowercases ALL prepositions regardless of length</text>
+  <text x="60" y="394" font-size="9.5" fill="rgba(255,255,255,0.55)"><tspan font-weight="700" fill="rgba(52,211,153,0.85)">MLA Style:</tspan> similar to Chicago, with its own list of exceptions</text>
+  <text x="450" y="414" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.3)">Most online Title Case tools implement a reasonable approximation — always double-check for formal publishing</text>
+
+  <text x="450" y="446" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">toolnestai.net/text-tools/case-converter</text>
+</svg>
