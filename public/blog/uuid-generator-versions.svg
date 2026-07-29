@@ -1,0 +1,72 @@
+<svg viewBox="0 0 900 480" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gC" cx="50%" cy="40%" r="60%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.2"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+  </defs>
+  <rect width="900" height="480" fill="url(#bg)"/>
+  <ellipse cx="450" cy="240" rx="520" ry="330" fill="url(#gC)"/>
+
+  <text x="450" y="36" text-anchor="middle" font-size="20" font-weight="900" fill="url(#aG)">UUID Versions at a Glance</text>
+  <text x="450" y="54" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.38)">RFC 9562 (2024) defines 8 versions — these 4 cover nearly every real-world use case</text>
+
+  <!-- header row -->
+  <g font-size="9" font-weight="700" text-anchor="middle">
+    <text x="90" y="76" fill="rgba(255,255,255,0.4)">VERSION</text>
+    <text x="260" y="76" fill="rgba(255,255,255,0.4)">CONTENTS</text>
+    <text x="470" y="76" fill="rgba(255,255,255,0.4)">SORTABLE?</text>
+    <text x="600" y="76" fill="rgba(255,255,255,0.4)">DETERMINISTIC?</text>
+    <text x="780" y="76" fill="rgba(255,255,255,0.4)">BEST FOR</text>
+  </g>
+  <line x1="28" y1="84" x2="872" y2="84" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+
+  <!-- v1 -->
+  <rect x="28" y="92" width="844" height="56" rx="6" fill="rgba(103,232,249,0.05)"/>
+  <text x="90" y="126" text-anchor="middle" font-size="15" font-weight="900" fill="#67e8f9">v1</text>
+  <text x="260" y="120" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.6)">Timestamp (100ns) +</text>
+  <text x="260" y="134" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.6)">MAC address + clock seq</text>
+  <text x="470" y="126" text-anchor="middle" font-size="12" fill="rgba(251,191,36,0.8)">Partial</text>
+  <text x="600" y="126" text-anchor="middle" font-size="12" fill="rgba(239,68,68,0.7)">✗ No</text>
+  <text x="780" y="120" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.5)">Legacy systems,</text>
+  <text x="780" y="134" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.5)">distributed audit trails</text>
+
+  <!-- v4 -->
+  <rect x="28" y="152" width="844" height="56" rx="6" fill="rgba(167,139,250,0.06)"/>
+  <text x="90" y="186" text-anchor="middle" font-size="15" font-weight="900" fill="#a78bfa">v4</text>
+  <text x="260" y="180" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.6)">122 bits of cryptographically</text>
+  <text x="260" y="194" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.6)">secure random data</text>
+  <text x="470" y="186" text-anchor="middle" font-size="12" fill="rgba(239,68,68,0.7)">✗ No</text>
+  <text x="600" y="186" text-anchor="middle" font-size="12" fill="rgba(239,68,68,0.7)">✗ No</text>
+  <text x="780" y="180" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.5)">General purpose —</text>
+  <text x="780" y="194" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.5)">most common choice</text>
+
+  <!-- v5 -->
+  <rect x="28" y="212" width="844" height="56" rx="6" fill="rgba(52,211,153,0.05)"/>
+  <text x="90" y="246" text-anchor="middle" font-size="15" font-weight="900" fill="#34d399">v5</text>
+  <text x="260" y="240" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.6)">SHA-1 hash of a namespace</text>
+  <text x="260" y="254" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.6)">UUID + a name string</text>
+  <text x="470" y="246" text-anchor="middle" font-size="12" fill="rgba(239,68,68,0.7)">✗ No</text>
+  <text x="600" y="246" text-anchor="middle" font-size="12" fill="rgba(52,211,153,0.8)">✓ Yes</text>
+  <text x="780" y="240" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.5)">Same input, same ID —</text>
+  <text x="780" y="254" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.5)">deduplication, caching keys</text>
+
+  <!-- v7 -->
+  <rect x="28" y="272" width="844" height="56" rx="6" fill="rgba(251,191,36,0.06)"/>
+  <text x="90" y="306" text-anchor="middle" font-size="15" font-weight="900" fill="#fbbf24">v7</text>
+  <text x="260" y="300" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.6)">48-bit Unix ms timestamp +</text>
+  <text x="260" y="314" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.6)">74 bits of random data</text>
+  <text x="470" y="306" text-anchor="middle" font-size="12" fill="rgba(52,211,153,0.8)">✓ Yes</text>
+  <text x="600" y="306" text-anchor="middle" font-size="12" fill="rgba(239,68,68,0.7)">✗ No</text>
+  <text x="780" y="300" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.5)">Database primary keys —</text>
+  <text x="780" y="314" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.5)">index-friendly, newest standard</text>
+
+  <!-- collision math -->
+  <rect x="28" y="342" width="844" height="112" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <text x="450" y="364" text-anchor="middle" font-size="10.5" font-weight="700" fill="rgba(255,255,255,0.4)">WHY COLLISIONS ARE PRACTICALLY IMPOSSIBLE (UUIDv4)</text>
+  <text x="450" y="386" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">2¹²² possible values ≈ 5.3 × 10³⁶ — to have a 50% chance of one collision, you would need to</text>
+  <text x="450" y="404" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">generate roughly 2.7 × 10¹⁸ UUIDs (2.7 quintillion). At 1 billion UUIDs generated per second,</text>
+  <text x="450" y="422" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">that takes over 85 years of continuous generation to reach even a one-in-a-billion collision chance.</text>
+  <text x="450" y="442" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.3)">(Assuming a cryptographically secure random number generator, per RFC 9562 §6.9)</text>
+
+  <text x="450" y="470" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">toolnestai.net/developer-tools/uuid-generator</text>
+</svg>

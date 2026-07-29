@@ -1,0 +1,66 @@
+<svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gC" cx="50%" cy="40%" r="60%"><stop offset="0%" stop-color="#0e7490" stop-opacity="0.2"/><stop offset="100%" stop-color="#0e7490" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+  </defs>
+  <rect width="900" height="460" fill="url(#bg)"/>
+  <ellipse cx="450" cy="230" rx="520" ry="320" fill="url(#gC)"/>
+
+  <text x="450" y="36" text-anchor="middle" font-size="20" font-weight="900" fill="url(#aG)">UUID vs Auto-Increment ID — Which to Use?</text>
+  <text x="450" y="54" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.38)">The most common database primary key decision, side by side</text>
+
+  <!-- Column headers -->
+  <rect x="28" y="64" width="410" height="24" rx="6" fill="rgba(124,58,237,0.15)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+  <text x="233" y="80" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(167,139,250,0.85)">UUID (v4 or v7)</text>
+  <rect x="462" y="64" width="410" height="24" rx="6" fill="rgba(14,116,144,0.15)" stroke="rgba(14,116,144,0.3)" stroke-width="1"/>
+  <text x="667" y="80" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(103,232,249,0.85)">Auto-Increment Integer</text>
+
+  <!-- Predictability -->
+  <rect x="28" y="94" width="410" height="52" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(124,58,237,0.12)" stroke-width="1"/>
+  <text x="44" y="112" font-size="8.5" font-weight="700" fill="rgba(255,255,255,0.4)">PREDICTABILITY / SECURITY</text>
+  <text x="44" y="130" font-size="9" fill="rgba(52,211,153,0.8)">✓ Not guessable — safe to expose in URLs</text>
+  <rect x="462" y="94" width="410" height="52" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(14,116,144,0.12)" stroke-width="1"/>
+  <text x="478" y="112" font-size="8.5" font-weight="700" fill="rgba(255,255,255,0.4)">PREDICTABILITY / SECURITY</text>
+  <text x="478" y="130" font-size="9" fill="rgba(239,68,68,0.75)">✗ Sequential — reveals row count, enumerable</text>
+
+  <!-- Distributed generation -->
+  <rect x="28" y="150" width="410" height="52" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(124,58,237,0.12)" stroke-width="1"/>
+  <text x="44" y="168" font-size="8.5" font-weight="700" fill="rgba(255,255,255,0.4)">MULTI-SERVER GENERATION</text>
+  <text x="44" y="186" font-size="9" fill="rgba(52,211,153,0.8)">✓ Any client can generate offline, no coordination</text>
+  <rect x="462" y="150" width="410" height="52" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(14,116,144,0.12)" stroke-width="1"/>
+  <text x="478" y="168" font-size="8.5" font-weight="700" fill="rgba(255,255,255,0.4)">MULTI-SERVER GENERATION</text>
+  <text x="478" y="186" font-size="9" fill="rgba(239,68,68,0.75)">✗ Requires central database coordination</text>
+
+  <!-- Storage size -->
+  <rect x="28" y="206" width="410" height="52" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(124,58,237,0.12)" stroke-width="1"/>
+  <text x="44" y="224" font-size="8.5" font-weight="700" fill="rgba(255,255,255,0.4)">STORAGE SIZE</text>
+  <text x="44" y="242" font-size="9" fill="rgba(255,255,255,0.6)">16 bytes (128 bits) — 4x larger than BIGINT</text>
+  <rect x="462" y="206" width="410" height="52" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(14,116,144,0.12)" stroke-width="1"/>
+  <text x="478" y="224" font-size="8.5" font-weight="700" fill="rgba(255,255,255,0.4)">STORAGE SIZE</text>
+  <text x="478" y="242" font-size="9" fill="rgba(255,255,255,0.6)">4-8 bytes (INT/BIGINT) — smaller, faster</text>
+
+  <!-- Index performance -->
+  <rect x="28" y="262" width="410" height="52" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(124,58,237,0.12)" stroke-width="1"/>
+  <text x="44" y="280" font-size="8.5" font-weight="700" fill="rgba(255,255,255,0.4)">INDEX PERFORMANCE</text>
+  <text x="44" y="298" font-size="9" fill="rgba(251,191,36,0.8)">v4: fragments B-tree indexes. v7: sequential, fine.</text>
+  <rect x="462" y="262" width="410" height="52" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(14,116,144,0.12)" stroke-width="1"/>
+  <text x="478" y="280" font-size="8.5" font-weight="700" fill="rgba(255,255,255,0.4)">INDEX PERFORMANCE</text>
+  <text x="478" y="298" font-size="9" fill="rgba(52,211,153,0.8)">✓ Sequential inserts — ideal for B-tree indexes</text>
+
+  <!-- Merge/replication -->
+  <rect x="28" y="318" width="410" height="52" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(124,58,237,0.12)" stroke-width="1"/>
+  <text x="44" y="336" font-size="8.5" font-weight="700" fill="rgba(255,255,255,0.4)">MERGING DATA FROM MULTIPLE DBs</text>
+  <text x="44" y="354" font-size="9" fill="rgba(52,211,153,0.8)">✓ No collisions when merging separate databases</text>
+  <rect x="462" y="318" width="410" height="52" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(14,116,144,0.12)" stroke-width="1"/>
+  <text x="478" y="336" font-size="8.5" font-weight="700" fill="rgba(255,255,255,0.4)">MERGING DATA FROM MULTIPLE DBs</text>
+  <text x="478" y="354" font-size="9" fill="rgba(239,68,68,0.75)">✗ IDs collide — requires remapping on merge</text>
+
+  <!-- Recommendation -->
+  <rect x="28" y="376" width="844" height="60" rx="8" fill="rgba(124,58,237,0.08)" stroke="rgba(124,58,237,0.2)" stroke-width="1"/>
+  <text x="450" y="398" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(167,139,250,0.85)">RECOMMENDATION</text>
+  <text x="450" y="416" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.6)">Use UUIDv7 when you need distributed generation with good index locality (modern default).</text>
+  <text x="450" y="430" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.6)">Use UUIDv4 when generation source doesn't matter. Use auto-increment only in single-writer, non-public systems.</text>
+
+  <text x="450" y="454" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">toolnestai.net/developer-tools/uuid-generator</text>
+</svg>
