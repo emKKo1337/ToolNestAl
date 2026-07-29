@@ -1,0 +1,71 @@
+<svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gC" cx="50%" cy="40%" r="60%"><stop offset="0%" stop-color="#0e7490" stop-opacity="0.2"/><stop offset="100%" stop-color="#0e7490" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+  </defs>
+  <rect width="900" height="460" fill="url(#bg)"/>
+  <ellipse cx="450" cy="230" rx="520" ry="320" fill="url(#gC)"/>
+
+  <text x="450" y="36" text-anchor="middle" font-size="20" font-weight="900" fill="url(#aG)">Hashing vs Encryption vs Encoding</text>
+  <text x="450" y="54" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.38)">Three concepts developers commonly confuse — here's the real difference</text>
+
+  <!-- Column headers -->
+  <rect x="20" y="66" width="276" height="24" rx="6" fill="rgba(124,58,237,0.15)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+  <text x="158" y="82" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(167,139,250,0.85)">Hashing</text>
+  <rect x="312" y="66" width="276" height="24" rx="6" fill="rgba(14,116,144,0.15)" stroke="rgba(14,116,144,0.3)" stroke-width="1"/>
+  <text x="450" y="82" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(103,232,249,0.85)">Encryption</text>
+  <rect x="604" y="66" width="276" height="24" rx="6" fill="rgba(16,185,129,0.15)" stroke="rgba(16,185,129,0.3)" stroke-width="1"/>
+  <text x="742" y="82" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(52,211,153,0.85)">Encoding</text>
+
+  <!-- reversible -->
+  <rect x="20" y="96" width="276" height="60" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(124,58,237,0.12)" stroke-width="1"/>
+  <text x="36" y="116" font-size="8.5" font-weight="700" fill="rgba(255,255,255,0.4)">REVERSIBLE?</text>
+  <text x="36" y="136" font-size="11" fill="rgba(239,68,68,0.8)">✗ No — one-way only</text>
+  <rect x="312" y="96" width="276" height="60" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(14,116,144,0.12)" stroke-width="1"/>
+  <text x="328" y="116" font-size="8.5" font-weight="700" fill="rgba(255,255,255,0.4)">REVERSIBLE?</text>
+  <text x="328" y="136" font-size="11" fill="rgba(52,211,153,0.85)">✓ Yes, with the correct key</text>
+  <rect x="604" y="96" width="276" height="60" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(16,185,129,0.12)" stroke-width="1"/>
+  <text x="620" y="116" font-size="8.5" font-weight="700" fill="rgba(255,255,255,0.4)">REVERSIBLE?</text>
+  <text x="620" y="136" font-size="11" fill="rgba(52,211,153,0.85)">✓ Yes, no key needed at all</text>
+
+  <!-- purpose -->
+  <rect x="20" y="162" width="276" height="90" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(124,58,237,0.12)" stroke-width="1"/>
+  <text x="36" y="182" font-size="8.5" font-weight="700" fill="rgba(255,255,255,0.4)">PURPOSE</text>
+  <text x="36" y="200" font-size="9" fill="rgba(255,255,255,0.6)">Verify integrity, store password</text>
+  <text x="36" y="214" font-size="9" fill="rgba(255,255,255,0.6)">digests, detect duplicates —</text>
+  <text x="36" y="228" font-size="9" fill="rgba(255,255,255,0.6)">not to hide data for later retrieval</text>
+  <rect x="312" y="162" width="276" height="90" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(14,116,144,0.12)" stroke-width="1"/>
+  <text x="328" y="182" font-size="8.5" font-weight="700" fill="rgba(255,255,255,0.4)">PURPOSE</text>
+  <text x="328" y="200" font-size="9" fill="rgba(255,255,255,0.6)">Protect data confidentiality —</text>
+  <text x="328" y="214" font-size="9" fill="rgba(255,255,255,0.6)">hide content from anyone without</text>
+  <text x="328" y="228" font-size="9" fill="rgba(255,255,255,0.6)">the decryption key</text>
+  <rect x="604" y="162" width="276" height="90" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(16,185,129,0.12)" stroke-width="1"/>
+  <text x="620" y="182" font-size="8.5" font-weight="700" fill="rgba(255,255,255,0.4)">PURPOSE</text>
+  <text x="620" y="200" font-size="9" fill="rgba(255,255,255,0.6)">Represent data in a different,</text>
+  <text x="620" y="214" font-size="9" fill="rgba(255,255,255,0.6)">safe-to-transmit format —</text>
+  <text x="620" y="228" font-size="9" fill="rgba(255,255,255,0.6)">no security purpose at all</text>
+
+  <!-- examples -->
+  <rect x="20" y="258" width="276" height="80" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(124,58,237,0.12)" stroke-width="1"/>
+  <text x="36" y="278" font-size="8.5" font-weight="700" fill="rgba(255,255,255,0.4)">EXAMPLES</text>
+  <text x="36" y="296" font-family="monospace" font-size="9" fill="rgba(167,139,250,0.75)">MD5, SHA-1, SHA-256, SHA-512</text>
+  <text x="36" y="312" font-family="monospace" font-size="9" fill="rgba(167,139,250,0.75)">bcrypt, Argon2 (for passwords)</text>
+  <rect x="312" y="258" width="276" height="80" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(14,116,144,0.12)" stroke-width="1"/>
+  <text x="328" y="278" font-size="8.5" font-weight="700" fill="rgba(255,255,255,0.4)">EXAMPLES</text>
+  <text x="328" y="296" font-family="monospace" font-size="9" fill="rgba(103,232,249,0.75)">AES-256, ChaCha20, RSA</text>
+  <text x="328" y="312" font-family="monospace" font-size="9" fill="rgba(103,232,249,0.75)">TLS/HTTPS encryption</text>
+  <rect x="604" y="258" width="276" height="80" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(16,185,129,0.12)" stroke-width="1"/>
+  <text x="620" y="278" font-size="8.5" font-weight="700" fill="rgba(255,255,255,0.4)">EXAMPLES</text>
+  <text x="620" y="296" font-family="monospace" font-size="9" fill="rgba(52,211,153,0.75)">Base64, URL encoding</text>
+  <text x="620" y="312" font-family="monospace" font-size="9" fill="rgba(52,211,153,0.75)">Hex encoding, MIME</text>
+
+  <!-- key insight -->
+  <rect x="20" y="346" width="860" height="86" rx="8" fill="rgba(239,68,68,0.06)" stroke="rgba(239,68,68,0.18)" stroke-width="1"/>
+  <text x="450" y="368" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(239,68,68,0.85)">CRITICAL DISTINCTION</text>
+  <text x="450" y="388" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.6)">Hashing a password is correct for storage. Encrypting a password is wrong — if the encryption key</text>
+  <text x="450" y="404" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.6)">is ever compromised, every password becomes instantly recoverable. A properly hashed password</text>
+  <text x="450" y="420" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.6)">(with bcrypt/Argon2, not raw SHA-256) cannot be reversed even by the system that stored it.</text>
+
+  <text x="450" y="454" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">toolnestai.net/developer-tools/hash-generator</text>
+</svg>

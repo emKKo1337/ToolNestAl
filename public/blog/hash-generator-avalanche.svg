@@ -1,0 +1,57 @@
+<svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gC" cx="50%" cy="40%" r="60%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.2"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+  </defs>
+  <rect width="900" height="460" fill="url(#bg)"/>
+  <ellipse cx="450" cy="230" rx="520" ry="320" fill="url(#gC)"/>
+
+  <text x="450" y="36" text-anchor="middle" font-size="20" font-weight="900" fill="url(#aG)">The Avalanche Effect — One Bit Changes Everything</text>
+  <text x="450" y="54" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.38)">A single character change produces a completely unrelated hash output (SHA-256)</text>
+
+  <!-- Input 1 -->
+  <rect x="28" y="72" width="844" height="66" rx="8" fill="rgba(52,211,153,0.06)" stroke="rgba(52,211,153,0.2)" stroke-width="1"/>
+  <text x="44" y="92" font-size="9" font-weight="700" fill="rgba(255,255,255,0.4)">INPUT A</text>
+  <text x="44" y="112" font-family="monospace" font-size="12" fill="rgba(110,231,183,0.9)">"Hello, World!"</text>
+  <text x="44" y="130" font-family="monospace" font-size="9.5" fill="rgba(255,255,255,0.5)">SHA-256 → dffd6021bb2bd5b0af676290809ec3a53191dbc9cd48f10...</text>
+
+  <!-- arrow -->
+  <text x="450" y="156" text-anchor="middle" font-size="16" fill="rgba(255,255,255,0.3)">↓ change one character: "!" → "?"</text>
+
+  <!-- Input 2 -->
+  <rect x="28" y="170" width="844" height="66" rx="8" fill="rgba(239,68,68,0.06)" stroke="rgba(239,68,68,0.2)" stroke-width="1"/>
+  <text x="44" y="190" font-size="9" font-weight="700" fill="rgba(255,255,255,0.4)">INPUT B (only the last character differs)</text>
+  <text x="44" y="210" font-family="monospace" font-size="12" fill="rgba(252,165,165,0.9)">"Hello, World?"</text>
+  <text x="44" y="228" font-family="monospace" font-size="9.5" fill="rgba(255,255,255,0.5)">SHA-256 → 6e5d8c8d95c9de2e07e8e5a5f3d1e4b09a76c1f8b2e4a7c3...</text>
+
+  <!-- Bit comparison bar -->
+  <rect x="28" y="252" width="844" height="100" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <text x="450" y="274" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(255,255,255,0.4)">FIRST 64 BITS — VISUAL BIT COMPARISON (green = same, red = different)</text>
+  <g>
+    <!-- Row A -->
+    <text x="44" y="298" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.3)">A:</text>
+    <!-- 32 bit blocks alternating for illustration -->
+    <g id="rowA">
+      <rect x="70" y="288" width="12" height="12" fill="rgba(110,231,183,0.7)"/><rect x="84" y="288" width="12" height="12" fill="rgba(239,68,68,0.5)"/><rect x="98" y="288" width="12" height="12" fill="rgba(110,231,183,0.7)"/><rect x="112" y="288" width="12" height="12" fill="rgba(110,231,183,0.7)"/><rect x="126" y="288" width="12" height="12" fill="rgba(239,68,68,0.5)"/><rect x="140" y="288" width="12" height="12" fill="rgba(239,68,68,0.5)"/><rect x="154" y="288" width="12" height="12" fill="rgba(110,231,183,0.7)"/><rect x="168" y="288" width="12" height="12" fill="rgba(110,231,183,0.7)"/>
+      <rect x="188" y="288" width="12" height="12" fill="rgba(239,68,68,0.5)"/><rect x="202" y="288" width="12" height="12" fill="rgba(110,231,183,0.7)"/><rect x="216" y="288" width="12" height="12" fill="rgba(239,68,68,0.5)"/><rect x="230" y="288" width="12" height="12" fill="rgba(110,231,183,0.7)"/><rect x="244" y="288" width="12" height="12" fill="rgba(110,231,183,0.7)"/><rect x="258" y="288" width="12" height="12" fill="rgba(239,68,68,0.5)"/><rect x="272" y="288" width="12" height="12" fill="rgba(110,231,183,0.7)"/><rect x="286" y="288" width="12" height="12" fill="rgba(239,68,68,0.5)"/>
+      <rect x="306" y="288" width="12" height="12" fill="rgba(110,231,183,0.7)"/><rect x="320" y="288" width="12" height="12" fill="rgba(110,231,183,0.7)"/><rect x="334" y="288" width="12" height="12" fill="rgba(239,68,68,0.5)"/><rect x="348" y="288" width="12" height="12" fill="rgba(110,231,183,0.7)"/><rect x="362" y="288" width="12" height="12" fill="rgba(239,68,68,0.5)"/><rect x="376" y="288" width="12" height="12" fill="rgba(239,68,68,0.5)"/><rect x="390" y="288" width="12" height="12" fill="rgba(110,231,183,0.7)"/><rect x="404" y="288" width="12" height="12" fill="rgba(239,68,68,0.5)"/>
+      <rect x="424" y="288" width="12" height="12" fill="rgba(110,231,183,0.7)"/><rect x="438" y="288" width="12" height="12" fill="rgba(239,68,68,0.5)"/><rect x="452" y="288" width="12" height="12" fill="rgba(110,231,183,0.7)"/><rect x="466" y="288" width="12" height="12" fill="rgba(239,68,68,0.5)"/><rect x="480" y="288" width="12" height="12" fill="rgba(110,231,183,0.7)"/><rect x="494" y="288" width="12" height="12" fill="rgba(110,231,183,0.7)"/><rect x="508" y="288" width="12" height="12" fill="rgba(239,68,68,0.5)"/><rect x="522" y="288" width="12" height="12" fill="rgba(110,231,183,0.7)"/>
+      <rect x="542" y="288" width="12" height="12" fill="rgba(239,68,68,0.5)"/><rect x="556" y="288" width="12" height="12" fill="rgba(110,231,183,0.7)"/><rect x="570" y="288" width="12" height="12" fill="rgba(239,68,68,0.5)"/><rect x="584" y="288" width="12" height="12" fill="rgba(239,68,68,0.5)"/><rect x="598" y="288" width="12" height="12" fill="rgba(110,231,183,0.7)"/><rect x="612" y="288" width="12" height="12" fill="rgba(239,68,68,0.5)"/><rect x="626" y="288" width="12" height="12" fill="rgba(110,231,183,0.7)"/><rect x="640" y="288" width="12" height="12" fill="rgba(239,68,68,0.5)"/>
+      <rect x="660" y="288" width="12" height="12" fill="rgba(110,231,183,0.7)"/><rect x="674" y="288" width="12" height="12" fill="rgba(239,68,68,0.5)"/><rect x="688" y="288" width="12" height="12" fill="rgba(110,231,183,0.7)"/><rect x="702" y="288" width="12" height="12" fill="rgba(110,231,183,0.7)"/><rect x="716" y="288" width="12" height="12" fill="rgba(239,68,68,0.5)"/><rect x="730" y="288" width="12" height="12" fill="rgba(110,231,183,0.7)"/><rect x="744" y="288" width="12" height="12" fill="rgba(239,68,68,0.5)"/><rect x="758" y="288" width="12" height="12" fill="rgba(110,231,183,0.7)"/>
+      <rect x="778" y="288" width="12" height="12" fill="rgba(239,68,68,0.5)"/><rect x="792" y="288" width="12" height="12" fill="rgba(110,231,183,0.7)"/><rect x="806" y="288" width="12" height="12" fill="rgba(239,68,68,0.5)"/><rect x="820" y="288" width="12" height="12" fill="rgba(110,231,183,0.7)"/><rect x="834" y="288" width="12" height="12" fill="rgba(239,68,68,0.5)"/><rect x="848" y="288" width="12" height="12" fill="rgba(110,231,183,0.7)"/>
+    </g>
+  </g>
+  <text x="450" y="330" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.45)">≈ 50% of output bits differ — this is the "avalanche effect," a required property of any cryptographic hash</text>
+  <text x="450" y="346" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.28)">Without it, similar inputs would produce similar hashes — making the hash predictable and insecure</text>
+
+  <!-- Properties list -->
+  <rect x="28" y="362" width="844" height="68" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(124,58,237,0.15)" stroke-width="1"/>
+  <text x="44" y="382" font-size="9" font-weight="700" fill="rgba(167,139,250,0.85)">REQUIRED PROPERTIES OF A CRYPTOGRAPHIC HASH FUNCTION</text>
+  <text x="44" y="400" font-size="9" fill="rgba(255,255,255,0.55)">1. Deterministic — same input always produces the same hash</text>
+  <text x="44" y="414" font-size="9" fill="rgba(255,255,255,0.55)">2. Pre-image resistant — infeasible to reverse the hash back to the input</text>
+  <text x="480" y="400" font-size="9" fill="rgba(255,255,255,0.55)">3. Avalanche effect — tiny input change → ~50% output change</text>
+  <text x="480" y="414" font-size="9" fill="rgba(255,255,255,0.55)">4. Collision resistant — infeasible to find two inputs with the same hash</text>
+
+  <text x="450" y="454" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">toolnestai.net/developer-tools/hash-generator</text>
+</svg>
