@@ -1,0 +1,68 @@
+﻿<svg viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <text x="600" y="52" text-anchor="middle" font-size="24" font-weight="900" fill="url(#aG)">WebP vs JPG vs PNG: Format Size Comparison</text>
+  <text x="600" y="74" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.38)">Same visual quality — WebP consistently produces smaller files than the alternatives</text>
+  <g text-anchor="middle" font-size="9">
+    <rect x="40" y="96" width="340" height="430" rx="12" fill="rgba(251,191,36,0.04)" stroke="rgba(251,191,36,0.18)" stroke-width="1.5"/>
+    <text x="210" y="122" font-size="12" font-weight="700" fill="rgba(251,191,36,0.75)">JPG (Quality 82%)</text>
+    <text x="210" y="145">Lossy compression · No alpha channel</text>
+    <text x="210" y="165" fill="rgba(255,255,255,0.35)">Photo (4.2 MB PNG source)</text>
+    <rect x="60" y="178" width="280" height="12" rx="3" fill="rgba(251,191,36,0.4)"/>
+    <text x="348" y="188" fill="rgba(251,191,36,0.8)">490 KB</text>
+    <text x="210" y="215" fill="rgba(255,255,255,0.35)">Logo (1.2 MB PNG source)</text>
+    <rect x="60" y="228" width="220" height="12" rx="3" fill="rgba(251,191,36,0.35)"/>
+    <text x="288" y="238" fill="rgba(251,191,36,0.7)">220 KB</text>
+    <text x="210" y="275" fill="rgba(255,255,255,0.35)">Screenshot (2 MB PNG source)</text>
+    <rect x="60" y="288" width="190" height="12" rx="3" fill="rgba(251,191,36,0.3)"/>
+    <text x="258" y="298" fill="rgba(251,191,36,0.65)">165 KB</text>
+    <text x="210" y="340" font-size="10.5" font-weight="700" fill="rgba(251,191,36,0.8)">Pros</text>
+    <text x="210" y="362" fill="rgba(255,255,255,0.45)">Universal compatibility</text>
+    <text x="210" y="382" fill="rgba(255,255,255,0.45)">All email clients, software</text>
+    <text x="210" y="410" font-size="10.5" font-weight="700" fill="rgba(239,68,68,0.6)">Cons</text>
+    <text x="210" y="432" fill="rgba(255,255,255,0.4)">No transparency</text>
+    <text x="210" y="452" fill="rgba(255,255,255,0.4)">Generation loss on re-save</text>
+    <rect x="430" y="96" width="340" height="430" rx="12" fill="rgba(103,232,249,0.04)" stroke="rgba(103,232,249,0.18)" stroke-width="1.5"/>
+    <text x="600" y="122" font-size="12" font-weight="700" fill="rgba(103,232,249,0.75)">PNG (Lossless)</text>
+    <text x="600" y="145">Lossless compression · Full alpha</text>
+    <text x="600" y="165" fill="rgba(255,255,255,0.35)">Photo (4.2 MB PNG source)</text>
+    <rect x="450" y="178" width="280" height="12" rx="3" fill="rgba(103,232,249,0.45)"/>
+    <text x="738" y="188" fill="rgba(103,232,249,0.8)">3.4 MB</text>
+    <text x="600" y="215" fill="rgba(255,255,255,0.35)">Logo (1.2 MB PNG source)</text>
+    <rect x="450" y="228" width="112" height="12" rx="3" fill="rgba(103,232,249,0.35)"/>
+    <text x="570" y="238" fill="rgba(103,232,249,0.65)">1.2 MB</text>
+    <text x="600" y="275" fill="rgba(255,255,255,0.35)">Screenshot (2 MB PNG source)</text>
+    <rect x="450" y="288" width="188" height="12" rx="3" fill="rgba(103,232,249,0.3)"/>
+    <text x="646" y="298" fill="rgba(103,232,249,0.6)">2.0 MB</text>
+    <text x="600" y="340" font-size="10.5" font-weight="700" fill="rgba(52,211,153,0.8)">Pros</text>
+    <text x="600" y="362" fill="rgba(255,255,255,0.45)">Full transparency support</text>
+    <text x="600" y="382" fill="rgba(255,255,255,0.45)">No quality loss ever</text>
+    <text x="600" y="410" font-size="10.5" font-weight="700" fill="rgba(239,68,68,0.6)">Cons</text>
+    <text x="600" y="432" fill="rgba(255,255,255,0.4)">Very large for photos</text>
+    <text x="600" y="452" fill="rgba(255,255,255,0.4)">Limited compression on photos</text>
+    <rect x="820" y="96" width="340" height="430" rx="12" fill="rgba(52,211,153,0.07)" stroke="rgba(52,211,153,0.28)" stroke-width="2"/>
+    <text x="990" y="122" font-size="12" font-weight="700" fill="rgba(52,211,153,0.85)">WebP (Lossy Q82)</text>
+    <text x="990" y="145">Lossy + lossless modes · Full alpha</text>
+    <text x="990" y="165" fill="rgba(255,255,255,0.35)">Photo (4.2 MB PNG source)</text>
+    <rect x="840" y="178" width="205" height="12" rx="3" fill="rgba(52,211,153,0.55)"/>
+    <text x="1053" y="188" fill="rgba(52,211,153,0.9)">355 KB</text>
+    <text x="990" y="215" fill="rgba(255,255,255,0.35)">Logo (1.2 MB PNG source)</text>
+    <rect x="840" y="228" width="148" height="12" rx="3" fill="rgba(52,211,153,0.48)"/>
+    <text x="996" y="238" fill="rgba(52,211,153,0.8)">148 KB</text>
+    <text x="990" y="275" fill="rgba(255,255,255,0.35)">Screenshot (2 MB PNG source)</text>
+    <rect x="840" y="288" width="130" height="12" rx="3" fill="rgba(52,211,153,0.42)"/>
+    <text x="978" y="298" fill="rgba(52,211,153,0.75)">108 KB</text>
+    <text x="990" y="340" font-size="10.5" font-weight="700" fill="rgba(52,211,153,0.8)">Pros</text>
+    <text x="990" y="362" fill="rgba(255,255,255,0.5)">Smallest lossy file sizes</text>
+    <text x="990" y="382" fill="rgba(255,255,255,0.5)">Full transparency support</text>
+    <text x="990" y="402" fill="rgba(255,255,255,0.5)">Both lossy and lossless modes</text>
+    <text x="990" y="430" font-size="10.5" font-weight="700" fill="rgba(239,68,68,0.6)">Cons</text>
+    <text x="990" y="452" fill="rgba(255,255,255,0.4)">Not all desktop apps support it</text>
+    <text x="990" y="472" fill="rgba(255,255,255,0.4)">Limited email client support</text>
+  </g>
+  <text x="600" y="575" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.22)">toolnestai.net/image-tools/webp-converter</text>
+</svg>

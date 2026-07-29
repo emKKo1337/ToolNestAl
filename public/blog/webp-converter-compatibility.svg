@@ -1,0 +1,53 @@
+﻿<svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+  </defs>
+  <rect width="900" height="460" fill="url(#bg)"/>
+  <text x="450" y="36" text-anchor="middle" font-size="20" font-weight="900" fill="url(#aG)">WebP Browser and Software Compatibility</text>
+  <text x="450" y="56" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.38)">Where WebP works — and the gaps to watch for</text>
+  <rect x="28" y="72" width="844" height="50" rx="8" fill="rgba(52,211,153,0.08)" stroke="rgba(52,211,153,0.22)" stroke-width="1"/>
+  <text x="450" y="96" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(52,211,153,0.85)">FULL SUPPORT (can use WebP with no fallback)</text>
+  <text x="450" y="114" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">Chrome, Firefox, Safari (14+), Edge, Opera — all modern web browsers — 96%+ of global browser share</text>
+  <g font-size="9" text-anchor="middle">
+    <rect x="28" y="134" width="196" height="74" rx="8" fill="rgba(52,211,153,0.06)" stroke="rgba(52,211,153,0.18)" stroke-width="1"/>
+    <text x="126" y="156" font-weight="700" fill="rgba(52,211,153,0.8)">Web browsers</text>
+    <text x="126" y="176" fill="rgba(255,255,255,0.5)">All modern browsers</text>
+    <text x="126" y="196" fill="rgba(52,211,153,0.6)">Full support</text>
+    <rect x="236" y="134" width="196" height="74" rx="8" fill="rgba(52,211,153,0.06)" stroke="rgba(52,211,153,0.18)" stroke-width="1"/>
+    <text x="334" y="156" font-weight="700" fill="rgba(52,211,153,0.8)">Android</text>
+    <text x="334" y="176" fill="rgba(255,255,255,0.5)">All modern versions</text>
+    <text x="334" y="196" fill="rgba(52,211,153,0.6)">Full support</text>
+    <rect x="444" y="134" width="196" height="74" rx="8" fill="rgba(52,211,153,0.06)" stroke="rgba(52,211,153,0.18)" stroke-width="1"/>
+    <text x="542" y="156" font-weight="700" fill="rgba(52,211,153,0.8)">iOS / Safari</text>
+    <text x="542" y="176" fill="rgba(255,255,255,0.5)">iOS 14+ (2020+)</text>
+    <text x="542" y="196" fill="rgba(52,211,153,0.6)">Full support</text>
+    <rect x="652" y="134" width="220" height="74" rx="8" fill="rgba(251,191,36,0.06)" stroke="rgba(251,191,36,0.18)" stroke-width="1"/>
+    <text x="762" y="156" font-weight="700" fill="rgba(251,191,36,0.8)">Older Safari</text>
+    <text x="762" y="176" fill="rgba(255,255,255,0.5)">iOS 13 and below</text>
+    <text x="762" y="196" fill="rgba(251,191,36,0.6)">No WebP support</text>
+  </g>
+  <rect x="28" y="222" width="844" height="50" rx="8" fill="rgba(239,68,68,0.06)" stroke="rgba(239,68,68,0.18)" stroke-width="1"/>
+  <text x="450" y="246" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(239,68,68,0.7)">LIMITED OR NO SUPPORT (fallback recommended)</text>
+  <text x="450" y="264" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.5)">Email clients, older desktop photo editors, some print workflows, certain CMS platforms</text>
+  <g font-size="9" text-anchor="middle">
+    <rect x="28" y="284" width="196" height="74" rx="8" fill="rgba(239,68,68,0.06)" stroke="rgba(239,68,68,0.15)" stroke-width="1"/>
+    <text x="126" y="306" font-weight="700" fill="rgba(239,68,68,0.7)">Email clients</text>
+    <text x="126" y="326" fill="rgba(255,255,255,0.45)">Gmail, Outlook, Apple Mail</text>
+    <text x="126" y="346" fill="rgba(239,68,68,0.6)">Mostly no support</text>
+    <rect x="236" y="284" width="196" height="74" rx="8" fill="rgba(251,191,36,0.06)" stroke="rgba(251,191,36,0.15)" stroke-width="1"/>
+    <text x="334" y="306" font-weight="700" fill="rgba(251,191,36,0.7)">Desktop apps</text>
+    <text x="334" y="326" fill="rgba(255,255,255,0.45)">Photoshop (plugin req.)</text>
+    <text x="334" y="346" fill="rgba(251,191,36,0.6)">Partial support</text>
+    <rect x="444" y="284" width="196" height="74" rx="8" fill="rgba(239,68,68,0.06)" stroke="rgba(239,68,68,0.15)" stroke-width="1"/>
+    <text x="542" y="306" font-weight="700" fill="rgba(239,68,68,0.7)">IE 11 and below</text>
+    <text x="542" y="326" fill="rgba(255,255,255,0.45)">End of life in 2022</text>
+    <text x="542" y="346" fill="rgba(239,68,68,0.6)">No support</text>
+    <rect x="652" y="284" width="220" height="74" rx="8" fill="rgba(52,211,153,0.06)" stroke="rgba(52,211,153,0.15)" stroke-width="1"/>
+    <text x="762" y="306" font-weight="700" fill="rgba(52,211,153,0.7)">Modern editors</text>
+    <text x="762" y="326" fill="rgba(255,255,255,0.45)">Figma, GIMP 2.10+</text>
+    <text x="762" y="346" fill="rgba(52,211,153,0.6)">Full support</text>
+  </g>
+  <text x="450" y="396" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.4)">For web images: WebP is safe for all modern browsers. For email/print/legacy software: JPG or PNG remains the safe choice.</text>
+  <text x="450" y="450" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">toolnestai.net/image-tools/webp-converter</text>
+</svg>

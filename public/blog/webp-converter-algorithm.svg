@@ -1,0 +1,40 @@
+﻿<svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+  </defs>
+  <rect width="900" height="460" fill="url(#bg)"/>
+  <text x="450" y="36" text-anchor="middle" font-size="20" font-weight="900" fill="url(#aG)">Why WebP Is Smaller Than JPG at the Same Quality</text>
+  <text x="450" y="56" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.38)">VP8/VP8L compression vs JPEG DCT — the technical reasons WebP wins</text>
+  <rect x="28" y="72" width="410" height="160" rx="10" fill="rgba(251,191,36,0.06)" stroke="rgba(251,191,36,0.2)" stroke-width="1"/>
+  <text x="233" y="94" text-anchor="middle" font-size="11" font-weight="700" fill="rgba(251,191,36,0.75)">JPEG Compression (1992)</text>
+  <g font-size="9.5" fill="rgba(255,255,255,0.5)">
+    <text x="48" y="118">Splits image into 8x8 pixel blocks (DCT)</text>
+    <text x="48" y="138">Fixed block size — boundaries visible at low quality</text>
+    <text x="48" y="158">No alpha channel in spec</text>
+    <text x="48" y="178">Chroma subsampling reduces color detail</text>
+    <text x="48" y="198">Limited prediction between blocks</text>
+    <text x="48" y="216" font-size="8.5" fill="rgba(251,191,36,0.5)">Block artifacts appear at edges between 8x8 regions</text>
+  </g>
+  <rect x="462" y="72" width="410" height="160" rx="10" fill="rgba(52,211,153,0.06)" stroke="rgba(52,211,153,0.2)" stroke-width="1"/>
+  <text x="667" y="94" text-anchor="middle" font-size="11" font-weight="700" fill="rgba(52,211,153,0.75)">WebP Lossy Compression (2010)</text>
+  <g font-size="9.5" fill="rgba(255,255,255,0.5)">
+    <text x="482" y="118">Based on VP8 video codec keyframe encoding</text>
+    <text x="482" y="138">16x16 macro-blocks + sub-blocks (4x4 to 16x16)</text>
+    <text x="482" y="158">Full alpha channel support in spec</text>
+    <text x="482" y="178">Intra-frame prediction (models adjacent pixels)</text>
+    <text x="482" y="198">Adaptive quantization per block type</text>
+    <text x="482" y="216" font-size="8.5" fill="rgba(52,211,153,0.5)">Fewer visible artifacts at equivalent quality/size</text>
+  </g>
+  <rect x="28" y="244" width="844" height="90" rx="10" fill="rgba(255,255,255,0.02)" stroke="rgba(124,58,237,0.15)" stroke-width="1"/>
+  <text x="450" y="266" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(167,139,250,0.85)">THE KEY ADVANTAGE: INTRA-FRAME PREDICTION</text>
+  <text x="450" y="290" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">WebP analyzes adjacent already-encoded blocks to predict what the current block will look like.</text>
+  <text x="450" y="310" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">Only the difference from the prediction needs to be stored — resulting in more efficient encoding.</text>
+  <text x="450" y="326" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.3)">This is borrowed from modern video codec design, which JPEG (from 1992) predates entirely.</text>
+  <rect x="28" y="346" width="844" height="88" rx="8" fill="rgba(52,211,153,0.05)" stroke="rgba(52,211,153,0.16)" stroke-width="1"/>
+  <text x="450" y="368" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(52,211,153,0.75)">LOSSLESS WEBP (VP8L)</text>
+  <text x="450" y="390" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">Lossless WebP (VP8L) uses palette-based compression, color transforms, and LZ77 encoding.</text>
+  <text x="450" y="410" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">Produces 26% smaller files than PNG on average for photographic content.</text>
+  <text x="450" y="428" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.4)">The same alpha channel is supported — transparent pixels are preserved exactly.</text>
+  <text x="450" y="450" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">toolnestai.net/image-tools/webp-converter</text>
+</svg>
