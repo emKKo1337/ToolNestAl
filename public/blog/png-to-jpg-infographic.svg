@@ -1,0 +1,85 @@
+﻿<svg viewBox="0 0 900 1200" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="30%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gT" cx="50%" cy="10%" r="60%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.35"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gB" cx="50%" cy="90%" r="60%"><stop offset="0%" stop-color="#0e7490" stop-opacity="0.2"/><stop offset="100%" stop-color="#0e7490" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+  </defs>
+  <rect width="900" height="1200" fill="url(#bg)"/>
+  <ellipse cx="450" cy="200" rx="700" ry="400" fill="url(#gT)"/>
+  <ellipse cx="450" cy="1000" rx="700" ry="400" fill="url(#gB)"/>
+  <text x="450" y="52" text-anchor="middle" font-size="26" font-weight="900" fill="url(#aG)">PNG to JPG: The Complete Guide</text>
+  <text x="450" y="76" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.38)">File size reduction, transparency handling, and quality settings</text>
+  <text x="450" y="96" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.22)">toolnestai.net/image-tools/png-to-jpg</text>
+  <rect x="32" y="112" width="836" height="38" rx="8" fill="rgba(124,58,237,0.18)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+  <text x="450" y="136" text-anchor="middle" font-size="15" font-weight="800" fill="#a78bfa">01 - Why Convert?</text>
+  <rect x="32" y="156" width="836" height="100" rx="10" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="450" y="180" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.6)">PNG files are large — especially photographs saved as PNG, which lack JPG's efficient lossy compression.</text>
+  <text x="450" y="200" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.6)">Converting to JPG can reduce a 3.4 MB PNG to 680 KB (80% smaller) at quality 82% — with no visible difference.</text>
+  <text x="450" y="224" text-anchor="middle" font-size="9.5" fill="rgba(251,191,36,0.75)">The trade-off: lossy compression, and transparency is permanently lost.</text>
+  <text x="450" y="244" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.4)">Check: does your PNG need transparency? If yes — use WebP instead, not JPG.</text>
+  <rect x="32" y="272" width="836" height="38" rx="8" fill="rgba(14,116,144,0.18)" stroke="rgba(14,116,144,0.3)" stroke-width="1"/>
+  <text x="450" y="296" text-anchor="middle" font-size="15" font-weight="800" fill="#67e8f9">02 - The Transparency Issue</text>
+  <rect x="32" y="316" width="836" height="130" rx="10" fill="rgba(239,68,68,0.04)" stroke="rgba(239,68,68,0.15)" stroke-width="1"/>
+  <text x="450" y="340" text-anchor="middle" font-size="10.5" fill="rgba(255,255,255,0.6)">JPG has no alpha channel — it physically cannot represent transparency.</text>
+  <text x="450" y="360" text-anchor="middle" font-size="10.5" fill="rgba(255,255,255,0.6)">Every transparent pixel in your PNG must be filled with a solid background color.</text>
+  <text x="450" y="386" text-anchor="middle" font-size="9.5" fill="rgba(251,191,36,0.75)">Default: most tools fill with white — creating a white box on dark websites.</text>
+  <text x="450" y="406" text-anchor="middle" font-size="9.5" fill="rgba(52,211,153,0.7)">Fix: choose the correct background fill color to match where the image appears.</text>
+  <text x="450" y="426" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.4)">Or: use lossy WebP — it keeps the alpha channel AND matches JPG file sizes.</text>
+  <rect x="32" y="462" width="836" height="38" rx="8" fill="rgba(239,68,68,0.12)" stroke="rgba(239,68,68,0.22)" stroke-width="1"/>
+  <text x="450" y="486" text-anchor="middle" font-size="15" font-weight="800" fill="rgba(239,68,68,0.85)">03 - Quality Settings</text>
+  <g font-size="9" text-anchor="middle">
+    <rect x="32" y="506" width="196" height="90" rx="8" fill="rgba(239,68,68,0.06)" stroke="rgba(239,68,68,0.15)" stroke-width="1"/>
+    <text x="130" y="530" font-weight="700" fill="rgba(239,68,68,0.75)">50-65%</text>
+    <text x="130" y="552" fill="rgba(255,255,255,0.45)">Smallest files</text>
+    <text x="130" y="572" fill="rgba(255,255,255,0.35)">Visible artifacts</text>
+    <text x="130" y="588" fill="rgba(239,68,68,0.55)" font-size="8">Thumbnails only</text>
+    <rect x="236" y="506" width="196" height="90" rx="8" fill="rgba(167,139,250,0.1)" stroke="rgba(167,139,250,0.25)" stroke-width="1.5"/>
+    <text x="334" y="530" font-weight="700" fill="#a78bfa">75-85%</text>
+    <text x="334" y="552" fill="rgba(255,255,255,0.55)">80%+ size reduction</text>
+    <text x="334" y="572" fill="rgba(52,211,153,0.7)">Invisible artifacts</text>
+    <text x="334" y="588" fill="rgba(167,139,250,0.7)" font-size="8">RECOMMENDED</text>
+    <rect x="440" y="506" width="196" height="90" rx="8" fill="rgba(52,211,153,0.06)" stroke="rgba(52,211,153,0.15)" stroke-width="1"/>
+    <text x="538" y="530" font-weight="700" fill="rgba(52,211,153,0.75)">90-100%</text>
+    <text x="538" y="552" fill="rgba(255,255,255,0.45)">Near-original quality</text>
+    <text x="538" y="572" fill="rgba(255,255,255,0.35)">Larger files</text>
+    <text x="538" y="588" fill="rgba(103,232,249,0.55)" font-size="8">Print / archival</text>
+    <rect x="644" y="506" width="224" height="90" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="756" y="530" font-weight="700" fill="rgba(255,255,255,0.5)">Note</text>
+    <text x="756" y="552" fill="rgba(255,255,255,0.4)">Photos compress well</text>
+    <text x="756" y="572" fill="rgba(255,255,255,0.35)">Graphics/logos need</text>
+    <text x="756" y="588" fill="rgba(255,255,255,0.35)">higher settings</text>
+  </g>
+  <rect x="32" y="612" width="836" height="38" rx="8" fill="rgba(16,185,129,0.14)" stroke="rgba(16,185,129,0.25)" stroke-width="1"/>
+  <text x="450" y="636" text-anchor="middle" font-size="15" font-weight="800" fill="#34d399">04 - Common Use Cases</text>
+  <g font-size="9.5" text-anchor="middle">
+    <rect x="32" y="656" width="270" height="90" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="167" y="680" font-weight="700" fill="rgba(167,139,250,0.85)">Web publishing</text>
+    <text x="167" y="700" fill="rgba(255,255,255,0.5)">PNG too large for web</text>
+    <text x="167" y="720" fill="rgba(255,255,255,0.4)">Convert photo PNGs to JPG</text>
+    <rect x="315" y="656" width="270" height="90" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="450" y="680" font-weight="700" fill="rgba(103,232,249,0.85)">Email attachments</text>
+    <text x="450" y="700" fill="rgba(255,255,255,0.5)">JPG works in all email clients</text>
+    <text x="450" y="720" fill="rgba(255,255,255,0.4)">PNG may have size limits</text>
+    <rect x="598" y="656" width="270" height="90" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="733" y="680" font-weight="700" fill="rgba(52,211,153,0.85)">Social media upload</text>
+    <text x="733" y="700" fill="rgba(255,255,255,0.5)">Platforms re-compress anyway</text>
+    <text x="733" y="720" fill="rgba(255,255,255,0.4)">JPG at 85%+ uploads faster</text>
+  </g>
+  <rect x="32" y="762" width="836" height="38" rx="8" fill="rgba(124,58,237,0.18)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+  <text x="450" y="786" text-anchor="middle" font-size="15" font-weight="800" fill="#a78bfa">05 - JPG vs WebP: Which to Choose?</text>
+  <g font-size="9.5">
+    <rect x="32" y="806" width="404" height="100" rx="8" fill="rgba(251,191,36,0.06)" stroke="rgba(251,191,36,0.16)" stroke-width="1"/>
+    <text x="48" y="828" font-weight="700" fill="#fbbf24">Choose JPG when:</text>
+    <text x="48" y="848" fill="rgba(255,255,255,0.5)">You need universal compatibility (all software, email, etc.)</text>
+    <text x="48" y="868" fill="rgba(255,255,255,0.5)">Your platform requires JPG specifically</text>
+    <text x="48" y="888" fill="rgba(255,255,255,0.5)">Image has no transparency to worry about</text>
+    <rect x="464" y="806" width="404" height="100" rx="8" fill="rgba(52,211,153,0.06)" stroke="rgba(52,211,153,0.16)" stroke-width="1"/>
+    <text x="480" y="828" font-weight="700" fill="#6ee7b7">Choose WebP when:</text>
+    <text x="480" y="848" fill="rgba(255,255,255,0.5)">You need to keep transparency (alpha channel)</text>
+    <text x="480" y="868" fill="rgba(255,255,255,0.5)">You're targeting modern web browsers</text>
+    <text x="480" y="888" fill="rgba(255,255,255,0.5)">You want the smallest lossy file with quality</text>
+  </g>
+  <text x="450" y="960" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.28)">Free tool: toolnestai.net/image-tools/png-to-jpg</text>
+  <text x="450" y="980" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">In-browser conversion - no upload, no account, no limits</text>
+</svg>
