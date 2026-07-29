@@ -1,0 +1,79 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="30%" cy="40%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gL" cx="15%" cy="50%" r="55%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.45"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gR" cx="85%" cy="50%" r="55%"><stop offset="0%" stop-color="#0e7490" stop-opacity="0.28"/><stop offset="100%" stop-color="#0e7490" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="docG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#60a5fa"/><stop offset="100%" stop-color="#2563eb"/></linearGradient>
+    <linearGradient id="pdfG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#f87171"/><stop offset="100%" stop-color="#ef4444"/></linearGradient>
+    <linearGradient id="lapG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1a1040"/><stop offset="100%" stop-color="#0d0824"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="8" stdDeviation="20" flood-color="#5b21b6" flood-opacity="0.5"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <ellipse cx="180" cy="315" rx="600" ry="500" fill="url(#gL)"/>
+  <ellipse cx="1020" cy="315" rx="600" ry="500" fill="url(#gR)"/>
+
+  <text x="60" y="70" font-size="14" font-weight="700" fill="url(#aG)" filter="url(#glow)">ToolNest AI</text>
+  <text x="60" y="106" font-size="13" fill="rgba(255,255,255,0.35)">PDF Tools › Word to PDF</text>
+  <text x="60" y="185" font-size="46" font-weight="900" fill="url(#aG)" filter="url(#glow)">Word to</text>
+  <text x="60" y="245" font-size="46" font-weight="900" fill="url(#aG)" filter="url(#glow)">PDF</text>
+  <text x="60" y="300" font-size="18" fill="rgba(255,255,255,0.6)">DOCX / DOC → pixel-perfect PDF</text>
+  <text x="60" y="328" font-size="18" fill="rgba(255,255,255,0.6)">Rendered, not just converted</text>
+
+  <rect x="60" y="358" width="110" height="52" rx="8" fill="rgba(124,58,237,0.2)" stroke="rgba(124,58,237,0.4)" stroke-width="1"/>
+  <text x="115" y="382" text-anchor="middle" font-size="15" font-weight="900" fill="#a78bfa">2x DPI</text>
+  <text x="115" y="400" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.45)">retina render</text>
+
+  <rect x="182" y="358" width="110" height="52" rx="8" fill="rgba(14,116,144,0.15)" stroke="rgba(14,116,144,0.35)" stroke-width="1"/>
+  <text x="237" y="382" text-anchor="middle" font-size="15" font-weight="900" fill="#67e8f9">Browser</text>
+  <text x="237" y="400" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.45)">no upload</text>
+
+  <rect x="304" y="358" width="110" height="52" rx="8" fill="rgba(16,185,129,0.12)" stroke="rgba(16,185,129,0.3)" stroke-width="1"/>
+  <text x="359" y="382" text-anchor="middle" font-size="15" font-weight="900" fill="#34d399">A4 auto</text>
+  <text x="359" y="400" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.45)">pagination</text>
+
+  <rect x="426" y="358" width="110" height="52" rx="8" fill="rgba(251,191,36,0.1)" stroke="rgba(251,191,36,0.25)" stroke-width="1"/>
+  <text x="481" y="382" text-anchor="middle" font-size="20" font-weight="900" fill="#fbbf24">Free</text>
+  <text x="481" y="400" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.45)">no account</text>
+
+  <text x="60" y="560" font-size="14" fill="rgba(255,255,255,0.25)">toolnestai.net/pdf-tools/word-to-pdf</text>
+
+  <rect x="630" y="60" width="530" height="490" rx="16" fill="url(#lapG)" stroke="rgba(124,58,237,0.3)" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="630" y="60" width="530" height="36" rx="16" fill="rgba(255,255,255,0.05)"/>
+  <rect x="630" y="78" width="530" height="18" fill="rgba(255,255,255,0.02)"/>
+  <circle cx="655" cy="78" r="6" fill="rgba(239,68,68,0.6)"/>
+  <circle cx="675" cy="78" r="6" fill="rgba(251,191,36,0.6)"/>
+  <circle cx="695" cy="78" r="6" fill="rgba(34,197,94,0.6)"/>
+
+  <!-- DOCX icon -->
+  <rect x="666" y="130" width="130" height="160" rx="10" fill="rgba(96,165,250,0.1)" stroke="rgba(96,165,250,0.35)" stroke-width="1.5"/>
+  <path d="M690 150 h50 l14 14 v66 h-64 z" fill="none" stroke="url(#docG)" stroke-width="2.5"/>
+  <path d="M740 150 v14 h14" fill="none" stroke="url(#docG)" stroke-width="2.5"/>
+  <text x="731" y="212" text-anchor="middle" font-size="12" font-weight="900" fill="rgba(96,165,250,0.9)">DOCX</text>
+  <text x="731" y="264" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.4)">real text,</text>
+  <text x="731" y="278" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.4)">real structure</text>
+
+  <text x="850" y="216" text-anchor="middle" font-size="24" fill="rgba(255,255,255,0.35)">→</text>
+
+  <!-- PDF icon -->
+  <rect x="904" y="130" width="130" height="160" rx="10" fill="rgba(248,113,113,0.1)" stroke="rgba(248,113,113,0.35)" stroke-width="1.5"/>
+  <path d="M928 150 h50 l14 14 v66 h-64 z" fill="none" stroke="url(#pdfG)" stroke-width="2.5"/>
+  <path d="M978 150 v14 h14" fill="none" stroke="url(#pdfG)" stroke-width="2.5"/>
+  <text x="969" y="212" text-anchor="middle" font-size="13" font-weight="900" fill="rgba(248,113,113,0.9)">PDF</text>
+  <text x="969" y="264" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.4)">rendered pixels,</text>
+  <text x="969" y="278" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.4)">not selectable text</text>
+
+  <rect x="642" y="316" width="506" height="96" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <text x="658" y="336" font-size="9.5" font-weight="700" fill="rgba(255,255,255,0.4)">RENDER PIPELINE</text>
+  <text x="658" y="356" font-size="9" fill="rgba(167,139,250,0.85)">1. mammoth: DOCX → semantic HTML</text>
+  <text x="658" y="374" font-size="9" fill="rgba(103,232,249,0.85)">2. html2canvas: HTML → pixel canvas</text>
+  <text x="658" y="392" font-size="9" fill="rgba(52,211,153,0.85)">3. jsPDF: canvas → paginated PDF image</text>
+
+  <rect x="642" y="424" width="506" height="48" rx="7" fill="rgba(251,191,36,0.06)" stroke="rgba(251,191,36,0.2)" stroke-width="1"/>
+  <text x="658" y="444" font-size="9.5" font-weight="700" fill="rgba(251,191,36,0.85)">ℹ Output text isn't selectable or searchable</text>
+  <text x="658" y="460" font-size="8.5" fill="rgba(255,255,255,0.4)">The page is a rasterized image, by design</text>
+
+  <rect x="620" y="550" width="560" height="14" rx="4" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <rect x="760" y="562" width="260" height="8" rx="4" fill="rgba(255,255,255,0.03)"/>
+</svg>

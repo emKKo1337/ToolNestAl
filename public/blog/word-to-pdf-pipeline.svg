@@ -1,0 +1,80 @@
+<svg viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gL" cx="10%" cy="50%" r="60%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.35"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gR" cx="90%" cy="50%" r="60%"><stop offset="0%" stop-color="#0e7490" stop-opacity="0.2"/><stop offset="100%" stop-color="#0e7490" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="lapG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1a1040"/><stop offset="100%" stop-color="#0d0824"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="12" stdDeviation="24" flood-color="#5b21b6" flood-opacity="0.45"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <ellipse cx="120" cy="337" rx="700" ry="550" fill="url(#gL)"/>
+  <ellipse cx="1080" cy="337" rx="700" ry="550" fill="url(#gR)"/>
+
+  <text x="600" y="42" text-anchor="middle" font-size="13" font-weight="700" fill="url(#aG)" filter="url(#glow)">ToolNest AI — PDF Tools</text>
+  <text x="600" y="68" text-anchor="middle" font-size="30" font-weight="900" fill="url(#aG)" filter="url(#glow)">DOCX → HTML → Canvas → PDF</text>
+  <text x="600" y="90" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.35)">Two very different stages produce very different guarantees</text>
+
+  <rect x="60" y="108" width="1080" height="542" rx="18" fill="url(#lapG)" stroke="rgba(124,58,237,0.35)" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="60" y="108" width="1080" height="38" rx="18" fill="rgba(255,255,255,0.05)"/>
+  <rect x="60" y="128" width="1080" height="18" fill="rgba(255,255,255,0.02)"/>
+  <circle cx="90" cy="127" r="7" fill="rgba(239,68,68,0.65)"/>
+  <circle cx="114" cy="127" r="7" fill="rgba(251,191,36,0.65)"/>
+  <circle cx="138" cy="127" r="7" fill="rgba(34,197,94,0.65)"/>
+  <text x="600" y="132" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">toolnestai.net/pdf-tools/word-to-pdf</text>
+
+  <!-- Stage boxes -->
+  <g font-size="9.5" font-weight="700" fill="rgba(255,255,255,0.35)">
+    <text x="150" y="184">STAGE 1 — MAMMOTH</text>
+    <text x="470" y="184">STAGE 2 — HTML2CANVAS</text>
+    <text x="850" y="184">STAGE 3 — JSPDF</text>
+  </g>
+
+  <!-- Stage 1 -->
+  <rect x="90" y="196" width="320" height="220" rx="10" fill="rgba(96,165,250,0.06)" stroke="rgba(96,165,250,0.25)" stroke-width="1.5"/>
+  <text x="250" y="222" text-anchor="middle" font-size="12" font-weight="700" fill="rgba(96,165,250,0.85)">.docx → semantic HTML</text>
+  <rect x="110" y="238" width="280" height="130" rx="6" fill="rgba(0,0,0,0.25)"/>
+  <text x="124" y="258" font-size="9" font-family="monospace" fill="rgba(167,139,250,0.85)">"Heading 1" → &lt;h1&gt;</text>
+  <text x="124" y="276" font-size="9" font-family="monospace" fill="rgba(103,232,249,0.85)">"Strong" → &lt;strong&gt;</text>
+  <text x="124" y="294" font-size="9" font-family="monospace" fill="rgba(52,211,153,0.85)">table → &lt;table&gt;</text>
+  <text x="124" y="312" font-size="9" font-family="monospace" fill="rgba(251,191,36,0.85)">image → base64 &lt;img&gt;</text>
+  <text x="124" y="330" font-size="9" font-family="monospace" fill="rgba(244,114,182,0.85)">list → &lt;ul&gt;/&lt;ol&gt;</text>
+  <text x="250" y="392" text-anchor="middle" font-size="8.5" fill="rgba(255,255,255,0.35)">Real, structured, still text</text>
+
+  <text x="424" y="306" text-anchor="middle" font-size="20" fill="rgba(255,255,255,0.3)">→</text>
+
+  <!-- Stage 2 -->
+  <rect x="440" y="196" width="320" height="220" rx="10" fill="rgba(251,191,36,0.06)" stroke="rgba(251,191,36,0.25)" stroke-width="1.5"/>
+  <text x="600" y="222" text-anchor="middle" font-size="12" font-weight="700" fill="rgba(251,191,36,0.85)">HTML → pixel canvas</text>
+  <rect x="460" y="238" width="280" height="130" rx="6" fill="#ffffff"/>
+  <rect x="474" y="250" width="140" height="10" rx="2" fill="#1a1a2e"/>
+  <rect x="474" y="270" width="252" height="5" rx="1" fill="#888"/>
+  <rect x="474" y="280" width="252" height="5" rx="1" fill="#888"/>
+  <rect x="474" y="290" width="180" height="5" rx="1" fill="#888"/>
+  <rect x="474" y="306" width="252" height="52" rx="2" fill="none" stroke="#c0c0c0"/>
+  <line x1="474" y1="322" x2="726" y2="322" stroke="#c0c0c0"/>
+  <line x1="474" y1="338" x2="726" y2="338" stroke="#c0c0c0"/>
+  <text x="600" y="392" text-anchor="middle" font-size="8.5" fill="rgba(255,255,255,0.35)">Screenshot at 2x scale — now just pixels</text>
+
+  <text x="774" y="306" text-anchor="middle" font-size="20" fill="rgba(255,255,255,0.3)">→</text>
+
+  <!-- Stage 3 -->
+  <rect x="790" y="196" width="320" height="220" rx="10" fill="rgba(248,113,113,0.06)" stroke="rgba(248,113,113,0.25)" stroke-width="1.5"/>
+  <text x="950" y="222" text-anchor="middle" font-size="12" font-weight="700" fill="rgba(248,113,113,0.85)">canvas.toDataURL() → addImage()</text>
+  <rect x="828" y="238" width="112" height="130" rx="4" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="884" y="308" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.4)">Page 1</text>
+  <rect x="960" y="238" width="112" height="130" rx="4" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="1016" y="308" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.4)">Page 2</text>
+  <text x="950" y="392" text-anchor="middle" font-size="8.5" fill="rgba(255,255,255,0.35)">Each A4 slice embedded as an image</text>
+
+  <!-- bottom note -->
+  <rect x="88" y="440" width="1024" height="88" rx="10" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="106" y="464" font-size="10" font-weight="700" fill="rgba(255,255,255,0.5)">Real text exists only in Stage 1 — it doesn't survive Stage 2</text>
+  <text x="106" y="484" font-size="9" fill="rgba(255,255,255,0.45)">html2canvas paints the HTML the same way a browser renders it to screen: as pixels. Once that canvas is exported and</text>
+  <text x="106" y="500" font-size="9" fill="rgba(255,255,255,0.45)">embedded as an image, every character on the page is color data — there's no text object left for Ctrl+F or copy/paste to find.</text>
+  <text x="106" y="516" font-size="9" fill="rgba(251,191,36,0.75)">⚠ This is inherent to any html2canvas-based converter, not a configurable option.</text>
+
+  <rect x="48" y="650" width="1104" height="16" rx="5" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <rect x="460" y="664" width="280" height="10" rx="5" fill="rgba(255,255,255,0.025)"/>
+</svg>

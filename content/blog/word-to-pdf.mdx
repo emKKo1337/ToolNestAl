@@ -1,0 +1,134 @@
+---
+title: "Word to PDF: Why the Text in Your Converted PDF Isn't Selectable + Free Tool"
+description: "Learn how DOCX gets converted to HTML and then rendered into a PDF, why the output text is a picture rather than real selectable text, and what that means for file size, search, and accessibility. Free, instant, browser-based tool."
+publishedAt: "2026-07-29"
+author:
+  name: "ToolNest AI Team"
+  bio: "The ToolNest AI team builds free tools that help developers, marketers, and creators do more online — faster."
+category: "PDF"
+tags: ["Word to PDF", "DOCX to PDF", "convert Word to PDF", "document converter", "html2canvas", "PDF rasterization"]
+featured: false
+image: "/blog/word-to-pdf-og.svg"
+imageAlt: "Word to PDF — convert DOCX and DOC files into PDF documents, free online tool"
+relatedTools:
+  - title: "Word to PDF"
+    url: "/pdf-tools/word-to-pdf"
+  - title: "PDF to Word"
+    url: "/pdf-tools/pdf-to-word"
+  - title: "Merge PDF"
+    url: "/pdf-tools/merge-pdf"
+  - title: "Compress PDF"
+    url: "/pdf-tools/compress-pdf"
+relatedPosts:
+  - "pdf-to-word"
+  - "how-to-compress-pdf-without-losing-quality"
+---
+
+Convert a Word document to PDF and the result looks perfect — same fonts, same headings, same tables. Try to select a sentence to copy it, though, and something strange happens: nothing highlights, or the whole page selects as one block. That's not a bug. It's a direct consequence of *how* the conversion actually renders your document, and understanding it explains a handful of PDF behaviors that otherwise seem broken.
+
+Convert any Word document to PDF instantly, entirely in your browser, with the [ToolNest AI Word to PDF](/pdf-tools/word-to-pdf) converter.
+
+---
+
+## How the Conversion Actually Works
+
+![Word to PDF pipeline diagram: DOCX parsed to semantic HTML by mammoth, then rendered to a canvas snapshot by html2canvas, then sliced into A4 page images by jsPDF](/blog/word-to-pdf-pipeline.svg)
+
+The pipeline has two distinct stages, and they behave completely differently from each other.
+
+**Stage 1 — DOCX to HTML.** A library called mammoth reads the .docx file (itself a ZIP of XML — the same Office Open XML format covered in our [PDF to Word](/blog/pdf-to-word) guide) and converts it into clean, semantic HTML. A style map tells mammoth exactly how to translate Word styles into HTML tags: a paragraph styled "Heading 1" becomes an `<h1>`, "Strong" character formatting becomes `<strong>`, tables become `<table>` elements. This stage preserves real document *structure* — headings, bold, italics, lists, tables, and embedded images all survive as proper HTML.
+
+**Stage 2 — HTML to PDF.** This is where it gets interesting. The generated HTML is injected into a hidden, off-screen container sized to an A4 page, and a library called html2canvas takes a *screenshot* of that container — literally rendering it to a `<canvas>` element pixel by pixel, the same way a browser would paint it to screen. That canvas is then exported as an image (`canvas.toDataURL()`) and embedded into the PDF page by page using `addImage()`.
+
+**The result: your PDF page is a photograph of your document, not a document made of real text.**
+
+---
+
+## Why This Matters: Your PDF Text Isn't Actually Text
+
+This single fact — that html2canvas rasterizes the page into an image before jsPDF embeds it — explains everything people find surprising about the output:
+
+- **You can't select or copy text.** There's no text object on the page to select. What looks like a word is a cluster of colored pixels that happens to resemble that word.
+- **Ctrl+F / Cmd+F search doesn't find anything.** A PDF text search looks for actual character objects in the page content stream. An image has none, no matter how legible it looks to a human eye.
+- **Screen readers can't read it.** Accessibility tools rely on the same text layer that search relies on. A rasterized PDF is invisible to them by default.
+- **File size scales with rendering resolution, not word count.** A one-paragraph page and a full page of dense text produce similarly sized images if rendered at the same scale — because you're paying for pixels, not characters. The tool renders at `scale: 2` (roughly retina quality) specifically so text stays sharp when zoomed, but that sharpness costs file size.
+
+None of this is a defect specific to one converter — it's the direct, unavoidable consequence of choosing html2canvas as the rendering engine. Any browser-based HTML-to-PDF pipeline built the same way behaves identically, because the rasterization step is what makes complex CSS layouts, custom fonts, and arbitrary formatting render correctly without needing a full PDF text-layout engine in the browser.
+
+---
+
+## What Converts Well vs. What Doesn't
+
+![Comparison table showing what survives Word to PDF conversion: headings, bold, tables, images preserved visually; selectable text, exact font metrics, macros, mail merge not preserved](/blog/word-to-pdf-preserved.svg)
+
+| Element | What happens |
+|---|---|
+| **Headings, bold, italic, underline** | Preserved visually via the style map — looks correct in the output |
+| **Tables and lists** | Rendered with borders, spacing, and structure intact |
+| **Embedded images** | Carried through as base64 data URIs during the HTML stage, then rasterized like everything else |
+| **Page layout & pagination** | Handled automatically — content flows across as many A4 pages as needed |
+| **Selectable / searchable text** | **Not preserved** — the entire page is a raster image |
+| **Exact font metrics** | May differ slightly if the system rendering the page doesn't have your original font installed — a close substitute is used |
+| **Mail merge fields, macros, ActiveX content** | Ignored — these are Word-specific interactive features with no PDF equivalent |
+| **Legacy .doc (pre-2007 binary format)** | Best-effort only — mammoth was built primarily for .docx; older binary .doc files may lose some formatting |
+
+If you need the resulting PDF's text to be searchable or copyable, that requirement points to a fundamentally different tool architecture (native PDF text APIs instead of image rasterization) — not a setting to toggle in a raster-based converter.
+
+---
+
+## How to Use the Word to PDF Converter
+
+The [ToolNest AI Word to PDF](/pdf-tools/word-to-pdf) tool runs entirely in your browser using mammoth for parsing and jsPDF for output generation — your file is never uploaded to a server.
+
+1. **Upload your .docx or .doc file** (drag and drop or click to browse, up to 50 MB)
+2. **Wait for parsing** — mammoth converts the document to structured HTML
+3. **Wait for rendering** — the document is painted to a canvas and paginated into A4 pages
+4. **Download the PDF** — page count and file size are shown once complete
+
+---
+
+## Common Mistakes
+
+**Mistake 1: Expecting to select or search text in the output PDF.** As covered above, the output is a rendered image of your document, not a text-based PDF. If searchable text is required downstream, that's a hard architectural limitation of any html2canvas-based converter, not a setting.
+
+**Mistake 2: Uploading a very large or image-heavy document and expecting instant results.** html2canvas rendering time scales with the total pixel area being painted — long documents or ones with many high-resolution images take proportionally longer. The tool applies a two-minute safety timeout for exactly this reason.
+
+**Mistake 3: Expecting pixel-identical fonts if the original font isn't a common system font.** Custom or licensed fonts embedded in a Word document may render using a close substitute rather than the exact original typeface, since the browser rendering the page needs the font actually installed to paint it.
+
+**Mistake 4: Assuming this tool performs OCR.** OCR (extracting real text from an image) is the opposite operation. This converter goes from real Word text to a rendered image — if you need to reverse that and pull selectable text back out of a PDF, that's what our [OCR PDF](/pdf-tools/ocr-pdf) tool is for.
+
+---
+
+## Frequently Asked Questions
+
+### Why can't I select or copy text from my converted PDF?
+
+Because the PDF page isn't made of text objects — it's a rasterized image of your document, produced by html2canvas taking a pixel-by-pixel screenshot of the rendered HTML. There's nothing to select because no character data exists on the page, only pixel colors that visually resemble text.
+
+### Why is my converted PDF file larger than I expected for how little text it has?
+
+Because file size in this pipeline is driven by rendering resolution (pixels), not text length. The tool renders at roughly retina quality (2x scale) so the image stays crisp when zoomed, and that pixel data is what determines file size — a short page and a long page can produce similarly sized output at the same scale.
+
+### Will my document's formatting look correct in the PDF?
+
+Yes, in almost all cases. Headings, bold and italic text, tables, lists, and embedded images all render visually correct because the rendering engine paints the actual styled HTML — it's the underlying text-selectability that's lost, not the visual appearance.
+
+### Does this tool support old .doc files, not just .docx?
+
+Yes, with best-effort support. Mammoth (the library used to parse the document) is built primarily for the modern .docx format. Legacy binary .doc files convert, but some formatting fidelity may be lower than with .docx.
+
+### Can I convert a password-protected Word document?
+
+No. The password protection needs to be removed from the document in Microsoft Word (or another editor) before uploading it for conversion.
+
+### Why does conversion take longer for some documents than others?
+
+Rendering time is driven by html2canvas painting every pixel of the document, so it scales with total content area — longer documents and documents containing many or large images take proportionally longer to render than short, text-only ones.
+
+### Is my document uploaded to a server during conversion?
+
+No. The entire pipeline — DOCX parsing, HTML generation, and canvas rendering — runs in your browser using JavaScript libraries (mammoth and jsPDF). Your file never leaves your device.
+
+### Is the Word to PDF converter free?
+
+Yes, completely free with no account required and no usage limits.

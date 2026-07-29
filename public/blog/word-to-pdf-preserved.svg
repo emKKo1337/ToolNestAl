@@ -1,0 +1,84 @@
+<svg viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gL" cx="10%" cy="50%" r="60%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.35"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gR" cx="90%" cy="50%" r="60%"><stop offset="0%" stop-color="#0e7490" stop-opacity="0.2"/><stop offset="100%" stop-color="#0e7490" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="lapG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1a1040"/><stop offset="100%" stop-color="#0d0824"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="12" stdDeviation="24" flood-color="#5b21b6" flood-opacity="0.45"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <ellipse cx="120" cy="337" rx="700" ry="550" fill="url(#gL)"/>
+  <ellipse cx="1080" cy="337" rx="700" ry="550" fill="url(#gR)"/>
+
+  <text x="600" y="42" text-anchor="middle" font-size="13" font-weight="700" fill="url(#aG)" filter="url(#glow)">ToolNest AI — PDF Tools</text>
+  <text x="600" y="68" text-anchor="middle" font-size="30" font-weight="900" fill="url(#aG)" filter="url(#glow)">What Survives Word → PDF Conversion</text>
+  <text x="600" y="90" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.35)">Visual fidelity is high — text-layer functionality is not preserved</text>
+
+  <rect x="60" y="108" width="1080" height="542" rx="18" fill="url(#lapG)" stroke="rgba(124,58,237,0.35)" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="60" y="108" width="1080" height="38" rx="18" fill="rgba(255,255,255,0.05)"/>
+  <rect x="60" y="128" width="1080" height="18" fill="rgba(255,255,255,0.02)"/>
+  <circle cx="90" cy="127" r="7" fill="rgba(239,68,68,0.65)"/>
+  <circle cx="114" cy="127" r="7" fill="rgba(251,191,36,0.65)"/>
+  <circle cx="138" cy="127" r="7" fill="rgba(34,197,94,0.65)"/>
+  <text x="600" y="132" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">toolnestai.net/pdf-tools/word-to-pdf</text>
+
+  <text x="88" y="184" font-size="9" font-weight="700" fill="rgba(255,255,255,0.28)">ELEMENT-BY-ELEMENT RESULT</text>
+  <rect x="80" y="190" width="1040" height="300" rx="10" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <g font-size="9.5" font-weight="700" fill="rgba(255,255,255,0.4)">
+    <text x="96" y="212">ELEMENT</text>
+    <text x="360" y="212">RESULT</text>
+    <text x="520" y="212">WHY</text>
+  </g>
+  <line x1="96" y1="220" x2="1104" y2="220" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+
+  <g font-size="10" font-weight="700">
+    <text x="96" y="244" fill="rgba(167,139,250,0.9)">Headings, bold, italic</text>
+    <text x="360" y="244" fill="rgba(52,211,153,0.85)">✓ Visually correct</text>
+    <text x="520" y="244" font-weight="400" font-size="9" fill="rgba(255,255,255,0.5)">Painted exactly as styled HTML renders in a browser</text>
+  </g>
+  <g font-size="10" font-weight="700">
+    <text x="96" y="274" fill="rgba(167,139,250,0.9)">Tables &amp; lists</text>
+    <text x="360" y="274" fill="rgba(52,211,153,0.85)">✓ Visually correct</text>
+    <text x="520" y="274" font-weight="400" font-size="9" fill="rgba(255,255,255,0.5)">Borders, spacing and structure render as painted pixels</text>
+  </g>
+  <g font-size="10" font-weight="700">
+    <text x="96" y="304" fill="rgba(167,139,250,0.9)">Embedded images</text>
+    <text x="360" y="304" fill="rgba(52,211,153,0.85)">✓ Preserved</text>
+    <text x="520" y="304" font-weight="400" font-size="9" fill="rgba(255,255,255,0.5)">Carried through as base64 data URIs, then rasterized like the rest</text>
+  </g>
+  <g font-size="10" font-weight="700">
+    <text x="96" y="334" fill="rgba(244,114,182,0.9)">Selectable / searchable text</text>
+    <text x="360" y="334" fill="rgba(239,68,68,0.75)">✗ Not preserved</text>
+    <text x="520" y="334" font-weight="400" font-size="9" fill="rgba(255,255,255,0.5)">The entire page is a raster image — no character objects exist</text>
+  </g>
+  <g font-size="10" font-weight="700">
+    <text x="96" y="364" fill="rgba(244,114,182,0.9)">Exact font metrics</text>
+    <text x="360" y="364" fill="rgba(251,191,36,0.8)">⚠ Close substitute</text>
+    <text x="520" y="364" font-weight="400" font-size="9" fill="rgba(255,255,255,0.5)">Uses whatever font is actually available to render the page</text>
+  </g>
+  <g font-size="10" font-weight="700">
+    <text x="96" y="394" fill="rgba(244,114,182,0.9)">Mail merge / macros / ActiveX</text>
+    <text x="360" y="394" fill="rgba(239,68,68,0.75)">✗ Ignored</text>
+    <text x="520" y="394" font-weight="400" font-size="9" fill="rgba(255,255,255,0.5)">Word-specific interactive features with no PDF equivalent</text>
+  </g>
+  <g font-size="10" font-weight="700">
+    <text x="96" y="424" fill="rgba(244,114,182,0.9)">Legacy .doc formatting</text>
+    <text x="360" y="424" fill="rgba(251,191,36,0.8)">⚠ Best-effort</text>
+    <text x="520" y="424" font-weight="400" font-size="9" fill="rgba(255,255,255,0.5)">Mammoth targets .docx primarily; old binary .doc has partial fidelity</text>
+  </g>
+  <g font-size="10" font-weight="700">
+    <text x="96" y="454" fill="rgba(244,114,182,0.9)">File size vs. text length</text>
+    <text x="360" y="454" fill="rgba(251,191,36,0.8)">⚠ Decoupled</text>
+    <text x="520" y="454" font-weight="400" font-size="9" fill="rgba(255,255,255,0.5)">Driven by rendered pixel area at 2x scale, not word count</text>
+  </g>
+
+  <rect x="96" y="474" width="1000" height="34" rx="6" fill="rgba(251,191,36,0.06)" stroke="rgba(251,191,36,0.2)" stroke-width="1"/>
+  <text x="112" y="495" font-size="9.5" fill="rgba(251,191,36,0.85)">ℹ Need searchable output text later? Run the resulting PDF back through OCR to recover a real text layer.</text>
+
+  <rect x="80" y="540" width="1040" height="82" rx="10" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="600" y="566" text-anchor="middle" font-size="10.5" font-weight="700" fill="rgba(255,255,255,0.55)">Rasterization is the trade-off that guarantees visual fidelity</text>
+  <text x="600" y="586" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.4)">Painting the page as pixels is exactly what makes complex formatting, custom fonts, and arbitrary CSS</text>
+  <text x="600" y="602" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.4)">layouts render correctly without a full PDF text-layout engine — the cost is a non-selectable text layer.</text>
+</svg>
