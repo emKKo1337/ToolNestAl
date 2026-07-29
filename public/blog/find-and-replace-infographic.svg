@@ -1,0 +1,95 @@
+<svg viewBox="0 0 900 1100" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="30%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gT" cx="50%" cy="10%" r="60%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.35"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gB" cx="50%" cy="90%" r="60%"><stop offset="0%" stop-color="#0e7490" stop-opacity="0.2"/><stop offset="100%" stop-color="#0e7490" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+  </defs>
+  <rect width="900" height="1100" fill="url(#bg)"/>
+  <ellipse cx="450" cy="180" rx="700" ry="380" fill="url(#gT)"/>
+  <ellipse cx="450" cy="920" rx="700" ry="380" fill="url(#gB)"/>
+
+  <text x="450" y="52" text-anchor="middle" font-size="26" font-weight="900" fill="url(#aG)">The Complete Find and Replace Guide</text>
+  <text x="450" y="76" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.38)">Plain text, regex, capture groups, and the whole-word trap</text>
+  <text x="450" y="94" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.22)">toolnestai.net/text-tools/find-and-replace</text>
+
+  <!-- Section 1 -->
+  <rect x="32" y="110" width="836" height="38" rx="8" fill="rgba(124,58,237,0.18)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+  <text x="450" y="134" text-anchor="middle" font-size="15" font-weight="800" fill="#a78bfa">01 — Two Modes: Plain Text vs Regex</text>
+
+  <g font-size="10">
+    <rect x="32" y="154" width="404" height="90" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="48" y="176" fill="rgba(167,139,250,0.85)" font-weight="700">Plain Text Mode</text>
+    <text x="48" y="196" fill="rgba(255,255,255,0.5)">Finds an exact literal string —</text>
+    <text x="48" y="212" fill="rgba(255,255,255,0.5)">simple, predictable, no special syntax</text>
+    <text x="48" y="230" fill="rgba(255,255,255,0.3)" font-size="8.5">"colour" → "color"</text>
+
+    <rect x="464" y="154" width="404" height="90" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="480" y="176" fill="rgba(103,232,249,0.85)" font-weight="700">Regex Mode</text>
+    <text x="480" y="196" fill="rgba(255,255,255,0.5)">Finds a pattern, can capture parts</text>
+    <text x="480" y="212" fill="rgba(255,255,255,0.5)">of the match for use in the replacement</text>
+    <text x="480" y="230" fill="rgba(255,255,255,0.3)" font-size="8.5">(\d{4})-(\d{2})-(\d{2}) → $2/$3/$1</text>
+  </g>
+
+  <!-- Section 2: capture groups -->
+  <rect x="32" y="256" width="836" height="38" rx="8" fill="rgba(14,116,144,0.18)" stroke="rgba(14,116,144,0.3)" stroke-width="1"/>
+  <text x="450" y="280" text-anchor="middle" font-size="15" font-weight="800" fill="#67e8f9">02 — Capture Groups ($1, $2, $3)</text>
+
+  <rect x="32" y="300" width="836" height="100" rx="10" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="450" y="324" text-anchor="middle" font-family="monospace" font-size="11" fill="rgba(167,139,250,0.85)">Find: (\d{4})-(\d{2})-(\d{2})   Replace: $2/$3/$1</text>
+  <text x="450" y="348" text-anchor="middle" font-size="10.5" fill="rgba(255,255,255,0.6)">"2026-07-29" → "07/29/2026"</text>
+  <text x="450" y="372" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.4)">Parentheses in the Find pattern create numbered groups you can reference as $1, $2, $3 in Replace</text>
+  <text x="450" y="390" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.28)">Named groups (?&lt;year&gt;...) with $&lt;year&gt; are more readable for complex patterns</text>
+
+  <!-- Section 3: whole word -->
+  <rect x="32" y="416" width="836" height="38" rx="8" fill="rgba(16,185,129,0.14)" stroke="rgba(16,185,129,0.25)" stroke-width="1"/>
+  <text x="450" y="440" text-anchor="middle" font-size="15" font-weight="800" fill="#34d399">03 — Whole-Word Matching</text>
+
+  <g font-size="10">
+    <rect x="32" y="460" width="404" height="90" rx="8" fill="rgba(239,68,68,0.06)" stroke="rgba(239,68,68,0.16)" stroke-width="1"/>
+    <text x="234" y="482" text-anchor="middle" font-weight="700" fill="#f87171">✗ Without: "category" → "dogegory"</text>
+    <text x="48" y="504" fill="rgba(255,255,255,0.5)">Replacing "cat" matches the "cat" inside</text>
+    <text x="48" y="520" fill="rgba(255,255,255,0.5)">"category" too — unintended corruption</text>
+
+    <rect x="464" y="460" width="404" height="90" rx="8" fill="rgba(52,211,153,0.06)" stroke="rgba(52,211,153,0.16)" stroke-width="1"/>
+    <text x="666" y="482" text-anchor="middle" font-weight="700" fill="#6ee7b7">✓ With \b: "category" untouched</text>
+    <text x="480" y="504" fill="rgba(255,255,255,0.5)">\bcat\b only matches the standalone</text>
+    <text x="480" y="520" fill="rgba(255,255,255,0.5)">word "cat," not partial matches</text>
+  </g>
+
+  <!-- Section 4: options -->
+  <rect x="32" y="568" width="836" height="38" rx="8" fill="rgba(124,58,237,0.18)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+  <text x="450" y="592" text-anchor="middle" font-size="15" font-weight="800" fill="#a78bfa">04 — Modifier Options</text>
+
+  <g font-size="9.5">
+    <rect x="32" y="612" width="404" height="70" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="48" y="634" font-weight="700" fill="rgba(167,139,250,0.85)">Match case</text>
+    <text x="48" y="652" fill="rgba(255,255,255,0.5)">"Colour" won't match "colour"</text>
+    <text x="48" y="668" fill="rgba(255,255,255,0.5)">when enabled</text>
+
+    <rect x="464" y="612" width="404" height="70" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="480" y="634" font-weight="700" fill="rgba(103,232,249,0.85)">Whole word only</text>
+    <text x="480" y="652" fill="rgba(255,255,255,0.5)">Prevents partial-word matches</text>
+    <text x="480" y="668" fill="rgba(255,255,255,0.5)">inside longer words</text>
+  </g>
+
+  <!-- Section 5: mistakes -->
+  <rect x="32" y="700" width="836" height="38" rx="8" fill="rgba(239,68,68,0.12)" stroke="rgba(239,68,68,0.22)" stroke-width="1"/>
+  <text x="450" y="724" text-anchor="middle" font-size="15" font-weight="800" fill="rgba(239,68,68,0.85)">05 — Common Mistakes</text>
+
+  <g font-size="10">
+    <rect x="32" y="744" width="836" height="40" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(239,68,68,0.1)" stroke-width="1"/>
+    <text x="48" y="762" fill="rgba(239,68,68,0.7)">✗</text>
+    <text x="68" y="762" fill="rgba(255,255,255,0.6)">Forgetting whole-word matching, causing unintended partial-word replacements</text>
+    <text x="68" y="778" fill="rgba(255,255,255,0.4)" font-size="8.5">Short common words are especially prone — always preview before applying broadly.</text>
+
+    <rect x="32" y="788" width="836" height="40" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(239,68,68,0.1)" stroke-width="1"/>
+    <text x="48" y="806" fill="rgba(239,68,68,0.7)">✗</text>
+    <text x="68" y="806" fill="rgba(255,255,255,0.6)">Not escaping special regex characters when searching for literal text in regex mode</text>
+    <text x="68" y="822" fill="rgba(255,255,255,0.4)" font-size="8.5">Characters like . ( ) [ ] have special meaning and need \ escaping to match literally.</text>
+  </g>
+
+  <text x="450" y="862" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.28)">Free tool: toolnestai.net/text-tools/find-and-replace</text>
+  <text x="450" y="882" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">Plain text and regex modes with capture groups — client-side, instant</text>
+</svg>

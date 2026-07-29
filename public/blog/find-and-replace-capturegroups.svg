@@ -1,0 +1,42 @@
+<svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gC" cx="50%" cy="40%" r="60%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.2"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+  </defs>
+  <rect width="900" height="460" fill="url(#bg)"/>
+  <ellipse cx="450" cy="230" rx="520" ry="320" fill="url(#gC)"/>
+
+  <text x="450" y="36" text-anchor="middle" font-size="20" font-weight="900" fill="url(#aG)">Regex Capture Groups in Find and Replace</text>
+  <text x="450" y="54" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.38)">Reference matched text in your replacement with $1, $2, $3...</text>
+
+  <!-- Date reformat -->
+  <rect x="28" y="70" width="844" height="100" rx="10" fill="rgba(167,139,250,0.06)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+  <text x="44" y="92" font-size="11" font-weight="700" fill="#a78bfa">Reformat a date: YYYY-MM-DD → MM/DD/YYYY</text>
+  <text x="44" y="116" font-family="monospace" font-size="12" fill="rgba(255,255,255,0.7)">Find:    (\d{4})-(\d{2})-(\d{2})</text>
+  <text x="44" y="138" font-family="monospace" font-size="12" fill="rgba(255,255,255,0.7)">Replace: $2/$3/$1</text>
+  <text x="44" y="160" font-family="monospace" font-size="11" fill="rgba(52,211,153,0.85)">"2026-07-29" → "07/29/2026"     ($1=year, $2=month, $3=day)</text>
+
+  <!-- Name swap -->
+  <rect x="28" y="182" width="410" height="110" rx="10" fill="rgba(103,232,249,0.06)" stroke="rgba(103,232,249,0.2)" stroke-width="1"/>
+  <text x="44" y="204" font-size="11" font-weight="700" fill="#67e8f9">Swap first/last name</text>
+  <text x="44" y="228" font-family="monospace" font-size="10.5" fill="rgba(255,255,255,0.7)">Find:    (\w+) (\w+)</text>
+  <text x="44" y="248" font-family="monospace" font-size="10.5" fill="rgba(255,255,255,0.7)">Replace: $2, $1</text>
+  <text x="44" y="270" font-family="monospace" font-size="10" fill="rgba(52,211,153,0.85)">"Jane Doe" → "Doe, Jane"</text>
+
+  <!-- Wrap in quotes -->
+  <rect x="462" y="182" width="410" height="110" rx="10" fill="rgba(52,211,153,0.06)" stroke="rgba(52,211,153,0.2)" stroke-width="1"/>
+  <text x="478" y="204" font-size="11" font-weight="700" fill="#6ee7b7">Wrap each word in quotes</text>
+  <text x="478" y="228" font-family="monospace" font-size="10.5" fill="rgba(255,255,255,0.7)">Find:    (\w+)</text>
+  <text x="478" y="248" font-family="monospace" font-size="10.5" fill="rgba(255,255,255,0.7)">Replace: "$1"</text>
+  <text x="478" y="270" font-family="monospace" font-size="10" fill="rgba(52,211,153,0.85)">"red green" → ""red" "green""</text>
+
+  <!-- Named groups -->
+  <rect x="28" y="304" width="844" height="96" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(124,58,237,0.15)" stroke-width="1"/>
+  <text x="450" y="326" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(167,139,250,0.85)">NAMED GROUPS (more readable for complex patterns)</text>
+  <text x="450" y="348" text-anchor="middle" font-family="monospace" font-size="10.5" fill="rgba(255,255,255,0.6)">Find: (?&lt;year&gt;\d{4})-(?&lt;month&gt;\d{2})-(?&lt;day&gt;\d{2})</text>
+  <text x="450" y="368" text-anchor="middle" font-family="monospace" font-size="10.5" fill="rgba(255,255,255,0.6)">Replace: $&lt;month&gt;/$&lt;day&gt;/$&lt;year&gt;</text>
+  <text x="450" y="388" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.32)">Named groups (?&lt;name&gt;...) make long patterns self-documenting instead of relying on positional $1, $2, $3</text>
+
+  <text x="450" y="440" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">toolnestai.net/text-tools/find-and-replace</text>
+</svg>

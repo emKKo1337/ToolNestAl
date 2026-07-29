@@ -1,0 +1,43 @@
+<svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gC" cx="50%" cy="40%" r="60%"><stop offset="0%" stop-color="#0e7490" stop-opacity="0.2"/><stop offset="100%" stop-color="#0e7490" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+  </defs>
+  <rect width="900" height="460" fill="url(#bg)"/>
+  <ellipse cx="450" cy="230" rx="520" ry="320" fill="url(#gC)"/>
+
+  <text x="450" y="36" text-anchor="middle" font-size="20" font-weight="900" fill="url(#aG)">Whole-Word Matching Prevents Partial-Word Bugs</text>
+  <text x="450" y="54" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.38)">Without it, a simple find-and-replace can corrupt unrelated words</text>
+
+  <!-- Without whole word -->
+  <rect x="28" y="70" width="410" height="150" rx="10" fill="rgba(239,68,68,0.06)" stroke="rgba(239,68,68,0.2)" stroke-width="1"/>
+  <text x="233" y="94" text-anchor="middle" font-size="12" font-weight="700" fill="#f87171">✗ Without Whole-Word Matching</text>
+  <text x="44" y="120" font-family="monospace" font-size="11" fill="rgba(255,255,255,0.65)">Find: "cat" → Replace: "dog"</text>
+  <text x="44" y="146" font-family="monospace" font-size="10.5" fill="rgba(255,255,255,0.55)">"The cat sat on the category"</text>
+  <text x="44" y="168" font-family="monospace" font-size="10.5" fill="rgba(252,165,165,0.85)">→ "The dog sat on the dogegory"</text>
+  <text x="44" y="196" font-size="9" fill="rgba(255,255,255,0.5)">"cat" inside "category" also matched and replaced</text>
+
+  <!-- With whole word -->
+  <rect x="462" y="70" width="410" height="150" rx="10" fill="rgba(52,211,153,0.06)" stroke="rgba(52,211,153,0.2)" stroke-width="1"/>
+  <text x="667" y="94" text-anchor="middle" font-size="12" font-weight="700" fill="#6ee7b7">✓ With Whole-Word Matching</text>
+  <text x="478" y="120" font-family="monospace" font-size="11" fill="rgba(255,255,255,0.65)">Find: "cat" → Replace: "dog"</text>
+  <text x="478" y="146" font-family="monospace" font-size="10.5" fill="rgba(255,255,255,0.55)">"The cat sat on the category"</text>
+  <text x="478" y="168" font-family="monospace" font-size="10.5" fill="rgba(110,231,183,0.9)">→ "The dog sat on the category"</text>
+  <text x="478" y="196" font-size="9" fill="rgba(255,255,255,0.5)">Only the standalone word "cat" was replaced</text>
+
+  <!-- How it works -->
+  <rect x="28" y="232" width="844" height="106" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(124,58,237,0.15)" stroke-width="1"/>
+  <text x="450" y="254" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(167,139,250,0.85)">HOW WHOLE-WORD MATCHING WORKS UNDER THE HOOD</text>
+  <text x="450" y="276" text-anchor="middle" font-family="monospace" font-size="11" fill="rgba(255,255,255,0.6)">\bcat\b</text>
+  <text x="450" y="298" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">\b is a "word boundary" anchor — it matches the position between a word character and a</text>
+  <text x="450" y="316" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">non-word character (or string start/end), without consuming any characters itself</text>
+
+  <!-- When to use -->
+  <rect x="28" y="348" width="844" height="70" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <text x="450" y="370" text-anchor="middle" font-size="9.5" font-weight="700" fill="rgba(255,255,255,0.4)">WHEN TO USE WHOLE-WORD MATCHING</text>
+  <text x="450" y="392" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.5)">Enable it whenever your search term is also a valid substring of other unrelated words —</text>
+  <text x="450" y="408" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.5)">short, common words like "cat," "at," "an," or "is" are especially prone to this problem</text>
+
+  <text x="450" y="446" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">toolnestai.net/text-tools/find-and-replace</text>
+</svg>
