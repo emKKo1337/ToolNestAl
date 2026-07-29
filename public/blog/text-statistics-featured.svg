@@ -1,0 +1,102 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="30%" cy="40%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gL" cx="15%" cy="50%" r="55%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.45"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gR" cx="85%" cy="50%" r="55%"><stop offset="0%" stop-color="#0e7490" stop-opacity="0.28"/><stop offset="100%" stop-color="#0e7490" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="lapG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1a1040"/><stop offset="100%" stop-color="#0d0824"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="8" stdDeviation="20" flood-color="#5b21b6" flood-opacity="0.5"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <ellipse cx="180" cy="315" rx="600" ry="500" fill="url(#gL)"/>
+  <ellipse cx="1020" cy="315" rx="600" ry="500" fill="url(#gR)"/>
+
+  <text x="60" y="70" font-size="14" font-weight="700" fill="url(#aG)" filter="url(#glow)">ToolNest AI</text>
+  <text x="60" y="106" font-size="13" fill="rgba(255,255,255,0.35)">Text Tools › Text Statistics</text>
+  <text x="60" y="185" font-size="48" font-weight="900" fill="url(#aG)" filter="url(#glow)">Text</text>
+  <text x="60" y="245" font-size="48" font-weight="900" fill="url(#aG)" filter="url(#glow)">Statistics</text>
+  <text x="60" y="300" font-size="18" fill="rgba(255,255,255,0.6)">Readability scores · Keyword density</text>
+  <text x="60" y="328" font-size="18" fill="rgba(255,255,255,0.6)">Full text analysis — Free, instant</text>
+
+  <rect x="60" y="358" width="110" height="52" rx="8" fill="rgba(124,58,237,0.2)" stroke="rgba(124,58,237,0.4)" stroke-width="1"/>
+  <text x="115" y="382" text-anchor="middle" font-size="14" font-weight="900" fill="#a78bfa">Flesch</text>
+  <text x="115" y="400" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.45)">reading ease</text>
+
+  <rect x="182" y="358" width="110" height="52" rx="8" fill="rgba(14,116,144,0.15)" stroke="rgba(14,116,144,0.35)" stroke-width="1"/>
+  <text x="237" y="382" text-anchor="middle" font-size="18" font-weight="900" fill="#67e8f9">15+</text>
+  <text x="237" y="400" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.45)">metrics computed</text>
+
+  <rect x="304" y="358" width="110" height="52" rx="8" fill="rgba(16,185,129,0.12)" stroke="rgba(16,185,129,0.3)" stroke-width="1"/>
+  <text x="359" y="382" text-anchor="middle" font-size="16" font-weight="900" fill="#34d399">Density</text>
+  <text x="359" y="400" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.45)">keyword %</text>
+
+  <rect x="426" y="358" width="110" height="52" rx="8" fill="rgba(251,191,36,0.1)" stroke="rgba(251,191,36,0.25)" stroke-width="1"/>
+  <text x="481" y="382" text-anchor="middle" font-size="20" font-weight="900" fill="#fbbf24">Free</text>
+  <text x="481" y="400" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.45)">no account</text>
+
+  <text x="60" y="560" font-size="14" fill="rgba(255,255,255,0.25)">toolnestai.net/text-tools/text-statistics</text>
+
+  <!-- Right: Laptop with text statistics UI -->
+  <rect x="630" y="60" width="530" height="490" rx="16" fill="url(#lapG)" stroke="rgba(124,58,237,0.3)" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="630" y="60" width="530" height="36" rx="16" fill="rgba(255,255,255,0.05)"/>
+  <rect x="630" y="78" width="530" height="18" fill="rgba(255,255,255,0.02)"/>
+  <circle cx="655" cy="78" r="6" fill="rgba(239,68,68,0.6)"/>
+  <circle cx="675" cy="78" r="6" fill="rgba(251,191,36,0.6)"/>
+  <circle cx="695" cy="78" r="6" fill="rgba(34,197,94,0.6)"/>
+
+  <!-- Input -->
+  <text x="650" y="120" font-size="8.5" font-weight="700" fill="rgba(255,255,255,0.3)">INPUT TEXT</text>
+  <rect x="642" y="126" width="506" height="60" rx="9" fill="rgba(0,0,0,0.5)" stroke="rgba(124,58,237,0.4)" stroke-width="1.5"/>
+  <text x="656" y="146" font-family="monospace" font-size="11" fill="rgba(255,255,255,0.75)">The quick brown fox jumps over the lazy</text>
+  <text x="656" y="164" font-family="monospace" font-size="11" fill="rgba(255,255,255,0.75)">dog. It was a sunny afternoon in the park.</text>
+
+  <!-- Readability score dial -->
+  <text x="650" y="212" font-size="8.5" font-weight="700" fill="rgba(255,255,255,0.3)">FLESCH READING EASE</text>
+  <rect x="642" y="218" width="240" height="80" rx="8" fill="rgba(52,211,153,0.08)" stroke="rgba(52,211,153,0.25)" stroke-width="1"/>
+  <text x="762" y="258" text-anchor="middle" font-size="30" font-weight="900" fill="#34d399">78.4</text>
+  <text x="762" y="280" text-anchor="middle" font-size="10" fill="#6ee7b7">Fairly Easy — 7th grade level</text>
+
+  <rect x="898" y="218" width="250" height="80" rx="8" fill="rgba(103,232,249,0.06)" stroke="rgba(103,232,249,0.2)" stroke-width="1"/>
+  <text x="1023" y="248" text-anchor="middle" font-size="18" font-weight="900" fill="#67e8f9">6.2</text>
+  <text x="1023" y="266" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.4)">Flesch-Kincaid Grade Level</text>
+  <text x="1023" y="284" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.4)">3.8 avg words/sentence</text>
+
+  <!-- Stats grid -->
+  <g text-anchor="middle" font-size="9">
+    <rect x="642" y="310" width="120" height="46" rx="7" fill="rgba(124,58,237,0.1)" stroke="rgba(124,58,237,0.22)" stroke-width="1"/>
+    <text x="702" y="332" font-size="14" font-weight="900" fill="#a78bfa">17</text>
+    <text x="702" y="348" fill="rgba(255,255,255,0.4)">words</text>
+
+    <rect x="770" y="310" width="120" height="46" rx="7" fill="rgba(14,116,144,0.08)" stroke="rgba(14,116,144,0.2)" stroke-width="1"/>
+    <text x="830" y="332" font-size="14" font-weight="900" fill="#67e8f9">2</text>
+    <text x="830" y="348" fill="rgba(255,255,255,0.4)">sentences</text>
+
+    <rect x="898" y="310" width="122" height="46" rx="7" fill="rgba(16,185,129,0.07)" stroke="rgba(16,185,129,0.18)" stroke-width="1"/>
+    <text x="959" y="332" font-size="14" font-weight="900" fill="#34d399">24</text>
+    <text x="959" y="348" fill="rgba(255,255,255,0.4)">syllables</text>
+
+    <rect x="1026" y="310" width="122" height="46" rx="7" fill="rgba(251,191,36,0.07)" stroke="rgba(251,191,36,0.18)" stroke-width="1"/>
+    <text x="1087" y="332" font-size="12" font-weight="900" fill="#fbbf24">4.1</text>
+    <text x="1087" y="348" fill="rgba(255,255,255,0.4)">avg word len</text>
+  </g>
+
+  <!-- Keyword density -->
+  <text x="650" y="378" font-size="8.5" font-weight="700" fill="rgba(255,255,255,0.3)">TOP KEYWORD DENSITY</text>
+  <rect x="642" y="384" width="506" height="70" rx="7" fill="rgba(255,255,255,0.025)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="658" y="404" font-size="10" fill="rgba(255,255,255,0.6)">"the" — 2 uses (11.8%)</text>
+  <rect x="658" y="410" width="150" height="6" rx="3" fill="rgba(167,139,250,0.6)"/>
+  <text x="658" y="430" font-size="10" fill="rgba(255,255,255,0.6)">"fox" — 1 use (5.9%)</text>
+  <rect x="658" y="436" width="75" height="6" rx="3" fill="rgba(103,232,249,0.6)"/>
+  <text x="658" y="450" font-size="9" fill="rgba(255,255,255,0.3)">Ideal density: 1-2% per keyword for SEO</text>
+
+  <!-- Buttons -->
+  <rect x="642" y="466" width="244" height="30" rx="8" fill="url(#bG)" filter="url(#sh)"/>
+  <text x="764" y="485" text-anchor="middle" font-size="12" font-weight="900" fill="#fff">Full Report</text>
+  <rect x="898" y="466" width="250" height="30" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="1023" y="485" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.35)">Export as PDF</text>
+
+  <rect x="620" y="550" width="560" height="14" rx="4" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <rect x="760" y="562" width="260" height="8" rx="4" fill="rgba(255,255,255,0.03)"/>
+</svg>

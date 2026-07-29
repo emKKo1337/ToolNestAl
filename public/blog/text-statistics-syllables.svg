@@ -1,0 +1,50 @@
+<svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gC" cx="50%" cy="40%" r="60%"><stop offset="0%" stop-color="#0e7490" stop-opacity="0.2"/><stop offset="100%" stop-color="#0e7490" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+  </defs>
+  <rect width="900" height="460" fill="url(#bg)"/>
+  <ellipse cx="450" cy="230" rx="520" ry="320" fill="url(#gC)"/>
+
+  <text x="450" y="36" text-anchor="middle" font-size="20" font-weight="900" fill="url(#aG)">Why Syllable Counting Is Approximate</text>
+  <text x="450" y="54" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.38)">Readability formulas rely on syllable counts — but English spelling makes exact counting hard</text>
+
+  <!-- Vowel group rule -->
+  <rect x="28" y="70" width="410" height="140" rx="8" fill="rgba(167,139,250,0.06)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+  <text x="44" y="92" font-size="10.5" font-weight="700" fill="#a78bfa">The Standard Heuristic</text>
+  <text x="44" y="114" font-size="9.5" fill="rgba(255,255,255,0.55)">Count groups of consecutive vowels</text>
+  <text x="44" y="130" font-size="9.5" fill="rgba(255,255,255,0.55)">(a, e, i, o, u, sometimes y) in a word —</text>
+  <text x="44" y="146" font-size="9.5" fill="rgba(255,255,255,0.55)">each group ≈ one syllable.</text>
+  <text x="44" y="170" font-family="monospace" font-size="10" fill="rgba(167,139,250,0.85)">"beautiful" → beau-ti-ful = 3</text>
+  <text x="44" y="190" font-family="monospace" font-size="10" fill="rgba(167,139,250,0.85)">"cat" → cat = 1</text>
+
+  <!-- Silent e exception -->
+  <rect x="462" y="70" width="410" height="140" rx="8" fill="rgba(239,68,68,0.06)" stroke="rgba(239,68,68,0.2)" stroke-width="1"/>
+  <text x="478" y="92" font-size="10.5" font-weight="700" fill="rgba(239,68,68,0.85)">Exception: Silent "e"</text>
+  <text x="478" y="114" font-size="9.5" fill="rgba(255,255,255,0.55)">A trailing "e" is usually silent and</text>
+  <text x="478" y="130" font-size="9.5" fill="rgba(255,255,255,0.55)">should NOT count as its own syllable —</text>
+  <text x="478" y="146" font-size="9.5" fill="rgba(255,255,255,0.55)">but naive vowel-counting gets this wrong.</text>
+  <text x="478" y="170" font-family="monospace" font-size="10" fill="rgba(252,165,165,0.85)">"make" → naive count says 2, actual = 1</text>
+  <text x="478" y="190" font-family="monospace" font-size="10" fill="rgba(252,165,165,0.85)">"like" → naive count says 2, actual = 1</text>
+
+  <!-- Other tricky cases -->
+  <rect x="28" y="222" width="844" height="120" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <text x="450" y="244" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(255,255,255,0.4)">OTHER TRICKY CASES ENGLISH THROWS AT SYLLABLE COUNTERS</text>
+  <text x="60" y="268" font-size="9.5" fill="rgba(103,232,249,0.85)">"fire"</text>
+  <text x="110" y="268" font-size="9.5" fill="rgba(255,255,255,0.55)">— 1 or 2 syllables depending on dialect/pronunciation</text>
+  <text x="60" y="290" font-size="9.5" fill="rgba(52,211,153,0.85)">"business"</text>
+  <text x="150" y="290" font-size="9.5" fill="rgba(255,255,255,0.55)">— spelled with 3 vowel groups but commonly pronounced with 2 syllables</text>
+  <text x="60" y="312" font-size="9.5" fill="rgba(251,191,36,0.85)">"-tion" / "-cious"</text>
+  <text x="220" y="312" font-size="9.5" fill="rgba(255,255,255,0.55)">— multiple letters, but function as a single syllable sound</text>
+  <text x="60" y="334" font-size="9.5" fill="rgba(244,114,182,0.85)">"y" as a vowel</text>
+  <text x="190" y="334" font-size="9.5" fill="rgba(255,255,255,0.55)">— "gym" (1 syllable) vs "happy" (2 syllables) — context-dependent</text>
+
+  <!-- Why it matters -->
+  <rect x="28" y="352" width="844" height="80" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(124,58,237,0.15)" stroke-width="1"/>
+  <text x="450" y="374" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(167,139,250,0.85)">WHY THIS IS FINE FOR READABILITY SCORING</text>
+  <text x="450" y="396" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">Readability formulas are designed to compare relative complexity, not measure syllables with</text>
+  <text x="450" y="414" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">perfect precision — small counting errors average out across a full document and rarely change the outcome.</text>
+
+  <text x="450" y="450" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">toolnestai.net/text-tools/text-statistics</text>
+</svg>

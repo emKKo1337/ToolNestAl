@@ -1,0 +1,106 @@
+<svg viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gL" cx="10%" cy="50%" r="60%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.35"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gR" cx="90%" cy="50%" r="60%"><stop offset="0%" stop-color="#0e7490" stop-opacity="0.2"/><stop offset="100%" stop-color="#0e7490" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="lapG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1a1040"/><stop offset="100%" stop-color="#0d0824"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="12" stdDeviation="24" flood-color="#5b21b6" flood-opacity="0.45"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <ellipse cx="120" cy="337" rx="700" ry="550" fill="url(#gL)"/>
+  <ellipse cx="1080" cy="337" rx="700" ry="550" fill="url(#gR)"/>
+
+  <text x="600" y="42" text-anchor="middle" font-size="13" font-weight="700" fill="url(#aG)" filter="url(#glow)">ToolNest AI — Text Tools</text>
+  <text x="600" y="68" text-anchor="middle" font-size="34" font-weight="900" fill="url(#aG)" filter="url(#glow)">Text Statistics</text>
+  <text x="600" y="90" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.35)">Readability scores, keyword density, and 15+ metrics — free, instant analysis</text>
+
+  <rect x="60" y="108" width="1080" height="542" rx="18" fill="url(#lapG)" stroke="rgba(124,58,237,0.35)" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="60" y="108" width="1080" height="38" rx="18" fill="rgba(255,255,255,0.05)"/>
+  <rect x="60" y="128" width="1080" height="18" fill="rgba(255,255,255,0.02)"/>
+  <circle cx="90" cy="127" r="7" fill="rgba(239,68,68,0.65)"/>
+  <circle cx="114" cy="127" r="7" fill="rgba(251,191,36,0.65)"/>
+  <circle cx="138" cy="127" r="7" fill="rgba(34,197,94,0.65)"/>
+  <text x="600" y="132" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">toolnestai.net/text-tools/text-statistics</text>
+
+  <!-- Input -->
+  <text x="88" y="176" font-size="9" font-weight="700" fill="rgba(255,255,255,0.28)">INPUT TEXT</text>
+  <rect x="80" y="182" width="680" height="70" rx="10" fill="rgba(0,0,0,0.55)" stroke="rgba(124,58,237,0.45)" stroke-width="1.5"/>
+  <text x="98" y="208" font-family="monospace" font-size="13" fill="rgba(255,255,255,0.8)">The quick brown fox jumps over the lazy dog.</text>
+  <text x="98" y="230" font-family="monospace" font-size="13" fill="rgba(255,255,255,0.8)">It was a sunny afternoon in the park, and the</text>
+  <text x="98" y="246" font-family="monospace" font-size="13" fill="rgba(255,255,255,0.8)">dog seemed happy to run around freely.</text>
+
+  <!-- Readability panel -->
+  <rect x="80" y="266" width="330" height="120" rx="10" fill="rgba(52,211,153,0.08)" stroke="rgba(52,211,153,0.25)" stroke-width="1.5"/>
+  <text x="98" y="288" font-size="9.5" font-weight="700" fill="rgba(255,255,255,0.4)">FLESCH READING EASE</text>
+  <text x="150" y="336" text-anchor="middle" font-size="42" font-weight="900" fill="#34d399">78</text>
+  <text x="270" y="316" font-size="13" font-weight="700" fill="#6ee7b7">Fairly Easy</text>
+  <text x="270" y="334" font-size="10" fill="rgba(255,255,255,0.45)">Understood by most</text>
+  <text x="270" y="348" font-size="10" fill="rgba(255,255,255,0.45)">13-15 year olds</text>
+  <text x="98" y="372" font-size="9" fill="rgba(255,255,255,0.32)">Formula: 206.835 − 1.015(words/sentences) − 84.6(syllables/words)</text>
+
+  <rect x="422" y="266" width="338" height="120" rx="10" fill="rgba(103,232,249,0.06)" stroke="rgba(103,232,249,0.2)" stroke-width="1.5"/>
+  <text x="440" y="288" font-size="9.5" font-weight="700" fill="rgba(255,255,255,0.4)">FLESCH-KINCAID GRADE LEVEL</text>
+  <text x="500" y="332" text-anchor="middle" font-size="34" font-weight="900" fill="#67e8f9">6.2</text>
+  <text x="600" y="316" font-size="12" font-weight="700" fill="rgba(255,255,255,0.6)">≈ 6th grade</text>
+  <text x="600" y="334" font-size="10" fill="rgba(255,255,255,0.4)">US school grade needed</text>
+  <text x="600" y="348" font-size="10" fill="rgba(255,255,255,0.4)">to easily understand this text</text>
+  <text x="440" y="372" font-size="9" fill="rgba(255,255,255,0.32)">Formula: 0.39(words/sentences) + 11.8(syllables/words) − 15.59</text>
+
+  <!-- Stats grid -->
+  <text x="88" y="416" font-size="9" font-weight="700" fill="rgba(255,255,255,0.28)">CORE METRICS</text>
+  <g text-anchor="middle" font-size="10">
+    <rect x="80" y="422" width="164" height="60" rx="8" fill="rgba(124,58,237,0.1)" stroke="rgba(124,58,237,0.22)" stroke-width="1"/>
+    <text x="162" y="450" font-size="18" font-weight="900" fill="#a78bfa">33</text>
+    <text x="162" y="468" fill="rgba(255,255,255,0.4)">words</text>
+
+    <rect x="252" y="422" width="164" height="60" rx="8" fill="rgba(14,116,144,0.08)" stroke="rgba(14,116,144,0.2)" stroke-width="1"/>
+    <text x="334" y="450" font-size="18" font-weight="900" fill="#67e8f9">3</text>
+    <text x="334" y="468" fill="rgba(255,255,255,0.4)">sentences</text>
+
+    <rect x="424" y="422" width="164" height="60" rx="8" fill="rgba(16,185,129,0.07)" stroke="rgba(16,185,129,0.18)" stroke-width="1"/>
+    <text x="506" y="450" font-size="18" font-weight="900" fill="#34d399">44</text>
+    <text x="506" y="468" fill="rgba(255,255,255,0.4)">syllables</text>
+
+    <rect x="596" y="422" width="164" height="60" rx="8" fill="rgba(251,191,36,0.07)" stroke="rgba(251,191,36,0.18)" stroke-width="1"/>
+    <text x="678" y="450" font-size="16" font-weight="900" fill="#fbbf24">11.0</text>
+    <text x="678" y="468" fill="rgba(255,255,255,0.4)">avg words/sentence</text>
+  </g>
+
+  <!-- Right panel: keyword density -->
+  <rect x="780" y="158" width="340" height="324" rx="12" fill="rgba(255,255,255,0.025)" stroke="rgba(124,58,237,0.18)" stroke-width="1"/>
+  <text x="950" y="182" text-anchor="middle" font-size="11" font-weight="700" fill="rgba(255,255,255,0.5)">Keyword Density</text>
+
+  <g font-size="10">
+    <text x="796" y="206" fill="rgba(255,255,255,0.55)">"the" — 4 uses</text>
+    <text x="1080" y="206" text-anchor="end" fill="#a78bfa" font-weight="700">12.1%</text>
+    <rect x="796" y="212" width="308" height="8" rx="4" fill="rgba(255,255,255,0.06)"/>
+    <rect x="796" y="212" width="150" height="8" rx="4" fill="rgba(167,139,250,0.7)"/>
+
+    <text x="796" y="240" fill="rgba(255,255,255,0.55)">"dog" — 2 uses</text>
+    <text x="1080" y="240" text-anchor="end" fill="#67e8f9" font-weight="700">6.1%</text>
+    <rect x="796" y="246" width="308" height="8" rx="4" fill="rgba(255,255,255,0.06)"/>
+    <rect x="796" y="246" width="76" height="8" rx="4" fill="rgba(103,232,249,0.7)"/>
+
+    <text x="796" y="274" fill="rgba(255,255,255,0.55)">"fox" — 1 use</text>
+    <text x="1080" y="274" text-anchor="end" fill="#34d399" font-weight="700">3.0%</text>
+    <rect x="796" y="280" width="308" height="8" rx="4" fill="rgba(255,255,255,0.06)"/>
+    <rect x="796" y="280" width="38" height="8" rx="4" fill="rgba(52,211,153,0.7)"/>
+  </g>
+
+  <rect x="796" y="304" width="308" height="86" rx="8" fill="rgba(251,191,36,0.06)" stroke="rgba(251,191,36,0.18)" stroke-width="1"/>
+  <text x="812" y="326" font-size="9.5" font-weight="700" fill="rgba(251,191,36,0.85)">SEO GUIDANCE</text>
+  <text x="812" y="346" font-size="9" fill="rgba(255,255,255,0.5)">Ideal keyword density is roughly</text>
+  <text x="812" y="362" font-size="9" fill="rgba(255,255,255,0.5)">1-2% per target keyword. Above</text>
+  <text x="812" y="378" font-size="9" fill="rgba(255,255,255,0.5)">~3% risks looking like "keyword stuffing."</text>
+
+  <rect x="796" y="400" width="308" height="66" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="812" y="422" font-size="9.5" font-weight="700" fill="rgba(255,255,255,0.4)">OTHER METRICS COMPUTED</text>
+  <text x="812" y="440" font-size="9" fill="rgba(255,255,255,0.5)">Avg word/sentence length, reading time,</text>
+  <text x="812" y="456" font-size="9" fill="rgba(255,255,255,0.5)">speaking time, unique word ratio, and more</text>
+
+  <rect x="48" y="650" width="1104" height="16" rx="5" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <rect x="460" y="664" width="280" height="10" rx="5" fill="rgba(255,255,255,0.025)"/>
+</svg>
