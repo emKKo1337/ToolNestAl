@@ -1,0 +1,73 @@
+﻿<svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+  </defs>
+  <rect width="900" height="460" fill="url(#bg)"/>
+  <text x="450" y="36" text-anchor="middle" font-size="20" font-weight="900" fill="url(#aG)">Crop Dimensions by Platform</text>
+  <text x="450" y="56" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.38)">Exact pixel dimensions and aspect ratios for major platforms</text>
+  <g font-size="9">
+    <rect x="28" y="72" width="836" height="26" rx="6" fill="rgba(255,255,255,0.04)"/>
+    <text x="48" y="89" font-weight="700" fill="rgba(255,255,255,0.4)">PLATFORM</text>
+    <text x="280" y="89" font-weight="700" fill="rgba(255,255,255,0.4)">DIMENSIONS</text>
+    <text x="440" y="89" font-weight="700" fill="rgba(255,255,255,0.4)">RATIO</text>
+    <text x="540" y="89" font-weight="700" fill="rgba(255,255,255,0.4)">USE</text>
+    <text x="48" y="118" fill="rgba(167,139,250,0.8)">YouTube</text>
+    <text x="280" y="118" fill="rgba(255,255,255,0.5)">1280x720 / 1920x1080</text>
+    <text x="440" y="118" fill="rgba(255,255,255,0.5)">16:9</text>
+    <text x="540" y="118" fill="rgba(255,255,255,0.5)">Thumbnail, channel art</text>
+    <text x="48" y="144" fill="rgba(167,139,250,0.75)">Instagram</text>
+    <text x="280" y="144" fill="rgba(255,255,255,0.5)">1080x1080</text>
+    <text x="440" y="144" fill="rgba(255,255,255,0.5)">1:1</text>
+    <text x="540" y="144" fill="rgba(255,255,255,0.5)">Square post</text>
+    <text x="48" y="170" fill="rgba(167,139,250,0.7)">Instagram</text>
+    <text x="280" y="170" fill="rgba(255,255,255,0.5)">1080x1350</text>
+    <text x="440" y="170" fill="rgba(255,255,255,0.5)">4:5</text>
+    <text x="540" y="170" fill="rgba(255,255,255,0.5)">Portrait post (recommended)</text>
+    <text x="48" y="196" fill="rgba(103,232,249,0.8)">Instagram Stories</text>
+    <text x="280" y="196" fill="rgba(255,255,255,0.5)">1080x1920</text>
+    <text x="440" y="196" fill="rgba(255,255,255,0.5)">9:16</text>
+    <text x="540" y="196" fill="rgba(255,255,255,0.5)">Stories and Reels</text>
+    <text x="48" y="222" fill="rgba(103,232,249,0.75)">Twitter / X</text>
+    <text x="280" y="222" fill="rgba(255,255,255,0.5)">1500x500</text>
+    <text x="440" y="222" fill="rgba(255,255,255,0.5)">3:1</text>
+    <text x="540" y="222" fill="rgba(255,255,255,0.5)">Header / banner</text>
+    <text x="48" y="248" fill="rgba(52,211,153,0.8)">Open Graph</text>
+    <text x="280" y="248" fill="rgba(255,255,255,0.5)">1200x630</text>
+    <text x="440" y="248" fill="rgba(255,255,255,0.5)">1.91:1</text>
+    <text x="540" y="248" fill="rgba(255,255,255,0.5)">Facebook, LinkedIn, Discord previews</text>
+    <text x="48" y="274" fill="rgba(52,211,153,0.75)">Facebook</text>
+    <text x="280" y="274" fill="rgba(255,255,255,0.5)">820x312</text>
+    <text x="440" y="274" fill="rgba(255,255,255,0.5)">~2.6:1</text>
+    <text x="540" y="274" fill="rgba(255,255,255,0.5)">Cover photo</text>
+    <text x="48" y="300" fill="rgba(251,191,36,0.8)">LinkedIn</text>
+    <text x="280" y="300" fill="rgba(255,255,255,0.5)">1584x396</text>
+    <text x="440" y="300" fill="rgba(255,255,255,0.5)">4:1</text>
+    <text x="540" y="300" fill="rgba(255,255,255,0.5)">Profile banner</text>
+    <text x="48" y="326" fill="rgba(251,191,36,0.75)">TikTok</text>
+    <text x="280" y="326" fill="rgba(255,255,255,0.5)">1080x1920</text>
+    <text x="440" y="326" fill="rgba(255,255,255,0.5)">9:16</text>
+    <text x="540" y="326" fill="rgba(255,255,255,0.5)">Video thumbnails</text>
+    <text x="48" y="352" fill="rgba(239,68,68,0.8)">Pinterest</text>
+    <text x="280" y="352" fill="rgba(255,255,255,0.5)">1000x1500</text>
+    <text x="440" y="352" fill="rgba(255,255,255,0.5)">2:3</text>
+    <text x="540" y="352" fill="rgba(255,255,255,0.5)">Standard pin</text>
+    <text x="48" y="378" fill="rgba(239,68,68,0.75)">Google Ads</text>
+    <text x="280" y="378" fill="rgba(255,255,255,0.5)">1200x628</text>
+    <text x="440" y="378" fill="rgba(255,255,255,0.5)">~1.91:1</text>
+    <text x="540" y="378" fill="rgba(255,255,255,0.5)">Display ads, Performance Max</text>
+    <line x1="28" y1="104" x2="864" y2="104" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <line x1="28" y1="130" x2="864" y2="130" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    <line x1="28" y1="156" x2="864" y2="156" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    <line x1="28" y1="182" x2="864" y2="182" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    <line x1="28" y1="208" x2="864" y2="208" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    <line x1="28" y1="234" x2="864" y2="234" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    <line x1="28" y1="260" x2="864" y2="260" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    <line x1="28" y1="286" x2="864" y2="286" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    <line x1="28" y1="312" x2="864" y2="312" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    <line x1="28" y1="338" x2="864" y2="338" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    <line x1="28" y1="364" x2="864" y2="364" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  </g>
+  <text x="450" y="420" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.3)">Crop your images to exact platform dimensions — toolnestai.net/image-tools/image-cropper</text>
+  <text x="450" y="450" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">toolnestai.net/image-tools/image-cropper</text>
+</svg>

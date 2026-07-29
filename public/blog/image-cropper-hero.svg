@@ -1,0 +1,61 @@
+﻿<svg viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <text x="600" y="52" text-anchor="middle" font-size="24" font-weight="900" fill="url(#aG)">Standard Aspect Ratios and Their Use Cases</text>
+  <text x="600" y="74" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.38)">Choosing the right crop ratio for each platform and purpose</text>
+  <g text-anchor="middle" font-size="9">
+    <!-- 16:9 -->
+    <rect x="40" y="96" width="256" height="144" rx="8" fill="rgba(167,139,250,0.07)" stroke="rgba(167,139,250,0.25)" stroke-width="1.5"/>
+    <text x="168" y="125" font-size="14" font-weight="700" fill="rgba(167,139,250,0.85)">16:9</text>
+    <text x="168" y="148" fill="rgba(255,255,255,0.4)">1920x1080, 1280x720</text>
+    <text x="168" y="166" fill="rgba(255,255,255,0.35)">YouTube, TV, hero banners</text>
+    <text x="168" y="228" font-weight="700" fill="rgba(167,139,250,0.7)">Widescreen</text>
+    <text x="168" y="248" fill="rgba(255,255,255,0.4)">The standard for video</text>
+    <text x="168" y="268" fill="rgba(255,255,255,0.4)">content and web hero images</text>
+    <!-- 1:1 -->
+    <rect x="316" y="96" width="144" height="144" rx="8" fill="rgba(103,232,249,0.07)" stroke="rgba(103,232,249,0.25)" stroke-width="1.5"/>
+    <text x="388" y="125" font-size="14" font-weight="700" fill="rgba(103,232,249,0.85)">1:1</text>
+    <text x="388" y="148" fill="rgba(255,255,255,0.4)">1080x1080</text>
+    <text x="388" y="166" fill="rgba(255,255,255,0.35)">Instagram, avatars</text>
+    <text x="388" y="228" font-weight="700" fill="rgba(103,232,249,0.7)">Square</text>
+    <text x="388" y="248" fill="rgba(255,255,255,0.4)">Social media profiles</text>
+    <text x="388" y="268" fill="rgba(255,255,255,0.4)">and post thumbnails</text>
+    <!-- 4:3 -->
+    <rect x="480" y="96" width="213" height="160" rx="8" fill="rgba(52,211,153,0.07)" stroke="rgba(52,211,153,0.22)" stroke-width="1.5"/>
+    <text x="587" y="130" font-size="14" font-weight="700" fill="rgba(52,211,153,0.85)">4:3</text>
+    <text x="587" y="153" fill="rgba(255,255,255,0.4)">1024x768, 800x600</text>
+    <text x="587" y="171" fill="rgba(255,255,255,0.35)">Traditional monitors, photography</text>
+    <text x="587" y="228" font-weight="700" fill="rgba(52,211,153,0.7)">Classic</text>
+    <text x="587" y="248" fill="rgba(255,255,255,0.4)">Traditional camera sensor</text>
+    <text x="587" y="268" fill="rgba(255,255,255,0.4)">ratio, still widely used</text>
+    <!-- 3:2 -->
+    <rect x="713" y="96" width="240" height="160" rx="8" fill="rgba(251,191,36,0.07)" stroke="rgba(251,191,36,0.22)" stroke-width="1.5"/>
+    <text x="833" y="130" font-size="14" font-weight="700" fill="rgba(251,191,36,0.85)">3:2</text>
+    <text x="833" y="153" fill="rgba(255,255,255,0.4)">1200x800, 1500x1000</text>
+    <text x="833" y="171" fill="rgba(255,255,255,0.35)">DSLR cameras, photography</text>
+    <text x="833" y="228" font-weight="700" fill="rgba(251,191,36,0.7)">Photography standard</text>
+    <text x="833" y="248" fill="rgba(255,255,255,0.4)">Most professional DSLR and</text>
+    <text x="833" y="268" fill="rgba(255,255,255,0.4)">mirrorless camera sensors</text>
+    <!-- 9:16 portrait -->
+    <rect x="546" y="290" width="108" height="192" rx="8" fill="rgba(239,68,68,0.07)" stroke="rgba(239,68,68,0.22)" stroke-width="1.5"/>
+    <text x="600" y="318" font-size="12" font-weight="700" fill="rgba(239,68,68,0.85)">9:16</text>
+    <text x="600" y="348" fill="rgba(255,255,255,0.4)">1080x1920</text>
+    <text x="600" y="370" fill="rgba(255,255,255,0.35)">Stories</text>
+    <text x="600" y="430" font-weight="700" fill="rgba(239,68,68,0.7)">Portrait / Stories</text>
+    <text x="600" y="452" fill="rgba(255,255,255,0.4)">Instagram / TikTok</text>
+    <text x="600" y="472" fill="rgba(255,255,255,0.4)">Stories and Reels</text>
+    <!-- 2:1 panoramic -->
+    <rect x="40" y="290" width="480" height="192" rx="8" fill="rgba(124,58,237,0.07)" stroke="rgba(124,58,237,0.22)" stroke-width="1.5"/>
+    <text x="280" y="380" font-size="14" font-weight="700" fill="rgba(167,139,250,0.85)">2:1 Panoramic</text>
+    <text x="280" y="406" fill="rgba(255,255,255,0.4)">Twitter / X header, website hero images</text>
+    <text x="280" y="426" fill="rgba(255,255,255,0.35)">Wide panoramic photography</text>
+    <rect x="674" y="290" width="480" height="192" rx="8" fill="rgba(16,185,129,0.06)" stroke="rgba(16,185,129,0.2)" stroke-width="1.5"/>
+    <text x="914" y="380" font-size="14" font-weight="700" fill="rgba(52,211,153,0.85)">Open Graph (1.91:1)</text>
+    <text x="914" y="406" fill="rgba(255,255,255,0.4)">Facebook, LinkedIn, Discord link previews</text>
+    <text x="914" y="426" fill="rgba(255,255,255,0.35)">SEO-relevant: shared link images</text>
+  </g>
+  <text x="600" y="540" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.22)">toolnestai.net/image-tools/image-cropper</text>
+</svg>

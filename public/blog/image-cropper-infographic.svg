@@ -1,0 +1,75 @@
+﻿<svg viewBox="0 0 900 1200" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="30%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gT" cx="50%" cy="10%" r="60%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.35"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gB" cx="50%" cy="90%" r="60%"><stop offset="0%" stop-color="#0e7490" stop-opacity="0.2"/><stop offset="100%" stop-color="#0e7490" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+  </defs>
+  <rect width="900" height="1200" fill="url(#bg)"/>
+  <ellipse cx="450" cy="200" rx="700" ry="400" fill="url(#gT)"/>
+  <ellipse cx="450" cy="1000" rx="700" ry="400" fill="url(#gB)"/>
+  <text x="450" y="52" text-anchor="middle" font-size="26" font-weight="900" fill="url(#aG)">Image Cropper: The Complete Guide</text>
+  <text x="450" y="76" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.38)">Aspect ratios, composition rules, and platform dimensions</text>
+  <text x="450" y="96" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.22)">toolnestai.net/image-tools/image-cropper</text>
+  <rect x="32" y="112" width="836" height="38" rx="8" fill="rgba(124,58,237,0.18)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+  <text x="450" y="136" text-anchor="middle" font-size="15" font-weight="800" fill="#a78bfa">01 - What Is an Aspect Ratio?</text>
+  <rect x="32" y="156" width="836" height="110" rx="10" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="450" y="180" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.6)">Aspect ratio is the proportional relationship between width and height. 16:9 means for every 16 units of</text>
+  <text x="450" y="200" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.6)">width, there are 9 units of height. The actual pixel count can vary — 1280x720 and 1920x1080 are both 16:9.</text>
+  <text x="450" y="228" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.5)">Locking the aspect ratio when cropping ensures your output matches the target platform's requirements.</text>
+  <text x="450" y="248" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.3)">Without ratio lock, dragging a corner can accidentally produce a non-standard ratio.</text>
+  <rect x="32" y="282" width="836" height="38" rx="8" fill="rgba(14,116,144,0.18)" stroke="rgba(14,116,144,0.3)" stroke-width="1"/>
+  <text x="450" y="306" text-anchor="middle" font-size="15" font-weight="800" fill="#67e8f9">02 - Common Aspect Ratios</text>
+  <g font-size="9.5" text-anchor="middle">
+    <rect x="32" y="326" width="196" height="90" rx="8" fill="rgba(167,139,250,0.08)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+    <text x="130" y="350" font-weight="700" fill="rgba(167,139,250,0.85)">16:9</text>
+    <text x="130" y="370" fill="rgba(255,255,255,0.5)">Widescreen standard</text>
+    <text x="130" y="390" fill="rgba(255,255,255,0.4)">YouTube, TV, hero images</text>
+    <rect x="236" y="326" width="196" height="90" rx="8" fill="rgba(103,232,249,0.08)" stroke="rgba(103,232,249,0.2)" stroke-width="1"/>
+    <text x="334" y="350" font-weight="700" fill="rgba(103,232,249,0.85)">1:1</text>
+    <text x="334" y="370" fill="rgba(255,255,255,0.5)">Square format</text>
+    <text x="334" y="390" fill="rgba(255,255,255,0.4)">Instagram, profile images</text>
+    <rect x="440" y="326" width="196" height="90" rx="8" fill="rgba(52,211,153,0.08)" stroke="rgba(52,211,153,0.2)" stroke-width="1"/>
+    <text x="538" y="350" font-weight="700" fill="rgba(52,211,153,0.85)">4:3</text>
+    <text x="538" y="370" fill="rgba(255,255,255,0.5)">Classic monitor</text>
+    <text x="538" y="390" fill="rgba(255,255,255,0.4)">Photography, presentations</text>
+    <rect x="644" y="326" width="224" height="90" rx="8" fill="rgba(251,191,36,0.08)" stroke="rgba(251,191,36,0.2)" stroke-width="1"/>
+    <text x="756" y="350" font-weight="700" fill="rgba(251,191,36,0.85)">9:16</text>
+    <text x="756" y="370" fill="rgba(255,255,255,0.5)">Portrait / Stories</text>
+    <text x="756" y="390" fill="rgba(255,255,255,0.4)">Instagram Stories, Reels</text>
+  </g>
+  <rect x="32" y="432" width="836" height="38" rx="8" fill="rgba(239,68,68,0.12)" stroke="rgba(239,68,68,0.22)" stroke-width="1"/>
+  <text x="450" y="456" text-anchor="middle" font-size="15" font-weight="800" fill="rgba(239,68,68,0.85)">03 - Composition: Rule of Thirds</text>
+  <rect x="32" y="476" width="836" height="110" rx="10" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="450" y="500" text-anchor="middle" font-size="10.5" fill="rgba(255,255,255,0.6)">Divide the image into a 3x3 grid. Place subjects at the intersections (power points), not at the center.</text>
+  <text x="450" y="520" text-anchor="middle" font-size="10.5" fill="rgba(255,255,255,0.6)">Centered subjects look static; off-center subjects on rule-of-thirds intersections look dynamic.</text>
+  <text x="450" y="548" text-anchor="middle" font-size="9.5" fill="rgba(52,211,153,0.7)">Tip: Use the grid overlay in the cropper to align important elements with the thirds lines.</text>
+  <text x="450" y="568" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.4)">The rule applies to: portrait photography, landscape, product shots, food photography.</text>
+  <rect x="32" y="602" width="836" height="38" rx="8" fill="rgba(16,185,129,0.14)" stroke="rgba(16,185,129,0.25)" stroke-width="1"/>
+  <text x="450" y="626" text-anchor="middle" font-size="15" font-weight="800" fill="#34d399">04 - Crop for Each Platform</text>
+  <g font-size="9.5">
+    <rect x="32" y="646" width="836" height="122" rx="10" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="48" y="670" fill="rgba(167,139,250,0.8)" font-weight="700">YouTube thumbnail:</text>
+    <text x="48" y="690" fill="rgba(255,255,255,0.5)">1280x720 (HD) at 16:9. Keep key elements in the safe zone (100px inset) — YouTube adds blur to the edges.</text>
+    <text x="48" y="720" fill="rgba(103,232,249,0.8)" font-weight="700">Instagram post:</text>
+    <text x="48" y="740" fill="rgba(255,255,255,0.5)">1080x1080 (1:1) for square, 1080x1350 (4:5) for portrait — Instagram recommends portrait for more feed space.</text>
+    <text x="48" y="770" fill="rgba(52,211,153,0.8)" font-weight="700">Open Graph / Social sharing:</text>
+    <text x="48" y="786" fill="rgba(255,255,255,0.5)">1200x630 at 1.91:1 — this is what appears when your page is shared on Facebook, LinkedIn, Discord.</text>
+  </g>
+  <rect x="32" y="784" width="836" height="38" rx="8" fill="rgba(124,58,237,0.18)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+  <text x="450" y="808" text-anchor="middle" font-size="15" font-weight="800" fill="#a78bfa">05 - Crop vs Resize: Know the Difference</text>
+  <g font-size="9.5">
+    <rect x="32" y="828" width="404" height="90" rx="8" fill="rgba(167,139,250,0.06)" stroke="rgba(167,139,250,0.16)" stroke-width="1"/>
+    <text x="48" y="852" font-weight="700" fill="rgba(167,139,250,0.85)">Crop</text>
+    <text x="48" y="872" fill="rgba(255,255,255,0.5)">Removes pixels from the edges</text>
+    <text x="48" y="892" fill="rgba(255,255,255,0.5)">Changes ratio and content area</text>
+    <text x="48" y="910" fill="rgba(255,255,255,0.3)" font-size="8.5">Resolution of kept area unchanged</text>
+    <rect x="464" y="828" width="404" height="90" rx="8" fill="rgba(52,211,153,0.06)" stroke="rgba(52,211,153,0.16)" stroke-width="1"/>
+    <text x="480" y="852" font-weight="700" fill="rgba(52,211,153,0.85)">Resize</text>
+    <text x="480" y="872" fill="rgba(255,255,255,0.5)">Scales all pixels up or down</text>
+    <text x="480" y="892" fill="rgba(255,255,255,0.5)">Keeps the same content area</text>
+    <text x="480" y="910" fill="rgba(255,255,255,0.3)" font-size="8.5">Changes pixel dimensions, not content</text>
+  </g>
+  <text x="450" y="970" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.28)">Free tool: toolnestai.net/image-tools/image-cropper</text>
+  <text x="450" y="990" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">Precise pixel-level cropping with aspect ratio lock — in-browser, no upload</text>
+</svg>
