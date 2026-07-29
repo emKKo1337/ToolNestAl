@@ -1,0 +1,46 @@
+﻿<svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="sizeG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#34d399"/><stop offset="100%" stop-color="#ef4444"/></linearGradient>
+  </defs>
+  <rect width="900" height="460" fill="url(#bg)"/>
+  <text x="450" y="36" text-anchor="middle" font-size="20" font-weight="900" fill="url(#aG)">Quality Setting vs File Size Trade-off</text>
+  <text x="450" y="56" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.38)">How quality percentage maps to actual file size reduction</text>
+  <rect x="28" y="74" width="844" height="200" rx="10" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="450" y="96" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(255,255,255,0.3)">FILE SIZE RELATIVE TO ORIGINAL (4.2 MB JPG example)</text>
+  <g font-size="9">
+    <text x="52" y="118" fill="rgba(255,255,255,0.4)">Quality 50%</text>
+    <rect x="150" y="106" width="68" height="16" rx="3" fill="rgba(52,211,153,0.6)"/>
+    <text x="226" y="118" fill="rgba(52,211,153,0.85)">~280 KB (93% smaller)</text>
+    <text x="52" y="148" fill="rgba(255,255,255,0.4)">Quality 65%</text>
+    <rect x="150" y="136" width="110" height="16" rx="3" fill="rgba(110,231,183,0.55)"/>
+    <text x="268" y="148" fill="rgba(255,255,255,0.55)">~450 KB (89% smaller)</text>
+    <text x="52" y="178" fill="rgba(255,255,255,0.4)">Quality 80%</text>
+    <rect x="150" y="166" width="170" height="16" rx="3" fill="url(#bG)" opacity="0.7"/>
+    <text x="328" y="178" fill="rgba(167,139,250,0.9)">~700 KB (83% smaller) - sweet spot</text>
+    <text x="52" y="208" fill="rgba(255,255,255,0.4)">Quality 90%</text>
+    <rect x="150" y="196" width="270" height="16" rx="3" fill="rgba(251,191,36,0.45)"/>
+    <text x="428" y="208" fill="rgba(255,255,255,0.55)">~1.1 MB (74% smaller)</text>
+    <text x="52" y="238" fill="rgba(255,255,255,0.4)">Quality 95%</text>
+    <rect x="150" y="226" width="500" height="16" rx="3" fill="rgba(239,68,68,0.45)"/>
+    <text x="658" y="238" fill="rgba(255,255,255,0.55)">~2.1 MB (50% smaller)</text>
+    <text x="52" y="268" fill="rgba(255,255,255,0.4)">Quality 100%</text>
+    <rect x="150" y="256" width="700" height="16" rx="3" fill="rgba(239,68,68,0.7)"/>
+    <text x="858" y="268" text-anchor="end" fill="rgba(239,68,68,0.85)">~4.2 MB (no reduction)</text>
+  </g>
+  <rect x="28" y="288" width="410" height="70" rx="8" fill="rgba(167,139,250,0.06)" stroke="rgba(167,139,250,0.18)" stroke-width="1"/>
+  <text x="233" y="308" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(167,139,250,0.85)">OPTIMAL RANGE: 75-85%</text>
+  <text x="48" y="330" font-size="9.5" fill="rgba(255,255,255,0.5)">Delivers 80-90% file size reduction</text>
+  <text x="48" y="348" font-size="9.5" fill="rgba(255,255,255,0.5)">Artifacts invisible at normal viewing sizes</text>
+  <rect x="462" y="288" width="410" height="70" rx="8" fill="rgba(52,211,153,0.06)" stroke="rgba(52,211,153,0.18)" stroke-width="1"/>
+  <text x="667" y="308" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(52,211,153,0.85)">PNG vs JPG COMPRESSION</text>
+  <text x="482" y="330" font-size="9.5" fill="rgba(255,255,255,0.5)">PNG: lossless, quality slider irrelevant</text>
+  <text x="482" y="348" font-size="9.5" fill="rgba(255,255,255,0.5)">JPG/WebP: lossy, quality setting applies</text>
+  <rect x="28" y="372" width="844" height="60" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <text x="450" y="394" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.5)">The quality percentage maps to how aggressively the DCT algorithm discards high-frequency detail.</text>
+  <text x="450" y="414" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.5)">Higher quality = less discarded = larger file. The slider is not linear: going from 95-100% adds huge size</text>
+  <text x="450" y="434" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.5)">for imperceptible benefit. Going from 50-80% adds modest size for significant visible quality improvement.</text>
+  <text x="450" y="450" text-anchor="middle" font-size="8.5" fill="rgba(255,255,255,0.2)">toolnestai.net/image-tools/image-compressor</text>
+</svg>
