@@ -1,0 +1,71 @@
+﻿<svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+  </defs>
+  <rect width="900" height="460" fill="url(#bg)"/>
+  <text x="450" y="36" text-anchor="middle" font-size="20" font-weight="900" fill="url(#aG)">Unsharp Mask — Step by Step</text>
+  <text x="450" y="54" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.38)">How subtracting a blurred copy sharpens the original</text>
+  <!-- 4 step pipeline -->
+  <g text-anchor="middle" font-size="9.5">
+    <rect x="28" y="72" width="186" height="130" rx="8" fill="rgba(167,139,250,0.08)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+    <text x="121" y="94" font-weight="700" fill="#a78bfa">Step 1</text>
+    <text x="121" y="112" fill="rgba(255,255,255,0.55)">Original Image</text>
+    <text x="121" y="130" fill="rgba(255,255,255,0.35)">Pixel values</text>
+    <text x="121" y="148" fill="rgba(255,255,255,0.35)">as-is</text>
+    <!-- pixel grid -->
+    <rect x="54" y="160" width="134" height="30" rx="4" fill="rgba(167,139,250,0.08)"/>
+    <text x="121" y="178" font-size="9" fill="rgba(167,139,250,0.7)" font-family="monospace">80 | 82 | 200 | 198</text>
+
+    <text x="243" y="140" fill="rgba(255,255,255,0.2)">→</text>
+
+    <rect x="270" y="72" width="186" height="130" rx="8" fill="rgba(103,232,249,0.06)" stroke="rgba(103,232,249,0.18)" stroke-width="1"/>
+    <text x="363" y="94" font-weight="700" fill="#67e8f9">Step 2</text>
+    <text x="363" y="112" fill="rgba(255,255,255,0.55)">Gaussian Blur</text>
+    <text x="363" y="130" fill="rgba(255,255,255,0.35)">Radius r → low-pass</text>
+    <text x="363" y="148" fill="rgba(255,255,255,0.35)">smoothed copy</text>
+    <rect x="296" y="160" width="134" height="30" rx="4" fill="rgba(103,232,249,0.05)"/>
+    <text x="363" y="178" font-size="9" fill="rgba(103,232,249,0.7)" font-family="monospace">80 | 85 | 140 | 145</text>
+
+    <text x="485" y="140" fill="rgba(255,255,255,0.2)">→</text>
+
+    <rect x="512" y="72" width="186" height="130" rx="8" fill="rgba(52,211,153,0.06)" stroke="rgba(52,211,153,0.18)" stroke-width="1"/>
+    <text x="605" y="94" font-weight="700" fill="#6ee7b7">Step 3</text>
+    <text x="605" y="112" fill="rgba(255,255,255,0.55)">Edge Layer</text>
+    <text x="605" y="130" fill="rgba(255,255,255,0.35)">orig − blurred</text>
+    <text x="605" y="148" fill="rgba(255,255,255,0.35)">= high-frequency detail</text>
+    <rect x="538" y="160" width="134" height="30" rx="4" fill="rgba(52,211,153,0.04)"/>
+    <text x="605" y="178" font-size="9" fill="rgba(52,211,153,0.7)" font-family="monospace">0 | -3 | 60 | 53</text>
+
+    <text x="727" y="140" fill="rgba(255,255,255,0.2)">→</text>
+
+    <rect x="754" y="72" width="118" height="130" rx="8" fill="rgba(251,191,36,0.06)" stroke="rgba(251,191,36,0.18)" stroke-width="1"/>
+    <text x="813" y="94" font-weight="700" fill="#fbbf24">Step 4</text>
+    <text x="813" y="112" fill="rgba(255,255,255,0.55)">Output</text>
+    <text x="813" y="130" fill="rgba(255,255,255,0.35)">orig + amount</text>
+    <text x="813" y="148" fill="rgba(255,255,255,0.35)">× edge layer</text>
+    <rect x="770" y="160" width="86" height="30" rx="4" fill="rgba(251,191,36,0.04)"/>
+    <text x="813" y="178" font-size="9" fill="rgba(251,191,36,0.7)" font-family="monospace">80 | 79 | 260</text>
+  </g>
+  <!-- Parameter guide -->
+  <rect x="28" y="228" width="844" height="130" rx="10" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="450" y="250" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(167,139,250,0.85)">UNSHARP MASK PARAMETERS</text>
+  <g font-size="9.5">
+    <rect x="44" y="264" width="236" height="80" rx="6" fill="rgba(167,139,250,0.04)" stroke="rgba(167,139,250,0.1)" stroke-width="1"/>
+    <text x="162" y="284" text-anchor="middle" font-weight="700" fill="rgba(167,139,250,0.85)">Amount (50–200%)</text>
+    <text x="162" y="302" text-anchor="middle" fill="rgba(255,255,255,0.5)">How strongly the edge</text>
+    <text x="162" y="318" text-anchor="middle" fill="rgba(255,255,255,0.5)">layer is added back.</text>
+    <text x="162" y="334" text-anchor="middle" fill="rgba(255,255,255,0.35)">Higher = more contrast at edges</text>
+    <rect x="292" y="264" width="236" height="80" rx="6" fill="rgba(52,211,153,0.04)" stroke="rgba(52,211,153,0.1)" stroke-width="1"/>
+    <text x="410" y="284" text-anchor="middle" font-weight="700" fill="rgba(52,211,153,0.85)">Radius (0.5–3px)</text>
+    <text x="410" y="302" text-anchor="middle" fill="rgba(255,255,255,0.5)">Size of Gaussian blur</text>
+    <text x="410" y="318" text-anchor="middle" fill="rgba(255,255,255,0.5)">for the edge extraction.</text>
+    <text x="410" y="334" text-anchor="middle" fill="rgba(255,255,255,0.35)">Larger = thicker edge halos</text>
+    <rect x="540" y="264" width="236" height="80" rx="6" fill="rgba(103,232,249,0.04)" stroke="rgba(103,232,249,0.1)" stroke-width="1"/>
+    <text x="658" y="284" text-anchor="middle" font-weight="700" fill="rgba(103,232,249,0.85)">Threshold (0–10)</text>
+    <text x="658" y="302" text-anchor="middle" fill="rgba(255,255,255,0.5)">Minimum edge contrast</text>
+    <text x="658" y="318" text-anchor="middle" fill="rgba(255,255,255,0.5)">to sharpen.</text>
+    <text x="658" y="334" text-anchor="middle" fill="rgba(255,255,255,0.35)">Higher = skip subtle areas (reduce noise)</text>
+  </g>
+  <text x="450" y="446" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">toolnestai.net/image-tools/image-sharpen</text>
+</svg>
