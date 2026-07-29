@@ -1,0 +1,100 @@
+<svg viewBox="0 0 900 1100" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="30%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gT" cx="50%" cy="10%" r="60%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.35"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gB" cx="50%" cy="90%" r="60%"><stop offset="0%" stop-color="#0e7490" stop-opacity="0.2"/><stop offset="100%" stop-color="#0e7490" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+  </defs>
+  <rect width="900" height="1100" fill="url(#bg)"/>
+  <ellipse cx="450" cy="180" rx="700" ry="380" fill="url(#gT)"/>
+  <ellipse cx="450" cy="920" rx="700" ry="380" fill="url(#gB)"/>
+
+  <text x="450" y="52" text-anchor="middle" font-size="26" font-weight="900" fill="url(#aG)">The Complete Blank-Line Cleanup Guide</text>
+  <text x="450" y="76" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.38)">Regex patterns, line endings, and the whitespace-only edge case</text>
+  <text x="450" y="94" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.22)">toolnestai.net/text-tools/remove-empty-lines</text>
+
+  <!-- Section 1 -->
+  <rect x="32" y="110" width="836" height="38" rx="8" fill="rgba(124,58,237,0.18)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+  <text x="450" y="134" text-anchor="middle" font-size="15" font-weight="800" fill="#a78bfa">01 — Two Cleanup Modes</text>
+
+  <g font-size="10">
+    <rect x="32" y="154" width="404" height="100" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="48" y="176" fill="rgba(167,139,250,0.85)" font-weight="700">Remove All Blank Lines</text>
+    <text x="48" y="196" fill="rgba(255,255,255,0.5)">Deletes every empty or whitespace-</text>
+    <text x="48" y="212" fill="rgba(255,255,255,0.5)">only line — text becomes contiguous</text>
+    <text x="48" y="236" fill="rgba(255,255,255,0.3)" font-size="8.5">Good for: code, CSV, log files</text>
+
+    <rect x="464" y="154" width="404" height="100" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="480" y="176" fill="rgba(103,232,249,0.85)" font-weight="700">Collapse to Single Blank</text>
+    <text x="480" y="196" fill="rgba(255,255,255,0.5)">Reduces runs of 2+ blank lines</text>
+    <text x="480" y="212" fill="rgba(255,255,255,0.5)">down to exactly one</text>
+    <text x="480" y="236" fill="rgba(255,255,255,0.3)" font-size="8.5">Good for: prose, preserving paragraphs</text>
+  </g>
+
+  <!-- Section 2: regex -->
+  <rect x="32" y="272" width="836" height="38" rx="8" fill="rgba(14,116,144,0.18)" stroke="rgba(14,116,144,0.3)" stroke-width="1"/>
+  <text x="450" y="296" text-anchor="middle" font-size="15" font-weight="800" fill="#67e8f9">02 — The Right Regex Pattern</text>
+
+  <g font-size="10">
+    <rect x="32" y="316" width="404" height="90" rx="8" fill="rgba(239,68,68,0.06)" stroke="rgba(239,68,68,0.16)" stroke-width="1"/>
+    <text x="234" y="338" text-anchor="middle" font-weight="700" fill="#f87171">✗ /^$/gm</text>
+    <text x="48" y="360" fill="rgba(255,255,255,0.5)">Only matches truly empty lines —</text>
+    <text x="48" y="378" fill="rgba(255,255,255,0.5)">misses lines with invisible spaces/tabs</text>
+
+    <rect x="464" y="316" width="404" height="90" rx="8" fill="rgba(52,211,153,0.06)" stroke="rgba(52,211,153,0.16)" stroke-width="1"/>
+    <text x="666" y="338" text-anchor="middle" font-weight="700" fill="#6ee7b7">✓ /^\s*$/gm</text>
+    <text x="480" y="360" fill="rgba(255,255,255,0.5)">Matches empty OR whitespace-only</text>
+    <text x="480" y="378" fill="rgba(255,255,255,0.5)">lines — the reliable choice</text>
+  </g>
+
+  <!-- Section 3: line endings -->
+  <rect x="32" y="424" width="836" height="38" rx="8" fill="rgba(16,185,129,0.14)" stroke="rgba(16,185,129,0.25)" stroke-width="1"/>
+  <text x="450" y="448" text-anchor="middle" font-size="15" font-weight="800" fill="#34d399">03 — CRLF vs LF Line Endings</text>
+
+  <rect x="32" y="468" width="836" height="110" rx="10" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="450" y="492" text-anchor="middle" font-size="10.5" fill="rgba(255,255,255,0.6)">Windows files use \r\n (CRLF); Unix/macOS files use \n (LF) alone. A "blank" line in a</text>
+  <text x="450" y="512" text-anchor="middle" font-size="10.5" fill="rgba(255,255,255,0.6)">Windows file may contain a stray \r character, which naive "check for empty string"</text>
+  <text x="450" y="532" text-anchor="middle" font-size="10.5" fill="rgba(255,255,255,0.6)">logic misses — but the \s (whitespace) character class catches \r correctly.</text>
+  <text x="450" y="556" text-anchor="middle" font-size="9.5" fill="rgba(52,211,153,0.8)">Fix: normalize line endings first, or always use \s-based matching, not literal empty-string checks</text>
+
+  <!-- Section 4: uses -->
+  <rect x="32" y="606" width="836" height="38" rx="8" fill="rgba(124,58,237,0.18)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+  <text x="450" y="630" text-anchor="middle" font-size="15" font-weight="800" fill="#a78bfa">04 — Common Uses</text>
+
+  <g font-size="9.5">
+    <rect x="32" y="650" width="268" height="80" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="48" y="672" font-weight="700" fill="rgba(167,139,250,0.85)">📄 Copy-pasted documents</text>
+    <text x="48" y="690" fill="rgba(255,255,255,0.5)">Word/PDF exports often add</text>
+    <text x="48" y="704" fill="rgba(255,255,255,0.5)">excess blank lines between paragraphs</text>
+
+    <rect x="314" y="650" width="268" height="80" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="330" y="672" font-weight="700" fill="rgba(103,232,249,0.85)">💻 Code &amp; config cleanup</text>
+    <text x="330" y="690" fill="rgba(255,255,255,0.5)">Removing excess blank lines</text>
+    <text x="330" y="704" fill="rgba(255,255,255,0.5)">from generated or merged files</text>
+
+    <rect x="596" y="650" width="272" height="80" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="612" y="672" font-weight="700" fill="rgba(52,211,153,0.85)">📊 CSV / data prep</text>
+    <text x="612" y="690" fill="rgba(255,255,255,0.5)">Blank rows can break CSV</text>
+    <text x="612" y="704" fill="rgba(255,255,255,0.5)">parsers or import scripts</text>
+  </g>
+
+  <!-- Section 5: mistakes -->
+  <rect x="32" y="746" width="836" height="38" rx="8" fill="rgba(239,68,68,0.12)" stroke="rgba(239,68,68,0.22)" stroke-width="1"/>
+  <text x="450" y="770" text-anchor="middle" font-size="15" font-weight="800" fill="rgba(239,68,68,0.85)">05 — Common Mistakes</text>
+
+  <g font-size="10">
+    <rect x="32" y="790" width="836" height="40" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(239,68,68,0.1)" stroke-width="1"/>
+    <text x="48" y="808" fill="rgba(239,68,68,0.7)">✗</text>
+    <text x="68" y="808" fill="rgba(255,255,255,0.6)">Only checking for literal empty strings, missing whitespace-only "invisible" blank lines</text>
+    <text x="68" y="824" fill="rgba(255,255,255,0.4)" font-size="8.5">A line with just spaces or tabs looks blank but isn't caught by /^$/.</text>
+
+    <rect x="32" y="834" width="836" height="40" rx="7" fill="rgba(255,255,255,0.02)" stroke="rgba(239,68,68,0.1)" stroke-width="1"/>
+    <text x="48" y="852" fill="rgba(239,68,68,0.7)">✗</text>
+    <text x="68" y="852" fill="rgba(255,255,255,0.6)">Removing ALL blank lines when you only wanted to collapse excessive gaps</text>
+    <text x="68" y="868" fill="rgba(255,255,255,0.4)" font-size="8.5">This destroys intentional paragraph breaks in prose — use collapse mode instead.</text>
+  </g>
+
+  <text x="450" y="908" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.28)">Free tool: toolnestai.net/text-tools/remove-empty-lines</text>
+  <text x="450" y="928" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">Remove or collapse blank lines — client-side, instant, CRLF/LF safe</text>
+</svg>

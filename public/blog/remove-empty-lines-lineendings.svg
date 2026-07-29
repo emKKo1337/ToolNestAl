@@ -1,0 +1,44 @@
+<svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gC" cx="50%" cy="40%" r="60%"><stop offset="0%" stop-color="#0e7490" stop-opacity="0.2"/><stop offset="100%" stop-color="#0e7490" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+  </defs>
+  <rect width="900" height="460" fill="url(#bg)"/>
+  <ellipse cx="450" cy="230" rx="520" ry="320" fill="url(#gC)"/>
+
+  <text x="450" y="36" text-anchor="middle" font-size="20" font-weight="900" fill="url(#aG)">The Hidden Line-Ending Trap: CRLF vs LF</text>
+  <text x="450" y="54" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.38)">Windows and Unix files encode line breaks differently — this can silently break "empty line" detection</text>
+
+  <!-- LF -->
+  <rect x="28" y="70" width="410" height="130" rx="10" fill="rgba(52,211,153,0.06)" stroke="rgba(52,211,153,0.2)" stroke-width="1"/>
+  <text x="233" y="94" text-anchor="middle" font-size="12" font-weight="700" fill="#6ee7b7">LF (Unix, macOS, Linux)</text>
+  <text x="44" y="120" font-family="monospace" font-size="11" fill="rgba(110,231,183,0.9)">"line1\nline2\n\nline3"</text>
+  <text x="44" y="144" font-size="9.5" fill="rgba(255,255,255,0.55)">A single \n (0x0A) character marks</text>
+  <text x="44" y="160" font-size="9.5" fill="rgba(255,255,255,0.55)">each line break. A blank line is simply</text>
+  <text x="44" y="176" font-size="9.5" fill="rgba(255,255,255,0.55)">two \n characters with nothing between.</text>
+
+  <!-- CRLF -->
+  <rect x="462" y="70" width="410" height="130" rx="10" fill="rgba(251,191,36,0.06)" stroke="rgba(251,191,36,0.2)" stroke-width="1"/>
+  <text x="667" y="94" text-anchor="middle" font-size="12" font-weight="700" fill="#fbbf24">CRLF (Windows)</text>
+  <text x="478" y="120" font-family="monospace" font-size="10.5" fill="rgba(253,224,71,0.9)">"line1\r\nline2\r\n\r\nline3"</text>
+  <text x="478" y="144" font-size="9.5" fill="rgba(255,255,255,0.55)">A two-character sequence \r\n</text>
+  <text x="478" y="160" font-size="9.5" fill="rgba(255,255,255,0.55)">(0x0D 0x0A) marks each line break —</text>
+  <text x="478" y="176" font-size="9.5" fill="rgba(255,255,255,0.55)">a "blank" line may contain a lone \r</text>
+
+  <!-- Problem -->
+  <rect x="28" y="212" width="844" height="112" rx="8" fill="rgba(239,68,68,0.06)" stroke="rgba(239,68,68,0.18)" stroke-width="1"/>
+  <text x="450" y="234" text-anchor="middle" font-size="10.5" font-weight="700" fill="rgba(239,68,68,0.85)">THE BUG THIS CAUSES</text>
+  <text x="450" y="256" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">A regex tuned only for /^\s*$/ (assuming \n-only line breaks) may fail on Windows-authored files</text>
+  <text x="450" y="274" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">where a "blank" line actually contains a trailing \r character before the newline — technically not</text>
+  <text x="450" y="292" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">an empty string, so it silently survives a naive empty-line filter.</text>
+  <text x="450" y="312" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.32)">This is why \s (whitespace class) — which includes \r — is safer than checking for literal empty strings</text>
+
+  <!-- Fix -->
+  <rect x="28" y="332" width="844" height="86" rx="8" fill="rgba(52,211,153,0.05)" stroke="rgba(52,211,153,0.16)" stroke-width="1"/>
+  <text x="450" y="354" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(110,231,183,0.85)">THE FIX</text>
+  <text x="450" y="376" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">Normalize line endings to \n first (text.replace(/\r\n/g, '\n')), then apply your blank-line logic —</text>
+  <text x="450" y="394" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">or use the \s character class, which matches \r, \t, and space uniformly across platforms.</text>
+
+  <text x="450" y="446" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">toolnestai.net/text-tools/remove-empty-lines</text>
+</svg>
