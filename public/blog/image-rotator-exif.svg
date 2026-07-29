@@ -1,0 +1,75 @@
+﻿<svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gC" cx="50%" cy="40%" r="60%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.2"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+  </defs>
+  <rect width="900" height="460" fill="url(#bg)"/>
+  <ellipse cx="450" cy="230" rx="520" ry="320" fill="url(#gC)"/>
+  <text x="450" y="36" text-anchor="middle" font-size="20" font-weight="900" fill="url(#aG)">EXIF Orientation: Why Photos Look Sideways</text>
+  <text x="450" y="54" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.38)">The metadata tag that tells software how to display an image — when it's ignored</text>
+  <!-- Problem -->
+  <rect x="28" y="70" width="835" height="100" rx="8" fill="rgba(239,68,68,0.06)" stroke="rgba(239,68,68,0.15)" stroke-width="1"/>
+  <text x="450" y="92" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(239,68,68,0.8)">THE PROBLEM — EXIF ORIENTATION TAG</text>
+  <text x="450" y="116" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">When you shoot a portrait photo by holding your phone upright, the camera sensor captures pixels in landscape orientation</text>
+  <text x="450" y="136" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">and stores a metadata flag (EXIF Orientation tag) saying "display this rotated 90°." Most modern apps read this and auto-rotate.</text>
+  <text x="450" y="156" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">Some older software, upload systems, and browsers ignore the tag and display the raw pixel data — showing the photo sideways.</text>
+  <!-- 8 orientations -->
+  <rect x="28" y="180" width="835" height="28" rx="6" fill="rgba(124,58,237,0.1)" stroke="rgba(124,58,237,0.18)" stroke-width="1"/>
+  <text x="450" y="198" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(167,139,250,0.8)">THE 8 EXIF ORIENTATION VALUES (1-8)</text>
+  <g text-anchor="middle" font-size="8.5">
+    <rect x="28" y="214" width="92" height="60" rx="6" fill="rgba(52,211,153,0.08)" stroke="rgba(52,211,153,0.15)" stroke-width="1"/>
+    <text x="74" y="234" fill="rgba(52,211,153,0.8)" font-weight="700">1 — Normal</text>
+    <text x="74" y="250" fill="rgba(255,255,255,0.45)">No rotation,</text>
+    <text x="74" y="264" fill="rgba(255,255,255,0.45)">no flip</text>
+
+    <rect x="130" y="214" width="92" height="60" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="176" y="234" fill="rgba(255,255,255,0.55)" font-weight="700">2 — H Flip</text>
+    <text x="176" y="250" fill="rgba(255,255,255,0.45)">Mirror</text>
+    <text x="176" y="264" fill="rgba(255,255,255,0.45)">horizontal</text>
+
+    <rect x="232" y="214" width="92" height="60" rx="6" fill="rgba(239,68,68,0.08)" stroke="rgba(239,68,68,0.15)" stroke-width="1"/>
+    <text x="278" y="234" fill="rgba(239,68,68,0.8)" font-weight="700">3 — 180°</text>
+    <text x="278" y="250" fill="rgba(255,255,255,0.45)">Upside down</text>
+    <text x="278" y="264" fill="rgba(255,255,255,0.45)">very rare</text>
+
+    <rect x="334" y="214" width="92" height="60" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="380" y="234" fill="rgba(255,255,255,0.55)" font-weight="700">4 — V Flip</text>
+    <text x="380" y="250" fill="rgba(255,255,255,0.45)">Mirror</text>
+    <text x="380" y="264" fill="rgba(255,255,255,0.45)">vertical</text>
+
+    <rect x="436" y="214" width="92" height="60" rx="6" fill="rgba(251,191,36,0.08)" stroke="rgba(251,191,36,0.15)" stroke-width="1"/>
+    <text x="482" y="234" fill="rgba(251,191,36,0.8)" font-weight="700">5 — 90°+HF</text>
+    <text x="482" y="250" fill="rgba(255,255,255,0.45)">Rotate then</text>
+    <text x="482" y="264" fill="rgba(255,255,255,0.45)">flip H</text>
+
+    <rect x="538" y="214" width="92" height="60" rx="6" fill="rgba(251,191,36,0.08)" stroke="rgba(251,191,36,0.15)" stroke-width="1"/>
+    <text x="584" y="234" fill="rgba(251,191,36,0.8)" font-weight="700">6 — 90° CW</text>
+    <text x="584" y="250" fill="rgba(255,255,255,0.45)">Portrait shot</text>
+    <text x="584" y="264" fill="rgba(255,255,255,0.45)">right-hand up</text>
+
+    <rect x="640" y="214" width="92" height="60" rx="6" fill="rgba(251,191,36,0.08)" stroke="rgba(251,191,36,0.15)" stroke-width="1"/>
+    <text x="686" y="234" fill="rgba(251,191,36,0.8)" font-weight="700">7 — 90°+VF</text>
+    <text x="686" y="250" fill="rgba(255,255,255,0.45)">Rotate then</text>
+    <text x="686" y="264" fill="rgba(255,255,255,0.45)">flip V</text>
+
+    <rect x="742" y="214" width="92" height="60" rx="6" fill="rgba(251,191,36,0.08)" stroke="rgba(251,191,36,0.15)" stroke-width="1"/>
+    <text x="788" y="234" fill="rgba(251,191,36,0.8)" font-weight="700">8 — 90° CCW</text>
+    <text x="788" y="250" fill="rgba(255,255,255,0.45)">Portrait shot</text>
+    <text x="788" y="264" fill="rgba(255,255,255,0.45)">left-hand up</text>
+  </g>
+  <!-- Fix -->
+  <rect x="28" y="286" width="400" height="100" rx="8" fill="rgba(52,211,153,0.06)" stroke="rgba(52,211,153,0.15)" stroke-width="1"/>
+  <text x="228" y="308" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(52,211,153,0.8)">THE FIX</text>
+  <text x="44" y="330" font-size="9.5" fill="rgba(255,255,255,0.55)">Apply the EXIF rotation physically — bake the</text>
+  <text x="44" y="348" font-size="9.5" fill="rgba(255,255,255,0.55)">correct orientation into pixel data — then strip</text>
+  <text x="44" y="366" font-size="9.5" fill="rgba(255,255,255,0.55)">the EXIF tag so apps can't mis-read it</text>
+  <!-- When this happens -->
+  <rect x="442" y="286" width="422" height="100" rx="8" fill="rgba(239,68,68,0.06)" stroke="rgba(239,68,68,0.12)" stroke-width="1"/>
+  <text x="653" y="308" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(239,68,68,0.75)">COMMON TRIGGERS</text>
+  <text x="458" y="330" font-size="9.5" fill="rgba(255,255,255,0.55)">Photo uploaded to older web app displays sideways</text>
+  <text x="458" y="348" font-size="9.5" fill="rgba(255,255,255,0.55)">Email attachment shows portrait photo as landscape</text>
+  <text x="458" y="366" font-size="9.5" fill="rgba(255,255,255,0.55)">Canvas API or server-side processor ignores EXIF</text>
+  <text x="450" y="420" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.35)">Orientation 6 and 8 (90° CW and 90° CCW) are by far the most common mishandled cases</text>
+  <text x="450" y="444" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">toolnestai.net/image-tools/image-rotator</text>
+</svg>

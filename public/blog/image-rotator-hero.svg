@@ -1,0 +1,76 @@
+﻿<svg viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <text x="600" y="52" text-anchor="middle" font-size="24" font-weight="900" fill="url(#aG)">Rotation Operations — What Actually Happens to Pixels</text>
+  <text x="600" y="74" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.38)">Lossless 90°/180°/270° steps vs lossy arbitrary-angle rotation and canvas expansion</text>
+  <!-- 3 columns -->
+  <g text-anchor="middle" font-size="9.5">
+    <!-- Lossless 90 -->
+    <rect x="40" y="96" width="340" height="470" rx="12" fill="rgba(52,211,153,0.05)" stroke="rgba(52,211,153,0.2)" stroke-width="1"/>
+    <text x="210" y="126" font-size="13" font-weight="700" fill="#6ee7b7">90° / 180° / 270° Steps</text>
+    <text x="210" y="146" font-size="10" fill="rgba(52,211,153,0.7)">Lossless — pixels just reordered</text>
+    <!-- Grid showing rotation -->
+    <g font-size="9">
+      <rect x="70" y="162" width="120" height="80" rx="4" fill="rgba(52,211,153,0.08)" stroke="rgba(52,211,153,0.15)" stroke-width="1"/>
+      <text x="130" y="200" fill="rgba(52,211,153,0.6)">Original</text>
+      <text x="130" y="218" fill="rgba(255,255,255,0.35)">W × H</text>
+      <text x="210" y="207" fill="rgba(255,255,255,0.3)">→</text>
+      <rect x="222" y="162" width="80" height="120" rx="4" fill="rgba(52,211,153,0.08)" stroke="rgba(52,211,153,0.15)" stroke-width="1"/>
+      <text x="262" y="214" fill="rgba(52,211,153,0.6)">90°</text>
+      <text x="262" y="232" fill="rgba(255,255,255,0.35)">H × W</text>
+    </g>
+    <text x="210" y="310" fill="rgba(255,255,255,0.5)">Every pixel maps to exactly</text>
+    <text x="210" y="330" fill="rgba(255,255,255,0.5)">one output pixel — no</text>
+    <text x="210" y="350" fill="rgba(255,255,255,0.5)">interpolation, no quality loss</text>
+    <text x="210" y="390" fill="rgba(255,255,255,0.5)">Canvas dimensions swap:</text>
+    <text x="210" y="410" fill="rgba(255,255,255,0.5)">1920×1080 → 1080×1920</text>
+    <text x="210" y="450" fill="rgba(255,255,255,0.5)">Safe to rotate JPEG by</text>
+    <text x="210" y="470" fill="rgba(255,255,255,0.5)">90° steps with no extra</text>
+    <text x="210" y="490" fill="rgba(255,255,255,0.5)">compression generation loss</text>
+    <text x="210" y="530" font-size="10" font-weight="700" fill="rgba(52,211,153,0.8)">No quality loss ever</text>
+
+    <!-- Arbitrary angle -->
+    <rect x="430" y="96" width="340" height="470" rx="12" fill="rgba(251,191,36,0.05)" stroke="rgba(251,191,36,0.2)" stroke-width="1"/>
+    <text x="600" y="126" font-size="13" font-weight="700" fill="#fbbf24">Free Angle (e.g. 15°)</text>
+    <text x="600" y="146" font-size="10" fill="rgba(251,191,36,0.7)">Requires interpolation — slight quality impact</text>
+    <!-- Rotated rect showing canvas expansion -->
+    <g transform="translate(600,240)">
+      <rect x="-100" y="-60" width="200" height="120" rx="4" fill="rgba(251,191,36,0.06)" stroke="rgba(251,191,36,0.3)" stroke-width="1" transform="rotate(15)"/>
+      <rect x="-124" y="-84" width="248" height="168" rx="4" fill="none" stroke="rgba(251,191,36,0.18)" stroke-width="1" stroke-dasharray="4,3"/>
+    </g>
+    <text x="600" y="340" fill="rgba(255,255,255,0.5)">Canvas expands to fit the</text>
+    <text x="600" y="360" fill="rgba(255,255,255,0.5)">rotated image corners</text>
+    <text x="600" y="400" fill="rgba(255,255,255,0.5)">Each output pixel is an</text>
+    <text x="600" y="420" fill="rgba(255,255,255,0.5)">interpolated blend of nearby</text>
+    <text x="600" y="440" fill="rgba(255,255,255,0.5)">source pixels (bilinear)</text>
+    <text x="600" y="480" fill="rgba(255,255,255,0.5)">Corners fill with transparent</text>
+    <text x="600" y="500" fill="rgba(255,255,255,0.5)">or white background</text>
+    <text x="600" y="530" font-size="10" font-weight="700" fill="rgba(251,191,36,0.8)">Minimal but real quality impact</text>
+
+    <!-- Flip -->
+    <rect x="820" y="96" width="340" height="470" rx="12" fill="rgba(103,232,249,0.05)" stroke="rgba(103,232,249,0.2)" stroke-width="1"/>
+    <text x="990" y="126" font-size="13" font-weight="700" fill="#67e8f9">Flip Operations</text>
+    <text x="990" y="146" font-size="10" fill="rgba(103,232,249,0.7)">Lossless — mirror pixel reordering</text>
+    <g font-size="9">
+      <rect x="850" y="162" width="280" height="80" rx="4" fill="rgba(103,232,249,0.06)" stroke="rgba(103,232,249,0.15)" stroke-width="1"/>
+      <text x="990" y="192" fill="rgba(103,232,249,0.75)">Horizontal Flip ⇆</text>
+      <text x="990" y="210" fill="rgba(255,255,255,0.4)">Mirror left-to-right</text>
+      <text x="990" y="226" fill="rgba(255,255,255,0.35)">pixel(x,y) → pixel(W-x,y)</text>
+      <rect x="850" y="252" width="280" height="80" rx="4" fill="rgba(103,232,249,0.06)" stroke="rgba(103,232,249,0.15)" stroke-width="1"/>
+      <text x="990" y="282" fill="rgba(103,232,249,0.75)">Vertical Flip ⇅</text>
+      <text x="990" y="300" fill="rgba(255,255,255,0.4)">Mirror top-to-bottom</text>
+      <text x="990" y="316" fill="rgba(255,255,255,0.35)">pixel(x,y) → pixel(x,H-y)</text>
+    </g>
+    <text x="990" y="380" fill="rgba(255,255,255,0.5)">Both are exact pixel</text>
+    <text x="990" y="400" fill="rgba(255,255,255,0.5)">remappings — no blending</text>
+    <text x="990" y="440" fill="rgba(255,255,255,0.5)">Canvas stays same size</text>
+    <text x="990" y="480" fill="rgba(255,255,255,0.5)">Works great for creating</text>
+    <text x="990" y="500" fill="rgba(255,255,255,0.5)">mirror image symmetry</text>
+    <text x="990" y="530" font-size="10" font-weight="700" fill="rgba(103,232,249,0.8)">No quality loss ever</text>
+  </g>
+  <text x="600" y="610" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.22)">toolnestai.net/image-tools/image-rotator</text>
+</svg>
