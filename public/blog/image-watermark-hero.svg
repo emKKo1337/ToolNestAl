@@ -1,0 +1,83 @@
+﻿<svg viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <text x="600" y="52" text-anchor="middle" font-size="24" font-weight="900" fill="url(#aG)">Watermark Strategies: Visible vs Invisible, Text vs Logo</text>
+  <text x="600" y="74" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.38)">Trade-offs in watermark placement, opacity, and deterrence vs user experience</text>
+  <!-- 4 columns -->
+  <g text-anchor="middle" font-size="9.5">
+    <rect x="30" y="96" width="270" height="490" rx="12" fill="rgba(167,139,250,0.05)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+    <text x="165" y="126" font-size="12" font-weight="700" fill="#a78bfa">Visible Text</text>
+    <text x="165" y="146" font-size="10" fill="rgba(167,139,250,0.7)">High deterrence</text>
+    <rect x="50" y="160" width="230" height="80" rx="6" fill="rgba(14,116,144,0.12)" stroke="rgba(14,116,144,0.2)" stroke-width="1"/>
+    <text x="165" y="185" fill="rgba(255,255,255,0.35)" font-size="11" font-style="italic">© Brand 2026</text>
+    <text x="165" y="210" fill="rgba(255,255,255,0.25)" font-size="9">opacity: 40%</text>
+    <text x="165" y="250" fill="rgba(255,255,255,0.5)">Most tamper-resistant</text>
+    <text x="165" y="270" fill="rgba(255,255,255,0.5)">difficult to crop out</text>
+    <text x="165" y="290" fill="rgba(255,255,255,0.5)">if placed centrally</text>
+    <text x="165" y="330" fill="rgba(255,255,255,0.5)">Works for: preview</text>
+    <text x="165" y="350" fill="rgba(255,255,255,0.5)">galleries, stock images,</text>
+    <text x="165" y="370" fill="rgba(255,255,255,0.5)">proof of work images</text>
+    <text x="165" y="410" fill="rgba(255,255,255,0.5)">Impact on UX: high</text>
+    <text x="165" y="430" fill="rgba(255,255,255,0.5)">viewer must accept</text>
+    <text x="165" y="450" fill="rgba(255,255,255,0.5)">watermark as part</text>
+    <text x="165" y="470" fill="rgba(255,255,255,0.5)">of the image</text>
+    <text x="165" y="510" font-size="10" font-weight="700" fill="rgba(167,139,250,0.8)">Max protection</text>
+
+    <rect x="320" y="96" width="270" height="490" rx="12" fill="rgba(103,232,249,0.05)" stroke="rgba(103,232,249,0.2)" stroke-width="1"/>
+    <text x="455" y="126" font-size="12" font-weight="700" fill="#67e8f9">Logo / Image</text>
+    <text x="455" y="146" font-size="10" fill="rgba(103,232,249,0.7)">Brand-focused</text>
+    <rect x="340" y="160" width="230" height="80" rx="6" fill="rgba(14,116,144,0.12)" stroke="rgba(14,116,144,0.2)" stroke-width="1"/>
+    <text x="455" y="190" fill="rgba(167,139,250,0.5)" font-size="24" font-weight="700">◈</text>
+    <text x="455" y="225" fill="rgba(255,255,255,0.3)" font-size="9">logo, 30% opacity</text>
+    <text x="455" y="270" fill="rgba(255,255,255,0.5)">More visually polished</text>
+    <text x="455" y="290" fill="rgba(255,255,255,0.5)">than text when using</text>
+    <text x="455" y="310" fill="rgba(255,255,255,0.5)">a quality logo</text>
+    <text x="455" y="350" fill="rgba(255,255,255,0.5)">Works for: portfolio,</text>
+    <text x="455" y="370" fill="rgba(255,255,255,0.5)">product photos,</text>
+    <text x="455" y="390" fill="rgba(255,255,255,0.5)">photography showcase</text>
+    <text x="455" y="430" fill="rgba(255,255,255,0.5)">Logo must be PNG</text>
+    <text x="455" y="450" fill="rgba(255,255,255,0.5)">with transparency</text>
+    <text x="455" y="470" fill="rgba(255,255,255,0.5)">for clean compositing</text>
+    <text x="455" y="510" font-size="10" font-weight="700" fill="rgba(103,232,249,0.8)">Brand-forward</text>
+
+    <rect x="610" y="96" width="270" height="490" rx="12" fill="rgba(52,211,153,0.05)" stroke="rgba(52,211,153,0.2)" stroke-width="1"/>
+    <text x="745" y="126" font-size="12" font-weight="700" fill="#6ee7b7">Corner Placement</text>
+    <text x="745" y="146" font-size="10" fill="rgba(52,211,153,0.7)">Unobtrusive</text>
+    <rect x="630" y="160" width="230" height="80" rx="6" fill="rgba(14,116,144,0.12)" stroke="rgba(14,116,144,0.2)" stroke-width="1"/>
+    <text x="845" y="230" fill="rgba(255,255,255,0.3)" font-size="9" font-style="italic">© Brand</text>
+    <text x="745" y="270" fill="rgba(255,255,255,0.5)">Least intrusive</text>
+    <text x="745" y="290" fill="rgba(255,255,255,0.5)">placement — image</text>
+    <text x="745" y="310" fill="rgba(255,255,255,0.5)">content stays clear</text>
+    <text x="745" y="350" fill="rgba(255,255,255,0.5)">Easily cropped out</text>
+    <text x="745" y="370" fill="rgba(255,255,255,0.5)">by bad actors — low</text>
+    <text x="745" y="390" fill="rgba(255,255,255,0.5)">deterrence value</text>
+    <text x="745" y="430" fill="rgba(255,255,255,0.5)">Works for: portfolio</text>
+    <text x="745" y="450" fill="rgba(255,255,255,0.5)">where you trust the</text>
+    <text x="745" y="470" fill="rgba(255,255,255,0.5)">audience to credit</text>
+    <text x="745" y="510" font-size="10" font-weight="700" fill="rgba(52,211,153,0.8)">Best UX</text>
+
+    <rect x="900" y="96" width="270" height="490" rx="12" fill="rgba(251,191,36,0.05)" stroke="rgba(251,191,36,0.2)" stroke-width="1"/>
+    <text x="1035" y="126" font-size="12" font-weight="700" fill="#fbbf24">Tiled / Diagonal</text>
+    <text x="1035" y="146" font-size="10" fill="rgba(251,191,36,0.7)">Preview protection</text>
+    <rect x="920" y="160" width="230" height="80" rx="6" fill="rgba(14,116,144,0.12)" stroke="rgba(14,116,144,0.2)" stroke-width="1"/>
+    <g fill="rgba(255,255,255,0.12)" font-size="8" font-style="italic">
+      <text x="940" y="185" transform="rotate(-30,940,185)">© Brand</text>
+      <text x="990" y="195" transform="rotate(-30,990,195)">© Brand</text>
+      <text x="945" y="225" transform="rotate(-30,945,225)">© Brand</text>
+      <text x="1000" y="235" transform="rotate(-30,1000,235)">© Brand</text>
+    </g>
+    <text x="1035" y="270" fill="rgba(255,255,255,0.5)">Hardest to remove</text>
+    <text x="1035" y="290" fill="rgba(255,255,255,0.5)">no clean crop</text>
+    <text x="1035" y="310" fill="rgba(255,255,255,0.5)">strategy possible</text>
+    <text x="1035" y="350" fill="rgba(255,255,255,0.5)">Used by stock photo</text>
+    <text x="1035" y="370" fill="rgba(255,255,255,0.5)">sites like Getty,</text>
+    <text x="1035" y="390" fill="rgba(255,255,255,0.5)">Shutterstock, Adobe</text>
+    <text x="1035" y="430" fill="rgba(255,255,255,0.5)">Most intrusive to</text>
+    <text x="1035" y="450" fill="rgba(255,255,255,0.5)">viewer experience</text>
+    <text x="1035" y="510" font-size="10" font-weight="700" fill="rgba(251,191,36,0.8)">Max deterrence</text>
+  </g>
+  <text x="600" y="640" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.22)">toolnestai.net/image-tools/image-watermark</text>
+</svg>

@@ -1,0 +1,85 @@
+﻿<svg viewBox="0 0 900 1200" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="30%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gT" cx="50%" cy="10%" r="60%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.35"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gB" cx="50%" cy="90%" r="60%"><stop offset="0%" stop-color="#0e7490" stop-opacity="0.2"/><stop offset="100%" stop-color="#0e7490" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+  </defs>
+  <rect width="900" height="1200" fill="url(#bg)"/>
+  <ellipse cx="450" cy="200" rx="700" ry="400" fill="url(#gT)"/>
+  <ellipse cx="450" cy="1000" rx="700" ry="400" fill="url(#gB)"/>
+  <text x="450" y="52" text-anchor="middle" font-size="26" font-weight="900" fill="url(#aG)">Image Watermark Complete Guide</text>
+  <text x="450" y="76" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.38)">Placement, opacity, text vs logo, and canvas compositing</text>
+  <text x="450" y="96" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.22)">toolnestai.net/image-tools/image-watermark</text>
+
+  <rect x="32" y="112" width="836" height="38" rx="8" fill="rgba(124,58,237,0.18)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+  <text x="450" y="136" text-anchor="middle" font-size="15" font-weight="800" fill="#a78bfa">01 — Placement Strategy</text>
+  <g font-size="9.5" text-anchor="middle">
+    <rect x="32" y="156" width="192" height="80" rx="8" fill="rgba(52,211,153,0.06)" stroke="rgba(52,211,153,0.18)" stroke-width="1"/>
+    <text x="128" y="178" font-weight="700" fill="#6ee7b7">Bottom-right corner</text>
+    <text x="128" y="198" fill="rgba(255,255,255,0.5)">Unobtrusive, crediting</text>
+    <text x="128" y="218" fill="rgba(255,255,255,0.5)">Portfolio, social</text>
+    <rect x="236" y="156" width="192" height="80" rx="8" fill="rgba(167,139,250,0.06)" stroke="rgba(167,139,250,0.18)" stroke-width="1"/>
+    <text x="332" y="178" font-weight="700" fill="#a78bfa">Center (large, faded)</text>
+    <text x="332" y="198" fill="rgba(255,255,255,0.5)">Proof / preview images</text>
+    <text x="332" y="218" fill="rgba(255,255,255,0.5)">Hard to crop out</text>
+    <rect x="440" y="156" width="192" height="80" rx="8" fill="rgba(251,191,36,0.06)" stroke="rgba(251,191,36,0.18)" stroke-width="1"/>
+    <text x="536" y="178" font-weight="700" fill="#fbbf24">Diagonal tile</text>
+    <text x="536" y="198" fill="rgba(255,255,255,0.5)">Stock photo protection</text>
+    <text x="536" y="218" fill="rgba(255,255,255,0.5)">No clean crop possible</text>
+    <rect x="644" y="156" width="224" height="80" rx="8" fill="rgba(103,232,249,0.06)" stroke="rgba(103,232,249,0.18)" stroke-width="1"/>
+    <text x="756" y="178" font-weight="700" fill="#67e8f9">Any of 9 positions</text>
+    <text x="756" y="198" fill="rgba(255,255,255,0.5)">TL, TC, TR, ML, MC,</text>
+    <text x="756" y="218" fill="rgba(255,255,255,0.5)">MR, BL, BC, BR</text>
+  </g>
+
+  <rect x="32" y="250" width="836" height="38" rx="8" fill="rgba(14,116,144,0.18)" stroke="rgba(14,116,144,0.3)" stroke-width="1"/>
+  <text x="450" y="274" text-anchor="middle" font-size="15" font-weight="800" fill="#67e8f9">02 — Opacity Sweet Spot</text>
+  <g font-size="9.5">
+    <rect x="32" y="294" width="836" height="80" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="450" y="316" text-anchor="middle" fill="rgba(255,255,255,0.5)">Portfolio/showcase: 15-25% | Social media: 25-40% | Proofs: 40-60% | Stock protection: 50-70%</text>
+    <text x="450" y="336" text-anchor="middle" fill="rgba(255,255,255,0.5)">Always test at actual display size — what looks balanced at 100% may vanish at thumbnail scale</text>
+    <text x="450" y="356" text-anchor="middle" fill="rgba(255,255,255,0.35)" font-size="9">Too low (under 15%) = invisible. Too high (over 75%) = image is ruined. 30-40% is the general sweet spot.</text>
+  </g>
+
+  <rect x="32" y="388" width="836" height="38" rx="8" fill="rgba(239,68,68,0.12)" stroke="rgba(239,68,68,0.22)" stroke-width="1"/>
+  <text x="450" y="412" text-anchor="middle" font-size="15" font-weight="800" fill="rgba(239,68,68,0.85)">03 — Canvas API Compositing</text>
+  <g font-size="9">
+    <rect x="32" y="432" width="836" height="130" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="48" y="452" font-weight="700" fill="rgba(255,255,255,0.4)">JavaScript (Canvas API) — text watermark</text>
+    <text x="48" y="470" fill="#a78bfa">const</text><text x="80" y="470" fill="rgba(255,255,255,0.65)"> ctx = canvas.getContext(</text><text x="236" y="470" fill="#6ee7b7">'2d'</text><text x="262" y="470" fill="rgba(255,255,255,0.65)">);</text>
+    <text x="48" y="488" fill="rgba(255,255,255,0.65)">ctx.drawImage(img, 0, 0);</text>
+    <text x="48" y="506" fill="rgba(255,255,255,0.65)">ctx.globalAlpha = 0.35;</text>
+    <text x="48" y="524" fill="rgba(255,255,255,0.65)">ctx.font = </text><text x="110" y="524" fill="#6ee7b7">'24px Arial'</text><text x="184" y="524" fill="rgba(255,255,255,0.65)">;</text>
+    <text x="48" y="542" fill="rgba(255,255,255,0.65)">ctx.fillStyle = </text><text x="136" y="542" fill="#6ee7b7">'white'</text><text x="184" y="542" fill="rgba(255,255,255,0.65)">;</text>
+    <text x="48" y="558" fill="rgba(255,255,255,0.65)">ctx.fillText(</text><text x="114" y="558" fill="#6ee7b7">'© MyBrand 2026'</text><text x="234" y="558" fill="rgba(255,255,255,0.65)">, x, y);</text>
+  </g>
+
+  <rect x="32" y="576" width="836" height="38" rx="8" fill="rgba(124,58,237,0.18)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+  <text x="450" y="600" text-anchor="middle" font-size="15" font-weight="800" fill="#a78bfa">04 — Logo Watermark Tips</text>
+  <g font-size="9.5">
+    <rect x="32" y="620" width="836" height="80" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="48" y="642" fill="rgba(255,255,255,0.5)">Use PNG with transparent background — JPEG logos leave a white box where the watermark sits</text>
+    <text x="48" y="662" fill="rgba(255,255,255,0.5)">Use white or light version of logo on darker images, dark version on light images</text>
+    <text x="48" y="682" fill="rgba(255,255,255,0.5)">Consider a "monochrome" version of your logo designed specifically for watermarking</text>
+  </g>
+
+  <rect x="32" y="714" width="836" height="38" rx="8" fill="rgba(16,185,129,0.14)" stroke="rgba(16,185,129,0.25)" stroke-width="1"/>
+  <text x="450" y="738" text-anchor="middle" font-size="15" font-weight="800" fill="#34d399">05 — What Watermarks Cannot Do</text>
+  <g text-anchor="middle" font-size="9.5">
+    <rect x="32" y="758" width="400" height="90" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="232" y="780" font-weight="700" fill="rgba(239,68,68,0.75)">Not a legal protection</text>
+    <text x="232" y="800" fill="rgba(255,255,255,0.5)">A watermark marks ownership but does not</text>
+    <text x="232" y="820" fill="rgba(255,255,255,0.5)">constitute copyright protection by itself</text>
+    <text x="232" y="838" fill="rgba(255,255,255,0.35)">Register copyright for real legal protection</text>
+
+    <rect x="468" y="758" width="400" height="90" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="668" y="780" font-weight="700" fill="rgba(251,191,36,0.75)">AI inpainting can remove them</text>
+    <text x="668" y="800" fill="rgba(255,255,255,0.5)">AI tools can reconstruct image content</text>
+    <text x="668" y="820" fill="rgba(255,255,255,0.5)">beneath a watermark with increasing quality</text>
+    <text x="668" y="838" fill="rgba(255,255,255,0.35)">No watermark is truly "removable-proof"</text>
+  </g>
+
+  <text x="450" y="960" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.28)">Free tool: toolnestai.net/image-tools/image-watermark</text>
+  <text x="450" y="980" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">Text or logo, 9 positions, opacity control — private, no upload</text>
+</svg>
