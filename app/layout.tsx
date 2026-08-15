@@ -168,6 +168,13 @@ export default function RootLayout({
       {process.env.NODE_ENV === "production" && (
         <GoogleAnalytics gaId="G-Z9FDH9D6Q4" />
       )}
+      <Script
+        id="google-adsense"
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7701645766589173"
+        crossOrigin="anonymous"
+        strategy="afterInteractive"
+      />
       {process.env.NODE_ENV === "production" && (
         <Script
           id="microsoft-clarity"
