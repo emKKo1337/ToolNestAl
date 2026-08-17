@@ -1,0 +1,25 @@
+﻿<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="30%" cy="50%" r="80%"><stop offset="0%" stop-color="#0f0825"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="40" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <ellipse cx="250" cy="315" rx="350" ry="250" fill="#5b21b6" opacity="0.12" filter="url(#glow)"/>
+  <text x="72" y="72" font-family="sans-serif" font-size="18" font-weight="800" fill="url(#aG)">ToolNest AI</text>
+  <text x="72" y="96" font-family="sans-serif" font-size="13" fill="#4d4354">toolnestai.net/pdf-tools/split-pdf</text>
+  <text x="72" y="200" font-family="sans-serif" font-size="56" font-weight="900" fill="#e2e2e2">Split PDF</text>
+  <text x="72" y="260" font-family="sans-serif" font-size="22" fill="#9b8da8">Divide PDF into parts by range, interval, or page</text>
+  <text x="72" y="300" font-family="sans-serif" font-size="18" fill="#7a6d84">Free, browser-side — no upload required</text>
+  <!-- One big PDF splits into 3 -->
+  <rect x="750" y="180" width="140" height="200" rx="10" fill="#1a1040" stroke="#7c3aed" stroke-width="2"/>
+  <text x="820" y="285" font-family="sans-serif" font-size="13" fill="#7a6d84" text-anchor="middle">document.pdf</text>
+  <text x="820" y="305" font-family="sans-serif" font-size="10" fill="#4d4354" text-anchor="middle">22 pages</text>
+  <text x="950" y="285" font-family="sans-serif" font-size="24" fill="#a78bfa">→</text>
+  <rect x="980" y="140" width="90" height="120" rx="8" fill="#1a1040" stroke="#a78bfa" stroke-width="1"/>
+  <text x="1025" y="205" font-family="sans-serif" font-size="9" fill="#a78bfa" text-anchor="middle">part-01</text>
+  <rect x="980" y="275" width="90" height="120" rx="8" fill="#1a1040" stroke="#a78bfa" stroke-width="1"/>
+  <text x="1025" y="340" font-family="sans-serif" font-size="9" fill="#a78bfa" text-anchor="middle">part-02</text>
+  <rect x="1080" y="205" width="90" height="120" rx="8" fill="#1a1040" stroke="#a78bfa" stroke-width="1"/>
+  <text x="1125" y="270" font-family="sans-serif" font-size="9" fill="#a78bfa" text-anchor="middle">part-03</text>
+</svg>
