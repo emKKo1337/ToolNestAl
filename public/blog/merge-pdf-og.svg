@@ -1,0 +1,36 @@
+﻿<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="30%" cy="50%" r="80%">
+      <stop offset="0%" stop-color="#0f0825"/>
+      <stop offset="100%" stop-color="#05030d"/>
+    </radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="40" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <ellipse cx="250" cy="315" rx="350" ry="250" fill="#5b21b6" opacity="0.12" filter="url(#glow)"/>
+  <text x="72" y="72" font-family="sans-serif" font-size="18" font-weight="800" fill="url(#aG)">ToolNest AI</text>
+  <text x="72" y="96" font-family="sans-serif" font-size="13" fill="#4d4354">toolnestai.net/pdf-tools/merge-pdf</text>
+  <text x="72" y="200" font-family="sans-serif" font-size="56" font-weight="900" fill="#e2e2e2">Merge PDF</text>
+  <text x="72" y="260" font-family="sans-serif" font-size="22" fill="#9b8da8">Combine multiple PDFs into one — drag to reorder</text>
+  <text x="72" y="300" font-family="sans-serif" font-size="18" fill="#7a6d84">Free online, browser-side — no upload, no limits</text>
+  <!-- Visual: 3 PDFs merging into 1 -->
+  <rect x="700" y="140" width="110" height="140" rx="8" fill="#1a1040" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="755" y="195" font-family="sans-serif" font-size="10" fill="#7a6d84" text-anchor="middle">ch01.pdf</text>
+  <text x="755" y="210" font-family="sans-serif" font-size="9" fill="#4d4354" text-anchor="middle">14 pages</text>
+  <rect x="830" y="140" width="110" height="140" rx="8" fill="#1a1040" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="885" y="195" font-family="sans-serif" font-size="10" fill="#7a6d84" text-anchor="middle">ch02.pdf</text>
+  <text x="885" y="210" font-family="sans-serif" font-size="9" fill="#4d4354" text-anchor="middle">22 pages</text>
+  <rect x="960" y="140" width="110" height="140" rx="8" fill="#1a1040" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="1015" y="195" font-family="sans-serif" font-size="10" fill="#7a6d84" text-anchor="middle">ch03.pdf</text>
+  <text x="1015" y="210" font-family="sans-serif" font-size="9" fill="#4d4354" text-anchor="middle">18 pages</text>
+  <!-- Arrow down -->
+  <text x="860" y="315" font-family="sans-serif" font-size="28" fill="#a78bfa" text-anchor="middle">↓</text>
+  <!-- Merged -->
+  <rect x="780" y="340" width="160" height="200" rx="10" fill="#1a1040" stroke="#a78bfa" stroke-width="2"/>
+  <text x="860" y="430" font-family="sans-serif" font-size="12" fill="#a78bfa" text-anchor="middle">merged.pdf</text>
+  <text x="860" y="448" font-family="sans-serif" font-size="10" fill="#7a6d84" text-anchor="middle">54 pages</text>
+</svg>

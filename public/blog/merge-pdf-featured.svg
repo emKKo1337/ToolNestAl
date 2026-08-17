@@ -1,0 +1,75 @@
+﻿<svg viewBox="0 0 900 540" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Merge PDF tool interface">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#0f0825"/>
+      <stop offset="100%" stop-color="#05030d"/>
+    </radialGradient>
+    <linearGradient id="lapG" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a1040"/>
+      <stop offset="100%" stop-color="#0d0824"/>
+    </linearGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="14" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="900" height="540" fill="url(#bg)"/>
+  <ellipse cx="450" cy="270" rx="280" ry="150" fill="#5b21b6" opacity="0.07" filter="url(#glow)"/>
+  <!-- Laptop -->
+  <rect x="120" y="48" width="660" height="410" rx="14" fill="url(#lapG)" stroke="#2a1f4a" stroke-width="1.5"/>
+  <rect x="120" y="48" width="660" height="38" rx="14" fill="#1a1040"/>
+  <rect x="120" y="72" width="660" height="14" fill="#1a1040"/>
+  <circle cx="655" cy="67" r="7" fill="#ff5f57"/>
+  <circle cx="675" cy="67" r="7" fill="#febc2e"/>
+  <circle cx="695" cy="67" r="7" fill="#28c840"/>
+  <rect x="200" y="56" width="440" height="20" rx="10" fill="#110c2a"/>
+  <text x="420" y="70" font-family="monospace" font-size="9" fill="#4d4354" text-anchor="middle">toolnestai.net/pdf-tools/merge-pdf</text>
+  <rect x="136" y="94" width="628" height="352" rx="6" fill="#0c0920"/>
+  <text x="450" y="118" font-family="sans-serif" font-size="13" font-weight="700" fill="#e2e2e2" text-anchor="middle">Merge PDF</text>
+  <text x="450" y="134" font-family="sans-serif" font-size="8" fill="#7a6d84" text-anchor="middle">Drag to reorder, then merge into a single PDF</text>
+
+  <!-- 3 PDF file rows -->
+  <!-- File 1 -->
+  <rect x="148" y="148" width="580" height="52" rx="8" fill="#1a1040" stroke="#2a1f4a" stroke-width="1"/>
+  <rect x="164" y="162" width="30" height="24" rx="4" fill="#7c3aed" opacity="0.2"/>
+  <text x="179" y="178" font-family="sans-serif" font-size="9" fill="#a78bfa" text-anchor="middle">PDF</text>
+  <text x="204" y="172" font-family="sans-serif" font-size="9" font-weight="700" fill="#cfc2d6">chapter-01-introduction.pdf</text>
+  <text x="204" y="186" font-family="sans-serif" font-size="7.5" fill="#4d4354">14 pages · 2.1 MB</text>
+  <text x="700" y="175" font-family="sans-serif" font-size="20" fill="#3d3347" text-anchor="middle">⋮⋮</text>
+  <rect x="714" y="160" width="14" height="14" rx="3" fill="#ff453a" opacity="0.2"/>
+  <text x="721" y="171" font-family="sans-serif" font-size="9" fill="#ff453a" text-anchor="middle">✕</text>
+
+  <!-- File 2 -->
+  <rect x="148" y="210" width="580" height="52" rx="8" fill="#1a1040" stroke="#2a1f4a" stroke-width="1"/>
+  <rect x="164" y="224" width="30" height="24" rx="4" fill="#7c3aed" opacity="0.2"/>
+  <text x="179" y="240" font-family="sans-serif" font-size="9" fill="#a78bfa" text-anchor="middle">PDF</text>
+  <text x="204" y="234" font-family="sans-serif" font-size="9" font-weight="700" fill="#cfc2d6">chapter-02-methodology.pdf</text>
+  <text x="204" y="248" font-family="sans-serif" font-size="7.5" fill="#4d4354">22 pages · 4.3 MB</text>
+  <text x="700" y="237" font-family="sans-serif" font-size="20" fill="#3d3347" text-anchor="middle">⋮⋮</text>
+  <rect x="714" y="222" width="14" height="14" rx="3" fill="#ff453a" opacity="0.2"/>
+  <text x="721" y="233" font-family="sans-serif" font-size="9" fill="#ff453a" text-anchor="middle">✕</text>
+
+  <!-- File 3 -->
+  <rect x="148" y="272" width="580" height="52" rx="8" fill="#1a1040" stroke="#2a1f4a" stroke-width="1"/>
+  <rect x="164" y="286" width="30" height="24" rx="4" fill="#7c3aed" opacity="0.2"/>
+  <text x="179" y="302" font-family="sans-serif" font-size="9" fill="#a78bfa" text-anchor="middle">PDF</text>
+  <text x="204" y="296" font-family="sans-serif" font-size="9" font-weight="700" fill="#cfc2d6">chapter-03-results.pdf</text>
+  <text x="204" y="310" font-family="sans-serif" font-size="7.5" fill="#4d4354">18 pages · 3.7 MB</text>
+  <text x="700" y="299" font-family="sans-serif" font-size="20" fill="#3d3347" text-anchor="middle">⋮⋮</text>
+  <rect x="714" y="284" width="14" height="14" rx="3" fill="#ff453a" opacity="0.2"/>
+  <text x="721" y="295" font-family="sans-serif" font-size="9" fill="#ff453a" text-anchor="middle">✕</text>
+
+  <!-- Add more / total -->
+  <rect x="148" y="338" width="220" height="34" rx="8" fill="#110c2a" stroke="#2a1f4a" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="258" y="360" font-family="sans-serif" font-size="9" fill="#4d4354" text-anchor="middle">+ Add more PDFs</text>
+  <text x="560" y="358" font-family="sans-serif" font-size="8" fill="#4d4354">3 files · 54 pages · 10.1 MB</text>
+
+  <!-- Merge button -->
+  <rect x="148" y="386" width="200" height="36" rx="10" fill="#7c3aed"/>
+  <text x="248" y="409" font-family="sans-serif" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">Merge PDFs</text>
+
+  <!-- Base -->
+  <rect x="340" y="458" width="220" height="10" rx="5" fill="#1a1040"/>
+  <rect x="280" y="466" width="340" height="8" rx="4" fill="#140e34"/>
+</svg>
