@@ -1,0 +1,17 @@
+﻿<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="30%" cy="50%" r="80%"><stop offset="0%" stop-color="#0f0825"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="40" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <ellipse cx="250" cy="315" rx="350" ry="250" fill="#5b21b6" opacity="0.12" filter="url(#glow)"/>
+  <text x="72" y="72" font-family="sans-serif" font-size="18" font-weight="800" fill="url(#aG)">ToolNest AI</text>
+  <text x="72" y="200" font-family="sans-serif" font-size="56" font-weight="900" fill="#e2e2e2">Image to PDF</text>
+  <text x="72" y="260" font-family="sans-serif" font-size="22" fill="#9b8da8">Combine JPG, PNG, WebP into a single PDF</text>
+  <text x="72" y="300" font-family="sans-serif" font-size="18" fill="#7a6d84">Drag to reorder, choose page size, set margins</text>
+  <rect x="72" y="340" width="130" height="32" rx="16" fill="#5b21b6" opacity="0.3"/>
+  <text x="137" y="361" font-family="sans-serif" font-size="13" font-weight="700" fill="#a78bfa" text-anchor="middle">JPG / PNG / WebP</text>
+  <rect x="216" y="340" width="120" height="32" rx="16" fill="#374151" opacity="0.6"/>
+  <text x="276" y="361" font-family="sans-serif" font-size="13" font-weight="700" fill="#9ca3af" text-anchor="middle">A4 / Auto size</text>
+</svg>
