@@ -1,0 +1,51 @@
+﻿<svg viewBox="0 0 900 540" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="70%"><stop offset="0%" stop-color="#0f0825"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <linearGradient id="lapG" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#1a1040"/><stop offset="100%" stop-color="#0d0824"/></linearGradient>
+    <linearGradient id="ppG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#dc2626"/><stop offset="100%" stop-color="#b91c1c"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="14" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="900" height="540" fill="url(#bg)"/>
+  <ellipse cx="450" cy="270" rx="260" ry="140" fill="#dc2626" opacity="0.06" filter="url(#glow)"/>
+  <rect x="120" y="48" width="660" height="410" rx="14" fill="url(#lapG)" stroke="#2a1f4a" stroke-width="1.5"/>
+  <rect x="120" y="48" width="660" height="38" rx="14" fill="#1a1040"/>
+  <rect x="120" y="72" width="660" height="14" fill="#1a1040"/>
+  <circle cx="655" cy="67" r="7" fill="#ff5f57"/><circle cx="675" cy="67" r="7" fill="#febc2e"/><circle cx="695" cy="67" r="7" fill="#28c840"/>
+  <text x="420" y="70" font-family="monospace" font-size="9" fill="#4d4354" text-anchor="middle">toolnestai.net/pdf-tools/pdf-to-powerpoint</text>
+  <rect x="136" y="94" width="628" height="352" rx="6" fill="#0c0920"/>
+  <text x="450" y="118" font-family="sans-serif" font-size="13" font-weight="700" fill="#e2e2e2" text-anchor="middle">PDF to PowerPoint</text>
+  <text x="450" y="134" font-family="sans-serif" font-size="8" fill="#7a6d84" text-anchor="middle">Each PDF page becomes an editable PowerPoint slide</text>
+  <!-- Page thumbnails → Slides -->
+  <rect x="148" y="152" width="280" height="220" rx="8" fill="#110c2a" stroke="#2a1f4a" stroke-width="1"/>
+  <text x="288" y="170" font-family="sans-serif" font-size="8" font-weight="700" fill="#4d4354" text-anchor="middle">PDF PAGES</text>
+  <rect x="160" y="178" width="120" height="80" rx="4" fill="#1a1040" stroke="#2a1f4a" stroke-width="1"/>
+  <rect x="166" y="184" width="108" height="68" rx="2" fill="#0c0920"/>
+  <rect x="170" y="190" width="100" height="8" rx="2" fill="#2a1f4a"/>
+  <rect x="170" y="202" width="72" height="5" rx="1" fill="#2a1f4a"/>
+  <text x="220" y="268" font-family="sans-serif" font-size="7.5" fill="#4d4354" text-anchor="middle">Page 1</text>
+  <rect x="296" y="178" width="120" height="80" rx="4" fill="#1a1040" stroke="#2a1f4a" stroke-width="1"/>
+  <text x="356" y="268" font-family="sans-serif" font-size="7.5" fill="#4d4354" text-anchor="middle">Page 2</text>
+  <rect x="160" y="286" width="120" height="80" rx="4" fill="#1a1040" stroke="#2a1f4a" stroke-width="1"/>
+  <text x="220" y="374" font-family="sans-serif" font-size="7.5" fill="#4d4354" text-anchor="middle">Page 3</text>
+  <rect x="296" y="286" width="120" height="80" rx="4" fill="#1a1040" stroke="#2a1f4a" stroke-width="1"/>
+  <text x="356" y="374" font-family="sans-serif" font-size="7.5" fill="#4d4354" text-anchor="middle">Page 4</text>
+  <!-- Arrow -->
+  <text x="447" y="270" font-family="sans-serif" font-size="22" fill="#dc2626" text-anchor="middle">→</text>
+  <!-- PowerPoint output -->
+  <rect x="480" y="152" width="276" height="220" rx="8" fill="#110c2a" stroke="#dc2626" stroke-width="1.5"/>
+  <rect x="490" y="162" width="256" height="20" rx="3" fill="url(#ppG)"/>
+  <text x="618" y="176" font-family="sans-serif" font-size="8" font-weight="700" fill="#fff" text-anchor="middle">▶ presentation.pptx</text>
+  <!-- Slide thumbnail -->
+  <rect x="490" y="190" width="256" height="144" rx="4" fill="#1a1040"/>
+  <rect x="494" y="194" width="248" height="136" rx="2" fill="#15161a"/>
+  <rect x="502" y="200" width="200" height="14" rx="3" fill="#dc2626" opacity="0.4"/>
+  <rect x="502" y="220" width="160" height="7" rx="2" fill="#2a1f4a"/>
+  <rect x="502" y="232" width="140" height="6" rx="2" fill="#2a1f4a"/>
+  <rect x="502" y="248" width="180" height="6" rx="2" fill="#2a1f4a"/>
+  <text x="618" y="346" font-family="sans-serif" font-size="7.5" fill="#f87171" text-anchor="middle">Slide 1 of 4</text>
+  <text x="618" y="360" font-family="sans-serif" font-size="7.5" fill="#6b7280" text-anchor="middle">presentation.pptx · 1.2 MB</text>
+  <!-- Convert button -->
+  <rect x="148" y="390" width="622" height="40" rx="10" fill="url(#ppG)"/>
+  <text x="459" y="414" font-family="sans-serif" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">Convert PDF to PowerPoint (.pptx)</text>
+  <rect x="340" y="458" width="220" height="10" rx="5" fill="#1a1040"/>
+</svg>

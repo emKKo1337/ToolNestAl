@@ -1,0 +1,48 @@
+﻿<svg viewBox="0 0 900 540" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="70%"><stop offset="0%" stop-color="#0f0825"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <linearGradient id="lapG" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#1a1040"/><stop offset="100%" stop-color="#0d0824"/></linearGradient>
+    <linearGradient id="wordG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#2563eb"/><stop offset="100%" stop-color="#1d4ed8"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="14" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="900" height="540" fill="url(#bg)"/>
+  <ellipse cx="450" cy="270" rx="260" ry="140" fill="#2563eb" opacity="0.06" filter="url(#glow)"/>
+  <rect x="120" y="48" width="660" height="410" rx="14" fill="url(#lapG)" stroke="#2a1f4a" stroke-width="1.5"/>
+  <rect x="120" y="48" width="660" height="38" rx="14" fill="#1a1040"/>
+  <rect x="120" y="72" width="660" height="14" fill="#1a1040"/>
+  <circle cx="655" cy="67" r="7" fill="#ff5f57"/><circle cx="675" cy="67" r="7" fill="#febc2e"/><circle cx="695" cy="67" r="7" fill="#28c840"/>
+  <text x="420" y="70" font-family="monospace" font-size="9" fill="#4d4354" text-anchor="middle">toolnestai.net/pdf-tools/word-to-pdf</text>
+  <rect x="136" y="94" width="628" height="352" rx="6" fill="#0c0920"/>
+  <text x="450" y="118" font-family="sans-serif" font-size="13" font-weight="700" fill="#e2e2e2" text-anchor="middle">Word to PDF</text>
+  <text x="450" y="134" font-family="sans-serif" font-size="8" fill="#7a6d84" text-anchor="middle">Convert .docx to PDF — preserves fonts, styles, and layout</text>
+  <!-- Word doc icon -->
+  <rect x="148" y="155" width="180" height="220" rx="10" fill="#110c2a" stroke="#2563eb" stroke-width="1.5"/>
+  <rect x="158" y="165" width="160" height="20" rx="4" fill="url(#wordG)"/>
+  <text x="238" y="179" font-family="sans-serif" font-size="8" font-weight="700" fill="#fff" text-anchor="middle">W  contract.docx</text>
+  <rect x="162" y="193" width="152" height="7" rx="2" fill="#2a1f4a"/>
+  <rect x="162" y="206" width="120" height="5" rx="2" fill="#2a1f4a"/>
+  <rect x="162" y="217" width="152" height="5" rx="2" fill="#2a1f4a"/>
+  <rect x="162" y="228" width="100" height="5" rx="2" fill="#2a1f4a"/>
+  <rect x="162" y="244" width="152" height="5" rx="2" fill="#2a1f4a"/>
+  <rect x="162" y="255" width="132" height="5" rx="2" fill="#2a1f4a"/>
+  <rect x="162" y="270" width="152" height="5" rx="2" fill="#2a1f4a"/>
+  <text x="238" y="352" font-family="sans-serif" font-size="7.5" fill="#60a5fa" text-anchor="middle">86 KB · 12 pages</text>
+  <!-- Arrow -->
+  <text x="370" y="275" font-family="sans-serif" font-size="22" fill="#7c3aed" text-anchor="middle">→</text>
+  <!-- PDF output -->
+  <rect x="400" y="155" width="360" height="220" rx="10" fill="#110c2a" stroke="#7c3aed" stroke-width="1.5"/>
+  <rect x="410" y="165" width="340" height="20" rx="4" fill="#7c3aed" opacity="0.6"/>
+  <text x="580" y="179" font-family="sans-serif" font-size="8" font-weight="700" fill="#fff" text-anchor="middle">📄 contract.pdf</text>
+  <rect x="414" y="193" width="332" height="160" rx="3" fill="#0c0920"/>
+  <rect x="420" y="200" width="300" height="10" rx="2" fill="#2a1f4a"/>
+  <rect x="420" y="216" width="240" height="7" rx="2" fill="#2a1f4a"/>
+  <rect x="420" y="228" width="300" height="6" rx="2" fill="#2a1f4a"/>
+  <rect x="420" y="240" width="200" height="6" rx="2" fill="#2a1f4a"/>
+  <rect x="420" y="260" width="300" height="6" rx="2" fill="#2a1f4a"/>
+  <rect x="420" y="272" width="260" height="6" rx="2" fill="#2a1f4a"/>
+  <text x="580" y="370" font-family="sans-serif" font-size="7.5" fill="#a78bfa" text-anchor="middle">contract.pdf · 124 KB · fonts embedded</text>
+  <!-- Convert button -->
+  <rect x="148" y="392" width="620" height="40" rx="10" fill="#7c3aed"/>
+  <text x="458" y="416" font-family="sans-serif" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">Convert Word to PDF</text>
+  <rect x="340" y="458" width="220" height="10" rx="5" fill="#1a1040"/>
+</svg>

@@ -1,0 +1,18 @@
+﻿<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="30%" cy="50%" r="80%"><stop offset="0%" stop-color="#0f0825"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#fca5a5"/><stop offset="100%" stop-color="#dc2626"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="40" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <ellipse cx="250" cy="315" rx="350" ry="250" fill="#dc2626" opacity="0.10" filter="url(#glow)"/>
+  <text x="72" y="72" font-family="sans-serif" font-size="18" font-weight="800" fill="url(#aG)">ToolNest AI</text>
+  <text x="72" y="200" font-family="sans-serif" font-size="50" font-weight="900" fill="#e2e2e2">PowerPoint to PDF</text>
+  <text x="72" y="260" font-family="sans-serif" font-size="22" fill="#9b8da8">Convert .pptx to PDF — slides become pages</text>
+  <text x="72" y="300" font-family="sans-serif" font-size="18" fill="#7a6d84">Share presentations that look perfect on any device</text>
+  <rect x="72" y="340" width="120" height="32" rx="16" fill="#dc2626" opacity="0.3"/>
+  <text x="132" y="361" font-family="sans-serif" font-size="13" font-weight="700" fill="#fca5a5" text-anchor="middle">.pptx</text>
+  <text x="210" y="361" font-family="sans-serif" font-size="20" fill="#dc2626">→</text>
+  <rect x="235" y="340" width="110" height="32" rx="16" fill="#7c3aed" opacity="0.4"/>
+  <text x="290" y="361" font-family="sans-serif" font-size="13" font-weight="700" fill="#ddd6fe" text-anchor="middle">.pdf</text>
+</svg>
