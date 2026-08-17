@@ -1,0 +1,54 @@
+﻿<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Compress PDF — reduce file size online for free">
+  <defs>
+    <radialGradient id="bg" cx="30%" cy="50%" r="80%">
+      <stop offset="0%" stop-color="#0f0825"/>
+      <stop offset="100%" stop-color="#05030d"/>
+    </radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#4f46e5"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="40" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <ellipse cx="250" cy="315" rx="350" ry="250" fill="#5b21b6" opacity="0.12" filter="url(#glow)"/>
+  <ellipse cx="1000" cy="200" rx="250" ry="180" fill="#0e7490" opacity="0.08" filter="url(#glow)"/>
+
+  <text x="72" y="72" font-family="sans-serif" font-size="18" font-weight="800" fill="url(#aG)">ToolNest AI</text>
+  <text x="72" y="96" font-family="sans-serif" font-size="13" fill="#4d4354">toolnestai.net/pdf-tools/compress-pdf</text>
+
+  <text x="72" y="190" font-family="sans-serif" font-size="56" font-weight="900" fill="#e2e2e2">Compress PDF</text>
+  <text x="72" y="250" font-family="sans-serif" font-size="22" fill="#9b8da8">Reduce file size up to 80% — free online, no sign-up</text>
+
+  <!-- Before/after bar visual -->
+  <text x="72" y="310" font-family="sans-serif" font-size="14" fill="#7a6d84">Before</text>
+  <rect x="150" y="294" width="460" height="28" rx="8" fill="#2a1f4a"/>
+  <text x="618" y="314" font-family="sans-serif" font-size="15" font-weight="700" fill="#7a6d84">12.4 MB</text>
+  <text x="72" y="352" font-family="sans-serif" font-size="14" fill="#7a6d84">After</text>
+  <rect x="150" y="336" width="230" height="28" rx="8" fill="url(#bar)"/>
+  <text x="388" y="356" font-family="sans-serif" font-size="15" font-weight="700" fill="#a78bfa">6.2 MB</text>
+  <rect x="660" y="294" width="90" height="70" rx="10" fill="#7c3aed" opacity="0.2"/>
+  <text x="705" y="325" font-family="sans-serif" font-size="22" font-weight="900" fill="#a78bfa" text-anchor="middle">50%</text>
+  <text x="705" y="346" font-family="sans-serif" font-size="11" fill="#7a6d84" text-anchor="middle">smaller</text>
+
+  <!-- Pills -->
+  <rect x="72" y="395" width="160" height="32" rx="16" fill="#5b21b6" opacity="0.3"/>
+  <text x="152" y="416" font-family="sans-serif" font-size="13" font-weight="700" fill="#a78bfa" text-anchor="middle">5 quality levels</text>
+  <rect x="246" y="395" width="160" height="32" rx="16" fill="#0e7490" opacity="0.3"/>
+  <text x="326" y="416" font-family="sans-serif" font-size="13" font-weight="700" fill="#4cd7f6" text-anchor="middle">No file upload</text>
+  <rect x="420" y="395" width="140" height="32" rx="16" fill="#374151" opacity="0.6"/>
+  <text x="490" y="416" font-family="sans-serif" font-size="13" font-weight="700" fill="#9ca3af" text-anchor="middle">No watermark</text>
+
+  <!-- Right: PDF icon large -->
+  <rect x="820" y="120" width="300" height="380" rx="20" fill="#1a1040" stroke="#2a1f4a" stroke-width="2"/>
+  <rect x="840" y="144" width="260" height="12" rx="4" fill="#2a1f4a"/>
+  <rect x="840" y="164" width="200" height="8" rx="4" fill="#1e1535"/>
+  <rect x="840" y="178" width="220" height="8" rx="4" fill="#1e1535"/>
+  <rect x="840" y="250" width="260" height="120" rx="6" fill="#0e0c1a"/>
+  <text x="970" y="322" font-family="sans-serif" font-size="36" font-weight="900" fill="#7c3aed" text-anchor="middle" opacity="0.4">PDF</text>
+  <text x="970" y="450" font-family="sans-serif" font-size="13" fill="#4d4354" text-anchor="middle">12.4 MB → 6.2 MB</text>
+</svg>
