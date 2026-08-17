@@ -1,0 +1,87 @@
+﻿<svg viewBox="0 0 900 440" xmlns="http://www.w3.org/2000/svg" font-family="'Inter','Segoe UI',sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#0f0825"/>
+      <stop offset="100%" stop-color="#05030d"/>
+    </radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="gG" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="440" fill="url(#bg)"/>
+
+  <text x="450" y="46" font-size="22" font-weight="800" fill="#e2e2e2" text-anchor="middle">Real-World CSS Minification Savings</text>
+  <text x="450" y="68" font-size="13" fill="#7a6d84" text-anchor="middle">Original vs minified file sizes across popular frameworks and projects</text>
+
+  <!-- Bar chart area -->
+  <!-- Y axis labels -->
+  <text x="85" y="112" font-size="10" fill="#3d3356" text-anchor="end">400 KB</text>
+  <text x="85" y="166" font-size="10" fill="#3d3356" text-anchor="end">300 KB</text>
+  <text x="85" y="220" font-size="10" fill="#3d3356" text-anchor="end">200 KB</text>
+  <text x="85" y="274" font-size="10" fill="#3d3356" text-anchor="end">100 KB</text>
+  <text x="85" y="328" font-size="10" fill="#3d3356" text-anchor="end">0</text>
+
+  <!-- Grid lines -->
+  <line x1="90" y1="108" x2="870" y2="108" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <line x1="90" y1="162" x2="870" y2="162" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <line x1="90" y1="216" x2="870" y2="216" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <line x1="90" y1="270" x2="870" y2="270" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <line x1="90" y1="324" x2="870" y2="324" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+
+  <!-- Bootstrap -->
+  <!-- Original: 228KB = 57% of 400 = 228px -->
+  <!-- Minified: 195KB = 195/400*216 = 105px (scaled to chart) -->
+  <rect x="120" y="200" width="52" height="124" rx="6" fill="rgba(167,139,250,0.25)" stroke="rgba(167,139,250,0.4)" stroke-width="1"/>
+  <rect x="176" y="237" width="52" height="87" rx="6" fill="url(#aG)"/>
+  <text x="172" y="349" font-size="10" fill="#7a6d84" text-anchor="middle">Bootstrap</text>
+  <text x="146" y="194" font-size="9" fill="#a78bfa" text-anchor="middle">228 KB</text>
+  <text x="202" y="231" font-size="9" fill="#60a5fa" text-anchor="middle">195 KB</text>
+  <text x="202" y="361" font-size="10" font-weight="700" fill="#34d399" text-anchor="middle">−14%</text>
+
+  <!-- Tailwind -->
+  <!-- Original: 3800 KB → scaled: 216 (max) -->
+  <!-- Minified: 3200 KB → smaller by 600 kb = 34px -->
+  <rect x="250" y="108" width="52" height="216" rx="6" fill="rgba(167,139,250,0.25)" stroke="rgba(167,139,250,0.4)" stroke-width="1"/>
+  <rect x="306" y="140" width="52" height="184" rx="6" fill="url(#aG)"/>
+  <text x="316" y="349" font-size="10" fill="#7a6d84" text-anchor="middle">Tailwind (full)</text>
+  <text x="276" y="102" font-size="9" fill="#a78bfa" text-anchor="middle">3.8 MB</text>
+  <text x="332" y="134" font-size="9" fill="#60a5fa" text-anchor="middle">3.2 MB</text>
+  <text x="332" y="361" font-size="10" font-weight="700" fill="#34d399" text-anchor="middle">−16%</text>
+
+  <!-- Typical project -->
+  <rect x="390" y="162" width="52" height="162" rx="6" fill="rgba(167,139,250,0.25)" stroke="rgba(167,139,250,0.4)" stroke-width="1"/>
+  <rect x="446" y="227" width="52" height="97" rx="6" fill="url(#aG)"/>
+  <text x="462" y="349" font-size="10" fill="#7a6d84" text-anchor="middle">Typical App</text>
+  <text x="416" y="156" font-size="9" fill="#a78bfa" text-anchor="middle">300 KB</text>
+  <text x="472" y="221" font-size="9" fill="#60a5fa" text-anchor="middle">180 KB</text>
+  <text x="472" y="361" font-size="10" font-weight="700" fill="#34d399" text-anchor="middle">−40%</text>
+
+  <!-- Hand-written CSS -->
+  <rect x="530" y="216" width="52" height="108" rx="6" fill="rgba(167,139,250,0.25)" stroke="rgba(167,139,250,0.4)" stroke-width="1"/>
+  <rect x="586" y="259" width="52" height="65" rx="6" fill="url(#aG)"/>
+  <text x="598" y="349" font-size="10" fill="#7a6d84" text-anchor="middle">Hand-written</text>
+  <text x="556" y="210" font-size="9" fill="#a78bfa" text-anchor="middle">200 KB</text>
+  <text x="612" y="253" font-size="9" fill="#60a5fa" text-anchor="middle">120 KB</text>
+  <text x="612" y="361" font-size="10" font-weight="700" fill="#34d399" text-anchor="middle">−40%</text>
+
+  <!-- Heavily commented -->
+  <rect x="670" y="170" width="52" height="154" rx="6" fill="rgba(167,139,250,0.25)" stroke="rgba(167,139,250,0.4)" stroke-width="1"/>
+  <rect x="726" y="246" width="52" height="78" rx="6" fill="url(#aG)"/>
+  <text x="736" y="349" font-size="10" fill="#7a6d84" text-anchor="middle">With Comments</text>
+  <text x="696" y="164" font-size="9" fill="#a78bfa" text-anchor="middle">285 KB</text>
+  <text x="752" y="240" font-size="9" fill="#60a5fa" text-anchor="middle">145 KB</text>
+  <text x="752" y="361" font-size="10" font-weight="700" fill="#34d399" text-anchor="middle">−49%</text>
+
+  <!-- Legend -->
+  <rect x="325" y="392" width="14" height="14" rx="3" fill="rgba(167,139,250,0.3)" stroke="rgba(167,139,250,0.5)" stroke-width="1"/>
+  <text x="344" y="404" font-size="11" fill="#7a6d84">Original</text>
+  <rect x="430" y="392" width="14" height="14" rx="3" fill="url(#aG)"/>
+  <text x="449" y="404" font-size="11" fill="#7a6d84">Minified</text>
+  <rect x="525" y="392" width="14" height="14" rx="3" fill="rgba(52,211,153,0.3)" stroke="rgba(52,211,153,0.5)" stroke-width="1"/>
+  <text x="544" y="404" font-size="11" fill="#7a6d84">Savings %</text>
+</svg>

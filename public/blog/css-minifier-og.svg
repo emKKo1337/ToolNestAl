@@ -1,0 +1,74 @@
+﻿<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" font-family="'Inter','Segoe UI',sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="40%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#0f0825"/>
+      <stop offset="100%" stop-color="#05030d"/>
+    </radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+    <radialGradient id="g1" cx="30%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#5b21b6" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <ellipse cx="350" cy="315" rx="400" ry="300" fill="url(#g1)"/>
+  <!-- Badge -->
+  <rect x="60" y="60" width="160" height="28" rx="14" fill="rgba(167,139,250,0.15)" stroke="rgba(167,139,250,0.3)" stroke-width="1"/>
+  <text x="140" y="79" font-size="11" font-weight="700" fill="#a78bfa" text-anchor="middle" letter-spacing="0.06em">DEVELOPER TOOLS</text>
+  <!-- Title -->
+  <text x="60" y="138" font-size="52" font-weight="900" fill="#e2e2e2" letter-spacing="-2">CSS Minifier</text>
+  <text x="60" y="196" font-size="24" fill="#7a6d84" font-weight="400">Strip whitespace, comments &amp; shorten values</text>
+  <text x="60" y="234" font-size="24" fill="#7a6d84" font-weight="400">— shrink your stylesheets 30–65%</text>
+  <!-- Stats -->
+  <rect x="60" y="270" width="160" height="76" rx="12" fill="rgba(167,139,250,0.08)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+  <text x="140" y="316" font-size="34" font-weight="900" fill="url(#aG)" text-anchor="middle">65%</text>
+  <text x="140" y="336" font-size="11" fill="#5a4d7a" text-anchor="middle">max savings</text>
+  <rect x="238" y="270" width="160" height="76" rx="12" fill="rgba(76,215,246,0.08)" stroke="rgba(76,215,246,0.2)" stroke-width="1"/>
+  <text x="318" y="316" font-size="34" font-weight="900" fill="#4cd7f6" text-anchor="middle">6</text>
+  <text x="318" y="336" font-size="11" fill="#5a4d7a" text-anchor="middle">transform types</text>
+  <rect x="416" y="270" width="160" height="76" rx="12" fill="rgba(52,211,153,0.08)" stroke="rgba(52,211,153,0.2)" stroke-width="1"/>
+  <text x="496" y="316" font-size="34" font-weight="900" fill="#34d399" text-anchor="middle">Free</text>
+  <text x="496" y="336" font-size="11" fill="#5a4d7a" text-anchor="middle">no sign-up</text>
+  <!-- URL -->
+  <rect x="60" y="375" width="370" height="36" rx="18" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="245" y="398" font-size="13" fill="#4d4354" text-anchor="middle">toolnestai.net/developer-tools/css-minifier</text>
+  <!-- Right: code panel -->
+  <rect x="700" y="60" width="440" height="510" rx="16" fill="rgba(255,255,255,0.03)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+  <rect x="700" y="60" width="440" height="40" rx="16" fill="#1e1535"/>
+  <rect x="700" y="84" width="440" height="16" fill="#1e1535"/>
+  <circle cx="724" cy="80" r="6" fill="#ff5f57"/>
+  <circle cx="742" cy="80" r="6" fill="#febc2e"/>
+  <circle cx="760" cy="80" r="6" fill="#28c840"/>
+  <text x="920" y="84" font-size="10" fill="#3d3356" text-anchor="middle">style.css</text>
+  <!-- Before -->
+  <text x="720" y="124" font-size="10" font-weight="700" fill="#a78bfa" letter-spacing="0.08em">BEFORE  3,247 bytes</text>
+  <rect x="712" y="132" width="408" height="170" rx="8" fill="rgba(0,0,0,0.3)"/>
+  <text x="724" y="152" font-size="9.5" fill="#7a6d84" font-family="monospace">/* ===  Navigation  === */</text>
+  <text x="724" y="168" font-size="9.5" fill="#a78bfa" font-family="monospace">.navbar  {</text>
+  <text x="724" y="184" font-size="9.5" fill="#e2e2e2" font-family="monospace">  display  :  flex  ;</text>
+  <text x="724" y="200" font-size="9.5" fill="#60a5fa" font-family="monospace">  background-color:  #ffffff;</text>
+  <text x="724" y="216" font-size="9.5" fill="#e2e2e2" font-family="monospace">  padding:  16px  16px  16px  16px;</text>
+  <text x="724" y="232" font-size="9.5" fill="#e2e2e2" font-family="monospace">  margin:  0px  0px;</text>
+  <text x="724" y="248" font-size="9.5" fill="#a78bfa" font-family="monospace">}</text>
+  <text x="724" y="264" font-size="9.5" fill="#7a6d84" font-family="monospace">/* ... 47 more lines ... */</text>
+  <text x="724" y="288" font-size="9.5" fill="#a78bfa" font-family="monospace">}</text>
+  <!-- Arrow -->
+  <text x="916" y="320" font-size="22" text-anchor="middle" fill="#34d399">⚡</text>
+  <text x="916" y="344" font-size="11" font-weight="700" fill="#34d399" text-anchor="middle">MINIFIED</text>
+  <!-- After -->
+  <text x="720" y="374" font-size="10" font-weight="700" fill="#4cd7f6" letter-spacing="0.08em">AFTER  1,138 bytes  (−65%)</text>
+  <rect x="712" y="382" width="408" height="60" rx="8" fill="rgba(76,215,246,0.06)" stroke="rgba(76,215,246,0.2)" stroke-width="1"/>
+  <text x="724" y="402" font-size="9" fill="#e2e2e2" font-family="monospace">.navbar{display:flex;background:#fff;</text>
+  <text x="724" y="417" font-size="9" fill="#e2e2e2" font-family="monospace">padding:16px;margin:0}.btn{border:1px</text>
+  <text x="724" y="432" font-size="9" fill="#e2e2e2" font-family="monospace">solid #000;opacity:.75}</text>
+  <!-- Savings bar -->
+  <rect x="712" y="460" width="408" height="28" rx="6" fill="rgba(255,255,255,0.04)"/>
+  <rect x="712" y="460" width="143" height="28" rx="6" fill="url(#aG)"/>
+  <text x="916" y="479" font-size="10" fill="#9b8da8" text-anchor="middle">35% ← kept │ 65% saved →</text>
+  <!-- Logo -->
+  <text x="60" y="580" font-size="16" font-weight="800" fill="url(#aG)">ToolNest AI</text>
+  <text x="60" y="600" font-size="11" fill="#3d3356">toolnestai.net · Free CSS Minifier</text>
+</svg>
