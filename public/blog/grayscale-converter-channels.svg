@@ -1,0 +1,57 @@
+﻿<svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+  </defs>
+  <rect width="900" height="460" fill="url(#bg)"/>
+  <text x="450" y="36" text-anchor="middle" font-size="20" font-weight="900" fill="url(#aG)">Channel-Based Grayscale — Creative Techniques</text>
+  <text x="450" y="54" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.38)">Using a single channel or LAB lightness for different artistic and technical results</text>
+  <!-- Red channel -->
+  <rect x="28" y="72" width="198" height="200" rx="10" fill="rgba(239,68,68,0.06)" stroke="rgba(239,68,68,0.2)" stroke-width="1"/>
+  <text x="127" y="96" text-anchor="middle" font-size="11" font-weight="700" fill="#f87171">Red Channel</text>
+  <text x="127" y="116" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.5)">output = R only</text>
+  <text x="127" y="144" text-anchor="middle" font-size="8.5" fill="rgba(255,255,255,0.4)">Bright: red/orange/yellow skin</text>
+  <text x="127" y="162" text-anchor="middle" font-size="8.5" fill="rgba(255,255,255,0.4)">Dark: blue skies, cyans</text>
+  <text x="127" y="182" text-anchor="middle" font-size="8.5" fill="rgba(255,255,255,0.35)">Use for: portraits (flatters</text>
+  <text x="127" y="198" text-anchor="middle" font-size="8.5" fill="rgba(255,255,255,0.35)">skin tone), landscape punch</text>
+  <text x="127" y="252" text-anchor="middle" font-size="9.5" fill="rgba(239,68,68,0.7)">Red primary: 255 → bright</text>
+  <text x="127" y="268" text-anchor="middle" font-size="9.5" fill="rgba(239,68,68,0.6)">Blue sky: ≈20 → very dark</text>
+  <!-- Green channel -->
+  <rect x="242" y="72" width="198" height="200" rx="10" fill="rgba(34,197,94,0.06)" stroke="rgba(34,197,94,0.2)" stroke-width="1"/>
+  <text x="341" y="96" text-anchor="middle" font-size="11" font-weight="700" fill="#4ade80">Green Channel</text>
+  <text x="341" y="116" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.5)">output = G only</text>
+  <text x="341" y="144" text-anchor="middle" font-size="8.5" fill="rgba(255,255,255,0.4)">Brightest foliage, fields</text>
+  <text x="341" y="162" text-anchor="middle" font-size="8.5" fill="rgba(255,255,255,0.4)">Most balanced overall</text>
+  <text x="341" y="182" text-anchor="middle" font-size="8.5" fill="rgba(255,255,255,0.35)">Often looks similar to</text>
+  <text x="341" y="198" text-anchor="middle" font-size="8.5" fill="rgba(255,255,255,0.35)">luminance but less scientific</text>
+  <text x="341" y="252" text-anchor="middle" font-size="9.5" fill="rgba(34,197,94,0.7)">Foliage: very bright</text>
+  <text x="341" y="268" text-anchor="middle" font-size="9.5" fill="rgba(34,197,94,0.6)">Sky/water: medium</text>
+  <!-- Blue channel -->
+  <rect x="456" y="72" width="198" height="200" rx="10" fill="rgba(59,130,246,0.06)" stroke="rgba(59,130,246,0.2)" stroke-width="1"/>
+  <text x="555" y="96" text-anchor="middle" font-size="11" font-weight="700" fill="#60a5fa">Blue Channel</text>
+  <text x="555" y="116" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.5)">output = B only</text>
+  <text x="555" y="144" text-anchor="middle" font-size="8.5" fill="rgba(255,255,255,0.4)">Brightest blue sky/water</text>
+  <text x="555" y="162" text-anchor="middle" font-size="8.5" fill="rgba(255,255,255,0.4)">Very dark: skin, red/green</text>
+  <text x="555" y="182" text-anchor="middle" font-size="8.5" fill="rgba(255,255,255,0.35)">Dramatic, high-noise result</text>
+  <text x="555" y="198" text-anchor="middle" font-size="8.5" fill="rgba(255,255,255,0.35)">Blue sensors noisiest in cameras</text>
+  <text x="555" y="252" text-anchor="middle" font-size="9.5" fill="rgba(59,130,246,0.7)">Sky: bright / Skin: dark</text>
+  <text x="555" y="268" text-anchor="middle" font-size="9.5" fill="rgba(59,130,246,0.6)">High contrast landscapes</text>
+  <!-- LAB L -->
+  <rect x="670" y="72" width="202" height="200" rx="10" fill="rgba(167,139,250,0.06)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+  <text x="771" y="96" text-anchor="middle" font-size="11" font-weight="700" fill="#a78bfa">L*a*b* Lightness</text>
+  <text x="771" y="116" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.5)">output = L* (0–100 → 0–255)</text>
+  <text x="771" y="144" text-anchor="middle" font-size="8.5" fill="rgba(255,255,255,0.4)">Most perceptually uniform</text>
+  <text x="771" y="162" text-anchor="middle" font-size="8.5" fill="rgba(255,255,255,0.4)">Derived from CIE XYZ via cube-root</text>
+  <text x="771" y="182" text-anchor="middle" font-size="8.5" fill="rgba(255,255,255,0.35)">Use when: color distance must</text>
+  <text x="771" y="198" text-anchor="middle" font-size="8.5" fill="rgba(255,255,255,0.35)">match perceived brightness</text>
+  <text x="771" y="252" text-anchor="middle" font-size="9.5" fill="rgba(167,139,250,0.7)">Equally-saturated colors</text>
+  <text x="771" y="268" text-anchor="middle" font-size="9.5" fill="rgba(167,139,250,0.6)">map to equal gray values</text>
+  <!-- B&W photography tip -->
+  <rect x="28" y="296" width="844" height="130" rx="10" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="450" y="320" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(167,139,250,0.85)">BLACK &amp; WHITE PHOTOGRAPHY — CHANNEL MIXER TECHNIQUE</text>
+  <text x="450" y="342" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.55)">Professional B&amp;W conversion mixes channel weights to emphasize specific subjects:</text>
+  <text x="450" y="362" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.5)">Portrait: boost red (0.5R + 0.4G + 0.1B) — lighter skin, darker sky</text>
+  <text x="450" y="380" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.5)">Landscape: boost red (R filter effect) — dramatic dark sky, bright clouds</text>
+  <text x="450" y="398" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.5)">Nature/foliage: boost green (0.1R + 0.8G + 0.1B) — bright foliage, natural rendering</text>
+  <text x="450" y="446" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)">toolnestai.net/image-tools/grayscale-converter</text>
+</svg>

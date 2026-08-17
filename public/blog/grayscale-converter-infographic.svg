@@ -1,0 +1,51 @@
+﻿<svg viewBox="0 0 900 1200" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="30%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gT" cx="50%" cy="10%" r="60%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.35"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gB" cx="50%" cy="90%" r="60%"><stop offset="0%" stop-color="#0e7490" stop-opacity="0.2"/><stop offset="100%" stop-color="#0e7490" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+  </defs>
+  <rect width="900" height="1200" fill="url(#bg)"/>
+  <ellipse cx="450" cy="200" rx="700" ry="400" fill="url(#gT)"/>
+  <ellipse cx="450" cy="1000" rx="700" ry="400" fill="url(#gB)"/>
+  <text x="450" y="52" text-anchor="middle" font-size="26" font-weight="900" fill="url(#aG)">Grayscale Converter Guide</text>
+  <text x="450" y="76" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.38)">Luminance, channel, and LAB-based grayscale conversion methods</text>
+  <text x="450" y="96" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.22)">toolnestai.net/image-tools/grayscale-converter</text>
+  <rect x="32" y="112" width="836" height="38" rx="8" fill="rgba(124,58,237,0.18)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+  <text x="450" y="136" text-anchor="middle" font-size="15" font-weight="800" fill="#a78bfa">01 — Luminance (Recommended)</text>
+  <rect x="32" y="156" width="836" height="90" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="450" y="176" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.6)">L = 0.2126R + 0.7152G + 0.0722B  (BT.709 — sRGB primaries)</text>
+  <text x="450" y="196" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.6)">Weights match human eye sensitivity: green ≈72%, red ≈21%, blue ≈7%.</text>
+  <text x="450" y="216" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.6)">Best perceptual accuracy for photography, computer graphics, and modern displays.</text>
+  <text x="450" y="236" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.3)">BT.601 uses 0.299R + 0.587G + 0.114B — for JPEG/video compatibility</text>
+  <rect x="32" y="262" width="836" height="38" rx="8" fill="rgba(14,116,144,0.18)" stroke="rgba(14,116,144,0.3)" stroke-width="1"/>
+  <text x="450" y="286" text-anchor="middle" font-size="15" font-weight="800" fill="#67e8f9">02 — Why Green Gets 72% Weight</text>
+  <rect x="32" y="306" width="836" height="80" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="450" y="328" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.6)">The human eye has three types of cone cells (S, M, L) with peak sensitivity at different wavelengths.</text>
+  <text x="450" y="348" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.6)">The M (medium) cone is most sensitive and peaks at green wavelengths (~530 nm).</text>
+  <text x="450" y="368" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.3)">The luminosity function (photopic response) peaks at 555 nm — yellow-green light</text>
+  <rect x="32" y="402" width="836" height="38" rx="8" fill="rgba(52,211,153,0.12)" stroke="rgba(52,211,153,0.22)" stroke-width="1"/>
+  <text x="450" y="426" text-anchor="middle" font-size="15" font-weight="800" fill="#34d399">03 — Channel Technique (B&amp;W Photography)</text>
+  <rect x="32" y="446" width="836" height="100" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="450" y="468" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.6)">Like a colored filter in film photography — red filter darkens blue sky and lightens skin.</text>
+  <text x="450" y="488" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.6)">Portrait: boost red weights (0.5R + 0.4G + 0.1B) — flatters skin tone</text>
+  <text x="450" y="508" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.6)">Landscape: boost red for dramatic sky, or green for bright foliage</text>
+  <text x="450" y="528" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.3)">Weights must sum to 1.0 to preserve average brightness</text>
+  <rect x="32" y="552" width="836" height="38" rx="8" fill="rgba(251,191,36,0.12)" stroke="rgba(251,191,36,0.22)" stroke-width="1"/>
+  <text x="450" y="576" text-anchor="middle" font-size="15" font-weight="800" fill="#fbbf24">04 — Gamma Considerations</text>
+  <rect x="32" y="596" width="836" height="100" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="450" y="618" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.6)">sRGB images store gamma-encoded values. For mathematically correct luminance:</text>
+  <text x="450" y="638" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.6)">1. Linearize: R_lin = (R/255)^2.2   (approximate sRGB inverse gamma)</text>
+  <text x="450" y="658" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.6)">2. Apply: Y = 0.2126*R_lin + 0.7152*G_lin + 0.0722*B_lin</text>
+  <text x="450" y="678" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.3)">For most practical purposes, applying weights directly to gamma-encoded values is acceptable</text>
+  <rect x="32" y="712" width="836" height="38" rx="8" fill="rgba(167,139,250,0.14)" stroke="rgba(167,139,250,0.25)" stroke-width="1"/>
+  <text x="450" y="736" text-anchor="middle" font-size="15" font-weight="800" fill="#c4b5fd">05 — Code Examples</text>
+  <rect x="32" y="756" width="836" height="120" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="50" y="778" font-size="9" font-family="monospace" fill="rgba(167,139,250,0.7)">// JavaScript — BT.709 luminance</text>
+  <text x="50" y="796" font-size="9" font-family="monospace" fill="rgba(255,255,255,0.5)">const L = 0.2126*r + 0.7152*g + 0.0722*b;</text>
+  <text x="50" y="820" font-size="9" font-family="monospace" fill="rgba(52,211,153,0.7)"># Python Pillow — Luminance</text>
+  <text x="50" y="838" font-size="9" font-family="monospace" fill="rgba(255,255,255,0.5)">img.convert('L')  # uses BT.601 internally</text>
+  <text x="50" y="862" font-size="9" font-family="monospace" fill="rgba(103,232,249,0.7)">// CSS — grayscale filter</text>
+  <text x="50" y="880" font-size="9" font-family="monospace" fill="rgba(255,255,255,0.5)">.gray {'{'} filter: grayscale(100%); {'}'}</text>
+  <text x="450" y="1000" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.28)">Free tool: toolnestai.net/image-tools/grayscale-converter</text>
+</svg>

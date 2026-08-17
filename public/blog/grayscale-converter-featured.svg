@@ -1,0 +1,77 @@
+﻿<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="30%" cy="40%" r="80%"><stop offset="0%" stop-color="#0a0118"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <radialGradient id="gL" cx="15%" cy="50%" r="55%"><stop offset="0%" stop-color="#5b21b6" stop-opacity="0.45"/><stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gR" cx="85%" cy="50%" r="55%"><stop offset="0%" stop-color="#0e7490" stop-opacity="0.28"/><stop offset="100%" stop-color="#0e7490" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient>
+    <linearGradient id="lapG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1a1040"/><stop offset="100%" stop-color="#0d0824"/></linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="8" stdDeviation="20" flood-color="#5b21b6" flood-opacity="0.5"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="grayscale"><feColorMatrix type="saturate" values="0"/></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <ellipse cx="180" cy="315" rx="600" ry="500" fill="url(#gL)"/>
+  <ellipse cx="1020" cy="315" rx="600" ry="500" fill="url(#gR)"/>
+  <text x="60" y="70" font-size="14" font-weight="700" fill="url(#aG)" filter="url(#glow)">ToolNest AI</text>
+  <text x="60" y="106" font-size="13" fill="rgba(255,255,255,0.35)">Image Tools - Grayscale Converter</text>
+  <text x="60" y="185" font-size="40" font-weight="900" fill="url(#aG)" filter="url(#glow)">Grayscale</text>
+  <text x="60" y="238" font-size="40" font-weight="900" fill="url(#aG)" filter="url(#glow)">Converter</text>
+  <text x="60" y="290" font-size="17" fill="rgba(255,255,255,0.6)">Luminance, average, channel</text>
+  <text x="60" y="318" font-size="17" fill="rgba(255,255,255,0.6)">free, private, instant</text>
+  <g>
+    <rect x="60" y="348" width="125" height="52" rx="8" fill="rgba(124,58,237,0.2)" stroke="rgba(124,58,237,0.4)" stroke-width="1"/>
+    <text x="122" y="372" text-anchor="middle" font-size="11" font-weight="900" fill="#a78bfa">Luminance</text>
+    <text x="122" y="390" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.45)">most accurate</text>
+    <rect x="195" y="348" width="125" height="52" rx="8" fill="rgba(14,116,144,0.15)" stroke="rgba(14,116,144,0.35)" stroke-width="1"/>
+    <text x="257" y="372" text-anchor="middle" font-size="11" font-weight="900" fill="#67e8f9">Average</text>
+    <text x="257" y="390" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.45)">simple R+G+B/3</text>
+    <rect x="330" y="348" width="125" height="52" rx="8" fill="rgba(16,185,129,0.12)" stroke="rgba(16,185,129,0.3)" stroke-width="1"/>
+    <text x="392" y="372" text-anchor="middle" font-size="11" font-weight="900" fill="#34d399">Channel</text>
+    <text x="392" y="390" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.45)">R / G / B only</text>
+    <rect x="465" y="348" width="95" height="52" rx="8" fill="rgba(251,191,36,0.1)" stroke="rgba(251,191,36,0.25)" stroke-width="1"/>
+    <text x="512" y="372" text-anchor="middle" font-size="11" font-weight="900" fill="#fbbf24">Private</text>
+    <text x="512" y="390" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.45)">no upload</text>
+  </g>
+  <text x="60" y="555" font-size="14" fill="rgba(255,255,255,0.25)">toolnestai.net/image-tools/grayscale-converter</text>
+  <!-- Laptop UI -->
+  <rect x="630" y="60" width="530" height="490" rx="16" fill="url(#lapG)" stroke="rgba(124,58,237,0.3)" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="630" y="60" width="530" height="36" rx="16" fill="rgba(255,255,255,0.05)"/>
+  <rect x="630" y="78" width="530" height="18" fill="rgba(255,255,255,0.02)"/>
+  <circle cx="655" cy="78" r="6" fill="rgba(239,68,68,0.6)"/>
+  <circle cx="675" cy="78" r="6" fill="rgba(251,191,36,0.6)"/>
+  <circle cx="695" cy="78" r="6" fill="rgba(34,197,94,0.6)"/>
+  <!-- Color image panel -->
+  <rect x="648" y="108" width="228" height="150" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <text x="762" y="124" text-anchor="middle" font-size="8.5" fill="rgba(255,255,255,0.3)">Color</text>
+  <rect x="658" y="132" width="70" height="110" rx="4" fill="#c0392b" opacity="0.7"/>
+  <rect x="736" y="132" width="70" height="110" rx="4" fill="#27ae60" opacity="0.7"/>
+  <rect x="814" y="132" width="52" height="110" rx="4" fill="#2980b9" opacity="0.7"/>
+  <!-- Grayscale image panel -->
+  <rect x="894" y="108" width="228" height="150" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(52,211,153,0.18)" stroke-width="1"/>
+  <text x="1008" y="124" text-anchor="middle" font-size="8.5" fill="rgba(52,211,153,0.4)">Grayscale (Luminance)</text>
+  <rect x="904" y="132" width="70" height="110" rx="4" fill="#5a5a5a" opacity="0.85"/>
+  <rect x="982" y="132" width="70" height="110" rx="4" fill="#9a9a9a" opacity="0.85"/>
+  <rect x="1060" y="132" width="52" height="110" rx="4" fill="#4a4a4a" opacity="0.85"/>
+  <!-- Method selector -->
+  <text x="648" y="282" font-size="9" fill="rgba(255,255,255,0.3)">Grayscale Method</text>
+  <g font-size="9" text-anchor="middle">
+    <rect x="648" y="288" width="108" height="24" rx="5" fill="url(#bG)"/>
+    <text x="702" y="304" fill="#fff" font-weight="700">Luminance</text>
+    <rect x="762" y="288" width="80" height="24" rx="5" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="802" y="304" fill="rgba(255,255,255,0.4)">Average</text>
+    <rect x="848" y="288" width="80" height="24" rx="5" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="888" y="304" fill="rgba(255,255,255,0.4)">Luma BT.601</text>
+    <rect x="934" y="288" width="80" height="24" rx="5" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="974" y="304" fill="rgba(255,255,255,0.4)">Channel R</text>
+  </g>
+  <!-- Formula -->
+  <rect x="648" y="330" width="490" height="40" rx="6" fill="rgba(167,139,250,0.05)" stroke="rgba(167,139,250,0.12)" stroke-width="1"/>
+  <text x="893" y="350" text-anchor="middle" font-size="9.5" font-family="monospace" fill="rgba(167,139,250,0.75)">L = 0.2126R + 0.7152G + 0.0722B</text>
+  <text x="893" y="364" text-anchor="middle" font-size="8.5" fill="rgba(255,255,255,0.25)">ITU-R BT.709 luminance formula</text>
+  <rect x="648" y="386" width="242" height="36" rx="8" fill="url(#bG)" filter="url(#sh)"/>
+  <text x="769" y="408" text-anchor="middle" font-size="12" font-weight="900" fill="#fff">Download Grayscale</text>
+  <rect x="902" y="386" width="236" height="36" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <text x="1020" y="408" text-anchor="middle" font-size="12" font-weight="700" fill="rgba(255,255,255,0.5)">Reset</text>
+  <rect x="620" y="550" width="560" height="14" rx="4" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+</svg>
