@@ -1,0 +1,179 @@
+﻿---
+title: "How to Add a Watermark to a PDF — Text, Opacity, Angle, and Code Guide"
+description: "Add DRAFT, CONFIDENTIAL, or any custom text watermark to every page of a PDF. Control opacity, rotation, font size, and color. With code in pdf-lib, Python, and Ghostscript."
+publishedAt: "2026-08-17"
+author:
+  name: "ToolNest AI Team"
+  bio: "The ToolNest AI team builds free tools that help developers, marketers, and creators do more online — faster."
+category: "PDF Tools"
+tags: ["watermark PDF", "add watermark PDF", "CONFIDENTIAL PDF", "DRAFT watermark", "pdf-lib watermark", "pypdf watermark"]
+featured: false
+image: "/blog/watermark-pdf-og.svg"
+imageAlt: "Watermark PDF — add DRAFT, CONFIDENTIAL, or custom text watermark to every page"
+relatedTools:
+  - title: "Watermark PDF"
+    url: "/pdf-tools/watermark-pdf"
+  - title: "Protect PDF"
+    url: "/pdf-tools/protect-pdf"
+  - title: "Add Page Numbers"
+    url: "/pdf-tools/add-page-numbers"
+relatedPosts:
+  - "protect-pdf"
+  - "add-page-numbers"
+  - "compress-pdf"
+---
+
+A draft report going to reviewers needs "DRAFT" stamped across every page. A confidential proposal needs "CONFIDENTIAL — DO NOT DISTRIBUTE" visible to anyone who opens it. A training document needs your company name repeated as a background to deter screenshot sharing.
+
+Add a text watermark to any PDF for free with the [ToolNest AI Watermark PDF tool](/pdf-tools/watermark-pdf) — customize text, opacity, angle, color, font size, and position.
+
+---
+
+## Watermark Options
+
+| Option | Typical values | Notes |
+|---|---|---|
+| Text | DRAFT, CONFIDENTIAL, SAMPLE, your name | Any text |
+| Opacity | 20–50% | Lower = more transparent |
+| Rotation | -45° to 45° | Diagonal is harder to crop |
+| Color | Red, gray, purple, black | Dark colors on light PDFs |
+| Font size | 36–96 pt | Larger = more visible |
+| Position | Center, tile | Tiling repeats the watermark |
+
+---
+
+## Adding Watermarks in Code
+
+### JavaScript with pdf-lib
+
+```javascript
+import { PDFDocument, rgb, StandardFonts, degrees } from 'pdf-lib';
+import fs from 'fs';
+
+async function addWatermark(inputPath, outputPath, options = {}) {
+  const {
+    text = 'CONFIDENTIAL',
+    fontSize = 60,
+    opacity = 0.3,
+    angle = 45,             // degrees counterclockwise
+    color = rgb(0.5, 0.2, 0.9),  // purple
+  } = options;
+
+  const pdfBytes = fs.readFileSync(inputPath);
+  const pdfDoc = await PDFDocument.load(pdfBytes);
+  const font = await pdfDoc.embedFont(StandardFonts.HelveticaBold);
+  
+  for (const page of pdfDoc.getPages()) {
+    const { width, height } = page.getSize();
+    const textWidth = font.widthOfTextAtSize(text, fontSize);
+    
+    page.drawText(text, {
+      x: (width - textWidth) / 2,
+      y: height / 2 - fontSize / 2,
+      size: fontSize,
+      font,
+      color,
+      opacity,
+      rotate: degrees(angle),
+    });
+  }
+  
+  const newBytes = await pdfDoc.save();
+  fs.writeFileSync(outputPath, newBytes);
+}
+
+await addWatermark('input.pdf', 'watermarked.pdf', {
+  text: 'DRAFT',
+  fontSize: 72,
+  opacity: 0.25,
+  angle: 45,
+  color: rgb(0.8, 0.1, 0.1), // red
+});
+```
+
+### Python with pypdf + reportlab
+
+```python
+from pypdf import PdfReader, PdfWriter
+from reportlab.pdfgen import canvas
+from reportlab.lib.colors import Color
+import io, math
+
+def create_watermark_page(width, height, text, font_size=60, angle=45, opacity=0.3, color=(0.5,0.2,0.9)):
+    packet = io.BytesIO()
+    c = canvas.Canvas(packet, pagesize=(width, height))
+    c.setFont("Helvetica-Bold", font_size)
+    c.setFillColor(Color(*color, alpha=opacity))
+    c.translate(width / 2, height / 2)
+    c.rotate(angle)
+    text_width = c.stringWidth(text, "Helvetica-Bold", font_size)
+    c.drawString(-text_width / 2, 0, text)
+    c.save()
+    packet.seek(0)
+    return PdfReader(packet)
+
+def add_watermark(input_path, output_path, text='CONFIDENTIAL', **kwargs):
+    reader = PdfReader(input_path)
+    writer = PdfWriter()
+    
+    for page in reader.pages:
+        w = float(page.mediabox.width)
+        h = float(page.mediabox.height)
+        watermark = create_watermark_page(w, h, text, **kwargs)
+        page.merge_page(watermark.pages[0])
+        writer.add_page(page)
+    
+    with open(output_path, 'wb') as f:
+        writer.write(f)
+
+add_watermark('input.pdf', 'watermarked.pdf', 
+              text='DRAFT', angle=45, opacity=0.25, font_size=72,
+              color=(0.8, 0.1, 0.1))
+```
+
+### Ghostscript
+
+```bash
+gs -dBATCH -dNOPAUSE -dSAFER \
+   -sDEVICE=pdfwrite \
+   -c "
+     /watermark-dict <<
+       /WatermarkText (CONFIDENTIAL)
+       /Font /Helvetica-Bold
+       /FontSize 60
+       /GrayLevel 0.7
+       /Angle 45
+     >> def
+   " \
+   -f watermark.ps \
+   -f input.pdf \
+   -sOutputFile=watermarked.pdf
+```
+
+---
+
+## Frequently Asked Questions
+
+### Can a watermark be removed?
+
+A text watermark added as a PDF text object (as pdf-lib and pypdf do) can theoretically be removed with PDF editing software, since it exists as a separate layer. For stronger protection, combine the watermark with flattening (rendering the page to an image first) or use password protection alongside the watermark.
+
+### Should the watermark be on top of the content or behind it?
+
+For text documents, place the watermark behind the content (as a background layer) so the main text remains readable. For documents where the watermark must be clearly visible and hard to ignore, place it on top with 30–50% opacity. pdf-lib's `drawText` draws on top by default.
+
+### What font size should I use for watermarks?
+
+For A4/Letter-size documents, 60–80pt bold text at 45° rotation typically looks professional. Too small (under 40pt) becomes hard to see. Too large (over 120pt) obscures the content.
+
+### Can I tile the watermark across the page?
+
+Yes — instead of drawing one centered watermark, loop through a grid of positions and draw the text repeatedly:
+
+```javascript
+for (let x = 0; x < width + 200; x += 250) {
+  for (let y = 0; y < height + 200; y += 150) {
+    page.drawText(text, { x, y, size: 30, font, color, opacity: 0.15, rotate: degrees(45) });
+  }
+}
+```
