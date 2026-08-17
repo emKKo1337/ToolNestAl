@@ -1,0 +1,62 @@
+﻿<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" font-family="'Inter','Segoe UI',sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="40%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#0f0825"/>
+      <stop offset="100%" stop-color="#05030d"/>
+    </radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+    <radialGradient id="g1" cx="30%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#5b21b6" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <ellipse cx="350" cy="315" rx="400" ry="300" fill="url(#g1)"/>
+  <rect x="60" y="60" width="130" height="28" rx="14" fill="rgba(167,139,250,0.15)" stroke="rgba(167,139,250,0.3)" stroke-width="1"/>
+  <text x="125" y="79" font-size="11" font-weight="700" fill="#a78bfa" text-anchor="middle" letter-spacing="0.06em">DEVELOPER TOOLS</text>
+  <text x="60" y="138" font-size="52" font-weight="900" fill="#e2e2e2" letter-spacing="-2">XML Formatter</text>
+  <text x="60" y="196" font-size="22" fill="#7a6d84">Pretty-print, validate and minify</text>
+  <text x="60" y="228" font-size="22" fill="#7a6d84">any XML document — RSS, SOAP, SVG</text>
+  <rect x="60" y="264" width="148" height="66" rx="12" fill="rgba(167,139,250,0.08)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+  <text x="134" y="306" font-size="28" font-weight="900" fill="url(#aG)" text-anchor="middle">3</text>
+  <text x="134" y="322" font-size="11" fill="#5a4d7a" text-anchor="middle">indent styles</text>
+  <rect x="226" y="264" width="148" height="66" rx="12" fill="rgba(76,215,246,0.08)" stroke="rgba(76,215,246,0.2)" stroke-width="1"/>
+  <text x="300" y="306" font-size="28" font-weight="900" fill="#4cd7f6" text-anchor="middle">✓</text>
+  <text x="300" y="322" font-size="11" fill="#5a4d7a" text-anchor="middle">validation</text>
+  <rect x="392" y="264" width="148" height="66" rx="12" fill="rgba(52,211,153,0.08)" stroke="rgba(52,211,153,0.2)" stroke-width="1"/>
+  <text x="466" y="306" font-size="28" font-weight="900" fill="#34d399" text-anchor="middle">Free</text>
+  <text x="466" y="322" font-size="11" fill="#5a4d7a" text-anchor="middle">browser-side</text>
+  <rect x="60" y="356" width="370" height="36" rx="18" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="245" y="379" font-size="13" fill="#4d4354" text-anchor="middle">toolnestai.net/developer-tools/xml-formatter</text>
+  <!-- Right: before/after XML -->
+  <rect x="660" y="60" width="480" height="510" rx="16" fill="rgba(255,255,255,0.03)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+  <rect x="660" y="60" width="480" height="40" rx="16" fill="rgba(167,139,250,0.08)"/>
+  <text x="900" y="85" font-size="12" font-weight="700" fill="#a78bfa" text-anchor="middle">Before → After</text>
+  <!-- Before -->
+  <text x="680" y="120" font-size="9" font-weight="700" fill="#7a6d84" letter-spacing="0.08em">RAW</text>
+  <rect x="672" y="128" width="456" height="56" rx="8" fill="rgba(0,0,0,0.3)"/>
+  <text x="684" y="146" font-size="8" fill="#7a6d84" font-family="monospace">&lt;catalog&gt;&lt;book id="b1"&gt;&lt;title&gt;Clean Code&lt;/title&gt;</text>
+  <text x="684" y="162" font-size="8" fill="#7a6d84" font-family="monospace">&lt;author&gt;Robert C. Martin&lt;/author&gt;&lt;year&gt;2008&lt;/year&gt;</text>
+  <text x="684" y="177" font-size="8" fill="#7a6d84" font-family="monospace">&lt;price currency="USD"&gt;35.99&lt;/price&gt;&lt;/book&gt;&lt;/catalog&gt;</text>
+  <!-- Arrow -->
+  <text x="900" y="215" font-size="22" text-anchor="middle" fill="#34d399">⚡</text>
+  <text x="900" y="238" font-size="11" font-weight="700" fill="#34d399" text-anchor="middle">FORMATTED</text>
+  <!-- After -->
+  <text x="680" y="264" font-size="9" font-weight="700" fill="#4cd7f6" letter-spacing="0.08em">PRETTY-PRINTED</text>
+  <rect x="672" y="272" width="456" height="200" rx="8" fill="rgba(76,215,246,0.04)" stroke="rgba(76,215,246,0.15)" stroke-width="1"/>
+  <text x="684" y="294" font-size="8.5" fill="#7a6d84" font-family="monospace">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</text>
+  <text x="684" y="310" font-size="8.5" fill="#60a5fa" font-family="monospace">&lt;catalog&gt;</text>
+  <text x="684" y="326" font-size="8.5" fill="#60a5fa" font-family="monospace">  &lt;book id="b1"&gt;</text>
+  <text x="684" y="342" font-size="8.5" fill="#a78bfa" font-family="monospace">    &lt;title&gt;Clean Code&lt;/title&gt;</text>
+  <text x="684" y="358" font-size="8.5" fill="#a78bfa" font-family="monospace">    &lt;author&gt;Robert C. Martin&lt;/author&gt;</text>
+  <text x="684" y="374" font-size="8.5" fill="#a78bfa" font-family="monospace">    &lt;year&gt;2008&lt;/year&gt;</text>
+  <text x="684" y="390" font-size="8.5" fill="#34d399" font-family="monospace">    &lt;price currency="USD"&gt;35.99&lt;/price&gt;</text>
+  <text x="684" y="406" font-size="8.5" fill="#60a5fa" font-family="monospace">  &lt;/book&gt;</text>
+  <text x="684" y="422" font-size="8.5" fill="#60a5fa" font-family="monospace">&lt;/catalog&gt;</text>
+  <!-- Logo -->
+  <text x="60" y="578" font-size="16" font-weight="800" fill="url(#aG)">ToolNest AI</text>
+  <text x="60" y="598" font-size="11" fill="#3d3356">toolnestai.net · Free XML Formatter</text>
+</svg>

@@ -1,0 +1,103 @@
+﻿<svg viewBox="0 0 900 560" xmlns="http://www.w3.org/2000/svg" font-family="'Inter','Segoe UI',sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="40%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#0f0825"/>
+      <stop offset="100%" stop-color="#05030d"/>
+    </radialGradient>
+    <radialGradient id="g1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#5b21b6" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="lapG" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a1040"/>
+      <stop offset="100%" stop-color="#0d0824"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="8" stdDeviation="20" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+  <rect width="900" height="560" fill="url(#bg)"/>
+  <ellipse cx="280" cy="200" rx="300" ry="200" fill="url(#g1)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="130" y="40" width="640" height="420" rx="14" fill="url(#lapG)" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
+    <rect x="130" y="40" width="640" height="44" rx="14" fill="#1e1535"/>
+    <rect x="130" y="68" width="640" height="16" fill="#1e1535"/>
+    <circle cx="655" cy="62" r="7" fill="#ff5f57"/>
+    <circle cx="675" cy="62" r="7" fill="#febc2e"/>
+    <circle cx="695" cy="62" r="7" fill="#28c840"/>
+    <rect x="230" y="53" width="420" height="18" rx="9" fill="#120e2a"/>
+    <text x="440" y="66" font-size="10" fill="#5a4d7a" text-anchor="middle">toolnestai.net/developer-tools/xml-formatter</text>
+    <rect x="142" y="84" width="616" height="364" rx="0" fill="#0d0a1e"/>
+
+    <text x="450" y="112" font-size="18" font-weight="800" fill="#e2e2e2" text-anchor="middle">XML Formatter</text>
+    <text x="450" y="130" font-size="11" fill="#7a6d84" text-anchor="middle">Pretty-print, validate and minify any XML document</text>
+
+    <!-- Input pane -->
+    <rect x="152" y="142" width="270" height="268" rx="10" fill="#130f28" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+    <text x="164" y="162" font-size="10" font-weight="700" fill="#a78bfa" letter-spacing="0.08em">INPUT XML</text>
+
+    <!-- Compact/raw XML -->
+    <text x="164" y="182" font-size="8" fill="#7a6d84" font-family="monospace">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</text>
+    <text x="164" y="196" font-size="8" fill="#60a5fa" font-family="monospace">&lt;catalog&gt;&lt;book id="b1" lang="en"&gt;</text>
+    <text x="164" y="210" font-size="8" fill="#e2e2e2" font-family="monospace">&lt;title&gt;Clean Code&lt;/title&gt;&lt;author&gt;</text>
+    <text x="164" y="224" font-size="8" fill="#e2e2e2" font-family="monospace">Robert C. Martin&lt;/author&gt;&lt;year&gt;</text>
+    <text x="164" y="238" font-size="8" fill="#34d399" font-family="monospace">2008&lt;/year&gt;&lt;price currency="USD"&gt;</text>
+    <text x="164" y="252" font-size="8" fill="#34d399" font-family="monospace">35.99&lt;/price&gt;&lt;/book&gt;&lt;book id="b2"</text>
+    <text x="164" y="266" font-size="8" fill="#60a5fa" font-family="monospace">lang="en"&gt;&lt;title&gt;The Pragmatic</text>
+    <text x="164" y="280" font-size="8" fill="#e2e2e2" font-family="monospace">Programmer&lt;/title&gt;&lt;author&gt;Hunt</text>
+    <text x="164" y="294" font-size="8" fill="#e2e2e2" font-family="monospace">&amp; Thomas&lt;/author&gt;&lt;year&gt;1999&lt;/year&gt;</text>
+    <text x="164" y="308" font-size="8" fill="#34d399" font-family="monospace">&lt;price currency="USD"&gt;40.00&lt;/price&gt;</text>
+    <text x="164" y="322" font-size="8" fill="#60a5fa" font-family="monospace">&lt;/book&gt;&lt;/catalog&gt;</text>
+
+    <!-- Arrow -->
+    <g transform="translate(450,276)">
+      <circle r="20" fill="#1a1040" stroke="rgba(167,139,250,0.3)" stroke-width="1.5"/>
+      <path d="M-8,0 L8,0 M4,-5 L8,0 L4,5" stroke="url(#aG)" stroke-width="2" fill="none" stroke-linecap="round"/>
+    </g>
+
+    <!-- Output pane -->
+    <rect x="478" y="142" width="270" height="268" rx="10" fill="#0b0d1f" stroke="rgba(76,215,246,0.25)" stroke-width="1"/>
+    <text x="490" y="162" font-size="10" font-weight="700" fill="#4cd7f6" letter-spacing="0.08em">FORMATTED</text>
+
+    <text x="490" y="182" font-size="8" fill="#7a6d84" font-family="monospace">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</text>
+    <text x="490" y="196" font-size="8" fill="#60a5fa" font-family="monospace">&lt;catalog&gt;</text>
+    <text x="490" y="210" font-size="8" fill="#60a5fa" font-family="monospace">  &lt;book id="b1" lang="en"&gt;</text>
+    <text x="490" y="224" font-size="8" fill="#a78bfa" font-family="monospace">    &lt;title&gt;</text>
+    <text x="490" y="238" font-size="8" fill="#e2e2e2" font-family="monospace">      Clean Code</text>
+    <text x="490" y="252" font-size="8" fill="#a78bfa" font-family="monospace">    &lt;/title&gt;</text>
+    <text x="490" y="266" font-size="8" fill="#a78bfa" font-family="monospace">    &lt;author&gt;Robert C. Martin&lt;/author&gt;</text>
+    <text x="490" y="280" font-size="8" fill="#a78bfa" font-family="monospace">    &lt;year&gt;2008&lt;/year&gt;</text>
+    <text x="490" y="294" font-size="8" fill="#a78bfa" font-family="monospace">    &lt;price currency="USD"&gt;</text>
+    <text x="490" y="308" font-size="8" fill="#34d399" font-family="monospace">      35.99</text>
+    <text x="490" y="322" font-size="8" fill="#a78bfa" font-family="monospace">    &lt;/price&gt;</text>
+    <text x="490" y="336" font-size="8" fill="#60a5fa" font-family="monospace">  &lt;/book&gt;</text>
+    <text x="490" y="350" font-size="8" fill="#3d3356" font-family="monospace">  ...</text>
+    <text x="490" y="364" font-size="8" fill="#60a5fa" font-family="monospace">&lt;/catalog&gt;</text>
+
+    <!-- Options and buttons -->
+    <rect x="152" y="420" width="120" height="24" rx="6" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="172" y="436" font-size="9" fill="#5a4d7a">Indent: </text>
+    <text x="214" y="436" font-size="9" fill="#a78bfa" font-weight="700">2 spaces</text>
+    <rect x="284" y="420" width="90" height="24" rx="6" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="329" y="436" font-size="9" fill="#5a4d7a" text-anchor="middle">4 spaces</text>
+    <rect x="386" y="420" width="60" height="24" rx="6" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="416" y="436" font-size="9" fill="#5a4d7a" text-anchor="middle">Tabs</text>
+
+    <rect x="152" y="452" width="160" height="28" rx="8" fill="url(#aG)"/>
+    <text x="232" y="470" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">⚡  Format XML</text>
+    <rect x="326" y="452" width="100" height="28" rx="8" fill="rgba(76,215,246,0.12)" stroke="rgba(76,215,246,0.3)" stroke-width="1"/>
+    <text x="376" y="470" font-size="11" font-weight="600" fill="#4cd7f6" text-anchor="middle">⧉  Copy</text>
+    <rect x="440" y="452" width="100" height="28" rx="8" fill="rgba(52,211,153,0.1)" stroke="rgba(52,211,153,0.25)" stroke-width="1"/>
+    <text x="490" y="470" font-size="11" font-weight="600" fill="#34d399" text-anchor="middle">✓  Validate</text>
+    <rect x="554" y="452" width="90" height="28" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="599" y="470" font-size="11" font-weight="600" fill="#7a6d84" text-anchor="middle">⊞  Minify</text>
+  </g>
+
+  <rect x="90" y="460" width="720" height="12" rx="6" fill="#1a1535" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <rect x="360" y="468" width="180" height="6" rx="3" fill="#120e2a"/>
+</svg>
