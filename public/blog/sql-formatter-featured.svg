@@ -1,0 +1,97 @@
+﻿<svg viewBox="0 0 900 560" xmlns="http://www.w3.org/2000/svg" font-family="'Inter','Segoe UI',sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="40%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#0f0825"/>
+      <stop offset="100%" stop-color="#05030d"/>
+    </radialGradient>
+    <radialGradient id="g1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#5b21b6" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="lapG" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a1040"/>
+      <stop offset="100%" stop-color="#0d0824"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="8" stdDeviation="20" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+  <rect width="900" height="560" fill="url(#bg)"/>
+  <ellipse cx="280" cy="200" rx="300" ry="200" fill="url(#g1)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="130" y="40" width="640" height="420" rx="14" fill="url(#lapG)" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
+    <rect x="130" y="40" width="640" height="44" rx="14" fill="#1e1535"/>
+    <rect x="130" y="68" width="640" height="16" fill="#1e1535"/>
+    <circle cx="655" cy="62" r="7" fill="#ff5f57"/>
+    <circle cx="675" cy="62" r="7" fill="#febc2e"/>
+    <circle cx="695" cy="62" r="7" fill="#28c840"/>
+    <rect x="230" y="53" width="420" height="18" rx="9" fill="#120e2a"/>
+    <text x="440" y="66" font-size="10" fill="#5a4d7a" text-anchor="middle">toolnestai.net/developer-tools/sql-formatter</text>
+    <rect x="142" y="84" width="616" height="364" rx="0" fill="#0d0a1e"/>
+
+    <text x="450" y="112" font-size="18" font-weight="800" fill="#e2e2e2" text-anchor="middle">SQL Formatter</text>
+    <text x="450" y="130" font-size="11" fill="#7a6d84" text-anchor="middle">Format and beautify SQL queries for any dialect</text>
+
+    <!-- Dialect selector -->
+    <rect x="200" y="138" width="100" height="22" rx="6" fill="url(#aG)"/>
+    <text x="250" y="153" font-size="10" font-weight="700" fill="#fff" text-anchor="middle">PostgreSQL</text>
+    <rect x="308" y="138" width="80" height="22" rx="6" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <text x="348" y="153" font-size="10" fill="#7a6d84" text-anchor="middle">MySQL</text>
+    <rect x="396" y="138" width="90" height="22" rx="6" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <text x="441" y="153" font-size="10" fill="#7a6d84" text-anchor="middle">SQL Server</text>
+    <rect x="494" y="138" width="80" height="22" rx="6" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <text x="534" y="153" font-size="10" fill="#7a6d84" text-anchor="middle">SQLite</text>
+
+    <!-- Input pane -->
+    <rect x="152" y="168" width="270" height="262" rx="10" fill="#130f28" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+    <text x="164" y="188" font-size="10" font-weight="700" fill="#a78bfa" letter-spacing="0.08em">RAW SQL</text>
+    <text x="164" y="208" font-size="8.5" fill="#7a6d84" font-family="monospace">select u.id,u.name,u.email,</text>
+    <text x="164" y="222" font-size="8.5" fill="#7a6d84" font-family="monospace">o.id as order_id,o.total,</text>
+    <text x="164" y="236" font-size="8.5" fill="#7a6d84" font-family="monospace">o.created_at from users u</text>
+    <text x="164" y="250" font-size="8.5" fill="#7a6d84" font-family="monospace">left join orders o on</text>
+    <text x="164" y="264" font-size="8.5" fill="#7a6d84" font-family="monospace">u.id=o.user_id where</text>
+    <text x="164" y="278" font-size="8.5" fill="#7a6d84" font-family="monospace">u.active=true and</text>
+    <text x="164" y="292" font-size="8.5" fill="#7a6d84" font-family="monospace">o.total&gt;100 order by</text>
+    <text x="164" y="306" font-size="8.5" fill="#7a6d84" font-family="monospace">o.created_at desc limit 50;</text>
+
+    <!-- Arrow -->
+    <g transform="translate(450,299)">
+      <circle r="20" fill="#1a1040" stroke="rgba(167,139,250,0.3)" stroke-width="1.5"/>
+      <path d="M-8,0 L8,0 M4,-5 L8,0 L4,5" stroke="url(#aG)" stroke-width="2" fill="none" stroke-linecap="round"/>
+    </g>
+
+    <!-- Output pane -->
+    <rect x="478" y="168" width="270" height="262" rx="10" fill="#0b0d1f" stroke="rgba(76,215,246,0.25)" stroke-width="1"/>
+    <text x="490" y="188" font-size="10" font-weight="700" fill="#4cd7f6" letter-spacing="0.08em">FORMATTED</text>
+    <text x="490" y="208" font-size="8.5" fill="#a78bfa" font-family="monospace">SELECT</text>
+    <text x="490" y="222" font-size="8.5" fill="#e2e2e2" font-family="monospace">  u.id,</text>
+    <text x="490" y="236" font-size="8.5" fill="#e2e2e2" font-family="monospace">  u.name,</text>
+    <text x="490" y="250" font-size="8.5" fill="#e2e2e2" font-family="monospace">  u.email,</text>
+    <text x="490" y="264" font-size="8.5" fill="#34d399" font-family="monospace">  o.id AS order_id,</text>
+    <text x="490" y="278" font-size="8.5" fill="#34d399" font-family="monospace">  o.total,</text>
+    <text x="490" y="292" font-size="8.5" fill="#34d399" font-family="monospace">  o.created_at</text>
+    <text x="490" y="306" font-size="8.5" fill="#a78bfa" font-family="monospace">FROM users u</text>
+    <text x="490" y="320" font-size="8.5" fill="#60a5fa" font-family="monospace">LEFT JOIN orders o ON u.id = o.user_id</text>
+    <text x="490" y="334" font-size="8.5" fill="#a78bfa" font-family="monospace">WHERE</text>
+    <text x="490" y="348" font-size="8.5" fill="#e2e2e2" font-family="monospace">  u.active = TRUE</text>
+    <text x="490" y="362" font-size="8.5" fill="#fbbf24" font-family="monospace">  AND o.total &gt; 100</text>
+    <text x="490" y="376" font-size="8.5" fill="#a78bfa" font-family="monospace">ORDER BY o.created_at DESC</text>
+    <text x="490" y="390" font-size="8.5" fill="#a78bfa" font-family="monospace">LIMIT 50;</text>
+
+    <!-- Bottom buttons -->
+    <rect x="152" y="440" width="160" height="30" rx="8" fill="url(#aG)"/>
+    <text x="232" y="459" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">⚡  Format SQL</text>
+    <rect x="326" y="440" width="110" height="30" rx="8" fill="rgba(76,215,246,0.12)" stroke="rgba(76,215,246,0.3)" stroke-width="1"/>
+    <text x="381" y="459" font-size="11" font-weight="600" fill="#4cd7f6" text-anchor="middle">⧉  Copy</text>
+    <rect x="450" y="440" width="160" height="30" rx="8" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <text x="530" y="459" font-size="11" font-weight="600" fill="#7a6d84" text-anchor="middle">⊞  Minify</text>
+  </g>
+
+  <rect x="90" y="460" width="720" height="12" rx="6" fill="#1a1535" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <rect x="360" y="468" width="180" height="6" rx="3" fill="#120e2a"/>
+</svg>

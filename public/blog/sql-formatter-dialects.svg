@@ -1,0 +1,100 @@
+﻿<svg viewBox="0 0 900 480" xmlns="http://www.w3.org/2000/svg" font-family="'Inter','Segoe UI',sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#0f0825"/>
+      <stop offset="100%" stop-color="#05030d"/>
+    </radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="480" fill="url(#bg)"/>
+
+  <text x="450" y="44" font-size="22" font-weight="800" fill="#e2e2e2" text-anchor="middle">SQL Dialect Differences</text>
+  <text x="450" y="66" font-size="13" fill="#7a6d84" text-anchor="middle">How the same logic is written differently across database engines</text>
+
+  <!-- Header row -->
+  <rect x="30" y="86" width="840" height="30" rx="8" fill="rgba(255,255,255,0.04)"/>
+  <text x="50" y="106" font-size="11" font-weight="700" fill="#4d4354" letter-spacing="0.06em">FEATURE</text>
+  <text x="230" y="106" font-size="11" font-weight="700" fill="#60a5fa" letter-spacing="0.06em">PostgreSQL</text>
+  <text x="400" y="106" font-size="11" font-weight="700" fill="#f97316" letter-spacing="0.06em">MySQL</text>
+  <text x="570" y="106" font-size="11" font-weight="700" fill="#ef4444" letter-spacing="0.06em">SQL Server</text>
+  <text x="740" y="106" font-size="11" font-weight="700" fill="#34d399" letter-spacing="0.06em">SQLite</text>
+
+  <!-- Row 1: String quotes -->
+  <line x1="30" y1="116" x2="870" y2="116" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="50" y="136" font-size="11" fill="#9b8da8">String quotes</text>
+  <text x="230" y="136" font-size="9.5" fill="#60a5fa" font-family="monospace">'text' or "text"</text>
+  <text x="400" y="136" font-size="9.5" fill="#f97316" font-family="monospace">'text' or `text`</text>
+  <text x="570" y="136" font-size="9.5" fill="#ef4444" font-family="monospace">N'text' (unicode)</text>
+  <text x="740" y="136" font-size="9.5" fill="#34d399" font-family="monospace">'text'</text>
+
+  <!-- Row 2: Identifier quoting -->
+  <line x1="30" y1="148" x2="870" y2="148" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="50" y="168" font-size="11" fill="#9b8da8">Identifiers</text>
+  <text x="230" y="168" font-size="9.5" fill="#60a5fa" font-family="monospace">"column_name"</text>
+  <text x="400" y="168" font-size="9.5" fill="#f97316" font-family="monospace">`column_name`</text>
+  <text x="570" y="168" font-size="9.5" fill="#ef4444" font-family="monospace">[column_name]</text>
+  <text x="740" y="168" font-size="9.5" fill="#34d399" font-family="monospace">"column_name"</text>
+
+  <!-- Row 3: Auto increment -->
+  <line x1="30" y1="180" x2="870" y2="180" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="50" y="200" font-size="11" fill="#9b8da8">Auto-increment</text>
+  <text x="230" y="200" font-size="9.5" fill="#60a5fa" font-family="monospace">SERIAL / GENERATED</text>
+  <text x="400" y="200" font-size="9.5" fill="#f97316" font-family="monospace">AUTO_INCREMENT</text>
+  <text x="570" y="200" font-size="9.5" fill="#ef4444" font-family="monospace">IDENTITY(1,1)</text>
+  <text x="740" y="200" font-size="9.5" fill="#34d399" font-family="monospace">AUTOINCREMENT</text>
+
+  <!-- Row 4: Limit/Top -->
+  <line x1="30" y1="212" x2="870" y2="212" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="50" y="232" font-size="11" fill="#9b8da8">Limit rows</text>
+  <text x="230" y="232" font-size="9.5" fill="#60a5fa" font-family="monospace">LIMIT 10 OFFSET 20</text>
+  <text x="400" y="232" font-size="9.5" fill="#f97316" font-family="monospace">LIMIT 10 OFFSET 20</text>
+  <text x="570" y="232" font-size="9.5" fill="#ef4444" font-family="monospace">TOP 10 (leading)</text>
+  <text x="740" y="232" font-size="9.5" fill="#34d399" font-family="monospace">LIMIT 10 OFFSET 20</text>
+
+  <!-- Row 5: String concat -->
+  <line x1="30" y1="244" x2="870" y2="244" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="50" y="264" font-size="11" fill="#9b8da8">Concatenation</text>
+  <text x="230" y="264" font-size="9.5" fill="#60a5fa" font-family="monospace">a || b</text>
+  <text x="400" y="264" font-size="9.5" fill="#f97316" font-family="monospace">CONCAT(a, b)</text>
+  <text x="570" y="264" font-size="9.5" fill="#ef4444" font-family="monospace">a + b</text>
+  <text x="740" y="264" font-size="9.5" fill="#34d399" font-family="monospace">a || b</text>
+
+  <!-- Row 6: Upsert -->
+  <line x1="30" y1="276" x2="870" y2="276" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="50" y="296" font-size="11" fill="#9b8da8">Upsert</text>
+  <text x="230" y="296" font-size="9.5" fill="#60a5fa" font-family="monospace">INSERT ... ON CONFLICT</text>
+  <text x="400" y="296" font-size="9.5" fill="#f97316" font-family="monospace">INSERT ... ON DUPLICATE</text>
+  <text x="570" y="296" font-size="9.5" fill="#ef4444" font-family="monospace">MERGE INTO</text>
+  <text x="740" y="296" font-size="9.5" fill="#34d399" font-family="monospace">INSERT OR REPLACE</text>
+
+  <!-- Row 7: JSON support -->
+  <line x1="30" y1="308" x2="870" y2="308" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="50" y="328" font-size="11" fill="#9b8da8">JSON columns</text>
+  <text x="230" y="328" font-size="9.5" fill="#60a5fa" font-family="monospace">jsonb / json type</text>
+  <text x="400" y="328" font-size="9.5" fill="#f97316" font-family="monospace">JSON type</text>
+  <text x="570" y="328" font-size="9.5" fill="#ef4444" font-family="monospace">NVARCHAR + JSON_*</text>
+  <text x="740" y="328" font-size="9.5" fill="#34d399" font-family="monospace">json_extract()</text>
+
+  <!-- Row 8: CTEs -->
+  <line x1="30" y1="340" x2="870" y2="340" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="50" y="360" font-size="11" fill="#9b8da8">CTEs / WITH</text>
+  <text x="230" y="360" font-size="9.5" fill="#60a5fa" font-family="monospace">WITH cte AS (...)</text>
+  <text x="400" y="360" font-size="9.5" fill="#f97316" font-family="monospace">WITH cte AS (...)</text>
+  <text x="570" y="360" font-size="9.5" fill="#ef4444" font-family="monospace">WITH cte AS (...)</text>
+  <text x="740" y="360" font-size="9.5" fill="#34d399" font-family="monospace">WITH cte AS (...)</text>
+
+  <!-- Row 9: Date trunc -->
+  <line x1="30" y1="372" x2="870" y2="372" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="50" y="392" font-size="11" fill="#9b8da8">Truncate date</text>
+  <text x="230" y="392" font-size="9.5" fill="#60a5fa" font-family="monospace">DATE_TRUNC('month',...)</text>
+  <text x="400" y="392" font-size="9.5" fill="#f97316" font-family="monospace">DATE_FORMAT(d, '%Y-%m')</text>
+  <text x="570" y="392" font-size="9.5" fill="#ef4444" font-family="monospace">DATETRUNC(month, d)</text>
+  <text x="740" y="392" font-size="9.5" fill="#34d399" font-family="monospace">strftime('%Y-%m', d)</text>
+
+  <line x1="30" y1="404" x2="870" y2="404" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+  <text x="450" y="432" font-size="11" fill="#3d3356" text-anchor="middle">A SQL formatter that knows your dialect generates correct quotes, functions and syntax</text>
+  <text x="450" y="452" font-size="11" fill="#3d3356" text-anchor="middle">for your target database engine</text>
+</svg>
