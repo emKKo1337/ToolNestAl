@@ -1,0 +1,94 @@
+﻿<svg viewBox="0 0 900 540" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Delete PDF Pages tool interface">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#0f0825"/>
+      <stop offset="100%" stop-color="#05030d"/>
+    </radialGradient>
+    <linearGradient id="lapG" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a1040"/>
+      <stop offset="100%" stop-color="#0d0824"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="14" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="900" height="540" fill="url(#bg)"/>
+  <ellipse cx="450" cy="270" rx="280" ry="150" fill="#5b21b6" opacity="0.07" filter="url(#glow)"/>
+  <!-- Laptop -->
+  <rect x="120" y="48" width="660" height="410" rx="14" fill="url(#lapG)" stroke="#2a1f4a" stroke-width="1.5"/>
+  <rect x="120" y="48" width="660" height="38" rx="14" fill="#1a1040"/>
+  <rect x="120" y="72" width="660" height="14" fill="#1a1040"/>
+  <circle cx="655" cy="67" r="7" fill="#ff5f57"/>
+  <circle cx="675" cy="67" r="7" fill="#febc2e"/>
+  <circle cx="695" cy="67" r="7" fill="#28c840"/>
+  <rect x="200" y="56" width="440" height="20" rx="10" fill="#110c2a"/>
+  <text x="420" y="70" font-family="monospace" font-size="9" fill="#4d4354" text-anchor="middle">toolnestai.net/pdf-tools/delete-pdf-pages</text>
+  <rect x="136" y="94" width="628" height="352" rx="6" fill="#0c0920"/>
+  <text x="450" y="118" font-family="sans-serif" font-size="13" font-weight="700" fill="#e2e2e2" text-anchor="middle">Delete PDF Pages</text>
+  <text x="450" y="134" font-family="sans-serif" font-size="8" fill="#7a6d84" text-anchor="middle">Click pages to select, then delete — or type a page range</text>
+
+  <!-- Page grid -->
+  <!-- Row 1: pages 1-6 -->
+  <!-- Page 1 (selected for deletion) -->
+  <rect x="148" y="148" width="82" height="108" rx="6" fill="#1a0c0c" stroke="#ff453a" stroke-width="2"/>
+  <rect x="160" y="160" width="58" height="8" rx="2" fill="#2a1f4a"/>
+  <rect x="160" y="172" width="45" height="5" rx="2" fill="#1e1535"/>
+  <rect x="160" y="181" width="50" height="5" rx="2" fill="#1e1535"/>
+  <text x="189" y="242" font-family="sans-serif" font-size="8" fill="#ff453a" text-anchor="middle">1</text>
+  <rect x="162" y="196" width="56" height="20" rx="3" fill="#ff453a" opacity="0.3"/>
+  <text x="190" y="210" font-family="sans-serif" font-size="7" fill="#ff453a" text-anchor="middle">Selected</text>
+
+  <!-- Page 2 (normal) -->
+  <rect x="244" y="148" width="82" height="108" rx="6" fill="#1a1040" stroke="#2a1f4a" stroke-width="1"/>
+  <rect x="256" y="160" width="58" height="8" rx="2" fill="#2a1f4a"/>
+  <rect x="256" y="172" width="45" height="5" rx="2" fill="#1e1535"/>
+  <rect x="256" y="181" width="50" height="5" rx="2" fill="#1e1535"/>
+  <text x="285" y="242" font-family="sans-serif" font-size="8" fill="#7a6d84" text-anchor="middle">2</text>
+
+  <!-- Page 3 (normal) -->
+  <rect x="340" y="148" width="82" height="108" rx="6" fill="#1a1040" stroke="#2a1f4a" stroke-width="1"/>
+  <rect x="352" y="160" width="58" height="8" rx="2" fill="#2a1f4a"/>
+  <rect x="352" y="172" width="45" height="5" rx="2" fill="#1e1535"/>
+  <text x="381" y="242" font-family="sans-serif" font-size="8" fill="#7a6d84" text-anchor="middle">3</text>
+
+  <!-- Page 4 (selected) -->
+  <rect x="436" y="148" width="82" height="108" rx="6" fill="#1a0c0c" stroke="#ff453a" stroke-width="2"/>
+  <rect x="448" y="160" width="58" height="8" rx="2" fill="#2a1f4a"/>
+  <rect x="448" y="172" width="45" height="5" rx="2" fill="#1e1535"/>
+  <rect x="448" y="181" width="50" height="5" rx="2" fill="#1e1535"/>
+  <text x="477" y="242" font-family="sans-serif" font-size="8" fill="#ff453a" text-anchor="middle">4</text>
+  <rect x="450" y="196" width="56" height="20" rx="3" fill="#ff453a" opacity="0.3"/>
+  <text x="478" y="210" font-family="sans-serif" font-size="7" fill="#ff453a" text-anchor="middle">Selected</text>
+
+  <!-- Page 5 (normal) -->
+  <rect x="532" y="148" width="82" height="108" rx="6" fill="#1a1040" stroke="#2a1f4a" stroke-width="1"/>
+  <rect x="544" y="160" width="58" height="8" rx="2" fill="#2a1f4a"/>
+  <text x="573" y="242" font-family="sans-serif" font-size="8" fill="#7a6d84" text-anchor="middle">5</text>
+
+  <!-- Page 6 (selected) -->
+  <rect x="628" y="148" width="82" height="108" rx="6" fill="#1a0c0c" stroke="#ff453a" stroke-width="2"/>
+  <rect x="640" y="160" width="58" height="8" rx="2" fill="#2a1f4a"/>
+  <rect x="640" y="172" width="45" height="5" rx="2" fill="#1e1535"/>
+  <text x="669" y="242" font-family="sans-serif" font-size="8" fill="#ff453a" text-anchor="middle">6</text>
+  <rect x="642" y="196" width="56" height="20" rx="3" fill="#ff453a" opacity="0.3"/>
+  <text x="670" y="210" font-family="sans-serif" font-size="7" fill="#ff453a" text-anchor="middle">Selected</text>
+
+  <!-- Range input -->
+  <rect x="148" y="272" width="628" height="46" rx="8" fill="#110c2a" stroke="#2a1f4a" stroke-width="1"/>
+  <text x="164" y="290" font-family="sans-serif" font-size="8" fill="#7a6d84">Or type page range:</text>
+  <rect x="260" y="280" width="140" height="24" rx="6" fill="#0f0c24" stroke="#2a1f4a" stroke-width="1"/>
+  <text x="330" y="296" font-family="sans-serif" font-size="9" fill="#e2e2e2" text-anchor="middle">1, 4, 6</text>
+  <text x="410" y="295" font-family="sans-serif" font-size="8" fill="#4d4354">e.g. 1-3, 5, 7-10</text>
+
+  <!-- Action buttons -->
+  <rect x="148" y="332" width="220" height="36" rx="10" fill="#ff453a" opacity="0.8"/>
+  <text x="258" y="355" font-family="sans-serif" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">Delete 3 Pages</text>
+  <rect x="382" y="332" width="160" height="36" rx="10" fill="#1a1040" stroke="#2a1f4a" stroke-width="1"/>
+  <text x="462" y="355" font-family="sans-serif" font-size="12" fill="#7a6d84" text-anchor="middle">Clear Selection</text>
+
+  <!-- Status bar -->
+  <rect x="148" y="384" width="628" height="24" rx="6" fill="#110c2a"/>
+  <text x="164" y="400" font-family="sans-serif" font-size="8" fill="#4d4354">6 pages total · 3 selected for deletion · Result: 3 pages</text>
+
+  <!-- Base -->
+  <rect x="340" y="458" width="220" height="10" rx="5" fill="#1a1040"/>
+  <rect x="280" y="466" width="340" height="8" rx="4" fill="#140e34"/>
+</svg>
