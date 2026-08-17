@@ -1,0 +1,106 @@
+﻿<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" font-family="system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#0a0118"/>
+      <stop offset="100%" stop-color="#05030d"/>
+    </radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="18" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#a78bfa"/></marker>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="600" cy="300" r="260" fill="#5b21b6" opacity="0.07" filter="url(#glow)"/>
+
+  <text x="600" y="46" font-size="20" fill="#e2e2e2" font-weight="800" text-anchor="middle">How Canvas API Metadata Removal Works</text>
+  <text x="600" y="66" font-size="13" fill="#4d4354" text-anchor="middle">Drawing the image to a canvas and re-exporting strips the EXIF block entirely</text>
+
+  <!-- Step 1: Load file -->
+  <rect x="40" y="90" width="200" height="130" rx="12" fill="rgba(124,58,237,0.1)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+  <text x="140" y="120" font-size="40" text-anchor="middle">📁</text>
+  <text x="140" y="150" font-size="13" fill="#a78bfa" font-weight="700" text-anchor="middle">1. Read File</text>
+  <text x="140" y="168" font-size="11" fill="#6b5b7a" text-anchor="middle">FileReader API reads</text>
+  <text x="140" y="184" font-size="11" fill="#6b5b7a" text-anchor="middle">the file as binary</text>
+  <text x="140" y="200" font-size="10" fill="#7c3aed" text-anchor="middle" font-family="ui-monospace,monospace">new FileReader()</text>
+
+  <!-- Arrow -->
+  <line x1="242" y1="155" x2="280" y2="155" stroke="#a78bfa" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- Step 2: Create Image -->
+  <rect x="282" y="90" width="200" height="130" rx="12" fill="rgba(14,116,144,0.1)" stroke="rgba(14,116,144,0.3)" stroke-width="1"/>
+  <text x="382" y="120" font-size="40" text-anchor="middle">🖼</text>
+  <text x="382" y="150" font-size="13" fill="#22d3ee" font-weight="700" text-anchor="middle">2. Decode Image</text>
+  <text x="382" y="168" font-size="11" fill="#6b5b7a" text-anchor="middle">Create object URL,</text>
+  <text x="382" y="184" font-size="11" fill="#6b5b7a" text-anchor="middle">set as img.src</text>
+  <text x="382" y="200" font-size="10" fill="#0e7490" text-anchor="middle" font-family="ui-monospace,monospace">new Image()</text>
+
+  <!-- Arrow -->
+  <line x1="484" y1="155" x2="522" y2="155" stroke="#a78bfa" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- Step 3: Draw to Canvas -->
+  <rect x="524" y="90" width="200" height="130" rx="12" fill="rgba(124,58,237,0.1)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+  <text x="624" y="120" font-size="40" text-anchor="middle">🎨</text>
+  <text x="624" y="150" font-size="13" fill="#a78bfa" font-weight="700" text-anchor="middle">3. Draw to Canvas</text>
+  <text x="624" y="168" font-size="11" fill="#6b5b7a" text-anchor="middle">ctx.drawImage(img)</text>
+  <text x="624" y="184" font-size="11" fill="#6b5b7a" text-anchor="middle">copies only pixels</text>
+  <text x="624" y="200" font-size="10" fill="#7c3aed" text-anchor="middle" font-family="ui-monospace,monospace">ctx.drawImage(img,0,0)</text>
+
+  <!-- Arrow -->
+  <line x1="726" y1="155" x2="764" y2="155" stroke="#a78bfa" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- Step 4: Export -->
+  <rect x="766" y="90" width="200" height="130" rx="12" fill="rgba(16,185,129,0.1)" stroke="rgba(16,185,129,0.3)" stroke-width="1"/>
+  <text x="866" y="120" font-size="40" text-anchor="middle">⬇️</text>
+  <text x="866" y="150" font-size="13" fill="#34d399" font-weight="700" text-anchor="middle">4. Export Clean</text>
+  <text x="866" y="168" font-size="11" fill="#6b5b7a" text-anchor="middle">canvas.toBlob()</text>
+  <text x="866" y="184" font-size="11" fill="#6b5b7a" text-anchor="middle">produces new file</text>
+  <text x="866" y="200" font-size="10" fill="#059669" text-anchor="middle" font-family="ui-monospace,monospace">canvas.toBlob(...)</text>
+
+  <!-- Key insight box -->
+  <rect x="40" y="242" width="926" height="56" rx="10" fill="rgba(16,185,129,0.08)" stroke="rgba(16,185,129,0.3)" stroke-width="1"/>
+  <text x="503" y="266" font-size="13" fill="#34d399" font-weight="700" text-anchor="middle">Why This Works</text>
+  <text x="503" y="286" font-size="12" fill="#7a6d84" text-anchor="middle">When a browser draws an image to canvas, it decodes only the pixel data — the EXIF APP1 segment is parsed but never written to the canvas buffer. Re-exporting from canvas produces a fresh image file with no EXIF block.</text>
+
+  <!-- Code example -->
+  <rect x="40" y="316" width="580" height="268" rx="10" fill="rgba(0,0,0,0.4)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="60" y="342" font-size="12" fill="#34d399" font-weight="700">JavaScript — Strip EXIF via Canvas API</text>
+  <g font-size="11" font-family="ui-monospace,monospace" fill="#9b8da8">
+    <text x="60" y="366" fill="#7c3aed">function</text><text x="114" y="366" fill="#60a5fa"> stripMetadata</text><text x="220" y="366">(file, format = </text><text x="330" y="366" fill="#a78bfa">'image/jpeg'</text><text x="407" y="366">, quality = </text><text x="490" y="366" fill="#fbbf24">0.92</text><text x="514" y="366">) {'{'}</text>
+    <text x="72" y="384">return new Promise((resolve) => {'{'}</text>
+    <text x="84" y="402">const img = new Image();</text>
+    <text x="84" y="420">const url = URL.createObjectURL(file);</text>
+    <text x="84" y="438" fill="#7c3aed">img.onload</text><text x="152" y="438"> = () => {'{'}</text>
+    <text x="96" y="456">const canvas = document.createElement('canvas');</text>
+    <text x="96" y="474">canvas.width = img.naturalWidth;</text>
+    <text x="96" y="492">canvas.height = img.naturalHeight;</text>
+    <text x="96" y="510">const ctx = canvas.getContext('2d');</text>
+    <text x="96" y="528">ctx.drawImage(img, 0, 0); </text><text x="318" y="528" fill="#4d4354">// ← only pixels, no EXIF</text>
+    <text x="96" y="546">canvas.toBlob(resolve, format, quality);</text>
+    <text x="84" y="564">{'}'};  img.src = url;</text>
+  </g>
+
+  <!-- Right panel: caveats and notes -->
+  <rect x="640" y="316" width="520" height="268" rx="10" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="900" y="342" font-size="13" fill="#e2e2e2" font-weight="700" text-anchor="middle">What Gets Removed vs. Kept</text>
+
+  <g font-size="11" fill="#7a6d84">
+    <text x="660" y="370" fill="#f87171" font-weight="700">❌ Removed (EXIF block entirely gone)</text>
+    <text x="660" y="388">• GPS coordinates (latitude, longitude, altitude)</text>
+    <text x="660" y="404">• Camera make, model, lens, serial number</text>
+    <text x="660" y="420">• Aperture, shutter speed, ISO, focal length</text>
+    <text x="660" y="436">• Date and time the photo was taken</text>
+    <text x="660" y="452">• Artist name, copyright, user comments</text>
+    <text x="660" y="468">• Software used (Lightroom, iOS, etc.)</text>
+    <text x="660" y="484">• MakerNote (vendor-specific private data)</text>
+
+    <line x1="654" y1="494" x2="1150" y2="494" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+    <text x="660" y="512" fill="#fbbf24" font-weight="700">⚠ Note — Orientation side-effect</text>
+    <text x="660" y="528">The EXIF Orientation tag tells browsers how to</text>
+    <text x="660" y="544">rotate the display. When it's removed, the tool</text>
+    <text x="660" y="560">should pre-rotate the canvas before drawing</text>
+    <text x="660" y="576">to preserve the visual orientation.</text>
+  </g>
+</svg>

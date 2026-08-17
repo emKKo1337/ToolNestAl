@@ -1,0 +1,99 @@
+﻿<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" font-family="system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#0a0118"/>
+      <stop offset="100%" stop-color="#05030d"/>
+    </radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="18" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <marker id="arr" markerWidth="10" markerHeight="8" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L10,3 z" fill="#a78bfa"/></marker>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="600" cy="315" r="260" fill="#5b21b6" opacity="0.07" filter="url(#glow)"/>
+
+  <text x="600" y="46" font-size="20" fill="#e2e2e2" font-weight="800" text-anchor="middle">Before vs. After — Removing Image Metadata</text>
+  <text x="600" y="66" font-size="13" fill="#4d4354" text-anchor="middle">The image pixels are identical · Only the hidden EXIF block is removed</text>
+
+  <!-- BEFORE column -->
+  <rect x="40" y="86" width="510" height="490" rx="14" fill="rgba(239,68,68,0.05)" stroke="rgba(239,68,68,0.25)" stroke-width="1.5"/>
+  <rect x="40" y="86" width="510" height="44" rx="14" fill="rgba(239,68,68,0.1)"/>
+  <rect x="40" y="116" width="510" height="14" fill="rgba(239,68,68,0.1)"/>
+  <text x="295" y="114" font-size="16" fill="#f87171" font-weight="700" text-anchor="middle">⚠ BEFORE — Metadata Present</text>
+
+  <!-- Photo with metadata -->
+  <rect x="58" y="148" width="474" height="130" rx="8" fill="#1a0a30"/>
+  <!-- Scenic photo mock -->
+  <rect x="58" y="148" width="474" height="90" fill="#1a3a6e" rx="8 8 0 0"/>
+  <circle cx="100" cy="195" r="22" fill="#ffcd3c" opacity="0.7"/>
+  <rect x="58" y="238" width="474" height="40" fill="#1a3a2e" rx="0 0 8 8"/>
+  <text x="295" y="272" font-size="9" fill="#4d4354" text-anchor="middle">photo.jpg — 4.2 MB · Visual content unchanged</text>
+
+  <!-- Metadata fields -->
+  <g font-size="11" font-family="ui-monospace,monospace">
+    <text x="58" y="304" fill="#f87171" font-weight="700" font-size="12">Embedded EXIF Block (~15 KB)</text>
+
+    <text x="68" y="326" fill="#f87171">📍</text><text x="86" y="326" fill="#6b5b7a">GPSLatitude</text><text x="200" y="326" fill="#e2e2e2">48.8584° N</text><text x="400" y="326" fill="#f87171" font-size="9">← Home address</text>
+    <text x="68" y="344" fill="#f87171">📍</text><text x="86" y="344" fill="#6b5b7a">GPSLongitude</text><text x="200" y="344" fill="#e2e2e2">2.2945° E</text>
+
+    <text x="68" y="366" fill="#fb923c">📷</text><text x="86" y="366" fill="#6b5b7a">Make / Model</text><text x="200" y="366" fill="#e2e2e2">Apple / iPhone 15</text><text x="400" y="366" fill="#fb923c" font-size="9">← Device ID</text>
+
+    <text x="68" y="388" fill="#fbbf24">📅</text><text x="86" y="388" fill="#6b5b7a">DateTimeOriginal</text><text x="200" y="388" fill="#e2e2e2">2024-07-14 14:32:11</text><text x="400" y="388" fill="#fbbf24" font-size="9">← Daily routine</text>
+
+    <text x="68" y="410" fill="#a78bfa">⚙</text><text x="86" y="410" fill="#6b5b7a">Software</text><text x="200" y="410" fill="#e2e2e2">iOS 16.6</text>
+    <text x="68" y="428" fill="#a78bfa">⚙</text><text x="86" y="428" fill="#6b5b7a">LensModel</text><text x="200" y="428" fill="#e2e2e2">iPhone 15 rear main</text>
+
+    <text x="68" y="450" fill="#60a5fa">©</text><text x="86" y="450" fill="#6b5b7a">Artist</text><text x="200" y="450" fill="#e2e2e2">Jane Smith</text><text x="400" y="450" fill="#60a5fa" font-size="9">← Real name</text>
+    <text x="68" y="468" fill="#60a5fa">©</text><text x="86" y="468" fill="#6b5b7a">Copyright</text><text x="200" y="468" fill="#e2e2e2">© 2024 Jane Smith</text>
+
+    <text x="68" y="490" fill="#6b5b7a">◆</text><text x="86" y="490" fill="#6b5b7a">Orientation</text><text x="200" y="490" fill="#e2e2e2">1 (Normal)</text>
+    <text x="68" y="508" fill="#6b5b7a">◆</text><text x="86" y="508" fill="#6b5b7a">ColorSpace</text><text x="200" y="508" fill="#e2e2e2">sRGB</text>
+    <text x="68" y="526" fill="#6b5b7a">◆</text><text x="86" y="526" fill="#6b5b7a">XResolution</text><text x="200" y="526" fill="#e2e2e2">72 dpi</text>
+
+    <text x="58" y="555" fill="#f87171" font-size="10">⚠  Sharing this file exposes your home address, device, and daily routine</text>
+  </g>
+
+  <!-- Arrow -->
+  <text x="590" y="310" font-size="36" text-anchor="middle" fill="#a78bfa">→</text>
+  <text x="590" y="350" font-size="12" fill="#7a6d84" text-anchor="middle">Strip</text>
+  <text x="590" y="366" font-size="12" fill="#7a6d84" text-anchor="middle">EXIF</text>
+
+  <!-- AFTER column -->
+  <rect x="650" y="86" width="510" height="490" rx="14" fill="rgba(16,185,129,0.05)" stroke="rgba(16,185,129,0.3)" stroke-width="1.5"/>
+  <rect x="650" y="86" width="510" height="44" rx="14" fill="rgba(16,185,129,0.1)"/>
+  <rect x="650" y="116" width="510" height="14" fill="rgba(16,185,129,0.1)"/>
+  <text x="905" y="114" font-size="16" fill="#34d399" font-weight="700" text-anchor="middle">✓ AFTER — Metadata Removed</text>
+
+  <!-- Same photo - clean -->
+  <rect x="668" y="148" width="474" height="130" rx="8" fill="#1a0a30"/>
+  <rect x="668" y="148" width="474" height="90" fill="#1a3a6e" rx="8 8 0 0"/>
+  <circle cx="710" cy="195" r="22" fill="#ffcd3c" opacity="0.7"/>
+  <rect x="668" y="238" width="474" height="40" fill="#1a3a2e" rx="0 0 8 8"/>
+  <text x="905" y="272" font-size="9" fill="#4d4354" text-anchor="middle">photo_clean.jpg — 4.187 MB · Pixels 100% identical</text>
+
+  <!-- Clean metadata status -->
+  <g font-size="11" font-family="ui-monospace,monospace">
+    <text x="668" y="304" fill="#34d399" font-weight="700" font-size="12">EXIF Block — Removed</text>
+
+    <text x="678" y="326" fill="#4d4354">❌</text><text x="696" y="326" fill="#3d3347">GPSLatitude</text><text x="810" y="326" fill="#3d3347" text-decoration="line-through">48.8584° N</text><text x="1010" y="326" fill="#34d399" font-size="9">Removed</text>
+    <text x="678" y="344" fill="#4d4354">❌</text><text x="696" y="344" fill="#3d3347">GPSLongitude</text><text x="810" y="344" fill="#3d3347" text-decoration="line-through">2.2945° E</text><text x="1010" y="344" fill="#34d399" font-size="9">Removed</text>
+
+    <text x="678" y="366" fill="#4d4354">❌</text><text x="696" y="366" fill="#3d3347">Make / Model</text><text x="810" y="366" fill="#3d3347" text-decoration="line-through">iPhone 15</text><text x="1010" y="366" fill="#34d399" font-size="9">Removed</text>
+
+    <text x="678" y="388" fill="#4d4354">❌</text><text x="696" y="388" fill="#3d3347">DateTimeOriginal</text><text x="810" y="388" fill="#3d3347" text-decoration="line-through">2024-07-14</text><text x="1010" y="388" fill="#34d399" font-size="9">Removed</text>
+
+    <text x="678" y="410" fill="#4d4354">❌</text><text x="696" y="410" fill="#3d3347">Software</text><text x="810" y="410" fill="#3d3347" text-decoration="line-through">iOS 16.6</text><text x="1010" y="410" fill="#34d399" font-size="9">Removed</text>
+    <text x="678" y="428" fill="#4d4354">❌</text><text x="696" y="428" fill="#3d3347">LensModel</text><text x="810" y="428" fill="#3d3347" text-decoration="line-through">iPhone 15 rear</text><text x="1010" y="428" fill="#34d399" font-size="9">Removed</text>
+
+    <text x="678" y="450" fill="#4d4354">❌</text><text x="696" y="450" fill="#3d3347">Artist</text><text x="810" y="450" fill="#3d3347" text-decoration="line-through">Jane Smith</text><text x="1010" y="450" fill="#34d399" font-size="9">Removed</text>
+    <text x="678" y="468" fill="#4d4354">❌</text><text x="696" y="468" fill="#3d3347">Copyright</text><text x="810" y="468" fill="#3d3347" text-decoration="line-through">© 2024</text><text x="1010" y="468" fill="#34d399" font-size="9">Removed</text>
+
+    <text x="678" y="490" fill="#4d4354">❌</text><text x="696" y="490" fill="#3d3347">Orientation</text><text x="1010" y="490" fill="#34d399" font-size="9">Removed</text>
+    <text x="678" y="508" fill="#4d4354">❌</text><text x="696" y="508" fill="#3d3347">ColorSpace</text><text x="1010" y="508" fill="#34d399" font-size="9">Removed</text>
+    <text x="678" y="526" fill="#4d4354">❌</text><text x="696" y="526" fill="#3d3347">XResolution</text><text x="1010" y="526" fill="#34d399" font-size="9">Removed</text>
+
+    <text x="668" y="555" fill="#34d399" font-size="10">✓  Safe to share — image quality preserved, privacy protected</text>
+  </g>
+</svg>

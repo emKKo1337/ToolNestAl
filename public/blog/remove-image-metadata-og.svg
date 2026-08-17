@@ -1,0 +1,91 @@
+﻿<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" font-family="system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#0a0118"/>
+      <stop offset="100%" stop-color="#05030d"/>
+    </radialGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#4f46e5"/>
+    </linearGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="28" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="320" cy="300" r="260" fill="#5b21b6" opacity="0.14" filter="url(#glow)"/>
+  <circle cx="950" cy="200" r="180" fill="#0e7490" opacity="0.08" filter="url(#glow)"/>
+
+  <!-- Badge -->
+  <rect x="80" y="118" width="180" height="28" rx="14" fill="rgba(16,185,129,0.2)" stroke="rgba(16,185,129,0.4)" stroke-width="1"/>
+  <text x="170" y="136" font-size="12" fill="#34d399" font-weight="700" text-anchor="middle" letter-spacing="1">PRIVACY PROTECTION</text>
+
+  <!-- Headline -->
+  <text x="80" y="208" font-size="58" fill="#e2e2e2" font-weight="900">Remove Image</text>
+  <text x="80" y="268" font-size="58" fill="url(#aG)" font-weight="900">Metadata</text>
+
+  <!-- Sub -->
+  <text x="80" y="320" font-size="20" fill="#7a6d84">Strip GPS, camera info and EXIF</text>
+  <text x="80" y="348" font-size="20" fill="#7a6d84">before sharing. Batch processing.</text>
+  <text x="80" y="376" font-size="20" fill="#7a6d84">100% browser-side. Free.</text>
+
+  <!-- Removed items chips -->
+  <g transform="translate(80,406)">
+    <rect width="90" height="32" rx="16" fill="rgba(239,68,68,0.15)" stroke="rgba(239,68,68,0.3)" stroke-width="1"/>
+    <text x="45" y="20" font-size="12" fill="#f87171" font-weight="700" text-anchor="middle">📍 GPS</text>
+    <rect x="98" width="110" height="32" rx="16" fill="rgba(239,68,68,0.1)" stroke="rgba(239,68,68,0.25)" stroke-width="1"/>
+    <text x="153" y="20" font-size="12" fill="#f87171" font-weight="700" text-anchor="middle">📷 Camera</text>
+    <rect x="216" width="100" height="32" rx="16" fill="rgba(239,68,68,0.1)" stroke="rgba(239,68,68,0.25)" stroke-width="1"/>
+    <text x="266" y="20" font-size="12" fill="#f87171" font-weight="700" text-anchor="middle">📅 Dates</text>
+    <rect x="324" width="100" height="32" rx="16" fill="rgba(239,68,68,0.1)" stroke="rgba(239,68,68,0.25)" stroke-width="1"/>
+    <text x="374" y="20" font-size="12" fill="#f87171" font-weight="700" text-anchor="middle">© Author</text>
+  </g>
+
+  <!-- Shield graphic -->
+  <circle cx="200" cy="530" r="54" fill="rgba(16,185,129,0.12)" stroke="rgba(16,185,129,0.3)" stroke-width="2"/>
+  <text x="200" y="548" font-size="52" text-anchor="middle">🛡</text>
+
+  <!-- Right: file list preview panel -->
+  <rect x="820" y="60" width="340" height="510" rx="20" fill="rgba(255,255,255,0.03)" stroke="rgba(139,92,246,0.2)" stroke-width="1.5"/>
+
+  <!-- Files -->
+  <rect x="838" y="82" width="304" height="64" rx="8" fill="rgba(239,68,68,0.06)" stroke="rgba(239,68,68,0.2)" stroke-width="0.5"/>
+  <text x="854" y="106" font-size="11" fill="#e2e2e2" font-weight="600">photo_home.jpg</text>
+  <text x="854" y="122" font-size="10" fill="#6b5b7a">4.2 MB · GPS: 48.8584°N, 2.2945°E</text>
+  <rect x="854" y="128" width="54" height="12" rx="6" fill="rgba(239,68,68,0.2)"/>
+  <text x="881" y="137" font-size="8" fill="#f87171" text-anchor="middle">📍 GPS</text>
+
+  <rect x="838" y="154" width="304" height="64" rx="8" fill="rgba(239,68,68,0.06)" stroke="rgba(239,68,68,0.2)" stroke-width="0.5"/>
+  <text x="854" y="178" font-size="11" fill="#e2e2e2" font-weight="600">family_vacation.jpg</text>
+  <text x="854" y="194" font-size="10" fill="#6b5b7a">3.8 MB · 35 EXIF fields</text>
+  <rect x="854" y="200" width="54" height="12" rx="6" fill="rgba(239,68,68,0.2)"/>
+  <text x="881" y="209" font-size="8" fill="#f87171" text-anchor="middle">📍 GPS</text>
+
+  <rect x="838" y="226" width="304" height="64" rx="8" fill="rgba(16,185,129,0.06)" stroke="rgba(16,185,129,0.2)" stroke-width="0.5"/>
+  <text x="854" y="250" font-size="11" fill="#e2e2e2" font-weight="600">office_meeting.jpg</text>
+  <text x="854" y="266" font-size="10" fill="#6b5b7a">2.1 MB → Cleaned</text>
+  <rect x="854" y="272" width="98" height="12" rx="6" fill="rgba(16,185,129,0.2)"/>
+  <text x="903" y="281" font-size="8" fill="#34d399" text-anchor="middle">✓ Metadata Removed</text>
+
+  <!-- Process button -->
+  <rect x="838" y="304" width="304" height="38" rx="10" fill="url(#bG)"/>
+  <text x="990" y="328" font-size="13" fill="white" text-anchor="middle" font-weight="700">🛡 Strip All Metadata</text>
+
+  <!-- Result area -->
+  <rect x="838" y="354" width="304" height="100" rx="8" fill="rgba(16,185,129,0.05)" stroke="rgba(16,185,129,0.15)" stroke-width="0.5"/>
+  <text x="990" y="380" font-size="12" fill="#34d399" font-weight="700" text-anchor="middle">✓ 3 images cleaned</text>
+  <text x="990" y="400" font-size="11" fill="#6b5b7a" text-anchor="middle">Total saved: ~45 KB of metadata</text>
+  <text x="990" y="418" font-size="11" fill="#6b5b7a" text-anchor="middle">Pixel data: 100% unchanged</text>
+  <rect x="858" y="430" width="264" height="14" rx="4" fill="rgba(255,255,255,0.06)"/>
+  <rect x="858" y="430" width="264" height="14" rx="4" fill="url(#bG)" opacity="0.7"/>
+
+  <!-- Download ZIP -->
+  <rect x="838" y="466" width="304" height="38" rx="10" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="990" y="490" font-size="12" fill="#9b8da8" text-anchor="middle" font-weight="600">⬇ Download ZIP (3 files)</text>
+
+  <!-- URL -->
+  <rect x="838" y="516" width="304" height="38" rx="10" fill="rgba(16,185,129,0.08)"/>
+  <text x="990" y="540" font-size="12" fill="#34d399" text-anchor="middle" font-weight="700">toolnestai.net</text>
+</svg>

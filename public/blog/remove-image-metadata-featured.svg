@@ -1,0 +1,126 @@
+﻿<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" font-family="system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#0a0118"/>
+      <stop offset="100%" stop-color="#05030d"/>
+    </radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#4f46e5"/>
+    </linearGradient>
+    <linearGradient id="lapG" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a1040"/>
+      <stop offset="100%" stop-color="#0d0824"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="20" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <clipPath id="sc"><rect x="550" y="52" width="570" height="380" rx="4"/></clipPath>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="220" cy="300" r="200" fill="#5b21b6" opacity="0.12" filter="url(#glow)"/>
+  <circle cx="920" cy="180" r="160" fill="#0e7490" opacity="0.08" filter="url(#glow)"/>
+
+  <!-- Left panel -->
+  <text x="80" y="128" font-size="13" fill="#a78bfa" font-weight="700" letter-spacing="2">REMOVE IMAGE METADATA</text>
+  <text x="80" y="178" font-size="40" fill="#e2e2e2" font-weight="800">Strip EXIF &amp;</text>
+  <text x="80" y="228" font-size="40" fill="url(#aG)" font-weight="800">GPS Data</text>
+  <text x="80" y="278" font-size="40" fill="#e2e2e2" font-weight="800">in One Click</text>
+
+  <text x="80" y="332" font-size="16" fill="#7a6d84">Batch-process images · Remove GPS,</text>
+  <text x="80" y="355" font-size="16" fill="#7a6d84">camera info, dates, author, copyright.</text>
+  <text x="80" y="378" font-size="16" fill="#7a6d84">100% private — no server upload.</text>
+
+  <!-- Shield icon area -->
+  <circle cx="140" cy="470" r="48" fill="rgba(16,185,129,0.12)" stroke="rgba(16,185,129,0.3)" stroke-width="1.5"/>
+  <text x="140" y="485" font-size="44" text-anchor="middle">🛡</text>
+
+  <text x="210" y="448" font-size="14" fill="#34d399" font-weight="700">Privacy protected</text>
+  <text x="210" y="468" font-size="12" fill="#4d4354">Canvas API re-exports image</text>
+  <text x="210" y="485" font-size="12" fill="#4d4354">pixel data only — no metadata</text>
+
+  <!-- Laptop -->
+  <rect x="538" y="40" width="594" height="428" rx="14" fill="url(#lapG)" stroke="rgba(139,92,246,0.25)" stroke-width="1.5"/>
+  <rect x="538" y="40" width="594" height="36" rx="14" fill="#1a1040"/>
+  <rect x="538" y="58" width="594" height="18" fill="#1a1040"/>
+  <circle cx="655" cy="58" r="6" fill="#ff5f57"/>
+  <circle cx="675" cy="58" r="6" fill="#ffbd2e"/>
+  <circle cx="695" cy="58" r="6" fill="#28ca41"/>
+  <rect x="720" y="48" width="320" height="18" rx="9" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="880" y="60" font-size="10" fill="#4d4354" text-anchor="middle">toolnestai.net/image-tools/remove-image-metadata</text>
+
+  <g clip-path="url(#sc)">
+    <rect x="550" y="52" width="570" height="380" fill="#0f0b1f"/>
+
+    <!-- Title bar -->
+    <text x="700" y="80" font-size="12" fill="#e2e2e2" font-weight="700" text-anchor="middle">Remove Image Metadata — Batch Mode</text>
+    <text x="700" y="96" font-size="9" fill="#4d4354" text-anchor="middle">3 images loaded · All metadata will be stripped</text>
+
+    <!-- File list -->
+    <!-- File 1 -->
+    <rect x="558" y="106" width="516" height="62" rx="6" fill="rgba(239,68,68,0.06)" stroke="rgba(239,68,68,0.2)" stroke-width="0.5"/>
+    <!-- Thumbnail -->
+    <rect x="566" y="112" width="48" height="48" rx="4" fill="rgba(251,146,60,0.15)"/>
+    <text x="590" y="142" font-size="20" text-anchor="middle">🏠</text>
+    <!-- File info -->
+    <text x="626" y="130" font-size="10" fill="#e2e2e2" font-weight="600">photo_home.jpg</text>
+    <text x="626" y="144" font-size="9" fill="#7a6d84">4.2 MB · 4032×3024 · Contains GPS</text>
+    <!-- Metadata warning chips -->
+    <rect x="626" y="150" width="60" height="14" rx="7" fill="rgba(239,68,68,0.2)" stroke="rgba(239,68,68,0.4)" stroke-width="0.5"/>
+    <text x="656" y="160" font-size="8" fill="#f87171" text-anchor="middle" font-weight="700">📍 GPS</text>
+    <rect x="694" y="150" width="72" height="14" rx="7" fill="rgba(239,68,68,0.15)" stroke="rgba(239,68,68,0.3)" stroke-width="0.5"/>
+    <text x="730" y="160" font-size="8" fill="#f87171" text-anchor="middle">📷 Camera</text>
+    <rect x="774" y="150" width="60" height="14" rx="7" fill="rgba(239,68,68,0.15)" stroke="rgba(239,68,68,0.3)" stroke-width="0.5"/>
+    <text x="804" y="160" font-size="8" fill="#f87171" text-anchor="middle">📅 Dates</text>
+    <!-- Status: pending -->
+    <text x="1052" y="138" font-size="9" fill="#6b5b7a" text-anchor="middle">Pending</text>
+
+    <!-- File 2 -->
+    <rect x="558" y="174" width="516" height="62" rx="6" fill="rgba(239,68,68,0.06)" stroke="rgba(239,68,68,0.2)" stroke-width="0.5"/>
+    <rect x="566" y="180" width="48" height="48" rx="4" fill="rgba(167,139,250,0.1)"/>
+    <text x="590" y="210" font-size="20" text-anchor="middle">👶</text>
+    <text x="626" y="198" font-size="10" fill="#e2e2e2" font-weight="600">family_school.jpg</text>
+    <text x="626" y="212" font-size="9" fill="#7a6d84">2.8 MB · 3024×4032 · Contains GPS + Author</text>
+    <rect x="626" y="218" width="60" height="14" rx="7" fill="rgba(239,68,68,0.2)" stroke="rgba(239,68,68,0.4)" stroke-width="0.5"/>
+    <text x="656" y="228" font-size="8" fill="#f87171" text-anchor="middle" font-weight="700">📍 GPS</text>
+    <rect x="694" y="218" width="80" height="14" rx="7" fill="rgba(239,68,68,0.15)" stroke="rgba(239,68,68,0.3)" stroke-width="0.5"/>
+    <text x="734" y="228" font-size="8" fill="#f87171" text-anchor="middle">©  Author</text>
+    <text x="1052" y="206" font-size="9" fill="#6b5b7a" text-anchor="middle">Pending</text>
+
+    <!-- File 3 - done -->
+    <rect x="558" y="242" width="516" height="62" rx="6" fill="rgba(16,185,129,0.06)" stroke="rgba(16,185,129,0.2)" stroke-width="0.5"/>
+    <rect x="566" y="248" width="48" height="48" rx="4" fill="rgba(16,185,129,0.1)"/>
+    <text x="590" y="278" font-size="20" text-anchor="middle">🌇</text>
+    <text x="626" y="266" font-size="10" fill="#e2e2e2" font-weight="600">vacation_paris.jpg</text>
+    <text x="626" y="280" font-size="9" fill="#7a6d84">3.1 MB → 3.0 MB after stripping</text>
+    <rect x="626" y="286" width="98" height="14" rx="7" fill="rgba(16,185,129,0.2)" stroke="rgba(16,185,129,0.4)" stroke-width="0.5"/>
+    <text x="675" y="296" font-size="8" fill="#34d399" text-anchor="middle">✓ Metadata Removed</text>
+    <text x="1052" y="274" font-size="9" fill="#34d399" text-anchor="middle" font-weight="700">✓ Done</text>
+
+    <!-- Separator -->
+    <line x1="558" y1="316" x2="1074" y2="316" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+
+    <!-- Options -->
+    <text x="570" y="338" font-size="9" fill="#6b5b7a" font-weight="600">KEEP FIELDS:</text>
+    <rect x="650" y="326" width="80" height="18" rx="9" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/>
+    <text x="690" y="338" font-size="8" fill="#9b8da8" text-anchor="middle">Copyright</text>
+    <rect x="738" y="326" width="76" height="18" rx="9" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/>
+    <text x="776" y="338" font-size="8" fill="#9b8da8" text-anchor="middle">Artist Name</text>
+    <rect x="822" y="326" width="80" height="18" rx="9" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/>
+    <text x="862" y="338" font-size="8" fill="#9b8da8" text-anchor="middle">Color Space</text>
+
+    <!-- Action buttons -->
+    <rect x="558" y="354" width="240" height="30" rx="7" fill="url(#bG)"/>
+    <text x="678" y="373" font-size="11" fill="white" text-anchor="middle" font-weight="700">🛡 Remove All Metadata</text>
+    <rect x="808" y="354" width="200" height="30" rx="7" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/>
+    <text x="908" y="373" font-size="11" fill="#9b8da8" text-anchor="middle" font-weight="600">Download ZIP</text>
+  </g>
+
+  <!-- Laptop base -->
+  <rect x="538" y="464" width="594" height="14" rx="3" fill="#120d26" stroke="rgba(139,92,246,0.15)" stroke-width="1"/>
+  <rect x="700" y="476" width="270" height="6" rx="3" fill="#0d0820"/>
+
+  <text x="600" y="604" font-size="13" fill="#4d4354" text-anchor="middle">Batch EXIF removal · GPS stripped · Zero upload · Download as ZIP · Free</text>
+</svg>
