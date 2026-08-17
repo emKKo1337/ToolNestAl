@@ -1,0 +1,96 @@
+﻿<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" font-family="system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#0a0118"/>
+      <stop offset="100%" stop-color="#05030d"/>
+    </radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#4f46e5"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="28" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="300" cy="315" r="240" fill="#5b21b6" opacity="0.15" filter="url(#glow)"/>
+  <circle cx="950" cy="200" r="180" fill="#0e7490" opacity="0.10" filter="url(#glow)"/>
+
+  <!-- Badge -->
+  <rect x="80" y="120" width="160" height="28" rx="14" fill="rgba(124,58,237,0.25)" stroke="rgba(124,58,237,0.4)" stroke-width="1"/>
+  <text x="160" y="138" font-size="12" fill="#a78bfa" font-weight="700" text-anchor="middle" letter-spacing="1">FREE ONLINE TOOL</text>
+
+  <!-- Headline -->
+  <text x="80" y="210" font-size="64" fill="#e2e2e2" font-weight="900" text-anchor="start">Image Filters</text>
+  <text x="80" y="275" font-size="52" fill="url(#aG)" font-weight="900" text-anchor="start">17 Pro Effects</text>
+
+  <!-- Sub -->
+  <text x="80" y="325" font-size="20" fill="#7a6d84" text-anchor="start">Apply stunning photo filters in seconds.</text>
+  <text x="80" y="352" font-size="20" fill="#7a6d84" text-anchor="start">100% browser-side · No account needed.</text>
+
+  <!-- Filter swatches -->
+  <g transform="translate(80,390)">
+    <rect width="100" height="36" rx="8" fill="rgba(161,78,27,0.3)" stroke="#a14e1b" stroke-width="1"/>
+    <text x="50" y="22" font-size="12" fill="#d47b3f" font-weight="700" text-anchor="middle">Sepia</text>
+
+    <rect x="110" width="100" height="36" rx="8" fill="rgba(124,58,237,0.25)" stroke="#7c3aed" stroke-width="1"/>
+    <text x="160" y="22" font-size="12" fill="#a78bfa" font-weight="700" text-anchor="middle">Vintage</text>
+
+    <rect x="220" width="100" height="36" rx="8" fill="rgba(6,182,212,0.2)" stroke="#0891b2" stroke-width="1"/>
+    <text x="270" y="22" font-size="12" fill="#22d3ee" font-weight="700" text-anchor="middle">HDR</text>
+
+    <rect x="330" width="100" height="36" rx="8" fill="rgba(251,146,60,0.2)" stroke="#fb923c" stroke-width="1"/>
+    <text x="380" y="22" font-size="12" fill="#fdba74" font-weight="700" text-anchor="middle">Warm</text>
+
+    <rect x="440" width="100" height="36" rx="8" fill="rgba(51,51,51,0.4)" stroke="#555" stroke-width="1"/>
+    <text x="490" y="22" font-size="12" fill="#ccc" font-weight="700" text-anchor="middle">Noir</text>
+
+    <rect x="550" width="120" height="36" rx="8" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <text x="610" y="22" font-size="12" fill="#4d4354" font-weight="700" text-anchor="middle">+12 more</text>
+  </g>
+
+  <!-- Right decorative filter panel -->
+  <rect x="820" y="60" width="340" height="510" rx="20" fill="rgba(255,255,255,0.03)" stroke="rgba(124,58,237,0.2)" stroke-width="1.5"/>
+
+  <!-- Filter preview panels 3x2 -->
+  <!-- Row 1 -->
+  <rect x="838" y="80" width="146" height="110" rx="8" fill="#3d2000"/>
+  <circle cx="890" cy="120" r="25" fill="#c8933a" opacity="0.6"/>
+  <rect x="838" y="172" width="146" height="14" rx="3" fill="rgba(0,0,0,0.5)"/>
+  <text x="911" y="182" font-size="10" fill="#d47b3f" font-weight="700" text-anchor="middle">SEPIA</text>
+
+  <rect x="996" y="80" width="146" height="110" rx="8" fill="#08051a"/>
+  <circle cx="1048" cy="120" r="25" fill="#5a3a8a" opacity="0.7"/>
+  <rect x="996" y="172" width="146" height="14" rx="3" fill="rgba(0,0,0,0.5)"/>
+  <text x="1069" y="182" font-size="10" fill="#a78bfa" font-weight="700" text-anchor="middle">CINEMATIC</text>
+
+  <!-- Row 2 -->
+  <rect x="838" y="208" width="146" height="110" rx="8" fill="#1a3a6e"/>
+  <circle cx="890" cy="248" r="25" fill="#7dd3fc" opacity="0.7"/>
+  <rect x="838" y="300" width="146" height="14" rx="3" fill="rgba(0,0,0,0.5)"/>
+  <text x="911" y="310" font-size="10" fill="#93c5fd" font-weight="700" text-anchor="middle">COOL</text>
+
+  <rect x="996" y="208" width="146" height="110" rx="8" fill="#0a2a6e"/>
+  <circle cx="1048" cy="248" r="25" fill="#ff4500" opacity="0.8"/>
+  <rect x="996" y="300" width="146" height="14" rx="3" fill="rgba(0,0,0,0.5)"/>
+  <text x="1069" y="310" font-size="10" fill="#22d3ee" font-weight="700" text-anchor="middle">HDR</text>
+
+  <!-- Row 3 -->
+  <rect x="838" y="336" width="146" height="110" rx="8" fill="#2a2a2a"/>
+  <circle cx="890" cy="376" r="25" fill="#888" opacity="0.7"/>
+  <rect x="838" y="428" width="146" height="14" rx="3" fill="rgba(0,0,0,0.5)"/>
+  <text x="911" y="438" font-size="10" fill="#aaa" font-weight="700" text-anchor="middle">BLACK &amp; WHITE</text>
+
+  <rect x="996" y="336" width="146" height="110" rx="8" fill="#8a3a00"/>
+  <circle cx="1048" cy="376" r="25" fill="#fcd34d" opacity="0.7"/>
+  <rect x="996" y="428" width="146" height="14" rx="3" fill="rgba(0,0,0,0.5)"/>
+  <text x="1069" y="438" font-size="10" fill="#fdba74" font-weight="700" text-anchor="middle">WARM</text>
+
+  <!-- URL at bottom -->
+  <rect x="838" y="458" width="304" height="96" rx="10" fill="rgba(124,58,237,0.1)"/>
+  <text x="990" y="490" font-size="13" fill="#6b5b7a" text-anchor="middle">Try it free at</text>
+  <text x="990" y="514" font-size="16" fill="#a78bfa" font-weight="700" text-anchor="middle">toolnestai.net</text>
+  <text x="990" y="536" font-size="11" fill="#4d4354" text-anchor="middle">/image-tools/image-filters</text>
+</svg>

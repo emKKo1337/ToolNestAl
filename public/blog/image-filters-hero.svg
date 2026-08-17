@@ -1,0 +1,141 @@
+﻿<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" font-family="system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#0a0118"/>
+      <stop offset="100%" stop-color="#05030d"/>
+    </radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="20" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <!-- Base image gradients for each filter -->
+    <linearGradient id="origG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a4a8a"/>
+      <stop offset="50%" stop-color="#2d8a4e"/>
+      <stop offset="100%" stop-color="#f97316"/>
+    </linearGradient>
+    <linearGradient id="bwG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a2a2a"/>
+      <stop offset="50%" stop-color="#606060"/>
+      <stop offset="100%" stop-color="#b0b0b0"/>
+    </linearGradient>
+    <linearGradient id="sepG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3d2000"/>
+      <stop offset="50%" stop-color="#7a4e10"/>
+      <stop offset="100%" stop-color="#c8933a"/>
+    </linearGradient>
+    <linearGradient id="warmG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8a3a00"/>
+      <stop offset="50%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#fcd34d"/>
+    </linearGradient>
+    <linearGradient id="coolG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c1a4a"/>
+      <stop offset="50%" stop-color="#1d4ed8"/>
+      <stop offset="100%" stop-color="#7dd3fc"/>
+    </linearGradient>
+    <linearGradient id="hdrG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a2a6e"/>
+      <stop offset="50%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#ff4500"/>
+    </linearGradient>
+    <linearGradient id="vintG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a0a00"/>
+      <stop offset="50%" stop-color="#5c3010"/>
+      <stop offset="100%" stop-color="#c8843a"/>
+    </linearGradient>
+    <linearGradient id="noirG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#000"/>
+      <stop offset="50%" stop-color="#2a2a2a"/>
+      <stop offset="100%" stop-color="#555"/>
+    </linearGradient>
+    <linearGradient id="fadG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4a5a7a"/>
+      <stop offset="50%" stop-color="#7a8aaa"/>
+      <stop offset="100%" stop-color="#bccde0"/>
+    </linearGradient>
+    <linearGradient id="cinG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#08051a"/>
+      <stop offset="50%" stop-color="#2a1a5a"/>
+      <stop offset="100%" stop-color="#5a3a8a"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Purple glow -->
+  <circle cx="600" cy="315" r="280" fill="#5b21b6" opacity="0.07" filter="url(#glow)"/>
+
+  <!-- Title -->
+  <text x="600" y="52" font-size="22" fill="#e2e2e2" font-weight="800" text-anchor="middle">Image Filter Comparison — Same Image, Different Effects</text>
+  <text x="600" y="75" font-size="13" fill="#4d4354" text-anchor="middle">Apply any of 17 professional filters in real-time · Browser-only · Free at toolnestai.net</text>
+
+  <!-- Row 1: 5 filter panels -->
+  <!-- Panel 1: Original -->
+  <rect x="40" y="95" width="208" height="230" rx="10" fill="url(#origG)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <!-- scene elements -->
+  <ellipse cx="144" cy="260" rx="104" ry="30" fill="#0d0826" opacity="0.5"/>
+  <circle cx="80" cy="160" r="28" fill="#f97316" opacity="0.7"/>
+  <rect x="40" y="240" width="208" height="85" rx="0 0 10 10" fill="rgba(0,0,0,0.3)"/>
+  <rect x="40" y="295" width="208" height="30" rx="0 0 10 10" fill="rgba(0,0,0,0.3)"/>
+  <text x="144" y="315" font-size="13" fill="white" font-weight="700" text-anchor="middle">ORIGINAL</text>
+
+  <!-- Panel 2: Black & White -->
+  <rect x="260" y="95" width="208" height="230" rx="10" fill="url(#bwG)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <circle cx="296" cy="160" r="28" fill="#ddd" opacity="0.6"/>
+  <rect x="260" y="295" width="208" height="30" rx="0 0 10 10" fill="rgba(0,0,0,0.4)"/>
+  <text x="364" y="315" font-size="13" fill="white" font-weight="700" text-anchor="middle">BLACK &amp; WHITE</text>
+
+  <!-- Panel 3: Sepia -->
+  <rect x="480" y="95" width="208" height="230" rx="10" fill="url(#sepG)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <circle cx="516" cy="160" r="28" fill="#c8933a" opacity="0.7"/>
+  <rect x="480" y="295" width="208" height="30" rx="0 0 10 10" fill="rgba(0,0,0,0.4)"/>
+  <text x="584" y="315" font-size="13" fill="white" font-weight="700" text-anchor="middle">SEPIA</text>
+
+  <!-- Panel 4: Warm -->
+  <rect x="700" y="95" width="208" height="230" rx="10" fill="url(#warmG)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <circle cx="736" cy="160" r="28" fill="#fcd34d" opacity="0.7"/>
+  <rect x="700" y="295" width="208" height="30" rx="0 0 10 10" fill="rgba(0,0,0,0.4)"/>
+  <text x="804" y="315" font-size="13" fill="white" font-weight="700" text-anchor="middle">WARM</text>
+
+  <!-- Panel 5: Cool -->
+  <rect x="920" y="95" width="240" height="230" rx="10" fill="url(#coolG)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <circle cx="956" cy="160" r="28" fill="#7dd3fc" opacity="0.7"/>
+  <rect x="920" y="295" width="240" height="30" rx="0 0 10 10" fill="rgba(0,0,0,0.4)"/>
+  <text x="1040" y="315" font-size="13" fill="white" font-weight="700" text-anchor="middle">COOL</text>
+
+  <!-- Row 2: 5 more panels -->
+  <!-- HDR -->
+  <rect x="40" y="345" width="208" height="230" rx="10" fill="url(#hdrG)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <circle cx="76" cy="410" r="28" fill="#ff4500" opacity="0.8"/>
+  <rect x="40" y="545" width="208" height="30" rx="0 0 10 10" fill="rgba(0,0,0,0.4)"/>
+  <text x="144" y="565" font-size="13" fill="white" font-weight="700" text-anchor="middle">HDR</text>
+
+  <!-- Vintage -->
+  <rect x="260" y="345" width="208" height="230" rx="10" fill="url(#vintG)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <circle cx="296" cy="410" r="28" fill="#c8843a" opacity="0.5"/>
+  <rect x="260" y="545" width="208" height="30" rx="0 0 10 10" fill="rgba(0,0,0,0.4)"/>
+  <text x="364" y="565" font-size="13" fill="white" font-weight="700" text-anchor="middle">VINTAGE</text>
+
+  <!-- Noir -->
+  <rect x="480" y="345" width="208" height="230" rx="10" fill="url(#noirG)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <circle cx="516" cy="410" r="28" fill="#555" opacity="0.8"/>
+  <rect x="480" y="545" width="208" height="30" rx="0 0 10 10" fill="rgba(0,0,0,0.5)"/>
+  <text x="584" y="565" font-size="13" fill="white" font-weight="700" text-anchor="middle">NOIR</text>
+
+  <!-- Fade -->
+  <rect x="700" y="345" width="208" height="230" rx="10" fill="url(#fadG)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <circle cx="736" cy="410" r="28" fill="#bccde0" opacity="0.6"/>
+  <rect x="700" y="545" width="208" height="30" rx="0 0 10 10" fill="rgba(0,0,0,0.3)"/>
+  <text x="804" y="565" font-size="13" fill="white" font-weight="700" text-anchor="middle">FADE</text>
+
+  <!-- Cinematic -->
+  <rect x="920" y="345" width="240" height="230" rx="10" fill="url(#cinG)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <circle cx="956" cy="410" r="28" fill="#8b5cf6" opacity="0.7"/>
+  <rect x="920" y="545" width="240" height="30" rx="0 0 10 10" fill="rgba(0,0,0,0.5)"/>
+  <text x="1040" y="565" font-size="13" fill="white" font-weight="700" text-anchor="middle">CINEMATIC</text>
+
+  <!-- Plus indicator -->
+  <text x="600" y="605" font-size="12" fill="#4d4354" text-anchor="middle">+7 more filters: Vivid · Soft · Retro · Invert · Sketch · Pixel Art · Posterize</text>
+</svg>

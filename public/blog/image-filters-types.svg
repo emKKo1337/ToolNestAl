@@ -1,0 +1,133 @@
+﻿<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" font-family="system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#0a0118"/>
+      <stop offset="100%" stop-color="#05030d"/>
+    </radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="18" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="600" cy="315" r="250" fill="#5b21b6" opacity="0.07" filter="url(#glow)"/>
+
+  <!-- Title -->
+  <text x="600" y="48" font-size="20" fill="#e2e2e2" font-weight="800" text-anchor="middle">How CSS & Canvas Image Filters Work</text>
+  <text x="600" y="70" font-size="13" fill="#4d4354" text-anchor="middle">Color matrix operations that transform every pixel in the image</text>
+
+  <!-- Step 1: Input image -->
+  <rect x="40" y="95" width="180" height="110" rx="10" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="130" y="135" font-size="13" fill="#e2e2e2" font-weight="700" text-anchor="middle">Input Image</text>
+  <text x="130" y="155" font-size="11" fill="#6b5b7a" text-anchor="middle">R, G, B, A channels</text>
+  <text x="130" y="172" font-size="11" fill="#4cd7f6" text-anchor="middle">pixel[i] = [200, 100, 50, 255]</text>
+  <text x="130" y="190" font-size="10" fill="#4d4354" text-anchor="middle">4 bytes per pixel</text>
+
+  <!-- Arrow 1 -->
+  <line x1="222" y1="150" x2="268" y2="150" stroke="#a78bfa" stroke-width="2" marker-end="url(#arr)"/>
+  <defs><marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#a78bfa"/></marker></defs>
+
+  <!-- Step 2: Color Matrix -->
+  <rect x="270" y="85" width="220" height="130" rx="10" fill="rgba(124,58,237,0.12)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+  <text x="380" y="112" font-size="13" fill="#a78bfa" font-weight="700" text-anchor="middle">Color Matrix</text>
+  <text x="380" y="130" font-size="10" fill="#6b5b7a" text-anchor="middle">feColorMatrix / manual weights</text>
+  <!-- Matrix visualization -->
+  <rect x="284" y="138" width="192" height="66" rx="5" fill="rgba(0,0,0,0.3)"/>
+  <text x="380" y="155" font-size="9" fill="#7c3aed" text-anchor="middle" font-family="monospace">R' = 0.393R + 0.769G + 0.189B  (Sepia)</text>
+  <text x="380" y="169" font-size="9" fill="#7c3aed" text-anchor="middle" font-family="monospace">G' = 0.349R + 0.686G + 0.168B</text>
+  <text x="380" y="183" font-size="9" fill="#7c3aed" text-anchor="middle" font-family="monospace">B' = 0.272R + 0.534G + 0.131B</text>
+
+  <!-- Arrow 2 -->
+  <line x1="492" y1="150" x2="538" y2="150" stroke="#a78bfa" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Step 3: Tone Curve / Lookup Table -->
+  <rect x="540" y="85" width="220" height="130" rx="10" fill="rgba(14,116,144,0.12)" stroke="rgba(14,116,144,0.3)" stroke-width="1"/>
+  <text x="650" y="112" font-size="13" fill="#22d3ee" font-weight="700" text-anchor="middle">Tone Curve / LUT</text>
+  <text x="650" y="130" font-size="10" fill="#6b5b7a" text-anchor="middle">per-channel value remapping</text>
+  <!-- Curve visualization -->
+  <rect x="554" y="138" width="192" height="66" rx="5" fill="rgba(0,0,0,0.3)"/>
+  <text x="650" y="160" font-size="9" fill="#22d3ee" text-anchor="middle" font-family="monospace">brightness: input + offset</text>
+  <text x="650" y="174" font-size="9" fill="#22d3ee" text-anchor="middle" font-family="monospace">contrast: (input - 128) × scale + 128</text>
+  <text x="650" y="188" font-size="9" fill="#22d3ee" text-anchor="middle" font-family="monospace">gamma: 255 × (input/255)^γ</text>
+
+  <!-- Arrow 3 -->
+  <line x1="762" y1="150" x2="808" y2="150" stroke="#a78bfa" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Step 4: Output image -->
+  <rect x="810" y="95" width="180" height="110" rx="10" fill="rgba(124,58,237,0.15)" stroke="rgba(124,58,237,0.3)" stroke-width="1.5"/>
+  <text x="900" y="135" font-size="13" fill="#e2e2e2" font-weight="700" text-anchor="middle">Output Image</text>
+  <text x="900" y="155" font-size="11" fill="#6b5b7a" text-anchor="middle">Transformed channels</text>
+  <text x="900" y="172" font-size="11" fill="#a78bfa" text-anchor="middle">pixel[i] = [112, 81, 48, 255]</text>
+  <text x="900" y="190" font-size="10" fill="#4d4354" text-anchor="middle">Sepia-toned output</text>
+
+  <!-- Separator -->
+  <line x1="40" y1="240" x2="1160" y2="240" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <!-- Four filter categories -->
+  <text x="600" y="272" font-size="16" fill="#e2e2e2" font-weight="700" text-anchor="middle">Filter Categories</text>
+
+  <!-- Category 1: Color Temperature -->
+  <rect x="40" y="290" width="260" height="290" rx="12" fill="rgba(251,146,60,0.07)" stroke="rgba(251,146,60,0.2)" stroke-width="1"/>
+  <rect x="40" y="290" width="260" height="36" rx="12" fill="rgba(251,146,60,0.15)"/>
+  <rect x="40" y="314" width="260" height="12" fill="rgba(251,146,60,0.15)"/>
+  <text x="170" y="313" font-size="13" fill="#fb923c" font-weight="700" text-anchor="middle">🌡 Color Temperature</text>
+  <g font-size="12" fill="#9b8da8">
+    <text x="60" y="348">• Warm — boost reds/yellows</text>
+    <text x="60" y="368">• Cool — boost blues/cyans</text>
+    <text x="60" y="388">Mechanism: RGB channel</text>
+    <text x="60" y="406">   bias adjustment</text>
+    <text x="60" y="430" fill="#4d4354" font-size="11">R×1.2 for warm; B×1.2 for cool</text>
+    <text x="60" y="448" fill="#4d4354" font-size="11">Counterpart channels reduced</text>
+    <text x="60" y="480" fill="#fb923c" font-size="11">Best for: portraits, food, nature</text>
+    <text x="60" y="498" fill="#fb923c" font-size="11">Not for: scientific imaging</text>
+  </g>
+
+  <!-- Category 2: Vintage/Film -->
+  <rect x="318" y="290" width="260" height="290" rx="12" fill="rgba(180,83,9,0.07)" stroke="rgba(180,83,9,0.25)" stroke-width="1"/>
+  <rect x="318" y="290" width="260" height="36" rx="12" fill="rgba(180,83,9,0.15)"/>
+  <rect x="318" y="314" width="260" height="12" fill="rgba(180,83,9,0.15)"/>
+  <text x="448" y="313" font-size="13" fill="#d97706" font-weight="700" text-anchor="middle">🎞 Vintage / Film</text>
+  <g font-size="12" fill="#9b8da8">
+    <text x="338" y="348">• Sepia — warm brown tint</text>
+    <text x="338" y="368">• Vintage — faded contrast</text>
+    <text x="338" y="388">• Retro — desaturated + grain</text>
+    <text x="338" y="408">• Fade — lifted blacks</text>
+    <text x="338" y="430" fill="#4d4354" font-size="11">Color matrix + lifted shadows</text>
+    <text x="338" y="448" fill="#4d4354" font-size="11">Output black point raised to ~20</text>
+    <text x="338" y="480" fill="#d97706" font-size="11">Best for: storytelling, editorial</text>
+    <text x="338" y="498" fill="#d97706" font-size="11">Look: analog, nostalgic, warm</text>
+  </g>
+
+  <!-- Category 3: Dramatic -->
+  <rect x="596" y="290" width="260" height="290" rx="12" fill="rgba(124,58,237,0.07)" stroke="rgba(124,58,237,0.2)" stroke-width="1"/>
+  <rect x="596" y="290" width="260" height="36" rx="12" fill="rgba(124,58,237,0.15)"/>
+  <rect x="596" y="314" width="260" height="12" fill="rgba(124,58,237,0.15)"/>
+  <text x="726" y="313" font-size="13" fill="#a78bfa" font-weight="700" text-anchor="middle">⚡ Dramatic</text>
+  <g font-size="12" fill="#9b8da8">
+    <text x="616" y="348">• HDR — hyper-saturated</text>
+    <text x="616" y="368">• Vivid — boosted contrast</text>
+    <text x="616" y="388">• Noir — deep BW contrast</text>
+    <text x="616" y="408">• Cinematic — teal/orange</text>
+    <text x="616" y="430" fill="#4d4354" font-size="11">Saturation × 2–3; contrast boost</text>
+    <text x="616" y="448" fill="#4d4354" font-size="11">Color grading complementary hues</text>
+    <text x="616" y="480" fill="#a78bfa" font-size="11">Best for: landscapes, action</text>
+    <text x="616" y="498" fill="#a78bfa" font-size="11">Look: punchy, filmic, graphic</text>
+  </g>
+
+  <!-- Category 4: Artistic -->
+  <rect x="874" y="290" width="286" height="290" rx="12" fill="rgba(6,182,212,0.07)" stroke="rgba(6,182,212,0.2)" stroke-width="1"/>
+  <rect x="874" y="290" width="286" height="36" rx="12" fill="rgba(6,182,212,0.15)"/>
+  <rect x="874" y="314" width="286" height="12" fill="rgba(6,182,212,0.15)"/>
+  <text x="1017" y="313" font-size="13" fill="#22d3ee" font-weight="700" text-anchor="middle">🎨 Artistic / Special</text>
+  <g font-size="12" fill="#9b8da8">
+    <text x="894" y="348">• Sketch — edge detection</text>
+    <text x="894" y="368">• Pixel Art — mosaic resize</text>
+    <text x="894" y="388">• Posterize — reduce colors</text>
+    <text x="894" y="408">• Invert — 255−channel</text>
+    <text x="894" y="430" fill="#4d4354" font-size="11">Convolution / value quantization</text>
+    <text x="894" y="448" fill="#4d4354" font-size="11">Posterize: value = round(v/step)×step</text>
+    <text x="894" y="480" fill="#22d3ee" font-size="11">Best for: graphics, social media</text>
+    <text x="894" y="498" fill="#22d3ee" font-size="11">Look: graphic, bold, creative</text>
+  </g>
+</svg>
