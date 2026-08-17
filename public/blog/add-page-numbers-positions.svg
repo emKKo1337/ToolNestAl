@@ -1,0 +1,69 @@
+﻿<svg viewBox="0 0 900 440" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Page number position options diagram">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#0f0825"/>
+      <stop offset="100%" stop-color="#05030d"/>
+    </radialGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="14" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="900" height="440" fill="url(#bg)"/>
+  <ellipse cx="450" cy="220" rx="280" ry="160" fill="#5b21b6" opacity="0.06" filter="url(#glow)"/>
+
+  <text x="450" y="38" font-family="sans-serif" font-size="16" font-weight="800" fill="#e2e2e2" text-anchor="middle">Page Number Positions</text>
+  <text x="450" y="56" font-family="sans-serif" font-size="10" fill="#7a6d84" text-anchor="middle">Choose where numbers appear and pick your format</text>
+
+  <!-- 6 page mockups in 3x2 grid -->
+  <!-- Row 1 -->
+  <!-- Top Left -->
+  <rect x="60" y="76" width="220" height="160" rx="8" fill="#1a1040" stroke="#2a1f4a" stroke-width="1"/>
+  <text x="80" y="104" font-family="sans-serif" font-size="11" font-weight="700" fill="#a78bfa">1</text>
+  <rect x="80" y="112" width="120" height="5" rx="2" fill="#2a1f4a"/>
+  <rect x="80" y="122" width="100" height="4" rx="2" fill="#2a1f4a"/>
+  <rect x="80" y="130" width="110" height="4" rx="2" fill="#2a1f4a"/>
+  <text x="170" y="222" font-family="sans-serif" font-size="9" font-weight="700" fill="#e2e2e2" text-anchor="middle">Top Left</text>
+
+  <!-- Top Center -->
+  <rect x="340" y="76" width="220" height="160" rx="8" fill="#1a1040" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="450" y="104" font-family="sans-serif" font-size="11" font-weight="700" fill="#a78bfa" text-anchor="middle">1</text>
+  <rect x="360" y="112" width="120" height="5" rx="2" fill="#2a1f4a"/>
+  <rect x="360" y="122" width="100" height="4" rx="2" fill="#2a1f4a"/>
+  <rect x="360" y="130" width="110" height="4" rx="2" fill="#2a1f4a"/>
+  <text x="450" y="222" font-family="sans-serif" font-size="9" font-weight="700" fill="#e2e2e2" text-anchor="middle">Top Center</text>
+  <rect x="416" y="226" width="68" height="16" rx="8" fill="#7c3aed" opacity="0.3"/>
+  <text x="450" y="238" font-family="sans-serif" font-size="7" font-weight="700" fill="#a78bfa" text-anchor="middle">Popular</text>
+
+  <!-- Top Right -->
+  <rect x="620" y="76" width="220" height="160" rx="8" fill="#1a1040" stroke="#2a1f4a" stroke-width="1"/>
+  <text x="820" y="104" font-family="sans-serif" font-size="11" font-weight="700" fill="#a78bfa" text-anchor="end">1</text>
+  <rect x="640" y="112" width="120" height="5" rx="2" fill="#2a1f4a"/>
+  <rect x="640" y="122" width="100" height="4" rx="2" fill="#2a1f4a"/>
+  <rect x="640" y="130" width="110" height="4" rx="2" fill="#2a1f4a"/>
+  <text x="730" y="222" font-family="sans-serif" font-size="9" font-weight="700" fill="#e2e2e2" text-anchor="middle">Top Right</text>
+
+  <!-- Row 2 -->
+  <!-- Bottom Left -->
+  <rect x="60" y="256" width="220" height="160" rx="8" fill="#1a1040" stroke="#2a1f4a" stroke-width="1"/>
+  <rect x="80" y="276" width="120" height="5" rx="2" fill="#2a1f4a"/>
+  <rect x="80" y="286" width="100" height="4" rx="2" fill="#2a1f4a"/>
+  <rect x="80" y="294" width="110" height="4" rx="2" fill="#2a1f4a"/>
+  <text x="80" y="400" font-family="sans-serif" font-size="11" font-weight="700" fill="#a78bfa">1</text>
+  <text x="170" y="406" font-family="sans-serif" font-size="9" font-weight="700" fill="#e2e2e2" text-anchor="middle">Bottom Left</text>
+
+  <!-- Bottom Center -->
+  <rect x="340" y="256" width="220" height="160" rx="8" fill="#1a1040" stroke="#7c3aed" stroke-width="1.5"/>
+  <rect x="360" y="276" width="120" height="5" rx="2" fill="#2a1f4a"/>
+  <rect x="360" y="286" width="100" height="4" rx="2" fill="#2a1f4a"/>
+  <rect x="360" y="294" width="110" height="4" rx="2" fill="#2a1f4a"/>
+  <text x="450" y="400" font-family="sans-serif" font-size="11" font-weight="700" fill="#a78bfa" text-anchor="middle">1</text>
+  <text x="450" y="406" font-family="sans-serif" font-size="9" font-weight="700" fill="#e2e2e2" text-anchor="middle">Bottom Center</text>
+  <rect x="416" y="410" width="68" height="16" rx="8" fill="#7c3aed" opacity="0.3"/>
+  <text x="450" y="422" font-family="sans-serif" font-size="7" font-weight="700" fill="#a78bfa" text-anchor="middle">Most Common</text>
+
+  <!-- Bottom Right -->
+  <rect x="620" y="256" width="220" height="160" rx="8" fill="#1a1040" stroke="#2a1f4a" stroke-width="1"/>
+  <rect x="640" y="276" width="120" height="5" rx="2" fill="#2a1f4a"/>
+  <rect x="640" y="286" width="100" height="4" rx="2" fill="#2a1f4a"/>
+  <rect x="640" y="294" width="110" height="4" rx="2" fill="#2a1f4a"/>
+  <text x="820" y="400" font-family="sans-serif" font-size="11" font-weight="700" fill="#a78bfa" text-anchor="end">1</text>
+  <text x="730" y="406" font-family="sans-serif" font-size="9" font-weight="700" fill="#e2e2e2" text-anchor="middle">Bottom Right</text>
+</svg>

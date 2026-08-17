@@ -1,0 +1,104 @@
+﻿<svg viewBox="0 0 900 540" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Add Page Numbers to PDF tool interface">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#0f0825"/>
+      <stop offset="100%" stop-color="#05030d"/>
+    </radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="lapG" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a1040"/>
+      <stop offset="100%" stop-color="#0d0824"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="14" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="900" height="540" fill="url(#bg)"/>
+  <ellipse cx="450" cy="270" rx="280" ry="150" fill="#5b21b6" opacity="0.07" filter="url(#glow)"/>
+  <ellipse cx="750" cy="140" rx="130" ry="90" fill="#0e7490" opacity="0.08" filter="url(#glow)"/>
+  <!-- Laptop -->
+  <rect x="120" y="48" width="660" height="410" rx="14" fill="url(#lapG)" stroke="#2a1f4a" stroke-width="1.5"/>
+  <rect x="120" y="48" width="660" height="38" rx="14" fill="#1a1040"/>
+  <rect x="120" y="72" width="660" height="14" fill="#1a1040"/>
+  <circle cx="655" cy="67" r="7" fill="#ff5f57"/>
+  <circle cx="675" cy="67" r="7" fill="#febc2e"/>
+  <circle cx="695" cy="67" r="7" fill="#28c840"/>
+  <rect x="200" y="56" width="440" height="20" rx="10" fill="#110c2a"/>
+  <text x="420" y="70" font-family="monospace" font-size="9" fill="#4d4354" text-anchor="middle">toolnestai.net/pdf-tools/add-page-numbers</text>
+  <rect x="136" y="94" width="628" height="352" rx="6" fill="#0c0920"/>
+  <text x="450" y="120" font-family="sans-serif" font-size="13" font-weight="700" fill="#e2e2e2" text-anchor="middle">Add Page Numbers to PDF</text>
+  <text x="450" y="136" font-family="sans-serif" font-size="8" fill="#7a6d84" text-anchor="middle">Customize position, style, font and starting number</text>
+
+  <!-- Upload zone -->
+  <rect x="148" y="148" width="250" height="80" rx="10" fill="#110c2a" stroke="#2a1f4a" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="273" y="183" font-family="sans-serif" font-size="9" fill="#4d4354" text-anchor="middle">document.pdf</text>
+  <text x="273" y="198" font-family="sans-serif" font-size="8" fill="#3d3347" text-anchor="middle">24 pages · 1.2 MB</text>
+  <rect x="172" y="162" width="26" height="26" rx="6" fill="#1a1040"/>
+  <text x="185" y="179" font-family="sans-serif" font-size="13" fill="#a78bfa" text-anchor="middle">📄</text>
+
+  <!-- Options panel -->
+  <rect x="416" y="148" width="336" height="200" rx="10" fill="#110c2a" stroke="#2a1f4a" stroke-width="1"/>
+  <text x="430" y="170" font-family="sans-serif" font-size="9" font-weight="700" fill="#4d4354">POSITION</text>
+  <!-- Position grid 3x2 -->
+  <rect x="430" y="178" width="62" height="24" rx="6" fill="#7c3aed"/>
+  <text x="461" y="194" font-family="sans-serif" font-size="8" font-weight="700" fill="#fff" text-anchor="middle">Bottom Center</text>
+  <rect x="500" y="178" width="62" height="24" rx="6" fill="#1a1040"/>
+  <text x="531" y="194" font-family="sans-serif" font-size="8" fill="#7a6d84" text-anchor="middle">Bottom Left</text>
+  <rect x="570" y="178" width="62" height="24" rx="6" fill="#1a1040"/>
+  <text x="601" y="194" font-family="sans-serif" font-size="8" fill="#7a6d84" text-anchor="middle">Bottom Right</text>
+  <rect x="430" y="208" width="62" height="24" rx="6" fill="#1a1040"/>
+  <text x="461" y="224" font-family="sans-serif" font-size="8" fill="#7a6d84" text-anchor="middle">Top Center</text>
+  <rect x="500" y="208" width="62" height="24" rx="6" fill="#1a1040"/>
+  <text x="531" y="224" font-family="sans-serif" font-size="8" fill="#7a6d84" text-anchor="middle">Top Left</text>
+  <rect x="570" y="208" width="62" height="24" rx="6" fill="#1a1040"/>
+  <text x="601" y="224" font-family="sans-serif" font-size="8" fill="#7a6d84" text-anchor="middle">Top Right</text>
+
+  <text x="430" y="250" font-family="sans-serif" font-size="9" font-weight="700" fill="#4d4354">FORMAT</text>
+  <!-- Format options -->
+  <rect x="430" y="258" width="68" height="22" rx="6" fill="#7c3aed"/>
+  <text x="464" y="273" font-family="sans-serif" font-size="8" font-weight="700" fill="#fff" text-anchor="middle">Page 1</text>
+  <rect x="506" y="258" width="54" height="22" rx="6" fill="#1a1040"/>
+  <text x="533" y="273" font-family="sans-serif" font-size="8" fill="#7a6d84" text-anchor="middle">1 of 24</text>
+  <rect x="568" y="258" width="34" height="22" rx="6" fill="#1a1040"/>
+  <text x="585" y="273" font-family="sans-serif" font-size="8" fill="#7a6d84" text-anchor="middle">1</text>
+  <rect x="610" y="258" width="50" height="22" rx="6" fill="#1a1040"/>
+  <text x="635" y="273" font-family="sans-serif" font-size="8" fill="#7a6d84" text-anchor="middle">- 1 -</text>
+  <rect x="668" y="258" width="66" height="22" rx="6" fill="#1a1040"/>
+  <text x="701" y="273" font-family="sans-serif" font-size="8" fill="#7a6d84" text-anchor="middle">Custom</text>
+
+  <!-- Font size / start number -->
+  <text x="430" y="298" font-family="sans-serif" font-size="9" font-weight="700" fill="#4d4354">FONT SIZE</text>
+  <rect x="520" y="288" width="60" height="20" rx="6" fill="#0f0c24" stroke="#2a1f4a" stroke-width="1"/>
+  <text x="550" y="302" font-family="sans-serif" font-size="9" fill="#e2e2e2" text-anchor="middle">12 pt</text>
+
+  <text x="430" y="320" font-family="sans-serif" font-size="9" font-weight="700" fill="#4d4354">START FROM</text>
+  <rect x="520" y="310" width="60" height="20" rx="6" fill="#0f0c24" stroke="#2a1f4a" stroke-width="1"/>
+  <text x="550" y="324" font-family="sans-serif" font-size="9" fill="#e2e2e2" text-anchor="middle">1</text>
+
+  <!-- Add Numbers button -->
+  <rect x="430" y="340" width="180" height="32" rx="8" fill="#7c3aed"/>
+  <text x="520" y="361" font-family="sans-serif" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">Add Page Numbers</text>
+
+  <!-- PDF preview -->
+  <rect x="148" y="240" width="250" height="190" rx="8" fill="#110c2a" stroke="#2a1f4a" stroke-width="1"/>
+  <text x="273" y="256" font-family="sans-serif" font-size="8" font-weight="700" fill="#4d4354" text-anchor="middle">PREVIEW</text>
+  <!-- Page mockup -->
+  <rect x="178" y="264" width="86" height="120" rx="4" fill="#1a1040" stroke="#2a1f4a" stroke-width="1"/>
+  <rect x="186" y="272" width="70" height="6" rx="2" fill="#3d3347"/>
+  <rect x="186" y="282" width="55" height="4" rx="2" fill="#2a1f4a"/>
+  <rect x="186" y="290" width="60" height="4" rx="2" fill="#2a1f4a"/>
+  <rect x="186" y="298" width="45" height="4" rx="2" fill="#2a1f4a"/>
+  <text x="221" y="376" font-family="sans-serif" font-size="8" fill="#a78bfa" text-anchor="middle">Page 1</text>
+
+  <rect x="278" y="264" width="86" height="120" rx="4" fill="#1a1040" stroke="#2a1f4a" stroke-width="1"/>
+  <rect x="286" y="272" width="70" height="6" rx="2" fill="#3d3347"/>
+  <rect x="286" y="282" width="55" height="4" rx="2" fill="#2a1f4a"/>
+  <rect x="286" y="290" width="60" height="4" rx="2" fill="#2a1f4a"/>
+  <rect x="286" y="298" width="45" height="4" rx="2" fill="#2a1f4a"/>
+  <text x="321" y="376" font-family="sans-serif" font-size="8" fill="#a78bfa" text-anchor="middle">Page 2</text>
+
+  <!-- Base -->
+  <rect x="340" y="458" width="220" height="10" rx="5" fill="#1a1040"/>
+  <rect x="280" y="466" width="340" height="8" rx="4" fill="#140e34"/>
+</svg>
