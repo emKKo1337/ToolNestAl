@@ -1,0 +1,83 @@
+﻿<svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" font-family="'Inter','Segoe UI',sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#0f0825"/>
+      <stop offset="100%" stop-color="#05030d"/>
+    </radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+    <linearGradient id="cG" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#f97316"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="460" fill="url(#bg)"/>
+
+  <text x="450" y="44" font-size="22" font-weight="800" fill="#e2e2e2" text-anchor="middle">HTML Minification: The Whitespace Trap</text>
+  <text x="450" y="66" font-size="13" fill="#7a6d84" text-anchor="middle">Four contexts where whitespace IS meaningful — avoid collapsing it</text>
+
+  <!-- Context 1: pre -->
+  <rect x="30" y="88" width="410" height="175" rx="12" fill="rgba(255,255,255,0.03)" stroke="rgba(239,68,68,0.3)" stroke-width="1.5"/>
+  <rect x="30" y="88" width="410" height="38" rx="12" fill="rgba(239,68,68,0.08)"/>
+  <rect x="30" y="110" width="410" height="16" fill="rgba(239,68,68,0.08)"/>
+  <text x="50" y="112" font-size="12" font-weight="700" fill="#ef4444" letter-spacing="0.06em">⚠  &lt;pre&gt; and &lt;code&gt; — DO NOT COLLAPSE</text>
+  <rect x="46" y="138" width="378" height="64" rx="6" fill="rgba(0,0,0,0.4)"/>
+  <text x="58" y="158" font-size="9" fill="#a78bfa" font-family="monospace">&lt;pre&gt;</text>
+  <text x="58" y="172" font-size="9" fill="#e2e2e2" font-family="monospace">  function hello() {</text>
+  <text x="58" y="186" font-size="9" fill="#e2e2e2" font-family="monospace">    console.log("hi");</text>
+  <text x="58" y="200" font-size="9" fill="#7a6d84" font-family="monospace">&lt;/pre&gt;  ← indentation is the content</text>
+  <text x="46" y="230" font-size="10" fill="#9b8da8">Collapsing whitespace inside &lt;pre&gt; destroys</text>
+  <text x="46" y="245" font-size="10" fill="#9b8da8">the visual formatting — code samples break</text>
+  <text x="46" y="258" font-size="10" fill="#ef4444" font-weight="600">All minifiers skip &lt;pre&gt;/&lt;textarea&gt; by spec</text>
+
+  <!-- Context 2: inline elements -->
+  <rect x="464" y="88" width="410" height="175" rx="12" fill="rgba(255,255,255,0.03)" stroke="rgba(251,191,36,0.3)" stroke-width="1.5"/>
+  <rect x="464" y="88" width="410" height="38" rx="12" fill="rgba(251,191,36,0.08)"/>
+  <rect x="464" y="110" width="410" height="16" fill="rgba(251,191,36,0.08)"/>
+  <text x="484" y="112" font-size="12" font-weight="700" fill="#fbbf24" letter-spacing="0.06em">⚠  INLINE ELEMENTS — SPACE MATTERS</text>
+  <rect x="480" y="138" width="378" height="64" rx="6" fill="rgba(0,0,0,0.4)"/>
+  <text x="492" y="158" font-size="9" fill="#e2e2e2" font-family="monospace">&lt;span&gt;Hello&lt;/span&gt; &lt;span&gt;world&lt;/span&gt;</text>
+  <text x="492" y="175" font-size="9" fill="#7a6d84" font-family="monospace">↑ space between = "Hello world" (correct)</text>
+  <text x="492" y="193" font-size="9" fill="#ef4444" font-family="monospace">&lt;span&gt;Hello&lt;/span&gt;&lt;span&gt;world&lt;/span&gt;</text>
+  <text x="492" y="208" font-size="9" fill="#7a6d84" font-family="monospace">↑ no space = "Helloworld" (wrong!)</text>
+  <text x="480" y="230" font-size="10" fill="#9b8da8">Aggressive whitespace collapse between inline</text>
+  <text x="480" y="245" font-size="10" fill="#9b8da8">elements can merge words unexpectedly</text>
+  <text x="480" y="258" font-size="10" fill="#fbbf24" font-weight="600">Conservative mode: collapse to single space</text>
+
+  <!-- Whitespace table -->
+  <rect x="30" y="278" width="840" height="30" rx="8" fill="rgba(255,255,255,0.04)"/>
+  <text x="50" y="298" font-size="11" font-weight="700" fill="#4d4354" letter-spacing="0.08em">ELEMENT</text>
+  <text x="230" y="298" font-size="11" font-weight="700" fill="#4d4354" letter-spacing="0.08em">SAFE TO COLLAPSE?</text>
+  <text x="480" y="298" font-size="11" font-weight="700" fill="#4d4354" letter-spacing="0.08em">NOTES</text>
+
+  <line x1="30" y1="308" x2="870" y2="308" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="50" y="326" font-size="11" fill="#9b8da8">&lt;pre&gt;, &lt;textarea&gt;</text>
+  <text x="230" y="326" font-size="11" fill="#ef4444" font-weight="700">No</text>
+  <text x="480" y="326" font-size="11" fill="#5a4d7a">Whitespace is part of the content</text>
+
+  <line x1="30" y1="334" x2="870" y2="334" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="50" y="352" font-size="11" fill="#9b8da8">&lt;span&gt;, &lt;a&gt;, &lt;em&gt;, &lt;strong&gt;</text>
+  <text x="230" y="352" font-size="11" fill="#fbbf24" font-weight="700">Careful</text>
+  <text x="480" y="352" font-size="11" fill="#5a4d7a">Collapse to single space, don't remove</text>
+
+  <line x1="30" y1="360" x2="870" y2="360" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="50" y="378" font-size="11" fill="#9b8da8">&lt;div&gt;, &lt;section&gt;, &lt;article&gt;</text>
+  <text x="230" y="378" font-size="11" fill="#34d399" font-weight="700">Yes</text>
+  <text x="480" y="378" font-size="11" fill="#5a4d7a">Block elements, whitespace irrelevant</text>
+
+  <line x1="30" y1="386" x2="870" y2="386" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="50" y="404" font-size="11" fill="#9b8da8">&lt;script&gt;, &lt;style&gt;</text>
+  <text x="230" y="404" font-size="11" fill="#34d399" font-weight="700">Yes (own minifier)</text>
+  <text x="480" y="404" font-size="11" fill="#5a4d7a">Apply JS/CSS minification rules inside</text>
+
+  <line x1="30" y1="412" x2="870" y2="412" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="50" y="430" font-size="11" fill="#9b8da8">&lt;!-- comments --&gt;</text>
+  <text x="230" y="430" font-size="11" fill="#34d399" font-weight="700">Yes (remove entirely)</text>
+  <text x="480" y="430" font-size="11" fill="#5a4d7a">Unless conditional comment &lt;!--[if IE]&gt;</text>
+</svg>

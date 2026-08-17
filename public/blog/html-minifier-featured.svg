@@ -1,0 +1,106 @@
+﻿<svg viewBox="0 0 900 560" xmlns="http://www.w3.org/2000/svg" font-family="'Inter','Segoe UI',sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="40%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#0f0825"/>
+      <stop offset="100%" stop-color="#05030d"/>
+    </radialGradient>
+    <radialGradient id="g1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#5b21b6" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="lapG" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a1040"/>
+      <stop offset="100%" stop-color="#0d0824"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="8" stdDeviation="20" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+  <rect width="900" height="560" fill="url(#bg)"/>
+  <ellipse cx="280" cy="200" rx="300" ry="200" fill="url(#g1)"/>
+
+  <!-- Laptop -->
+  <g filter="url(#shadow)">
+    <rect x="130" y="40" width="640" height="420" rx="14" fill="url(#lapG)" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
+    <rect x="130" y="40" width="640" height="44" rx="14" fill="#1e1535"/>
+    <rect x="130" y="68" width="640" height="16" fill="#1e1535"/>
+    <circle cx="655" cy="62" r="7" fill="#ff5f57"/>
+    <circle cx="675" cy="62" r="7" fill="#febc2e"/>
+    <circle cx="695" cy="62" r="7" fill="#28c840"/>
+    <rect x="230" y="53" width="420" height="18" rx="9" fill="#120e2a"/>
+    <text x="440" y="66" font-size="10" fill="#5a4d7a" text-anchor="middle">toolnestai.net/developer-tools/html-minifier</text>
+    <rect x="142" y="84" width="616" height="364" rx="0" fill="#0d0a1e"/>
+
+    <text x="450" y="112" font-size="18" font-weight="800" fill="#e2e2e2" text-anchor="middle">HTML Minifier</text>
+    <text x="450" y="130" font-size="11" fill="#7a6d84" text-anchor="middle">Remove whitespace, comments and optional tags from HTML</text>
+
+    <!-- Two panes -->
+    <!-- Input -->
+    <rect x="152" y="142" width="278" height="260" rx="10" fill="#130f28" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+    <text x="164" y="162" font-size="10" font-weight="700" fill="#a78bfa" letter-spacing="0.08em">INPUT HTML</text>
+    <text x="266" y="162" font-size="10" fill="#3d3356">5.8 KB</text>
+
+    <text x="164" y="182" font-size="8.5" fill="#7a6d84" font-family="monospace">&lt;!-- Header section --&gt;</text>
+    <text x="164" y="196" font-size="8.5" fill="#60a5fa" font-family="monospace">&lt;header  class="main-header"&gt;</text>
+    <text x="164" y="210" font-size="8.5" fill="#e2e2e2" font-family="monospace">  &lt;nav&gt;</text>
+    <text x="164" y="224" font-size="8.5" fill="#e2e2e2" font-family="monospace">    &lt;ul&gt;</text>
+    <text x="164" y="238" font-size="8.5" fill="#34d399" font-family="monospace">      &lt;li&gt;</text>
+    <text x="164" y="252" font-size="8.5" fill="#e2e2e2" font-family="monospace">        &lt;a href="/"&gt;</text>
+    <text x="164" y="266" font-size="8.5" fill="#e2e2e2" font-family="monospace">          Home</text>
+    <text x="164" y="280" font-size="8.5" fill="#e2e2e2" font-family="monospace">        &lt;/a&gt;</text>
+    <text x="164" y="294" font-size="8.5" fill="#34d399" font-family="monospace">      &lt;/li&gt;</text>
+    <text x="164" y="308" font-size="8.5" fill="#e2e2e2" font-family="monospace">    &lt;/ul&gt;</text>
+    <text x="164" y="322" font-size="8.5" fill="#e2e2e2" font-family="monospace">  &lt;/nav&gt;</text>
+    <text x="164" y="336" font-size="8.5" fill="#60a5fa" font-family="monospace">&lt;/header&gt;</text>
+    <text x="164" y="353" font-size="8.5" fill="#3d3356" font-family="monospace">... 180 more lines ...</text>
+    <text x="164" y="390" font-size="8.5" fill="#3d3356" font-family="monospace">14 comments, 2,847 spaces</text>
+
+    <!-- Arrow -->
+    <g transform="translate(450,252)">
+      <circle r="20" fill="#1e1535" stroke="rgba(167,139,250,0.3)" stroke-width="1.5"/>
+      <path d="M-8,0 L8,0 M4,-5 L8,0 L4,5" stroke="url(#aG)" stroke-width="2" fill="none" stroke-linecap="round"/>
+    </g>
+
+    <!-- Output -->
+    <rect x="462" y="142" width="278" height="260" rx="10" fill="#0b0d1f" stroke="rgba(76,215,246,0.25)" stroke-width="1"/>
+    <text x="474" y="162" font-size="10" font-weight="700" fill="#4cd7f6" letter-spacing="0.08em">MINIFIED OUTPUT</text>
+    <text x="720" y="162" font-size="10" fill="#34d399">3.9 KB ↓33%</text>
+
+    <text x="474" y="182" font-size="8" fill="#e2e2e2" font-family="monospace" xml:space="preserve">&lt;header class="main-header"&gt;&lt;nav&gt;</text>
+    <text x="474" y="196" font-size="8" fill="#e2e2e2" font-family="monospace" xml:space="preserve">&lt;ul&gt;&lt;li&gt;&lt;a href="/"&gt;Home&lt;/a&gt;</text>
+    <text x="474" y="210" font-size="8" fill="#e2e2e2" font-family="monospace" xml:space="preserve">&lt;/ul&gt;&lt;/nav&gt;&lt;/header&gt;</text>
+
+    <rect x="474" y="228" width="118" height="30" rx="8" fill="rgba(52,211,153,0.1)" stroke="rgba(52,211,153,0.3)" stroke-width="1"/>
+    <text x="533" y="247" font-size="10" font-weight="700" fill="#34d399" text-anchor="middle">33% smaller</text>
+
+    <!-- Options panel -->
+    <rect x="474" y="270" width="256" height="110" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <text x="486" y="288" font-size="10" font-weight="700" fill="#7a6d84" letter-spacing="0.05em">OPTIONS</text>
+    <rect x="486" y="296" width="10" height="10" rx="2" fill="#a78bfa"/>
+    <text x="500" y="305" font-size="9" fill="#9b8da8">Remove HTML comments</text>
+    <rect x="486" y="314" width="10" height="10" rx="2" fill="#a78bfa"/>
+    <text x="500" y="323" font-size="9" fill="#9b8da8">Collapse whitespace</text>
+    <rect x="486" y="332" width="10" height="10" rx="2" fill="#a78bfa"/>
+    <text x="500" y="341" font-size="9" fill="#9b8da8">Remove optional closing tags</text>
+    <rect x="486" y="350" width="10" height="10" rx="2" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+    <text x="500" y="359" font-size="9" fill="#4d4354">Minify inline CSS</text>
+    <rect x="486" y="368" width="10" height="10" rx="2" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+    <text x="500" y="377" font-size="9" fill="#4d4354">Minify inline JS</text>
+
+    <!-- Buttons -->
+    <rect x="152" y="412" width="200" height="30" rx="8" fill="url(#aG)"/>
+    <text x="252" y="431" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">⚡  Minify HTML</text>
+    <rect x="366" y="412" width="110" height="30" rx="8" fill="rgba(76,215,246,0.12)" stroke="rgba(76,215,246,0.3)" stroke-width="1"/>
+    <text x="421" y="431" font-size="11" font-weight="600" fill="#4cd7f6" text-anchor="middle">⧉  Copy</text>
+    <rect x="490" y="412" width="110" height="30" rx="8" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <text x="545" y="431" font-size="11" font-weight="600" fill="#7a6d84" text-anchor="middle">↺  Reset</text>
+  </g>
+
+  <!-- Laptop base -->
+  <rect x="90" y="460" width="720" height="12" rx="6" fill="#1a1535" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <rect x="360" y="468" width="180" height="6" rx="3" fill="#120e2a"/>
+</svg>

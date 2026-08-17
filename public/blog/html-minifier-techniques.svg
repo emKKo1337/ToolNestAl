@@ -1,0 +1,95 @@
+﻿<svg viewBox="0 0 900 480" xmlns="http://www.w3.org/2000/svg" font-family="'Inter','Segoe UI',sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#0f0825"/>
+      <stop offset="100%" stop-color="#05030d"/>
+    </radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="480" fill="url(#bg)"/>
+
+  <text x="450" y="46" font-size="22" font-weight="800" fill="#e2e2e2" text-anchor="middle">What HTML Minification Removes</text>
+  <text x="450" y="68" font-size="13" fill="#7a6d84" text-anchor="middle">Six classes of redundant bytes that browsers ignore at parse time</text>
+
+  <!-- Card 1: HTML Comments -->
+  <rect x="30" y="90" width="265" height="165" rx="12" fill="rgba(255,255,255,0.03)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+  <text x="46" y="114" font-size="11" font-weight="700" fill="#a78bfa" letter-spacing="0.06em">HTML COMMENTS</text>
+  <rect x="46" y="122" width="232" height="28" rx="5" fill="rgba(167,139,250,0.08)"/>
+  <text x="54" y="138" font-size="9" fill="#7a6d84" font-family="monospace">&lt;!-- navigation section --&gt;</text>
+  <text x="54" y="154" font-size="9" fill="#e2e2e2" font-family="monospace">&lt;nav&gt;...&lt;/nav&gt;</text>
+  <text x="163" y="175" font-size="12" fill="#4cd7f6" text-anchor="middle">↓</text>
+  <rect x="46" y="182" width="232" height="18" rx="5" fill="rgba(76,215,246,0.08)"/>
+  <text x="54" y="195" font-size="9" fill="#e2e2e2" font-family="monospace">&lt;nav&gt;...&lt;/nav&gt;</text>
+  <text x="46" y="228" font-size="10" fill="#5a4d7a">Comments invisible to browser</text>
+  <text x="46" y="242" font-size="10" fill="#5a4d7a">Can be 5–30% of file in docs</text>
+
+  <!-- Card 2: Whitespace -->
+  <rect x="320" y="90" width="265" height="165" rx="12" fill="rgba(255,255,255,0.03)" stroke="rgba(96,165,250,0.2)" stroke-width="1"/>
+  <text x="336" y="114" font-size="11" font-weight="700" fill="#60a5fa" letter-spacing="0.06em">INTER-TAG WHITESPACE</text>
+  <rect x="336" y="122" width="232" height="44" rx="5" fill="rgba(96,165,250,0.08)"/>
+  <text x="344" y="138" font-size="9" fill="#e2e2e2" font-family="monospace">&lt;div&gt;</text>
+  <text x="344" y="151" font-size="9" fill="#e2e2e2" font-family="monospace">  &lt;p&gt; Hello world &lt;/p&gt;</text>
+  <text x="344" y="163" font-size="9" fill="#e2e2e2" font-family="monospace">&lt;/div&gt;</text>
+  <text x="452" y="181" font-size="12" fill="#4cd7f6" text-anchor="middle">↓</text>
+  <rect x="336" y="188" width="232" height="18" rx="5" fill="rgba(76,215,246,0.08)"/>
+  <text x="344" y="201" font-size="9" fill="#e2e2e2" font-family="monospace">&lt;div&gt;&lt;p&gt;Hello world&lt;/p&gt;&lt;/div&gt;</text>
+  <text x="336" y="228" font-size="10" fill="#5a4d7a">Newlines and indentation</text>
+  <text x="336" y="242" font-size="10" fill="#5a4d7a">between tags are collapsed</text>
+
+  <!-- Card 3: Optional tags -->
+  <rect x="610" y="90" width="265" height="165" rx="12" fill="rgba(255,255,255,0.03)" stroke="rgba(52,211,153,0.2)" stroke-width="1"/>
+  <text x="626" y="114" font-size="11" font-weight="700" fill="#34d399" letter-spacing="0.06em">OPTIONAL TAGS</text>
+  <rect x="626" y="122" width="232" height="44" rx="5" fill="rgba(52,211,153,0.08)"/>
+  <text x="634" y="138" font-size="9" fill="#e2e2e2" font-family="monospace">&lt;ul&gt;</text>
+  <text x="634" y="151" font-size="9" fill="#e2e2e2" font-family="monospace">  &lt;li&gt;Item&lt;/li&gt;</text>
+  <text x="634" y="163" font-size="9" fill="#7a6d84" font-family="monospace">&lt;/ul&gt;</text>
+  <text x="742" y="181" font-size="12" fill="#4cd7f6" text-anchor="middle">↓</text>
+  <rect x="626" y="188" width="232" height="18" rx="5" fill="rgba(76,215,246,0.08)"/>
+  <text x="634" y="201" font-size="9" fill="#e2e2e2" font-family="monospace">&lt;ul&gt;&lt;li&gt;Item&lt;/ul&gt;</text>
+  <text x="626" y="228" font-size="10" fill="#5a4d7a">li, dt, dd, p, thead, tbody</text>
+  <text x="626" y="242" font-size="10" fill="#5a4d7a">closing tags are optional</text>
+
+  <!-- Row 2 -->
+
+  <!-- Card 4: Quote removal -->
+  <rect x="30" y="275" width="265" height="165" rx="12" fill="rgba(255,255,255,0.03)" stroke="rgba(251,191,36,0.2)" stroke-width="1"/>
+  <text x="46" y="299" font-size="11" font-weight="700" fill="#fbbf24" letter-spacing="0.06em">ATTRIBUTE QUOTES</text>
+  <rect x="46" y="307" width="232" height="28" rx="5" fill="rgba(251,191,36,0.08)"/>
+  <text x="54" y="323" font-size="9" fill="#e2e2e2" font-family="monospace">&lt;div class="nav"&gt;</text>
+  <text x="54" y="338" font-size="9" fill="#e2e2e2" font-family="monospace">&lt;input type="text"&gt;</text>
+  <text x="163" y="357" font-size="12" fill="#4cd7f6" text-anchor="middle">↓</text>
+  <rect x="46" y="364" width="232" height="28" rx="5" fill="rgba(76,215,246,0.08)"/>
+  <text x="54" y="380" font-size="9" fill="#e2e2e2" font-family="monospace">&lt;div class=nav&gt;</text>
+  <text x="54" y="394" font-size="9" fill="#e2e2e2" font-family="monospace">&lt;input type=text&gt;</text>
+  <text x="46" y="417" font-size="10" fill="#5a4d7a">Quotes optional when value</text>
+  <text x="46" y="430" font-size="10" fill="#5a4d7a">has no spaces or special chars</text>
+
+  <!-- Card 5: Boolean attrs -->
+  <rect x="320" y="275" width="265" height="165" rx="12" fill="rgba(255,255,255,0.03)" stroke="rgba(244,114,182,0.2)" stroke-width="1"/>
+  <text x="336" y="299" font-size="11" font-weight="700" fill="#f472b6" letter-spacing="0.06em">BOOLEAN ATTRIBUTES</text>
+  <rect x="336" y="307" width="232" height="28" rx="5" fill="rgba(244,114,182,0.08)"/>
+  <text x="344" y="323" font-size="9" fill="#e2e2e2" font-family="monospace">&lt;input disabled="disabled"&gt;</text>
+  <text x="344" y="338" font-size="9" fill="#e2e2e2" font-family="monospace">&lt;script async="true"&gt;</text>
+  <text x="452" y="357" font-size="12" fill="#4cd7f6" text-anchor="middle">↓</text>
+  <rect x="336" y="364" width="232" height="28" rx="5" fill="rgba(76,215,246,0.08)"/>
+  <text x="344" y="380" font-size="9" fill="#e2e2e2" font-family="monospace">&lt;input disabled&gt;</text>
+  <text x="344" y="394" font-size="9" fill="#e2e2e2" font-family="monospace">&lt;script async&gt;</text>
+  <text x="336" y="417" font-size="10" fill="#5a4d7a">Boolean attrs need no value</text>
+  <text x="336" y="430" font-size="10" fill="#5a4d7a">Presence alone means true</text>
+
+  <!-- Card 6: Inline CSS+JS -->
+  <rect x="610" y="275" width="265" height="165" rx="12" fill="rgba(255,255,255,0.03)" stroke="rgba(167,139,250,0.15)" stroke-width="1"/>
+  <text x="626" y="299" font-size="11" font-weight="700" fill="#c4b5fd" letter-spacing="0.06em">INLINE CSS + JS</text>
+  <rect x="626" y="307" width="232" height="44" rx="5" fill="rgba(196,181,253,0.08)"/>
+  <text x="634" y="323" font-size="9" fill="#e2e2e2" font-family="monospace">&lt;style&gt;</text>
+  <text x="634" y="335" font-size="9" fill="#a78bfa" font-family="monospace">  .nav  { display: flex ; }</text>
+  <text x="634" y="347" font-size="9" fill="#e2e2e2" font-family="monospace">&lt;/style&gt;</text>
+  <text x="742" y="362" font-size="12" fill="#4cd7f6" text-anchor="middle">↓</text>
+  <rect x="626" y="369" width="232" height="28" rx="5" fill="rgba(76,215,246,0.08)"/>
+  <text x="634" y="382" font-size="9" fill="#e2e2e2" font-family="monospace">&lt;style&gt;.nav{display:flex}&lt;/style&gt;</text>
+  <text x="626" y="417" font-size="10" fill="#5a4d7a">Inline &lt;style&gt; and &lt;script&gt;</text>
+  <text x="626" y="430" font-size="10" fill="#5a4d7a">minified as CSS / JS</text>
+</svg>

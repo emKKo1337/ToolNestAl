@@ -1,0 +1,70 @@
+﻿<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" font-family="'Inter','Segoe UI',sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="40%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#0f0825"/>
+      <stop offset="100%" stop-color="#05030d"/>
+    </radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+    <radialGradient id="g1" cx="30%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#5b21b6" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <ellipse cx="350" cy="315" rx="400" ry="300" fill="url(#g1)"/>
+  <rect x="60" y="60" width="130" height="28" rx="14" fill="rgba(167,139,250,0.15)" stroke="rgba(167,139,250,0.3)" stroke-width="1"/>
+  <text x="125" y="79" font-size="11" font-weight="700" fill="#a78bfa" text-anchor="middle" letter-spacing="0.06em">DEVELOPER TOOLS</text>
+  <text x="60" y="140" font-size="52" font-weight="900" fill="#e2e2e2" letter-spacing="-2">HTML Minifier</text>
+  <text x="60" y="196" font-size="24" fill="#7a6d84">Strip comments, whitespace &amp; optional tags</text>
+  <text x="60" y="232" font-size="24" fill="#7a6d84">from any HTML page — 15–40% smaller</text>
+  <!-- Stats -->
+  <rect x="60" y="268" width="148" height="74" rx="12" fill="rgba(167,139,250,0.08)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+  <text x="134" y="312" font-size="32" font-weight="900" fill="url(#aG)" text-anchor="middle">40%</text>
+  <text x="134" y="332" font-size="11" fill="#5a4d7a" text-anchor="middle">max savings</text>
+  <rect x="226" y="268" width="148" height="74" rx="12" fill="rgba(76,215,246,0.08)" stroke="rgba(76,215,246,0.2)" stroke-width="1"/>
+  <text x="300" y="312" font-size="32" font-weight="900" fill="#4cd7f6" text-anchor="middle">6</text>
+  <text x="300" y="332" font-size="11" fill="#5a4d7a" text-anchor="middle">transforms</text>
+  <rect x="392" y="268" width="148" height="74" rx="12" fill="rgba(52,211,153,0.08)" stroke="rgba(52,211,153,0.2)" stroke-width="1"/>
+  <text x="466" y="312" font-size="32" font-weight="900" fill="#34d399" text-anchor="middle">Free</text>
+  <text x="466" y="332" font-size="11" fill="#5a4d7a" text-anchor="middle">no sign-up</text>
+  <rect x="60" y="368" width="360" height="36" rx="18" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="240" y="391" font-size="13" fill="#4d4354" text-anchor="middle">toolnestai.net/developer-tools/html-minifier</text>
+  <!-- Right panel: before/after -->
+  <rect x="680" y="60" width="460" height="510" rx="16" fill="rgba(255,255,255,0.03)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+  <rect x="680" y="60" width="460" height="40" rx="16" fill="#1e1535"/>
+  <rect x="680" y="84" width="460" height="16" fill="#1e1535"/>
+  <circle cx="706" cy="80" r="6" fill="#ff5f57"/>
+  <circle cx="724" cy="80" r="6" fill="#febc2e"/>
+  <circle cx="742" cy="80" r="6" fill="#28c840"/>
+  <text x="910" y="84" font-size="10" fill="#3d3356" text-anchor="middle">index.html</text>
+  <!-- Before -->
+  <text x="700" y="122" font-size="10" font-weight="700" fill="#a78bfa" letter-spacing="0.08em">BEFORE  5,832 bytes</text>
+  <rect x="692" y="130" width="428" height="180" rx="8" fill="rgba(0,0,0,0.3)"/>
+  <text x="704" y="150" font-size="8.5" fill="#7a6d84" font-family="monospace">&lt;!-- Header component --&gt;</text>
+  <text x="704" y="165" font-size="8.5" fill="#60a5fa" font-family="monospace">&lt;header  class="site-header"&gt;</text>
+  <text x="704" y="180" font-size="8.5" fill="#e2e2e2" font-family="monospace">  &lt;nav  role="navigation"&gt;</text>
+  <text x="704" y="195" font-size="8.5" fill="#e2e2e2" font-family="monospace">    &lt;ul&gt;</text>
+  <text x="704" y="210" font-size="8.5" fill="#e2e2e2" font-family="monospace">      &lt;li&gt;&lt;a  href="/"&gt;Home&lt;/a&gt;&lt;/li&gt;</text>
+  <text x="704" y="225" font-size="8.5" fill="#e2e2e2" font-family="monospace">    &lt;/ul&gt;</text>
+  <text x="704" y="240" font-size="8.5" fill="#e2e2e2" font-family="monospace">  &lt;/nav&gt;</text>
+  <text x="704" y="255" font-size="8.5" fill="#60a5fa" font-family="monospace">&lt;/header&gt;</text>
+  <text x="704" y="273" font-size="8.5" fill="#3d3356" font-family="monospace">... 186 more lines, 22 comments ...</text>
+  <text x="910" y="320" font-size="22" text-anchor="middle" fill="#34d399">⚡</text>
+  <text x="910" y="344" font-size="11" font-weight="700" fill="#34d399" text-anchor="middle">MINIFIED</text>
+  <!-- After -->
+  <text x="700" y="374" font-size="10" font-weight="700" fill="#4cd7f6" letter-spacing="0.08em">AFTER  3,908 bytes  (−33%)</text>
+  <rect x="692" y="382" width="428" height="56" rx="8" fill="rgba(76,215,246,0.06)" stroke="rgba(76,215,246,0.2)" stroke-width="1"/>
+  <text x="704" y="402" font-size="8" fill="#e2e2e2" font-family="monospace">&lt;header class=site-header&gt;&lt;nav role=navigation&gt;</text>
+  <text x="704" y="416" font-size="8" fill="#e2e2e2" font-family="monospace">&lt;ul&gt;&lt;li&gt;&lt;a href=/&gt;Home&lt;/ul&gt;&lt;/nav&gt;&lt;/header&gt;</text>
+  <text x="704" y="432" font-size="8" fill="#3d3356" font-family="monospace">... single line, all 186 elements ...</text>
+  <!-- Bar -->
+  <rect x="692" y="456" width="428" height="28" rx="6" fill="rgba(255,255,255,0.04)"/>
+  <rect x="692" y="456" width="284" height="28" rx="6" fill="url(#aG)" opacity="0.6"/>
+  <text x="906" y="475" font-size="10" fill="#9b8da8" text-anchor="middle">67% ← kept │ 33% saved →</text>
+  <!-- Logo -->
+  <text x="60" y="576" font-size="16" font-weight="800" fill="url(#aG)">ToolNest AI</text>
+  <text x="60" y="596" font-size="11" fill="#3d3356">toolnestai.net · Free HTML Minifier</text>
+</svg>
