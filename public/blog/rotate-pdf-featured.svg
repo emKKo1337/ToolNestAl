@@ -1,0 +1,63 @@
+﻿<svg viewBox="0 0 900 540" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="70%"><stop offset="0%" stop-color="#0f0825"/><stop offset="100%" stop-color="#05030d"/></radialGradient>
+    <linearGradient id="lapG" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#1a1040"/><stop offset="100%" stop-color="#0d0824"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="14" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="900" height="540" fill="url(#bg)"/>
+  <ellipse cx="450" cy="270" rx="280" ry="150" fill="#5b21b6" opacity="0.07" filter="url(#glow)"/>
+  <rect x="120" y="48" width="660" height="410" rx="14" fill="url(#lapG)" stroke="#2a1f4a" stroke-width="1.5"/>
+  <rect x="120" y="48" width="660" height="38" rx="14" fill="#1a1040"/>
+  <rect x="120" y="72" width="660" height="14" fill="#1a1040"/>
+  <circle cx="655" cy="67" r="7" fill="#ff5f57"/><circle cx="675" cy="67" r="7" fill="#febc2e"/><circle cx="695" cy="67" r="7" fill="#28c840"/>
+  <rect x="200" y="56" width="440" height="20" rx="10" fill="#110c2a"/>
+  <text x="420" y="70" font-family="monospace" font-size="9" fill="#4d4354" text-anchor="middle">toolnestai.net/pdf-tools/rotate-pdf</text>
+  <rect x="136" y="94" width="628" height="352" rx="6" fill="#0c0920"/>
+  <text x="450" y="118" font-family="sans-serif" font-size="13" font-weight="700" fill="#e2e2e2" text-anchor="middle">Rotate PDF Pages</text>
+  <text x="450" y="134" font-family="sans-serif" font-size="8" fill="#7a6d84" text-anchor="middle">Rotate all pages or select individual ones — 90°, 180°, 270°</text>
+  <!-- 4 page thumbs with rotate controls -->
+  <!-- Page 1 (rotated sideways) -->
+  <rect x="148" y="148" width="130" height="100" rx="6" fill="#1a1040" stroke="#a78bfa" stroke-width="1"/>
+  <rect x="160" y="158" width="106" height="80" rx="4" fill="#110c2a"/>
+  <!-- sideways content indicator -->
+  <rect x="170" y="190" width="40" height="6" rx="2" fill="#2a1f4a" transform="rotate(90,190,193)"/>
+  <text x="213" y="234" font-family="sans-serif" font-size="7.5" fill="#7a6d84" text-anchor="middle">Page 1</text>
+  <text x="213" y="244" font-family="sans-serif" font-size="7" fill="#a78bfa" text-anchor="middle">Rotated 90°</text>
+  <!-- rotate controls -->
+  <rect x="148" y="252" width="30" height="24" rx="6" fill="#7c3aed"/>
+  <text x="163" y="268" font-family="sans-serif" font-size="11" fill="#fff" text-anchor="middle">↺</text>
+  <rect x="184" y="252" width="30" height="24" rx="6" fill="#7c3aed"/>
+  <text x="199" y="268" font-family="sans-serif" font-size="11" fill="#fff" text-anchor="middle">↻</text>
+  <rect x="220" y="252" width="58" height="24" rx="6" fill="#1a1040"/>
+  <text x="249" y="268" font-family="sans-serif" font-size="8" fill="#7a6d84" text-anchor="middle">180°</text>
+
+  <!-- Page 2 -->
+  <rect x="310" y="148" width="100" height="130" rx="6" fill="#1a1040" stroke="#2a1f4a" stroke-width="1"/>
+  <rect x="322" y="160" width="76" height="106" rx="4" fill="#110c2a"/>
+  <rect x="330" y="170" width="60" height="6" rx="2" fill="#2a1f4a"/>
+  <rect x="330" y="182" width="45" height="4" rx="2" fill="#1e1535"/>
+  <text x="360" y="294" font-family="sans-serif" font-size="7.5" fill="#7a6d84" text-anchor="middle">Page 2</text>
+  <rect x="310" y="300" width="30" height="24" rx="6" fill="#7c3aed"/>
+  <text x="325" y="316" font-family="sans-serif" font-size="11" fill="#fff" text-anchor="middle">↺</text>
+  <rect x="346" y="300" width="30" height="24" rx="6" fill="#7c3aed"/>
+  <text x="361" y="316" font-family="sans-serif" font-size="11" fill="#fff" text-anchor="middle">↻</text>
+
+  <!-- Select all / rotate all -->
+  <rect x="510" y="148" width="240" height="130" rx="8" fill="#110c2a" stroke="#2a1f4a" stroke-width="1"/>
+  <text x="522" y="170" font-family="sans-serif" font-size="9" font-weight="700" fill="#4d4354">ROTATE ALL PAGES</text>
+  <rect x="522" y="178" width="80" height="28" rx="8" fill="#7c3aed"/>
+  <text x="562" y="196" font-family="sans-serif" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">↺ 90°</text>
+  <rect x="610" y="178" width="80" height="28" rx="8" fill="#7c3aed"/>
+  <text x="650" y="196" font-family="sans-serif" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">↻ 90°</text>
+  <rect x="522" y="214" width="80" height="28" rx="8" fill="#1a1040" stroke="#2a1f4a" stroke-width="1"/>
+  <text x="562" y="232" font-family="sans-serif" font-size="9" fill="#7a6d84" text-anchor="middle">180°</text>
+  <rect x="610" y="214" width="80" height="28" rx="8" fill="#1a1040" stroke="#2a1f4a" stroke-width="1"/>
+  <text x="650" y="232" font-family="sans-serif" font-size="9" fill="#7a6d84" text-anchor="middle">270°</text>
+  <text x="522" y="268" font-family="sans-serif" font-size="8" fill="#4d4354">Affects: All 8 pages</text>
+
+  <!-- Save button -->
+  <rect x="148" y="340" width="200" height="36" rx="10" fill="#7c3aed"/>
+  <text x="248" y="363" font-family="sans-serif" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">Save Rotated PDF</text>
+  <rect x="340" y="458" width="220" height="10" rx="5" fill="#1a1040"/>
+  <rect x="280" y="466" width="340" height="8" rx="4" fill="#140e34"/>
+</svg>
