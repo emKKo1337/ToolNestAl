@@ -1,0 +1,101 @@
+﻿<svg viewBox="0 0 900 560" xmlns="http://www.w3.org/2000/svg" font-family="'Inter','Segoe UI',sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="40%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#0f0825"/>
+      <stop offset="100%" stop-color="#05030d"/>
+    </radialGradient>
+    <radialGradient id="g1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#5b21b6" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#5b21b6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="lapG" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a1040"/>
+      <stop offset="100%" stop-color="#0d0824"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="8" stdDeviation="20" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+  <rect width="900" height="560" fill="url(#bg)"/>
+  <ellipse cx="280" cy="180" rx="300" ry="220" fill="url(#g1)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="130" y="40" width="640" height="420" rx="14" fill="url(#lapG)" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
+    <rect x="130" y="40" width="640" height="44" rx="14" fill="#1e1535"/>
+    <rect x="130" y="68" width="640" height="16" fill="#1e1535"/>
+    <circle cx="655" cy="62" r="7" fill="#ff5f57"/>
+    <circle cx="675" cy="62" r="7" fill="#febc2e"/>
+    <circle cx="695" cy="62" r="7" fill="#28c840"/>
+    <rect x="230" y="53" width="420" height="18" rx="9" fill="#120e2a"/>
+    <text x="440" y="66" font-size="10" fill="#5a4d7a" text-anchor="middle">toolnestai.net/developer-tools/json-yaml-converter</text>
+    <rect x="142" y="84" width="616" height="364" rx="0" fill="#0d0a1e"/>
+
+    <text x="450" y="112" font-size="18" font-weight="800" fill="#e2e2e2" text-anchor="middle">JSON ↔ YAML Converter</text>
+    <text x="450" y="130" font-size="11" fill="#7a6d84" text-anchor="middle">Convert between JSON and YAML formats instantly</text>
+
+    <!-- Tab switcher -->
+    <rect x="300" y="138" width="112" height="24" rx="6" fill="url(#aG)"/>
+    <text x="356" y="155" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">JSON → YAML</text>
+    <rect x="420" y="138" width="112" height="24" rx="6" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <text x="476" y="155" font-size="11" font-weight="600" fill="#7a6d84" text-anchor="middle">YAML → JSON</text>
+
+    <!-- Input: JSON -->
+    <rect x="152" y="170" width="282" height="252" rx="10" fill="#130f28" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+    <text x="164" y="190" font-size="10" font-weight="700" fill="#a78bfa" letter-spacing="0.08em">INPUT (JSON)</text>
+
+    <text x="164" y="210" font-size="9" fill="#60a5fa" font-family="monospace">{</text>
+    <text x="164" y="224" font-size="9" fill="#e2e2e2" font-family="monospace">  "name": "Jane Smith",</text>
+    <text x="164" y="238" font-size="9" fill="#e2e2e2" font-family="monospace">  "age": 32,</text>
+    <text x="164" y="252" font-size="9" fill="#e2e2e2" font-family="monospace">  "active": true,</text>
+    <text x="164" y="266" font-size="9" fill="#e2e2e2" font-family="monospace">  "score": null,</text>
+    <text x="164" y="280" font-size="9" fill="#a78bfa" font-family="monospace">  "roles": [</text>
+    <text x="164" y="294" font-size="9" fill="#34d399" font-family="monospace">    "admin",</text>
+    <text x="164" y="308" font-size="9" fill="#34d399" font-family="monospace">    "editor"</text>
+    <text x="164" y="322" font-size="9" fill="#a78bfa" font-family="monospace">  ],</text>
+    <text x="164" y="336" font-size="9" fill="#e2e2e2" font-family="monospace">  "address": {</text>
+    <text x="164" y="350" font-size="9" fill="#e2e2e2" font-family="monospace">    "city": "Berlin",</text>
+    <text x="164" y="364" font-size="9" fill="#e2e2e2" font-family="monospace">    "zip": "10115"</text>
+    <text x="164" y="378" font-size="9" fill="#e2e2e2" font-family="monospace">  }</text>
+    <text x="164" y="392" font-size="9" fill="#60a5fa" font-family="monospace">}</text>
+    <text x="164" y="410" font-size="8.5" fill="#3d3356" font-family="monospace">280 bytes</text>
+
+    <!-- Arrow bi-directional -->
+    <g transform="translate(450,296)">
+      <circle r="22" fill="#1a1040" stroke="rgba(167,139,250,0.3)" stroke-width="1.5"/>
+      <path d="M-10,-7 L10,-7 M5,-12 L10,-7 L5,-2" stroke="url(#aG)" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+      <path d="M10,7 L-10,7 M-5,2 L-10,7 L-5,12" stroke="url(#aG)" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+    </g>
+
+    <!-- Output: YAML -->
+    <rect x="464" y="170" width="282" height="252" rx="10" fill="#0b0d1f" stroke="rgba(76,215,246,0.25)" stroke-width="1"/>
+    <text x="476" y="190" font-size="10" font-weight="700" fill="#4cd7f6" letter-spacing="0.08em">OUTPUT (YAML)</text>
+
+    <text x="476" y="210" font-size="9" fill="#a78bfa" font-family="monospace">name: Jane Smith</text>
+    <text x="476" y="224" font-size="9" fill="#e2e2e2" font-family="monospace">age: 32</text>
+    <text x="476" y="238" font-size="9" fill="#e2e2e2" font-family="monospace">active: true</text>
+    <text x="476" y="252" font-size="9" fill="#7a6d84" font-family="monospace">score: null</text>
+    <text x="476" y="266" font-size="9" fill="#a78bfa" font-family="monospace">roles:</text>
+    <text x="476" y="280" font-size="9" fill="#34d399" font-family="monospace">  - admin</text>
+    <text x="476" y="294" font-size="9" fill="#34d399" font-family="monospace">  - editor</text>
+    <text x="476" y="308" font-size="9" fill="#a78bfa" font-family="monospace">address:</text>
+    <text x="476" y="322" font-size="9" fill="#e2e2e2" font-family="monospace">  city: Berlin</text>
+    <text x="476" y="336" font-size="9" fill="#e2e2e2" font-family="monospace">  zip: '10115'</text>
+    <text x="476" y="368" font-size="8.5" fill="#34d399" font-family="monospace">184 bytes  (−34%)</text>
+    <text x="476" y="382" font-size="8.5" fill="#3d3356" font-family="monospace">Note: zip quoted to preserve string</text>
+
+    <!-- Buttons -->
+    <rect x="152" y="432" width="170" height="30" rx="8" fill="url(#aG)"/>
+    <text x="237" y="451" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">⚡  Convert</text>
+    <rect x="336" y="432" width="130" height="30" rx="8" fill="rgba(76,215,246,0.12)" stroke="rgba(76,215,246,0.3)" stroke-width="1"/>
+    <text x="401" y="451" font-size="11" font-weight="600" fill="#4cd7f6" text-anchor="middle">⧉  Copy</text>
+    <rect x="480" y="432" width="140" height="30" rx="8" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <text x="550" y="451" font-size="11" font-weight="600" fill="#7a6d84" text-anchor="middle">↓  Download</text>
+  </g>
+
+  <rect x="90" y="460" width="720" height="12" rx="6" fill="#1a1535" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <rect x="360" y="468" width="180" height="6" rx="3" fill="#120e2a"/>
+</svg>

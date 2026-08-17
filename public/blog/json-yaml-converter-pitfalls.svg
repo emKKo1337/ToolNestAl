@@ -1,0 +1,70 @@
+﻿<svg viewBox="0 0 900 480" xmlns="http://www.w3.org/2000/svg" font-family="'Inter','Segoe UI',sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#0f0825"/>
+      <stop offset="100%" stop-color="#05030d"/>
+    </radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="480" fill="url(#bg)"/>
+
+  <text x="450" y="44" font-size="22" font-weight="800" fill="#e2e2e2" text-anchor="middle">YAML Pitfalls: The Norway Problem and Friends</text>
+  <text x="450" y="66" font-size="13" fill="#7a6d84" text-anchor="middle">Common YAML 1.1 gotchas that break parsers — and how to avoid them</text>
+
+  <!-- Norway problem -->
+  <rect x="30" y="86" width="415" height="170" rx="12" fill="rgba(255,255,255,0.03)" stroke="rgba(239,68,68,0.3)" stroke-width="1.5"/>
+  <rect x="30" y="86" width="415" height="36" rx="12" fill="rgba(239,68,68,0.08)"/>
+  <rect x="30" y="106" width="415" height="16" fill="rgba(239,68,68,0.08)"/>
+  <text x="50" y="110" font-size="12" font-weight="700" fill="#ef4444" letter-spacing="0.04em">⚠  The Norway Problem (YAML 1.1)</text>
+  <rect x="46" y="134" width="383" height="54" rx="6" fill="rgba(0,0,0,0.4)"/>
+  <text x="58" y="154" font-size="9.5" fill="#7a6d84" font-family="monospace"># YAML 1.1 parsers (PyYAML 5 and below):</text>
+  <text x="58" y="170" font-size="9.5" fill="#a78bfa" font-family="monospace">country: NO  →  parsed as  false  !</text>
+  <text x="58" y="184" font-size="9.5" fill="#a78bfa" font-family="monospace">flag: YES    →  parsed as  true  !</text>
+  <text x="46" y="208" font-size="10" fill="#9b8da8">In YAML 1.1, YES/NO/ON/OFF (any case) are booleans.</text>
+  <text x="46" y="224" font-size="10" fill="#9b8da8">The ISO 3166 country code for Norway is "NO".</text>
+  <text x="46" y="244" font-size="10" font-weight="600" fill="#34d399">Fix: quote the value → country: "NO"</text>
+
+  <!-- Octal numbers -->
+  <rect x="460" y="86" width="415" height="170" rx="12" fill="rgba(255,255,255,0.03)" stroke="rgba(251,191,36,0.3)" stroke-width="1.5"/>
+  <rect x="460" y="86" width="415" height="36" rx="12" fill="rgba(251,191,36,0.08)"/>
+  <rect x="460" y="106" width="415" height="16" fill="rgba(251,191,36,0.08)"/>
+  <text x="480" y="110" font-size="12" font-weight="700" fill="#fbbf24" letter-spacing="0.04em">⚠  Octal &amp; Sexagesimal Numbers</text>
+  <rect x="476" y="134" width="383" height="54" rx="6" fill="rgba(0,0,0,0.4)"/>
+  <text x="488" y="154" font-size="9.5" fill="#7a6d84" font-family="monospace"># YAML 1.1:</text>
+  <text x="488" y="170" font-size="9.5" fill="#a78bfa" font-family="monospace">port: 0777  →  parsed as  511  (octal!)</text>
+  <text x="488" y="184" font-size="9.5" fill="#a78bfa" font-family="monospace">time: 1:30  →  parsed as  90  (60×1 + 30)</text>
+  <text x="476" y="208" font-size="10" fill="#9b8da8">Unquoted values starting with 0 treated as octal.</text>
+  <text x="476" y="224" font-size="10" fill="#9b8da8">Colon-separated numbers treated as sexagesimal.</text>
+  <text x="476" y="244" font-size="10" font-weight="600" fill="#34d399">Fix: quote ports → port: "0777" or use YAML 1.2</text>
+
+  <!-- Multiline strings -->
+  <rect x="30" y="272" width="415" height="180" rx="12" fill="rgba(255,255,255,0.03)" stroke="rgba(96,165,250,0.2)" stroke-width="1"/>
+  <text x="50" y="296" font-size="12" font-weight="700" fill="#60a5fa" letter-spacing="0.04em">MULTILINE STRINGS: | vs &gt;</text>
+  <rect x="46" y="304" width="383" height="100" rx="6" fill="rgba(0,0,0,0.4)"/>
+  <text x="58" y="322" font-size="9.5" fill="#7a6d84" font-family="monospace"># | = literal block (preserves newlines)</text>
+  <text x="58" y="338" font-size="9.5" fill="#a78bfa" font-family="monospace">description: |</text>
+  <text x="58" y="352" font-size="9.5" fill="#e2e2e2" font-family="monospace">  Line one.</text>
+  <text x="58" y="366" font-size="9.5" fill="#e2e2e2" font-family="monospace">  Line two.  # → "Line one.\nLine two.\n"</text>
+  <text x="58" y="382" font-size="9.5" fill="#7a6d84" font-family="monospace"># &gt; = folded (newlines → spaces)</text>
+  <text x="58" y="398" font-size="9.5" fill="#a78bfa" font-family="monospace">summary: &gt;</text>
+  <text x="58" y="412" font-size="9.5" fill="#e2e2e2" font-family="monospace">  Long sentence  # → "Long sentence continued"</text>
+  <text x="58" y="426" font-size="9.5" fill="#e2e2e2" font-family="monospace">  continued</text>
+  <text x="46" y="444" font-size="10" fill="#5a4d7a">| for logs, code, SQL · &gt; for prose descriptions</text>
+
+  <!-- Anchors -->
+  <rect x="460" y="272" width="415" height="180" rx="12" fill="rgba(255,255,255,0.03)" stroke="rgba(52,211,153,0.2)" stroke-width="1"/>
+  <text x="480" y="296" font-size="12" font-weight="700" fill="#34d399" letter-spacing="0.04em">YAML ANCHORS — JSON HAS NO EQUIVALENT</text>
+  <rect x="476" y="304" width="383" height="100" rx="6" fill="rgba(0,0,0,0.4)"/>
+  <text x="488" y="322" font-size="9.5" fill="#7a6d84" font-family="monospace"># Define anchor with &amp;</text>
+  <text x="488" y="338" font-size="9.5" fill="#a78bfa" font-family="monospace">defaults: &amp;defaults</text>
+  <text x="488" y="352" font-size="9.5" fill="#e2e2e2" font-family="monospace">  timeout: 30</text>
+  <text x="488" y="366" font-size="9.5" fill="#e2e2e2" font-family="monospace">  retries: 3</text>
+  <text x="488" y="382" font-size="9.5" fill="#7a6d84" font-family="monospace"># Reference with *</text>
+  <text x="488" y="398" font-size="9.5" fill="#a78bfa" font-family="monospace">production:</text>
+  <text x="488" y="412" font-size="9.5" fill="#e2e2e2" font-family="monospace">  &lt;&lt;: *defaults  # merge anchor</text>
+  <text x="488" y="426" font-size="9.5" fill="#e2e2e2" font-family="monospace">  host: prod.example.com</text>
+  <text x="476" y="444" font-size="10" fill="#5a4d7a">Anchors lost on YAML→JSON conversion</text>
+</svg>
