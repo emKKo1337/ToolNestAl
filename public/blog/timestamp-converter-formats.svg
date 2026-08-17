@@ -1,0 +1,80 @@
+﻿<svg viewBox="0 0 900 480" xmlns="http://www.w3.org/2000/svg" font-family="'Inter','Segoe UI',sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#0f0825"/>
+      <stop offset="100%" stop-color="#05030d"/>
+    </radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="480" fill="url(#bg)"/>
+
+  <text x="450" y="44" font-size="22" font-weight="800" fill="#e2e2e2" text-anchor="middle">Timestamp Formats Decoded</text>
+  <text x="450" y="66" font-size="13" fill="#7a6d84" text-anchor="middle">Every format for the same moment in time</text>
+
+  <!-- Unix epoch explanation -->
+  <rect x="30" y="86" width="840" height="64" rx="12" fill="rgba(167,139,250,0.06)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+  <text x="50" y="110" font-size="20" font-weight="900" fill="#e2e2e2" font-family="monospace">1753524000</text>
+  <text x="50" y="134" font-size="11" fill="#7a6d84">Unix timestamp (seconds since 1970-01-01T00:00:00Z) · January 1, 1970 00:00:00 UTC = epoch zero</text>
+  <text x="840" y="110" font-size="12" font-weight="700" fill="#a78bfa" text-anchor="end">= 2025-07-26 10:00:00 UTC</text>
+
+  <!-- Format table -->
+  <!-- Header -->
+  <rect x="30" y="168" width="840" height="30" rx="8" fill="rgba(255,255,255,0.04)"/>
+  <text x="50" y="188" font-size="11" font-weight="700" fill="#4d4354" letter-spacing="0.06em">FORMAT</text>
+  <text x="280" y="188" font-size="11" font-weight="700" fill="#4d4354" letter-spacing="0.06em">VALUE</text>
+  <text x="620" y="188" font-size="11" font-weight="700" fill="#4d4354" letter-spacing="0.06em">USE CASE</text>
+
+  <!-- Row 1 -->
+  <line x1="30" y1="198" x2="870" y2="198" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="50" y="218" font-size="11" font-weight="700" fill="#a78bfa">Unix (seconds)</text>
+  <text x="280" y="218" font-size="10" fill="#e2e2e2" font-family="monospace">1753524000</text>
+  <text x="620" y="218" font-size="11" fill="#5a4d7a">Databases, APIs, log files</text>
+
+  <!-- Row 2 -->
+  <line x1="30" y1="228" x2="870" y2="228" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="50" y="248" font-size="11" font-weight="700" fill="#60a5fa">Unix (milliseconds)</text>
+  <text x="280" y="248" font-size="10" fill="#e2e2e2" font-family="monospace">1753524000000</text>
+  <text x="620" y="248" font-size="11" fill="#5a4d7a">JavaScript Date.now(), Java System.currentTimeMillis()</text>
+
+  <!-- Row 3 -->
+  <line x1="30" y1="258" x2="870" y2="258" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="50" y="278" font-size="11" font-weight="700" fill="#34d399">ISO 8601 (UTC)</text>
+  <text x="280" y="278" font-size="10" fill="#e2e2e2" font-family="monospace">2025-07-26T10:00:00.000Z</text>
+  <text x="620" y="278" font-size="11" fill="#5a4d7a">JSON APIs, HTML datetime attrs, OpenAPI specs</text>
+
+  <!-- Row 4 -->
+  <line x1="30" y1="288" x2="870" y2="288" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="50" y="308" font-size="11" font-weight="700" fill="#fbbf24">ISO 8601 (offset)</text>
+  <text x="280" y="308" font-size="10" fill="#e2e2e2" font-family="monospace">2025-07-26T12:00:00+02:00</text>
+  <text x="620" y="308" font-size="11" fill="#5a4d7a">Calendar apps, email headers, event scheduling</text>
+
+  <!-- Row 5 -->
+  <line x1="30" y1="318" x2="870" y2="318" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="50" y="338" font-size="11" font-weight="700" fill="#f472b6">RFC 2822</text>
+  <text x="280" y="338" font-size="10" fill="#e2e2e2" font-family="monospace">Sat, 26 Jul 2025 10:00:00 +0000</text>
+  <text x="620" y="338" font-size="11" fill="#5a4d7a">Email (Date: header), HTTP Last-Modified</text>
+
+  <!-- Row 6 -->
+  <line x1="30" y1="348" x2="870" y2="348" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="50" y="368" font-size="11" font-weight="700" fill="#22d3ee">HTTP date</text>
+  <text x="280" y="368" font-size="10" fill="#e2e2e2" font-family="monospace">Sat, 26 Jul 2025 10:00:00 GMT</text>
+  <text x="620" y="368" font-size="11" fill="#5a4d7a">HTTP Date:, Expires:, Last-Modified: headers</text>
+
+  <!-- Row 7 -->
+  <line x1="30" y1="378" x2="870" y2="378" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="50" y="398" font-size="11" font-weight="700" fill="#c4b5fd">SQL timestamp</text>
+  <text x="280" y="398" font-size="10" fill="#e2e2e2" font-family="monospace">2025-07-26 10:00:00</text>
+  <text x="620" y="398" font-size="11" fill="#5a4d7a">MySQL DATETIME, PostgreSQL TIMESTAMP</text>
+
+  <!-- Row 8 -->
+  <line x1="30" y1="408" x2="870" y2="408" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="50" y="428" font-size="11" font-weight="700" fill="#fb923c">Short human</text>
+  <text x="280" y="428" font-size="10" fill="#e2e2e2" font-family="monospace">Jul 26, 2025, 10:00 AM UTC</text>
+  <text x="620" y="428" font-size="11" fill="#5a4d7a">UI display, notifications, user-facing dates</text>
+
+  <line x1="30" y1="438" x2="870" y2="438" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+  <text x="450" y="462" font-size="11" fill="#3d3356" text-anchor="middle">All formats above represent the same instant — 1753524000 seconds after 1970-01-01T00:00:00Z</text>
+</svg>

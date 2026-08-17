@@ -1,0 +1,133 @@
+﻿<svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" font-family="'Inter','Segoe UI',sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#0f0825"/>
+      <stop offset="100%" stop-color="#05030d"/>
+    </radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="460" fill="url(#bg)"/>
+
+  <text x="450" y="44" font-size="22" font-weight="800" fill="#e2e2e2" text-anchor="middle">UTC Offset Map — Selected Timezones</text>
+  <text x="450" y="66" font-size="13" fill="#7a6d84" text-anchor="middle">Same Unix timestamp, different local times</text>
+
+  <!-- Timeline bar -->
+  <rect x="30" y="90" width="840" height="16" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <!-- UTC center line -->
+  <line x1="450" y1="80" x2="450" y2="110" stroke="rgba(76,215,246,0.6)" stroke-width="2"/>
+  <text x="450" y="76" font-size="10" fill="#4cd7f6" text-anchor="middle">UTC 0</text>
+  <!-- Filled offsets -->
+  <!-- -12 to +14 = 26 hours = 840px / 26 = ~32px per hour -->
+  <!-- UTC position = 30 + 12*32 = 30+384 = 414 (adjust: center at 450) -->
+  <!-- Each hour = 840/28 = 30px, UTC=30+(12*30)=390 -->
+  <!-- Use: position = 30 + (12 + offset) * 30 -->
+  <rect x="30" y="90" width="420" height="16" rx="8" fill="rgba(167,139,250,0.15)"/> <!-- negative zones -->
+  <rect x="450" y="90" width="420" height="16" rx="8" fill="rgba(76,215,246,0.12)"/> <!-- positive zones -->
+
+  <!-- Timezone markers and labels -->
+  <!-- Pacific (UTC-8) = 30 + (12-8)*30 = 30+120 = 150 -->
+  <line x1="150" y1="88" x2="150" y2="108" stroke="rgba(167,139,250,0.8)" stroke-width="1.5"/>
+  <text x="150" y="86" font-size="8" fill="#a78bfa" text-anchor="middle">−8</text>
+  <!-- Mountain (UTC-7) = 180 -->
+  <line x1="180" y1="88" x2="180" y2="108" stroke="rgba(167,139,250,0.6)" stroke-width="1"/>
+  <!-- Central (UTC-6) = 210 -->
+  <line x1="210" y1="88" x2="210" y2="108" stroke="rgba(167,139,250,0.6)" stroke-width="1"/>
+  <!-- Eastern (UTC-5) = 240 -->
+  <line x1="240" y1="88" x2="240" y2="108" stroke="rgba(167,139,250,0.8)" stroke-width="1.5"/>
+  <text x="240" y="86" font-size="8" fill="#a78bfa" text-anchor="middle">−5</text>
+  <!-- UTC-4 = 270 -->
+  <!-- UTC-3 = 300 (São Paulo) -->
+  <line x1="300" y1="88" x2="300" y2="108" stroke="rgba(167,139,250,0.8)" stroke-width="1.5"/>
+  <text x="300" y="86" font-size="8" fill="#a78bfa" text-anchor="middle">−3</text>
+  <!-- UTC-1 = 360 -->
+  <!-- UTC+0 = 450 (center) -->
+  <!-- UTC+1 = 480 (Berlin winter) -->
+  <line x1="480" y1="88" x2="480" y2="108" stroke="rgba(76,215,246,0.8)" stroke-width="1.5"/>
+  <text x="480" y="86" font-size="8" fill="#4cd7f6" text-anchor="middle">+1</text>
+  <!-- UTC+2 = 510 (Berlin summer CEST) -->
+  <line x1="510" y1="88" x2="510" y2="108" stroke="rgba(76,215,246,0.8)" stroke-width="1.5"/>
+  <text x="510" y="86" font-size="8" fill="#4cd7f6" text-anchor="middle">+2</text>
+  <!-- UTC+3 = 540 (Moscow) -->
+  <line x1="540" y1="88" x2="540" y2="108" stroke="rgba(76,215,246,0.8)" stroke-width="1.5"/>
+  <text x="540" y="86" font-size="8" fill="#4cd7f6" text-anchor="middle">+3</text>
+  <!-- UTC+5:30 = 615 (India) -->
+  <line x1="615" y1="88" x2="615" y2="108" stroke="rgba(76,215,246,0.7)" stroke-width="1.5"/>
+  <text x="615" y="86" font-size="8" fill="#4cd7f6" text-anchor="middle">+5:30</text>
+  <!-- UTC+8 = 690 (Beijing) -->
+  <line x1="690" y1="88" x2="690" y2="108" stroke="rgba(76,215,246,0.8)" stroke-width="1.5"/>
+  <text x="690" y="86" font-size="8" fill="#4cd7f6" text-anchor="middle">+8</text>
+  <!-- UTC+9 = 720 (Tokyo) -->
+  <line x1="720" y1="88" x2="720" y2="108" stroke="rgba(76,215,246,0.8)" stroke-width="1.5"/>
+  <text x="720" y="86" font-size="8" fill="#4cd7f6" text-anchor="middle">+9</text>
+  <!-- UTC+10 = 750 (Sydney) -->
+  <line x1="750" y1="88" x2="750" y2="108" stroke="rgba(76,215,246,0.7)" stroke-width="1.5"/>
+  <text x="750" y="86" font-size="8" fill="#4cd7f6" text-anchor="middle">+10</text>
+
+  <!-- Timezone cards: 2 rows of 5 -->
+  <!-- Row 1 -->
+  <rect x="30" y="126" width="162" height="66" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+  <text x="42" y="146" font-size="10" font-weight="700" fill="#a78bfa">Los Angeles (PST)</text>
+  <text x="42" y="162" font-size="9" fill="#5a4d7a">UTC−8 (UTC−7 in DST)</text>
+  <text x="42" y="178" font-size="11" font-weight="600" fill="#e2e2e2" font-family="monospace">02:00:00 AM</text>
+
+  <rect x="204" y="126" width="162" height="66" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+  <text x="216" y="146" font-size="10" font-weight="700" fill="#a78bfa">New York (EST)</text>
+  <text x="216" y="162" font-size="9" fill="#5a4d7a">UTC−5 (UTC−4 in DST)</text>
+  <text x="216" y="178" font-size="11" font-weight="600" fill="#e2e2e2" font-family="monospace">05:00:00 AM</text>
+
+  <rect x="378" y="126" width="162" height="66" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="390" y="146" font-size="10" font-weight="700" fill="#4cd7f6">London (GMT)</text>
+  <text x="390" y="162" font-size="9" fill="#5a4d7a">UTC+0 (UTC+1 in BST)</text>
+  <text x="390" y="178" font-size="11" font-weight="600" fill="#e2e2e2" font-family="monospace">10:00:00 AM</text>
+
+  <rect x="552" y="126" width="162" height="66" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(76,215,246,0.2)" stroke-width="1"/>
+  <text x="564" y="146" font-size="10" font-weight="700" fill="#4cd7f6">Berlin (CEST)</text>
+  <text x="564" y="162" font-size="9" fill="#5a4d7a">UTC+2 in summer DST</text>
+  <text x="564" y="178" font-size="11" font-weight="600" fill="#e2e2e2" font-family="monospace">12:00:00 PM</text>
+
+  <rect x="726" y="126" width="162" height="66" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(76,215,246,0.2)" stroke-width="1"/>
+  <text x="738" y="146" font-size="10" font-weight="700" fill="#4cd7f6">Moscow (MSK)</text>
+  <text x="738" y="162" font-size="9" fill="#5a4d7a">UTC+3 (no DST)</text>
+  <text x="738" y="178" font-size="11" font-weight="600" fill="#e2e2e2" font-family="monospace">01:00:00 PM</text>
+
+  <!-- Row 2 -->
+  <rect x="30" y="206" width="162" height="66" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(76,215,246,0.15)" stroke-width="1"/>
+  <text x="42" y="226" font-size="10" font-weight="700" fill="#4cd7f6">Mumbai (IST)</text>
+  <text x="42" y="242" font-size="9" fill="#5a4d7a">UTC+5:30 (no DST)</text>
+  <text x="42" y="258" font-size="11" font-weight="600" fill="#e2e2e2" font-family="monospace">03:30:00 PM</text>
+
+  <rect x="204" y="206" width="162" height="66" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(76,215,246,0.15)" stroke-width="1"/>
+  <text x="216" y="226" font-size="10" font-weight="700" fill="#4cd7f6">Singapore (SGT)</text>
+  <text x="216" y="242" font-size="9" fill="#5a4d7a">UTC+8 (no DST)</text>
+  <text x="216" y="258" font-size="11" font-weight="600" fill="#e2e2e2" font-family="monospace">06:00:00 PM</text>
+
+  <rect x="378" y="206" width="162" height="66" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(76,215,246,0.15)" stroke-width="1"/>
+  <text x="390" y="226" font-size="10" font-weight="700" fill="#4cd7f6">Tokyo (JST)</text>
+  <text x="390" y="242" font-size="9" fill="#5a4d7a">UTC+9 (no DST)</text>
+  <text x="390" y="258" font-size="11" font-weight="600" fill="#e2e2e2" font-family="monospace">07:00:00 PM</text>
+
+  <rect x="552" y="206" width="162" height="66" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(76,215,246,0.15)" stroke-width="1"/>
+  <text x="564" y="226" font-size="10" font-weight="700" fill="#4cd7f6">Sydney (AEST)</text>
+  <text x="564" y="242" font-size="9" fill="#5a4d7a">UTC+10 (UTC+11 in DST)</text>
+  <text x="564" y="258" font-size="11" font-weight="600" fill="#e2e2e2" font-family="monospace">08:00:00 PM</text>
+
+  <rect x="726" y="206" width="162" height="66" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(76,215,246,0.15)" stroke-width="1"/>
+  <text x="738" y="226" font-size="10" font-weight="700" fill="#4cd7f6">Auckland (NZST)</text>
+  <text x="738" y="242" font-size="9" fill="#5a4d7a">UTC+12 (UTC+13 in DST)</text>
+  <text x="738" y="258" font-size="11" font-weight="600" fill="#e2e2e2" font-family="monospace">10:00:00 PM</text>
+
+  <!-- DST warning -->
+  <rect x="30" y="288" width="840" height="52" rx="10" fill="rgba(251,191,36,0.06)" stroke="rgba(251,191,36,0.2)" stroke-width="1"/>
+  <text x="52" y="308" font-size="11" font-weight="700" fill="#fbbf24">⚠  DST Complexity</text>
+  <text x="52" y="326" font-size="10" fill="#9b8da8">The United States, EU, Australia, and some other regions observe Daylight Saving Time — offsets shift by ±1 hour</text>
+  <text x="52" y="342" font-size="10" fill="#9b8da8">on different dates per hemisphere. Always store timestamps in UTC and convert to local time at display time.</text>
+
+  <!-- Unix is always unambiguous -->
+  <rect x="30" y="352" width="840" height="52" rx="10" fill="rgba(52,211,153,0.06)" stroke="rgba(52,211,153,0.2)" stroke-width="1"/>
+  <text x="52" y="372" font-size="11" font-weight="700" fill="#34d399">✓  Unix timestamps are timezone-agnostic</text>
+  <text x="52" y="390" font-size="10" fill="#9b8da8">A Unix timestamp always refers to a single unambiguous moment in time, regardless of DST or local timezone.</text>
+  <text x="52" y="406" font-size="10" fill="#9b8da8">Human-readable dates (like "2025-03-26 02:30:00") are ambiguous around DST transitions.</text>
+</svg>
