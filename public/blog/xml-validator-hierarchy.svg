@@ -1,0 +1,68 @@
+﻿<svg viewBox="0 0 900 480" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Well-formed vs valid XML diagram">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#0f0825"/>
+      <stop offset="100%" stop-color="#05030d"/>
+    </radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="18" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="900" height="480" fill="url(#bg)"/>
+  <ellipse cx="450" cy="240" rx="300" ry="160" fill="#5b21b6" opacity="0.05" filter="url(#glow)"/>
+
+  <text x="450" y="42" font-family="sans-serif" font-size="16" font-weight="800" fill="#e2e2e2" text-anchor="middle">XML Validity Hierarchy</text>
+  <text x="450" y="60" font-family="sans-serif" font-size="10" fill="#7a6d84" text-anchor="middle">Every valid document is well-formed — but not every well-formed document is valid</text>
+
+  <!-- Outer circle: Well-Formed -->
+  <ellipse cx="450" cy="280" rx="360" ry="170" fill="none" stroke="#a78bfa" stroke-width="1.5" stroke-dasharray="6,4" opacity="0.5"/>
+  <text x="110" y="290" font-family="sans-serif" font-size="10" font-weight="700" fill="#a78bfa" transform="rotate(-15,110,290)">Well-Formed</text>
+
+  <!-- Inner circle: Valid -->
+  <ellipse cx="450" cy="280" rx="210" ry="110" fill="none" stroke="#34d399" stroke-width="1.5" stroke-dasharray="6,4" opacity="0.5"/>
+  <text x="340" y="185" font-family="sans-serif" font-size="10" font-weight="700" fill="#34d399">Valid (DTD / XSD)</text>
+
+  <!-- Innermost: Schema-valid only -->
+  <ellipse cx="450" cy="290" rx="100" ry="55" fill="#34d399" opacity="0.06"/>
+  <text x="450" y="285" font-family="sans-serif" font-size="9" font-weight="700" fill="#34d399" text-anchor="middle">Conformant</text>
+  <text x="450" y="300" font-family="sans-serif" font-size="8" fill="#34d399" text-anchor="middle">business rules</text>
+
+  <!-- Example 1: Well-formed but NOT valid -->
+  <rect x="52" y="330" width="220" height="110" rx="10" fill="#1a1040" stroke="#a78bfa" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="64" y="350" font-family="sans-serif" font-size="8" font-weight="700" fill="#a78bfa">Well-formed, NOT valid</text>
+  <text x="64" y="366" font-family="monospace" font-size="7.5" fill="#7a6d84">&lt;catalog&gt;</text>
+  <text x="64" y="379" font-family="monospace" font-size="7.5" fill="#7a6d84">  &lt;book&gt;Title&lt;/book&gt;</text>
+  <text x="64" y="392" font-family="monospace" font-size="7.5" fill="#7a6d84">&lt;/catalog&gt;</text>
+  <text x="64" y="408" font-family="sans-serif" font-size="7" fill="#5a4d63">Syntax OK, but &lt;book&gt; missing</text>
+  <text x="64" y="420" font-family="sans-serif" font-size="7" fill="#5a4d63">required &lt;id&gt; element per XSD</text>
+  <line x1="272" y1="375" x2="340" y2="300" stroke="#a78bfa" stroke-width="1" stroke-dasharray="4,3" opacity="0.4"/>
+
+  <!-- Example 2: Valid -->
+  <rect x="628" y="330" width="220" height="110" rx="10" fill="#1a1040" stroke="#34d399" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="640" y="350" font-family="sans-serif" font-size="8" font-weight="700" fill="#34d399">Valid XML</text>
+  <text x="640" y="366" font-family="monospace" font-size="7.5" fill="#7a6d84">&lt;catalog&gt;</text>
+  <text x="640" y="379" font-family="monospace" font-size="7.5" fill="#7a6d84">  &lt;book id="b1"&gt;</text>
+  <text x="640" y="392" font-family="monospace" font-size="7.5" fill="#7a6d84">    &lt;title&gt;…&lt;/title&gt;</text>
+  <text x="640" y="405" font-family="monospace" font-size="7.5" fill="#7a6d84">  &lt;/book&gt;</text>
+  <text x="640" y="420" font-family="monospace" font-size="7.5" fill="#7a6d84">&lt;/catalog&gt;</text>
+  <line x1="628" y1="375" x2="560" y2="300" stroke="#34d399" stroke-width="1" stroke-dasharray="4,3" opacity="0.4"/>
+
+  <!-- Rule boxes at top -->
+  <rect x="52" y="88" width="200" height="110" rx="10" fill="#1a1040" stroke="#a78bfa" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="64" y="108" font-family="sans-serif" font-size="9" font-weight="700" fill="#a78bfa">Well-Formedness Rules</text>
+  <text x="64" y="125" font-family="sans-serif" font-size="8" fill="#9b8da8">• Single root element</text>
+  <text x="64" y="140" font-family="sans-serif" font-size="8" fill="#9b8da8">• Properly nested tags</text>
+  <text x="64" y="155" font-family="sans-serif" font-size="8" fill="#9b8da8">• Quoted attribute values</text>
+  <text x="64" y="170" font-family="sans-serif" font-size="8" fill="#9b8da8">• Entities escaped (&amp;amp; etc)</text>
+  <text x="64" y="185" font-family="sans-serif" font-size="8" fill="#9b8da8">• Case-sensitive element names</text>
+
+  <rect x="648" y="88" width="200" height="110" rx="10" fill="#1a1040" stroke="#34d399" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="660" y="108" font-family="sans-serif" font-size="9" font-weight="700" fill="#34d399">Schema Validity Rules</text>
+  <text x="660" y="125" font-family="sans-serif" font-size="8" fill="#9b8da8">• Required elements present</text>
+  <text x="660" y="140" font-family="sans-serif" font-size="8" fill="#9b8da8">• Correct data types</text>
+  <text x="660" y="155" font-family="sans-serif" font-size="8" fill="#9b8da8">• Cardinality (min/maxOccurs)</text>
+  <text x="660" y="170" font-family="sans-serif" font-size="8" fill="#9b8da8">• Allowed attribute values</text>
+  <text x="660" y="185" font-family="sans-serif" font-size="8" fill="#9b8da8">• Element ordering (sequence)</text>
+</svg>

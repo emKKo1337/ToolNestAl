@@ -1,0 +1,65 @@
+﻿<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="XML Validator — validate well-formedness and XSD schema compliance online">
+  <defs>
+    <radialGradient id="bg" cx="30%" cy="50%" r="80%">
+      <stop offset="0%" stop-color="#0f0825"/>
+      <stop offset="100%" stop-color="#05030d"/>
+    </radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="40" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <ellipse cx="300" cy="315" rx="350" ry="250" fill="#5b21b6" opacity="0.12" filter="url(#glow)"/>
+  <ellipse cx="950" cy="200" rx="250" ry="200" fill="#0e7490" opacity="0.1" filter="url(#glow)"/>
+
+  <!-- Site label -->
+  <text x="72" y="72" font-family="sans-serif" font-size="18" font-weight="800" fill="url(#aG)">ToolNest AI</text>
+  <text x="72" y="96" font-family="sans-serif" font-size="13" fill="#4d4354">toolnestai.net/developer-tools/xml-validator</text>
+
+  <!-- Main headline -->
+  <text x="72" y="190" font-family="sans-serif" font-size="52" font-weight="900" fill="#e2e2e2">XML Validator</text>
+  <text x="72" y="248" font-family="sans-serif" font-size="22" fill="#9b8da8">Validate well-formedness and XSD schema compliance</text>
+  <text x="72" y="278" font-family="sans-serif" font-size="18" fill="#7a6d84">Browser-based — no upload, instant results</text>
+
+  <!-- Feature pills -->
+  <rect x="72" y="310" width="140" height="32" rx="16" fill="#5b21b6" opacity="0.3"/>
+  <text x="142" y="331" font-family="sans-serif" font-size="13" font-weight="700" fill="#a78bfa" text-anchor="middle">Well-Formed</text>
+  <rect x="226" y="310" width="120" height="32" rx="16" fill="#0e7490" opacity="0.3"/>
+  <text x="286" y="331" font-family="sans-serif" font-size="13" font-weight="700" fill="#4cd7f6" text-anchor="middle">XSD Schema</text>
+  <rect x="360" y="310" width="80" height="32" rx="16" fill="#374151" opacity="0.6"/>
+  <text x="400" y="331" font-family="sans-serif" font-size="13" font-weight="700" fill="#9ca3af" text-anchor="middle">DTD</text>
+
+  <!-- Right panel: code preview -->
+  <rect x="700" y="80" width="430" height="470" rx="16" fill="#0f0c24" stroke="#2a1f4a" stroke-width="1.5"/>
+  <!-- header bar -->
+  <rect x="700" y="80" width="430" height="36" rx="16" fill="#1a1040"/>
+  <rect x="700" y="100" width="430" height="16" fill="#1a1040"/>
+  <circle cx="724" cy="98" r="7" fill="#ff5f57"/>
+  <circle cx="744" cy="98" r="7" fill="#febc2e"/>
+  <circle cx="764" cy="98" r="7" fill="#28c840"/>
+  <!-- Error result -->
+  <rect x="718" y="132" width="110" height="20" rx="10" fill="#ff453a" opacity="0.2"/>
+  <text x="773" y="146" font-family="sans-serif" font-size="11" font-weight="700" fill="#ff453a" text-anchor="middle">✗  1 ERROR</text>
+  <rect x="718" y="162" width="394" height="62" rx="8" fill="#1a0c0c" stroke="#ff453a" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="730" y="182" font-family="sans-serif" font-size="11" font-weight="700" fill="#ff453a">Mismatched tag: line 6</text>
+  <text x="730" y="198" font-family="monospace" font-size="10" fill="#9b8da8">Expected &lt;/author&gt; found &lt;/yr&gt;</text>
+  <text x="730" y="213" font-family="monospace" font-size="10" fill="#5a4d63">XML_ERR_TAG_NAME_MISMATCH</text>
+  <!-- XML with highlighted error line -->
+  <text x="718" y="246" font-family="monospace" font-size="10" fill="#7a6d84">&lt;?xml version="1.0"?&gt;</text>
+  <text x="718" y="262" font-family="monospace" font-size="10" fill="#a78bfa">&lt;catalog&gt;</text>
+  <text x="718" y="278" font-family="monospace" font-size="10" fill="#60a5fa">  &lt;book id="b1"&gt;</text>
+  <text x="718" y="294" font-family="monospace" font-size="10" fill="#e2e2e2">    &lt;title&gt;Clean Code&lt;/title&gt;</text>
+  <text x="718" y="310" font-family="monospace" font-size="10" fill="#e2e2e2">    &lt;author&gt;Martin</text>
+  <rect x="700" y="312" width="430" height="16" fill="#ff453a" opacity="0.1"/>
+  <text x="718" y="326" font-family="monospace" font-size="10" fill="#ff453a">    &lt;year&gt;2008&lt;/yr&gt;</text>
+  <text x="718" y="342" font-family="monospace" font-size="10" fill="#60a5fa">  &lt;/book&gt;</text>
+  <text x="718" y="358" font-family="monospace" font-size="10" fill="#a78bfa">&lt;/catalog&gt;</text>
+  <!-- Valid badge -->
+  <rect x="718" y="390" width="110" height="20" rx="10" fill="#34d399" opacity="0.2"/>
+  <text x="773" y="404" font-family="sans-serif" font-size="11" font-weight="700" fill="#34d399" text-anchor="middle">✓  After Fix</text>
+  <rect x="718" y="418" width="394" height="44" rx="8" fill="#0c1f18" stroke="#34d399" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="730" y="438" font-family="sans-serif" font-size="11" font-weight="700" fill="#34d399">Document is well-formed</text>
+  <text x="730" y="454" font-family="sans-serif" font-size="10" fill="#5a7d63">All 5 elements validated · 2 attributes checked</text>
+</svg>

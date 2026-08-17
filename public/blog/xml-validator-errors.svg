@@ -1,0 +1,94 @@
+﻿<svg viewBox="0 0 900 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Common XML validation errors">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#0f0825"/>
+      <stop offset="100%" stop-color="#05030d"/>
+    </radialGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="14" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="900" height="500" fill="url(#bg)"/>
+  <ellipse cx="450" cy="250" rx="300" ry="200" fill="#5b21b6" opacity="0.06" filter="url(#glow)"/>
+
+  <text x="450" y="40" font-family="sans-serif" font-size="16" font-weight="800" fill="#e2e2e2" text-anchor="middle">Common XML Errors</text>
+  <text x="450" y="58" font-family="sans-serif" font-size="10" fill="#7a6d84" text-anchor="middle">The mistakes that break XML parsers — and how to fix them</text>
+
+  <!-- 6 error cards in 3×2 grid -->
+  <!-- Row 1 -->
+  <!-- Card 1 -->
+  <rect x="50" y="74" width="250" height="125" rx="10" fill="#1a1040" stroke="#ff453a" stroke-width="1" stroke-opacity="0.35"/>
+  <rect x="50" y="74" width="250" height="28" rx="10" fill="#ff453a" opacity="0.12"/>
+  <rect x="50" y="88" width="250" height="14" fill="#ff453a" opacity="0.12"/>
+  <text x="64" y="93" font-family="sans-serif" font-size="9" font-weight="700" fill="#ff453a">Unclosed Tag</text>
+  <text x="64" y="113" font-family="monospace" font-size="8" fill="#ff453a">&lt;name&gt;Alice</text>
+  <text x="64" y="127" font-family="sans-serif" font-size="7.5" fill="#5a4d63">Missing &lt;/name&gt;</text>
+  <line x1="64" y1="138" x2="286" y2="138" stroke="#2a1f4a" stroke-width="1"/>
+  <text x="64" y="153" font-family="monospace" font-size="8" fill="#34d399">&lt;name&gt;Alice&lt;/name&gt;</text>
+  <text x="64" y="167" font-family="sans-serif" font-size="7" fill="#34d399">Fix: add closing tag</text>
+  <text x="64" y="191" font-family="monospace" font-size="8" fill="#34d399">or &lt;name/&gt; if empty</text>
+
+  <!-- Card 2 -->
+  <rect x="326" y="74" width="248" height="125" rx="10" fill="#1a1040" stroke="#ff453a" stroke-width="1" stroke-opacity="0.35"/>
+  <rect x="326" y="74" width="248" height="28" rx="10" fill="#ff453a" opacity="0.12"/>
+  <rect x="326" y="88" width="248" height="14" fill="#ff453a" opacity="0.12"/>
+  <text x="340" y="93" font-family="sans-serif" font-size="9" font-weight="700" fill="#ff453a">Unescaped Ampersand</text>
+  <text x="340" y="113" font-family="monospace" font-size="8" fill="#ff453a">&lt;co&gt;AT&amp;T&lt;/co&gt;</text>
+  <text x="340" y="127" font-family="sans-serif" font-size="7.5" fill="#5a4d63">Bare &amp; starts an entity ref</text>
+  <line x1="340" y1="138" x2="560" y2="138" stroke="#2a1f4a" stroke-width="1"/>
+  <text x="340" y="153" font-family="monospace" font-size="8" fill="#34d399">&lt;co&gt;AT&amp;amp;T&lt;/co&gt;</text>
+  <text x="340" y="167" font-family="sans-serif" font-size="7" fill="#34d399">Fix: escape &amp; → &amp;amp;</text>
+
+  <!-- Card 3 -->
+  <rect x="600" y="74" width="250" height="125" rx="10" fill="#1a1040" stroke="#ff453a" stroke-width="1" stroke-opacity="0.35"/>
+  <rect x="600" y="74" width="250" height="28" rx="10" fill="#ff453a" opacity="0.12"/>
+  <rect x="600" y="88" width="250" height="14" fill="#ff453a" opacity="0.12"/>
+  <text x="614" y="93" font-family="sans-serif" font-size="9" font-weight="700" fill="#ff453a">Overlapping Tags</text>
+  <text x="614" y="113" font-family="monospace" font-size="8" fill="#ff453a">&lt;b&gt;&lt;i&gt;text&lt;/b&gt;&lt;/i&gt;</text>
+  <text x="614" y="127" font-family="sans-serif" font-size="7.5" fill="#5a4d63">Tags cross nesting boundary</text>
+  <line x1="614" y1="138" x2="836" y2="138" stroke="#2a1f4a" stroke-width="1"/>
+  <text x="614" y="153" font-family="monospace" font-size="8" fill="#34d399">&lt;b&gt;&lt;i&gt;text&lt;/i&gt;&lt;/b&gt;</text>
+  <text x="614" y="167" font-family="sans-serif" font-size="7" fill="#34d399">Fix: proper LIFO nesting</text>
+
+  <!-- Row 2 -->
+  <!-- Card 4 -->
+  <rect x="50" y="220" width="250" height="125" rx="10" fill="#1a1040" stroke="#febc2e" stroke-width="1" stroke-opacity="0.35"/>
+  <rect x="50" y="220" width="250" height="28" rx="10" fill="#febc2e" opacity="0.1"/>
+  <rect x="50" y="234" width="250" height="14" fill="#febc2e" opacity="0.1"/>
+  <text x="64" y="239" font-family="sans-serif" font-size="9" font-weight="700" fill="#febc2e">Unquoted Attribute</text>
+  <text x="64" y="259" font-family="monospace" font-size="8" fill="#febc2e">&lt;book id=b1&gt;</text>
+  <text x="64" y="273" font-family="sans-serif" font-size="7.5" fill="#5a4d63">Attribute value must be quoted</text>
+  <line x1="64" y1="284" x2="286" y2="284" stroke="#2a1f4a" stroke-width="1"/>
+  <text x="64" y="299" font-family="monospace" font-size="8" fill="#34d399">&lt;book id="b1"&gt;</text>
+  <text x="64" y="313" font-family="sans-serif" font-size="7" fill="#34d399">Fix: wrap in double or single quotes</text>
+
+  <!-- Card 5 -->
+  <rect x="326" y="220" width="248" height="125" rx="10" fill="#1a1040" stroke="#febc2e" stroke-width="1" stroke-opacity="0.35"/>
+  <rect x="326" y="220" width="248" height="28" rx="10" fill="#febc2e" opacity="0.1"/>
+  <rect x="326" y="234" width="248" height="14" fill="#febc2e" opacity="0.1"/>
+  <text x="340" y="239" font-family="sans-serif" font-size="9" font-weight="700" fill="#febc2e">Multiple Root Elements</text>
+  <text x="340" y="259" font-family="monospace" font-size="8" fill="#febc2e">&lt;a/&gt;&lt;b/&gt;</text>
+  <text x="340" y="273" font-family="sans-serif" font-size="7.5" fill="#5a4d63">XML allows only one root</text>
+  <line x1="340" y1="284" x2="560" y2="284" stroke="#2a1f4a" stroke-width="1"/>
+  <text x="340" y="299" font-family="monospace" font-size="8" fill="#34d399">&lt;root&gt;&lt;a/&gt;&lt;b/&gt;&lt;/root&gt;</text>
+  <text x="340" y="313" font-family="sans-serif" font-size="7" fill="#34d399">Fix: wrap in a root element</text>
+
+  <!-- Card 6 -->
+  <rect x="600" y="220" width="250" height="125" rx="10" fill="#1a1040" stroke="#febc2e" stroke-width="1" stroke-opacity="0.35"/>
+  <rect x="600" y="220" width="250" height="28" rx="10" fill="#febc2e" opacity="0.1"/>
+  <rect x="600" y="234" width="250" height="14" fill="#febc2e" opacity="0.1"/>
+  <text x="614" y="239" font-family="sans-serif" font-size="9" font-weight="700" fill="#febc2e">Illegal Characters</text>
+  <text x="614" y="259" font-family="monospace" font-size="8" fill="#febc2e">&lt;note&gt;Price: &lt;5€&lt;/note&gt;</text>
+  <text x="614" y="273" font-family="sans-serif" font-size="7.5" fill="#5a4d63">Bare &lt; invalid in content</text>
+  <line x1="614" y1="284" x2="836" y2="284" stroke="#2a1f4a" stroke-width="1"/>
+  <text x="614" y="299" font-family="monospace" font-size="8" fill="#34d399">&lt;note&gt;Price: &amp;lt;5€&lt;/note&gt;</text>
+  <text x="614" y="313" font-family="sans-serif" font-size="7" fill="#34d399">Fix: escape &lt; → &amp;lt;</text>
+
+  <!-- Row 3 legend -->
+  <rect x="50" y="370" width="800" height="90" rx="10" fill="#110c2a" stroke="#2a1f4a" stroke-width="1"/>
+  <text x="68" y="392" font-family="sans-serif" font-size="10" font-weight="700" fill="#e2e2e2">Parser Error vs Schema Error</text>
+  <rect x="68" y="404" width="10" height="10" rx="2" fill="#ff453a"/>
+  <text x="84" y="414" font-family="sans-serif" font-size="8.5" fill="#9b8da8">Parser stops immediately at any well-formedness violation — the rest of the document is not processed</text>
+  <rect x="68" y="424" width="10" height="10" rx="2" fill="#febc2e"/>
+  <text x="84" y="434" font-family="sans-serif" font-size="8.5" fill="#9b8da8">Schema validators report ALL errors in one pass — they don't stop at the first mistake</text>
+  <rect x="68" y="444" width="10" height="10" rx="2" fill="#34d399"/>
+  <text x="84" y="454" font-family="sans-serif" font-size="8.5" fill="#9b8da8">Always fix well-formedness errors first — schema errors can only be checked on a well-formed document</text>
+</svg>
