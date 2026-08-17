@@ -1,0 +1,161 @@
+﻿<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" font-family="system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#0a0118"/>
+      <stop offset="100%" stop-color="#05030d"/>
+    </radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="18" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="600" cy="315" r="260" fill="#5b21b6" opacity="0.07" filter="url(#glow)"/>
+
+  <text x="600" y="46" font-size="20" fill="#e2e2e2" font-weight="800" text-anchor="middle">What EXIF Data Hides in Your Photos</text>
+  <text x="600" y="66" font-size="13" fill="#4d4354" text-anchor="middle">Every JPEG, PNG and TIFF may store dozens of hidden metadata fields · View them free at toolnestai.net</text>
+
+  <!-- 6 category cards in 2 rows of 3 -->
+  <!-- Row 1 -->
+  <!-- Camera Info -->
+  <rect x="40" y="88" width="356" height="235" rx="12" fill="rgba(76,215,246,0.06)" stroke="rgba(76,215,246,0.2)" stroke-width="1"/>
+  <rect x="40" y="88" width="356" height="38" rx="12" fill="rgba(76,215,246,0.12)"/>
+  <rect x="40" y="113" width="356" height="13" fill="rgba(76,215,246,0.12)"/>
+  <text x="75" y="112" font-size="14" fill="#4cd7f6" font-weight="700">📷  Camera &amp; Device</text>
+  <g font-size="12" font-family="ui-monospace,monospace">
+    <text x="60" y="148" fill="#6b5b7a">Make</text>
+    <text x="160" y="148" fill="#e2e2e2">Apple / Canon / Sony</text>
+    <text x="60" y="166" fill="#6b5b7a">Model</text>
+    <text x="160" y="166" fill="#e2e2e2">iPhone 15 Pro / EOS R5</text>
+    <text x="60" y="184" fill="#6b5b7a">Software</text>
+    <text x="160" y="184" fill="#e2e2e2">iOS 16.6 / Lightroom</text>
+    <text x="60" y="202" fill="#6b5b7a">Orientation</text>
+    <text x="160" y="202" fill="#e2e2e2">Normal / Rotated 90°</text>
+    <text x="60" y="220" fill="#6b5b7a">X Resolution</text>
+    <text x="160" y="220" fill="#e2e2e2">72 / 300 DPI</text>
+    <text x="60" y="238" fill="#6b5b7a">Color Space</text>
+    <text x="160" y="238" fill="#e2e2e2">sRGB / AdobeRGB</text>
+    <text x="60" y="256" fill="#6b5b7a">Bits Per Sample</text>
+    <text x="160" y="256" fill="#e2e2e2">8 / 16 bit</text>
+    <text x="60" y="274" fill="#6b5b7a">Compression</text>
+    <text x="160" y="274" fill="#e2e2e2">JPEG / LZW / None</text>
+    <text x="60" y="300" fill="#4cd7f6" font-size="10">★ Always present in JPEG from camera</text>
+  </g>
+
+  <!-- Exposure -->
+  <rect x="424" y="88" width="356" height="235" rx="12" fill="rgba(124,58,237,0.06)" stroke="rgba(124,58,237,0.2)" stroke-width="1"/>
+  <rect x="424" y="88" width="356" height="38" rx="12" fill="rgba(124,58,237,0.12)"/>
+  <rect x="424" y="113" width="356" height="13" fill="rgba(124,58,237,0.12)"/>
+  <text x="459" y="112" font-size="14" fill="#a78bfa" font-weight="700">⚡  Exposure Settings</text>
+  <g font-size="12" font-family="ui-monospace,monospace">
+    <text x="444" y="148" fill="#6b5b7a">Aperture (F-stop)</text>
+    <text x="584" y="148" fill="#e2e2e2">f/1.78 → f/22</text>
+    <text x="444" y="166" fill="#6b5b7a">Shutter Speed</text>
+    <text x="584" y="166" fill="#e2e2e2">1/8000s → 30s</text>
+    <text x="444" y="184" fill="#6b5b7a">ISO Speed</text>
+    <text x="584" y="184" fill="#e2e2e2">25 → 204800</text>
+    <text x="444" y="202" fill="#6b5b7a">Focal Length</text>
+    <text x="584" y="202" fill="#e2e2e2">24mm / 50mm / 200mm</text>
+    <text x="444" y="220" fill="#6b5b7a">35mm Equiv.</text>
+    <text x="584" y="220" fill="#e2e2e2">focal × crop factor</text>
+    <text x="444" y="238" fill="#6b5b7a">Flash</text>
+    <text x="584" y="238" fill="#e2e2e2">No flash / Fired</text>
+    <text x="444" y="256" fill="#6b5b7a">White Balance</text>
+    <text x="584" y="256" fill="#e2e2e2">Auto / Daylight / Shade</text>
+    <text x="444" y="274" fill="#6b5b7a">Metering Mode</text>
+    <text x="584" y="274" fill="#e2e2e2">Matrix / Spot / Center</text>
+    <text x="444" y="300" fill="#a78bfa" font-size="10">★ Stored in EXIF IFD (Image File Directory)</text>
+  </g>
+
+  <!-- GPS -->
+  <rect x="808" y="88" width="352" height="235" rx="12" fill="rgba(6,182,212,0.08)" stroke="rgba(6,182,212,0.3)" stroke-width="1"/>
+  <rect x="808" y="88" width="352" height="38" rx="12" fill="rgba(6,182,212,0.15)"/>
+  <rect x="808" y="113" width="352" height="13" fill="rgba(6,182,212,0.15)"/>
+  <text x="843" y="112" font-size="14" fill="#22d3ee" font-weight="700">📍  GPS Location</text>
+  <g font-size="12" font-family="ui-monospace,monospace">
+    <text x="828" y="148" fill="#6b5b7a">Latitude</text>
+    <text x="928" y="148" fill="#e2e2e2">48.8584° N (decimal)</text>
+    <text x="828" y="166" fill="#6b5b7a">Longitude</text>
+    <text x="928" y="166" fill="#e2e2e2">2.2945° E (decimal)</text>
+    <text x="828" y="184" fill="#6b5b7a">Altitude</text>
+    <text x="928" y="184" fill="#e2e2e2">35.4m above sea level</text>
+    <text x="828" y="202" fill="#6b5b7a">GPS Speed</text>
+    <text x="928" y="202" fill="#e2e2e2">0.0 km/h</text>
+    <text x="828" y="220" fill="#6b5b7a">GPS Timestamp</text>
+    <text x="928" y="220" fill="#e2e2e2">2024-07-14 14:32:09 UTC</text>
+    <text x="828" y="238" fill="#6b5b7a">Raw (DMS)</text>
+    <text x="928" y="238" fill="#e2e2e2">48° 51' 30.24" N</text>
+    <text x="828" y="256" fill="#6b5b7a">Maps Link</text>
+    <text x="928" y="256" fill="#22d3ee" text-decoration="underline">View in Google Maps ↗</text>
+    <text x="828" y="278" fill="#22d3ee" font-size="10">⚠ GPS present in 70%+ of smartphone photos</text>
+    <text x="828" y="296" fill="#4d4354" font-size="10">Shared images may reveal your home, work, school</text>
+  </g>
+
+  <!-- Row 2 -->
+  <!-- Lens info -->
+  <rect x="40" y="342" width="356" height="240" rx="12" fill="rgba(249,115,22,0.06)" stroke="rgba(249,115,22,0.2)" stroke-width="1"/>
+  <rect x="40" y="342" width="356" height="38" rx="12" fill="rgba(249,115,22,0.12)"/>
+  <rect x="40" y="367" width="356" height="13" fill="rgba(249,115,22,0.12)"/>
+  <text x="75" y="366" font-size="14" fill="#fb923c" font-weight="700">🔭  Lens &amp; Optics</text>
+  <g font-size="12" font-family="ui-monospace,monospace">
+    <text x="60" y="402" fill="#6b5b7a">Lens Make</text>
+    <text x="160" y="402" fill="#e2e2e2">Apple / Sigma / Zeiss</text>
+    <text x="60" y="420" fill="#6b5b7a">Lens Model</text>
+    <text x="160" y="420" fill="#e2e2e2">24-105mm f/4L IS II</text>
+    <text x="60" y="438" fill="#6b5b7a">Max Aperture</text>
+    <text x="160" y="438" fill="#e2e2e2">f/1.78 APEX value</text>
+    <text x="60" y="456" fill="#6b5b7a">Focal Length Min</text>
+    <text x="160" y="456" fill="#e2e2e2">24mm</text>
+    <text x="60" y="474" fill="#6b5b7a">Focal Length Max</text>
+    <text x="160" y="474" fill="#e2e2e2">105mm</text>
+    <text x="60" y="492" fill="#6b5b7a">Subject Distance</text>
+    <text x="160" y="492" fill="#e2e2e2">2.4m (range estimate)</text>
+    <text x="60" y="510" fill="#6b5b7a">Scene Type</text>
+    <text x="160" y="510" fill="#e2e2e2">Directly photographed</text>
+    <text x="60" y="556" fill="#fb923c" font-size="10">★ Stored in MakerNote IFD (vendor-specific)</text>
+  </g>
+
+  <!-- Dates -->
+  <rect x="424" y="342" width="356" height="240" rx="12" fill="rgba(16,185,129,0.06)" stroke="rgba(16,185,129,0.2)" stroke-width="1"/>
+  <rect x="424" y="342" width="356" height="38" rx="12" fill="rgba(16,185,129,0.12)"/>
+  <rect x="424" y="367" width="356" height="13" fill="rgba(16,185,129,0.12)"/>
+  <text x="459" y="366" font-size="14" fill="#34d399" font-weight="700">📅  Timestamps</text>
+  <g font-size="12" font-family="ui-monospace,monospace">
+    <text x="444" y="402" fill="#6b5b7a">Date/Time Original</text>
+    <text x="604" y="402" fill="#e2e2e2">2024-07-14 14:32:11</text>
+    <text x="444" y="420" fill="#6b5b7a">Date/Time Digitized</text>
+    <text x="604" y="420" fill="#e2e2e2">2024-07-14 14:32:11</text>
+    <text x="444" y="438" fill="#6b5b7a">File Modified</text>
+    <text x="604" y="438" fill="#e2e2e2">2024-07-14 18:05:44</text>
+    <text x="444" y="456" fill="#6b5b7a">SubSec Time</text>
+    <text x="604" y="456" fill="#e2e2e2">245 (milliseconds)</text>
+    <text x="444" y="474" fill="#6b5b7a">Time Zone</text>
+    <text x="604" y="474" fill="#e2e2e2">+02:00 (CEST)</text>
+    <text x="444" y="556" fill="#34d399" font-size="10">★ Stored independently from filesystem metadata</text>
+  </g>
+
+  <!-- Copyright -->
+  <rect x="808" y="342" width="352" height="240" rx="12" fill="rgba(244,114,182,0.05)" stroke="rgba(244,114,182,0.2)" stroke-width="1"/>
+  <rect x="808" y="342" width="352" height="38" rx="12" fill="rgba(244,114,182,0.12)"/>
+  <rect x="808" y="367" width="352" height="13" fill="rgba(244,114,182,0.12)"/>
+  <text x="843" y="366" font-size="14" fill="#f472b6" font-weight="700">©  Author &amp; Copyright</text>
+  <g font-size="12" font-family="ui-monospace,monospace">
+    <text x="828" y="402" fill="#6b5b7a">Artist / Author</text>
+    <text x="968" y="402" fill="#e2e2e2">Jane Smith</text>
+    <text x="828" y="420" fill="#6b5b7a">Copyright</text>
+    <text x="968" y="420" fill="#e2e2e2">© 2024 Jane Smith</text>
+    <text x="828" y="438" fill="#6b5b7a">Image Description</text>
+    <text x="968" y="438" fill="#e2e2e2">Eiffel Tower at dusk</text>
+    <text x="828" y="456" fill="#6b5b7a">User Comment</text>
+    <text x="968" y="456" fill="#e2e2e2">Edited in Lightroom</text>
+    <text x="828" y="474" fill="#6b5b7a">XMP Rights</text>
+    <text x="968" y="474" fill="#e2e2e2">All rights reserved</text>
+    <text x="828" y="492" fill="#6b5b7a">IPTC Keywords</text>
+    <text x="968" y="492" fill="#e2e2e2">travel, paris, architecture</text>
+    <text x="828" y="556" fill="#f472b6" font-size="10">★ Used by stock agencies and licensing platforms</text>
+  </g>
+
+  <!-- Bottom note -->
+  <text x="600" y="602" font-size="12" fill="#4d4354" text-anchor="middle">EXIF data is stored in the image file itself and travels with it when shared · View any photo's hidden metadata free at toolnestai.net</text>
+</svg>

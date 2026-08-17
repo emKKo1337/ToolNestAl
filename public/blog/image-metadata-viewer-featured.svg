@@ -1,0 +1,135 @@
+﻿<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" font-family="system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#0a0118"/>
+      <stop offset="100%" stop-color="#05030d"/>
+    </radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#4f46e5"/>
+    </linearGradient>
+    <linearGradient id="lapG" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a1040"/>
+      <stop offset="100%" stop-color="#0d0824"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="20" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <clipPath id="sc"><rect x="550" y="52" width="570" height="360" rx="4"/></clipPath>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="220" cy="300" r="200" fill="#5b21b6" opacity="0.12" filter="url(#glow)"/>
+  <circle cx="900" cy="180" r="160" fill="#0e7490" opacity="0.08" filter="url(#glow)"/>
+
+  <!-- Left panel -->
+  <text x="80" y="128" font-size="13" fill="#4cd7f6" font-weight="700" letter-spacing="2">IMAGE METADATA VIEWER</text>
+  <text x="80" y="178" font-size="44" fill="#e2e2e2" font-weight="800">View EXIF</text>
+  <text x="80" y="232" font-size="44" fill="url(#aG)" font-weight="800">Camera &amp; GPS</text>
+  <text x="80" y="286" font-size="44" fill="#e2e2e2" font-weight="800">Data Instantly</text>
+
+  <text x="80" y="338" font-size="16" fill="#7a6d84">Inspect 30+ metadata fields from any photo.</text>
+  <text x="80" y="360" font-size="16" fill="#7a6d84">No upload. 100% browser-side. Free.</text>
+
+  <!-- Feature chips -->
+  <g transform="translate(80,390)">
+    <rect width="110" height="28" rx="14" fill="rgba(76,215,246,0.15)" stroke="#4cd7f6" stroke-width="0.8"/>
+    <text x="55" y="18" font-size="11" fill="#4cd7f6" font-weight="600" text-anchor="middle">Camera Info</text>
+    <rect x="118" width="90" height="28" rx="14" fill="rgba(76,215,246,0.1)" stroke="rgba(76,215,246,0.3)" stroke-width="0.8"/>
+    <text x="163" y="18" font-size="11" fill="#4cd7f6" font-weight="600" text-anchor="middle">GPS Data</text>
+    <rect x="216" width="110" height="28" rx="14" fill="rgba(76,215,246,0.1)" stroke="rgba(76,215,246,0.3)" stroke-width="0.8"/>
+    <text x="271" y="18" font-size="11" fill="#4cd7f6" font-weight="600" text-anchor="middle">JSON Export</text>
+  </g>
+  <g transform="translate(80,428)">
+    <rect width="90" height="28" rx="14" fill="rgba(76,215,246,0.1)" stroke="rgba(76,215,246,0.3)" stroke-width="0.8"/>
+    <text x="45" y="18" font-size="11" fill="#4cd7f6" font-weight="600" text-anchor="middle">Lens &amp; ISO</text>
+    <rect x="98" width="130" height="28" rx="14" fill="rgba(76,215,246,0.1)" stroke="rgba(76,215,246,0.3)" stroke-width="0.8"/>
+    <text x="163" y="18" font-size="11" fill="#4cd7f6" font-weight="600" text-anchor="middle">Color Space</text>
+    <rect x="236" width="90" height="28" rx="14" fill="rgba(76,215,246,0.1)" stroke="rgba(76,215,246,0.3)" stroke-width="0.8"/>
+    <text x="281" y="18" font-size="11" fill="#4cd7f6" font-weight="600" text-anchor="middle">Dates</text>
+  </g>
+
+  <!-- Laptop -->
+  <rect x="538" y="40" width="594" height="412" rx="14" fill="url(#lapG)" stroke="rgba(76,215,246,0.25)" stroke-width="1.5"/>
+  <rect x="538" y="40" width="594" height="36" rx="14" fill="#1a1040"/>
+  <rect x="538" y="58" width="594" height="18" fill="#1a1040"/>
+  <circle cx="655" cy="58" r="6" fill="#ff5f57"/>
+  <circle cx="675" cy="58" r="6" fill="#ffbd2e"/>
+  <circle cx="695" cy="58" r="6" fill="#28ca41"/>
+  <rect x="720" y="48" width="320" height="18" rx="9" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="880" y="60" font-size="10" fill="#4d4354" text-anchor="middle">toolnestai.net/image-tools/image-metadata-viewer</text>
+
+  <g clip-path="url(#sc)">
+    <rect x="550" y="52" width="570" height="360" fill="#0f0b1f"/>
+
+    <!-- Drop zone / image thumbnail left -->
+    <rect x="558" y="62" width="180" height="160" rx="8" fill="#1a1040" stroke="rgba(76,215,246,0.2)" stroke-width="1"/>
+    <!-- Mock photo -->
+    <rect x="558" y="62" width="180" height="160" rx="8" fill="rgba(76,215,246,0.04)"/>
+    <!-- Camera icon -->
+    <text x="648" y="138" font-size="40" text-anchor="middle" fill="rgba(76,215,246,0.3)">📷</text>
+    <text x="648" y="172" font-size="9" fill="#4cd7f6" text-anchor="middle" font-weight="600">photo.jpg · 3.2 MB</text>
+    <text x="648" y="187" font-size="9" fill="#4d4354" text-anchor="middle">4032 × 3024 px</text>
+
+    <!-- Right: metadata grid -->
+    <g font-size="9.5" font-family="ui-monospace,monospace">
+      <!-- Camera section -->
+      <text x="752" y="84" fill="#4cd7f6" font-weight="700" font-size="10">📷 Camera</text>
+      <rect x="752" y="90" width="350" height="58" rx="5" fill="rgba(76,215,246,0.04)" stroke="rgba(76,215,246,0.1)" stroke-width="0.5"/>
+      <text x="762" y="108" fill="#7a6d84">Make</text>
+      <text x="840" y="108" fill="#e2e2e2">Apple</text>
+      <text x="762" y="122" fill="#7a6d84">Model</text>
+      <text x="840" y="122" fill="#e2e2e2">iPhone 15 Pro Max</text>
+      <text x="762" y="136" fill="#7a6d84">Software</text>
+      <text x="840" y="136" fill="#e2e2e2">16.6 iOS</text>
+
+      <!-- Exposure section -->
+      <text x="752" y="162" fill="#a78bfa" font-weight="700" font-size="10">⚡ Exposure</text>
+      <rect x="752" y="168" width="350" height="72" rx="5" fill="rgba(124,58,237,0.04)" stroke="rgba(124,58,237,0.1)" stroke-width="0.5"/>
+      <text x="762" y="186" fill="#7a6d84">Aperture</text>
+      <text x="840" y="186" fill="#e2e2e2">f/1.78</text>
+      <text x="762" y="200" fill="#7a6d84">Shutter</text>
+      <text x="840" y="200" fill="#e2e2e2">1/120 s</text>
+      <text x="762" y="214" fill="#7a6d84">ISO</text>
+      <text x="840" y="214" fill="#e2e2e2">64</text>
+      <text x="762" y="228" fill="#7a6d84">Focal Length</text>
+      <text x="840" y="228" fill="#e2e2e2">24mm (equiv.)</text>
+
+      <!-- GPS section -->
+      <text x="752" y="254" fill="#22d3ee" font-weight="700" font-size="10">📍 GPS Location</text>
+      <rect x="752" y="260" width="350" height="58" rx="5" fill="rgba(6,182,212,0.06)" stroke="rgba(6,182,212,0.2)" stroke-width="0.5"/>
+      <text x="762" y="278" fill="#7a6d84">Latitude</text>
+      <text x="840" y="278" fill="#e2e2e2">48.8584° N</text>
+      <text x="762" y="292" fill="#7a6d84">Longitude</text>
+      <text x="840" y="292" fill="#e2e2e2">2.2945° E</text>
+      <text x="762" y="306" fill="#4cd7f6" font-weight="600" text-decoration="underline">View on Google Maps ↗</text>
+
+      <!-- Date section -->
+      <text x="752" y="334" fill="#fb923c" font-weight="700" font-size="10">📅 Timestamps</text>
+      <rect x="752" y="340" width="350" height="44" rx="5" fill="rgba(251,146,60,0.04)" stroke="rgba(251,146,60,0.12)" stroke-width="0.5"/>
+      <text x="762" y="358" fill="#7a6d84">Date Taken</text>
+      <text x="840" y="358" fill="#e2e2e2">2024-07-14 14:32:11</text>
+      <text x="762" y="372" fill="#7a6d84">Modified</text>
+      <text x="840" y="372" fill="#e2e2e2">2024-07-14 18:05:44</text>
+    </g>
+
+    <!-- Thumbnail small -->
+    <rect x="558" y="234" width="180" height="170" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="648" y="308" font-size="9" fill="#4d4354" text-anchor="middle">Color Space: sRGB</text>
+    <text x="648" y="324" font-size="9" fill="#4d4354" text-anchor="middle">DPI: 72 × 72</text>
+    <text x="648" y="340" font-size="9" fill="#4d4354" text-anchor="middle">Orientation: Normal</text>
+    <text x="648" y="356" font-size="9" fill="#4d4354" text-anchor="middle">White Balance: Auto</text>
+    <!-- Export buttons -->
+    <rect x="562" y="370" width="80" height="24" rx="6" fill="url(#bG)"/>
+    <text x="602" y="386" font-size="9" fill="white" text-anchor="middle" font-weight="700">Export JSON</text>
+    <rect x="652" y="370" width="80" height="24" rx="6" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/>
+    <text x="692" y="386" font-size="9" fill="#9b8da8" text-anchor="middle" font-weight="600">Export TXT</text>
+  </g>
+
+  <!-- Laptop base -->
+  <rect x="538" y="448" width="594" height="14" rx="3" fill="#120d26" stroke="rgba(76,215,246,0.15)" stroke-width="1"/>
+  <rect x="700" y="460" width="270" height="6" rx="3" fill="#0d0820"/>
+
+  <text x="600" y="600" font-size="13" fill="#4d4354" text-anchor="middle">Instantly view all EXIF metadata · GPS to Maps link · JSON export · Free</text>
+</svg>

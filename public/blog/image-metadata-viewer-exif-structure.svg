@@ -1,0 +1,118 @@
+﻿<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" font-family="system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#0a0118"/>
+      <stop offset="100%" stop-color="#05030d"/>
+    </radialGradient>
+    <linearGradient id="aG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="18" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#a78bfa"/></marker>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="600" cy="300" r="260" fill="#5b21b6" opacity="0.07" filter="url(#glow)"/>
+
+  <text x="600" y="46" font-size="20" fill="#e2e2e2" font-weight="800" text-anchor="middle">JPEG EXIF Structure — Where Metadata Lives in the File</text>
+  <text x="600" y="66" font-size="13" fill="#4d4354" text-anchor="middle">EXIF data is embedded in JPEG APP1 markers at the start of the file</text>
+
+  <!-- JPEG file structure visualization -->
+  <rect x="40" y="86" width="540" height="500" rx="12" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <text x="310" y="110" font-size="14" fill="#e2e2e2" font-weight="700" text-anchor="middle">JPEG File Structure (Hex View)</text>
+
+  <!-- SOI marker -->
+  <rect x="58" y="120" width="504" height="36" rx="5" fill="rgba(76,215,246,0.12)" stroke="rgba(76,215,246,0.3)" stroke-width="0.5"/>
+  <text x="78" y="143" font-size="10" fill="#4cd7f6" font-family="ui-monospace,monospace" font-weight="700">FF D8</text>
+  <text x="140" y="143" font-size="10" fill="#7a6d84" font-family="ui-monospace,monospace">SOI — Start of Image marker</text>
+
+  <!-- APP1 marker -->
+  <rect x="58" y="162" width="504" height="36" rx="5" fill="rgba(124,58,237,0.15)" stroke="rgba(124,58,237,0.4)" stroke-width="0.5"/>
+  <text x="78" y="185" font-size="10" fill="#a78bfa" font-family="ui-monospace,monospace" font-weight="700">FF E1 XX XX</text>
+  <text x="180" y="185" font-size="10" fill="#7a6d84" font-family="ui-monospace,monospace">APP1 marker + length (2 bytes)</text>
+
+  <!-- Exif header -->
+  <rect x="68" y="204" width="484" height="30" rx="4" fill="rgba(124,58,237,0.08)"/>
+  <text x="88" y="223" font-size="10" fill="#7c3aed" font-family="ui-monospace,monospace">45 78 69 66 00 00</text>
+  <text x="220" y="223" font-size="10" fill="#4d4354" font-family="ui-monospace,monospace">"Exif\0\0" header string</text>
+
+  <!-- TIFF header -->
+  <rect x="68" y="240" width="484" height="30" rx="4" fill="rgba(124,58,237,0.06)"/>
+  <text x="88" y="259" font-size="10" fill="#7c3aed" font-family="ui-monospace,monospace">49 49 / 4D 4D</text>
+  <text x="220" y="259" font-family="ui-monospace,monospace" font-size="10" fill="#4d4354">TIFF byte order: II=little-endian, MM=big-endian</text>
+
+  <!-- IFD0 -->
+  <rect x="68" y="276" width="484" height="36" rx="4" fill="rgba(76,215,246,0.08)" stroke="rgba(76,215,246,0.15)" stroke-width="0.5"/>
+  <text x="88" y="299" font-size="10" fill="#4cd7f6" font-family="ui-monospace,monospace" font-weight="700">IFD0 (Image File Directory 0)</text>
+  <text x="310" y="299" font-size="10" fill="#4d4354" font-family="ui-monospace,monospace">Make, Model, Orientation, DPI, Software</text>
+
+  <!-- EXIF IFD -->
+  <rect x="78" y="318" width="464" height="36" rx="4" fill="rgba(124,58,237,0.08)" stroke="rgba(124,58,237,0.15)" stroke-width="0.5"/>
+  <text x="98" y="341" font-size="10" fill="#a78bfa" font-family="ui-monospace,monospace" font-weight="700">EXIF IFD (sub-IFD of IFD0)</text>
+  <text x="290" y="341" font-size="10" fill="#4d4354" font-family="ui-monospace,monospace">Aperture, ISO, Shutter, Focal Length</text>
+
+  <!-- GPS IFD -->
+  <rect x="78" y="360" width="464" height="36" rx="4" fill="rgba(6,182,212,0.1)" stroke="rgba(6,182,212,0.2)" stroke-width="0.5"/>
+  <text x="98" y="383" font-size="10" fill="#22d3ee" font-family="ui-monospace,monospace" font-weight="700">GPS IFD (sub-IFD of IFD0)</text>
+  <text x="290" y="383" font-size="10" fill="#4d4354" font-family="ui-monospace,monospace">GPSLatitude, GPSLongitude, GPSAltitude</text>
+
+  <!-- MakerNote IFD -->
+  <rect x="78" y="402" width="464" height="36" rx="4" fill="rgba(249,115,22,0.08)" stroke="rgba(249,115,22,0.15)" stroke-width="0.5"/>
+  <text x="98" y="425" font-size="10" fill="#fb923c" font-family="ui-monospace,monospace" font-weight="700">MakerNote IFD (vendor-specific)</text>
+  <text x="310" y="425" font-size="10" fill="#4d4354" font-family="ui-monospace,monospace">Lens info, Scene mode, HDR flag</text>
+
+  <!-- APP2 ICC Profile -->
+  <rect x="58" y="444" width="504" height="30" rx="5" fill="rgba(255,255,255,0.03)"/>
+  <text x="78" y="463" font-size="10" fill="#6b5b7a" font-family="ui-monospace,monospace" font-weight="700">FF E2</text>
+  <text x="130" y="463" font-size="10" fill="#4d4354" font-family="ui-monospace,monospace">APP2 — ICC Color Profile (color space data)</text>
+
+  <!-- DQT / Image Data -->
+  <rect x="58" y="480" width="504" height="30" rx="5" fill="rgba(255,255,255,0.03)"/>
+  <text x="78" y="499" font-size="10" fill="#6b5b7a" font-family="ui-monospace,monospace" font-weight="700">FF DB / FF C0</text>
+  <text x="180" y="499" font-size="10" fill="#4d4354" font-family="ui-monospace,monospace">DQT (quantization tables) / SOF (frame header)</text>
+
+  <!-- Pixel data -->
+  <rect x="58" y="516" width="504" height="36" rx="5" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.08)" stroke-width="0.5"/>
+  <text x="78" y="539" font-size="10" fill="#e2e2e2" font-family="ui-monospace,monospace" font-weight="700">FF DA ... FF D9</text>
+  <text x="200" y="539" font-size="10" fill="#7a6d84" font-family="ui-monospace,monospace">SOS (compressed pixel data) ... EOI (End of Image)</text>
+
+  <!-- Right: EXIF tag table -->
+  <text x="640" y="110" font-size="14" fill="#e2e2e2" font-weight="700">EXIF Tag Numbers (Selected)</text>
+
+  <rect x="590" y="120" width="570" height="460" rx="10" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <!-- Table header -->
+  <rect x="590" y="120" width="570" height="28" rx="10" fill="rgba(255,255,255,0.06)"/>
+  <rect x="590" y="136" width="570" height="12" fill="rgba(255,255,255,0.06)"/>
+  <text x="620" y="139" font-size="10" fill="#a78bfa" font-weight="700">Tag ID</text>
+  <text x="700" y="139" font-size="10" fill="#a78bfa" font-weight="700">Name</text>
+  <text x="900" y="139" font-size="10" fill="#a78bfa" font-weight="700">Value Example</text>
+
+  <!-- Tag rows -->
+  <g font-size="10" font-family="ui-monospace,monospace">
+    <text x="620" y="168" fill="#4cd7f6">0x010F</text><text x="700" y="168" fill="#e2e2e2">Make</text><text x="900" y="168" fill="#7a6d84">Apple</text>
+    <text x="620" y="186" fill="#4cd7f6">0x0110</text><text x="700" y="186" fill="#e2e2e2">Model</text><text x="900" y="186" fill="#7a6d84">iPhone 15 Pro Max</text>
+    <text x="620" y="204" fill="#4cd7f6">0x0112</text><text x="700" y="204" fill="#e2e2e2">Orientation</text><text x="900" y="204" fill="#7a6d84">1 (Normal)</text>
+    <text x="620" y="222" fill="#4cd7f6">0x011A</text><text x="700" y="222" fill="#e2e2e2">XResolution</text><text x="900" y="222" fill="#7a6d84">72 dpi</text>
+    <text x="620" y="240" fill="#4cd7f6">0x0131</text><text x="700" y="240" fill="#e2e2e2">Software</text><text x="900" y="240" fill="#7a6d84">16.6</text>
+    <text x="620" y="258" fill="#4cd7f6">0x013B</text><text x="700" y="258" fill="#e2e2e2">Artist</text><text x="900" y="258" fill="#7a6d84">Jane Smith</text>
+    <text x="620" y="276" fill="#4cd7f6">0x8769</text><text x="700" y="276" fill="#e2e2e2">ExifIFDPointer</text><text x="900" y="276" fill="#7a6d84">→ EXIF IFD offset</text>
+    <line x1="600" y1="284" x2="1150" y2="284" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    <text x="620" y="302" fill="#a78bfa">0x829A</text><text x="700" y="302" fill="#e2e2e2">ExposureTime</text><text x="900" y="302" fill="#7a6d84">1/120 s</text>
+    <text x="620" y="320" fill="#a78bfa">0x829D</text><text x="700" y="320" fill="#e2e2e2">FNumber</text><text x="900" y="320" fill="#7a6d84">178/100 → f/1.78</text>
+    <text x="620" y="338" fill="#a78bfa">0x8827</text><text x="700" y="338" fill="#e2e2e2">ISOSpeedRatings</text><text x="900" y="338" fill="#7a6d84">64</text>
+    <text x="620" y="356" fill="#a78bfa">0x920A</text><text x="700" y="356" fill="#e2e2e2">FocalLength</text><text x="900" y="356" fill="#7a6d84">6/1 → 6mm (phys.)</text>
+    <text x="620" y="374" fill="#a78bfa">0x9207</text><text x="700" y="374" fill="#e2e2e2">MeteringMode</text><text x="900" y="374" fill="#7a6d84">5 (Pattern)</text>
+    <text x="620" y="392" fill="#a78bfa">0x9209</text><text x="700" y="392" fill="#e2e2e2">Flash</text><text x="900" y="392" fill="#7a6d84">16 (No flash)</text>
+    <line x1="600" y1="400" x2="1150" y2="400" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    <text x="620" y="418" fill="#22d3ee">0x0001</text><text x="700" y="418" fill="#e2e2e2">GPSLatitudeRef</text><text x="900" y="418" fill="#7a6d84">N</text>
+    <text x="620" y="436" fill="#22d3ee">0x0002</text><text x="700" y="436" fill="#e2e2e2">GPSLatitude</text><text x="900" y="436" fill="#7a6d84">[48,51,3024/100]</text>
+    <text x="620" y="454" fill="#22d3ee">0x0003</text><text x="700" y="454" fill="#e2e2e2">GPSLongitudeRef</text><text x="900" y="454" fill="#7a6d84">E</text>
+    <text x="620" y="472" fill="#22d3ee">0x0004</text><text x="700" y="472" fill="#e2e2e2">GPSLongitude</text><text x="900" y="472" fill="#7a6d84">[2,17,4020/100]</text>
+    <text x="620" y="490" fill="#22d3ee">0x0006</text><text x="700" y="490" fill="#e2e2e2">GPSAltitude</text><text x="900" y="490" fill="#7a6d84">354/10 → 35.4m</text>
+    <text x="620" y="508" fill="#22d3ee">0x0007</text><text x="700" y="508" fill="#e2e2e2">GPSTimeStamp</text><text x="900" y="508" fill="#7a6d84">14:32:09 UTC</text>
+    <line x1="600" y1="516" x2="1150" y2="516" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    <text x="620" y="534" fill="#fb923c">0x927C</text><text x="700" y="534" fill="#e2e2e2">MakerNote</text><text x="900" y="534" fill="#7a6d84">Vendor blob (opaque)</text>
+    <text x="620" y="552" fill="#fb923c">0xA432</text><text x="700" y="552" fill="#e2e2e2">LensSpecification</text><text x="900" y="552" fill="#7a6d84">[6,6,178,178]/100</text>
+  </g>
+</svg>
