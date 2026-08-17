@@ -31,8 +31,22 @@ const links = [
 ];
 
 export default function ContactPage() {
+  const breadcrumbData = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+      { "@type": "ListItem", position: 2, name: "Contact", item: `${SITE_URL}/contact` },
+    ],
+  };
+
   return (
-    <div className="pt-32 pb-24 px-4 md:px-[48px] max-w-[1280px] mx-auto w-full">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }}
+      />
+      <div className="pt-32 pb-24 px-4 md:px-[48px] max-w-[1280px] mx-auto w-full">
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Contact" }]} />
 
       {/* Header */}
@@ -126,5 +140,6 @@ export default function ContactPage() {
         </aside>
       </div>
     </div>
+    </>
   );
 }
