@@ -100,7 +100,7 @@ export default async function BlogPostPage({ params }: PageProps) {
       url: SITE_URL,
       logo: { "@type": "ImageObject", url: `${SITE_URL}/og-image.png` },
     },
-    image: post.image ?? `${SITE_URL}/og-image.png`,
+    image: post.image ? `${SITE_URL}${post.image}` : `${SITE_URL}/og-image.png`,
     articleSection: post.category,
     keywords: post.tags.join(", "),
   };
