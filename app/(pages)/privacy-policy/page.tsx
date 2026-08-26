@@ -3,7 +3,7 @@ import Link from "next/link";
 import Breadcrumb from "@/components/ui/Breadcrumb";
 
 const SITE_URL = "https://www.toolnestai.net";
-const LAST_UPDATED = "19 June 2026";
+const LAST_UPDATED = "26 August 2026";
 
 export const metadata: Metadata = {
   title: "Privacy Policy — ToolNest AI",
@@ -16,7 +16,13 @@ export const metadata: Metadata = {
     url: `${SITE_URL}/privacy-policy`,
     title: "Privacy Policy — ToolNest AI",
     description: "ToolNest AI Privacy Policy — how we handle your data and protect your privacy.",
-    images: [{ url: `${SITE_URL}/og-image.png`, width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@toolnestai",
+    creator: "@toolnestai",
+    title: "Privacy Policy — ToolNest AI",
+    description: "How ToolNest AI handles your data, cookies, and third-party advertising — in plain language.",
   },
 };
 
@@ -84,7 +90,7 @@ const sections = [
   },
   {
     id: "third-party",
-    title: "5. Third-Party Services",
+    title: "5. Third-Party Services &amp; Advertising",
     content: (
       <>
         <p>ToolNest AI may use the following third-party services:</p>
@@ -92,7 +98,32 @@ const sections = [
           <li><strong>Hosting &amp; CDN</strong> — our infrastructure provider may process server logs containing anonymized IP addresses for security and performance purposes.</li>
           <li><strong>Fonts</strong> — we load fonts from Google Fonts. Please refer to Google&apos;s privacy policy for details on how they handle font requests.</li>
         </ul>
-        <p>We do not integrate with social media tracking pixels, advertising networks, or data brokers.</p>
+        <p>
+          ToolNest AI does not currently display advertising. We may introduce
+          non-intrusive display advertising in the future, including through
+          Google AdSense, to help cover hosting and development costs.
+        </p>
+        <p>
+          If we do so, Google, as a third-party vendor, will use cookies to
+          serve ads based on your prior visits to this and other websites.
+          Google&apos;s use of advertising cookies enables it and its partners
+          to serve ads based on your visit to this site and/or other sites on
+          the internet. You may opt out of personalised advertising by
+          visiting{" "}
+          <a href="https://adssettings.google.com" target="_blank" rel="noopener noreferrer">
+            Google Ads Settings
+          </a>
+          , and you can learn more about how Google uses data from partner
+          sites at{" "}
+          <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">
+            policies.google.com/technologies/partner-sites
+          </a>
+          . EEA, UK, and Swiss visitors will always be asked for explicit,
+          opt-in consent to advertising cookies before any are set. See our{" "}
+          <Link href="/cookie-policy">Cookie Policy</Link> for full details on
+          which cookies would be involved.
+        </p>
+        <p>We do not integrate with social media tracking pixels or sell data to data brokers.</p>
       </>
     ),
   },

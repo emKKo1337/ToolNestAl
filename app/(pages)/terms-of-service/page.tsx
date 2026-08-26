@@ -15,7 +15,13 @@ export const metadata: Metadata = {
     url: `${SITE_URL}/terms-of-service`,
     title: "Terms of Service — ToolNest AI",
     description: "ToolNest AI Terms of Service — governing website usage and user responsibilities.",
-    images: [{ url: `${SITE_URL}/og-image.png`, width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@toolnestai",
+    creator: "@toolnestai",
+    title: "Terms of Service — ToolNest AI",
+    description: "The rules governing acceptable use, intellectual property, and liability on ToolNest AI.",
   },
 };
 

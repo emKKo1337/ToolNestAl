@@ -14,7 +14,7 @@ const OG_IMAGE = `${SITE_URL}/og-image.png`;
 export const metadata: Metadata = {
   title: { absolute: "ToolNest AI — Free AI, PDF & Online Tools" },
   description:
-    "Discover 80+ free online tools — AI writing assistants, PDF utilities, image editors, developer tools, and more. No sign-up, no limits.",
+    `Discover ${tools.length}+ free online tools — AI writing assistants, PDF utilities, image editors, developer tools, and more. No sign-up, no limits.`,
   alternates: { canonical: SITE_URL },
   openGraph: {
     type: "website",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     title: "ToolNest AI — Free AI, PDF & Online Tools",
     description:
-      "Discover 80+ free online tools — AI writing assistants, PDF utilities, image editors, developer tools, and more. No sign-up, no limits.",
+      `Discover ${tools.length}+ free online tools — AI writing assistants, PDF utilities, image editors, developer tools, and more. No sign-up, no limits.`,
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "ToolNest AI — Free Online Tools" }],
   },
   twitter: {
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     creator: "@toolnestai",
     title: "ToolNest AI — Free AI, PDF & Online Tools",
     description:
-      "Discover 80+ free online tools — AI writing assistants, PDF utilities, image editors, developer tools, and more.",
+      `Discover ${tools.length}+ free online tools — AI writing assistants, PDF utilities, image editors, developer tools, and more.`,
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "ToolNest AI — Free Online Tools" }],
   },
 };

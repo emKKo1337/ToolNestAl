@@ -20,7 +20,13 @@ export const metadata: Metadata = {
     title: "Contact Us — ToolNest AI",
     description:
       "Get in touch with the ToolNest AI team. Report bugs, request features, ask questions, or share feedback.",
-    images: [{ url: `${SITE_URL}/og-image.png`, width: 1200, height: 630, alt: "Contact ToolNest AI" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@toolnestai",
+    creator: "@toolnestai",
+    title: "Contact Us — ToolNest AI",
+    description: "Report bugs, request features, or ask a question — we reply within 1-2 business days.",
   },
 };
 

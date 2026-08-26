@@ -4,8 +4,9 @@ import "./globals.css";
 import { FavoritesProvider } from "@/lib/favorites";
 import { ToastProvider } from "@/components/ui/Toast";
 import { tools } from "@/lib/tools";
-import { GoogleAnalytics } from "@next/third-parties/google";
-import Script from "next/script";
+import ConsentGatedAnalytics from "@/components/layout/ConsentGatedAnalytics";
+import ConsentGatedScripts from "@/components/layout/ConsentGatedScripts";
+import CookieConsentBanner from "@/components/layout/CookieConsentBanner";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -162,28 +163,14 @@ export default function RootLayout({
         <FavoritesProvider>
           <ToastProvider>
             {children}
+            <CookieConsentBanner />
           </ToastProvider>
         </FavoritesProvider>
       </body>
       {process.env.NODE_ENV === "production" && (
-        <GoogleAnalytics gaId="G-Z9FDH9D6Q4" />
+        <ConsentGatedAnalytics gaId="G-Z9FDH9D6Q4" />
       )}
-      <Script
-        id="google-adsense"
-        async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7701645766589173"
-        crossOrigin="anonymous"
-        strategy="afterInteractive"
-      />
-      {process.env.NODE_ENV === "production" && (
-        <Script
-          id="microsoft-clarity"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","x9q0v29sbs");`,
-          }}
-        />
-      )}
+      <ConsentGatedScripts />
     </html>
   );
 }

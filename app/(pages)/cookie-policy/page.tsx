@@ -3,19 +3,25 @@ import Link from "next/link";
 import Breadcrumb from "@/components/ui/Breadcrumb";
 
 const SITE_URL = "https://www.toolnestai.net";
-const LAST_UPDATED = "19 June 2026";
+const LAST_UPDATED = "26 August 2026";
 
 export const metadata: Metadata = {
   title: "Cookie Policy — ToolNest AI",
   description:
-    "Learn how ToolNest AI uses cookies and local storage. We use only essential and minimal analytics cookies — no advertising or tracking.",
+    "Learn how ToolNest AI uses cookies and local storage today, and how third-party advertising cookies (e.g. Google AdSense) would work if introduced.",
   alternates: { canonical: `${SITE_URL}/cookie-policy` },
   openGraph: {
     type: "website",
     url: `${SITE_URL}/cookie-policy`,
     title: "Cookie Policy — ToolNest AI",
-    description: "ToolNest AI Cookie Policy — minimal cookies, no advertising, no cross-site tracking.",
-    images: [{ url: `${SITE_URL}/og-image.png`, width: 1200, height: 630 }],
+    description: "ToolNest AI Cookie Policy — what cookies we use today and how third-party advertising cookies would work if introduced.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@toolnestai",
+    creator: "@toolnestai",
+    title: "Cookie Policy — ToolNest AI",
+    description: "What cookies ToolNest AI uses today, and how to control them.",
   },
 };
 
@@ -101,8 +107,10 @@ export default function CookiePolicyPage() {
           <section id="cookies-we-use" className="scroll-mt-28">
             <h2 className="text-[22px] font-bold text-[#e2e2e2] mb-4">2. Cookies We Use</h2>
             <p className="text-[15px] leading-[28px] text-[#9b8da8] mb-6">
-              ToolNest AI uses a minimal number of cookies. We do not use advertising cookies,
-              social media tracking pixels, or cross-site tracking cookies.
+              ToolNest AI currently uses a minimal number of cookies and does not use
+              advertising cookies, social media tracking pixels, or cross-site tracking
+              cookies. See section 5 below for how this would change if we introduce
+              advertising in the future.
             </p>
             {/* Cookie table */}
             <div className="glass-panel rounded-2xl overflow-hidden">
@@ -169,9 +177,48 @@ export default function CookiePolicyPage() {
             </p>
           </section>
 
+          {/* Advertising & Google AdSense */}
+          <section id="advertising" className="scroll-mt-28">
+            <h2 className="text-[22px] font-bold text-[#e2e2e2] mb-4">5. Advertising &amp; Google AdSense</h2>
+            <p className="text-[15px] leading-[28px] text-[#9b8da8] mb-4">
+              ToolNest AI does not currently display advertising. We may introduce
+              non-intrusive display advertising in the future, including through
+              Google AdSense, to help cover hosting and development costs while
+              keeping every tool free to use.
+            </p>
+            <p className="text-[15px] leading-[28px] text-[#9b8da8] mb-4">
+              If we do so, Google and its advertising partners may set cookies
+              (such as the <code className="text-[13px] px-1.5 py-0.5 rounded bg-white/5">__gads</code> or{" "}
+              <code className="text-[13px] px-1.5 py-0.5 rounded bg-white/5">IDE</code> cookie) on your device to serve
+              and measure ads, and may use data about your visits to this and
+              other websites to provide personalised advertising, subject to
+              your consent choices. You can learn how Google uses this data at{" "}
+              <a
+                href="https://policies.google.com/technologies/partner-sites"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#ddb7ff] hover:opacity-75 transition-opacity"
+              >
+                policies.google.com/technologies/partner-sites
+              </a>
+              , and manage personalised ads across Google services at{" "}
+              <a
+                href="https://adssettings.google.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#ddb7ff] hover:opacity-75 transition-opacity"
+              >
+                adssettings.google.com
+              </a>
+              . EEA, UK, and Swiss visitors will always be asked for explicit
+              consent to advertising cookies before any are set, in line with
+              our cookie consent banner.
+            </p>
+          </section>
+
           {/* Local storage */}
           <section id="local-storage" className="scroll-mt-28">
-            <h2 className="text-[22px] font-bold text-[#e2e2e2] mb-4">5. Local Storage</h2>
+            <h2 className="text-[22px] font-bold text-[#e2e2e2] mb-4">6. Local Storage</h2>
             <p className="text-[15px] leading-[28px] text-[#9b8da8] mb-6">
               In addition to cookies, we use your browser&apos;s local storage for certain features.
               Unlike cookies, local storage data is never transmitted to our servers — it exists
@@ -208,7 +255,7 @@ export default function CookiePolicyPage() {
 
           {/* Managing cookies */}
           <section id="managing-cookies" className="scroll-mt-28">
-            <h2 className="text-[22px] font-bold text-[#e2e2e2] mb-4">6. Managing Cookies &amp; Local Storage</h2>
+            <h2 className="text-[22px] font-bold text-[#e2e2e2] mb-4">7. Managing Cookies &amp; Local Storage</h2>
             <p className="text-[15px] leading-[28px] text-[#9b8da8] mb-4">
               You can control and manage cookies through your browser settings. Most browsers allow
               you to:
@@ -232,7 +279,7 @@ export default function CookiePolicyPage() {
 
           {/* Changes */}
           <section id="changes" className="scroll-mt-28">
-            <h2 className="text-[22px] font-bold text-[#e2e2e2] mb-4">7. Changes to This Policy</h2>
+            <h2 className="text-[22px] font-bold text-[#e2e2e2] mb-4">8. Changes to This Policy</h2>
             <p className="text-[15px] leading-[28px] text-[#9b8da8]">
               We may update this Cookie Policy from time to time. We will notify you of changes
               by updating the &quot;Last updated&quot; date at the top of this page. Continued use
@@ -242,7 +289,7 @@ export default function CookiePolicyPage() {
 
           {/* Contact */}
           <section id="contact" className="scroll-mt-28">
-            <h2 className="text-[22px] font-bold text-[#e2e2e2] mb-4">8. Contact</h2>
+            <h2 className="text-[22px] font-bold text-[#e2e2e2] mb-4">9. Contact</h2>
             <p className="text-[15px] leading-[28px] text-[#9b8da8]">
               If you have questions about our use of cookies or local storage, please contact us at{" "}
               <a

@@ -17,7 +17,13 @@ export const metadata: Metadata = {
     title: "About ToolNest AI — Our Mission, Vision & Story",
     description:
       `Learn about ToolNest AI — why we built a suite of ${tools.length}+ free online tools, what makes us different, and our commitment to privacy and performance.`,
-    images: [{ url: `${SITE_URL}/og-image.png`, width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@toolnestai",
+    creator: "@toolnestai",
+    title: "About ToolNest AI — Our Mission, Vision & Story",
+    description: `Why we built ${tools.length}+ free online tools, what makes us different, and our editorial policy.`,
   },
 };
 

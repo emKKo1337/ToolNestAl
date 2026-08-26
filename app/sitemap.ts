@@ -4,7 +4,7 @@ import { getAllPosts } from "@/lib/blog";
 import { AUTHOR } from "@/lib/author";
 
 const BASE = "https://www.toolnestai.net";
-const DEPLOY_DATE = new Date("2026-06-25");
+const DEPLOY_DATE = new Date("2026-08-26");
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = [
