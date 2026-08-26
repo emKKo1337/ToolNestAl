@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     "Rotate PDF pages online for free. Rotate one page or an entire PDF in seconds.",
   keywords: tool.keywords,
   alternates: { canonical: `${SITE_URL}/pdf-tools/rotate-pdf` },
+  robots: { index: false, follow: true },
   openGraph: {
     type: "website",
     url: `${SITE_URL}/pdf-tools/rotate-pdf`,

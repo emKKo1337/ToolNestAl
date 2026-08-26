@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     "Create high-quality prompts for ChatGPT, Claude, Gemini and other AI models instantly with our free AI Prompt Generator.",
   keywords: tool.keywords,
   alternates: { canonical: url },
+  robots: { index: false, follow: true },
   openGraph: {
     type: "website",
     url,

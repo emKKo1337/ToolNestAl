@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     "Fix grammar, spelling and punctuation mistakes instantly with our free AI Grammar Checker. Improve your writing in seconds.",
   keywords: tool.keywords,
   alternates: { canonical: url },
+  robots: { index: false, follow: true },
   openGraph: {
     type: "website",
     url,

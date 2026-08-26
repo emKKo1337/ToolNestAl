@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     "Edit, remove and update PDF metadata including title, author, keywords and subject online for free.",
   keywords: tool.keywords,
   alternates: { canonical: `${SITE_URL}/pdf-tools/pdf-metadata-editor` },
+  robots: { index: false, follow: true },
   openGraph: {
     type: "website",
     url: `${SITE_URL}/pdf-tools/pdf-metadata-editor`,

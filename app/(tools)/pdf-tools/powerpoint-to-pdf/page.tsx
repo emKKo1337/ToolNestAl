@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     "Convert PowerPoint presentations (PPT and PPTX) into PDF documents online for free.",
   keywords: tool.keywords,
   alternates: { canonical: `${SITE_URL}/pdf-tools/powerpoint-to-pdf` },
+  robots: { index: false, follow: true },
   openGraph: {
     type: "website",
     url: `${SITE_URL}/pdf-tools/powerpoint-to-pdf`,

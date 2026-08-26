@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     "Unlock password-protected PDF files online for free. Remove PDF security using the correct password.",
   keywords: tool.keywords,
   alternates: { canonical: `${SITE_URL}/pdf-tools/unlock-pdf` },
+  robots: { index: false, follow: true },
   openGraph: {
     type: "website",
     url: `${SITE_URL}/pdf-tools/unlock-pdf`,

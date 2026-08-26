@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     "Sign PDF files online for free using a typed, drawn or uploaded signature.",
   keywords: tool.keywords,
   alternates: { canonical: `${SITE_URL}/pdf-tools/sign-pdf` },
+  robots: { index: false, follow: true },
   openGraph: {
     type: "website",
     url: `${SITE_URL}/pdf-tools/sign-pdf`,

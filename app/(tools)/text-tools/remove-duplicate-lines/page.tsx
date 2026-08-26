@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     "Remove duplicate lines from text instantly. Clean text while preserving order with this free online tool.",
   keywords: tool.keywords,
   alternates: { canonical: `${SITE_URL}/text-tools/remove-duplicate-lines` },
+  robots: { index: false, follow: true },
   openGraph: {
     type: "website",
     url: `${SITE_URL}/text-tools/remove-duplicate-lines`,

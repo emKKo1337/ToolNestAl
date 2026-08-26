@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     "Create professional cover letters tailored to any job application using AI. Free, fast and ATS-friendly.",
   keywords: tool.keywords,
   alternates: { canonical: url },
+  robots: { index: false, follow: true },
   openGraph: {
     type: "website",
     url,

@@ -20,11 +20,17 @@ export function generateToolMetadata(tool: Tool): Metadata {
       ? tool.description.slice(0, 297) + "…"
       : tool.description;
 
+  // Pages without expanded longform content are thin — keep them live and
+  // linked for users, but ask search engines not to index them yet.
+  // See docs/content-backlog.md for the tracked list awaiting expansion.
+  const hasExpandedContent = Boolean(tool.longContent && tool.longContent.length > 0);
+
   return {
     title,
     description,
     keywords: tool.keywords,
     alternates: { canonical: url },
+    ...(hasExpandedContent ? {} : { robots: { index: false, follow: true } }),
     openGraph: {
       type: "website",
       url,

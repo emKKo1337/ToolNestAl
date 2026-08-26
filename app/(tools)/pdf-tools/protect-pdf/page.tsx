@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     "Protect PDF files with a password online for free. Secure your PDF documents using strong encryption.",
   keywords: tool.keywords,
   alternates: { canonical: `${SITE_URL}/pdf-tools/protect-pdf` },
+  robots: { index: false, follow: true },
   openGraph: {
     type: "website",
     url: `${SITE_URL}/pdf-tools/protect-pdf`,

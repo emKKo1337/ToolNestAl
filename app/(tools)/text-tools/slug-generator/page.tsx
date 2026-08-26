@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     "Generate clean, SEO-friendly URL slugs from any text instantly with this free online Slug Generator.",
   keywords: tool.keywords,
   alternates: { canonical: `${SITE_URL}/text-tools/slug-generator` },
+  robots: { index: false, follow: true },
   openGraph: {
     type: "website",
     url: `${SITE_URL}/text-tools/slug-generator`,

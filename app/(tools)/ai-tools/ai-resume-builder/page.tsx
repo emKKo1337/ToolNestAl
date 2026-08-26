@@ -39,6 +39,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.toolnestai.net/ai-tools/ai-resume-builder",
   },
+  robots: { index: false, follow: true },
 };
 
 export default function AiResumeBuilderPage() {

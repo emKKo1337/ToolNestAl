@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     "Generate professional emails using AI in seconds. Choose a template, set the tone and length, and get a polished email — subject, body, and closing included.",
   keywords: tool.keywords,
   alternates: { canonical: url },
+  robots: { index: false, follow: true },
   openGraph: {
     type: "website",
     url,

@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     "Extract editable text from scanned PDF documents online using OCR technology. Fast, secure and free.",
   keywords: tool.keywords,
   alternates: { canonical: `${SITE_URL}/pdf-tools/ocr-pdf` },
+  robots: { index: false, follow: true },
   openGraph: {
     type: "website",
     url: `${SITE_URL}/pdf-tools/ocr-pdf`,

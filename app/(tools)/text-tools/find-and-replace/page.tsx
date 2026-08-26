@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     "Find and replace words, phrases or characters instantly using this free online Find & Replace tool.",
   keywords: tool.keywords,
   alternates: { canonical: `${SITE_URL}/text-tools/find-and-replace` },
+  robots: { index: false, follow: true },
   openGraph: {
     type: "website",
     url: `${SITE_URL}/text-tools/find-and-replace`,

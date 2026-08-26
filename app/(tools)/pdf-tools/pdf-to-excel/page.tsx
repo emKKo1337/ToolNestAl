@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     "Convert PDF files into editable Excel spreadsheets online for free while preserving tables whenever possible.",
   keywords: tool.keywords,
   alternates: { canonical: `${SITE_URL}/pdf-tools/pdf-to-excel` },
+  robots: { index: false, follow: true },
   openGraph: {
     type: "website",
     url: `${SITE_URL}/pdf-tools/pdf-to-excel`,

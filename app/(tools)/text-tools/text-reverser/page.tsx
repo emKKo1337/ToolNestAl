@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     "Reverse text instantly by characters, words or lines using this free online Text Reverser.",
   keywords: tool.keywords,
   alternates: { canonical: `${SITE_URL}/text-tools/text-reverser` },
+  robots: { index: false, follow: true },
   openGraph: {
     type: "website",
     url: `${SITE_URL}/text-tools/text-reverser`,

@@ -23,12 +23,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,
   }));
 
-  const toolRoutes: MetadataRoute.Sitemap = tools.map((t) => ({
-    url: `${BASE}/${t.categorySlug}/${t.slug}`,
-    lastModified: DEPLOY_DATE,
-    changeFrequency: "monthly",
-    priority: 0.8,
-  }));
+  // Only tools with expanded, unique longform content are indexable —
+  // thin tool pages are marked noindex (see lib/metadata.ts) and excluded here.
+  const toolRoutes: MetadataRoute.Sitemap = tools
+    .filter((t) => t.longContent && t.longContent.length > 0)
+    .map((t) => ({
+      url: `${BASE}/${t.categorySlug}/${t.slug}`,
+      lastModified: DEPLOY_DATE,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    }));
 
   const blogPosts = getAllPosts();
   const blogRoutes: MetadataRoute.Sitemap = blogPosts.map((p) => ({

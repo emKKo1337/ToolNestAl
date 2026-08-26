@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     "Remove extra spaces, tabs and unnecessary whitespace from text instantly using this free online tool.",
   keywords: tool.keywords,
   alternates: { canonical: `${SITE_URL}/text-tools/remove-extra-spaces` },
+  robots: { index: false, follow: true },
   openGraph: {
     type: "website",
     url: `${SITE_URL}/text-tools/remove-extra-spaces`,

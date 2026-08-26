@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     "Convert Excel spreadsheets (XLSX and XLS) to PDF online for free while preserving formatting.",
   keywords: tool.keywords,
   alternates: { canonical: `${SITE_URL}/pdf-tools/excel-to-pdf` },
+  robots: { index: false, follow: true },
   openGraph: {
     type: "website",
     url: `${SITE_URL}/pdf-tools/excel-to-pdf`,

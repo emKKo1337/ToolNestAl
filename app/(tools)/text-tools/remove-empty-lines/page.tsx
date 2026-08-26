@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     "Remove empty and blank lines from text instantly using this free online tool. Fast, private and processed entirely in your browser.",
   keywords: tool.keywords,
   alternates: { canonical: `${SITE_URL}/text-tools/remove-empty-lines` },
+  robots: { index: false, follow: true },
   openGraph: {
     type: "website",
     url: `${SITE_URL}/text-tools/remove-empty-lines`,

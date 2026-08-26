@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     "Rewrite sentences and paragraphs while preserving their original meaning. Choose from Standard, Fluent, Creative, Academic, Shorten, or Expand modes.",
   keywords: tool.keywords,
   alternates: { canonical: url },
+  robots: { index: false, follow: true },
   openGraph: {
     type: "website",
     url,

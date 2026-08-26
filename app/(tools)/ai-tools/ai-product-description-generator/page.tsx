@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     "Create high-converting, SEO-friendly product descriptions for Shopify, Amazon, Etsy and WooCommerce using AI.",
   keywords: tool.keywords,
   alternates: { canonical: url },
+  robots: { index: false, follow: true },
   openGraph: {
     type: "website",
     url,

@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     "Reorder PDF pages online by dragging and dropping pages into any order. Free, secure and easy to use.",
   keywords: tool.keywords,
   alternates: { canonical: `${SITE_URL}/pdf-tools/reorder-pdf-pages` },
+  robots: { index: false, follow: true },
   openGraph: {
     type: "website",
     url: `${SITE_URL}/pdf-tools/reorder-pdf-pages`,

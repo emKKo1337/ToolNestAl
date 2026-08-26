@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     "Generate unique business names with AI. Find creative, memorable and brandable company names in seconds.",
   keywords: tool.keywords,
   alternates: { canonical: url },
+  robots: { index: false, follow: true },
   openGraph: {
     type: "website",
     url,

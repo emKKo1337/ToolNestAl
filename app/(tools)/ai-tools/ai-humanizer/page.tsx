@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     "Convert AI-generated text into natural, human-like writing for free. Improve readability and create authentic content instantly.",
   keywords: tool.keywords,
   alternates: { canonical: url },
+  robots: { index: false, follow: true },
   openGraph: {
     type: "website",
     url,

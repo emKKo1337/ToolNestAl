@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     "Organize PDF pages online. Reorder, rotate, duplicate and delete pages in one free PDF editor.",
   keywords: tool.keywords,
   alternates: { canonical: `${SITE_URL}/pdf-tools/organize-pdf` },
+  robots: { index: false, follow: true },
   openGraph: {
     type: "website",
     url: `${SITE_URL}/pdf-tools/organize-pdf`,

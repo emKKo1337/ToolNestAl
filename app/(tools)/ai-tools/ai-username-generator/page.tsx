@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     "Generate unique usernames for Instagram, TikTok, YouTube, Steam, Discord and more using AI. Free and instant.",
   keywords: tool.keywords,
   alternates: { canonical: url },
+  robots: { index: false, follow: true },
   openGraph: {
     type: "website",
     url,

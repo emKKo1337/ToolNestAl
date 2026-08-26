@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     "Delete one or multiple pages from your PDF online for free while keeping the remaining pages intact.",
   keywords: tool.keywords,
   alternates: { canonical: `${SITE_URL}/pdf-tools/delete-pdf-pages` },
+  robots: { index: false, follow: true },
   openGraph: {
     type: "website",
     url: `${SITE_URL}/pdf-tools/delete-pdf-pages`,

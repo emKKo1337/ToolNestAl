@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     "Summarize long articles, documents and text into concise summaries using AI in seconds. Choose paragraph, bullet points, executive summary, or key takeaways.",
   keywords: tool.keywords,
   alternates: { canonical: url },
+  robots: { index: false, follow: true },
   openGraph: {
     type: "website",
     url,

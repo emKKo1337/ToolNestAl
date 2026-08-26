@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     "Sort text alphabetically, reverse, randomly or by line length using this free online Text Sorter.",
   keywords: tool.keywords,
   alternates: { canonical: `${SITE_URL}/text-tools/text-sorter` },
+  robots: { index: false, follow: true },
   openGraph: {
     type: "website",
     url: `${SITE_URL}/text-tools/text-sorter`,

@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     "Add page numbers to PDF documents online for free. Customize numbering style, position and appearance.",
   keywords: tool.keywords,
   alternates: { canonical: `${SITE_URL}/pdf-tools/add-page-numbers` },
+  robots: { index: false, follow: true },
   openGraph: {
     type: "website",
     url: `${SITE_URL}/pdf-tools/add-page-numbers`,

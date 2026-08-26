@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     "Add text or image watermarks to PDF files online for free with customizable position, opacity and style.",
   keywords: tool.keywords,
   alternates: { canonical: `${SITE_URL}/pdf-tools/watermark-pdf` },
+  robots: { index: false, follow: true },
   openGraph: {
     type: "website",
     url: `${SITE_URL}/pdf-tools/watermark-pdf`,

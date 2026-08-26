@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     "Analyze text with detailed statistics including readability, keyword density, reading time and writing metrics.",
   keywords: tool.keywords,
   alternates: { canonical: `${SITE_URL}/text-tools/text-statistics` },
+  robots: { index: false, follow: true },
   openGraph: {
     type: "website",
     url: `${SITE_URL}/text-tools/text-statistics`,

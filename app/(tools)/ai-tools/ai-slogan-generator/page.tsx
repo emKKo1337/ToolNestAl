@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     "Generate memorable slogans and taglines for your business, startup or brand using AI. Free, fast and creative.",
   keywords: tool.keywords,
   alternates: { canonical: url },
+  robots: { index: false, follow: true },
   openGraph: {
     type: "website",
     url,

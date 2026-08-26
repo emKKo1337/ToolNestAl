@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     "Convert PDF documents into editable PowerPoint presentations online for free.",
   keywords: tool.keywords,
   alternates: { canonical: `${SITE_URL}/pdf-tools/pdf-to-powerpoint` },
+  robots: { index: false, follow: true },
   openGraph: {
     type: "website",
     url: `${SITE_URL}/pdf-tools/pdf-to-powerpoint`,

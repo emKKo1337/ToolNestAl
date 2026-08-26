@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     "Generate Lorem Ipsum placeholder text instantly. Create words, sentences or paragraphs for web design, UI mockups and documents.",
   keywords: tool.keywords,
   alternates: { canonical: `${SITE_URL}/text-tools/lorem-ipsum-generator` },
+  robots: { index: false, follow: true },
   openGraph: {
     type: "website",
     url: `${SITE_URL}/text-tools/lorem-ipsum-generator`,

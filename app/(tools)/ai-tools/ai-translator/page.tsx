@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     "Translate text accurately between multiple languages using AI. Fast, natural and professional translations with six style options including formal, casual, and academic.",
   keywords: tool.keywords,
   alternates: { canonical: url },
+  robots: { index: false, follow: true },
   openGraph: {
     type: "website",
     url,
