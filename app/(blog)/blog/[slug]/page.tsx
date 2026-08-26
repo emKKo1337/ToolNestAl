@@ -46,6 +46,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title,
     description: post.description,
     keywords: [post.category, ...post.tags],
+    authors: [{ name: post.author.name, url: `${SITE_URL}/author/${AUTHOR.slug}` }],
     alternates: { canonical: url },
     openGraph: {
       type: "article",
