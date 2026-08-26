@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { tools } from "@/lib/tools";
+import { AUTHOR } from "@/lib/author";
 
 const columns = [
   {
@@ -65,6 +66,14 @@ export default function Footer() {
 
             <p className="text-[13px] leading-[22px] text-[#5a4d63] max-w-[200px]">
               Free AI &amp; Online Tools designed to help you work faster, smarter and more efficiently.
+            </p>
+
+            <p className="text-[12px] text-[#3d3347]">
+              Built by{" "}
+              <Link href={`/author/${AUTHOR.slug}`} className="text-[#5a4d63] hover:text-[#ddb7ff] transition-colors">
+                {AUTHOR.name}
+              </Link>{" "}
+              in {AUTHOR.location}
             </p>
 
             <p className="text-[12px] text-[#3d3347] mt-auto">

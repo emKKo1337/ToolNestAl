@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumb from "@/components/ui/Breadcrumb";
 import ContactForm from "@/components/pages/ContactForm";
+import { AUTHOR } from "@/lib/author";
 
 const SITE_URL = "https://www.toolnestai.net";
 const SUPPORT_EMAIL = "contact@toolnestai.net";
@@ -100,6 +101,20 @@ export default function ContactPage() {
                 </p>
               </div>
             </a>
+          </div>
+
+          {/* Who's behind ToolNest AI */}
+          <div className="glass-panel rounded-3xl p-6 flex flex-col gap-3">
+            <h2 className="text-[13px] font-bold uppercase tracking-[0.1em] text-[#4d4354] mb-1">
+              Who's behind this
+            </h2>
+            <p className="text-[13px] leading-[22px] text-[#7a6d84]">
+              ToolNest AI is built and maintained by{" "}
+              <Link href={`/author/${AUTHOR.slug}`} className="text-[#ddb7ff] hover:opacity-75 transition-opacity">
+                {AUTHOR.name}
+              </Link>
+              , based in {AUTHOR.location}.
+            </p>
           </div>
 
           {/* Helpful links */}

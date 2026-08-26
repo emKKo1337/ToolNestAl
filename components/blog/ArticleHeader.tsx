@@ -1,5 +1,7 @@
 import Image from "next/image";
+import Link from "next/link";
 import type { BlogPost } from "@/lib/blog";
+import { AUTHOR } from "@/lib/author";
 
 export function ArticleHeader({ post }: { post: BlogPost }) {
   const pubDate = new Date(post.publishedAt).toLocaleDateString("en-US", {
@@ -90,10 +92,13 @@ export function ArticleHeader({ post }: { post: BlogPost }) {
             )}
           </div>
           <div>
-            <p className="text-[13px] font-semibold text-[#e2e2e2] leading-none mb-0.5">
+            <Link
+              href={`/author/${AUTHOR.slug}`}
+              className="text-[13px] font-semibold text-[#e2e2e2] leading-none mb-0.5 block hover:text-[#ddb7ff] transition-colors w-fit"
+            >
               {post.author.name}
-            </p>
-            <p className="text-[11px] text-[#4d4354] leading-none">Author</p>
+            </Link>
+            <p className="text-[11px] text-[#4d4354] leading-none">{AUTHOR.role}</p>
           </div>
         </div>
 

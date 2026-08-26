@@ -20,6 +20,7 @@ import { ShareButtons } from "@/components/blog/ShareButtons";
 import { AuthorCard } from "@/components/blog/AuthorCard";
 import { PrevNextNav } from "@/components/blog/PrevNextNav";
 import { RelatedPosts } from "@/components/blog/RelatedPosts";
+import { AUTHOR } from "@/lib/author";
 
 const SITE_URL = "https://www.toolnestai.net";
 const SITE_NAME = "ToolNest AI";
@@ -90,11 +91,14 @@ export default async function BlogPostPage({ params }: PageProps) {
     author: {
       "@type": "Person",
       name: post.author.name,
+      url: `${SITE_URL}/author/${AUTHOR.slug}`,
+      sameAs: [AUTHOR.github, `https://x.com/${AUTHOR.twitter}`],
     },
     publisher: {
       "@type": "Organization",
       name: SITE_NAME,
       url: SITE_URL,
+      logo: { "@type": "ImageObject", url: `${SITE_URL}/og-image.png` },
     },
     image: post.image ?? `${SITE_URL}/og-image.png`,
     articleSection: post.category,

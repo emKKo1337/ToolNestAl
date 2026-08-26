@@ -1,20 +1,22 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumb from "@/components/ui/Breadcrumb";
+import { AUTHOR } from "@/lib/author";
+import { tools } from "@/lib/tools";
 
 const SITE_URL = "https://www.toolnestai.net";
 
 export const metadata: Metadata = {
   title: "About ToolNest AI — Our Mission, Vision & Story",
   description:
-    "Learn about ToolNest AI — why we built a suite of 32+ free online tools, what makes us different, and our commitment to privacy and performance.",
+    `Learn about ToolNest AI — why we built a suite of ${tools.length}+ free online tools, what makes us different, and our commitment to privacy and performance.`,
   alternates: { canonical: `${SITE_URL}/about` },
   openGraph: {
     type: "website",
     url: `${SITE_URL}/about`,
     title: "About ToolNest AI — Our Mission, Vision & Story",
     description:
-      "Learn about ToolNest AI — why we built a suite of 32+ free online tools, what makes us different, and our commitment to privacy and performance.",
+      `Learn about ToolNest AI — why we built a suite of ${tools.length}+ free online tools, what makes us different, and our commitment to privacy and performance.`,
     images: [{ url: `${SITE_URL}/og-image.png`, width: 1200, height: 630 }],
   },
 };
@@ -143,6 +145,76 @@ export default function AboutPage() {
             everyday digital task — a place that respects your time and your
             privacy.
           </p>
+          <p>
+            ToolNest AI is built and maintained by{" "}
+            <Link href={`/author/${AUTHOR.slug}`} className="text-[#ddb7ff] hover:opacity-75 transition-opacity">
+              {AUTHOR.name}
+            </Link>
+            , a developer based in {AUTHOR.location}. Read more on the{" "}
+            <Link href={`/author/${AUTHOR.slug}`} className="text-[#ddb7ff] hover:opacity-75 transition-opacity">
+              author page
+            </Link>
+            .
+          </p>
+        </div>
+      </section>
+
+      {/* Editorial policy */}
+      <section className="mb-16">
+        <h2 className="text-[28px] md:text-[36px] font-extrabold tracking-[-0.02em] text-[#e2e2e2] mb-8">
+          Editorial policy
+        </h2>
+        <div className="max-w-3xl space-y-5 text-[16px] leading-[28px] text-[#9b8da8]">
+          <div>
+            <p className="text-[15px] font-bold text-[#e2e2e2] mb-1.5">How tools are built and tested</p>
+            <p>
+              Every tool on ToolNest AI is built and tested manually before publishing —
+              running real files and real inputs through it, checking edge cases (empty
+              input, oversized files, malformed data), and verifying the output against
+              the underlying spec or library documentation it relies on. Tools that
+              process files client-side (PDF, image, text tools) are built on established
+              open-source libraries — pdf-lib, pdfjs-dist, browser-image-compression,
+              and others named directly in each tool's guide — rather than custom,
+              unverified implementations of file format parsing.
+            </p>
+          </div>
+          <div>
+            <p className="text-[15px] font-bold text-[#e2e2e2] mb-1.5">How articles are written and reviewed</p>
+            <p>
+              Blog articles and tool guides are written to explain the actual mechanism
+              behind a tool — the algorithm, the file format spec, the library — with
+              concrete numbers from real test cases, not generic advice. Before
+              publishing, technical claims are checked against the tool's actual
+              implementation rather than assumed from how similar tools typically work.
+              We do not publish sponsored content, paid placements, or affiliate-driven
+              recommendations.
+            </p>
+          </div>
+          <div>
+            <p className="text-[15px] font-bold text-[#e2e2e2] mb-1.5">How corrections are handled</p>
+            <p>
+              If you spot an inaccuracy in any article or tool description, please use
+              the{" "}
+              <Link href="/contact" className="text-[#ddb7ff] hover:opacity-75 transition-opacity">
+                contact form
+              </Link>{" "}
+              to report it. Corrections are made directly to the article, and
+              significant factual corrections are noted with an updated "Last updated"
+              date on the affected page.
+            </p>
+          </div>
+          <div>
+            <p className="text-[15px] font-bold text-[#e2e2e2] mb-1.5">How the site is funded</p>
+            <p>
+              ToolNest AI is currently self-funded and free to use, with no paywalls
+              or premium tiers. We may introduce non-intrusive display advertising in
+              the future to help cover hosting and development costs — see our{" "}
+              <Link href="/privacy-policy" className="text-[#ddb7ff] hover:opacity-75 transition-opacity">
+                Privacy Policy
+              </Link>{" "}
+              for how any future advertising partners would handle data.
+            </p>
+          </div>
         </div>
       </section>
 

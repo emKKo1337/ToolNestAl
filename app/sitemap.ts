@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { tools, categories } from "@/lib/tools";
 import { getAllPosts } from "@/lib/blog";
+import { AUTHOR } from "@/lib/author";
 
 const BASE = "https://www.toolnestai.net";
 const DEPLOY_DATE = new Date("2026-06-25");
@@ -14,6 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/privacy-policy`, lastModified: DEPLOY_DATE, changeFrequency: "yearly", priority: 0.4 },
     { url: `${BASE}/terms-of-service`, lastModified: DEPLOY_DATE, changeFrequency: "yearly", priority: 0.4 },
     { url: `${BASE}/cookie-policy`, lastModified: DEPLOY_DATE, changeFrequency: "yearly", priority: 0.4 },
+    { url: `${BASE}/author/${AUTHOR.slug}`, lastModified: DEPLOY_DATE, changeFrequency: "weekly", priority: 0.6 },
   ];
 
   const categoryRoutes: MetadataRoute.Sitemap = categories.map((c) => ({

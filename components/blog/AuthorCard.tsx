@@ -1,4 +1,6 @@
+import Link from "next/link";
 import type { BlogAuthor } from "@/lib/blog";
+import { AUTHOR } from "@/lib/author";
 
 export function AuthorCard({ author }: { author: BlogAuthor }) {
   return (
@@ -33,28 +35,40 @@ export function AuthorCard({ author }: { author: BlogAuthor }) {
         <p className="text-[10px] font-bold uppercase tracking-[0.1em] text-[#4d4354] mb-1">
           About the author
         </p>
-        <p className="text-[16px] font-bold text-[#e2e2e2] leading-none mb-2">
+        <Link
+          href={`/author/${AUTHOR.slug}`}
+          className="text-[16px] font-bold text-[#e2e2e2] leading-none mb-2 block w-fit hover:text-[#ddb7ff] transition-colors"
+        >
           {author.name}
-        </p>
+        </Link>
         {author.bio && (
           <p className="text-[13px] leading-[1.65] text-[#7a6d84]">
             {author.bio}
           </p>
         )}
-        {author.twitter && (
-          <a
-            href={`https://twitter.com/${author.twitter}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 mt-3 text-[12px] font-semibold transition-colors hover:text-[#ddb7ff]"
+        <div className="flex items-center gap-4 mt-3">
+          {author.twitter && (
+            <a
+              href={`https://twitter.com/${author.twitter}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 text-[12px] font-semibold transition-colors hover:text-[#ddb7ff]"
+              style={{ color: "#5a4d63" }}
+            >
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.736l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+              </svg>
+              @{author.twitter}
+            </a>
+          )}
+          <Link
+            href={`/author/${AUTHOR.slug}`}
+            className="text-[12px] font-semibold transition-colors hover:text-[#ddb7ff]"
             style={{ color: "#5a4d63" }}
           >
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.736l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-            </svg>
-            @{author.twitter}
-          </a>
-        )}
+            View full profile →
+          </Link>
+        </div>
       </div>
     </div>
   );
